@@ -1,20 +1,20 @@
 {
-  "name": "tasty-transit",
+  "name": "arthurozmowy-pl",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=20.3.0"
   },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sprawdz": "python3 narzedzia/sprawdz_tresci.py",
+    "pochodne": "python3 narzedzia/buduj_pochodne.py"
   },
   "dependencies": {
-    "astro": "^7.3.5"
-  },
-  "allowScripts": {
-    "esbuild": true
+    "astro": "^5.7.0"
   }
 }

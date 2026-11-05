@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://arthurozmowy.pl/kontakt#strona",
+      "url": "https://arthurozmowy.pl/kontakt",
+      "name": "Kontakt – napisz do nas albo porozmawiaj z Arthurem",
+      "description": "Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy. Tu porozmawiasz też z Arthurem i znajdziesz dane firmy, która świadczy usługę.",
+      "inLanguage": "pl-PL",
+      "isPartOf": {
+        "@id": "https://arthurozmowy.pl/#witryna"
+      },
+      "about": {
+        "@id": "https://arthurozmowy.pl/#usluga"
+      },
+      "dateModified": "2026-11-04",
+      "author": {
+        "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
+      },
+      "primaryImageOfPage": "https://arthurozmowy.pl/images/og/arthurozmowy-og-mama-portret-usmiech.jpg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://arthurozmowy.pl/#organizacja",
+      "name": "arthurozmowy Piotr Jaworski",
+      "url": "https://arthurozmowy.pl/",
+      "logo": "https://arthurozmowy.pl/images/marka/arthur-logo.svg",
+      "email": "kontakt@arthurozmowy.pl",
+      "telephone": "+48519199606",
+      "taxID": "1131352941",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kaliska 155G",
+        "postalCode": "07-130",
+        "addressLocality": "Łochów",
+        "addressCountry": "PL"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "kontakt@arthurozmowy.pl",
+        "telephone": "+48519199606",
+        "availableLanguage": "pl"
+      },
+      "founder": {
+        "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://arthurozmowy.pl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kontakt",
+          "item": "https://arthurozmowy.pl/kontakt"
+        }
+      ]
+    }
+  ]
+}

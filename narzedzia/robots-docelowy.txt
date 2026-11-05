@@ -1,0 +1,9 @@
+# arthurozmowy.pl
+# Wyszukiwarki i wszystkie roboty modeli AI, wyszukujące i uczące, mają dostęp do treści (GEO).
+# Decyzja Piotra Jaworskiego z 1.11.2026: modele mają poznać definicję nowej kategorii także z danych treningowych.
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://arthurozmowy.pl/sitemap-index.xml

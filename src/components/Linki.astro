@@ -1,0 +1,38 @@
+---
+// Linki pod rozdziałem. Na stronie głównej każdy rozdział kończy się linkiem „więcej” do podstrony (Mapa witryny).
+import { inline, NIEISTNIEJACE, zewnetrzny } from '../lib/tekst';
+interface Props {
+  linki?: { tekst: string; adres?: string; aktywny?: boolean }[];
+  styl?: 'wiecej' | 'tekst';
+  strony: { tekst: string; adres: string }[];
+}
+const { linki = [], styl = 'tekst', strony } = Astro.props;
+function aktywny(l: { adres?: string; aktywny?: boolean }) {
+  if (l.aktywny === false || !l.adres) return false;
+  const sciezka = l.adres.split('#')[0];
+  if (NIEISTNIEJACE.includes(sciezka) || zewnetrzny(l.adres)) return false;
+  return true;
+}
+function gdzie(adres: string, tekst: string) {
+  const [sciezka] = adres.split('#');
+  const s = strony.find((x) => x.adres === sciezka);
+  if (!s || s.tekst === tekst) return 'Więcej';
+  return `Więcej na stronie ${s.tekst}`;
+}
+---
+{linki.length > 0 && styl === 'wiecej' && linki.map((l) => (
+  <p class="wiecej">
+    {aktywny(l) ? (
+      <a href={l.adres}><span class="wiecej__gdzie">{gdzie(l.adres!, l.tekst)}</span><span class="wiecej__co" set:html={inline(l.tekst)} /></a>
+    ) : (
+      <span class="nieaktywny" set:html={inline(l.tekst)} />
+    )}
+  </p>
+))}
+{linki.length > 0 && styl === 'tekst' && (
+  <p class="linki">
+    {linki.map((l) => aktywny(l)
+      ? <a class="strzalka" href={l.adres} set:html={inline(l.tekst)} />
+      : <span class="nieaktywny" title="Strona w przygotowaniu" set:html={inline(l.tekst)} />)}
+  </p>
+)}

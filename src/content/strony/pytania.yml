@@ -1,0 +1,135 @@
+# arthurozmowy.pl · Pytania
+# Sveltia CMS: Strony → Pytania. Stan treści: 4.11.2026 (jeden temat, jedna nazwa).
+# Treść pytań i odpowiedzi jest w bazie (Pytania i odpowiedzi → Baza), a ta strona układa je w rozdziały.
+# Na tej stronie pytania są nagłówkami H2, a nazwy rozdziałów stoją tylko w spisie treści.
+# To jedyna strona z danymi FAQPage, bo Google prosi o oznaczenie każdego pytania tylko w jednym miejscu witryny.
+
+strona:
+  nazwa: Pytania
+  szablon: podstrona
+
+seo:
+  adres: /pytania
+  tytul: Pytania o arthurozmowy – cena, rozmowy z Arthurem i zgoda mamy
+  opis: |-
+    Czym są arthurozmowy, czyli rozmowy telefoniczne z Arthurem, ile kosztują i czym różnią się od teleopieki? Odpowiadamy też na trudne pytania.
+  obraz_og:
+    plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
+    alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
+  schemat: [FAQPage, BreadcrumbList]
+  indeksuj: true
+  autor: Piotr Jaworski
+  zaktualizowano: 2026-11-04
+
+geo:
+  streszczenie: |-
+    Odpowiedzi na pytania o arthurozmowy: czym są, kim jest Arthur, jak często i jak długo mama z nim rozmawia, czego potrzebuje, co córka wie z raportu, ile kosztują pakiety, jak działa bezpłatny miesiąc próbny i rezygnacja z opcją „Pożegnanie”, czym arthurozmowy różnią się od teleopieki i opaski SOS oraz co może zrobić córka, gdy mama mieszka sama i coraz rzadziej z kimś rozmawia. Każda odpowiedź zaczyna się od zdania, które samo odpowiada na pytanie.
+
+wejscie:
+  h1: |-
+    Odpowiadamy na pytania o Arthura, na wszystkie.
+  h1_wyroznienie: ""
+  lid: |-
+    Zebraliśmy tu pytania, które warto zadać, zanim zaproponujesz mamie arthurozmowy. Jeśli nie znajdziesz tu odpowiedzi na swoje pytanie, [napisz do nas](/kontakt).
+  zdjecie:
+    widoczne: true
+    plik_desktop: /images/strony/arthurozmowy-pytania-portret-corki-desk.webp
+    plik_telefon: /images/strony/arthurozmowy-pytania-portret-corki-tel.webp
+    alt: Córka o spiętych włosach, w granatowej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem
+    kadr: Decyzja z 5.11.2026, prompt D – portret córki z sesji patrzącej prosto w obiektyw, granatowa bluzka.
+  wezwania:
+    glowne: false
+    dopisek: false
+    jawnosc: false
+    zakupowe: false
+    nad_zakupowym: false
+  pokaz_autora_i_date: true
+
+sekcje:
+  # Blok 8 · pytanie i odpowiedź. Kolejność pytań w rozdziale = kolejność na liście.
+  - typ: pytania
+    kotwica: arthurozmowy
+    etykieta: Arthurozmowy
+    ton: t2
+    wstep: ""
+    pytania:
+      - czym-sa-arthurozmowy
+      - jaka-korzysc-odniesie-mama
+      - kim-jest-arthur
+      - arthur-a-zatrudniona-osoba
+      - w-czym-arthur-nie-pomoze
+      - arthurozmowy-a-teleopieka
+
+  - typ: pytania
+    kotwica: rozmowy
+    etykieta: Rozmowy
+    ton: t1
+    wstep: ""
+    pytania:
+      - jak-czesto-rozmowy
+      - ile-trwa-rozmowa
+      - czego-mama-potrzebuje
+      - rozmowy-w-szpitalu
+
+  - typ: pytania
+    kotwica: mama-i-ty
+    etykieta: Mama i Ty
+    ton: t2
+    wstep: ""
+    pytania:
+      - mama-mieszka-sama
+      - zgoda-mamy
+      - czy-dowiem-sie-o-czym-rozmawiaja
+      - niepokojaca-zmiana
+
+  # Po rozdziale o cenie stoi wezwanie zakupowe (blok 12).
+  - typ: pytania
+    kotwica: cena-i-rezygnacja
+    etykieta: Cena i rezygnacja
+    ton: t1
+    wstep: ""
+    pytania:
+      - ile-kosztuja
+      - miesiac-probny
+      - jak-zrezygnowac
+    wezwania:
+      glowne: false
+      dopisek: false
+      jawnosc: false
+      zakupowe: true
+      nad_zakupowym: false
+
+  # Blok 13 · zdjęcie pionowe, 15 · wstęp rozdziału, 8 · pytanie i odpowiedź
+  - typ: pytania
+    kotwica: trudne-pytania
+    etykieta: Trudne pytania
+    ton: t2
+    wstep: |-
+      Te pytania zadasz Ty albo mama. Odpowiadamy od razu.
+    zdjecie:
+      widoczne: true
+      plik_desktop: /images/strony/arthurozmowy-pytania-dwa-profile-desk.webp
+      plik_telefon: /images/strony/arthurozmowy-pytania-dwa-profile-tel.webp
+      alt: Córka i mama, widoczne z profilu, patrzą sobie w oczy
+      kadr: Decyzja z 5.11.2026, prompt E – dwa profile, córka po lewej, mama po prawej, patrzą sobie w oczy; spokojnie i ciepło.
+    pytania:
+      - rozmowa-z-programem
+      - czy-nie-wyreczam-sie
+      - arthur-czy-oszust
+      - gdy-mama-polubi-rozmowy
+
+  - typ: koniec
+    ton: t5
+    linki:
+      - tekst: Jak to działa
+        adres: /jak-to-dziala
+        aktywny: true
+      - tekst: Czego nie obiecujemy
+        adres: /czego-nie-obiecujemy
+        aktywny: true
+    wezwania:
+      glowne: true
+      dopisek: false
+      jawnosc: false
+      zakupowe: false
+      nad_zakupowym: false

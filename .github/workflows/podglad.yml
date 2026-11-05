@@ -1,0 +1,48 @@
+# Budowanie kontrolne: to samo co na Netlify (sprawdzenie treści, pliki pochodne, Astro).
+# Wynik (log, zbudowana strona, package-lock.json) trafia na gałąź podglad-wynik, żeby dało się go obejrzeć
+# bez instalowania niczego lokalnie. Netlify tej gałęzi nie publikuje.
+name: Budowanie kontrolne
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: budowanie-kontrolne
+  cancel-in-progress: true
+jobs:
+  budowanie:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Sprawdzenie treści i budowanie
+        id: budowa
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p _wynik
+          { python3 narzedzia/sprawdz_tresci.py && python3 narzedzia/buduj_pochodne.py && npm install --no-audit --no-fund && npm run build; } 2>&1 | tee _wynik/budowanie.log
+      - name: Wynik na gałąź podglad-wynik
+        if: always()
+        run: |
+          cp package-lock.json _wynik/ 2>/dev/null || true
+          if [ -d dist ]; then cp -r dist _wynik/dist; fi
+          echo "${{ steps.budowa.outcome }} ${{ github.sha }}" > _wynik/STAN
+          cd _wynik
+          git init -q -b podglad-wynik
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Wynik budowania ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" podglad-wynik
+      - name: Stan budowania
+        if: steps.budowa.outcome == 'failure'
+        run: exit 1

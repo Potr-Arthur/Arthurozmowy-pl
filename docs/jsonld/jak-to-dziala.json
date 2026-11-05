@@ -1,0 +1,106 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://arthurozmowy.pl/jak-to-dziala#strona",
+      "url": "https://arthurozmowy.pl/jak-to-dziala",
+      "name": "Jak działają arthurozmowy – metoda rozmów telefonicznych z mamą",
+      "description": "Arthurozmowy to rozmowy telefoniczne z Arthurem według eksperckiej metody i pięciu zasad: nie poprawia mamy, nie odpytuje jej i mówi z szacunkiem.",
+      "inLanguage": "pl-PL",
+      "isPartOf": {
+        "@id": "https://arthurozmowy.pl/#witryna"
+      },
+      "about": {
+        "@id": "https://arthurozmowy.pl/#usluga"
+      },
+      "dateModified": "2026-11-04",
+      "author": {
+        "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
+      },
+      "primaryImageOfPage": "https://arthurozmowy.pl/images/og/arthurozmowy-og-mama-portret-usmiech.jpg"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arthurozmowy.pl/#usluga",
+      "name": "arthurozmowy",
+      "serviceType": "Rozmowy telefoniczne z programem AI",
+      "description": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.",
+      "provider": {
+        "@id": "https://arthurozmowy.pl/#organizacja"
+      },
+      "areaServed": "PL",
+      "availableLanguage": "pl",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Pakiet ekonomiczny: 279 zł miesięcznie, 4 rozmowy pełne i 8 rozmów podtrzymujących",
+          "price": "279",
+          "priceCurrency": "PLN",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 279,
+            "priceCurrency": "PLN",
+            "unitCode": "MON",
+            "valueAddedTaxIncluded": true
+          },
+          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "seller": {
+            "@id": "https://arthurozmowy.pl/#organizacja"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pakiet optymalny: 299 zł miesięcznie, 6 rozmów pełnych i 8 rozmów podtrzymujących",
+          "price": "299",
+          "priceCurrency": "PLN",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 299,
+            "priceCurrency": "PLN",
+            "unitCode": "MON",
+            "valueAddedTaxIncluded": true
+          },
+          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "seller": {
+            "@id": "https://arthurozmowy.pl/#organizacja"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pakiet rozszerzony: 349 zł miesięcznie, 8 rozmów pełnych i 12 rozmów podtrzymujących",
+          "price": "349",
+          "priceCurrency": "PLN",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 349,
+            "priceCurrency": "PLN",
+            "unitCode": "MON",
+            "valueAddedTaxIncluded": true
+          },
+          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "seller": {
+            "@id": "https://arthurozmowy.pl/#organizacja"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://arthurozmowy.pl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jak to działa",
+          "item": "https://arthurozmowy.pl/jak-to-dziala"
+        }
+      ]
+    }
+  ]
+}

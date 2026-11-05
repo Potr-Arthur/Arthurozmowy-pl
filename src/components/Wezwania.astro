@@ -1,0 +1,22 @@
+---
+// Wezwania biorą treść z Ustawień; strona wybiera tylko, które pokazać.
+// „Porozmawiaj z Arthurem” otwiera okienko. Zamówienie (/umow) jeszcze nie istnieje, więc przycisk jest nieaktywny.
+import { inline } from '../lib/tekst';
+interface Props { w?: Record<string, boolean | undefined>; ust: any }
+const { w, ust } = Astro.props;
+const pokaz = !!w && (w.glowne || w.dopisek || w.jawnosc || w.zakupowe || w.nad_zakupowym);
+---
+{pokaz && (
+  <div class="wezwania">
+    {w!.glowne && (
+      <button type="button" class="przycisk" data-okno>{ust.wezwania.glowne.przycisk}</button>
+    )}
+    {w!.glowne && w!.dopisek && <p class="zdanie-pod" set:html={inline(ust.wezwania.glowne.dopisek)} />}
+    {w!.jawnosc && <p class="jawnosc" set:html={inline(ust.wezwania.jawnosc)} />}
+    {w!.nad_zakupowym && <p><strong set:html={inline(ust.wezwania.zakupowe.nad_przyciskiem)} /></p>}
+    {w!.zakupowe && (
+      <button type="button" class="przycisk przycisk--nieaktywny" aria-disabled="true"
+        title="Zamówienie online jest w przygotowaniu">{ust.wezwania.zakupowe.przycisk}</button>
+    )}
+  </div>
+)}

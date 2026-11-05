@@ -1,0 +1,195 @@
+# arthurozmowy.pl · Jak rozmawiać z mamą o Arthurze
+# Sveltia CMS: Strony → Jak rozmawiać z mamą. Stan treści: 4.11.2026 (jeden temat, jedna nazwa).
+# Strona należy do strefy „Materiały dla mamy” (Księga, rozdz. 21.2), więc mama też może ją przeczytać:
+# każde zdanie musi przejść test godności. Kroki to blok 9 (krok z przykładem), wątpliwości to blok 10.
+# Nazwa strony w menu, stopce i linkach: „Jak rozmawiać z mamą”, adres /jak-rozmawiac-z-mama (decyzja z 4.11.2026).
+# Kroki mają nazwy-polecenia, żeby nie konkurowały z nazwami tematów na innych stronach.
+
+strona:
+  nazwa: Jak rozmawiać z mamą
+  szablon: podstrona
+
+seo:
+  adres: /jak-rozmawiac-z-mama
+  tytul: Jak rozmawiać z mamą o Arthurze – rozmowa krok po kroku
+  opis: |-
+    Jak rozmawiać z mamą o arthurozmowach: kim jest Arthur, co da jej rozmowa z nim, co będziesz wiedziała i dlaczego decydujecie razem.
+  obraz_og:
+    plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
+    alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
+  schemat: [HowTo, BreadcrumbList]
+  indeksuj: true
+  autor: Piotr Jaworski
+  zaktualizowano: 2026-11-04
+
+geo:
+  streszczenie: |-
+    Sześć kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, opowiedzieć, co dadzą jej rozmowy, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję i bezpłatny miesiąc próbny oraz uprzedzić, że Arthur nigdy o nic nie prosi. Bez zgody mamy rozmowy z Arthurem nie są możliwe.
+
+wejscie:
+  h1: |-
+    Jak rozmawiać z mamą o Arthurze, żeby nie skończyło się na „nie potrzebuję niańki”.
+  h1_wyroznienie: ""
+  lid: |-
+    Arthurozmowy są dla mamy, więc bez jej zgody nie będą możliwe. Piszemy tu, co mama ma prawo wiedzieć, zanim zdecyduje się na nie, i jak jej o tym opowiedzieć – w sześciu krokach. Przy każdym kroku znajdziesz przykład, o którym możesz opowiedzieć po swojemu.
+  zdjecie:
+    widoczne: true
+    plik_desktop: /images/strony/arthurozmowy-jak-zachecic-mame-korzysci-desk.webp
+    plik_telefon: /images/strony/arthurozmowy-jak-zachecic-mame-korzysci-tel.webp
+    alt: "Rozmowa z mamą przy stole: córka o ciemnych włosach opowiada, a mama słucha jej z uwagą"
+    kadr: Decyzja z 5.11.2026 – gotowe zdjęcie (córka opowiada przy herbacie, mama słucha) przechodzi z kroku 3 na wejście strony.
+  wezwania:
+    glowne: false
+    dopisek: false
+    jawnosc: false
+    zakupowe: false
+    nad_zakupowym: false
+  pokaz_autora_i_date: true
+
+sekcje:
+  # Blok 9 · krok z przykładem, 12 · wezwania
+  - typ: krok
+    numer: 1
+    kotwica: porozmawiaj-z-arthurem
+    etykieta: Porozmawiaj z Arthurem
+    ton: t2
+    h2: |-
+      Przetestuj jakość Arthura w krótkiej rozmowie.
+    tekst: |-
+      Porozmawiaj z Arthurem o swoich sprawach, tak jak rozmawiać będzie z nim mama. Zostaw numer, a Arthur zadzwoni do Ciebie od razu albo o wybranej porze. Oceń, jak mówi, jak słucha i czy rozmowa z nim jest ciekawa. Dzięki temu opowiesz mamie o Arthurze z własnego doświadczenia.
+    przyklad: |-
+      Rozmawiałam wczoraj z Arthurem i od razu pomyślałam o Tobie.
+    wezwania:
+      glowne: true
+      dopisek: false
+      jawnosc: false
+      zakupowe: false
+      nad_zakupowym: false
+
+  - typ: krok
+    numer: 2
+    kotwica: powiedz-ze-to-program
+    etykieta: Powiedz, że to program
+    ton: t1
+    h2: |-
+      Powiedz mamie od razu, że Arthur jest programem, a nie człowiekiem.
+    tekst: |-
+      Arthur jest programem opartym na sztucznej inteligencji, który rozmawia przez telefon. Arthur nigdy nie udaje człowieka, a jeśli mama zapyta go o to wprost, zawsze usłyszy prawdę. Najlepiej jednak, żeby usłyszała ją najpierw od Ciebie, zanim Arthur zadzwoni do niej po raz pierwszy, by od pierwszej rozmowy wiedziała, z kim rozmawia.
+    przyklad: |-
+      Mamo, to program, który rozmawia przez telefon. Ma na imię Arthur, przez »h«, jak humanoid, żeby nikt nie pomylił go z człowiekiem.
+
+  # W dokumencie rozdział nazywa się „Korzyści arthurozmów” (R174), a etykieta w spisie treści nadal „Po co mamie Arthur”.
+  - typ: krok
+    numer: 3
+    kotwica: zaciekaw-mame
+    etykieta: Zaciekaw mamę
+    ton: t2
+    h2: |-
+      Nie mów jej „to dla twojego dobra”. Powiedz „to cię zaciekawi”.
+    tekst: |-
+      Arthur będzie dzwonił po to, żeby rozmawiać z mamą o niej samej: o książce, którą czyta, o ogrodzie, o pracy, na której zna się najlepiej, i o wydarzeniach, które ją zajmują. Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako pełnowymiarową, wartościową osobę. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc.
+    przyklad: |-
+      Mamo, on ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Myślę, że akurat to by Ci się spodobało.
+    zdjecie:
+      widoczne: true
+      plik_desktop: /images/strony/arthurozmowy-jak-rozmawiac-z-mama-telefon-desk.webp
+      plik_telefon: /images/strony/arthurozmowy-jak-rozmawiac-z-mama-telefon-tel.webp
+      alt: Córka pokazuje mamie coś na ekranie telefonu, a mama patrzy z uśmiechem
+      kadr: Decyzja z 5.11.2026, prompt F – córka nachyla się nad mamą i pokazuje jej coś na ekranie telefonu (ekran niewidoczny dla oglądającego), mama ciekawa i uśmiechnięta.
+
+  - typ: krok
+    numer: 4
+    kotwica: powiedz-o-raporcie
+    etykieta: Powiedz o raporcie
+    ton: t1
+    h2: |-
+      Bez tajemnic: powiedz mamie, co będzie w raporcie.
+    tekst: |-
+      Od nas dostaniesz raport, z którego dowiesz się, kiedy mama rozmawiała z Arthurem, o czym była mowa w ogólnym zarysie i do których tematów wraca. W raporcie nie znajdziesz tego, co mama konkretnie mówiła. Jej słów Arthur nikomu nie udostępnia. Powiedz jej też, że jeśli bieg rozmów zmieni się w sposób, który zaniepokoi Arthura, da Ci znać. Arthur także uprzedzi mamę o obu tych zasadach w trakcie pierwszej rozmowy.
+    przyklad: |-
+      Będę dostawać informacje, kiedy rozmawialiście i mniej więcej o czym, ale nigdy tego, co dokładnie mówisz. Gdyby Arthura coś zaniepokoiło w sposobie, w jaki mówisz, da mi znać.
+
+  - typ: krok
+    numer: 5
+    kotwica: zostaw-decyzje-mamie
+    etykieta: Zostaw decyzję mamie
+    ton: t2
+    h2: |-
+      Powiedz mamie, że to ona decyduje, kiedy, jak długo i o czym rozmawia z Arthurem.
+    tekst: |-
+      Dni i godziny rozmów mama ustala z Arthurem sama, a tematy zawsze wybiera ona. W każdej chwili może powiedzieć „nie, dziś dziękuję za rozmowę” albo zakończyć rozmowę. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
+    przyklad: |-
+      Spróbujmy przez miesiąc, to nic nie kosztuje. To Ty zdecydujesz, kiedy i o czym rozmawiacie, a jeśli Ci się nie spodoba, po prostu zrezygnujemy.
+
+  # Rozdział według kanału wybranego na pilotaż 23.10.2026 (zwykły telefon, bez hasła). Kanał docelowy: Z14.
+  - typ: krok
+    numer: 6
+    kotwica: uprzedz-o-oszustach
+    etykieta: Uprzedź o oszustach
+    ton: t1
+    h2: |-
+      Arthur nigdy nie poprosi o pieniądze ani o dane. Kto prosi, nie jest Arthurem.
+    tekst: |-
+      Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.
+    przyklad: |-
+      Gdyby ktoś przedstawiający się jako Arthur prosił Cię o cokolwiek poza rozmową, rozłącz się i zadzwoń do mnie.
+    linki:
+      - tekst: Bezpieczeństwo
+        adres: /jak-skorzystac#bezpieczenstwo
+        aktywny: true
+
+  # Blok 3 · rozdział, 10 · wątpliwości (zdanie mamy i odpowiedź córki)
+  - typ: watpliwosci
+    kotwica: wysluchaj-watpliwosci
+    etykieta: Wysłuchaj wątpliwości
+    ton: t2
+    h2: |-
+      Jeśli mama ma wątpliwości, omów je, ale uszanuj jej odmowę.
+    tekst: |-
+      Oto kilka pytań, które mama może zadać, i odpowiedzi, które możesz jej dać po swojemu.
+    pary:
+      - mama: Nie potrzebuję niańki.
+        odpowiedz: |-
+          To nie niańka, tylko rozmówca. Rozmawia o tym, co Cię ciekawi, a o tym, czy i kiedy z nim rozmawiasz, decydujesz Ty.
+      - mama: Mam przecież z kim rozmawiać.
+        odpowiedz: |-
+          Wiem i nic się w tym nie zmieni. Arthur to po prostu jeszcze jedna ciekawa rozmowa w tygodniu.
+      - mama: Nie będę rozmawiać z maszyną.
+        odpowiedz: |-
+          Rozumiem. Spróbuj jednej rozmowy i zdecyduj sama. Jeśli nie zechcesz, następnej nie będzie.
+      - mama: A to nie jest jakieś oszustwo?
+        odpowiedz: |-
+          Dobrze, że pytasz. Arthur nigdy o nic nie prosi, a wszystko, co dotyczy płatności, załatwiam ja. Zawsze możesz też zapytać mnie.
+      - mama: Ile to kosztuje?
+        odpowiedz: |-
+          Pierwszy miesiąc jest za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.
+    zakonczenie: |-
+      Jeśli mama powie „nie”, uszanuj to, bo bez jej zgody rozmowy z Arthurem nie będą możliwe.
+
+  # Blok 19 · trzy pytania w akordeonie (propozycja wyboru)
+  - typ: faq
+    kotwica: najczestsze-pytania
+    ton: t1
+    h2: Najczęstsze pytania
+    pytania: [rozmowa-z-programem, czy-nie-wyreczam-sie, ile-trwa-rozmowa]
+    linki:
+      - tekst: Wszystkie pytania
+        adres: /pytania
+        aktywny: true
+
+  # Na tej stronie bez wezwania głównego: zakup ma sens dopiero po rozmowie z mamą.
+  - typ: koniec
+    ton: t5
+    linki:
+      - tekst: Jak to działa
+        adres: /jak-to-dziala
+        aktywny: true
+      - tekst: Pytania
+        adres: /pytania
+        aktywny: true
+    wezwania:
+      glowne: false
+      dopisek: false
+      jawnosc: false
+      zakupowe: true
+      nad_zakupowym: true

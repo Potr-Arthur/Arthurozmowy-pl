@@ -1,0 +1,53 @@
+---
+// Cała strona z pliku treści: wejście, sekcje w kolejności z CMS, przejścia tonalne i strony zdjęć liczone tutaj.
+import Uklad from '../layouts/Uklad.astro';
+import Wejscie from './Wejscie.astro';
+import Sekcja from './Sekcja.astro';
+import { getEntry } from 'astro:content';
+import { tonNr } from '../lib/tekst';
+
+interface Props { wpis: any }
+const { wpis } = Astro.props;
+const dane = wpis.data;
+const ust = (await getEntry('ustawienia', 'witryna'))!.data;
+const bazaWpis = await getEntry('pytania', 'baza');
+const baza = new Map<string, any>((bazaWpis?.data.pytania ?? []).map((q: any) => [q.id, q]));
+
+// JSON-LD z docs/jsonld (generuje narzedzia/buduj_pochodne.py przy każdym budowaniu)
+const jsonldPliki = import.meta.glob('../../docs/jsonld/*.json', { eager: true, import: 'default' });
+const jsonld = jsonldPliki[`../../docs/jsonld/${wpis.id}.json`];
+
+const glowna = dane.strona.szablon === 'glowna';
+const blad = dane.strona.szablon === 'blad';
+const sekcje = dane.sekcje ?? [];
+
+// „Na tej stronie”: wejście (jeśli ma etykietę) i rozdziały z etykietą
+const rozdzialy: { kotwica: string; etykieta: string }[] = [];
+if (dane.wejscie.etykieta && dane.wejscie.kotwica) rozdzialy.push({ kotwica: dane.wejscie.kotwica, etykieta: dane.wejscie.etykieta });
+for (const s of sekcje) if (s.etykieta && s.kotwica) rozdzialy.push({ kotwica: s.kotwica, etykieta: s.etykieta });
+
+// przejścia tonalne: każda sekcja zna ton poprzedniej (wejście kończy się tonem 5, strona błędu tonem 1)
+let prev = blad ? '1' : '5';
+let nrZdjecia = 0;
+const lista = sekcje.map((s: any) => {
+  const maZdjecie = !!(s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik_desktop);
+  const strona: 'L' | 'P' = maZdjecie && nrZdjecia++ % 2 === 1 ? 'L' : 'P';
+  const w = { s, prev, strona };
+  prev = tonNr(s.ton);
+  return w;
+});
+---
+<Uklad
+  tytul={dane.seo.tytul}
+  opis={dane.seo.opis}
+  adres={dane.seo.adres}
+  og={dane.seo.obraz_og}
+  indeksuj={dane.seo.indeksuj}
+  jsonld={jsonld}
+  rozdzialy={rozdzialy}
+  ust={ust}
+  stopkaPrev={prev}
+>
+  <Wejscie dane={dane} ust={ust} />
+  {lista.map((x: any) => <Sekcja s={x.s} ust={ust} baza={baza} prev={x.prev} glowna={glowna} strona={x.strona} />)}
+</Uklad>

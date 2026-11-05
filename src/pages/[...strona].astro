@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Strona from '../components/Strona.astro';
+
+export async function getStaticPaths() {
+  const strony = await getCollection('strony', (w) => w.data.strona.szablon !== 'blad');
+  return strony.map((wpis) => ({
+    params: { strona: wpis.data.seo.adres === '/' ? undefined : wpis.data.seo.adres.slice(1) },
+    props: { wpis },
+  }));
+}
+const { wpis } = Astro.props;
+---
+<Strona wpis={wpis} />

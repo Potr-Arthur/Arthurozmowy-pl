@@ -1,0 +1,21 @@
+# arthurozmowy.pl · budowanie na Netlify
+# Najpierw sprawdzenie treści (błąd zatrzymuje publikację), potem pliki pochodne (JSON-LD, llms.txt), na końcu Astro.
+[build]
+  command = "python3 narzedzia/sprawdz_tresci.py && python3 narzedzia/buduj_pochodne.py && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# ADRES TYMCZASOWY: żadna strona nie trafia do wyszukiwarek.
+# Przy starcie na arthurozmowy.pl usuń ten blok i ustaw zmienną PUBLIKACJA=tak (wtedy robots.txt wpuszcza roboty).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-cache"

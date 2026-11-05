@@ -1,0 +1,19 @@
+---
+// Strony prawne na adresie tymczasowym: „w przygotowaniu”, żeby linki w stopce nie prowadziły donikąd.
+import Uklad from '../layouts/Uklad.astro';
+import { getEntry } from 'astro:content';
+interface Props { tytul: string; adres: string }
+const { tytul, adres } = Astro.props;
+const ust = (await getEntry('ustawienia', 'witryna'))!.data;
+---
+<Uklad tytul={`${tytul} – arthurozmowy`} adres={adres} indeksuj={false} ust={ust} stopkaPrev="1">
+  <section class="sekcja sekcja--pierwsza sekcja--blad ton-1">
+    <div class="wrap">
+      <div class="tekst">
+        <h1>{tytul}</h1>
+        <p>Ta strona jest w przygotowaniu.</p>
+        <div class="wezwania"><a class="przycisk" href="/">Wróć na stronę główną</a></div>
+      </div>
+    </div>
+  </section>
+</Uklad>

@@ -1,0 +1,6 @@
+---
+import { getEntry } from 'astro:content';
+import Strona from '../components/Strona.astro';
+const wpis = await getEntry('strony', '404');
+---
+<Strona wpis={wpis} />

@@ -1,0 +1,137 @@
+# arthurozmowy.pl · ustawienia wspólne całej witryny
+# Sveltia CMS: Ustawienia → Witryna. Stan treści: 4.11.2026.
+# Wezwania, jawność, pakiety, dane firmy i stopka są tu raz i trafiają na wszystkie strony,
+# więc brzmią wszędzie identycznie (R35, R158, R164). Strony wybierają tylko, które wezwanie pokazać.
+# Wartości w nawiasach kwadratowych to zaślepki: strona z zaślepką nie wychodzi.
+
+marka:
+  nazwa: arthurozmowy
+  domena: https://arthurozmowy.pl
+  jezyk: pl-PL
+  # Jedno zdanie definicji, słowo w słowo to samo w Pytaniach, w danych strukturalnych i w llms.txt (GEO, R167).
+  definicja: |-
+    Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.
+  logo:
+    plik: /images/marka/arthur-logo.svg
+    alt: Arthur
+
+# Nagłówek każdej strony: logo, link „Panel klienta”, przycisk „Porozmawiaj z Arthurem” i przycisk „Menu”.
+# „Menu” otwiera panel z dwiema grupami: „Na tej stronie” (rozdziały oglądanej strony, czyli spis treści)
+# i „Strony” (lista z nawigacja.strony), a pod nimi zakup (wezwania.zakupowe) i Panel klienta.
+# Tak samo na telefonie i na komputerze (decyzja z 4.11.2026).
+naglowek:
+  menu: Menu
+  grupa_rozdzialy: Na tej stronie
+  grupa_strony: Strony
+  panel_klienta: Panel klienta   # mały link w nagłówku i w menu; adres z firma.panel_klienta
+  # Na telefonie przycisk wezwania głównego jest paskiem przyklejonym do dołu ekranu (Matryca, rozdz. 8).
+  przycisk_staly: true
+
+# Jedna lista stron dla menu i stopki. Zasada z 4.11.2026: jeden temat, jedna nazwa, jedno miejsce.
+# Nazwa strony brzmi tak samo w menu, w stopce, w linkach „więcej” i w spisie treści strony głównej.
+# Kolejność jak rozdziały strony głównej, potem strony bez rozdziału na głównej.
+nawigacja:
+  strony:
+    - tekst: Jak to działa
+      adres: /jak-to-dziala
+    - tekst: Czego nie obiecujemy
+      adres: /czego-nie-obiecujemy
+    - tekst: Jak skorzystać
+      adres: /jak-skorzystac
+    - tekst: Jak rozmawiać z mamą
+      adres: /jak-rozmawiac-z-mama
+    - tekst: Pytania
+      adres: /pytania
+    - tekst: O nas
+      adres: /o-nas
+    - tekst: Kontakt
+      adres: /kontakt
+
+wezwania:
+  glowne:
+    # Przycisk otwiera okienko „Porozmawiaj z Arthurem” (okno_rozmowy), a nie link tel: (decyzja z 4.11.2026).
+    przycisk: Porozmawiaj z Arthurem
+    # Dopisek pod przyciskiem stoi tylko na wejściu strony głównej.
+    dopisek: Zostaw numer, a Arthur zadzwoni do Ciebie od razu albo o wybranej porze.
+  jawnosc: Tak, Arthur nie jest człowiekiem i nigdy go nie udaje.
+  zakupowe:
+    # Ta sama nazwa na przyciskach w treściach, w menu i w stopce (jedna czynność, jedna nazwa).
+    przycisk: Umów mamie pierwszą arthurozmowę
+    adres: /umow               # strona jeszcze niezbudowana
+    nad_przyciskiem: Mama się zgodziła?
+
+# Okienko otwierane przyciskiem „Porozmawiaj z Arthurem” na każdej stronie. Zastępuje dzwonienie pod numer
+# Arthura i dawne okno „Arthur oddzwoni” (decyzja z 4.11.2026). Włączamy je dopiero po ocenie skutków
+# dla ochrony danych (Z6), z polityką prywatności i decyzją, dokąd trafia numer i czy próbna rozmowa jest nagrywana.
+okno_rozmowy:
+  tytul: Porozmawiaj z Arthurem
+  wstep: Arthur zadzwoni do Ciebie od razu albo o porze, którą wybierzesz. Porozmawiaj z nim o swoich sprawach, tak jak rozmawiać będzie z nim mama.
+  pole_numer: Numer telefonu
+  pytanie_kiedy: Kiedy Arthur ma zadzwonić?
+  opcja_teraz: Teraz
+  opcja_termin: Wybiorę dzień i godzinę
+  pole_data: Data
+  pole_godzina: Godzina
+  przycisk: Zadzwoń do mnie
+  potwierdzenie: "[do napisania]"
+  blad: "[do napisania]"
+  zgoda: "[do napisania po ocenie skutków dla ochrony danych (Z6)]"
+
+# Jedno źródło cen dla sekcji „Cena” strony głównej, strony Jak skorzystać i danych strukturalnych (Offer).
+# Pole „opis” to gotowy tekst pozycji cennika, bo polska odmiana liczebników („4 rozmowy”, „6 rozmów”)
+# nie powinna zależeć od kodu szablonu. Liczby w polach liczbowych muszą się zgadzać z opisem.
+# Nazwę pakietu zapisujemy małą literą; w cenniku stoi na początku pozycji, wielką literą i pogrubiona.
+pakiety:
+  waluta: PLN
+  okres: miesięcznie, z VAT
+  lista:
+    - cena: 279
+      rozmowy_pelne: 4
+      rozmowy_podtrzymujace: 8
+      opis: 4 rozmowy pełne i 8 rozmów podtrzymujących
+      nazwa: pakiet ekonomiczny
+      polecany: false
+    - cena: 299
+      rozmowy_pelne: 6
+      rozmowy_podtrzymujace: 8
+      opis: 6 rozmów pełnych i 8 rozmów podtrzymujących
+      nazwa: pakiet optymalny
+      polecany: true
+    - cena: 349
+      rozmowy_pelne: 8
+      rozmowy_podtrzymujace: 12
+      opis: 8 rozmów pełnych i 12 rozmów podtrzymujących
+      nazwa: pakiet rozszerzony
+      polecany: false
+
+# W tekstach stron znacznik {firma} zamienia się na linię: nazwa, ulica, kod i miejscowość, NIP.
+firma:
+  nazwa: arthurozmowy Piotr Jaworski   # pisownię w regulaminie i na fakturach potwierdzić z CEIDG
+  ulica: Kaliska 155G
+  kod_pocztowy: 07-130
+  miejscowosc: Łochów
+  kraj: PL
+  nip: 113 135 29 41
+  email: kontakt@arthurozmowy.pl
+  telefon: +48 519 199 606
+  telefon_godziny: "[godziny, w których odbierasz telefon]"
+  czas_odpowiedzi: "[zdanie o tym, w jakim czasie odpowiadamy na e-mail]"
+  panel_klienta: https://app.arthurozmowy.pl   # do potwierdzenia
+
+autor:
+  imie_nazwisko: Piotr Jaworski
+  adres_strony: /o-nas
+
+stopka:
+  wezwanie_glowne: true        # w stopce stoi przycisk „Porozmawiaj z Arthurem”
+  # Stopka pokazuje strony z nawigacja.strony, pod nimi zakup (wezwania.zakupowe) i Panel klienta,
+  # a na końcu linki prawne. Na adresie tymczasowym /regulamin i /prywatnosc to strony „w przygotowaniu”.
+  linki_prawne:
+    - tekst: Regulamin
+      adres: /regulamin
+    - tekst: Polityka prywatności
+      adres: /prywatnosc
+  kontakt_etykieta: "Napisz do nas:"
+  jawnosc: Arthur nie jest człowiekiem i nigdy go nie udaje.
+  prywatnosc: Statystyki strony zbieramy bez plików cookies.
+  prawa: © 2026 arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41
