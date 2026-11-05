@@ -21,7 +21,8 @@ export function inline(s: string | undefined | null, firma?: Firma): string {
   t = esc(t);
   t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   t = t.replace(/(^|[\s(„])\*(?!\s)([^*]+?)\*(?=[\s.,;:!?)”]|$)/g, '$1<em>$2</em>');
-  t = t.replace(/\[([^\]]+)\]/g, '<span class="uzup">[$1]</span>');
+  t = t.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+  t = t.replace(/\[([^\]]+)\](?!\()/g, '<span class="uzup">[$1]</span>');
   return t;
 }
 

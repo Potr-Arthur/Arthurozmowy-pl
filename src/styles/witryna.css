@@ -249,11 +249,13 @@ button.przycisk{border:0;cursor:pointer}
 .okno__karta{background:var(--paper);max-height:calc(100vh - 48px);overflow:auto;padding:clamp(20px,4vw,32px);display:grid;gap:14px;border-radius:0 0 var(--naroznik-okno) 0;border-top:4px solid var(--sky)}
 .okno__karta h2{margin:0}
 .okno label{display:grid;gap:6px;font-weight:600}
-.okno fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.okno fieldset{border:0;margin:0;padding:0;display:grid;gap:8px;min-width:0}
 .okno legend{font-weight:600;margin-bottom:4px}
 .okno .wybor{display:flex;gap:10px;align-items:center;font-weight:400}
 .okno input[type=tel],.okno input[type=date],.okno input[type=time]{font:inherit;padding:12px;border:1px solid var(--linia);background:#fff;color:var(--onyks);border-radius:6px;min-height:48px}
 .okno input:disabled{opacity:.75}
+.okno input[type=tel],.okno input[type=date],.okno input[type=time]{width:100%;min-width:0;box-sizing:border-box}
+.okno__karta>*{min-width:0}
 .okno__info{border:1.5px dashed var(--linia);padding:8px 12px;font-size:.95rem;color:var(--fg2)}
 .okno__zamknij{justify-self:end;background:none;border:0;font:inherit;cursor:pointer;text-decoration:underline;color:var(--fg)}
 
