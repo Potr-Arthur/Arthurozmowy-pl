@@ -189,20 +189,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -213,7 +214,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -412,20 +414,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -436,7 +439,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -807,20 +811,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -831,7 +836,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -1072,20 +1078,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -1096,7 +1103,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -1317,20 +1325,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -1341,7 +1350,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -1644,20 +1654,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -1668,7 +1679,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -1867,20 +1879,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -1891,7 +1904,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -2262,20 +2276,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -2286,7 +2301,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -2527,20 +2543,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -2551,7 +2568,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -2772,20 +2790,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -2796,7 +2815,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -3099,20 +3119,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -3123,7 +3144,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -3322,20 +3344,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -3346,7 +3369,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -3717,20 +3741,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -3741,7 +3766,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -3982,20 +4008,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -4006,7 +4033,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -4227,20 +4255,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -4251,7 +4280,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -4554,20 +4584,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -4578,7 +4609,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -4777,20 +4809,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -4801,7 +4834,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -5172,20 +5206,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -5196,7 +5231,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -5437,20 +5473,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -5461,7 +5498,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -5682,20 +5720,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -5706,7 +5745,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -6009,20 +6049,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -6033,7 +6074,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -6232,20 +6274,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -6256,7 +6299,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -6627,20 +6671,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -6651,7 +6696,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -6892,20 +6938,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -6916,7 +6963,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -7137,20 +7185,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -7161,7 +7210,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -7464,20 +7514,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -7488,7 +7539,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -7687,20 +7739,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -7711,7 +7764,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -8082,20 +8136,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -8106,7 +8161,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -8347,20 +8403,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -8371,7 +8428,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -8592,20 +8650,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -8616,7 +8675,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -8919,20 +8979,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -8943,7 +9004,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -9142,20 +9204,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -9166,7 +9229,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -9537,20 +9601,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -9561,7 +9626,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -9802,20 +9868,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -9826,7 +9893,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -10047,20 +10115,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -10071,7 +10140,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -10374,20 +10444,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -10398,7 +10469,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Wezwania (blok 12)
         name: wezwania
         widget: object
@@ -10597,20 +10669,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -10621,7 +10694,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Okno głosu (blok 17)
           name: okno_glosu
           widget: object
@@ -10992,20 +11066,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -11016,7 +11091,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -11257,20 +11333,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -11281,7 +11358,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Pytania z bazy, w kolejności
           name: pytania
           widget: relation
@@ -11502,20 +11580,21 @@ collections:
             widget: boolean
             default: true
             required: false
-          - label: Plik na komputer
-            name: plik_desktop
+          - label: Plik
+            name: plik
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-          - label: Plik na telefon
+            hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+              21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+          - label: Plik na telefon (tylko wejście strony głównej)
             name: plik_telefon
             widget: image
             required: false
             media_folder: /public/images/strony
             public_folder: /images/strony
-            hint: 4:3 (1200 × 900), WebP.
+            hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
           - label: Tekst alternatywny (alt)
             name: alt
             widget: string
@@ -11526,7 +11605,8 @@ collections:
             name: kadr
             widget: text
             required: false
-          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+          hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon.
+            Bez retuszu skóry.'
         - label: Linki ze strzałką (blok 11)
           name: linki
           widget: list
@@ -11829,20 +11909,21 @@ collections:
           widget: boolean
           default: true
           required: false
-        - label: Plik na komputer
-          name: plik_desktop
+        - label: Plik
+          name: plik
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP.
-        - label: Plik na telefon
+          hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). Wejście strony głównej:
+            21:9 (2880 × 1234 albo 2100 × 900). WebP.'
+        - label: Plik na telefon (tylko wejście strony głównej)
           name: plik_telefon
           widget: image
           required: false
           media_folder: /public/images/strony
           public_folder: /images/strony
-          hint: 4:3 (1200 × 900), WebP.
+          hint: 'Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste.'
         - label: Tekst alternatywny (alt)
           name: alt
           widget: string
@@ -11853,7 +11934,8 @@ collections:
           name: kadr
           widget: text
           required: false
-        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry.'
+        hint: 'Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez
+          retuszu skóry.'
       - label: Przycisk powrotu
         name: przycisk_powrotu
         widget: object

@@ -318,14 +318,15 @@ main .wiecej a:hover{background:color-mix(in srgb,var(--akcent) 10%,var(--t1))}
   .red--P>.red__foto{grid-column:6/13}
   .red--P>.red__tresc{grid-column:1/6;grid-row:1;padding-right:12px}
   .red__tresc>h2:first-child,.red__glowa>h2:first-child,.red__tresc>.etykieta+h2{margin-top:-.1em}
-  .foto--sekcja{--ratio-n:.8;max-height:calc(100vh - 140px)}
   /* okno głosu w linii z kolumną tekstu */
   .rozdzial>.glos{max-width:none;margin-left:calc((100% - 264px) / 12 * 4 + 96px);width:calc((100% - 264px) / 12 * 7 + 144px)}
 }
 @media (min-width:760px) and (max-width:999px){
   .red--foto{max-width:var(--kolumna);margin-inline:auto}
-  .foto--sekcja{--ratio-n:.8}
 }
+/* formaty zdjęć (6.11.2026): wejście podstrony kwadrat 1:1, rozdział 4:3, ten sam plik na komputer i telefon */
+.foto--kwadrat{--ratio-n:1}
+.foto--sekcja{--ratio-n:1.3333}
 
 /* HERO1: strona główna, zdjęcie od krawędzi do krawędzi, dół zdjęcia przechodzi w tło */
 .hero1{padding:0;background:var(--t1)}
@@ -351,7 +352,6 @@ main .wiecej a:hover{background:color-mix(in srgb,var(--akcent) 10%,var(--t1))}
 .hero2 h1,.hero2__tekst h1{font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.1}
 @media (min-width:760px){
   .hero2__siatka{grid-template-columns:1fr 1fr;align-items:start;column-gap:clamp(24px,3vw,48px)}
-  .foto--kwadrat{--ratio-n:1}
 }
 @media (min-width:1000px){
   .hero2__siatka{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}

@@ -33,8 +33,7 @@ wejscie:
     Zebraliśmy tu pytania, które warto zadać, zanim zaproponujesz mamie arthurozmowy. Jeśli nie znajdziesz tu odpowiedzi na swoje pytanie, [napisz do nas](/kontakt).
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-pytania-portret-corki-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-pytania-portret-corki-tel.webp
+    plik: /images/strony/arthurozmowy-pytania-portret-corki-desk.webp
     alt: Córka o spiętych włosach, w granatowej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem
     kadr: Decyzja z 5.11.2026, prompt D – portret córki z sesji patrzącej prosto w obiektyw, granatowa bluzka.
   wezwania:
@@ -108,8 +107,7 @@ sekcje:
       Te pytania zadasz Ty albo mama. Odpowiadamy od razu.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-pytania-dwa-profile-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-pytania-dwa-profile-tel.webp
+      plik: /images/strony/arthurozmowy-pytania-dwa-profile.webp
       alt: Córka i mama, widoczne z profilu, patrzą sobie w oczy
       kadr: Decyzja z 5.11.2026, prompt E – dwa profile, córka po lewej, mama po prawej, patrzą sobie w oczy; spokojnie i ciepło.
     pytania:

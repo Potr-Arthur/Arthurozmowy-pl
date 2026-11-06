@@ -32,8 +32,7 @@ wejscie:
     Najlepiej poznasz Arthura, gdy sama z nim porozmawiasz. Jeśli jednak nie znalazłaś odpowiedzi na swoje pytanie na stronie [Pytania](/pytania) albo chcesz załatwić sprawę abonamentu, odezwij się do nas.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-kontakt-rozmowa-z-arthurem-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-kontakt-rozmowa-z-arthurem-tel.webp
+    plik: /images/strony/arthurozmowy-kontakt-rozmowa-z-arthurem-desk.webp
     alt: Córka w okularach i kolorowej bluzce z uwagą patrzy w ekran laptopa
     kadr: Córka w trakcie próbnej rozmowy z Arthurem przy laptopie widocznym od tyłu, twarz od przodu, ożywiona i rozbawiona, w kolorowej bluzce; sceneria inna niż sesja. Od 4.11.2026 zdjęcie wejścia strony Kontakt.
   wezwania:
@@ -72,8 +71,7 @@ sekcje:
       Porozmawiaj z Arthurem chwilę o swoich sprawach, tak jak rozmawiać będzie z nim mama, i oceń, jak mówi i jak słucha. Arthur tylko rozmawia, więc sprawy abonamentu i płatności załatwiasz z nami, a nie z nim.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-kontakt-telefon-przy-oknie-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-kontakt-telefon-przy-oknie-tel.webp
+      plik: /images/strony/arthurozmowy-kontakt-telefon-przy-oknie.webp
       alt: Córka stoi przy oknie z telefonem przy uchu i z uśmiechem rozmawia
       kadr: Decyzja z 5.11.2026, prompt G – córka przy oknie, z profilu, telefon przy uchu, rozmawia z ożywieniem i uśmiechem, koszula w kolorze dżinsu.
     wezwania:

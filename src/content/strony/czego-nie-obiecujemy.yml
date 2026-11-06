@@ -32,8 +32,7 @@ wejscie:
     Arthur rozmawia z mamą przez telefon, kilka razy w tygodniu, więc nie zastępuje opieki, a wszystko, co wymaga obecności człowieka, sprawdzenia albo stałego czuwania, zostaje poza tą usługą. Opisujemy to na osobnej stronie, żebyście obie znały granice arthurozmów, zanim się na nie zdecydujecie.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-czego-nie-obiecujemy-zakupy-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-czego-nie-obiecujemy-zakupy-tel.webp
+    plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-zakupy-desk.webp
     alt: W otwartych drzwiach mieszkania córka podaje mamie płócienną torbę z zakupami
     kadr: Decyzja z 5.11.2026, prompt C – przedpokój, otwarte drzwi, córka w rdzawym płaszczu podaje mamie siatkę z zakupami (chleb, pory), obie się uśmiechają. Pasuje do H1 o zupie i siatkach.
   wezwania:
@@ -92,8 +91,7 @@ sekcje:
       Mama rozmawia z Arthurem o tym, o czym chce i lubi mówić, w sposób, na jaki bliskim nieraz brakuje czasu. Odwiedziny i rozmowy o lekach, samopoczuciu i zakupach to rola bliskich. Arthur nigdy nie prosi mamy, żeby czegoś Ci nie mówiła, a relacji rodzinnych nie wolno mu komentować, więc nigdy nie stanie między Tobą a mamą.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-czego-nie-obiecujemy-twoja-rola-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-czego-nie-obiecujemy-twoja-rola-tel.webp
+      plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-twoja-rola.webp
       alt: Córka poprawia mamie włosy, a mama w fuksjowym żakiecie uśmiecha się z aprobatą
       kadr: Córka pomaga ułożyć mamie włosy przed jej wyjściem na spotkanie; mama w fuksjowym, koktajlowym żakiecie uśmiecha się z aprobatą (decyzja z 3.11.2026).
 

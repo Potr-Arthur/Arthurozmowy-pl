@@ -20,7 +20,9 @@ const wezwania = z
 const zdjecie = z
   .object({
     widoczne: z.boolean().default(true),
-    plik_desktop: z.string().optional(),
+    // jeden plik na zdjęcie: HERO2 kwadrat 1:1 (1200 × 1200), rozdział 4:3 (1200 × 900);
+    // wyjątek HERO1 strony głównej: plik 21:9 (komputer) i plik_telefon 4:3
+    plik: z.string().optional(),
     plik_telefon: z.string().optional(),
     alt: z.string().optional(),
     kadr: z.string().optional(),

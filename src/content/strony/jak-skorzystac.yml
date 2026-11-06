@@ -33,8 +33,7 @@ wejscie:
     Arthurozmowy zamawiasz i opłacasz Ty, a mama decyduje o tym, czy, kiedy i o czym rozmawia przez telefon z Arthurem – programem opartym na sztucznej inteligencji. Piszemy tu, jak zawrzeć umowę, ile i kiedy płacisz, jak zrezygnować i jakich zasad Arthur trzyma się w rozmowach z mamą.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-jak-skorzystac-mama-w-fotelu-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-jak-skorzystac-mama-w-fotelu-tel.webp
+    plik: /images/strony/arthurozmowy-jak-skorzystac-mama-w-fotelu-desk.webp
     alt: Mama o siwych włosach rozmawia przez telefon w fotelu, a w tle córka pracuje przy laptopie
     kadr: Decyzja z 5.11.2026, prompt H – dwa plany, na pierwszym mama w fotelu przy telefonie, uśmiechnięta i odprężona; w tle, w nieostrości, córka przy stole z laptopem (bez ekranu i logo). Ilustruje H1 „Formalności online są po Twojej stronie. Rozmowy należą do mamy”.
   wezwania:
@@ -104,8 +103,7 @@ sekcje:
       Powiedz o tym mamie, zanim Arthur zadzwoni do niej po raz pierwszy, i uczul ją, że ktoś, kto przedstawia się jako Arthur i czegoś od niej chce, nie jest Arthurem.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-jak-skorzystac-mama-czujna-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-jak-skorzystac-mama-czujna-tel.webp
+      plik: /images/strony/arthurozmowy-jak-skorzystac-mama-czujna.webp
       alt: Mama o siwych włosach, z założonymi rękami, patrzy prosto w obiektyw z czujnym, lekkim uśmiechem
       kadr: Propozycja z 5.11.2026, prompt I – mama z sesji przy stole, ręce założone, uniesiona brew, lekki uśmiech osoby, której nie da się nabrać. Bez telefonu.
     linki:

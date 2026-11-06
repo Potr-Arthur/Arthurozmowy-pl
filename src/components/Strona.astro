@@ -30,7 +30,7 @@ for (const s of sekcje) if (s.etykieta && s.kotwica) rozdzialy.push({ kotwica: s
 let prev = blad ? '1' : '5';
 let nrZdjecia = 0;
 const lista = sekcje.map((s: any) => {
-  const maZdjecie = !!(s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik_desktop);
+  const maZdjecie = !!(s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik);
   const strona: 'L' | 'P' = maZdjecie && nrZdjecia++ % 2 === 1 ? 'L' : 'P';
   const w = { s, prev, strona };
   prev = tonNr(s.ton);

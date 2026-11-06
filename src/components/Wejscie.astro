@@ -13,7 +13,7 @@ const w = dane.wejscie;
 const szablon = dane.strona.szablon;
 const lid = akapity(w.lid);
 const id = w.kotwica || 'wejscie';
-const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik_desktop);
+const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik);
 ---
 {szablon === 'glowna' && (
   <section class="sekcja sekcja--pierwsza hero1" id={id}>

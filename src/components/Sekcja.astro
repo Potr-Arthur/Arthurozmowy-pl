@@ -23,7 +23,7 @@ const strony = ust.nawigacja.strony;
 const klasa = `sekcja ${tonKlasa(s.ton)} prev-${prev}`;
 const id = s.typ === 'koniec' ? 'koniec' : s.kotwica || undefined;
 const etykieta = s.etykieta || undefined;
-const zdj = s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik_desktop ? s.zdjecie : null;
+const zdj = s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik ? s.zdjecie : null;
 
 // nagłówek sekcji: w szynie po lewej, w układzie ze zdjęciem nad tekstem
 let naglowek = '';
