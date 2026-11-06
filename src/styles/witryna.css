@@ -313,10 +313,11 @@ main .wiecej a:hover{background:color-mix(in srgb,var(--akcent) 10%,var(--t1))}
   .red--szyna>.red__tresc{grid-column:5/12}
   .red--bez-glowy>.red__tresc{grid-column:5/12}
   .red--foto>.red__foto{grid-row:1;margin:0;position:sticky;top:96px}
-  .red--L>.red__foto{grid-column:1/8}
-  .red--L>.red__tresc{grid-column:8/13;padding-left:12px}
-  .red--P>.red__foto{grid-column:6/13}
-  .red--P>.red__tresc{grid-column:1/6;grid-row:1;padding-right:12px}
+  /* rozdział: tekst 7/12, zdjęcie 5/12, czyli mniejsze niż kwadrat wejścia podstrony (6/12) */
+  .red--L>.red__foto{grid-column:1/6}
+  .red--L>.red__tresc{grid-column:6/13;padding-left:12px}
+  .red--P>.red__foto{grid-column:8/13}
+  .red--P>.red__tresc{grid-column:1/8;grid-row:1;padding-right:12px}
   .red__tresc>h2:first-child,.red__glowa>h2:first-child,.red__tresc>.etykieta+h2{margin-top:-.1em}
   /* okno głosu w linii z kolumną tekstu */
   .rozdzial>.glos{max-width:none;margin-left:calc((100% - 264px) / 12 * 4 + 96px);width:calc((100% - 264px) / 12 * 7 + 144px)}
