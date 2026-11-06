@@ -1,6 +1,8 @@
 ---
-// Wejście strony: strona główna (zdjęcie 21:9 nad H1, lid i wezwania w dwóch kolumnach),
-// podstrona (Hero2: zdjęcie pionowe obok H1) i strona błędu (bez zdjęcia).
+// Wejście strony.
+//   HERO1 (strona główna): zdjęcie od krawędzi do krawędzi, dół przechodzi w tło; pod nim H1, lid i wezwania asymetrycznie.
+//   HERO2 (podstrony): duże kwadratowe zdjęcie obok H1, zdjęcie zaczyna się na wysokości górnej linii H1.
+//   Strona błędu: bez zdjęcia.
 import Zdjecie from './Zdjecie.astro';
 import Wezwania from './Wezwania.astro';
 import Linki from './Linki.astro';
@@ -14,26 +16,24 @@ const id = w.kotwica || 'wejscie';
 const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik_desktop);
 ---
 {szablon === 'glowna' && (
-  <section class="sekcja sekcja--pierwsza ton-hero" id={id}>
-    <div class="wrap">
-      <Zdjecie zdjecie={w.zdjecie} rodzaj="hero" odRazu />
-      <div class="rozdzial">
+  <section class="sekcja sekcja--pierwsza hero1" id={id}>
+    <Zdjecie zdjecie={w.zdjecie} rodzaj="pelne" odRazu />
+    <div class="hero1__dol ton-hero">
+      <div class="wrap hero1__tekst">
         <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
-        <div class="k2 k2--asym-odw">
-          <div style="display:grid;gap:1.15rem;align-content:start">
-            {lid.map((p) => <p set:html={p} />)}
-          </div>
-          <Wezwania w={w.wezwania} ust={ust} />
+        <div class="hero1__lid">
+          {lid.map((p) => <p set:html={p} />)}
         </div>
+        <Wezwania w={w.wezwania} ust={ust} />
       </div>
     </div>
   </section>
 )}
 {szablon === 'podstrona' && (
-  <section class="sekcja sekcja--pierwsza ton-hero" id={id}>
+  <section class="sekcja sekcja--pierwsza ton-hero hero2" id={id}>
     <div class="wrap">
-      <div class={zdjecieWidoczne ? 'k2 k2--foto hero2' : 'tekst'}>
-        <Zdjecie zdjecie={w.zdjecie} rodzaj="pion" odRazu />
+      <div class={zdjecieWidoczne ? 'hero2__siatka' : 'red__tresc red--srodek'}>
+        <Zdjecie zdjecie={w.zdjecie} rodzaj="kwadrat" odRazu />
         <div class="hero2__tekst">
           <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
           {lid.map((p) => <p class="lid" set:html={p} />)}
@@ -51,7 +51,7 @@ const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik_des
 {szablon === 'blad' && (
   <section class="sekcja sekcja--pierwsza sekcja--blad ton-1" id={id}>
     <div class="wrap">
-      <div class="tekst">
+      <div class="red__tresc red--srodek">
         <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
         {lid.map((p) => <p set:html={p} />)}
         <div class="wezwania">

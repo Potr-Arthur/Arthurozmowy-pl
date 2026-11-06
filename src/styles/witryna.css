@@ -6,7 +6,7 @@
    Rdza ma 4,26:1 na papierze, więc nie stoi jako mały tekst: jest tłem przycisków (biały tekst 4,66:1), podkreśleniem, znacznikiem i dużym kursywnym słowem. */
 :root{
   color-scheme:light;
-  --kontener:880px; --kolumna:620px; --gutter:20px; --przejscie:clamp(64px,12vw,112px);
+  --kontener:1200px; --kolumna:690px; --gutter:20px; --przejscie:clamp(64px,12vw,112px);
   --paper:#F2EFE6; --atrament:#18211D; --onyks:#0B0C10; --mech:#48594F; --piasek:#DBD2C3; --rdza:#B3562E; --sky:#4CA9D1; --jajko:#FFDE59;
   --t1:var(--paper); --t2:var(--piasek); --t3:var(--atrament);
   --t4:color-mix(in srgb,var(--sky) 24%,var(--paper)); --t5:color-mix(in srgb,var(--jajko) 34%,var(--paper));
@@ -273,25 +273,6 @@ main .wiecej a:hover{background:color-mix(in srgb,var(--akcent) 10%,var(--t1))}
 .wiecej__gdzie{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--fg2)}
 .wiecej__co{font-weight:600;font-size:1.1rem;line-height:1.35}
 
-/* 3 i 4. zdjęcie obok tekstu: równa do górnej linii nagłówka; obok tylko nagłówek i lid, reszta pod spodem (wariant B) */
-.k2f{display:flex;flex-direction:column;gap:1.15rem}
-.k2f__obok,.k2f__reszta{display:flex;flex-direction:column;gap:1.15rem;min-width:0}
-.k2f__reszta:empty{display:none}
-.k2f__obok>h2{margin-bottom:.25rem}
-.k2f>.foto-ramka{margin-bottom:.6rem}
-@media (min-width:760px){
-  .k2f{display:grid;grid-template-columns:5.48fr 6.52fr;column-gap:clamp(24px,4vw,48px);row-gap:clamp(28px,4vw,40px);align-items:start}
-  .k2f--P{grid-template-columns:6.52fr 5.48fr}
-  .k2f>.foto-ramka{grid-row:1;grid-column:1;margin:0}
-  .k2f>.k2f__obok{grid-row:1;grid-column:2}
-  .k2f--P>.foto-ramka{grid-column:2}
-  .k2f--P>.k2f__obok{grid-column:1}
-  .k2f>.k2f__reszta{grid-row:2;grid-column:1/-1;width:100%;max-width:var(--kolumna);margin-inline:auto}
-  .k2f__obok>h2{margin-top:-.1em}
-  .k2f__obok>p.lid-sekcji{font-size:1.2rem;line-height:1.55}
-  .k2f--etyk>.foto-ramka{margin-top:calc(.8rem * 1.6 + 1.15rem)}
-}
-
 /* okna głosu: tekst w kursywie IBM Plex Sans */
 .glos{font-style:italic}
 .glos .glos__etykieta,.glos .kto{font-style:normal}
@@ -315,3 +296,70 @@ main .wiecej a:hover{background:color-mix(in srgb,var(--akcent) 10%,var(--t1))}
 .autor{font-size:.95rem;color:var(--fg2)}
 .autor a{font-size:inherit}
 .wlasciwe-h1{scroll-margin-top:80px}
+
+/* ===== układ redakcyjny (6.11.2026): kontener 1200 px, tekst do 690 px, większe zdjęcia, asymetria 12 kolumn ===== */
+.red{display:grid;gap:1.15rem}
+.red__glowa,.red__tresc{display:flex;flex-direction:column;gap:1.15rem;min-width:0}
+.red__glowa>h2{margin-bottom:.25rem}
+.red--szyna,.red--srodek{max-width:var(--kolumna);margin-inline:auto;width:100%}
+.red__etykieta{font:700 clamp(1.5rem,4.4vw,2rem)/1.2 var(--font-naglowek);color:var(--head)}
+.red__tresc>h2{margin-bottom:.25rem}
+.lid-sekcji{font-size:1.15rem;line-height:1.55}
+.red__foto{margin-bottom:.4rem}
+@media (min-width:1000px){
+  .red{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+  .red--szyna{max-width:none}
+  .red--szyna>.red__glowa{grid-column:1/5;position:sticky;top:96px;padding-right:12px}
+  .red--szyna>.red__tresc{grid-column:5/12}
+  .red--bez-glowy>.red__tresc{grid-column:5/12}
+  .red--foto>.red__foto{grid-row:1;margin:0;position:sticky;top:96px}
+  .red--L>.red__foto{grid-column:1/8}
+  .red--L>.red__tresc{grid-column:8/13;padding-left:12px}
+  .red--P>.red__foto{grid-column:6/13}
+  .red--P>.red__tresc{grid-column:1/6;grid-row:1;padding-right:12px}
+  .red__tresc>h2:first-child,.red__glowa>h2:first-child,.red__tresc>.etykieta+h2{margin-top:-.1em}
+  .foto--sekcja{--ratio-n:.8;max-height:calc(100vh - 140px)}
+  /* okno głosu w linii z kolumną tekstu */
+  .rozdzial>.glos{max-width:none;margin-left:calc((100% - 264px) / 12 * 4 + 96px);width:calc((100% - 264px) / 12 * 7 + 144px)}
+}
+@media (min-width:760px) and (max-width:999px){
+  .red--foto{max-width:var(--kolumna);margin-inline:auto}
+  .foto--sekcja{--ratio-n:.8}
+}
+
+/* HERO1: strona główna, zdjęcie od krawędzi do krawędzi, dół zdjęcia przechodzi w tło */
+.hero1{padding:0;background:var(--t1)}
+.hero1__foto{position:relative;width:100%;aspect-ratio:21/9;max-height:78vh;overflow:hidden;background:var(--t2)}
+.hero1__figura{margin:0;position:absolute;inset:0}
+.hero1__figura picture{display:contents}
+.hero1__figura img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero1__foto::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(to bottom,transparent,var(--t1));pointer-events:none}
+.hero1__dol{padding-block:clamp(8px,2vw,24px) clamp(48px,9vw,96px)}
+.hero1__tekst{display:grid;gap:1.15rem}
+.hero1 h1{font-size:clamp(2.2rem,4.8vw,4.2rem);line-height:1.08}
+.hero1__lid{display:flex;flex-direction:column;gap:1.15rem;max-width:var(--kolumna)}
+@media (max-width:759px){.hero1__foto{aspect-ratio:4/3;max-height:none}}
+@media (min-width:1000px){
+  .hero1__tekst{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:clamp(24px,3vw,40px);align-items:start}
+  .hero1__tekst>h1{grid-column:1/11}
+  .hero1__lid{grid-column:1/8;font-size:1.1rem}
+  .hero1__tekst>.wezwania{grid-column:9/13}
+}
+
+/* HERO2: podstrony, duży kwadrat obok H1 */
+.hero2__siatka{display:grid;gap:clamp(20px,3vw,32px)}
+.hero2 h1,.hero2__tekst h1{font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.1}
+@media (min-width:760px){
+  .hero2__siatka{grid-template-columns:1fr 1fr;align-items:start;column-gap:clamp(24px,3vw,48px)}
+  .foto--kwadrat{--ratio-n:1}
+}
+@media (min-width:1000px){
+  .hero2__siatka{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+  .hero2__siatka>.red__foto{grid-column:1/7}
+  .hero2__siatka>.hero2__tekst{grid-column:7/13;padding-left:12px}
+}
+
+/* koniec strony: linki po lewej, wezwanie po prawej */
+.koniec{display:grid;gap:clamp(20px,3vw,32px)}
+.koniec__linki{display:grid;gap:.6rem;align-content:start}
+@media (min-width:760px){.koniec{grid-template-columns:7fr 5fr;align-items:center}}
