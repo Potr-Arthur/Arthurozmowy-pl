@@ -1,0 +1,79 @@
+
+BŁĘDY (0)
+
+UWAGI (13)
+  - jak-skorzystac: opis ma 156 znaków (zalecane do 155)
+  - jak-to-dziala: tytuł ma 63 znaków (zalecane do 60)
+  - kontakt · sekcja 4 (Dane firmy): link do /regulamin, strony jeszcze nie ma
+  - kontakt · sekcja 4 (Dane firmy): link do /prywatnosc, strony jeszcze nie ma
+  - o-nas · sekcja 2 (Nasza metoda): miejsce na zdjęcie ukryte, czeka na wybór kadru (Wspólne zdjęcie ekspertki i Piotra Jaworskiego (do wykonania). Prawdziwe zdjęcie, nie generowane i nie z Pexels, bo ma uwiarygodnić ekspertkę (Z1).)
+  - pytania: tytuł ma 62 znaków (zalecane do 60)
+  - strona-glowna: tytuł ma 63 znaków (zalecane do 60)
+  - stopka: link do /regulamin, strony jeszcze nie ma
+  - stopka: link do /prywatnosc, strony jeszcze nie ma
+  - Rozdział „Porozmawiaj z Arthurem” jest na stronach: jak-rozmawiac-z-mama, kontakt, strona-glowna (dozwolone tylko dla tego samego tematu)
+  - Rozdział „Cena” jest na stronach: jak-skorzystac, strona-glowna (dozwolone tylko dla tego samego tematu)
+  - Rozdział „Raport dla Ciebie” jest na stronach: jak-to-dziala, strona-glowna (dozwolone tylko dla tego samego tematu)
+  - Rozdział „Dane firmy” jest na stronach: kontakt, o-nas (dozwolone tylko dla tego samego tematu)
+
+ZAŚLEPKI (strona z zaślepką nie wychodzi) (10)
+  - o-nas · sekcje[1].tekst: [Ekspertka]
+  - o-nas · sekcje[1].tekst: [specjalizacja: geriatra albo psychogeriatra, psycholog kliniczny]
+  - o-nas · sekcje[1].tekst: [staż w latach]
+  - o-nas · sekcje[1].tekst: [miejsce pracy]
+  - o-nas · sekcje[1].tekst: [Jedna historia z jej praktyki, opowiedziana przez nią.]
+  - ustawienia · okno_rozmowy.potwierdzenie: [do napisania]
+  - ustawienia · okno_rozmowy.blad: [do napisania]
+  - ustawienia · okno_rozmowy.zgoda: [do napisania po ocenie skutków dla ochrony danych (Z6)]
+  - ustawienia · firma.telefon_godziny: [godziny, w których odbierasz telefon]
+  - ustawienia · firma.czas_odpowiedzi: [zdanie o tym, w jakim czasie odpowiadamy na e-mail]
+
+Strony: 9, pytania w bazie: 21.
+Podglądy: 9 · JSON-LD: 8 · llms-full.txt pomija strony z zaślepkami: o-nas
+npm warn deprecated tsconfck@3.1.6: unmaintained
+
+added 280 packages in 5s
+
+> arthurozmowy-pl@0.1.0 build
+> astro build
+
+[2m16:36:59[22m [34m[content][39m Syncing content
+[2m16:36:59[22m [34m[content][39m Synced content
+[2m16:36:59[22m [34m[types][39m Generated [2m494ms[22m
+[2m16:36:59[22m [34m[build][39m output: [34m"static"[39m
+[2m16:36:59[22m [34m[build][39m mode: [34m"static"[39m
+[2m16:36:59[22m [34m[build][39m directory: [34m/home/runner/work/Arthurozmowy-pl/Arthurozmowy-pl/dist/[39m
+[2m16:36:59[22m [34m[build][39m Collecting build info...
+[2m16:36:59[22m [34m[build][39m [32m✓ Completed in 519ms.[39m
+[2m16:36:59[22m [34m[build][39m Building static entrypoints...
+[2m16:37:00[22m [34m[vite][39m [32m✓ built in 1.19s[39m
+[2m16:37:00[22m [34m[build][39m [32m✓ Completed in 1.23s.[39m
+
+[42m[30m building client (vite) [39m[49m
+[2m16:37:00[22m [34m[vite][39m transforming...
+[2m16:37:00[22m [34m[vite][39m [32m✓[39m 1 modules transformed.
+[2m16:37:00[22m [34m[vite][39m rendering chunks...
+[2m16:37:00[22m [34m[vite][39m [32m✓ built in 13ms[39m
+
+[42m[30m generating static routes [39m[49m
+[2m16:37:00[22m [32m▶[39m src/pages/404.astro
+[2m16:37:00[22m   [34m└─[39m [2m/404.html[22m [2m(+20ms)[22m 
+[2m16:37:01[22m [32m▶[39m src/pages/[...strona].astro
+[2m16:37:01[22m   [34m├─[39m [2m/czego-nie-obiecujemy.html[22m [2m(+8ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/jak-rozmawiac-z-mama.html[22m [2m(+5ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/jak-skorzystac.html[22m [2m(+5ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/jak-to-dziala.html[22m [2m(+4ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/kontakt.html[22m [2m(+4ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/o-nas.html[22m [2m(+6ms)[22m 
+[2m16:37:01[22m   [34m├─[39m [2m/pytania.html[22m [2m(+7ms)[22m 
+[2m16:37:01[22m   [34m└─[39m [2m/index.html[22m [2m(+7ms)[22m 
+[2m16:37:01[22m [32m▶[39m src/pages/prywatnosc.astro
+[2m16:37:01[22m   [34m└─[39m [2m/prywatnosc.html[22m [2m(+2ms)[22m 
+[2m16:37:01[22m [32m▶[39m src/pages/regulamin.astro
+[2m16:37:01[22m   [34m└─[39m [2m/regulamin.html[22m [2m(+2ms)[22m 
+[2m16:37:01[22m [35mλ[39m src/pages/robots.txt.ts
+[2m16:37:01[22m   [34m└─[39m [2m/robots.txt[22m [2m(+1ms)[22m 
+[2m16:37:01[22m [32m✓ Completed in 94ms.
+[39m
+[2m16:37:01[22m [34m[build][39m 11 page(s) built in [1m1.87s[22m
+[2m16:37:01[22m [34m[build][39m [1mComplete![22m
