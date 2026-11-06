@@ -66,7 +66,8 @@ def zdjecie_md(z, pref):
         return []
     if not z.get("widoczne"):
         return [f"- *Miejsce na zdjęcie ukryte, kadr: {z.get('kadr', '')}*  `{pref}`"]
-    return [f"- **Zdjęcie:** `{z['plik_desktop']}` · `{z['plik_telefon']}`  `{pref}`",
+    pliki = f"`{z['plik']}`" + (f" · `{z['plik_telefon']}`" if z.get('plik_telefon') else "")
+    return [f"- **Zdjęcie:** {pliki}  `{pref}`",
             f"- **Alt:** {z['alt']}  `{pref}.alt`"]
 
 def linki_md(ls, pref):
@@ -370,15 +371,16 @@ for n in KOLEJNOSC:
 
 # Zasada z 5.11.2026: strona główna ma 4 zdjęcia (wejście + 3), każda podstrona 2 (wejście + 1), strona 404 żadnego.
 # Nowa treść zdjęcia = nowa nazwa pliku; nazwy nigdy nie wracają do innej treści.
-# Stan zdjęcia wynika z plików w public/images: oba pliki (-desk i -tel) na miejscu to „gotowe”.
+# Stan zdjęcia wynika z plików w public/images: plik na miejscu to „gotowe” (HERO1: oba kadry).
 PUB = ROOT / "public"
 def jest(sciezka):
     return bool(sciezka) and (PUB / sciezka.lstrip("/")).is_file()
 TRESC_OG = {"arthurozmowy-og-glowna": "Rozmowa przy stole: mama z ożywieniem opowiada rozmówczyni widocznej od tyłu",
             "arthurozmowy-og-mama-portret-usmiech": "Portret mamy z lekkim uśmiechem, w błękitnej jedwabnej bluzce (jeden obraz dla 6 podstron)",
             "arthurozmowy-og-o-nas": "Mama z profilu z uwagą patrzy w bok, poza kadr"}
-FMT_HERO = "21:9 · 2100 × 900 (desk) / 4:3 · 1200 × 900 (tel)"
-FMT = "3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel)"
+FMT_HERO = "21:9 · 2880 × 1234 lub 2100 × 900 (komputer) / 4:3 · 1200 × 900 (telefon)"
+FMT_KWADRAT = "1:1 · 1200 × 1200"
+FMT = "4:3 · 1200 × 900"
 
 def prompt_z_kadru(kadr):
     m = re.search(r"prompt ([A-Z])\b", kadr or "")
@@ -391,21 +393,25 @@ for n, d in strony.items():
     miejsca += [(s_.get("etykieta") or s_.get("kotwica"), s_.get("zdjecie") or {}, False) for s_ in d.get("sekcje", [])]
     nr = 0
     for miejsce, z, hero in miejsca:
-        if not z.get("plik_desktop"):
+        if not z.get("plik"):
             continue
         nr += 1
-        plik = z["plik_desktop"].rsplit("/", 1)[-1].replace("-desk.webp", "")
-        if jest(z.get("plik_desktop")) and jest(z.get("plik_telefon")):
+        plik = z["plik"].rsplit("/", 1)[-1].replace("-desk.webp", "").replace(".webp", "")
+        kwadrat = miejsce == "wejście" and not hero
+        if kwadrat and z["plik"].endswith("-desk.webp"):
+            stan = "do zrobienia: kadr 1:1 (dziś tymczasowo 3:4, przycięty na stronie)"
+        elif jest(z.get("plik")) and (not hero or jest(z.get("plik_telefon"))):
             stan = "gotowe" + ("" if z.get("widoczne") else ", na stronie ukryte")
         else:
             pr = prompt_z_kadru(z.get("kadr"))
             stan = "do zrobienia" + (f", prompt {pr}" if pr else "")
-        wiersze.append((nazwa, nr, miejsce, plik, z.get("alt", ""), FMT_HERO if hero else FMT, stan, z.get("kadr", "")))
+        wiersze.append((nazwa, nr, miejsce, plik, z.get("alt", ""), FMT_HERO if hero else (FMT_KWADRAT if kwadrat else FMT), stan, z.get("kadr", "")))
 
 lg = ["# Zdjęcia witryny arthurozmowy.pl", "",
       "*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), "
       "każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. "
-      "Każde zdjęcie to dwa pliki o tej samej treści: `-desk.webp` i `-tel.webp` w `public/images/strony/`. "
+      "Zdjęcia są w `public/images/strony/`, jeden plik na komputer i telefon: wejście podstrony kwadrat 1:1, rozdział 4:3. "
+      "Wyjątek: wejście strony głównej ma kadr 21:9 (`-desk.webp`) i osobny kadr 4:3 na telefon (`-tel.webp`). "
       "Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Zero retuszu skóry.*", "",
       "| Strona | Nr | Miejsce | Plik | Alt | Format | Stan |", "|---|---|---|---|---|---|---|"]
 for nazwa, nr, miejsce, plik, alt, fmt, stan, _ in wiersze:

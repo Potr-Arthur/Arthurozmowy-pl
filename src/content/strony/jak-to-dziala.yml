@@ -35,8 +35,7 @@ wejscie:
     Jak działa, możesz sprawdzić już dziś, gdy sama porozmawiasz z Arthurem.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-jak-to-dziala-obejmuja-sie-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-jak-to-dziala-obejmuja-sie-tel.webp
+    plik: /images/strony/arthurozmowy-jak-to-dziala-obejmuja-sie-desk.webp
     alt: Mama i córka, przytulone policzkami, stoją przy oknie i z uśmiechem patrzą w tę samą stronę
     kadr: Decyzja z 5.11.2026 – gotowe zdjęcie z sesji, mama i córka obejmują się czule. Alt do sprawdzenia na gotowym zdjęciu.
   wezwania:
@@ -117,8 +116,7 @@ sekcje:
         transkrypcja: ""
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-jak-to-dziala-kalendarz-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-jak-to-dziala-kalendarz-tel.webp
+      plik: /images/strony/arthurozmowy-jak-to-dziala-kalendarz.webp
       alt: Mama o siwych włosach, w okularach, zapisuje coś w otwartym kalendarzu
       kadr: Decyzja z 5.11.2026, prompt B – dłonie mamy zapisują coś w otwartym kalendarzu tygodniowym (pismo nieczytelne), zwykły długopis, szałwiowy sweter.
 

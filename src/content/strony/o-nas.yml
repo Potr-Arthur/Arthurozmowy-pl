@@ -32,8 +32,7 @@ wejscie:
     Arthur powstał z naszej niezgody na ageizm, na degradację osób długo żyjących i na tworzenie dla nich odrębnej kategorii społecznej, która marginalizuje ich znaczenie i odbiera im poczucie wartości.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-o-nas-portret-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-o-nas-portret-tel.webp
+    plik: /images/strony/arthurozmowy-o-nas-portret-desk.webp
     alt: Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr
     kadr: Portret pewnej siebie, zwykłej kobiety, nie modelki. Bez retuszu skóry (Księga, rozdz. 17). Decyzja z 31.10.2026 – nowy portret mamy z sesji, inny niż mama-portret-usmiech, ujęcie w trzech czwartych, mama nie patrzy w obiektyw.
   wezwania:
@@ -69,8 +68,7 @@ sekcje:
       Ja, Piotr Jaworski, z wykształcenia pedagog specjalny, od ponad 30 lat zajmuję się tworzeniem produktów i usług.
     zdjecie:
       widoczne: false
-      plik_desktop: /images/strony/arthurozmowy-o-nas-metoda-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-o-nas-metoda-tel.webp
+      plik: /images/strony/arthurozmowy-o-nas-metoda.webp
       alt: "[Imię i nazwisko ekspertki] i Piotr Jaworski, autorzy metody rozmowy"
       kadr: Wspólne zdjęcie ekspertki i Piotra Jaworskiego (do wykonania). Prawdziwe zdjęcie, nie generowane i nie z Pexels, bo ma uwiarygodnić ekspertkę (Z1).
     # Zaślepka Z6: zdanie wejdzie na stronę dopiero po ustaleniu z ekspertką i po ocenie skutków dla ochrony danych.

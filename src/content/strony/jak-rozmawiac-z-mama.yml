@@ -34,8 +34,7 @@ wejscie:
     Arthurozmowy są dla mamy, więc bez jej zgody nie będą możliwe. Piszemy tu, co mama ma prawo wiedzieć, zanim zdecyduje się na nie, i jak jej o tym opowiedzieć – w sześciu krokach. Przy każdym kroku znajdziesz przykład, o którym możesz opowiedzieć po swojemu.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-jak-zachecic-mame-korzysci-desk.webp
-    plik_telefon: /images/strony/arthurozmowy-jak-zachecic-mame-korzysci-tel.webp
+    plik: /images/strony/arthurozmowy-jak-zachecic-mame-korzysci-desk.webp
     alt: "Rozmowa z mamą przy stole: córka o ciemnych włosach opowiada, a mama słucha jej z uwagą"
     kadr: Decyzja z 5.11.2026 – gotowe zdjęcie (córka opowiada przy herbacie, mama słucha) przechodzi z kroku 3 na wejście strony.
   wezwania:
@@ -92,8 +91,7 @@ sekcje:
       Mamo, on ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Myślę, że akurat to by Ci się spodobało.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-jak-rozmawiac-z-mama-telefon-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-jak-rozmawiac-z-mama-telefon-tel.webp
+      plik: /images/strony/arthurozmowy-jak-rozmawiac-z-mama-telefon.webp
       alt: Córka pokazuje mamie coś na ekranie telefonu, a mama patrzy z uśmiechem
       kadr: Decyzja z 5.11.2026, prompt F – córka nachyla się nad mamą i pokazuje jej coś na ekranie telefonu (ekran niewidoczny dla oglądającego), mama ciekawa i uśmiechnięta.
 

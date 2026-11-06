@@ -83,7 +83,7 @@ def teksty(o, sciezka=""):
         for i, v in enumerate(o):
             yield from teksty(v, f"{sciezka}[{i}]")
 
-POMIN = re.compile(r"(plik|plik_desktop|plik_telefon|adres|kotwica|kadr|warunek|typ|szablon|schemat|ton|wariant)(\[\d+\])?$")
+POMIN = re.compile(r"(plik|plik_telefon|adres|kotwica|kadr|warunek|typ|szablon|schemat|ton|wariant)(\[\d+\])?$")
 
 def widoczne_teksty(nazwa, d):
     for sc, tx in teksty(d):
@@ -301,18 +301,20 @@ for e, gdzie in etykiety.items():
 pliki_zdjec = {}
 for n, d in strony.items():
     zz = [d["wejscie"].get("zdjecie") or {}] + [s.get("zdjecie") or {} for s in d.get("sekcje") or []]
-    zz = [z for z in zz if z.get("plik_desktop")]
+    zz = [z for z in zz if z.get("plik")]
     oczekiwane = 4 if d["strona"]["szablon"] == "glowna" else (0 if d["strona"]["szablon"] == "blad" else 2)
     if len(zz) != oczekiwane:
         blad(f"{n}: {len(zz)} zdjęć, a powinno być {oczekiwane} (główna 4, podstrona 2, 404 zero)")
-    if oczekiwane and not (d["wejscie"].get("zdjecie") or {}).get("plik_desktop"):
+    if oczekiwane and not (d["wejscie"].get("zdjecie") or {}).get("plik"):
         blad(f"{n}: brak zdjęcia wejścia")
     for z in zz:
-        plik = z["plik_desktop"].rsplit("/", 1)[-1]
+        plik = z["plik"].rsplit("/", 1)[-1]
         if plik in pliki_zdjec:
             blad(f"{n}: plik {plik} jest też na stronie {pliki_zdjec[plik]} (każde miejsce ma własny plik)")
         pliki_zdjec[plik] = n
-        for pole in ("plik_desktop", "plik_telefon"):
+        for pole in ("plik", "plik_telefon"):
+            if pole == "plik_telefon" and not z.get(pole):
+                continue
             if not (ROOT / "public" / (z.get(pole) or "").lstrip("/")).is_file():
                 (blad if z.get("widoczne") else uwaga)(f"{n}: brak pliku {z.get(pole) or '(puste pole ' + pole + ')'} w public/")
     og = (d.get("seo") or {}).get("obraz_og") or {}

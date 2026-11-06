@@ -1,27 +1,30 @@
 ---
-// Zdjęcie w dwóch kadrach: -tel na telefonie, -desk na komputerze. Pokazujemy tylko przy widoczne: true.
-// Wymiary w atrybutach, żeby układ nie skakał przy ładowaniu.
+// Jeden plik na zdjęcie (wyjątek: HERO1 ma osobny kadr na telefon). Pokazujemy tylko przy widoczne: true.
+// Wymiary w atrybutach, żeby układ nie skakał przy ładowaniu. Kadr na ekranie robi CSS (object-fit).
+//   pelne   – HERO1 strony głównej, od krawędzi do krawędzi, dół przechodzi w tło
+//   kwadrat – HERO2 podstron, duży kwadrat obok H1
+//   sekcja  – zdjęcie w rozdziale, 4:5, przyklejone przy przewijaniu długiego tekstu
 interface Props {
-  zdjecie?: { widoczne?: boolean; plik_desktop?: string; plik_telefon?: string; alt?: string };
-  rodzaj: 'hero' | 'pion';
+  zdjecie?: { widoczne?: boolean; plik?: string; plik_telefon?: string; alt?: string };
+  rodzaj: 'pelne' | 'kwadrat' | 'sekcja';
   odRazu?: boolean;
 }
 const { zdjecie, rodzaj, odRazu = false } = Astro.props;
-const pokaz = !!(zdjecie && zdjecie.widoczne && zdjecie.plik_desktop);
-const desk = rodzaj === 'hero' ? { w: 2100, h: 900 } : { w: 900, h: 1200 };
+const pokaz = !!(zdjecie && zdjecie.widoczne && zdjecie.plik);
+const desk = rodzaj === 'pelne' ? { w: 2100, h: 900 } : rodzaj === 'kwadrat' ? { w: 1200, h: 1200 } : { w: 1200, h: 900 };
 const tel = { w: 1200, h: 900 };
-const ramka = rodzaj === 'hero' ? 'foto-ramka foto-ramka--hero' : 'foto-ramka foto-ramka--pion';
-const figura = rodzaj === 'hero' ? 'foto foto--hero foto--img' : 'foto foto--pion foto--img';
+const ramka = rodzaj === 'pelne' ? 'hero1__foto' : `foto-ramka foto-ramka--pion red__foto red__foto--${rodzaj}`;
+const figura = rodzaj === 'pelne' ? 'hero1__figura' : `foto foto--pion foto--img foto--${rodzaj}`;
 ---
 {pokaz && (
   <div class={ramka}>
     <figure class={figura}>
       <picture>
-        {zdjecie!.plik_telefon && (
+        {rodzaj === 'pelne' && zdjecie!.plik_telefon && (
           <source media="(max-width: 759px)" srcset={zdjecie!.plik_telefon} width={tel.w} height={tel.h} />
         )}
         <img
-          src={zdjecie!.plik_desktop}
+          src={zdjecie!.plik}
           alt={zdjecie!.alt ?? ''}
           width={desk.w}
           height={desk.h}

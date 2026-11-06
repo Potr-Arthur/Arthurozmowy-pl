@@ -30,8 +30,7 @@ wejscie:
     Adres mógł się zmienić albo zawierać literówkę. Jeśli szukasz konkretnej informacji, zajrzyj na stronę Pytania.
   zdjecie:
     widoczne: false
-    plik_desktop: ""
-    plik_telefon: ""
+    plik: ""
     alt: ""
     kadr: ""
   przycisk_powrotu:

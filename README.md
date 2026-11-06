@@ -21,7 +21,7 @@ src/content/
   pytania/baza.yml        21 pytań i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
   ustawienia/witryna.yml  menu i lista stron, wezwania, okienko rozmowy, pakiety, dane firmy, stopka
 src/content.config.ts     schemat kolekcji Astro 5 (szkic, do uruchomienia w WITRYNA)
-public/images/strony/     18 zdjęć stron, każde w wersji -desk.webp i -tel.webp (36 plików)
+public/images/strony/     18 zdjęć stron: wejście podstrony 1:1, rozdział 4:3, wejście strony głównej 21:9 + 4:3 na telefon
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
 public/images/marka/      logo (SVG i PNG) i ikony 192 i 512 px do manifestu
 public/favicon.ico        ikona strony (16, 32 i 48 px); obok apple-touch-icon.png (180 px)
@@ -101,11 +101,11 @@ Każda sekcja ma też `kotwica` (adres po #), `etykieta` (spis treści, puste po
 Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i jej odpowiednik w Notion („Zdjęcia witryny arthurozmowy.pl (18) i grafiki”).
 
 - **Zasada (5.11.2026):** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 18 zdjęć. Skrypt sprawdzający zgłasza błąd przy innej liczbie i przy tym samym pliku w dwóch miejscach.
-- **Nazwy plików:** `arthurozmowy-{strona}-{treść}-desk.webp` i `…-tel.webp` w `public/images/strony/`, obrazy do udostępniania `arthurozmowy-og-{strona}.jpg` (1200 × 630) w `public/images/og/`. Nowa treść zdjęcia dostaje nową nazwę; nazwa nigdy nie wraca do innej treści.
-- **Kadry:** hero na stronie głównej 21:9 (2100 × 900) i 4:3 na telefonie (1200 × 900); pozostałe zdjęcia 3:4 (900 × 1200) i 4:3 na telefonie.
+- **Nazwy plików:** `arthurozmowy-{strona}-{treść}.webp` w `public/images/strony/`, jeden plik na komputer i telefon (wyjątek: wejście strony głównej `-desk.webp` i `-tel.webp`); obrazy do udostępniania `arthurozmowy-og-{strona}.jpg` (1200 × 630) w `public/images/og/`. Nowa treść zdjęcia dostaje nową nazwę; nazwa nigdy nie wraca do innej treści.
+- **Kadry (6.11.2026):** wejście strony głównej 21:9 (najlepiej 2880 × 1234) i 4:3 na telefonie (1200 × 900); wejście podstrony kwadrat 1:1 (1200 × 1200); zdjęcie w rozdziale 4:3 (1200 × 900).
 - **Alt:** zaczyna się od tego, co naprawdę widać, i mówi słowami strony („mama”, „córka”, „opowiada”, „rozmowa”). Jedno zdanie, 50–125 znaków, bez słów zakazanych. Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Pod zdjęciami nie ma podpisów w stylu opinii.
 - **Zero retuszu skóry** na zdjęciach osób starszych (zasada nienegocjowalna).
-- **Stan (5.11.2026):** wszystkie 18 zdjęć, 3 obrazy do udostępniania, logo i ikony są w `public/`. Stan w `docs/lista-grafik.md` wynika z plików: zdjęcie jest „gotowe”, gdy na miejscu są oba pliki. Skrypt sprawdzający zgłasza błąd, gdy widoczne zdjęcie nie ma pliku.
+- **Stan (5.11.2026):** wszystkie 18 zdjęć, 3 obrazy do udostępniania, logo i ikony są w `public/`. Stan w `docs/lista-grafik.md` wynika z plików: zdjęcie jest „gotowe”, gdy plik jest na miejscu (wejście strony głównej: oba kadry). Skrypt sprawdzający zgłasza błąd, gdy widoczne zdjęcie nie ma pliku.
 - **Jedyne ukryte zdjęcie** to wspólne zdjęcie ekspertki z Piotrem na O nas (`widoczne: false`). To wersja robocza z modelką i nie może się pokazać nawet na adresie tymczasowym; zastąpi je prawdziwe zdjęcie razem z danymi ekspertki (Z1).
 - **Logo i ikony:** w nagłówku `/images/marka/arthur-logo.svg` (alt „Arthur”). W `<head>` każdej strony: `<link rel="icon" href="/favicon.ico" sizes="any">` i `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`; ikony 192 i 512 px są do pliku manifestu, jeśli WITRYNA go doda.
 

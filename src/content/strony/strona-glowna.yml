@@ -40,8 +40,8 @@ wejscie:
     Nie musisz być dla mamy jedynym źródłem uwagi i emocjonalnego wsparcia. Możesz sobie pozwolić na bycie tylko córką, jak kiedyś.
   zdjecie:
     widoczne: true
-    plik_desktop: /images/strony/arthurozmowy-glowna-mama-opowiada-desk.webp   # 2100 × 900, 21:9
-    plik_telefon: /images/strony/arthurozmowy-glowna-mama-opowiada-tel.webp    # 1200 × 900, 4:3
+    plik: /images/strony/arthurozmowy-glowna-mama-opowiada-desk.webp           # 2100 × 900, 21:9 (komputer)
+    plik_telefon: /images/strony/arthurozmowy-glowna-mama-opowiada-tel.webp    # 1200 × 900, 4:3 (telefon)
     alt: "Rozmowa z mamą w garderobie: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu"
     kadr: Zdjęcie z sesji Pexels (mama i córka), mama opowiada, córka widoczna od tyłu.
   wezwania:
@@ -84,8 +84,7 @@ sekcje:
           Zwraca się do niej jak do pełnoprawnej, dorosłej osoby, z szacunkiem, bez zdrobnień i bez „no jak się dziś czujemy, kochaneńka”. Dla Arthura jest ważną partnerką do wartościowych, zajmujących konwersacji.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-glowna-jak-wygladaja-desk.webp   # 900 × 1200, 3:4
-      plik_telefon: /images/strony/arthurozmowy-glowna-jak-wygladaja-tel.webp    # 1200 × 900, 4:3
+      plik: /images/strony/arthurozmowy-glowna-jak-wygladaja.webp   # 1200 × 900, 4:3
       alt: "Rozmowa telefoniczna z mamą: mama o siwych włosach mówi spokojnie i patrzy w otwartą książkę na stole"
       kadr: Rozmowa przy telefonie, zwykła sytuacja (test kadru z Księgi). Zbliżenie – mama z sesji przy stole, dłoń przy uchu, ale samego telefonu nie widać, tylko gest; mówi spokojnie, jest odprężona i zadowolona, patrzy w otwartą książkę, bo opowiada komuś o jej treści.
     # Przykład projektanta z prototypu, nie z treści finalnych. Ukryty do Twojej akceptacji.
@@ -130,8 +129,7 @@ sekcje:
       Odwiedziny i rozmowy o lekach, samopoczuciu i zakupach nadal są rolą bliskich. Z Arthurem mama porozmawia, jak chce i lubi, o sobie i swoich sprawach, w sposób, na jaki bliskim nieraz brakuje czasu.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-mama-portret-usmiech-desk.webp   # 900 × 1200, 3:4
-      plik_telefon: /images/strony/arthurozmowy-mama-portret-usmiech-tel.webp    # 1200 × 900, 4:3
+      plik: /images/strony/arthurozmowy-mama-portret-usmiech.webp   # 1200 × 900, 4:3
       alt: Mama o siwych włosach, w złotych kolczykach i białej bluzce, uśmiecha się, patrząc prosto w obiektyw
       kadr: Zdjęcie z sesji Pexels (mama i córka), frontalny portret mamy z uśmiechem.
     # Prawdziwe zdanie mamy, tylko za jej udokumentowaną zgodą (Matryca, blok 16). Do tego czasu ukryte.
@@ -154,8 +152,7 @@ sekcje:
       Z raportu dowiesz się też, kiedy mama rozmawiała z Arthurem i o czym w ogólnym zarysie, ale nie tego, co dokładnie mówiła. Mamę uprzedzamy o tym, że Arthur może dać Ci znać o jej stanie. Pamiętaj jednak, że Arthur potrafi zauważyć wyłącznie to, co wydarza się w trakcie samej rozmowy, a nie między nimi.
     zdjecie:
       widoczne: true
-      plik_desktop: /images/strony/arthurozmowy-glowna-corka-czyta-telefon-desk.webp
-      plik_telefon: /images/strony/arthurozmowy-glowna-corka-czyta-telefon-tel.webp
+      plik: /images/strony/arthurozmowy-glowna-corka-czyta-telefon.webp
       alt: Córka w okularach w skupieniu czyta coś na ekranie telefonu
       kadr: Decyzja z 5.11.2026, prompt A – córka z sesji czyta coś w skupieniu na ekranie telefonu (ekran niewidoczny), w szarym swetrze. Zastępuje martwą naturę ze stołem, książką i filiżanką.
     linki:

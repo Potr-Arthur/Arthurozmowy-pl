@@ -116,10 +116,12 @@ def wezwania(label="Wezwania (blok 12)"):
 
 def zdjecie(folder="strony", label="Zdjęcie (blok 13)"):
     return obj("zdjecie", label, hint=(
-        "Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}-desk.webp i -tel.webp. Bez retuszu skóry."), fields=[
+        "Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez retuszu skóry."), fields=[
         b("widoczne", "Pokaż zdjęcie", True),
-        img("plik_desktop", "Plik na komputer", folder, hint="Hero 21:9 (2100 × 900), pion 3:4 (900 × 1200), WebP."),
-        img("plik_telefon", "Plik na telefon", folder, hint="4:3 (1200 × 900), WebP."),
+        img("plik", "Plik", folder, hint=("Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). "
+            "Wejście strony głównej: 21:9 (2880 × 1234 albo 2100 × 900). WebP.")),
+        img("plik_telefon", "Plik na telefon (tylko wejście strony głównej)", folder,
+            hint="Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste."),
         s("alt", "Tekst alternatywny (alt)", hint=(
             "Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków. "
             "Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.")),
