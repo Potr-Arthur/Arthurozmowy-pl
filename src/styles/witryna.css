@@ -105,7 +105,6 @@ main a:not(.cta):not(.link-wew):hover{background:color-mix(in srgb,var(--akcent)
 
 /* ===== moduł: Voice aside (piasek, kursywa w kolorze rdzy, min. 24 px; rogi proste, prawy dolny zaokrąglony) ===== */
 .glos{background:var(--piasek);color:var(--rdza);font-style:italic;font-size:clamp(1.5rem,2.4vw,1.75rem);line-height:1.4;padding:clamp(24px,4vw,40px);padding-right:max(clamp(24px,4vw,40px),calc(var(--r-karta) * .7));border-radius:0 0 var(--r-karta) 0;display:grid;gap:.9rem}
-.glos a{font-style:normal}
 /* w rozdziale na piasku karta stoi na papierze, żeby nie zlała się z tłem (rdza na papierze 4,26:1) */
 .ton-2 .glos{background:var(--paper)}
 
@@ -253,6 +252,7 @@ a.link-wew:hover{background:color-mix(in srgb,var(--rdza) 86%,var(--onyks))}
 .stale .wezwanie{justify-items:stretch}
 .stale .cta{width:100%}
 @media (min-width:760px){.stale{display:none}}
+body:has(.menu[open]) .stale{display:none}
 
 /* ===== stopka: trzy CTA · lista stron · statystyki · dane firmy z e-mailem · linki prawne ===== */
 .stopka{padding-bottom:clamp(40px,6vw,64px)}
@@ -283,6 +283,8 @@ a.link-wew:hover{background:color-mix(in srgb,var(--rdza) 86%,var(--onyks))}
 .okno__termin{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 .okno input:not([type=radio]),.okno textarea{font:inherit;width:100%;min-width:0;padding:12px;border:1px solid var(--linia);background:var(--bialy);color:var(--onyks);border-radius:6px;min-height:48px}
 .okno textarea{resize:vertical}
-.okno input:disabled,.okno textarea:disabled{opacity:.75}
+/* formularz nieaktywny: pola przygaszone, przycisk półprzezroczysty */
+.okno input:disabled,.okno textarea:disabled{background:color-mix(in srgb,var(--piasek) 45%,var(--paper));border-style:dashed;cursor:not-allowed}
+.okno .cta--nieaktywny{opacity:.55}
 .okno__zgoda{font-size:.95rem;color:var(--fg2)}
 .okno .cta{justify-self:start}
