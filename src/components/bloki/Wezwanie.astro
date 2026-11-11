@@ -1,0 +1,23 @@
+---
+// Moduł „Przycisk CTA”: tekst na sky, rogi 30. Rodzaj wybiera przycisk z Ustawień:
+//   glowne   – otwiera okienko „Porozmawiaj z Arthurem” (formularz nieaktywny do Z6),
+//   napisz   – otwiera okienko „Napisz do nas” (formularz nieaktywny do Z6),
+//   zakupowe – prowadzi do zamówienia (jeszcze go nie ma, więc przycisk jest nieaktywny).
+// objasnienie: true pokazuje pod przyciskiem zdanie wezwania.glowne.dopisek. Bez numeru Arthura i bez linku tel:.
+import { inline, dziala } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { rodzaj: 'glowne' | 'zakupowe' | 'napisz'; objasnienie?: boolean }; k: Kontekst; klasa?: string }
+const { b, k, klasa = '' } = Astro.props;
+const w = k.ust.wezwania;
+const zakup = w.zakupowe;
+const zakupCzynny = dziala(zakup.adres);
+const dopisek = b.objasnienie && b.rodzaj === 'glowne' ? w.glowne.dopisek : null;
+---
+<div class={`wezwanie ${klasa}`.trim()}>
+  {b.rodzaj === 'glowne' && <button type="button" class="cta" data-okno="okno-rozmowy">{w.glowne.przycisk}</button>}
+  {b.rodzaj === 'napisz' && <button type="button" class="cta" data-okno="okno-kontaktu">{w.napisz.przycisk}</button>}
+  {b.rodzaj === 'zakupowe' && (zakupCzynny
+    ? <a class="cta" href={zakup.adres}>{zakup.przycisk}</a>
+    : <button type="button" class="cta cta--nieaktywny" aria-disabled="true">{zakup.przycisk}</button>)}
+  {dopisek && <p class="wezwanie__objasnienie" set:html={inline(dopisek, k.ust.firma)} />}
+</div>

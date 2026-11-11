@@ -5,8 +5,8 @@
       "@type": "WebPage",
       "@id": "https://arthurozmowy.pl/#strona",
       "url": "https://arthurozmowy.pl/",
-      "name": "Arthurozmowy – rozmowy telefoniczne z Twoją mamą o jej sprawach",
-      "description": "Arthurozmowy to rozmowy telefoniczne z Twoją mamą kilka razy w tygodniu, ciekawe i pełne szacunku. Arthur nie jest człowiekiem i nigdy go nie udaje.",
+      "name": "Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach",
+      "description": "Arthur dzwoni do Twojej mamy kilka razy w tygodniu i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest próbny i bezpłatny.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-11",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -62,7 +62,7 @@
       "@id": "https://arthurozmowy.pl/#usluga",
       "name": "arthurozmowy",
       "serviceType": "Rozmowy telefoniczne z programem AI",
-      "description": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.",
+      "description": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.",
       "provider": {
         "@id": "https://arthurozmowy.pl/#organizacja"
       },
@@ -81,7 +81,7 @@
             "unitCode": "MON",
             "valueAddedTaxIncluded": true
           },
-          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "url": "https://arthurozmowy.pl/jak-korzystac#cena",
           "seller": {
             "@id": "https://arthurozmowy.pl/#organizacja"
           }
@@ -98,7 +98,7 @@
             "unitCode": "MON",
             "valueAddedTaxIncluded": true
           },
-          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "url": "https://arthurozmowy.pl/jak-korzystac#cena",
           "seller": {
             "@id": "https://arthurozmowy.pl/#organizacja"
           }
@@ -115,7 +115,7 @@
             "unitCode": "MON",
             "valueAddedTaxIncluded": true
           },
-          "url": "https://arthurozmowy.pl/jak-skorzystac#pakiety-i-platnosci",
+          "url": "https://arthurozmowy.pl/jak-korzystac#cena",
           "seller": {
             "@id": "https://arthurozmowy.pl/#organizacja"
           }

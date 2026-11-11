@@ -1,0 +1,25 @@
+---
+// Lista bloków wejścia albo rozdziału w kolejności z pliku treści. Jeden typ bloku to jeden moduł makiety V2.
+import Tekst from './bloki/Tekst.astro';
+import Glos from './bloki/Glos.astro';
+import Lista from './bloki/Lista.astro';
+import Zasady from './bloki/Zasady.astro';
+import Cytat from './bloki/Cytat.astro';
+import Cennik from './bloki/Cennik.astro';
+import Link from './bloki/Link.astro';
+import Wezwanie from './bloki/Wezwanie.astro';
+import Pytania from './bloki/Pytania.astro';
+import Faq from './bloki/Faq.astro';
+import type { Kontekst } from '../lib/kontekst';
+
+const MODULY: Record<string, any> = {
+  tekst: Tekst, glos: Glos, lista: Lista, zasady: Zasady, cytat: Cytat,
+  cennik: Cennik, link: Link, wezwanie: Wezwanie, pytania: Pytania, faq: Faq,
+};
+interface Props { bloki?: any[]; k: Kontekst }
+const { bloki = [], k } = Astro.props;
+---
+{bloki.map((b) => {
+  const Modul = MODULY[b.typ];
+  return Modul ? <Modul b={b} k={k} /> : null;
+})}

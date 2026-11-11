@@ -1,0 +1,62 @@
+---
+// Belka górna, od lewej: logo · Menu · Cena · Kontakt · Zamów online · Panel klienta (teksty i adresy: Ustawienia → naglowek).
+// Na telefonie w belce zostają logo i Menu, a pozostałe pozycje stoją na górze panelu menu.
+// Menu: grupa „Na tej stronie” (wejście i rozdziały z etykietą) i grupa „Pozostałe strony” (osiem stron z nawigacja.strony
+// jako przyciski „Link wewnętrzny”; oglądana strona oznaczona i nieklikalna).
+import Link from './bloki/Link.astro';
+import { inline, dziala } from '../lib/tekst';
+import type { Kontekst } from '../lib/kontekst';
+interface Props { ust: any; adres: string; rozdzialy: { kotwica: string; etykieta: string }[] }
+const { ust, adres, rozdzialy } = Astro.props;
+const n = ust.naglowek;
+const k: Kontekst = { ust, baza: new Map(), adres };
+const zakup = ust.wezwania.zakupowe;
+const zakupCzynny = dziala(zakup.adres);
+const panelCzynny = dziala(ust.firma.panel_klienta);
+---
+<header class="belka">
+  <div class="wrap belka__wnetrze">
+    <a class="logo" href="/"><img src={ust.marka.logo.plik} alt={ust.marka.logo.alt} width="92" height="34" /></a>
+    <details class="menu" id="menu">
+      <summary class="menu__przycisk">{n.menu}</summary>
+      <div class="menu__panel">
+        <div class="menu__belka">
+          <ul class="menu__linki">
+            {n.linki.map((l: any) => <li><a href={l.adres}>{l.tekst}</a></li>)}
+          </ul>
+          {zakupCzynny
+            ? <a class="cta cta--male" href={zakup.adres}>{n.zakup}</a>
+            : <button type="button" class="cta cta--male cta--nieaktywny" aria-disabled="true">{n.zakup}</button>}
+          {panelCzynny
+            ? <a class="belka__panel" href={ust.firma.panel_klienta}>{n.panel_klienta}</a>
+            : <span class="belka__panel nieaktywny" aria-disabled="true">{n.panel_klienta}</span>}
+        </div>
+        {rozdzialy.length > 0 && (
+          <nav class="menu__grupa" aria-label={n.grupa_rozdzialy}>
+            <p class="menu__etykieta">{n.grupa_rozdzialy}</p>
+            <ul class="menu__rozdzialy">
+              {rozdzialy.map((r) => <li><a href={`#${r.kotwica}`} set:html={inline(r.etykieta)} /></li>)}
+            </ul>
+          </nav>
+        )}
+        <nav class="menu__grupa" aria-label={n.grupa_strony}>
+          <p class="menu__etykieta">{n.grupa_strony}</p>
+          <ul class="menu__strony">
+            {ust.nawigacja.strony.map((s: any) => <li><Link b={{ tekst: s.tekst, adres: s.adres }} k={k} /></li>)}
+          </ul>
+        </nav>
+      </div>
+    </details>
+    <nav class="belka__linki" aria-label={n.menu}>
+      {n.linki.map((l: any) => <a href={l.adres}>{l.tekst}</a>)}
+    </nav>
+    <div class="belka__prawo">
+      {zakupCzynny
+        ? <a class="cta cta--male" href={zakup.adres}>{n.zakup}</a>
+        : <button type="button" class="cta cta--male cta--nieaktywny" aria-disabled="true">{n.zakup}</button>}
+      {panelCzynny
+        ? <a class="belka__panel" href={ust.firma.panel_klienta}>{n.panel_klienta}</a>
+        : <span class="belka__panel nieaktywny" aria-disabled="true">{n.panel_klienta}</span>}
+    </div>
+  </div>
+</header>

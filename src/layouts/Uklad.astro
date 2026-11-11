@@ -1,8 +1,12 @@
 ---
-// Układ każdej strony: <head> (SEO, obraz do udostępniania, ikony, JSON-LD), nagłówek z menu,
-// stopka i okienko „Porozmawiaj z Arthurem”.
+// Układ każdej strony: <head> (SEO, obraz do udostępniania, ikony, JSON-LD), belka górna z menu,
+// treść, stopka, dwa okienka (nieaktywne do Z6) i pasek „Porozmawiaj z Arthurem” na dole ekranu telefonu.
 import '../styles/witryna.css';
-import { inline, NIEISTNIEJACE } from '../lib/tekst';
+import Belka from '../components/Belka.astro';
+import Stopka from '../components/Stopka.astro';
+import Okna from '../components/Okna.astro';
+import Wezwanie from '../components/bloki/Wezwanie.astro';
+import type { Kontekst } from '../lib/kontekst';
 
 interface Props {
   tytul: string;
@@ -24,9 +28,7 @@ const site = Astro.site ?? new URL(ust.marka.domena);
 const kanoniczny = new URL(adres === '/' ? '/' : adres, ust.marka.domena).href;
 const urlStrony = new URL(adres, site).href;
 const ogObraz = og && og.plik ? new URL(og.plik, site).href : undefined;
-const okno = ust.okno_rozmowy;
-const zakup = ust.wezwania.zakupowe;
-const zakupAktywny = !NIEISTNIEJACE.includes(zakup.adres);
+const k: Kontekst = { ust, baza: new Map(), adres };
 ---
 <!doctype html>
 <html lang="pl">
@@ -54,111 +56,61 @@ const zakupAktywny = !NIEISTNIEJACE.includes(zakup.adres);
     <meta name="twitter:card" content={ogObraz ? 'summary_large_image' : 'summary'} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </head>
   <body>
     <a class="skip" href="#tresc">Przejdź do treści</a>
-    <header class="naglowek">
-      <div class="wrap">
-        <a class="logo" href="/"><img src={ust.marka.logo.plik} alt={ust.marka.logo.alt} width="92" height="34" /></a>
-        <span class="naglowek__panel nieaktywny" title="Panel klienta: osobna aplikacja, w przygotowaniu">{ust.naglowek.panel_klienta}</span>
-        {ust.naglowek.przycisk_staly && (
-          <div class="stale">
-            <button type="button" class="przycisk" data-okno>{ust.wezwania.glowne.przycisk}</button>
-          </div>
-        )}
-        <details class="menu" id="menu">
-          <summary>{ust.naglowek.menu}</summary>
-          <nav class="menu__panel" aria-label={ust.naglowek.menu}>
-            {rozdzialy.length > 0 && (
-              <div class="menu__grupa">
-                <p>{ust.naglowek.grupa_rozdzialy}</p>
-                <ul>{rozdzialy.map((r) => <li><a href={`#${r.kotwica}`} set:html={inline(r.etykieta)} /></li>)}</ul>
-              </div>
-            )}
-            <div class="menu__grupa">
-              <p>{ust.naglowek.grupa_strony}</p>
-              <ul>
-                {ust.nawigacja.strony.map((s: any) => (
-                  <li><a href={s.adres} aria-current={s.adres === adres ? 'page' : undefined}>{s.tekst}</a></li>
-                ))}
-              </ul>
-            </div>
-            <div class="menu__dol">
-              {zakupAktywny
-                ? <a class="przycisk" href={zakup.adres}>{zakup.przycisk}</a>
-                : <button type="button" class="przycisk przycisk--nieaktywny" aria-disabled="true" title="Zamówienie online jest w przygotowaniu">{zakup.przycisk}</button>}
-              <span class="nieaktywny" title="Panel klienta: osobna aplikacja, w przygotowaniu">{ust.naglowek.panel_klienta}</span>
-            </div>
-          </nav>
-        </details>
-      </div>
-    </header>
+    <Belka ust={ust} adres={adres} rozdzialy={rozdzialy} />
 
     <main id="tresc">
       <slot />
     </main>
 
-    <footer class={`sekcja ton-3 stopka prev-${stopkaPrev}`}>
-      <div class="wrap k2 k2--asym-odw">
-        <div style="display:grid;gap:14px;align-content:start">
-          {ust.stopka.wezwanie_glowne && (
-            <div class="wezwania"><button type="button" class="przycisk" data-okno>{ust.wezwania.glowne.przycisk}</button></div>
-          )}
-          <p class="jawnosc" set:html={inline(ust.stopka.jawnosc)} />
-          <p class="male">{ust.stopka.kontakt_etykieta} <a href={`mailto:${ust.firma.email}`}>{ust.firma.email}</a></p>
-          <p class="male" set:html={inline(ust.stopka.prywatnosc)} />
-          <p class="male" set:html={inline(ust.stopka.prawa)} />
-        </div>
-        <nav aria-label="Strony witryny">
-          <ul>
-            {ust.nawigacja.strony.map((s: any) => <li><a href={s.adres}>{s.tekst}</a></li>)}
-            <li>{zakupAktywny ? <a href={zakup.adres}>{zakup.przycisk}</a> : <span class="nieaktywny" title="Zamówienie online jest w przygotowaniu">{zakup.przycisk}</span>}</li>
-            <li><span class="nieaktywny" title="Panel klienta: osobna aplikacja, w przygotowaniu">{ust.naglowek.panel_klienta}</span></li>
-            {ust.stopka.linki_prawne.map((l: any) => <li><a href={l.adres}>{l.tekst}</a></li>)}
-          </ul>
-        </nav>
-      </div>
-    </footer>
+    <Stopka ust={ust} adres={adres} prev={stopkaPrev} />
 
-    <dialog class="okno" id="okno-rozmowy" aria-labelledby="okno-tytul">
-      <form class="okno__karta" method="dialog">
-        <h2 id="okno-tytul">{okno.tytul}</h2>
-        <p set:html={inline(okno.wstep)} />
-        <p class="okno__info">Formularz jeszcze nie działa. Włączymy go po przygotowaniu polityki prywatności i oceny skutków dla ochrony danych.</p>
-        <label>{okno.pole_numer}<input type="tel" inputmode="tel" autocomplete="tel" disabled /></label>
-        <fieldset disabled>
-          <legend>{okno.pytanie_kiedy}</legend>
-          <label class="wybor"><input type="radio" name="kiedy" value="teraz" checked /> {okno.opcja_teraz}</label>
-          <label class="wybor"><input type="radio" name="kiedy" value="termin" /> {okno.opcja_termin}</label>
-          <label>{okno.pole_data}<input type="date" /></label>
-          <label>{okno.pole_godzina}<input type="time" /></label>
-        </fieldset>
-        <p class="male" set:html={inline(okno.zgoda)} />
-        <button type="button" class="przycisk przycisk--nieaktywny" aria-disabled="true">{okno.przycisk}</button>
-        <button type="submit" class="okno__zamknij">Zamknij</button>
-      </form>
-    </dialog>
+    {ust.naglowek.przycisk_staly && (
+      <div class="stale">
+        <Wezwanie b={{ rodzaj: 'glowne' }} k={k} />
+      </div>
+    )}
+
+    <Okna ust={ust} />
 
     <script>
-      const okno = document.getElementById('okno-rozmowy') as HTMLDialogElement | null;
       const menu = document.getElementById('menu') as HTMLDetailsElement | null;
+
+      // przyciski CTA otwierają swoje okienko (data-okno = id okienka)
       document.addEventListener('click', (e) => {
-        const cel = (e.target as HTMLElement).closest('[data-okno]');
-        if (cel && okno) {
-          e.preventDefault();
-          if (menu) menu.open = false;
-          okno.showModal();
+        const cel = e.target as HTMLElement;
+        const przycisk = cel.closest('[data-okno]') as HTMLElement | null;
+        if (przycisk) {
+          const okno = document.getElementById(przycisk.dataset.okno || '') as HTMLDialogElement | null;
+          if (okno) {
+            e.preventDefault();
+            if (menu) menu.open = false;
+            okno.showModal();
+          }
           return;
         }
-        if (okno && e.target === okno) okno.close();
-        if (menu && menu.open && (e.target as HTMLElement).closest('.menu a')) menu.open = false;
-        if (menu && menu.open && !(e.target as HTMLElement).closest('#menu')) menu.open = false;
+        // kliknięcie w tło okienka je zamyka
+        if (cel instanceof HTMLDialogElement && cel.open) cel.close();
+        // menu: zamknij po wyborze pozycji albo po kliknięciu poza nim
+        if (menu && menu.open && (cel.closest('.menu__panel a') || !cel.closest('#menu'))) menu.open = false;
       });
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && menu) menu.open = false;
+        if (e.key === 'Escape' && menu && menu.open) menu.open = false;
       });
+
+      // adres z kotwicą pytania (/pytania#id) otwiera kartę pytania
+      const otworzPytanie = () => {
+        const id = decodeURIComponent(location.hash.slice(1));
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (el instanceof HTMLDetailsElement) el.open = true;
+      };
+      otworzPytanie();
+      window.addEventListener('hashchange', otworzPytanie);
     </script>
   </body>
 </html>

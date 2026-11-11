@@ -1,0 +1,14 @@
+---
+// Moduł „Link wewnętrzny”: biały tekst na rdzy, rogi 30. Tekst to zawsze nazwa strony albo rozdziału.
+// Nieaktywny, gdy aktywny: false albo strony jeszcze nie ma. Link do oglądanej strony jest oznaczony i nieklikalny
+// (tylko gdy prowadzi do całej strony, bez kotwicy).
+import { inline, dziala } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { tekst: string; adres?: string; aktywny?: boolean }; k: Kontekst }
+const { b, k } = Astro.props;
+const biezaca = !!b.adres && !b.adres.includes('#') && b.adres === k.adres;
+const czynny = b.aktywny !== false && dziala(b.adres) && !biezaca;
+---
+{czynny && <a class="link-wew" href={b.adres} set:html={inline(b.tekst)} />}
+{biezaca && <span class="link-wew link-wew--biezaca" aria-current="page" set:html={inline(b.tekst)} />}
+{!czynny && !biezaca && <span class="link-wew link-wew--nieaktywny" aria-disabled="true" set:html={inline(b.tekst)} />}

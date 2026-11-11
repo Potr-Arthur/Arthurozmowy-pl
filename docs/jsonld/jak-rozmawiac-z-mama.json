@@ -5,8 +5,8 @@
       "@type": "WebPage",
       "@id": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#strona",
       "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama",
-      "name": "Jak rozmawiać z mamą o Arthurze – rozmowa krok po kroku",
-      "description": "Jak rozmawiać z mamą o arthurozmowach: kim jest Arthur, co da jej rozmowa z nim, co będziesz wiedziała i dlaczego decydujecie razem.",
+      "name": "Jak rozmawiać z mamą o Arthurze – siedem kroków",
+      "description": "Jak powiedzieć mamie o arthurozmowach: kim jest Arthur, czym ją zaciekawi, co znajdziesz w raporcie i dlaczego to ona decyduje. Siedem kroków i przykłady.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-11",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -22,14 +22,14 @@
     },
     {
       "@type": "HowTo",
-      "name": "Jak rozmawiać z mamą o Arthurze, żeby nie skończyło się na „nie potrzebuję niańki”.",
-      "description": "Arthurozmowy są dla mamy, więc bez jej zgody nie będą możliwe. Piszemy tu, co mama ma prawo wiedzieć, zanim zdecyduje się na nie, i jak jej o tym opowiedzieć – w sześciu krokach. Przy każdym kroku znajdziesz przykład, o którym możesz opowiedzieć po swojemu.",
+      "name": "Jak rozmawiać z mamą o Arthurze, by doceniła korzyści tej usługi.",
+      "description": "Arthurozmowy są dla mamy, więc bez jej zgody nie będą możliwe. Piszemy tu, co mama ma prawo wiedzieć, zanim zdecyduje się na nie, i jak jej o tym opowiedzieć – w siedmiu krokach. Przy każdym kroku znajdziesz przykład, o którym możesz opowiedzieć po swojemu.",
       "inLanguage": "pl-PL",
       "step": [
         {
           "@type": "HowToStep",
           "position": 1,
-          "name": "Przetestuj jakość Arthura w krótkiej rozmowie.",
+          "name": "Sama oceń jakość Arthura w krótkiej rozmowie.",
           "text": "Porozmawiaj z Arthurem o swoich sprawach, tak jak rozmawiać będzie z nim mama. Zostaw numer, a Arthur zadzwoni do Ciebie od razu albo o wybranej porze. Oceń, jak mówi, jak słucha i czy rozmowa z nim jest ciekawa. Dzięki temu opowiesz mamie o Arthurze z własnego doświadczenia.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#porozmawiaj-z-arthurem"
         },
@@ -44,7 +44,7 @@
           "@type": "HowToStep",
           "position": 3,
           "name": "Nie mów jej „to dla twojego dobra”. Powiedz „to cię zaciekawi”.",
-          "text": "Arthur będzie dzwonił po to, żeby rozmawiać z mamą o niej samej: o książce, którą czyta, o ogrodzie, o pracy, na której zna się najlepiej, i o wydarzeniach, które ją zajmują. Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako pełnowymiarową, wartościową osobę. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc.",
+          "text": "Arthur będzie dzwonił po to, żeby rozmawiać z mamą o niej samej: o książce, którą czyta, o ogrodzie, o pracy, na której zna się najlepiej, i o wydarzeniach, które ją zajmują. Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako dorosłą osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#zaciekaw-mame"
         },
         {
@@ -65,8 +65,15 @@
           "@type": "HowToStep",
           "position": 6,
           "name": "Arthur nigdy nie poprosi o pieniądze ani o dane. Kto prosi, nie jest Arthurem.",
-          "text": "Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.",
+          "text": "Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy pod jego imieniem. Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#uprzedz-o-oszustach"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Jeśli mama ma wątpliwości, omów je, ale uszanuj jej odmowę.",
+          "text": "Jeśli mama powie „nie”, uszanuj to, bo bez jej zgody rozmowy z Arthurem nie będą możliwe.",
+          "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#wysluchaj-watpliwosci"
         }
       ]
     },
@@ -76,7 +83,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Strona główna",
+          "name": "Jej sprawy",
           "item": "https://arthurozmowy.pl/"
         },
         {

@@ -1,0 +1,48 @@
+---
+// Dwa okienka: „Porozmawiaj z Arthurem” (okno_rozmowy) i „Napisz do nas” (okno_kontaktu). Teksty z Ustawień.
+// Oba formularze są nieaktywne (pola i przycisk wyłączone, nic nie jest wysyłane) do oceny skutków
+// dla ochrony danych (Z6), polityki prywatności i decyzji, dokąd trafiają dane.
+import { inline } from '../lib/tekst';
+interface Props { ust: any }
+const { ust } = Astro.props;
+const r = ust.okno_rozmowy;
+const c = ust.okno_kontaktu;
+const f = ust.firma;
+---
+<dialog class="okno" id="okno-rozmowy" aria-labelledby="okno-rozmowy-tytul">
+  <form class="okno__karta" method="dialog">
+    <button type="submit" class="okno__zamknij" aria-label="Zamknij">×</button>
+    <h2 id="okno-rozmowy-tytul">{r.tytul}</h2>
+    <p set:html={inline(r.wstep, f)} />
+    <fieldset disabled>
+      <label>{r.pole_numer}<input type="tel" inputmode="tel" autocomplete="tel" name="numer" /></label>
+      <fieldset class="okno__kiedy">
+        <legend>{r.pytanie_kiedy}</legend>
+        <label class="wybor"><input type="radio" name="kiedy" value="teraz" checked /> {r.opcja_teraz}</label>
+        <label class="wybor"><input type="radio" name="kiedy" value="termin" /> {r.opcja_termin}</label>
+        <div class="okno__termin">
+          <label>{r.pole_data}<input type="date" name="data" /></label>
+          <label>{r.pole_godzina}<input type="time" name="godzina" /></label>
+        </div>
+      </fieldset>
+    </fieldset>
+    <p class="okno__zgoda" set:html={inline(r.zgoda, f)} />
+    <button type="button" class="cta cta--nieaktywny" aria-disabled="true">{r.przycisk}</button>
+  </form>
+</dialog>
+
+<dialog class="okno" id="okno-kontaktu" aria-labelledby="okno-kontaktu-tytul">
+  <form class="okno__karta" method="dialog">
+    <button type="submit" class="okno__zamknij" aria-label="Zamknij">×</button>
+    <h2 id="okno-kontaktu-tytul">{c.tytul}</h2>
+    <p set:html={inline(c.wstep, f)} />
+    <fieldset disabled>
+      <label>{c.pole_imie}<input type="text" autocomplete="given-name" name="imie" /></label>
+      <label>{c.pole_email}<input type="email" autocomplete="email" name="email" /></label>
+      <label>{c.pole_telefon}<input type="tel" inputmode="tel" autocomplete="tel" name="telefon" /></label>
+      <label>{c.pole_wiadomosc}<textarea name="wiadomosc" rows="5"></textarea></label>
+    </fieldset>
+    <p class="okno__zgoda" set:html={inline(c.zgoda, f)} />
+    <button type="button" class="cta cta--nieaktywny" aria-disabled="true">{c.przycisk}</button>
+  </form>
+</dialog>

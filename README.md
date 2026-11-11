@@ -2,117 +2,109 @@
 
 ## Budowa witryny (WITRYNA)
 
-- **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`; typy sekcji renderuje `Sekcja.astro`, wygląd jest w `src/styles/witryna.css` (prototyp „Matryca arthurozmowy”).
+- **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. **Uwaga (11.11.2026):** treści są już w modelu blokowym makiety V2, a szablony (`Strona.astro`, `Sekcja.astro`, `Wejscie.astro`, `Wezwania.astro`, `Uklad.astro`) trzeba do niego przepisać według `claude/Przekazanie_WITRYNA.md`. Do tego czasu `npm run build` się nie powiedzie.
 - **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`), Astro.
 - **Adres tymczasowy:** każda strona ma `noindex`, nagłówek `X-Robots-Tag` i `robots.txt` blokujący roboty. Przy starcie na arthurozmowy.pl: zmienna `PUBLIKACJA=tak` na Netlify (włącza docelowy `narzedzia/robots-docelowy.txt` i indeksowanie) i usunięcie bloku `X-Robots-Tag` z `netlify.toml`.
-- **Formularze** są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin` i `/prywatnosc` to strony „w przygotowaniu”.
+- **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to strony „w przygotowaniu”.
 - **Redakcja `/admin`** (Sveltia CMS): logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium, uprawnienie Contents: read and write).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
-Ta paczka to baza dla pod-projektu WITRYNA. Zawiera wszystkie teksty witryny w stanie z 4.11.2026, rozpisane na pliki stron i przypisane do pól, które redaktor zmienia w Sveltia CMS. Każde pole odpowiada blokowi z Matrycy (`claude/Matryca_WITRYNA_v1.md`). Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`.
+Treści w tym repozytorium są w stanie z 11.11.2026 (makieta V2). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
 
-## Co jest w paczce
+## Co jest w repozytorium (część treści)
 
 ```
 src/content/
-  strony/                 9 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, wezwania)
-    strona-glowna.yml  jak-to-dziala.yml  czego-nie-obiecujemy.yml  pytania.yml
-    jak-skorzystac.yml  jak-rozmawiac-z-mama.yml  o-nas.yml  kontakt.yml  404.yml
+  strony/                 9 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
+    strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
+    jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
   pytania/baza.yml        21 pytań i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
-  ustawienia/witryna.yml  menu i lista stron, wezwania, okienko rozmowy, pakiety, dane firmy, stopka
-src/content.config.ts     schemat kolekcji Astro 5 (szkic, do uruchomienia w WITRYNA)
-public/images/strony/     18 zdjęć stron: wejście podstrony 1:1, rozdział 4:3, wejście strony głównej 21:9 + 4:3 na telefon
+  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka
+src/content.config.ts     schemat kolekcji Astro 5
+public/images/strony/     18 zdjęć stron (19 plików: wejście strony głównej ma dwa kadry)
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
 public/images/marka/      logo (SVG i PNG) i ikony 192 i 512 px do manifestu
-public/favicon.ico        ikona strony (16, 32 i 48 px); obok apple-touch-icon.png (180 px)
-public/admin/index.html   panel redakcji Sveltia CMS (adres /admin)
 public/admin/config.yml   konfiguracja Sveltia, generowana skryptem
 public/llms.txt           streszczenie witryny dla modeli AI (generowane)
 public/llms-full.txt      pełne teksty widocznych stron bez zaślepek (generowane)
-public/robots.txt         docelowy dostęp dla wyszukiwarek i robotów AI, bez /admin/
 narzedzia/                trzy skrypty: konfiguracja CMS, sprawdzenie treści, pliki pochodne
-docs/podglad/             tekst każdej strony do czytania, z nazwą pola CMS przy każdym elemencie
-docs/mapa-pol.md          mapa: strona → sekcja → blok Matrycy → pola w CMS
-docs/lista-grafik.md      pliki graficzne: nazwa, alt, format, miejsce, treść zdjęcia, stan
-docs/jsonld/              wzory danych strukturalnych dla każdej strony
+docs/podglad/             tekst każdej strony w kolejności wyświetlania, z nazwą modułu i pola CMS
+docs/mapa-pol.md          mapa: strona → rozdział → bloki → pola w CMS
+docs/lista-grafik.md      pliki graficzne: miejsce, nazwa, alt, format, stan
+docs/jsonld/              dane strukturalne każdej strony
 ```
 
-Najprościej zacząć od `docs/podglad/`: tam widać każdą stronę tak, jak ją przeczyta córka, a przy każdym zdaniu stoi ścieżka pola, np. `sekcje[3].h2`.
+Najprościej zacząć od `docs/podglad/`: tam widać każdą stronę tak, jak ją przeczyta córka, a przy każdym elemencie stoi nazwa modułu i ścieżka pola, np. `sekcje[3].bloki[1]`.
 
-## Nawigacja i nazwy (decyzje z 4.11.2026)
+## Model treści (makieta V2)
 
-- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w linkach „więcej” i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
-- **Dwie warstwy.** Strona główna prowadzi do decyzji. Podstrona służy do sprawdzenia (Jak to działa, Czego nie obiecujemy, Pytania, O nas) albo do działania (Jak skorzystać, Jak rozmawiać z mamą, Kontakt).
-- **Nagłówek:** logo, mały link „Panel klienta”, przycisk „Porozmawiaj z Arthurem” i przycisk „Menu”. Menu otwiera panel z grupami „Na tej stronie” (rozdziały oglądanej strony) i „Strony” (`nawigacja.strony`), a pod nimi „Umów mamie pierwszą arthurozmowę” i „Panel klienta”. Tak samo na telefonie i na komputerze; na telefonie przycisk wezwania jest przyklejony do dołu ekranu.
-- **Stopka:** te same strony, zakup, Panel klienta i linki prawne.
-- **„Porozmawiaj z Arthurem”** otwiera okienko z formularzem: numer telefonu oraz wybór „teraz” albo dzień i godzina. Na przyciskach nie ma numeru Arthura ani osobnego wezwania „Nie możesz teraz rozmawiać?”. Formularz włączamy po ocenie skutków dla ochrony danych (Z6), z polityką prywatności i decyzją, dokąd trafia numer i czy próbna rozmowa jest nagrywana.
-- **Pytania na podstronach:** blok „Najczęstsze pytania” nie wchodzi do spisu treści i kończy się linkiem „Wszystkie pytania” → /pytania.
+Strona to **wejście** i **rozdziały**. Wejście i każdy rozdział mają nagłówek, zdjęcie, lid i listę **bloków** w kolejności wyświetlania. Jeden typ bloku to jeden moduł makiety, więc szablon potrzebuje jednego komponentu na typ.
+
+| Pole | Moduł makiety | Uwagi |
+|---|---|---|
+| `strona.nazwa` | Nazwa strony | wielkimi literami nad H1; ta sama nazwa w menu, stopce i linkach |
+| `wejscie.h1`, `sekcje[].h2` | Nagłówek H1, Nagłówek H2 | jeden H1 na stronę; H2 to pełne zdanie |
+| `wejscie.zdjecie`, `sekcje[].zdjecie` | Plik graficzny HERO, H1, H2 | `plik`, `plik_telefon` (tylko wejście strony głównej), `alt`, `widoczne` |
+| `wejscie.lid`, `sekcje[].lid` | Lid H1, Lid H2 | jeden akapit kursywą |
+| `sekcje[].kotwica`, `etykieta` | spis „Na tej stronie” | puste `etykieta` = rozdział poza spisem |
+| `sekcje[].ton` | tło rozdziału | t1–t5, jak dotąd |
+
+| Typ bloku (`typ`) | Moduł makiety | Pola |
+|---|---|---|
+| `tekst` | Tekst akapitu | `tekst` (akapity oddzielone pustą linią) |
+| `glos` | Voice aside | `tekst` |
+| `lista` | lista w tekście | `naglowek`, `numerowana`, `punkty` |
+| `zasady` | H3, Lid H3, Tekst akapitu | `zasady[]`: `naglowek`, `lid`, `tekst` (numer dopisuje szablon) |
+| `cytat` | Karta cytatu | `widoczny`, `etykieta`, `wstep`, `repliki[]`: `kto` (Mama, Arthur, Ty albo puste), `kwestia` |
+| `cennik` | Karty ceny | bez pól, pakiety z Ustawień |
+| `link` | Link wewnętrzny | `tekst`, `adres`, `aktywny` |
+| `wezwanie` | Przycisk CTA | `rodzaj`: `glowne`, `zakupowe` albo `napisz`; `objasnienie` (zdanie pod przyciskiem) |
+| `pytania` | Karta pytania | `pytania[]` z bazy; tylko strona Pytania |
+| `faq` | FAQ (akordeon) | dokładnie 3 `pytania[]` z bazy; pod akordeonem przycisk „Wszystkie pytania” → /pytania |
+
+W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` (dane z Ustawień → Dane firmy), pogrubienie `**…**` i linki `[tekst](/adres)`.
+
+## Nawigacja i nazwy
+
+- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w przyciskach „Link wewnętrzny” i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
+- **Strony (8):** Jej sprawy (strona główna, adres `/`), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
+- **Belka górna:** logo, przycisk „Menu”, linki „Cena” (`/#cena`) i „Kontakt”, przycisk „Zamów online” (zamówienie) i „Panel klienta”. Menu ma grupy „Na tej stronie” i „Pozostałe strony”.
+- **Stopka:** trzy przyciski CTA, lista stron, zdanie o statystykach, dane firmy z adresem e-mail i trzy linki prawne.
+- **Trzy przyciski CTA** stoją raz, w Ustawieniach: „Porozmawiaj z Arthurem” (okienko z formularzem rozmowy), „Umów mamie próbne arthurozmowy” (zamówienie) i „Napisz do nas” (okienko z formularzem kontaktu). Oba okienka włączamy po ocenie skutków dla ochrony danych (Z6).
 
 ## Jak redaktor pracuje w CMS
 
 | Grupa w CMS | Plik | Co redaktor zmienia |
 |---|---|---|
-| Strony | `src/content/strony/*.yml` | SEO, streszczenie dla AI, H1, wstęp, zdjęcie wejścia, sekcje strony w kolejności wyświetlania |
+| Strony | `src/content/strony/*.yml` | SEO, streszczenie dla AI, wejście strony i rozdziały z blokami |
 | Pytania i odpowiedzi | `src/content/pytania/baza.yml` | treść pytań, odpowiedzi i linków pod nimi |
-| Ustawienia | `src/content/ustawienia/witryna.yml` | napisy menu, lista stron, teksty wezwań, okienko rozmowy, pakiety i ceny, dane firmy, stopka |
+| Ustawienia | `src/content/ustawienia/witryna.yml` | belka, lista stron, przyciski CTA, okienka, pakiety i ceny, dane firmy, stopka |
 
-Wezwania, lista stron, ceny i dane firmy stoją w Ustawieniach tylko raz, a strona wybiera przełącznikami, które wezwanie pokazać. Dzięki temu przycisk „Porozmawiaj z Arthurem” i nazwy stron brzmią wszędzie tak samo, a zmiana ceny w jednym miejscu zmienia cennik na stronie głównej, na stronie Jak skorzystać, w danych strukturalnych i w `llms.txt`. Znacznik `{firma}` w tekście sekcji wstawia linię „arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41”.
+Redaktor może zmienić kolejność rozdziałów i bloków, dodać blok dowolnego typu, ukryć zdjęcie albo kartę cytatu i wybrać pytania do akordeonu. Zmiana ceny w Ustawieniach zmienia karty ceny na obu stronach, dane strukturalne i `llms.txt`.
 
-Sekcje strony to lista z typami. Redaktor może zmienić kolejność sekcji, ukryć zdjęcie albo okno głosu i wybrać pytania do akordeonu, ale nie dopisze nowego typu bloku, bo typy odpowiadają komponentom Astro.
-
-## Typy sekcji a bloki Matrycy
-
-| Typ w CMS | Bloki Matrycy | Pola | Gdzie występuje |
-|---|---|---|---|
-| wejście (stałe pole strony) | 1 wejście strony głównej, 2 Hero2, 13 zdjęcie, 18 autor i data | `h1`, `h1_wyroznienie`, `lid`, `zdjecie`, `wezwania`, `pokaz_autora_i_date` | każda strona |
-| `rozdzial` | 3 rozdział, 4 definicje, 5 lista, 7 cennik, 13 zdjęcie, 16 cudze zdanie, 17 okno głosu, 11 link, 12 wezwania | `h2`, `tekst`, `definicje`, `lista`, `cennik`, `tekst_po`, `akapit_ukryty`, `zdjecie`, `okno_glosu`, `cudze_zdanie`, `linki`, `wezwania` | większość rozdziałów |
-| `zasady` | 6 lista zasad | `h2`, `zasady` (zdanie, opis, „Dlaczego:” od nowej linii, R168) | Jak to działa |
-| `krok` | 9 krok z przykładem | `numer`, `h2`, `tekst`, `przyklad`, `zdjecie`, `linki`, `wezwania` | Jak rozmawiać z mamą |
-| `watpliwosci` | 10 wątpliwości | `h2`, `tekst`, `pary` (zdanie mamy i odpowiedź), `zakonczenie` | Jak rozmawiać z mamą |
-| `pytania` | 8 pytanie i odpowiedź, 15 wstęp rozdziału | `wstep`, `zdjecie`, `pytania` (identyfikatory z bazy), `wezwania` | Pytania |
-| `faq` | 19 FAQ w akordeonie | `h2`, `pytania` (dokładnie 3 z bazy), `linki` („Wszystkie pytania”) | podstrony poza Pytaniami |
-| `kontakt` | 5 lista, 14 dane firmy | `h2`, `tekst`, `pokaz` (e-mail, telefon, godziny, czas odpowiedzi), `uwaga`, `linki` | O nas, Kontakt |
-| `koniec` | 12 pas wezwań na koniec strony | `ton`, `linki`, `wezwania` | podstrony |
-
-Każda sekcja ma też `kotwica` (adres po #), `etykieta` (spis treści, puste pole = poza spisem) i `ton` (t1–t5). Pełną mapę dla każdej strony, z numerami bloków i nazwami pól, zawiera `docs/mapa-pol.md`.
-
-## SEO
+## SEO i GEO
 
 - **Adres** (`seo.adres`): małe litery bez polskich znaków. Zmiana adresu wymaga przekierowania 301 w `netlify.toml`.
-- **Tytuł** (`seo.tytul`): najlepiej do 60 znaków, twarda granica 70. Trzy tytuły mają 62–63 znaki (strona główna, Jak to działa, Pytania); zostały, bo Google mierzy szerokość w pikselach, nie w znakach.
-- **Opis** (`seo.opis`): 110–155 znaków, pierwsze zdanie samo mówi, o czym jest strona.
-- **Nagłówki:** jeden H1 na stronę (`wejscie.h1`), H2 jako pełne zdanie w każdym rozdziale. Na stronie Pytania nagłówkami H2 są same pytania, a nazwy rozdziałów stoją tylko w spisie treści. Pierwszy rozdział strony O nas nie ma H2 ani wpisu w spisie treści, bo jest ciągiem dalszym H1.
-- **Kotwice:** każda sekcja ze spisu treści ma stałą kotwicę zgodną z nazwą rozdziału. Linki w bazie pytań prowadzą do konkretnych sekcji, np. `/jak-skorzystac#rezygnacja`.
-- **Dane strukturalne** (`seo.schemat`): szablon buduje JSON-LD z treści i Ustawień według wzorów w `docs/jsonld/`. FAQPage stoi tylko na stronie Pytania, bo Google prosi o oznaczenie każdego pytania w jednym miejscu witryny. HowTo stoi na stronie Jak rozmawiać z mamą, AboutPage i Person na O nas, ContactPage na Kontakcie, a Organization, WebSite i Service z trzema ofertami na stronie głównej. Google nie pokazuje już wyników rozszerzonych dla FAQ i HowTo na zwykłych stronach, ale oznaczenia nadal pomagają modelom AI zrozumieć treść.
-- **Autor i data:** `seo.autor` i `seo.zaktualizowano` trafiają do bloku 18 i do `dateModified` (Księga, rozdz. 21.6). Datę zmieniasz przy każdej zmianie treści.
-- **Strona 404:** `indeksuj: false`, bez opisu i bez danych strukturalnych.
-- **Mapa witryny:** w WITRYNA dodać `@astrojs/sitemap`; `robots.txt` już na nią wskazuje.
-
-## GEO, czyli widoczność w odpowiedziach modeli AI
-
-- Definicja arthurozmów stoi słowo w słowo tak samo w Ustawieniach, w odpowiedzi „Czym są arthurozmowy?”, w JSON-LD i w `llms.txt` (R167). Skrypt sprawdzający pilnuje tej zgodności.
-- Pierwsze zdanie każdej odpowiedzi w bazie pytań samo odpowiada na pytanie, a każdy H2 da się zacytować bez kontekstu.
-- `geo.streszczenie` to 2–3 zdania faktów z danej strony w trzeciej osobie. Trafia do `llms.txt` i może zasilić `description` w JSON-LD. Streszczenia napisałem ze zdań, które są już na stronach, i są do Twojej akceptacji.
-- `llms.txt` i `llms-full.txt` generuje skrypt. Strona z zaślepkami (dziś O nas) nie trafia do `llms-full.txt`.
-- `robots.txt` wpuszcza wszystkie roboty, także wyszukujące i uczące roboty modeli AI (decyzja Piotra z 1.11.2026).
+- **Tytuł** (`seo.tytul`): najlepiej do 60 znaków, twarda granica 70. **Opis** (`seo.opis`): 110–155 znaków.
+- **Nagłówki:** jeden H1 na stronę, H2 w każdym rozdziale, zasady i pytania jako H3.
+- **Dane strukturalne** (`seo.schemat`): JSON-LD powstaje w `docs/jsonld/`. FAQPage stoi tylko na stronie Pytania, HowTo na stronie Jak rozmawiać z mamą (siedem kroków), AboutPage i Person na O nas, ContactPage na Kontakcie, a Organization, WebSite i Service z trzema ofertami na stronie głównej. Autor i data aktualizacji (`seo.autor`, `seo.zaktualizowano`) trafiają do danych strukturalnych.
+- **Definicja arthurozmów** stoi słowo w słowo tak samo w Ustawieniach, w odpowiedzi „Czym są arthurozmowy?”, w JSON-LD i w `llms.txt`. Skrypt sprawdzający pilnuje tej zgodności.
+- `geo.streszczenie` to kilka zdań faktów z danej strony w trzeciej osobie; trafia do `llms.txt`. Strona z zaślepkami (dziś O nas) nie trafia do `llms-full.txt`.
 
 ## Zdjęcia
 
-Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i jej odpowiednik w Notion („Zdjęcia witryny arthurozmowy.pl (18) i grafiki”).
+Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i jej odpowiednik w Notion.
 
-- **Zasada (5.11.2026):** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 18 zdjęć. Skrypt sprawdzający zgłasza błąd przy innej liczbie i przy tym samym pliku w dwóch miejscach.
-- **Nazwy plików:** `arthurozmowy-{strona}-{treść}.webp` w `public/images/strony/`, jeden plik na komputer i telefon (wyjątek: wejście strony głównej `-desk.webp` i `-tel.webp`); obrazy do udostępniania `arthurozmowy-og-{strona}.jpg` (1200 × 630) w `public/images/og/`. Nowa treść zdjęcia dostaje nową nazwę; nazwa nigdy nie wraca do innej treści.
-- **Kadry (6.11.2026):** wejście strony głównej 21:9 (najlepiej 2880 × 1234) i 4:3 na telefonie (1200 × 900); wejście podstrony kwadrat 1:1 (1200 × 1200); zdjęcie w rozdziale 4:3 (1200 × 900).
-- **Alt:** zaczyna się od tego, co naprawdę widać, i mówi słowami strony („mama”, „córka”, „opowiada”, „rozmowa”). Jedno zdanie, 50–125 znaków, bez słów zakazanych. Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Pod zdjęciami nie ma podpisów w stylu opinii.
-- **Zero retuszu skóry** na zdjęciach osób starszych (zasada nienegocjowalna).
-- **Stan (5.11.2026):** wszystkie 18 zdjęć, 3 obrazy do udostępniania, logo i ikony są w `public/`. Stan w `docs/lista-grafik.md` wynika z plików: zdjęcie jest „gotowe”, gdy plik jest na miejscu (wejście strony głównej: oba kadry). Skrypt sprawdzający zgłasza błąd, gdy widoczne zdjęcie nie ma pliku.
-- **Jedyne ukryte zdjęcie** to wspólne zdjęcie ekspertki z Piotrem na O nas (`widoczne: false`). To wersja robocza z modelką i nie może się pokazać nawet na adresie tymczasowym; zastąpi je prawdziwe zdjęcie razem z danymi ekspertki (Z1).
-- **Logo i ikony:** w nagłówku `/images/marka/arthur-logo.svg` (alt „Arthur”). W `<head>` każdej strony: `<link rel="icon" href="/favicon.ico" sizes="any">` i `<link rel="apple-touch-icon" href="/apple-touch-icon.png">`; ikony 192 i 512 px są do pliku manifestu, jeśli WITRYNA go doda.
+- **Zasada:** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 18 zdjęć.
+- **Nazwy plików:** `arthurozmowy-{strona}-{treść}-{format}.webp` w `public/images/strony/`. Wejście strony głównej: `-21x9` i osobny kadr `-4x3` na telefon. Wejście podstrony: `-1x1` (1200 × 1200). Zdjęcie w rozdziale: `-4x3` (1200 × 900). Nowa treść zdjęcia dostaje nową nazwę.
+- **Alt:** to, co naprawdę widać, słowami strony („mama”, „córka”, „rozmowa”). Jedno zdanie, 50–125 znaków. Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka.
+- **Zero retuszu skóry** na zdjęciach osób starszych.
+- **Jedyne ukryte zdjęcie** to `arthurozmowy-o-nas-eksperci-4x3.webp` (`widoczne: false`). To zdjęcie robocze z modelami w roli ekspertów i nie może się pokazać nawet na adresie tymczasowym.
+- Skrypt sprawdzający zgłasza błąd przy złej liczbie zdjęć, braku pliku, złym formacie w nazwie albo złych proporcjach pliku.
 
-## Okno głosu i cudze zdanie
+## Karta cytatu
 
-- Okno głosu (blok 17): najwyżej jedno w rozdziale i trzy na stronie; przykład rozmowy zawsze z etykietą „Przykład rozmowy” i przypisem, że jest wymyślony. Dziś widoczne dwa: na stronie głównej (rozdział Jak to działa) i na stronie Jak to działa (Ciągłość rozmów). Pole `nagranie` przyjmie tylko nagranie demonstracyjne z transkrypcją, nigdy fragment prawdziwej rozmowy z mamą.
-- Cudze zdanie (blok 16) w rozdziale „Czemu służą arthurozmowy?” jest zarezerwowane i ukryte. Pokaże się tylko prawdziwe zdanie mamy z udokumentowaną zgodą.
+Przykładowy dialog mamy z Arthurem ma zawsze etykietę „Przykład rozmowy”, bo jest wymyślony (skrypt tego pilnuje). W karcie nigdy nie stoi fragment prawdziwej rozmowy z mamą. Karta z przykładem raportu na stronie Jak działa Arthur jest ukryta, dopóki nie powstanie wzór raportu.
 
 ## Narzędzia
 
@@ -130,29 +122,23 @@ python3 narzedzia/sprawdz_tresci.py
 python3 narzedzia/buduj_pochodne.py
 ```
 
-`generuj_config.py` tworzy `public/admin/config.yml` bez kotwic YAML, bo Sveltia czyta YAML ściśle; model treści zmieniasz w skrypcie, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, H1 i H2, kotwice i linki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas, R141), pisownię „Arthur” i „arthurozmowy”, zasady okna głosu i cudzego zdania, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, wzory JSON-LD i oba pliki dla AI. W WITRYNA warto podpiąć sprawdzenie do budowania na Netlify, żeby strona z błędem nie wyszła.
+`generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
 
-Stan na 5.11.2026: zero błędów, 10 zaślepek, 13 uwag (brak stron regulaminu i polityki prywatności, trzy tytuły powyżej 60 znaków i jeden opis powyżej 155, ukryte zdjęcie na O nas, rozdziały o tej samej nazwie na dwóch stronach przy tym samym temacie).
-
-## Wdrożenie Sveltia (do zrobienia w WITRYNA)
-
-1. W `public/admin/config.yml` wpisać repozytorium (`backend.repo`) i adres workera logowania (`backend.base_url`). Sveltia loguje przez GitHub; na Netlify najprostszy jest worker `sveltia-cms-auth` na Cloudflare Workers, bo Sveltia nie obsługuje Netlify Identity ani Git Gateway.
-2. Przypiąć wersję skryptu w `public/admin/index.html` (dziś `@sveltia/cms` bez numeru wersji).
-3. Sprawdzić w działającym panelu: pole `relation` do listy pytań w bazie (`pytania.*.id`), `media_folder` ustawiony na poziomie pól zdjęć, format daty. Konfiguracji nie dało się uruchomić w tej sesji, bo serwer nie miał dostępu do npm ani unpkg.
-4. Uruchomić `npm run build` ze szkicem `src/content.config.ts` i poprawić schemat, jeśli Astro zgłosi rozbieżności.
+Stan na 11.11.2026: zero błędów, 7 zaślepek, 9 uwag (trzy strony prawne w przygotowaniu, ukryte zdjęcie i ukryta karta cytatu, jeden tytuł o znak za długi, rozdziały o tej samej nazwie na dwóch stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 
 | Gdzie | Czego brakuje | Kto decyduje |
 |---|---|---|
+| O nas · Nasza metoda | ekspertka: imię i nazwisko, specjalizacja, staż, jednostka naukowa, wspólne zdjęcie (Z1) | Ty |
 | Ustawienia · okienko rozmowy | potwierdzenie, komunikat błędu, zgoda i informacja RODO (po ocenie skutków, Z6) | Ty, prawnik |
-| Ustawienia · dane firmy | godziny odbierania telefonu i zdanie o czasie odpowiedzi na e-mail | Ty |
-| O nas · Nasza metoda | ekspertka: imię i nazwisko, specjalizacja, staż, miejsce pracy, historia, wspólne zdjęcie (Z1) | Ty |
+| Ustawienia · okienko kontaktu | potwierdzenie, komunikat błędu, zgoda i informacja RODO (po ocenie skutków, Z6) | Ty, prawnik |
 
 ## Decyzje otwarte
 
-- Trzy pytania w akordeonie na każdej podstronie: wybrane wstępnie, zmienisz je w CMS (pole `pytania` w sekcji „Najczęstsze pytania”).
-- Strony `/regulamin`, `/prywatnosc` i `/umow` jeszcze nie istnieją; na adresie tymczasowym `/regulamin` i `/prywatnosc` to strony „w przygotowaniu”. Link „Zobacz przykładowy raport” jest nieaktywny, dopóki nie powstanie wzór raportu.
-- Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), docelowy kanał rozmów po pilotażu (Z14), liczba ponownych prób, gdy mama nie odbierze (AGENT), numer, z którego Arthur dzwoni do mamy.
+- Zamówienie („Umów mamie próbne arthurozmowy”, „Zamów online”) prowadzi do panelu klienta, którego jeszcze nie ma; przyciski są nieaktywne.
+- Strony `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to na adresie tymczasowym strony „w przygotowaniu”.
+- Przykład raportu na stronie Jak działa Arthur (karta ukryta).
+- Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), docelowy kanał rozmów po pilotażu (Z14), numer, z którego Arthur dzwoni do mamy.
 - Plausible czy Umami (zdanie w stopce mówi tylko o statystykach bez plików cookies).
 - Pisownia nazwy firmy „arthurozmowy Piotr Jaworski” do potwierdzenia z CEIDG.

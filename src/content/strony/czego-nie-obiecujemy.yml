@@ -1,6 +1,6 @@
 # arthurozmowy.pl · Czego nie obiecujemy
-# Sveltia CMS: Strony → Czego nie obiecujemy. Stan treści: 4.11.2026 (jeden temat, jedna nazwa).
-# Strona należy do strefy pieniężnej (Mapa witryny), więc nie ma na niej słów zakazanych nawet w cytacie.
+# Sveltia CMS: Strony → Czego nie obiecujemy. Stan treści: 11.11.2026 (makieta V2).
+# Strona należy do strefy pieniężnej, więc nie ma na niej słów zakazanych nawet w cytacie.
 # Każdy nagłówek H2 jest pełnym zdaniem i sam odpowiada na pytanie o daną granicę (GEO: cytowalne zdania).
 
 strona:
@@ -11,119 +11,121 @@ seo:
   adres: /czego-nie-obiecujemy
   tytul: Czego nie obiecują arthurozmowy – rozmowa, a nie opieka
   opis: |-
-    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka. Arthur nie pomoże mamie w domu, nie wykryje upadku i nie postawi diagnozy.
+    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka. Arthur nie pomoże mamie w domu, nie wezwie pomocy i nie postawi diagnozy.
   obraz_og:
     plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
     alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
   schemat: [WebPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-04
+  zaktualizowano: 2026-11-11
 
 geo:
   streszczenie: |-
-    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie dowie się o upadku między rozmowami, nie stawia diagnoz i nie podpowiada metod leczenia. Nie ma dowodów, że rozmowy z Arthurem zapobiegają demencji albo ją opóźniają, i usługa tego nie obiecuje. Obiecuje regularne rozmowy według metody ustalonej z ekspertką, raport dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.
+    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje regularne rozmowy według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.
 
 wejscie:
   h1: |-
-    Arthur świetnie rozmawia, ale zupy nie ugotuje ani siatek nie wniesie.
-  h1_wyroznienie: ""
-  lid: |-
-    Arthur rozmawia z mamą przez telefon, kilka razy w tygodniu, więc nie zastępuje opieki, a wszystko, co wymaga obecności człowieka, sprawdzenia albo stałego czuwania, zostaje poza tą usługą. Opisujemy to na osobnej stronie, żebyście obie znały granice arthurozmów, zanim się na nie zdecydujecie.
+    Arthur rozmawia z mamą przez telefon, ale nie zastępuje pomocy w codziennych sprawach.
   zdjecie:
     widoczne: true
-    plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-zakupy-desk.webp
-    alt: W otwartych drzwiach mieszkania córka podaje mamie płócienną torbę z zakupami
-    kadr: Decyzja z 5.11.2026, prompt C – przedpokój, otwarte drzwi, córka w rdzawym płaszczu podaje mamie siatkę z zakupami (chleb, pory), obie się uśmiechają. Pasuje do H1 o zupie i siatkach.
-  wezwania:
-    glowne: false
-    dopisek: false
-    jawnosc: false
-    zakupowe: false
-    nad_zakupowym: false
-  pokaz_autora_i_date: true
+    plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-kawa-1x1.webp
+    alt: W przedpokoju córka w płaszczu podaje mamie kawę na wynos, a mama trzyma papierową torebkę z croissantem
+  lid: |-
+    Arthur rozmawia z mamą przez telefon, kilka razy w tygodniu, więc nie zastępuje opieki, a wszystko, co wymaga obecności człowieka, sprawdzenia albo stałego czuwania, zostaje poza tą usługą. Opisujemy to na osobnej stronie, żebyście obie znały granice arthurozmów, zanim się na nie zdecydujecie.
+  bloki: []
 
 sekcje:
-  - typ: rozdzial
-    kotwica: pomoc-w-domu
+  - kotwica: pomoc-w-domu
     etykieta: Pomoc w domu
     ton: t2
     h2: |-
-      Arthur nie przyjedzie do mamy, więc w domu może jej pomóc tylko człowiek.
-    tekst: |-
-      Arthur nie poda mamie leku, nie zrobi za nią zakupów i nie podtrzyma jej przy wstawaniu. Nie umówi też mamy na wizytę u lekarza i nie zajmie się jej pieniędzmi. Jeśli mama potrzebuje w tych sprawach wsparcia, czyli opieki, musi jej udzielić ktoś z rodziny, pielęgniarka albo osoba, którą zatrudnicie.
+      Arthur nie przyjedzie do mamy – fizycznie może jej pomóc tylko człowiek.
+    lid: |-
+      Arthur nie poda mamie leku, nie zrobi za nią zakupów i nie podtrzyma jej przy wstawaniu. Nie będzie jej też udzielał rad.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Nie umówi też mamy na wizytę u lekarza i nie zajmie się jej budżetem, rachunkami i wydatkami. Jeśli mama potrzebuje w tych sprawach wsparcia, czyli opieki, musi jej udzielić ktoś z rodziny, pielęgniarka albo osoba, którą zatrudnicie.
 
-  - typ: rozdzial
-    kotwica: nagle-zdarzenia
+  - kotwica: nagle-zdarzenia
     etykieta: Nagłe zdarzenia
     ton: t1
     h2: |-
-      Między rozmowami Arthur nie wie, co się dzieje u mamy.
-    tekst: |-
-      Arthur zauważa tylko to, co dzieje się w trakcie rozmowy. Nie wzywa też pogotowia, więc w nagłej sytuacji musi to zrobić człowiek. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+      Między rozmowami Arthur nie wie, co dzieje się u mamy.
+    lid: |-
+      Arthur zauważa tylko to, co dzieje się w trakcie rozmowy. Nie wzywa też pogotowia, więc w nagłej sytuacji musi to zrobić człowiek.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
 
-  - typ: rozdzial
-    kotwica: zdrowie
+  - kotwica: zdrowie
     etykieta: Zdrowie
     ton: t2
     h2: |-
-      Arthur nie jest lekarzem z internetu i nie będzie go udawał.
-    tekst: |-
-      Arthur nie wypytuje mamy o zdrowie i nie testuje jej sprawności. Jeśli jednak mama powie mu o planowanej wizycie, Arthur może pomóc jej ułożyć listę pytań do lekarza. Gdy da Ci znać o niepokojącej zmianie w rozmowach, przyczynę tej zmiany może ocenić tylko lekarz. Sygnał od Arthura jest więc informacją dla Ciebie i wezwaniem do działania.
+      Arthur nie jest lekarzem, więc nie udziela porad medycznych.
+    lid: |-
+      Arthur nie wypytuje mamy o zdrowie i nie testuje jej sprawności. Jeśli jednak mama powie mu o planowanej wizycie u lekarza, Arthur może pomóc jej ułożyć listę pytań.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
 
-  - typ: rozdzial
-    kotwica: pamiec
+  - kotwica: pamiec
     etykieta: Pamięć
     ton: t1
     h2: |-
-      Żadnych obietnic o poprawie pamięci. Tylko dobre, inspirujące rozmowy.
-    tekst: |-
-      Nie mamy dowodów, że regularne arthurozmowy chronią przed demencją. Mama nie robi też z Arthurem treningu pamięci ani ćwiczeń dla mózgu, tylko rozmawia z nim o tym, co ją zajmuje, co przeżywa, czego potrzebuje. Celem rozmów jest inspirowanie, angażowanie i wyzwalanie pozytywnych emocji.
+      Żadnych obietnic o poprawie pamięci. Tylko wartościowe, inspirujące rozmowy.
+    lid: |-
+      Nie mamy dowodów, że regularne arthurozmowy chronią przed demencją. Mama nie robi też z Arthurem treningu pamięci ani ćwiczeń dla mózgu.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Arthurozmowy to tylko angażujące, systematyczne konwersacje o mamie, jej sprawach, o tym, co ją zajmuje, co przeżywa, czego potrzebuje. Celem rozmów jest inspirowanie, wartościowe spędzanie czasu i wywoływanie pozytywnych emocji.
 
-  # Blok 3 · rozdział, 13 · zdjęcie pionowe obok tekstu
-  - typ: rozdzial
-    kotwica: twoja-rola
+  - kotwica: twoja-rola
     etykieta: Twoja rola
     ton: t2
     h2: |-
       Arthur nie zastąpi Cię w życiu mamy i nie taka jest jego rola.
-    tekst: |-
-      Mama rozmawia z Arthurem o tym, o czym chce i lubi mówić, w sposób, na jaki bliskim nieraz brakuje czasu. Odwiedziny i rozmowy o lekach, samopoczuciu i zakupach to rola bliskich. Arthur nigdy nie prosi mamy, żeby czegoś Ci nie mówiła, a relacji rodzinnych nie wolno mu komentować, więc nigdy nie stanie między Tobą a mamą.
     zdjecie:
       widoczne: true
-      plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-twoja-rola.webp
+      plik: /images/strony/arthurozmowy-czego-nie-obiecujemy-uklada-wlosy-4x3.webp
       alt: Córka poprawia mamie włosy, a mama w fuksjowym żakiecie uśmiecha się z aprobatą
-      kadr: Córka pomaga ułożyć mamie włosy przed jej wyjściem na spotkanie; mama w fuksjowym, koktajlowym żakiecie uśmiecha się z aprobatą (decyzja z 3.11.2026).
+    lid: |-
+      Mama rozmawia z Arthurem o tym, o czym chce i lubi mówić, w sposób, na jaki bliskim nieraz brakuje czasu.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Odwiedziny i rozmowy o lekach, samopoczuciu i zakupach to rola bliskich. Arthur nigdy nie prosi mamy, żeby czegoś Ci nie mówiła, a relacji rodzinnych nie wolno mu komentować, więc nigdy nie stanie między Tobą a mamą.
+      - typ: wezwanie
+        rodzaj: glowne
+        objasnienie: false
 
-  - typ: rozdzial
-    kotwica: co-obiecujemy
+  - kotwica: co-obiecujemy
     etykieta: Co obiecujemy
     ton: t1
     h2: |-
       Obiecujemy regularne, dobre i inspirujące rozmowy według eksperckiej metody.
-    tekst: |-
-      Mama ma do dyspozycji tyle rozmów pełnych i podtrzymujących, ile przewiduje wybrany pakiet, a dni i godziny ustala z Arthurem sama. W każdej rozmowie Arthur trzyma się eksperckiej metody: prowadzi z mamą wartościowe, angażujące rozmowy i docenia ją jako pełnowymiarową osobę. Zasady tej metody poznasz na stronie [Jak to działa](/jak-to-dziala). Dostajesz też raport o tym, kiedy i o czym rozmawiali, a jeśli bieg rozmów zaniepokoi Arthura, da Ci znać.
+    lid: |-
+      Mama ma do dyspozycji tyle rozmów pełnych i podtrzymujących, ile przewiduje wybrany pakiet, a dni i godziny ustala z Arthurem sama.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          W każdej rozmowie Arthur trzyma się eksperckiej metody: prowadzi z mamą wartościowe, angażujące rozmowy i docenia ją jako pełnowymiarową, wartościową osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Zasady tej metody poznasz na stronie [Jak działa Arthur](/jak-dziala-arthur).
+      - typ: glos
+        tekst: |-
+          Dostaniesz też raporty o tym, kiedy i o czym rozmawiali, a jeśli bieg rozmów zaniepokoi Arthura, da Ci o tym znać.
 
-  # Blok 19 · trzy pytania w akordeonie (propozycja wyboru)
-  - typ: faq
-    kotwica: najczestsze-pytania
+  # Rozdział bez etykiety: nie wchodzi do spisu „Na tej stronie”.
+  - kotwica: najczestsze-pytania
     ton: t2
     h2: Najczęstsze pytania
-    pytania: [niepokojaca-zmiana, rozmowa-z-programem, czy-nie-wyreczam-sie]
-    linki:
-      - tekst: Wszystkie pytania
-        adres: /pytania
+    bloki:
+      - typ: faq
+        pytania: [niepokojaca-zmiana, rozmowa-z-programem, czy-nie-wyreczam-sie]
+      - typ: link
+        tekst: Jak działa Arthur
+        adres: /jak-dziala-arthur
         aktywny: true
-
-  - typ: koniec
-    ton: t5
-    linki:
-      - tekst: Jak to działa
-        adres: /jak-to-dziala
-        aktywny: true
-    wezwania:
-      glowne: true
-      dopisek: false
-      jawnosc: false
-      zakupowe: false
-      nad_zakupowym: false

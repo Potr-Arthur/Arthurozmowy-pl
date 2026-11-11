@@ -19,3 +19,24 @@
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-cache"
+
+# Stare adresy (makieta V2, 11.11.2026): strony zmieniły nazwy, a strona główna „Jej sprawy” stoi pod adresem /.
+[[redirects]]
+  from = "/jej-sprawy"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/jak-to-dziala"
+  to = "/jak-dziala-arthur"
+  status = 301
+
+[[redirects]]
+  from = "/jak-skorzystac"
+  to = "/jak-korzystac"
+  status = 301
+
+[[redirects]]
+  from = "/regulamin"
+  to = "/regulamin-uslugi"
+  status = 301

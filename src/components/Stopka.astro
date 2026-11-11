@@ -1,0 +1,36 @@
+---
+// Stopka, od góry: trzy przyciski CTA (stopka.wezwania) · lista stron (nawigacja.strony) · zdanie o statystykach ·
+// linia z danymi firmy i adresem e-mail · trzy linki prawne. Wszystkie teksty z Ustawień.
+import Wezwanie from './bloki/Wezwanie.astro';
+import type { Kontekst } from '../lib/kontekst';
+import { inline } from '../lib/tekst';
+interface Props { ust: any; adres: string; prev: string }
+const { ust, adres, prev } = Astro.props;
+const k: Kontekst = { ust, baza: new Map(), adres };
+const s = ust.stopka;
+---
+<footer class={`sekcja ton-3 stopka prev-${prev}`}>
+  <div class="wrap stopka__wnetrze">
+    <div class="stopka__wezwania">
+      {s.wezwania.map((rodzaj: 'glowne' | 'zakupowe' | 'napisz') => <Wezwanie b={{ rodzaj }} k={k} />)}
+    </div>
+    <nav class="stopka__strony" aria-label={ust.naglowek.grupa_strony}>
+      <ul>
+        {ust.nawigacja.strony.map((x: any) => (
+          <li>{x.adres === adres ? <span aria-current="page">{x.tekst}</span> : <a href={x.adres}>{x.tekst}</a>}</li>
+        ))}
+      </ul>
+    </nav>
+    <div class="stopka__dane">
+      <p set:html={inline(s.prywatnosc, ust.firma)} />
+      <p><span set:html={inline(s.prawa, ust.firma)} /> · <a href={`mailto:${ust.firma.email}`}>{ust.firma.email}</a></p>
+    </div>
+    <div class="stopka__prawne">
+      <ul>
+        {s.linki_prawne.map((l: any) => (
+          <li>{l.adres === adres ? <span aria-current="page">{l.tekst}</span> : <a href={l.adres}>{l.tekst}</a>}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</footer>

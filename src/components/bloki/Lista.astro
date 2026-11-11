@@ -1,0 +1,14 @@
+---
+// Moduł „Lista”: nagłówek nad listą, lista numerowana (<ol>) albo punktowana (<ul>).
+import { inline } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { naglowek?: string; numerowana?: boolean; punkty: string[] }; k: Kontekst }
+const { b, k } = Astro.props;
+const Znacznik = b.numerowana ? 'ol' : 'ul';
+---
+<div class="lista">
+  {b.naglowek && <p class="lista__naglowek"><strong set:html={inline(b.naglowek, k.ust.firma)} /></p>}
+  <Znacznik class={b.numerowana ? 'lista__punkty lista__punkty--numery' : 'lista__punkty'}>
+    {b.punkty.map((x) => <li set:html={inline(x, k.ust.firma)} />)}
+  </Znacznik>
+</div>

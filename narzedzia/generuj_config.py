@@ -75,89 +75,34 @@ TONY = [
     {"label": "t2 · rozdział (na przemian z t1)", "value": "t2"},
     {"label": "t3", "value": "t3"},
     {"label": "t4 · spokój, sprawy praktyczne", "value": "t4"},
-    {"label": "t5 · cena i pas wezwań na końcu strony", "value": "t5"},
+    {"label": "t5 · cena", "value": "t5"},
 ]
 
 def ton():
-    return sel("ton", "Ton tła sekcji", TONY, default="t1",
-               hint="Matryca: przejścia gradientem między sekcjami; sąsiednie sekcje nie mają tego samego tonu.")
+    return sel("ton", "Ton tła rozdziału", TONY, default="t1",
+               hint="Sąsiednie rozdziały nie mają tego samego tonu.")
 
 def kotwica():
-    return s("kotwica", "Kotwica (adres sekcji po #)",
-             hint="Małe litery, bez polskich znaków, słowa łączone łącznikiem. Zmiana psuje linki do sekcji.",
+    return s("kotwica", "Kotwica (adres rozdziału po #)",
+             hint="Małe litery, bez polskich znaków, słowa łączone łącznikiem. Zmiana psuje linki do rozdziału.",
              pattern=["^[a-z0-9-]*$", "Tylko a–z, cyfry i łącznik"])
 
 def etykieta():
-    return s("etykieta", "Etykieta w spisie treści",
-             hint="Krótko, 1–4 słowa. Puste pole = sekcja nie trafia do spisu treści.")
+    return s("etykieta", "Nazwa w spisie treści („Na tej stronie”)",
+             hint="Krótko, 1–4 słowa. Puste pole = rozdział nie trafia do spisu treści.")
 
-def h2():
-    return t("h2", "Nagłówek H2",
-             hint="Jedno pełne zdanie, które samo odpowiada na pytanie sekcji (cytowalne przez AI). Bez Entera. " + ZAKAZANE)
-
-def tekst(label="Tekst", hint=None):
-    return md("tekst", label, hint=hint or "Akapity oddzielaj pustą linią. Znacznik {firma} wstawia dane firmy z ustawień.")
-
-def linki():
-    return lst("linki", "Linki ze strzałką (blok 11)", summary="{{fields.tekst}} → {{fields.adres}}", fields=[
-        s("tekst", "Tekst linku", required=True),
-        s("adres", "Adres", hint="Ścieżka wewnętrzna, np. /jak-to-dziala albo /jak-skorzystac#rezygnacja."),
-        b("aktywny", "Link aktywny", True, hint="Wyłącz, dopóki strona docelowa nie istnieje."),
-    ])
-
-def wezwania(label="Wezwania (blok 12)"):
-    return obj("wezwania", label, hint="Teksty wezwań są w Ustawieniach, tu wybierasz tylko, które pokazać.", fields=[
-        b("glowne", "Przycisk „Porozmawiaj z Arthurem” (otwiera okienko z formularzem)"),
-        b("dopisek", "Dopisek pod przyciskiem (tylko wejście strony głównej)"),
-        b("jawnosc", "Zdanie o jawności przy przycisku"),
-        b("zakupowe", "Przycisk „Umów mamie pierwszą arthurozmowę”"),
-        b("nad_zakupowym", "Pytanie „Mama się zgodziła?” nad przyciskiem zakupowym"),
-    ])
-
-def zdjecie(folder="strony", label="Zdjęcie (blok 13)"):
-    return obj("zdjecie", label, hint=(
-        "Nazwa pliku opisuje treść zdjęcia: arthurozmowy-{opis}.webp. Jeden plik na komputer i telefon. Bez retuszu skóry."), fields=[
+def zdjecie(label, hint):
+    return obj("zdjecie", label, hint=hint + " Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp. Bez retuszu skóry.", fields=[
         b("widoczne", "Pokaż zdjęcie", True),
-        img("plik", "Plik", folder, hint=("Wejście podstrony: kwadrat 1:1 (1200 × 1200). Rozdział: 4:3 (1200 × 900). "
-            "Wejście strony głównej: 21:9 (2880 × 1234 albo 2100 × 900). WebP.")),
-        img("plik_telefon", "Plik na telefon (tylko wejście strony głównej)", folder,
-            hint="Tylko strona główna: kadr 4:3 (1200 × 900) na telefon. W pozostałych miejscach zostaw puste."),
+        img("plik", "Plik zdjęcia", "strony"),
+        img("plik_telefon", "Kadr 4:3 na telefon (tylko wejście strony głównej)", "strony"),
         s("alt", "Tekst alternatywny (alt)", hint=(
             "Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków. "
             "Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.")),
-        t("kadr", "Opis kadru dla redakcji (nie wyświetla się)"),
     ])
 
-def okno_glosu():
-    return obj("okno_glosu", "Okno głosu (blok 17)", hint=(
-        "Najwyżej jedno w rozdziale i trzy na stronie. Przykład rozmowy zawsze z etykietą „Przykład rozmowy” "
-        "i przypisem, że jest wymyślony. Nagranie tylko demonstracyjne, nigdy z prawdziwej rozmowy z mamą."), fields=[
-        b("widoczne", "Pokaż okno głosu"),
-        sel("wariant", "Wariant", [{"label": "ciepłe", "value": "cieple"},
-                                    {"label": "głębia", "value": "glebia"},
-                                    {"label": "jasne", "value": "jasne"}], default="cieple"),
-        s("etykieta", "Etykieta", default="Przykład rozmowy"),
-        lst("dialog", "Dialog", summary="{{fields.kto}}: {{fields.kwestia}}", fields=[
-            sel("kto", "Kto mówi", ["Mama", "Arthur"], default="Mama"),
-            t("kwestia", "Kwestia"),
-        ]),
-        t("zdanie", "Pojedyncze zdanie Arthura (zamiast dialogu)"),
-        t("przypis", "Przypis pod oknem"),
-        obj("nagranie", "Nagranie głosu (opcjonalnie)", fields=[
-            {"label": "Plik audio", "name": "plik", "widget": "file", "required": False,
-             "media_folder": "/public/audio", "public_folder": "/audio"},
-            t("transkrypcja", "Transkrypcja (wymagana przy nagraniu)"),
-        ]),
-    ])
-
-def cudze_zdanie():
-    return obj("cudze_zdanie", "Cudze zdanie (blok 16)", hint=(
-        "Tylko prawdziwe zdanie mamy i tylko za jej udokumentowaną zgodą. Do tego czasu ukryte."), fields=[
-        b("widoczne", "Pokaż cytat"),
-        t("cytat", "Cytat"),
-        s("kto", "Podpis (np. imię i wiek, za zgodą)"),
-        b("zgoda", "Mamy udokumentowaną zgodę na publikację"),
-    ])
+def lid(label="Lid (kursywa pod nagłówkiem)"):
+    return md("lid", label, hint="Jeden akapit, który streszcza rozdział. " + ZAKAZANE)
 
 def faq_rel(min_=None, max_=None, label="Pytania z bazy"):
     f = {"label": label, "name": "pytania", "widget": "relation", "required": False,
@@ -168,90 +113,69 @@ def faq_rel(min_=None, max_=None, label="Pytania z bazy"):
     if max_: f["max"] = max_
     return f
 
-# ---------------------------------------------------------------- typy sekcji
+# ---------------------------------------------------------------- bloki (jeden typ = jeden moduł makiety)
 
-T_ROZDZIAL = obj("rozdzial", "Rozdział (bloki 3, 4, 5, 7, 13, 16, 17)", collapsed=True,
-                 summary="{{fields.etykieta}} · {{fields.ton}}", fields=[
-    kotwica(), etykieta(), ton(), h2(), tekst(),
-    lst("definicje", "Definicje (blok 4)", summary="{{fields.termin}}", fields=[
-        s("termin", "Termin (pogrubiony)"),
-        t("opis", "Dalszy ciąg zdania"),
-    ]),
-    obj("lista", "Lista (blok 5)", fields=[
-        s("wprowadzenie", "Zdanie nad listą (pogrubione)"),
-        lst("punkty", "Punkty", field=t("punkt", "Punkt")),
-    ]),
-    obj("cennik", "Cennik (blok 7, pakiety z Ustawień)", fields=[
-        b("widoczny", "Pokaż cennik"),
-        b("pokaz_nazwy", "Pokaż nazwy pakietów przy cenach"),
-    ]),
-    md("tekst_po", "Tekst pod listą lub cennikiem"),
-    obj("akapit_ukryty", "Akapit czekający na warunek", fields=[
-        b("widoczny", "Pokaż akapit"),
-        t("tekst", "Tekst"),
-        s("warunek", "Warunek publikacji (nie wyświetla się)"),
-    ]),
-    zdjecie(), okno_glosu(), cudze_zdanie(), linki(), wezwania(),
+B_TEKST = obj("tekst", "Tekst akapitu", summary="Tekst: {{fields.tekst}}", fields=[
+    md("tekst", "Tekst", hint=("Akapity oddzielaj pustą linią. Znaczniki: {firma} (dane firmy), {email}, {telefon}, {godziny}. "
+                               + ZAKAZANE)),
 ])
-
-T_ZASADY = obj("zasady", "Lista zasad (blok 6)", summary="{{fields.etykieta}} · {{fields.ton}}", fields=[
-    kotwica(), etykieta(), ton(), h2(), tekst(),
+B_GLOS = obj("glos", "Voice aside (karta w kolorze piasku, kursywa)", summary="Voice aside: {{fields.tekst}}", fields=[
+    md("tekst", "Tekst", hint="Jedna myśl, 1–3 zdania. Znaczniki jak w tekście akapitu."),
+])
+B_LISTA = obj("lista", "Lista punktów", summary="Lista: {{fields.naglowek}}", fields=[
+    s("naglowek", "Zdanie nad listą"),
+    b("numerowana", "Lista numerowana", False),
+    lst("punkty", "Punkty", field=t("punkt", "Punkt")),
+])
+B_ZASADY = obj("zasady", "Zasady (nagłówek H3, lid H3, tekst)", summary="Zasady", fields=[
     lst("zasady", "Zasady", summary="{{fields.naglowek}}", fields=[
-        s("naglowek", "Zasada (pogrubione zdanie)"),
-        t("tekst", "Opis"),
-        t("dlaczego", "Dlaczego", hint="Bez słowa „Dlaczego:”, szablon dopisuje je od nowej linii (R168)."),
+        s("naglowek", "Zasada (nagłówek H3)", hint="Bez numeru, szablon go dopisuje."),
+        t("lid", "Lid H3"),
+        t("tekst", "Tekst akapitu"),
     ]),
-    linki(), wezwania(),
 ])
-
-T_KROK = obj("krok", "Krok z przykładem (blok 9)", summary="{{fields.numer}}. {{fields.etykieta}}", fields=[
-    {"label": "Numer kroku", "name": "numer", "widget": "number", "value_type": "int", "min": 1, "required": True},
-    kotwica(), etykieta(), ton(), h2(), tekst(),
-    t("przyklad", "Przykład (co może powiedzieć córka)", hint="Bez cudzysłowu, szablon go dodaje."),
-    zdjecie(), linki(), wezwania(),
-])
-
-T_WATPLIWOSCI = obj("watpliwosci", "Wątpliwości (blok 10)", summary="{{fields.etykieta}}", fields=[
-    kotwica(), etykieta(), ton(), h2(), tekst(),
-    lst("pary", "Zdanie mamy i odpowiedź", summary="{{fields.mama}}", fields=[
-        s("mama", "Co może powiedzieć mama"),
-        t("odpowiedz", "Co możesz odpowiedzieć"),
+B_CYTAT = obj("cytat", "Karta cytatu (żółta karta)", summary="Karta cytatu: {{fields.etykieta}}", hint=(
+    "Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. "
+    "Nigdy fragment prawdziwej rozmowy z mamą."), fields=[
+    b("widoczny", "Pokaż kartę", True),
+    s("etykieta", "Etykieta nad kartą", hint="Np. „Przykład rozmowy”, „Przykład”. Może zostać pusta."),
+    t("wstep", "Zdanie wstępu w karcie"),
+    lst("repliki", "Kwestie", summary="{{fields.kto}}: {{fields.kwestia}}", fields=[
+        s("kto", "Kto mówi", hint="Mama, Arthur albo Ty. Puste pole = sam cytat."),
+        t("kwestia", "Kwestia", hint="Bez cudzysłowu, szablon go dodaje."),
     ]),
-    t("zakonczenie", "Zdanie na końcu"),
-    linki(), wezwania(),
 ])
-
-T_PYTANIA = obj("pytania", "Rozdział pytań (blok 8)", summary="{{fields.etykieta}}", fields=[
-    kotwica(), etykieta(), ton(),
-    t("wstep", "Wstęp rozdziału (blok 15)"),
-    zdjecie(),
+B_CENNIK = obj("cennik", "Karty ceny (pakiety z Ustawień)", summary="Karty ceny", fields=[
+    {"label": "Pakiety", "name": "info", "widget": "hidden", "required": False},
+])
+B_LINK = obj("link", "Link wewnętrzny (przycisk w kolorze rdzy)", summary="Link: {{fields.tekst}} → {{fields.adres}}", fields=[
+    s("tekst", "Tekst przycisku", required=True,
+      hint="Nazwa strony albo rozdziału, do którego prowadzi (jeden temat, jedna nazwa)."),
+    s("adres", "Adres", hint="Ścieżka wewnętrzna, np. /jak-dziala-arthur albo /jak-korzystac#rezygnacja."),
+    b("aktywny", "Link aktywny", True, hint="Wyłącz, dopóki strona docelowa nie istnieje."),
+])
+B_WEZWANIE = obj("wezwanie", "Przycisk CTA (błękitny)", summary="Przycisk CTA: {{fields.rodzaj}}", fields=[
+    sel("rodzaj", "Który przycisk", [
+        {"label": "Porozmawiaj z Arthurem (okienko z formularzem rozmowy)", "value": "glowne"},
+        {"label": "Umów mamie próbne arthurozmowy (zamówienie)", "value": "zakupowe"},
+        {"label": "Napisz do nas (okienko z formularzem kontaktu)", "value": "napisz"},
+    ], default="glowne", required=True, hint="Teksty przycisków zmieniasz w Ustawieniach."),
+    b("objasnienie", "Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)", False),
+])
+B_PYTANIA = obj("pytania", "Karty pytań (strona Pytania)", summary="Pytania z bazy", fields=[
     faq_rel(label="Pytania z bazy, w kolejności"),
-    wezwania(),
 ])
-
-T_FAQ = obj("faq", "Najczęstsze pytania, akordeon (blok 19)", summary="{{fields.h2}}", fields=[
-    kotwica(), ton(),
-    s("h2", "Nagłówek", default="Najczęstsze pytania"),
+B_FAQ = obj("faq", "Najczęstsze pytania (akordeon z 3 pytaniami)", summary="Najczęstsze pytania", hint=(
+    "Pod akordeonem szablon dodaje przycisk „Wszystkie pytania” → /pytania."), fields=[
     faq_rel(3, 3, label="Trzy pytania z bazy"),
-    linki(),
-], hint="Bez etykiety, więc nie wchodzi do spisu treści. Kończy się linkiem „Wszystkie pytania” → /pytania.")
-
-T_KONTAKT = obj("kontakt", "Kontakt i dane firmy (bloki 5, 14)", summary="{{fields.etykieta}}", fields=[
-    kotwica(), etykieta(), ton(), h2(), tekst(),
-    obj("pokaz", "Pokaż dane z Ustawień", fields=[
-        b("email", "E-mail"), b("telefon", "Telefon"),
-        b("godziny_telefonu", "Godziny, w których odbieramy telefon"),
-        b("czas_odpowiedzi", "Zdanie o czasie odpowiedzi na e-mail"),
-    ]),
-    t("uwaga", "Uwaga pod listą"),
-    zdjecie(), linki(), wezwania(),
 ])
 
-T_KONIEC = obj("koniec", "Pas wezwań na koniec strony (blok 12)", summary="koniec · {{fields.ton}}", fields=[
-    ton(), linki(), wezwania(),
-])
+BLOKI = [B_TEKST, B_GLOS, B_LISTA, B_ZASADY, B_CYTAT, B_CENNIK, B_LINK, B_WEZWANIE, B_PYTANIA, B_FAQ]
 
-TYPY = [T_ROZDZIAL, T_ZASADY, T_KROK, T_WATPLIWOSCI, T_PYTANIA, T_FAQ, T_KONTAKT, T_KONIEC]
+def bloki():
+    return {"label": "Bloki, w kolejności wyświetlania", "name": "bloki", "widget": "list", "required": False,
+            "collapsed": True, "typeKey": "typ", "types": BLOKI,
+            "hint": "Jeden blok = jeden moduł makiety. Przeciągnij, aby zmienić kolejność."}
 
 SCHEMATY = ["Organization", "WebSite", "WebPage", "Service", "Offer", "FAQPage", "HowTo",
             "AboutPage", "ContactPage", "Person", "BreadcrumbList"]
@@ -279,50 +203,55 @@ def pola_strony(szablon):
         s("autor", "Autor strony", default="Piotr Jaworski"),
         {"label": "Data aktualizacji", "name": "zaktualizowano", "widget": "datetime", "required": True,
          "format": "YYYY-MM-DD", "date_format": "YYYY-MM-DD", "time_format": False,
-         "hint": "Zmieniaj przy każdej zmianie treści (Księga, rozdz. 21.6)."},
+         "hint": "Zmieniaj przy każdej zmianie treści. Autor i data trafiają do danych strukturalnych."},
     ])
     geo = obj("geo", "Streszczenie dla AI (GEO)", fields=[
         t("streszczenie", "Streszczenie strony",
-          hint="2–3 zdania faktów z tej strony, w trzeciej osobie. Trafia do llms.txt i opisu w JSON-LD."),
+          hint="2–5 zdań faktów z tej strony, w trzeciej osobie. Trafia do llms.txt."),
     ])
+    hero = ("Wejście strony głównej: plik 21:9 i osobny kadr 4:3 na telefon." if szablon == "glowna"
+            else "Wejście podstrony: kwadrat 1:1 (1200 × 1200).")
     wejscie_pola = [
         kotwica(), etykieta(),
         t("h1", "Nagłówek H1", required=True,
           hint="Jeden na stronę. Korzyść mamy w nagłówku (dominanta). Bez Entera. " + ZAKAZANE),
-        s("h1_wyroznienie", "Słowo wyróżnione w H1 (tylko strona główna)"),
-        md("lid", "Wstęp (lid)", hint="1–3 akapity. Pierwsze zdanie streszcza stronę."),
-        zdjecie(label="Zdjęcie wejścia (blok 1 lub 2, 13)"),
+        zdjecie("Zdjęcie wejścia", hero),
+        lid("Lid H1 (kursywa pod nagłówkiem)"),
     ]
     if szablon == "blad":
-        wejscie_pola += [
-            obj("przycisk_powrotu", "Przycisk powrotu", fields=[s("tekst", "Tekst"), s("adres", "Adres")]),
-            linki(),
-        ]
-    wejscie_pola += [wezwania(), b("pokaz_autora_i_date", "Pokaż autora i datę aktualizacji (blok 18)", True)]
+        wejscie_pola.append(obj("przycisk_powrotu", "Przycisk powrotu", fields=[s("tekst", "Tekst"), s("adres", "Adres")]))
+    wejscie_pola.append(bloki())
     pola = [
         obj("strona", "Strona", fields=[
-            s("nazwa", "Nazwa w CMS", required=True),
+            s("nazwa", "Nazwa strony", required=True,
+              hint="Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w przyciskach „Link wewnętrzny”."),
             {"label": "Szablon", "name": "szablon", "widget": "hidden", "default": szablon},
         ]),
         seo, geo,
-        obj("wejscie", "Wejście strony (H1, wstęp, zdjęcie)", collapsed=False, fields=wejscie_pola),
+        obj("wejscie", "Wejście strony (H1, zdjęcie, lid, bloki)", collapsed=False, fields=wejscie_pola),
     ]
     if szablon != "blad":
-        pola.append({"label": "Sekcje strony", "name": "sekcje", "widget": "list", "required": False,
-                     "collapsed": True, "typeKey": "typ", "types": TYPY,
-                     "hint": "Kolejność sekcji = kolejność na stronie. Przeciągnij, aby zmienić."})
+        pola.append(lst("sekcje", "Rozdziały strony", summary="{{fields.etykieta}} · {{fields.h2}}",
+                        hint="Kolejność rozdziałów = kolejność na stronie. Przeciągnij, aby zmienić.", fields=[
+            kotwica(), etykieta(), ton(),
+            t("h2", "Nagłówek H2",
+              hint="Jedno pełne zdanie, które samo odpowiada na pytanie rozdziału (cytowalne przez AI). Bez Entera. " + ZAKAZANE),
+            zdjecie("Zdjęcie rozdziału", "Zdjęcie w rozdziale: poziome 4:3 (1200 × 900)."),
+            lid("Lid H2 (kursywa pod nagłówkiem)"),
+            bloki(),
+        ]))
     else:
-        pola.append({"label": "Sekcje", "name": "sekcje", "widget": "hidden", "default": []})
+        pola.append({"label": "Rozdziały", "name": "sekcje", "widget": "hidden", "default": []})
     return pola
 
 STRONY = [
-    ("strona-glowna", "Strona główna", "glowna"),
-    ("jak-to-dziala", "Jak to działa", "podstrona"),
+    ("strona-glowna", "Jej sprawy (strona główna)", "glowna"),
+    ("o-nas", "O nas", "podstrona"),
+    ("jak-dziala-arthur", "Jak działa Arthur", "podstrona"),
+    ("jak-korzystac", "Jak korzystać", "podstrona"),
+    ("jak-rozmawiac-z-mama", "Jak rozmawiać z mamą", "podstrona"),
     ("czego-nie-obiecujemy", "Czego nie obiecujemy", "podstrona"),
     ("pytania", "Pytania", "podstrona"),
-    ("jak-skorzystac", "Jak skorzystać", "podstrona"),
-    ("jak-rozmawiac-z-mama", "Jak rozmawiać z mamą", "podstrona"),
-    ("o-nas", "O nas", "podstrona"),
     ("kontakt", "Kontakt", "podstrona"),
     ("404", "Strona błędu (404)", "blad"),
 ]
@@ -333,73 +262,87 @@ POLA_BAZY = [lst("pytania", "Pytania i odpowiedzi", summary="{{fields.pytanie}}"
     s("id", "Identyfikator", required=True,
       hint="Stały, małe litery i łącznik. Strony odwołują się do pytania po identyfikatorze.",
       pattern=["^[a-z0-9-]+$", "Tylko a–z, cyfry i łącznik"]),
-    s("pytanie", "Pytanie", required=True, hint="Tak, jak zadałaby je córka. Na stronie Pytania to nagłówek H2."),
+    s("pytanie", "Pytanie", required=True, hint="Tak, jak zadałaby je córka."),
     md("odpowiedz", "Odpowiedź", required=True,
        hint="Pierwsze zdanie zawiera całą odpowiedź (GEO). " + ZAKAZANE),
-    obj("link", "Link pod odpowiedzią", fields=[s("tekst", "Tekst linku"), s("adres", "Adres")]),
+    obj("link", "Link wewnętrzny pod odpowiedzią", fields=[s("tekst", "Tekst linku"), s("adres", "Adres")]),
 ])]
+
+def okno_pola(kontakt=False):
+    if kontakt:
+        pola = [s("tytul", "Tytuł"), t("wstep", "Wstęp"), s("pole_imie", "Pole: imię"), s("pole_email", "Pole: e-mail"),
+                s("pole_telefon", "Pole: telefon"), s("pole_wiadomosc", "Pole: wiadomość"), s("przycisk", "Przycisk")]
+    else:
+        pola = [s("tytul", "Tytuł"), t("wstep", "Wstęp"), s("pole_numer", "Pole: numer"),
+                s("pytanie_kiedy", "Pytanie o porę"), s("opcja_teraz", "Opcja: teraz"), s("opcja_termin", "Opcja: termin"),
+                s("pole_data", "Pole: data"), s("pole_godzina", "Pole: godzina"), s("przycisk", "Przycisk")]
+    return pola + [t("potwierdzenie", "Potwierdzenie"), t("blad", "Komunikat błędu"), t("zgoda", "Zgoda i informacja RODO")]
+
+def lista_linkow(name, label, summary="{{fields.tekst}} → {{fields.adres}}", hint=None):
+    return lst(name, label, summary=summary, hint=hint, fields=[s("tekst", "Tekst"), s("adres", "Adres")])
+
+WEZWANIA = [{"label": "Porozmawiaj z Arthurem", "value": "glowne"},
+            {"label": "Umów mamie próbne arthurozmowy", "value": "zakupowe"},
+            {"label": "Napisz do nas", "value": "napisz"}]
 
 POLA_USTAWIEN = [
     obj("marka", "Marka", fields=[
         s("nazwa", "Nazwa usługi", hint="Zawsze jednym słowem, małą literą w tekście ciągłym."),
         s("domena", "Domena"), s("jezyk", "Język"),
         t("definicja", "Definicja arthurozmów",
-          hint="Słowo w słowo to samo w Pytaniach, w JSON-LD i w llms.txt (R167)."),
+          hint="Słowo w słowo to samo w odpowiedzi „Czym są arthurozmowy?”, w JSON-LD i w llms.txt."),
         obj("logo", "Logo", fields=[img("plik", "Plik SVG", "marka"), s("alt", "Alt")]),
     ]),
-    obj("naglowek", "Nagłówek strony i menu", hint=(
-        "Przycisk „Menu” otwiera panel z grupami: rozdziały oglądanej strony i lista stron, "
-        "a pod nimi zakup i Panel klienta. Tak samo na telefonie i na komputerze."), fields=[
+    obj("naglowek", "Belka górna i menu", hint=(
+        "Od lewej: logo, przycisk Menu, linki, przycisk zamówienia i Panel klienta. Menu ma grupy „Na tej stronie” "
+        "i „Pozostałe strony”."), fields=[
         s("menu", "Napis na przycisku menu"),
         s("grupa_rozdzialy", "Nazwa grupy rozdziałów (spis treści)"),
         s("grupa_strony", "Nazwa grupy stron"),
-        s("panel_klienta", "Link do panelu klienta w nagłówku"),
-        b("przycisk_staly", "Przycisk wezwania przyklejony do dołu ekranu na telefonie", True),
+        lista_linkow("linki", "Linki w belce (np. Cena, Kontakt)"),
+        s("zakup", "Napis na przycisku zamówienia w belce"),
+        s("panel_klienta", "Napis linku do panelu klienta"),
+        b("przycisk_staly", "Przycisk „Porozmawiaj z Arthurem” przyklejony do dołu ekranu na telefonie", True),
     ]),
     obj("nawigacja", "Lista stron (menu i stopka)", hint=(
-        "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, linkach i spisie treści strony głównej."), fields=[
-        lst("strony", "Strony", summary="{{fields.tekst}} → {{fields.adres}}",
-            fields=[s("tekst", "Nazwa strony"), s("adres", "Adres")]),
+        "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, przyciskach „Link wewnętrzny” "
+        "i spisie treści strony głównej."), fields=[
+        lista_linkow("strony", "Strony"),
+        s("wszystkie_pytania", "Napis przycisku pod akordeonem pytań"),
     ]),
-    obj("wezwania", "Teksty wezwań", fields=[
-        obj("glowne", "Wezwanie główne (otwiera okienko rozmowy)", fields=[
-            s("przycisk", "Przycisk"), t("dopisek", "Dopisek pod przyciskiem")]),
-        s("jawnosc", "Zdanie o jawności przy wezwaniu"),
-        obj("zakupowe", "Wezwanie zakupowe", fields=[
-            s("przycisk", "Przycisk"), s("adres", "Adres"), s("nad_przyciskiem", "Pytanie nad przyciskiem")]),
+    obj("wezwania", "Przyciski CTA", fields=[
+        obj("glowne", "Porozmawiaj z Arthurem (otwiera okienko rozmowy)", fields=[
+            s("przycisk", "Przycisk"), t("dopisek", "Objaśnienie pod przyciskiem")]),
+        obj("zakupowe", "Zamówienie", fields=[s("przycisk", "Przycisk"), s("adres", "Adres")]),
+        obj("napisz", "Napisz do nas (otwiera okienko kontaktu)", fields=[s("przycisk", "Przycisk")]),
     ]),
     obj("okno_rozmowy", "Okienko „Porozmawiaj z Arthurem”", hint=(
-        "Włączamy po ocenie skutków dla ochrony danych (Z6) i z polityką prywatności."), fields=[
-        s("tytul", "Tytuł"), t("wstep", "Wstęp"), s("pole_numer", "Pole: numer"),
-        s("pytanie_kiedy", "Pytanie o porę"), s("opcja_teraz", "Opcja: teraz"), s("opcja_termin", "Opcja: termin"),
-        s("pole_data", "Pole: data"), s("pole_godzina", "Pole: godzina"), s("przycisk", "Przycisk"),
-        t("potwierdzenie", "Potwierdzenie"), t("blad", "Komunikat błędu"), t("zgoda", "Zgoda i informacja RODO"),
-    ]),
+        "Włączamy po ocenie skutków dla ochrony danych (Z6) i z polityką prywatności."), fields=okno_pola()),
+    obj("okno_kontaktu", "Okienko „Napisz do nas”", hint=(
+        "Włączamy po ocenie skutków dla ochrony danych (Z6) i z polityką prywatności."), fields=okno_pola(True)),
     obj("pakiety", "Pakiety i ceny", fields=[
         s("waluta", "Waluta"), s("okres", "Dopisek przy cenie"),
         lst("lista", "Pakiety", summary="{{fields.cena}} zł · {{fields.opis}}", fields=[
             {"label": "Cena (zł brutto)", "name": "cena", "widget": "number", "value_type": "int", "required": True},
             {"label": "Rozmowy pełne", "name": "rozmowy_pelne", "widget": "number", "value_type": "int"},
             {"label": "Rozmowy podtrzymujące", "name": "rozmowy_podtrzymujace", "widget": "number", "value_type": "int"},
-            s("opis", "Opis pozycji cennika", hint="Z odmianą, np. „6 rozmów pełnych i 8 rozmów podtrzymujących”."),
+            s("opis", "Opis na karcie ceny", hint="Z odmianą, np. „6 rozmów pełnych i 8 rozmów podtrzymujących”."),
             s("nazwa", "Nazwa pakietu", hint="Małą literą, np. „pakiet optymalny”."),
             b("polecany", "Pakiet proponowany na początek"),
         ]),
     ]),
-    obj("firma", "Dane firmy", hint="Linia {firma} w tekstach: nazwa, ulica, kod i miejscowość, NIP.", fields=[
+    obj("firma", "Dane firmy", hint="Znaczniki w tekstach: {firma}, {email}, {telefon}, {godziny}.", fields=[
         s("nazwa", "Nazwa"), s("ulica", "Ulica i numer"), s("kod_pocztowy", "Kod pocztowy"),
         s("miejscowosc", "Miejscowość"), s("kraj", "Kraj (kod)"), s("nip", "NIP"),
         s("email", "E-mail"), s("telefon", "Telefon"),
-        s("telefon_godziny", "Godziny odbierania telefonu"), t("czas_odpowiedzi", "Czas odpowiedzi na e-mail"),
+        s("telefon_godziny", "Godziny odbierania telefonu"),
         s("panel_klienta", "Adres panelu klienta"),
     ]),
     obj("autor", "Autor", fields=[s("imie_nazwisko", "Imię i nazwisko"), s("adres_strony", "Strona autora")]),
     obj("stopka", "Stopka", fields=[
-        b("wezwanie_glowne", "Wezwanie główne w stopce", True),
-        lst("linki_prawne", "Linki prawne (pod listą stron, zakupem i Panelem klienta)", summary="{{fields.tekst}}",
-            fields=[s("tekst", "Tekst"), s("adres", "Adres")]),
-        s("kontakt_etykieta", "Etykieta przy e-mailu"), s("jawnosc", "Zdanie o jawności"),
+        sel("wezwania", "Przyciski CTA na górze stopki", WEZWANIA, multiple=True),
         s("prywatnosc", "Zdanie o statystykach"), s("prawa", "Linia praw autorskich i danych firmy"),
+        lista_linkow("linki_prawne", "Linki prawne", summary="{{fields.tekst}}"),
     ]),
 ]
 
@@ -426,7 +369,7 @@ config = {
     "public_folder": "/images",
     "collections": [
         {"name": "strony", "label": "Strony", "label_singular": "Strona",
-         "description": "Teksty stron arthurozmowy.pl, ułożone według bloków Matrycy.",
+         "description": "Teksty stron arthurozmowy.pl: wejście i rozdziały, w rozdziale bloki (moduły makiety).",
          "files": [{"name": n, "label": l, "file": f"src/content/strony/{n}.yml",
                     "format": "yml", "fields": pola_strony(sz)} for n, l, sz in STRONY]},
         {"name": "pytania", "label": "Pytania i odpowiedzi",
@@ -434,7 +377,7 @@ config = {
          "files": [{"name": "baza", "label": "Baza pytań", "file": "src/content/pytania/baza.yml",
                     "format": "yml", "fields": POLA_BAZY}]},
         {"name": "ustawienia", "label": "Ustawienia",
-         "description": "Wezwania, pakiety, dane firmy i stopka: raz, dla wszystkich stron.",
+         "description": "Belka, lista stron, przyciski CTA, okienka, pakiety, dane firmy i stopka: raz, dla wszystkich stron.",
          "files": [{"name": "witryna", "label": "Ustawienia witryny", "file": "src/content/ustawienia/witryna.yml",
                     "format": "yml", "fields": POLA_USTAWIEN}]},
     ],
@@ -446,7 +389,7 @@ class NoAlias(yaml.SafeDumper):
 
 HEADER = """# Sveltia CMS · arthurozmowy.pl · konfiguracja redakcji
 # PLIK GENEROWANY: zmiany wprowadzaj w narzedzia/generuj_config.py i uruchom go ponownie.
-# Bez kotwic YAML, bo Sveltia czyta YAML ściśle. Pola i bloki odpowiadają Matrycy (claude/Matryca_WITRYNA_v1.md).
+# Bez kotwic YAML, bo Sveltia czyta YAML ściśle. Bloki odpowiadają modułom makiety V2 (README, „Model treści”).
 # Logowanie do /admin osobistym tokenem GitHub; worker logowania (base_url) dodamy dla kolejnych redaktorów.
 """
 

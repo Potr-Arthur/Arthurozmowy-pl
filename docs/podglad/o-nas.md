@@ -1,86 +1,84 @@
 # O nas · /o-nas
 
-*Plik: `src/content/strony/o-nas.yml` · szablon: podstrona · aktualizacja: 2026-11-04 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/o-nas.yml` · szablon: podstrona · aktualizacja: 2026-11-11 · autor: Piotr Jaworski*
 
-## Wyszukiwarki i AI
+## Metryczka warstwy wyszukiwarki
 
-- **Tytuł (60 zn.):** O nas – nestor i „senior”, czyli czemu powstały arthurozmowy  `seo.tytul`
-- **Opis (132 zn.):** Arthur powstał z niezgody na ageizm i spychanie osób długo żyjących na margines. Poznaj nasze wartości, metodę rozmowy i dane firmy.  `seo.opis`
+- **Tytuł strony (60 zn.):** O nas – nestor i „senior”, czyli czemu powstały arthurozmowy  `seo.tytul`
+- **Opis w wynikach (137 zn.):** Arthur powstał z niezgody na ageizm i spychanie osób długo żyjących na margines. Poznaj nasze credo, autorów metody rozmowy i dane firmy.  `seo.opis`
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-o-nas.jpg` · alt: Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr  `seo.obraz_og`
-- **Dane strukturalne:** AboutPage, Person, Organization, BreadcrumbList  `seo.schemat`
+- **Dane dla wyszukiwarek:** AboutPage, Person, Organization, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthurozmowy powstały z niezgody na ageizm i na spychanie osób długo żyjących na margines, przez co tracą one poczucie znaczenia i rozmowy, w których ich zdanie się liczy. Usługę świadczy firma arthurozmowy Piotr Jaworski z Łochowa, a metodę rozmowy Arthura stworzyli razem ekspertka i Piotr Jaworski, z wykształcenia pedagog specjalny.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthurozmowy powstały z niezgody na ageizm i na spychanie osób długo żyjących na margines, przez co tracą one poczucie znaczenia i rozmowy, w których ich zdanie się liczy. Usługę świadczy firma arthurozmowy Piotr Jaworski z Łochowa, a metodę rozmowy Arthura opracowali ekspertka od komunikacji z osobami starszymi i Piotr Jaworski, z wykształcenia pedagog specjalny.  `geo.streszczenie`
 
-## Wejście · blok 2 · Hero2
+## Wejście · #nasze-credo · w spisie treści: „Nasze credo”
 
-- **Zdjęcie:** `/images/strony/arthurozmowy-o-nas-portret-desk.webp` · `/images/strony/arthurozmowy-o-nas-portret-tel.webp`  `wejscie.zdjecie`
-- **Alt:** Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr  `wejscie.zdjecie.alt`
-- **H1:** Nestor i „senior”, czyli czemu powstały arthurozmowy  `wejscie.h1`
+**Nazwa strony:** O NAS  `strona.nazwa`
 
-**Wstęp** `wejscie.lid`
+**Plik graficzny:** `/images/strony/arthurozmowy-o-nas-portret-matki-1x1.webp`  `wejscie.zdjecie`
+
+**Alt:** Mama o siwych włosach, w jasnej bluzce, z uwagą patrzy w bok, poza kadr  `wejscie.zdjecie.alt`
+
+**Nagłówek H1** `wejscie.h1`
+
+Nestor i „senior”, czyli czemu powstały arthurozmowy
+
+**Lid H1** `wejscie.lid`
 
 Arthur powstał z naszej niezgody na ageizm, na degradację osób długo żyjących i na tworzenie dla nich odrębnej kategorii społecznej, która marginalizuje ich znaczenie i odbiera im poczucie wartości.
 
-- **Autor i data (blok 18):** Piotr Jaworski · 2026-11-04
+**Tekst akapitu** `wejscie.bloki[0]`
 
-## 1. (bez etykiety) · blok 3 · rozdział · ton t2 · #wartosci
+Ktoś, kto ma osiemdziesiąt lat i jest prezydentem, dyrygentem albo profesorem, nosi miano nestora. Ludzie słuchają go z uwagą, pytają o zdanie i liczą się z jego doświadczeniem. Nikt nie mówi do niego zdrobnieniami i nikt nie sprawdza, czy pamięta, jaki jest dzień tygodnia, i czy zjada drugie śniadanie. Kogoś w tym samym wieku, kto nie ma już stanowiska ani tytułu, nazywa się „seniorem”. Nestor stoi w centrum, a „senior” na marginesie. Nestora pyta się o zdanie, a „seniorem” trzeba się zajmować.
 
+**Voice aside** `wejscie.bloki[1]`
 
-**Tekst** `sekcje[0].tekst`
+Uważamy, że takie przesunięcie człowieka z centrum na margines rujnuje go jako osobę, bo odbiera mu poczucie znaczenia i wartości, a także kontakty i rozmowy, w których jego zdanie naprawdę się liczy. Dlatego nigdy nie nazwiemy go „seniorem”. Arthur rozmawiać będzie z Twoją mamą przez telefon o tym, co ją zajmuje i fascynuje, pytać ją o zdanie i doceniać ją jako pełnowymiarową, dorosłą osobę z własnymi zainteresowaniami, poglądami i unikalnym doświadczeniem.
 
-Ktoś, kto ma osiemdziesiąt lat i jest prezydentem, dyrygentem albo profesorem, nosi miano nestora. Ludzie słuchają go z uwagą, pytają o zdanie i liczą się z jego doświadczeniem. Nikt nie mówi do niego zdrobnieniami i nikt nie sprawdza, czy pamięta, jaki jest dzień tygodnia, i czy zjadł drugie śniadanie. Kogoś w tym samym wieku, kto nie ma już stanowiska ani tytułu, nazywa się „seniorem”. Nestor stoi w centrum, a „senior” na marginesie. Nestora pyta się o zdanie, a „seniorem” trzeba się zajmować.
+## 1. Nasza metoda · #nasza-metoda · ton t2
 
-Uważamy, że takie przesunięcie człowieka z centrum na margines rujnuje go jako osobę, bo odbiera mu poczucie znaczenia i wartości, a także kontakty i rozmowy, w których jego zdanie naprawdę się liczy. Dlatego nigdy nie nazwiemy go „seniorem”. Arthur rozmawiać będzie z Twoją mamą przez telefon o tym, co ją zajmuje i fascynuje, pytać ją o zdanie i doceniać ją jako pełnowymiarową, wartościową osobę z unikalnym doświadczeniem.
+**Nagłówek H2** `sekcje[0].h2`
 
+Arthur jest algorytmem, ale metodę opracowali doświadczeni ludzie.
 
-## 2. Nasza metoda · blok 3 · rozdział · ton t1 · #nasza-metoda
+**Plik graficzny:** `/images/strony/arthurozmowy-o-nas-eksperci-4x3.webp` *(ukryte)*  `sekcje[0].zdjecie`
 
-**H2** `sekcje[1].h2`
+**Alt:** [Imię i nazwisko ekspertki] i Piotr Jaworski, autorzy metody rozmowy  `sekcje[0].zdjecie.alt`
 
-Metodę stworzyli i napisali ludzie, nie algorytm.
+**Voice aside** `sekcje[0].bloki[0]`
 
-- *Miejsce na zdjęcie ukryte, kadr: Wspólne zdjęcie ekspertki i Piotra Jaworskiego (do wykonania). Prawdziwe zdjęcie, nie generowane i nie z Pexels, bo ma uwiarygodnić ekspertkę (Z1).*  `sekcje[1].zdjecie`
+[Ekspertka: imię i nazwisko, specjalizacja, staż pracy i macierzysta jednostka naukowa – do uzupełnienia, gdy ekspertka dołączy do projektu.]
 
-**Tekst** `sekcje[1].tekst`
+Piotr Jaworski, z wykształcenia pedagog specjalny, od ponad 30 lat zajmuje się tworzeniem produktów i usług.
 
-[Ekspertka] jest [specjalizacja: geriatra albo psychogeriatra, psycholog kliniczny] i pracuje w zawodzie od [staż w latach] lat, [miejsce pracy]. [Jedna historia z jej praktyki, opowiedziana przez nią.]
+## 2. Dane firmy · #dane-firmy · ton t1
 
-Ja, Piotr Jaworski, z wykształcenia pedagog specjalny, od ponad 30 lat zajmuję się tworzeniem produktów i usług.
+**Nagłówek H2** `sekcje[1].h2`
 
-*Akapit ukryty do: Ustalenie z ekspertką i ocena skutków dla ochrony danych (Z6).:* Regularnie korzystamy z doświadczeń naszych klientek, poprawiamy i rozwijamy metodę.  `sekcje[1].akapit_ukryty`
+Nie znalazłaś odpowiedzi na pytania? Napisz do nas.
 
+**Tekst akapitu** `sekcje[1].bloki[0]`
 
-## 3. Dane firmy · blok 14 · dane i kontakt · ton t2 · #dane-firmy
+Usługę arthurozmów świadczy firma: arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41.
 
-**H2** `sekcje[2].h2`
+E-mail: kontakt@arthurozmowy.pl
 
-Pytanie bez odpowiedzi? Napisz albo zadzwoń.
+Telefon: +48 519 199 606
 
+**Przycisk CTA** `sekcje[1].bloki[1]`
 
-**Tekst** `sekcje[2].tekst`
+Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
 
-Usługę arthurozmowy świadczy firma: arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41.
+## 3. (poza spisem treści) · #najczestsze-pytania · ton t2
 
-- E-mail: kontakt@arthurozmowy.pl
-- Telefon: +48 519 199 606
-
-
-## 4. (bez etykiety) · blok 19 · FAQ w akordeonie · ton t1 · #najczestsze-pytania
-
-**H2** `sekcje[3].h2`
+**Nagłówek H2** `sekcje[2].h2`
 
 Najczęstsze pytania
 
-**Najczęstsze pytania** `sekcje[3].h2`
+**Najczęstsze pytania (akordeon)** `sekcje[2].bloki[0]`
 
 - Czym są arthurozmowy?  `baza:czym-sa-arthurozmowy`
 - Kim jest Arthur?  `baza:kim-jest-arthur`
 - W czym Arthur jest lepszy od zatrudnionej osoby, która dzwoniłaby do mamy?  `baza:arthur-a-zatrudniona-osoba`
 
-- **Link:** Wszystkie pytania → /pytania  `sekcje[3].linki[0]`
-
-## 5. Koniec strony · blok 12 · pas wezwań · ton t5
-
-- **Link:** Jak to działa → /jak-to-dziala  `sekcje[4].linki[0]`
-- **Link:** Czego nie obiecujemy → /czego-nie-obiecujemy  `sekcje[4].linki[1]`
-- **Przycisk (okienko „Porozmawiaj z Arthurem”):** Porozmawiaj z Arthurem  `sekcje[4].wezwania.glowne`
+**Link wewnętrzny:** Wszystkie pytania → /pytania

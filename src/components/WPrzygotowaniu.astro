@@ -1,18 +1,24 @@
 ---
 // Strony prawne na adresie tymczasowym: „w przygotowaniu”, żeby linki w stopce nie prowadziły donikąd.
+// Nazwa strony i H1 to tekst linku z Ustawień (stopka.linki_prawne), powrót prowadzi na stronę główną pod jej nazwą.
 import Uklad from '../layouts/Uklad.astro';
+import Link from './bloki/Link.astro';
 import { getEntry } from 'astro:content';
-interface Props { tytul: string; adres: string }
-const { tytul, adres } = Astro.props;
+import type { Kontekst } from '../lib/kontekst';
+interface Props { adres: string }
+const { adres } = Astro.props;
 const ust = (await getEntry('ustawienia', 'witryna'))!.data;
+const nazwa = ust.stopka.linki_prawne.find((l: any) => l.adres === adres)?.tekst ?? adres;
+const glowna = ust.nawigacja.strony.find((s: any) => s.adres === '/');
+const k: Kontekst = { ust, baza: new Map(), adres };
 ---
-<Uklad tytul={`${tytul} – arthurozmowy`} adres={adres} indeksuj={false} ust={ust} stopkaPrev="1">
+<Uklad tytul={`${nazwa} – ${ust.marka.nazwa}`} adres={adres} indeksuj={false} ust={ust} stopkaPrev="1">
   <section class="sekcja sekcja--pierwsza sekcja--blad ton-1">
     <div class="wrap">
-      <div class="tekst">
-        <h1>{tytul}</h1>
-        <p>Ta strona jest w przygotowaniu.</p>
-        <div class="wezwania"><a class="przycisk" href="/">Wróć na stronę główną</a></div>
+      <div class="tresc kolumna">
+        <h1>{nazwa}</h1>
+        <p class="lid">Ta strona jest w przygotowaniu.</p>
+        {glowna && <Link b={glowna} k={k} />}
       </div>
     </div>
   </section>
