@@ -40,9 +40,9 @@ strong{font-weight:600}
 .nieaktywny{color:var(--fg2);text-decoration:underline dotted;text-underline-offset:.2em;cursor:not-allowed}
 /* zaślepka w tekście: widoczna tylko na adresie tymczasowym (strona z zaślepką nie wychodzi na arthurozmowy.pl) */
 .uzup{border:1px dashed var(--linia);padding:0 5px;color:var(--fg2);font-style:normal;background:color-mix(in srgb,var(--jajko) 18%,transparent)}
-/* link w tekście: cienka ramka w kolorze rdzy (Księga marki, rozdz. 17) */
-main a:not(.cta):not(.link-wew){color:inherit;text-decoration:none;border:1px solid var(--akcent);padding:.02em .3em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
-main a:not(.cta):not(.link-wew):hover{background:color-mix(in srgb,var(--akcent) 12%,transparent)}
+/* link w tekście i w stopce: cienka ramka w kolorze rdzy, rogi 30 (Księga marki, rozdz. 17; decyzja z 11.11.2026) */
+main a:not(.cta):not(.link-wew),.stopka a:not(.cta){color:inherit;text-decoration:none;border:1px solid var(--rdza);border-radius:var(--r-30);padding:.04em .55em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+main a:not(.cta):not(.link-wew):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)}
 
 /* ===== siatka ===== */
 .wrap{max-width:calc(var(--kontener) + 40px);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
@@ -138,16 +138,21 @@ a.link-wew:hover{background:color-mix(in srgb,var(--rdza) 86%,var(--onyks))}
 .pakiet__okres{color:var(--mech);font-size:.95rem}
 .pakiet ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
 
-/* ===== moduł: Karta pytania (akordeon; sky; pytanie Plex Sans Italic onyks; rogi proste, prawy dolny zaokrąglony) ===== */
+/* ===== moduł: Karta pytania (akordeon; pytanie na sky, odpowiedź na piasku; Plex Sans Italic onyks;
+   rogi proste, prawy dolny zaokrąglony – na całej karcie, zamkniętej i otwartej) ===== */
 .karty-pytan{display:grid;gap:12px}
-.pytanie{background:var(--sky);color:var(--onyks);border-radius:0 0 var(--r-karta) 0}
-.pytanie>summary{list-style:none;cursor:pointer;position:relative;padding:18px 60px 18px clamp(18px,3vw,26px)}
+.pytanie{color:var(--onyks);border-radius:0 0 var(--r-karta) 0;overflow:hidden}
+.pytanie>summary{background:var(--sky);list-style:none;cursor:pointer;position:relative;padding:18px 60px 18px clamp(18px,3vw,26px)}
 .pytanie>summary::-webkit-details-marker{display:none}
 .pytanie>summary h3{font:italic 500 clamp(1.1rem,1.6vw,1.25rem)/1.4 var(--font-tekst);color:var(--onyks)}
 .pytanie>summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font:400 1.8rem/1 var(--font-tekst);color:var(--onyks)}
 .pytanie[open]>summary::after{content:"\2212"}
-.pytanie__odpowiedz{display:grid;gap:.9rem;justify-items:start;padding:0 max(clamp(18px,3vw,26px),calc(var(--r-karta) * .6)) clamp(22px,3vw,30px) clamp(18px,3vw,26px)}
+.pytanie__odpowiedz{background:var(--piasek);display:grid;gap:.9rem;justify-items:start;padding:clamp(18px,2.5vw,24px) max(clamp(18px,3vw,26px),calc(var(--r-karta) * .6)) clamp(22px,3vw,30px) clamp(18px,3vw,26px)}
 .pytanie__odpowiedz>p{justify-self:stretch}
+/* zamknięta karta pokazuje samo pytanie także tam, gdzie przeglądarka nie chowa treści <details> */
+.pytanie:not([open])>.pytanie__odpowiedz{display:none}
+/* w rozdziale na piasku odpowiedź stoi na papierze, żeby nie zlała się z tłem (jak Voice aside) */
+.ton-2 .pytanie__odpowiedz{background:var(--paper)}
 
 /* ===== zdjęcia: H1 1:1 i H2 4:3 – wszystkie rogi zaokrąglone poza prawym górnym ===== */
 .foto-ramka{container-type:inline-size}
@@ -261,9 +266,9 @@ body:has(.menu[open]) .stale{display:none}
 .stopka__wezwania{display:flex;flex-wrap:wrap;gap:12px 14px}
 @media (max-width:759px){.stopka__wezwania{flex-direction:column}.stopka__wezwania .wezwanie{justify-items:stretch}.stopka__wezwania .cta{width:100%}}
 .stopka ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 20px}
-.stopka a{color:var(--fg);text-decoration:none;border:1px solid var(--akcent);padding:.04em .32em}
-.stopka a:hover{background:color-mix(in srgb,var(--akcent) 16%,transparent)}
-.stopka [aria-current="page"]{font-weight:600;padding:.04em .32em}
+.stopka a:not(.cta){color:var(--fg)}
+.stopka a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 30%,transparent)}
+.stopka [aria-current="page"]{font-weight:600;padding:.04em .55em}
 .stopka__dane{display:grid;gap:6px;font-size:.95rem;color:var(--fg2)}
 .stopka__dane a{color:var(--fg2)}
 .stopka__prawne{font-size:.95rem}
