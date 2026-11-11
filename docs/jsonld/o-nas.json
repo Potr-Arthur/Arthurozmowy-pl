@@ -6,7 +6,7 @@
       "@id": "https://arthurozmowy.pl/o-nas#strona",
       "url": "https://arthurozmowy.pl/o-nas",
       "name": "O nas – nestor i „senior”, czyli czemu powstały arthurozmowy",
-      "description": "Arthur powstał z niezgody na ageizm i spychanie osób długo żyjących na margines. Poznaj nasze wartości, metodę rozmowy i dane firmy.",
+      "description": "Arthur powstał z niezgody na ageizm i spychanie osób długo żyjących na margines. Poznaj nasze credo, autorów metody rozmowy i dane firmy.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-11",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -62,7 +62,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Strona główna",
+          "name": "Jej sprawy",
           "item": "https://arthurozmowy.pl/"
         },
         {

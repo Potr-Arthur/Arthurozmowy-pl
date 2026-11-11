@@ -1,0 +1,15 @@
+---
+// Jedna karta pytania (wspólna dla bloków „pytania” i „faq”): <details> z pytaniem w <summary>.
+import Link from './Link.astro';
+import { inline, akapity } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { q: { id: string; pytanie: string; odpowiedz: string; link?: { tekst: string; adres: string } }; k: Kontekst; kotwica?: boolean }
+const { q, k, kotwica = false } = Astro.props;
+---
+<details class="pytanie" id={kotwica ? q.id : undefined}>
+  <summary><h3 set:html={inline(q.pytanie, k.ust.firma)} /></summary>
+  <div class="pytanie__odpowiedz">
+    {akapity(q.odpowiedz, k.ust.firma).map((p) => <p set:html={p} />)}
+    {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
+  </div>
+</details>

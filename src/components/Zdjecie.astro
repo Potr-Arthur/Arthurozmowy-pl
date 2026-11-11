@@ -1,38 +1,42 @@
 ---
-// Jeden plik na zdjęcie (wyjątek: HERO1 ma osobny kadr na telefon). Pokazujemy tylko przy widoczne: true.
-// Wymiary w atrybutach, żeby układ nie skakał przy ładowaniu. Kadr na ekranie robi CSS (object-fit).
-//   pelne   – HERO1 strony głównej, od krawędzi do krawędzi, dół przechodzi w tło
-//   kwadrat – HERO2 podstron, duży kwadrat obok H1
-//   sekcja  – zdjęcie w rozdziale, 4:5, przyklejone przy przewijaniu długiego tekstu
+// Zdjęcie wejścia albo rozdziału. Pokazujemy tylko przy widoczne: true i niczego nie podstawiamy w miejsce ukrytego.
+//   hero    – wejście strony głównej: <picture>, plik 21:9 na komputerze, plik_telefon 4:3 na telefonie;
+//             od krawędzi do krawędzi, prawy dolny róg zaokrąglony (na telefonie wszystkie rogi proste)
+//   kwadrat – wejście podstrony 1:1, wszystkie rogi zaokrąglone poza prawym górnym
+//   sekcja  – zdjęcie w rozdziale 4:3, wszystkie rogi zaokrąglone poza prawym górnym
+// Wymiary w atrybutach width i height. Zdjęcie wejścia ładuje się od razu, pozostałe leniwie.
+import { wymiary } from '../lib/obraz';
 interface Props {
   zdjecie?: { widoczne?: boolean; plik?: string; plik_telefon?: string; alt?: string };
-  rodzaj: 'pelne' | 'kwadrat' | 'sekcja';
+  rodzaj: 'hero' | 'kwadrat' | 'sekcja';
   odRazu?: boolean;
 }
 const { zdjecie, rodzaj, odRazu = false } = Astro.props;
-const pokaz = !!(zdjecie && zdjecie.widoczne && zdjecie.plik);
-const desk = rodzaj === 'pelne' ? { w: 2100, h: 900 } : rodzaj === 'kwadrat' ? { w: 1200, h: 1200 } : { w: 1200, h: 900 };
-const tel = { w: 1200, h: 900 };
-const ramka = rodzaj === 'pelne' ? 'hero1__foto' : `foto-ramka foto-ramka--pion red__foto red__foto--${rodzaj}`;
-const figura = rodzaj === 'pelne' ? 'hero1__figura' : `foto foto--pion foto--img foto--${rodzaj}`;
+const pokaz = !!(zdjecie && zdjecie.widoczne !== false && zdjecie.plik);
+const d = pokaz ? wymiary(zdjecie!.plik!) : { w: 0, h: 0 };
+const t = pokaz && rodzaj === 'hero' && zdjecie!.plik_telefon ? wymiary(zdjecie!.plik_telefon) : null;
+const img = {
+  src: zdjecie?.plik,
+  alt: zdjecie?.alt ?? '',
+  width: d.w,
+  height: d.h,
+  loading: odRazu ? ('eager' as const) : ('lazy' as const),
+  decoding: odRazu ? ('sync' as const) : ('async' as const),
+  fetchpriority: odRazu ? ('high' as const) : undefined,
+};
 ---
-{pokaz && (
-  <div class={ramka}>
-    <figure class={figura}>
-      <picture>
-        {rodzaj === 'pelne' && zdjecie!.plik_telefon && (
-          <source media="(max-width: 759px)" srcset={zdjecie!.plik_telefon} width={tel.w} height={tel.h} />
-        )}
-        <img
-          src={zdjecie!.plik}
-          alt={zdjecie!.alt ?? ''}
-          width={desk.w}
-          height={desk.h}
-          loading={odRazu ? 'eager' : 'lazy'}
-          decoding={odRazu ? 'sync' : 'async'}
-          fetchpriority={odRazu ? 'high' : undefined}
-        />
-      </picture>
+{pokaz && rodzaj === 'hero' && (
+  <figure class="hero1__foto">
+    <picture>
+      {t && <source media="(max-width: 759px)" srcset={zdjecie!.plik_telefon} width={t.w} height={t.h} />}
+      <img {...img} />
+    </picture>
+  </figure>
+)}
+{pokaz && rodzaj !== 'hero' && (
+  <div class={`foto-ramka foto-ramka--${rodzaj}`}>
+    <figure class={`foto foto--${rodzaj}`}>
+      <img {...img} />
     </figure>
   </div>
 )}

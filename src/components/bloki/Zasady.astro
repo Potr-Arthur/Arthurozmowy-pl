@@ -1,0 +1,19 @@
+---
+// Moduł „Zasady”: każda zasada to H3 (numer dopisuje szablon), lid H3 kursywą i tekst akapitu.
+import { inline, akapity } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { zasady: { naglowek: string; lid?: string; tekst?: string }[] }; k: Kontekst }
+const { b, k } = Astro.props;
+---
+<ol class="zasady">
+  {b.zasady.map((z, i) => (
+    <li class="zasada">
+      <span class="zasada__numer" aria-hidden="true">{i + 1}</span>
+      <div class="zasada__tresc">
+        <h3 set:html={inline(z.naglowek, k.ust.firma)} />
+        {z.lid && <p class="zasada__lid" set:html={inline(z.lid, k.ust.firma)} />}
+        {akapity(z.tekst, k.ust.firma).map((p) => <p set:html={p} />)}
+      </div>
+    </li>
+  ))}
+</ol>

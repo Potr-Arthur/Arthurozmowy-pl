@@ -1,67 +1,78 @@
 # arthurozmowy.pl · ustawienia wspólne całej witryny
-# Sveltia CMS: Ustawienia → Witryna. Stan treści: 4.11.2026.
-# Wezwania, jawność, pakiety, dane firmy i stopka są tu raz i trafiają na wszystkie strony,
-# więc brzmią wszędzie identycznie (R35, R158, R164). Strony wybierają tylko, które wezwanie pokazać.
-# Wartości w nawiasach kwadratowych to zaślepki: strona z zaślepką nie wychodzi.
+# Sveltia CMS: Ustawienia → Witryna. Stan treści: 11.11.2026 (makieta V2).
+# Lista stron, przyciski, okienka, pakiety, dane firmy i stopka stoją tu raz i trafiają na wszystkie strony,
+# więc brzmią wszędzie identycznie. Strony wybierają tylko, który przycisk pokazać.
+# Wartości w nawiasach kwadratowych to zaślepki: strona z zaślepką nie wychodzi na arthurozmowy.pl.
 
 marka:
   nazwa: arthurozmowy
   domena: https://arthurozmowy.pl
   jezyk: pl-PL
-  # Jedno zdanie definicji, słowo w słowo to samo w Pytaniach, w danych strukturalnych i w llms.txt (GEO, R167).
+  # Definicja, słowo w słowo ta sama w odpowiedzi „Czym są arthurozmowy?”, w danych strukturalnych i w llms.txt (GEO).
   definicja: |-
-    Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.
+    Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.
   logo:
     plik: /images/marka/arthur-logo.svg
     alt: Arthur
 
-# Nagłówek każdej strony: logo, link „Panel klienta”, przycisk „Porozmawiaj z Arthurem” i przycisk „Menu”.
-# „Menu” otwiera panel z dwiema grupami: „Na tej stronie” (rozdziały oglądanej strony, czyli spis treści)
-# i „Strony” (lista z nawigacja.strony), a pod nimi zakup (wezwania.zakupowe) i Panel klienta.
-# Tak samo na telefonie i na komputerze (decyzja z 4.11.2026).
+# Belka górna każdej strony, od lewej: logo, przycisk „Menu”, linki z listy „linki”, przycisk „Zamów online”
+# (to samo miejsce docelowe co wezwania.zakupowe) i „Panel klienta”.
+# „Menu” otwiera panel z dwiema grupami: „Na tej stronie” (rozdziały oglądanej strony)
+# i „Pozostałe strony” (osiem stron z nawigacja.strony, każda jako przycisk „Link wewnętrzny”; strona oglądana jest oznaczona i nieklikalna).
 naglowek:
   menu: Menu
   grupa_rozdzialy: Na tej stronie
-  grupa_strony: Strony
-  panel_klienta: Panel klienta   # mały link w nagłówku i w menu; adres z firma.panel_klienta
-  # Na telefonie przycisk wezwania głównego jest paskiem przyklejonym do dołu ekranu (Matryca, rozdz. 8).
-  przycisk_staly: true
-
-# Jedna lista stron dla menu i stopki. Zasada z 4.11.2026: jeden temat, jedna nazwa, jedno miejsce.
-# Nazwa strony brzmi tak samo w menu, w stopce, w linkach „więcej” i w spisie treści strony głównej.
-# Kolejność jak rozdziały strony głównej, potem strony bez rozdziału na głównej.
-nawigacja:
-  strony:
-    - tekst: Jak to działa
-      adres: /jak-to-dziala
-    - tekst: Czego nie obiecujemy
-      adres: /czego-nie-obiecujemy
-    - tekst: Jak skorzystać
-      adres: /jak-skorzystac
-    - tekst: Jak rozmawiać z mamą
-      adres: /jak-rozmawiac-z-mama
-    - tekst: Pytania
-      adres: /pytania
-    - tekst: O nas
-      adres: /o-nas
+  grupa_strony: Pozostałe strony
+  linki:
+    - tekst: Cena
+      adres: /#cena
     - tekst: Kontakt
       adres: /kontakt
+  zakup: Zamów online
+  panel_klienta: Panel klienta   # adres z firma.panel_klienta
+  # Na telefonie przycisk „Porozmawiaj z Arthurem” jest paskiem przyklejonym do dołu ekranu (potwierdzone 11.11.2026).
+  przycisk_staly: true
 
+# Jedna lista stron dla menu i stopki. Zasada: jeden temat, jedna nazwa, jedno miejsce.
+# Nazwa strony brzmi tak samo w menu, w stopce, w przyciskach „Link wewnętrzny” i w spisie treści strony głównej.
+nawigacja:
+  strony:
+    - tekst: Jej sprawy
+      adres: /
+    - tekst: O nas
+      adres: /o-nas
+    - tekst: Jak działa Arthur
+      adres: /jak-dziala-arthur
+    - tekst: Jak korzystać
+      adres: /jak-korzystac
+    - tekst: Jak rozmawiać z mamą
+      adres: /jak-rozmawiac-z-mama
+    - tekst: Czego nie obiecujemy
+      adres: /czego-nie-obiecujemy
+    - tekst: Pytania
+      adres: /pytania
+    - tekst: Kontakt
+      adres: /kontakt
+  # Napis na przycisku pod akordeonem „Najczęstsze pytania” (jedyny link do strony o innej nazwie niż strona).
+  wszystkie_pytania: Wszystkie pytania
+
+# Trzy przyciski CTA witryny. Blok „wezwanie” na stronie wybiera jeden z nich po nazwie.
 wezwania:
   glowne:
-    # Przycisk otwiera okienko „Porozmawiaj z Arthurem” (okno_rozmowy), a nie link tel: (decyzja z 4.11.2026).
+    # Otwiera okienko „Porozmawiaj z Arthurem” (okno_rozmowy).
     przycisk: Porozmawiaj z Arthurem
-    # Dopisek pod przyciskiem stoi tylko na wejściu strony głównej.
-    dopisek: Zostaw numer, a Arthur zadzwoni do Ciebie od razu albo o wybranej porze.
-  jawnosc: Tak, Arthur nie jest człowiekiem i nigdy go nie udaje.
+    # Objaśnienie pod przyciskiem pokazuje się tam, gdzie blok ma objasnienie: true.
+    dopisek: Zostaw numer telefonu. Arthur oddzwoni do Ciebie za chwilę lub o wybranej przez Ciebie porze.
   zakupowe:
-    # Ta sama nazwa na przyciskach w treściach, w menu i w stopce (jedna czynność, jedna nazwa).
-    przycisk: Umów mamie pierwszą arthurozmowę
-    adres: /umow               # strona jeszcze niezbudowana
-    nad_przyciskiem: Mama się zgodziła?
+    # Jedna nazwa zakupu na całej witrynie (w tekstach z 11.11 były dwie: „Umów mamie próbne arthurozmowy”
+    # i „Zamów dla mamy próbną arthurozmowę”). Prowadzi do zamówienia w panelu klienta.
+    przycisk: Umów mamie próbne arthurozmowy
+    adres: /umow               # zamówienie jeszcze nie istnieje: przycisk nieaktywny
+  napisz:
+    # Otwiera okienko „Napisz do nas” (okno_kontaktu).
+    przycisk: Napisz do nas
 
-# Okienko otwierane przyciskiem „Porozmawiaj z Arthurem” na każdej stronie. Zastępuje dzwonienie pod numer
-# Arthura i dawne okno „Arthur oddzwoni” (decyzja z 4.11.2026). Włączamy je dopiero po ocenie skutków
+# Okienko otwierane przyciskiem „Porozmawiaj z Arthurem”. Włączamy je dopiero po ocenie skutków
 # dla ochrony danych (Z6), z polityką prywatności i decyzją, dokąd trafia numer i czy próbna rozmowa jest nagrywana.
 okno_rozmowy:
   tytul: Porozmawiaj z Arthurem
@@ -77,10 +88,23 @@ okno_rozmowy:
   blad: "[do napisania]"
   zgoda: "[do napisania po ocenie skutków dla ochrony danych (Z6)]"
 
-# Jedno źródło cen dla sekcji „Cena” strony głównej, strony Jak skorzystać i danych strukturalnych (Offer).
-# Pole „opis” to gotowy tekst pozycji cennika, bo polska odmiana liczebników („4 rozmowy”, „6 rozmów”)
+# Okienko otwierane przyciskiem „Napisz do nas” (nowe w makiecie V2). Teksty pól to propozycja do akceptacji.
+# Włączamy je razem z okienkiem rozmowy, po ocenie skutków dla ochrony danych (Z6).
+okno_kontaktu:
+  tytul: Napisz do nas
+  wstep: Napisz, w jakiej sprawie się odzywasz, i zostaw adres e-mail albo numer telefonu, a skontaktujemy się z Tobą.
+  pole_imie: Imię
+  pole_email: Adres e-mail
+  pole_telefon: Numer telefonu (jeśli wolisz, żebyśmy zadzwonili)
+  pole_wiadomosc: Twoja wiadomość
+  przycisk: Wyślij wiadomość
+  potwierdzenie: "[do napisania]"
+  blad: "[do napisania]"
+  zgoda: "[do napisania po ocenie skutków dla ochrony danych (Z6)]"
+
+# Jedno źródło cen dla kart ceny na stronie głównej i na stronie Jak korzystać oraz dla danych strukturalnych (Offer).
+# Pole „opis” to gotowy tekst karty, bo polska odmiana liczebników („4 rozmowy”, „6 rozmów”)
 # nie powinna zależeć od kodu szablonu. Liczby w polach liczbowych muszą się zgadzać z opisem.
-# Nazwę pakietu zapisujemy małą literą; w cenniku stoi na początku pozycji, wielką literą i pogrubiona.
 pakiety:
   waluta: PLN
   okres: miesięcznie, z VAT
@@ -104,7 +128,7 @@ pakiety:
       nazwa: pakiet rozszerzony
       polecany: false
 
-# W tekstach stron znacznik {firma} zamienia się na linię: nazwa, ulica, kod i miejscowość, NIP.
+# Znaczniki w tekstach stron: {firma} = nazwa, ulica, kod i miejscowość, NIP; {email}, {telefon}, {godziny} = pola poniżej.
 firma:
   nazwa: arthurozmowy Piotr Jaworski   # pisownię w regulaminie i na fakturach potwierdzić z CEIDG
   ulica: Kaliska 155G
@@ -114,24 +138,24 @@ firma:
   nip: 113 135 29 41
   email: kontakt@arthurozmowy.pl
   telefon: +48 519 199 606
-  telefon_godziny: "[godziny, w których odbierasz telefon]"
-  czas_odpowiedzi: "[zdanie o tym, w jakim czasie odpowiadamy na e-mail]"
+  telefon_godziny: od poniedziałku do piątku w godzinach od 9:00 do 16:00
   panel_klienta: https://app.arthurozmowy.pl   # do potwierdzenia
 
 autor:
   imie_nazwisko: Piotr Jaworski
   adres_strony: /o-nas
 
+# Stopka od góry: trzy przyciski CTA, lista stron z nawigacja.strony, zdanie o statystykach,
+# linia z danymi firmy i adresem e-mail, linki prawne.
 stopka:
-  wezwanie_glowne: true        # w stopce stoi przycisk „Porozmawiaj z Arthurem”
-  # Stopka pokazuje strony z nawigacja.strony, pod nimi zakup (wezwania.zakupowe) i Panel klienta,
-  # a na końcu linki prawne. Na adresie tymczasowym /regulamin i /prywatnosc to strony „w przygotowaniu”.
-  linki_prawne:
-    - tekst: Regulamin
-      adres: /regulamin
-    - tekst: Polityka prywatności
-      adres: /prywatnosc
-  kontakt_etykieta: "Napisz do nas:"
-  jawnosc: Arthur nie jest człowiekiem i nigdy go nie udaje.
+  wezwania: [glowne, zakupowe, napisz]
   prywatnosc: Statystyki strony zbieramy bez plików cookies.
   prawa: © 2026 arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41
+  # Na adresie tymczasowym wszystkie trzy to strony „w przygotowaniu”.
+  linki_prawne:
+    - tekst: Regulamin strony
+      adres: /regulamin-strony
+    - tekst: Regulamin usługi
+      adres: /regulamin-uslugi
+    - tekst: Polityka prywatności i RODO
+      adres: /prywatnosc

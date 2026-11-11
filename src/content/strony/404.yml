@@ -1,7 +1,5 @@
 # arthurozmowy.pl · Strona błędu (404)
-# Sveltia CMS: Strony → Strona błędu. Stan treści: dokument „Treści witryny arthurozmowy.pl”, 30.10.2026.
-# Bez zdjęcia, bez spisu treści, poza indeksem wyszukiwarek. Wezwanie główne zostaje, bo ktoś, kto trafił
-# na zły adres, mógł szukać numeru Arthura.
+# Sveltia CMS: Strony → Strona błędu. Bez zdjęcia, bez spisu treści, poza indeksem wyszukiwarek.
 
 strona:
   nazwa: Strona błędu (404)
@@ -17,7 +15,7 @@ seo:
   schemat: []
   indeksuj: false
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-03
+  zaktualizowano: 2026-11-11
 
 geo:
   streszczenie: ""
@@ -25,27 +23,22 @@ geo:
 wejscie:
   h1: |-
     Tej strony nie ma. Arthur też jej szukał.
-  h1_wyroznienie: ""
-  lid: |-
-    Adres mógł się zmienić albo zawierać literówkę. Jeśli szukasz konkretnej informacji, zajrzyj na stronę Pytania.
   zdjecie:
     widoczne: false
     plik: ""
     alt: ""
-    kadr: ""
+  lid: |-
+    Adres mógł się zmienić albo zawierać literówkę. Jeśli szukasz konkretnej informacji, zajrzyj na stronę Pytania.
   przycisk_powrotu:
     tekst: Wróć na stronę główną
     adres: /
-  linki:
-    - tekst: Pytania
+  bloki:
+    - typ: link
+      tekst: Pytania
       adres: /pytania
       aktywny: true
-  wezwania:
-    glowne: true
-    dopisek: false
-    jawnosc: false
-    zakupowe: false
-    nad_zakupowym: false
-  pokaz_autora_i_date: false
+    - typ: wezwanie
+      rodzaj: glowne
+      objasnienie: false
 
 sekcje: []

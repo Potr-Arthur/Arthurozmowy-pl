@@ -1,0 +1,19 @@
+---
+// Moduł „Karty ceny”: trzy pakiety z Ustawień (jedno źródło cen), pakiet polecany wyróżniony.
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { typ: 'cennik' }; k: Kontekst }
+const { k } = Astro.props;
+const pakiety = k.ust.pakiety;
+// opis pakietu „4 rozmowy pełne i 8 rozmów podtrzymujących” → dwie pozycje karty
+const pozycje = (opis: string) => opis.split(/ i (?=\d)/);
+---
+<div class="pakiety">
+  {pakiety.lista.map((p: any) => (
+    <div class={p.polecany ? 'pakiet pakiet--polecany' : 'pakiet'}>
+      {p.nazwa && <p class="pakiet__nazwa">{p.nazwa}</p>}
+      <p class="pakiet__cena">{p.cena} zł</p>
+      <p class="pakiet__okres">{pakiety.okres}</p>
+      <ul>{pozycje(p.opis).map((x: string) => <li>{x}</li>)}</ul>
+    </div>
+  ))}
+</div>

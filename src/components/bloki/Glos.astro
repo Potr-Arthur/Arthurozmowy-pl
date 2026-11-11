@@ -1,0 +1,10 @@
+---
+// Moduł „Voice aside”: kursywa w kolorze rdzy na piasku, co najmniej 24 px (kontrast 3,27:1 tylko dla dużego tekstu).
+import { akapity } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { tekst: string }; k: Kontekst }
+const { b, k } = Astro.props;
+---
+<aside class="glos">
+  {akapity(b.tekst, k.ust.firma).map((p) => <p set:html={p} />)}
+</aside>

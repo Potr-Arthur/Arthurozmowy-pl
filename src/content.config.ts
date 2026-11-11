@@ -1,154 +1,82 @@
 // arthurozmowy.pl · kolekcje treści Astro 5 (content layer)
 // Schemat odpowiada polom z public/admin/config.yml (generowanym przez narzedzia/generuj_config.py).
 // Zmiana pola w CMS wymaga zmiany tutaj i w generatorze konfiguracji.
+//
+// Model treści od makiety V2 (11.11.2026): strona = wejście + rozdziały. Wejście i każdy rozdział mają nagłówek,
+// zdjęcie, lid i listę bloków w kolejności wyświetlania. Jeden typ bloku = jeden moduł makiety:
+//   tekst     Tekst akapitu                         lista    lista punktów (numerowana albo nie)
+//   glos      Voice aside                           zasady   zasady z nagłówkiem H3, lidem H3 i tekstem
+//   cytat     Karta cytatu                          cennik   Karty ceny (pakiety z Ustawień)
+//   link      Link wewnętrzny                       wezwanie Przycisk CTA (tekst z Ustawień)
+//   pytania   karty pytań w rozdziale strony Pytania
+//   faq       akordeon „Najczęstsze pytania” (3 pytania z bazy i przycisk „Wszystkie pytania”)
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const ton = z.enum(['t1', 't2', 't3', 't4', 't5']);
 
-const wezwania = z
-  .object({
-    glowne: z.boolean().default(false),
-    dopisek: z.boolean().default(false),
-    jawnosc: z.boolean().default(false),
-    zakupowe: z.boolean().default(false),
-    nad_zakupowym: z.boolean().default(false),
-  })
-  .partial()
-  .optional();
-
 const zdjecie = z
   .object({
     widoczne: z.boolean().default(true),
-    // jeden plik na zdjęcie: HERO2 kwadrat 1:1 (1200 × 1200), rozdział 4:3 (1200 × 900);
-    // wyjątek HERO1 strony głównej: plik 21:9 (komputer) i plik_telefon 4:3
+    // jeden plik na zdjęcie: wejście podstrony 1:1 (1200 × 1200), rozdział 4:3 (1200 × 900);
+    // wyjątek: wejście strony głównej ma plik 21:9 (komputer) i plik_telefon 4:3
     plik: z.string().optional(),
     plik_telefon: z.string().optional(),
     alt: z.string().optional(),
-    kadr: z.string().optional(),
   })
   .optional();
 
-const link = z.object({
+const blokTekst = z.object({ typ: z.literal('tekst'), tekst: z.string() });
+const blokGlos = z.object({ typ: z.literal('glos'), tekst: z.string() });
+const blokLista = z.object({
+  typ: z.literal('lista'),
+  naglowek: z.string().optional(),
+  numerowana: z.boolean().default(false),
+  punkty: z.array(z.string()),
+});
+const blokZasady = z.object({
+  typ: z.literal('zasady'),
+  zasady: z.array(z.object({ naglowek: z.string(), lid: z.string().optional(), tekst: z.string().optional() })),
+});
+const blokCytat = z.object({
+  typ: z.literal('cytat'),
+  widoczny: z.boolean().default(true),
+  etykieta: z.string().optional(),
+  wstep: z.string().optional(),
+  repliki: z.array(z.object({ kto: z.string().optional(), kwestia: z.string() })).default([]),
+});
+const blokCennik = z.object({ typ: z.literal('cennik') });
+const blokLink = z.object({
+  typ: z.literal('link'),
   tekst: z.string(),
   adres: z.string().optional(),
   aktywny: z.boolean().default(true),
 });
-const linki = z.array(link).optional();
+const blokWezwanie = z.object({
+  typ: z.literal('wezwanie'),
+  rodzaj: z.enum(['glowne', 'zakupowe', 'napisz']),
+  objasnienie: z.boolean().default(false),
+});
+const blokPytania = z.object({ typ: z.literal('pytania'), pytania: z.array(z.string()) });
+const blokFaq = z.object({ typ: z.literal('faq'), pytania: z.array(z.string()).length(3) });
 
-const wspolne = {
+const bloki = z
+  .array(
+    z.discriminatedUnion('typ', [
+      blokTekst, blokGlos, blokLista, blokZasady, blokCytat, blokCennik, blokLink, blokWezwanie, blokPytania, blokFaq,
+    ]),
+  )
+  .default([]);
+
+const sekcja = z.object({
   kotwica: z.string().regex(/^[a-z0-9-]*$/).optional(),
   etykieta: z.string().optional().nullable(),
   ton,
-};
-
-const rozdzial = z.object({
-  typ: z.literal('rozdzial'),
-  ...wspolne,
   h2: z.string().optional(),
-  tekst: z.string().optional(),
-  definicje: z.array(z.object({ termin: z.string(), opis: z.string() })).optional(),
-  lista: z.object({ wprowadzenie: z.string(), punkty: z.array(z.string()) }).optional(),
-  cennik: z.object({ widoczny: z.boolean(), pokaz_nazwy: z.boolean().default(false) }).optional(),
-  tekst_po: z.string().optional(),
-  akapit_ukryty: z
-    .object({ widoczny: z.boolean(), tekst: z.string(), warunek: z.string().optional() })
-    .optional(),
   zdjecie,
-  okno_glosu: z
-    .object({
-      widoczne: z.boolean(),
-      wariant: z.enum(['cieple', 'glebia', 'jasne']),
-      etykieta: z.string(),
-      dialog: z.array(z.object({ kto: z.enum(['Mama', 'Arthur']), kwestia: z.string() })).optional(),
-      zdanie: z.string().optional(),
-      przypis: z.string().optional(),
-      nagranie: z.object({ plik: z.string().optional(), transkrypcja: z.string().optional() }).optional(),
-    })
-    .optional(),
-  cudze_zdanie: z
-    .object({
-      widoczne: z.boolean(),
-      cytat: z.string().optional(),
-      kto: z.string().optional(),
-      zgoda: z.boolean(),
-    })
-    .optional(),
-  linki,
-  wezwania,
+  lid: z.string().optional(),
+  bloki,
 });
-
-const zasady = z.object({
-  typ: z.literal('zasady'),
-  ...wspolne,
-  h2: z.string(),
-  tekst: z.string().optional(),
-  zasady: z.array(z.object({ naglowek: z.string(), tekst: z.string(), dlaczego: z.string() })),
-  linki,
-  wezwania,
-});
-
-const krok = z.object({
-  typ: z.literal('krok'),
-  ...wspolne,
-  numer: z.number().int().min(1),
-  h2: z.string(),
-  tekst: z.string(),
-  przyklad: z.string().optional(),
-  zdjecie,
-  linki,
-  wezwania,
-});
-
-const watpliwosci = z.object({
-  typ: z.literal('watpliwosci'),
-  ...wspolne,
-  h2: z.string(),
-  tekst: z.string().optional(),
-  pary: z.array(z.object({ mama: z.string(), odpowiedz: z.string() })),
-  zakonczenie: z.string().optional(),
-  linki,
-  wezwania,
-});
-
-const pytania = z.object({
-  typ: z.literal('pytania'),
-  ...wspolne,
-  wstep: z.string().optional(),
-  zdjecie,
-  pytania: z.array(z.string()),
-  wezwania,
-});
-
-const faq = z.object({
-  typ: z.literal('faq'),
-  ...wspolne,
-  h2: z.string().default('Najczęstsze pytania'),
-  pytania: z.array(z.string()).length(3),
-  linki,
-});
-
-const kontakt = z.object({
-  typ: z.literal('kontakt'),
-  ...wspolne,
-  h2: z.string(),
-  tekst: z.string().optional(),
-  pokaz: z
-    .object({
-      email: z.boolean(),
-      telefon: z.boolean(),
-      godziny_telefonu: z.boolean(),
-      czas_odpowiedzi: z.boolean(),
-    })
-    .partial()
-    .optional(),
-  uwaga: z.string().optional(),
-  zdjecie,
-  linki,
-  wezwania,
-});
-
-const koniec = z.object({ typ: z.literal('koniec'), ton, linki, wezwania });
 
 const strony = defineCollection({
   loader: glob({ pattern: '*.yml', base: './src/content/strony' }),
@@ -167,21 +95,14 @@ const strony = defineCollection({
     geo: z.object({ streszczenie: z.string() }),
     wejscie: z.object({
       kotwica: z.string().optional(),
-      etykieta: z.string().optional(),
+      etykieta: z.string().optional().nullable(),
       h1: z.string(),
-      h1_wyroznienie: z.string().optional(),
-      lid: z.string(),
       zdjecie,
+      lid: z.string().optional(),
       przycisk_powrotu: z.object({ tekst: z.string(), adres: z.string() }).optional(),
-      linki,
-      wezwania,
-      pokaz_autora_i_date: z.boolean().default(true),
+      bloki,
     }),
-    sekcje: z
-      .array(
-        z.discriminatedUnion('typ', [rozdzial, zasady, krok, watpliwosci, pytania, faq, kontakt, koniec]),
-      )
-      .default([]),
+    sekcje: z.array(sekcja).default([]),
   }),
 });
 
@@ -199,7 +120,8 @@ const pytaniaBaza = defineCollection({
   }),
 });
 
-const strona = z.object({ tekst: z.string(), adres: z.string() });
+const linkNazwany = z.object({ tekst: z.string(), adres: z.string() });
+const okno = z.record(z.string());
 
 const ustawienia = defineCollection({
   loader: glob({ pattern: '*.yml', base: './src/content/ustawienia' }),
@@ -215,29 +137,19 @@ const ustawienia = defineCollection({
       menu: z.string(),
       grupa_rozdzialy: z.string(),
       grupa_strony: z.string(),
+      linki: z.array(linkNazwany).default([]),
+      zakup: z.string(),
       panel_klienta: z.string(),
       przycisk_staly: z.boolean().default(true),
     }),
-    nawigacja: z.object({ strony: z.array(strona) }),
+    nawigacja: z.object({ strony: z.array(linkNazwany), wszystkie_pytania: z.string() }),
     wezwania: z.object({
-      glowne: z.object({ przycisk: z.string(), dopisek: z.string() }),
-      jawnosc: z.string(),
-      zakupowe: z.object({ przycisk: z.string(), adres: z.string(), nad_przyciskiem: z.string() }),
+      glowne: z.object({ przycisk: z.string(), dopisek: z.string().optional() }),
+      zakupowe: z.object({ przycisk: z.string(), adres: z.string() }),
+      napisz: z.object({ przycisk: z.string() }),
     }),
-    okno_rozmowy: z.object({
-      tytul: z.string(),
-      wstep: z.string(),
-      pole_numer: z.string(),
-      pytanie_kiedy: z.string(),
-      opcja_teraz: z.string(),
-      opcja_termin: z.string(),
-      pole_data: z.string(),
-      pole_godzina: z.string(),
-      przycisk: z.string(),
-      potwierdzenie: z.string(),
-      blad: z.string(),
-      zgoda: z.string(),
-    }),
+    okno_rozmowy: okno,
+    okno_kontaktu: okno,
     pakiety: z.object({
       waluta: z.string(),
       okres: z.string(),
@@ -262,17 +174,14 @@ const ustawienia = defineCollection({
       email: z.string(),
       telefon: z.string(),
       telefon_godziny: z.string(),
-      czas_odpowiedzi: z.string(),
       panel_klienta: z.string(),
     }),
     autor: z.object({ imie_nazwisko: z.string(), adres_strony: z.string() }),
     stopka: z.object({
-      wezwanie_glowne: z.boolean().default(true),
-      linki_prawne: z.array(strona),
-      kontakt_etykieta: z.string(),
-      jawnosc: z.string(),
+      wezwania: z.array(z.enum(['glowne', 'zakupowe', 'napisz'])).default([]),
       prywatnosc: z.string(),
       prawa: z.string(),
+      linki_prawne: z.array(linkNazwany),
     }),
   }),
 });

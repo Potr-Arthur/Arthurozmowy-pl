@@ -1,0 +1,10 @@
+---
+// Moduł „Tekst akapitu”: akapity oddzielone pustą linią.
+import { akapity } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props { b: { tekst: string }; k: Kontekst }
+const { b, k } = Astro.props;
+---
+<div class="tekst">
+  {akapity(b.tekst, k.ust.firma).map((p) => <p set:html={p} />)}
+</div>

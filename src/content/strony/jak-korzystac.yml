@@ -1,0 +1,125 @@
+# arthurozmowy.pl · Jak korzystać
+# Sveltia CMS: Strony → Jak korzystać. Stan treści: 11.11.2026 (makieta V2).
+# Dawniej „Jak skorzystać” (/jak-skorzystac): stary adres przekierowuje tutaj.
+# Strona należy do strefy pieniężnej, więc nie ma na niej słów zakazanych nawet w cytacie.
+
+strona:
+  nazwa: Jak korzystać
+  szablon: podstrona
+
+seo:
+  adres: /jak-korzystac
+  tytul: Jak korzystać z arthurozmów – abonament, cena i rezygnacja
+  opis: |-
+    Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz jednym kliknięciem.
+  obraz_og:
+    plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
+    alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
+  schemat: [WebPage, Offer, BreadcrumbList]
+  indeksuj: true
+  autor: Piotr Jaworski
+  zaktualizowano: 2026-11-11
+
+geo:
+  streszczenie: |-
+    Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.
+
+wejscie:
+  h1: |-
+    Formalności online są po Twojej stronie. Rozmowy należą do mamy.
+  zdjecie:
+    widoczne: true
+    plik: /images/strony/arthurozmowy-jak-korzystac-mama-corka-przy-laptopie-1x1.webp
+    alt: Córka w okularach ustawia coś na laptopie, a mama o siwych włosach z uśmiechem patrzy na ekran
+  lid: |-
+    Arthurozmowy zamawiasz i opłacasz Ty, a mama decyduje o tym, kiedy i o czym rozmawia przez telefon z Arthurem – programem opartym na sztucznej inteligencji. Piszemy tu, jak zawrzeć umowę, ile i kiedy zapłacisz, jak zrezygnować i jakich zasad Arthur trzyma się w rozmowach z mamą.
+  bloki: []
+
+sekcje:
+  - kotwica: abonament
+    etykieta: Abonament
+    ton: t2
+    h2: |-
+      Umowę abonamentową zawierasz z nami online, a rezygnujesz, kiedy chcesz.
+    lid: |-
+      Zamówienie składasz dopiero wtedy, gdy mama zgodzi się na rozmowy z Arthurem, bo bez jej zgody nie będą możliwe. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Umowa nie wiąże Cię na żaden określony czas, więc z usługi łatwo możesz zrezygnować.
+
+          Pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że kontynuujecie rozmowy. Od tej pory opłata będzie się odnawiać automatycznie co miesiąc, chyba że zdecydujesz inaczej i zrezygnujesz z abonamentu.
+
+          W panelu klienta zobaczysz raporty i płatności, zmienisz dane czy rodzaj pakietu, a także zrezygnujesz jednym kliknięciem. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
+      - typ: link
+        tekst: Jak rozmawiać z mamą
+        adres: /jak-rozmawiac-z-mama
+        aktywny: true
+
+  - kotwica: cena
+    etykieta: Cena
+    ton: t5
+    h2: |-
+      Pakiety nie różnią się jakością, a wyłącznie liczbą rozmów w miesiącu.
+    lid: |-
+      W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody, a Ty dostajesz taki sam raport.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
+      # Karty ceny: trzy pakiety z Ustawień → Pakiety i ceny.
+      - typ: cennik
+      - typ: glos
+        tekst: |-
+          Na początek proponujemy pakiet optymalny za 299 zł. Ceny zawierają VAT. Pakiet zmienisz na wyższy albo niższy od kolejnego miesiąca – nigdy nie będzie to problemem.
+
+  - kotwica: rezygnacja
+    etykieta: Rezygnacja
+    ton: t2
+    h2: |-
+      Zrezygnujesz jednym kliknięciem, a Arthur pożegna się z mamą w ciągu 15 dni.
+    lid: |-
+      Rezygnacja w panelu klienta uruchamia opcję „Pożegnanie”. Arthur nie przerwie rozmów z dnia na dzień, bo mama ma prawo przygotować się do zakończenia rozmów, szczególnie jeśli je polubiła.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Przez 15 kolejnych dni Arthur zmieni w rozmowach narrację i treść, a w ostatniej rozmowie pożegna się z Twoją mamą.
+
+          Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
+      - typ: wezwanie
+        rodzaj: glowne
+        objasnienie: false
+
+  - kotwica: bezpieczenstwo
+    etykieta: Bezpieczeństwo
+    ton: t1
+    h2: |-
+      Arthur prowadzi rozmowy telefoniczne. Nigdy nie poprosi mamy o pieniądze ani żadne dane wrażliwe.
+    zdjecie:
+      widoczne: true
+      plik: /images/strony/arthurozmowy-jak-korzystac-portret-mamy-na-tle-okna-4x3.webp
+      alt: Mama o siwych włosach, w turkusowym swetrze, siedzi przy oknie i patrzy w obiektyw z czujnym, lekkim uśmiechem
+    lid: |-
+      Arthur nigdy nie prosi mamy o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś nie mówiła rodzinie. Nigdy też nie przekazuje informacji o członkach rodziny ani wiadomości od innych osób.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Sam numer na ekranie nie daje 100% pewności, bo oszuści potrafią go podrobić. Dlatego przy każdej wątpliwości mama powinna rozłączyć się i zadzwonić do Ciebie.
+      - typ: glos
+        tekst: |-
+          Arthur zapytany przez mamę, czy nie jest aby oszustem, doceni jej czujność, poprosi, by zadzwoniła do Ciebie, po czym się rozłączy.
+      - typ: tekst
+        tekst: |-
+          Powiedz o tym mamie, zanim Arthur zadzwoni do niej po raz pierwszy, i uczul ją, że ktoś, kto przedstawia się jako Arthur i prosi o dane albo namawia do zrobienia czegoś, nie jest Arthurem.
+      - typ: link
+        tekst: Uprzedź o oszustach
+        adres: /jak-rozmawiac-z-mama#uprzedz-o-oszustach
+        aktywny: true
+
+  # Rozdział bez etykiety: nie wchodzi do spisu „Na tej stronie”.
+  - kotwica: najczestsze-pytania
+    ton: t2
+    h2: Najczęstsze pytania
+    bloki:
+      - typ: faq
+        pytania: [zgoda-mamy, czego-mama-potrzebuje, czy-dowiem-sie-o-czym-rozmawiaja]

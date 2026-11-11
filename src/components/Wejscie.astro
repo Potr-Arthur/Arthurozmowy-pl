@@ -1,30 +1,35 @@
 ---
-// Wejście strony.
-//   HERO1 (strona główna): zdjęcie od krawędzi do krawędzi, dół przechodzi w tło; pod nim H1, lid i wezwania asymetrycznie.
-//   HERO2 (podstrony): duże kwadratowe zdjęcie obok H1, zdjęcie zaczyna się na wysokości górnej linii H1.
-//   Strona błędu: bez zdjęcia.
+// Wejście strony: Nazwa strony (wielkimi literami nad H1), Nagłówek H1, zdjęcie, Lid H1 i bloki.
+//   glowna    – HERO 21:9 od krawędzi do krawędzi (na telefonie kadr 4:3), pod nim tekst na tle wejścia
+//   podstrona – kwadrat 1:1 obok tekstu; zdjęcie zaczyna się na wysokości nazwy strony, na telefonie stoi pierwsze
+//   blad      – bez zdjęcia, przycisk powrotu
 import Zdjecie from './Zdjecie.astro';
-import Wezwania from './Wezwania.astro';
-import Linki from './Linki.astro';
-import { akapity, h1Html, dataPl, dataIso } from '../lib/tekst';
-interface Props { dane: any; ust: any }
-const { dane, ust } = Astro.props;
+import Bloki from './Bloki.astro';
+import Link from './bloki/Link.astro';
+import { inline, akapity } from '../lib/tekst';
+import type { Kontekst } from '../lib/kontekst';
+interface Props { dane: any; k: Kontekst }
+const { dane, k } = Astro.props;
 const w = dane.wejscie;
 const szablon = dane.strona.szablon;
-const lid = akapity(w.lid);
+const f = k.ust.firma;
+const lid = akapity(w.lid, f);
 const id = w.kotwica || 'wejscie';
-const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik);
+const zdjecie = w.zdjecie && w.zdjecie.widoczne !== false && w.zdjecie.plik ? w.zdjecie : null;
 ---
 {szablon === 'glowna' && (
   <section class="sekcja sekcja--pierwsza hero1" id={id}>
-    <Zdjecie zdjecie={w.zdjecie} rodzaj="pelne" odRazu />
+    <Zdjecie zdjecie={w.zdjecie} rodzaj="hero" odRazu />
     <div class="hero1__dol ton-hero">
-      <div class="wrap hero1__tekst">
-        <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
-        <div class="hero1__lid">
-          {lid.map((p) => <p set:html={p} />)}
+      <div class="wrap hero1__siatka">
+        <div class="hero1__glowa">
+          <p class="nazwa-strony">{dane.strona.nazwa}</p>
+          <h1 set:html={inline(w.h1, f)} />
         </div>
-        <Wezwania w={w.wezwania} ust={ust} />
+        <div class="tresc hero1__tresc">
+          {lid.map((p) => <p class="lid" set:html={p} />)}
+          <Bloki bloki={w.bloki} k={k} />
+        </div>
       </div>
     </div>
   </section>
@@ -32,17 +37,13 @@ const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik);
 {szablon === 'podstrona' && (
   <section class="sekcja sekcja--pierwsza ton-hero hero2" id={id}>
     <div class="wrap">
-      <div class={zdjecieWidoczne ? 'hero2__siatka' : 'red__tresc red--srodek'}>
+      <div class={zdjecie ? 'hero2__siatka' : 'hero2__siatka hero2__siatka--bez-zdjecia'}>
         <Zdjecie zdjecie={w.zdjecie} rodzaj="kwadrat" odRazu />
-        <div class="hero2__tekst">
-          <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
+        <div class="tresc hero2__tresc">
+          <p class="nazwa-strony">{dane.strona.nazwa}</p>
+          <h1 set:html={inline(w.h1, f)} />
           {lid.map((p) => <p class="lid" set:html={p} />)}
-          {w.pokaz_autora_i_date && (
-            <p class="autor">
-              Autor: <a href={ust.autor.adres_strony}>{dane.seo.autor}</a> · Zaktualizowano <time datetime={dataIso(dane.seo.zaktualizowano)}>{dataPl(dane.seo.zaktualizowano)}</time>
-            </p>
-          )}
-          <Wezwania w={w.wezwania} ust={ust} />
+          <Bloki bloki={w.bloki} k={k} />
         </div>
       </div>
     </div>
@@ -51,14 +52,12 @@ const zdjecieWidoczne = !!(w.zdjecie && w.zdjecie.widoczne && w.zdjecie.plik);
 {szablon === 'blad' && (
   <section class="sekcja sekcja--pierwsza sekcja--blad ton-1" id={id}>
     <div class="wrap">
-      <div class="red__tresc red--srodek">
-        <h1 set:html={h1Html(w.h1, w.h1_wyroznienie)} />
-        {lid.map((p) => <p set:html={p} />)}
-        <div class="wezwania">
-          {w.przycisk_powrotu && <a class="przycisk" href={w.przycisk_powrotu.adres}>{w.przycisk_powrotu.tekst}</a>}
-        </div>
-        <Linki linki={w.linki} strony={ust.nawigacja.strony} />
-        <Wezwania w={w.wezwania} ust={ust} />
+      <div class="tresc kolumna">
+        <p class="nazwa-strony">{dane.strona.nazwa}</p>
+        <h1 set:html={inline(w.h1, f)} />
+        {lid.map((p) => <p class="lid" set:html={p} />)}
+        {w.przycisk_powrotu && <Link b={w.przycisk_powrotu} k={k} />}
+        <Bloki bloki={w.bloki} k={k} />
       </div>
     </div>
   </section>

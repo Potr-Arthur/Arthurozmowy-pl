@@ -1,199 +1,31 @@
 ---
-// Jedna sekcja strony według typu z pliku treści (README paczki: „Typy sekcji a bloki Matrycy”).
+// Rozdział strony: Nagłówek H2, zdjęcie, Lid H2 i bloki w kolejności z pliku treści.
 // Układ redakcyjny (6.11.2026):
-//   bez zdjęcia – „szyna”: nagłówek w lewej kolumnie (przyklejony przy przewijaniu), tekst w kolumnie ok. 690 px;
-//   ze zdjęciem – tekst 7/12 i zdjęcie 5/12 (mniejsze niż kwadrat wejścia), na przemian z lewej i z prawej; zdjęcie zaczyna się na wysokości
-//   górnej linii nagłówka i zostaje w widoku, gdy tekst jest dłuższy (bez „dziur”).
+//   bez zdjęcia – „szyna”: H2 w lewej kolumnie (przyklejony przy przewijaniu), lid i bloki w kolumnie ok. 690 px;
+//   ze zdjęciem – tekst 7/12 i zdjęcie 5/12, na przemian z prawej i z lewej; zdjęcie zaczyna się na wysokości
+//   górnej linii H2 i zostaje w widoku, gdy tekst jest dłuższy.
 import Zdjecie from './Zdjecie.astro';
-import Wezwania from './Wezwania.astro';
-import Linki from './Linki.astro';
-import { akapity, inline, tonKlasa, type Firma } from '../lib/tekst';
-
-interface Props {
-  s: any;
-  ust: any;
-  baza: Map<string, any>;
-  prev: string;
-  glowna: boolean;
-  strona: 'L' | 'P';
-}
-const { s, ust, baza, prev, glowna, strona } = Astro.props;
-const firma: Firma = ust.firma;
-const strony = ust.nawigacja.strony;
-const klasa = `sekcja ${tonKlasa(s.ton)} prev-${prev}`;
-const id = s.typ === 'koniec' ? 'koniec' : s.kotwica || undefined;
-const etykieta = s.etykieta || undefined;
-const zdj = s.zdjecie && s.zdjecie.widoczne && s.zdjecie.plik ? s.zdjecie : null;
-
-// nagłówek sekcji: w szynie po lewej, w układzie ze zdjęciem nad tekstem
-let naglowek = '';
-if (s.typ === 'krok') naglowek = `<p class="etykieta">Krok ${s.numer}</p>`;
-if (s.typ === 'pytania' && s.etykieta) naglowek = `<p class="red__etykieta">${inline(s.etykieta)}</p>`;
-if (s.h2) naglowek += `<h2>${inline(s.h2)}</h2>`;
-const uklad = zdj ? `red red--foto red--${strona}` : `red red--szyna${naglowek ? '' : ' red--bez-glowy'}`;
-
-const tekst = akapity(s.tekst, firma);
-const po = akapity(s.tekst_po, firma);
-const pyt = (s.pytania || []).map((pid: string) => baza.get(pid)).filter(Boolean);
-const cennik = s.cennik && s.cennik.widoczny ? ust.pakiety : null;
-const wielka = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
-const pozycje = (opis: string) => opis.split(/ i (?=\d)/);
-const okno = s.okno_glosu && s.okno_glosu.widoczne ? s.okno_glosu : null;
-const cudze = s.cudze_zdanie && s.cudze_zdanie.widoczne && s.cudze_zdanie.zgoda ? s.cudze_zdanie : null;
-const ukryty = s.akapit_ukryty && s.akapit_ukryty.widoczny ? s.akapit_ukryty : null;
+import Bloki from './Bloki.astro';
+import { inline, akapity, tonKlasa } from '../lib/tekst';
+import type { Kontekst } from '../lib/kontekst';
+interface Props { s: any; k: Kontekst; prev: string; strona: 'L' | 'P' }
+const { s, k, prev, strona } = Astro.props;
+const f = k.ust.firma;
+const zdj = s.zdjecie && s.zdjecie.widoczne !== false && s.zdjecie.plik ? s.zdjecie : null;
+const h2 = s.h2 ? inline(s.h2, f) : '';
+const lid = akapity(s.lid, f);
+const uklad = zdj ? `red red--foto red--${strona}` : `red red--szyna${h2 ? '' : ' red--bez-glowy'}`;
 ---
-<section class={klasa} id={id} data-etykieta={etykieta}>
-  <div class="wrap rozdzial">
-    {s.typ !== 'koniec' && (
-      <div class={uklad}>
-        {zdj && <Zdjecie zdjecie={zdj} rodzaj="sekcja" />}
-        {!zdj && naglowek && <div class="red__glowa" set:html={naglowek} />}
-        <div class="red__tresc">
-          {zdj && naglowek && <Fragment set:html={naglowek} />}
-
-          {s.typ === 'rozdzial' && (
-            <Fragment>
-              {tekst.map((p, i) => <p class={i === 0 && zdj ? 'lid-sekcji' : undefined} set:html={p} />)}
-              {s.definicje && <p class="definicje">{s.definicje.map((d: any) => <span set:html={`<strong>${inline(d.termin)}</strong> ${inline(d.opis, firma)}`} />)}</p>}
-              {s.lista && <p><strong set:html={inline(s.lista.wprowadzenie)} /></p>}
-              {s.lista && <ul class="lista-punktow">{s.lista.punkty.map((x: string) => <li set:html={inline(x, firma)} />)}</ul>}
-              {cennik && (
-                <div class="pakiety">
-                  {cennik.lista.map((p: any) => (
-                    <div class="pakiet">
-                      {s.cennik.pokaz_nazwy && p.nazwa && <p class="pakiet__nazwa">{wielka(p.nazwa)}</p>}
-                      <p class="pakiet__cena">{p.cena} zł</p>
-                      <p class="pakiet__okres">{cennik.okres}</p>
-                      <ul>{pozycje(p.opis).map((x: string) => <li>{x}</li>)}</ul>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {po.map((p) => <p set:html={p} />)}
-              {ukryty && <p set:html={inline(ukryty.tekst, firma)} />}
-              <Linki linki={s.linki} styl={glowna ? 'wiecej' : 'tekst'} strony={strony} />
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-
-          {s.typ === 'zasady' && (
-            <Fragment>
-              {tekst.map((p) => <p set:html={p} />)}
-              <ol class="zasady">
-                {s.zasady.map((z: any) => (
-                  <li><div>
-                    <p><strong set:html={inline(z.naglowek)} /> <span set:html={inline(z.tekst, firma)} /></p>
-                    <p class="dlaczego"><em>Dlaczego:</em> <span set:html={inline(z.dlaczego, firma)} /></p>
-                  </div></li>
-                ))}
-              </ol>
-              <Linki linki={s.linki} strony={strony} />
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-
-          {s.typ === 'krok' && (
-            <Fragment>
-              {tekst.map((p, i) => <p class={i === 0 && zdj ? 'lid-sekcji' : undefined} set:html={p} />)}
-              {s.przyklad && <p class="przyklad"><span class="etykieta">Przykład:</span><q set:html={inline(s.przyklad)} /></p>}
-              <Linki linki={s.linki} strony={strony} />
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-
-          {s.typ === 'watpliwosci' && (
-            <Fragment>
-              {tekst.map((p) => <p set:html={p} />)}
-              <dl class="watpliwosci">
-                {s.pary.map((p: any) => (
-                  <div class="watp"><dt set:html={`„${inline(p.mama)}”`} /><dd set:html={inline(p.odpowiedz)} /></div>
-                ))}
-              </dl>
-              {s.zakonczenie && <p set:html={inline(s.zakonczenie)} />}
-              <Linki linki={s.linki} strony={strony} />
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-
-          {s.typ === 'pytania' && (
-            <Fragment>
-              {s.wstep && <p class="wstep-rozdzialu" set:html={inline(s.wstep)} />}
-              <div class="pytania">
-                {pyt.map((q: any) => (
-                  <article id={q.id}>
-                    <h2 class="pytanie" set:html={inline(q.pytanie)} />
-                    {akapity(q.odpowiedz, firma).map((p) => <p set:html={p} />)}
-                    {q.link && <Linki linki={[q.link]} strony={strony} />}
-                  </article>
-                ))}
-              </div>
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-
-          {s.typ === 'faq' && (
-            <Fragment>
-              <div class="faq">
-                {pyt.map((q: any) => (
-                  <details>
-                    <summary set:html={inline(q.pytanie)} />
-                    <div>{akapity(q.odpowiedz, firma).map((p) => <p set:html={p} />)}</div>
-                  </details>
-                ))}
-              </div>
-              <Linki linki={s.linki} strony={strony} />
-            </Fragment>
-          )}
-
-          {s.typ === 'kontakt' && (
-            <Fragment>
-              {tekst.map((p) => <p set:html={p} />)}
-              {s.pokaz && (s.pokaz.email || s.pokaz.telefon || s.pokaz.godziny_telefonu || s.pokaz.czas_odpowiedzi) && (
-                <dl class="dane">
-                  {s.pokaz.email && <><dt>E-mail</dt><dd><a href={`mailto:${firma.email}`}>{ust.firma.email}</a></dd></>}
-                  {s.pokaz.telefon && <><dt>Telefon</dt><dd>{ust.firma.telefon}</dd></>}
-                  {s.pokaz.godziny_telefonu && <><dt>Godziny</dt><dd set:html={inline(ust.firma.telefon_godziny)} /></>}
-                  {s.pokaz.czas_odpowiedzi && <><dt>Odpowiedź</dt><dd set:html={inline(ust.firma.czas_odpowiedzi)} /></>}
-                </dl>
-              )}
-              {s.uwaga && <p><strong set:html={inline(s.uwaga)} /></p>}
-              <Linki linki={s.linki} strony={strony} />
-              <Wezwania w={s.wezwania} ust={ust} />
-            </Fragment>
-          )}
-        </div>
+<section class={`sekcja ${tonKlasa(s.ton)} prev-${prev}`} id={s.kotwica || undefined}>
+  <div class="wrap">
+    <div class={uklad}>
+      {zdj && <Zdjecie zdjecie={zdj} rodzaj="sekcja" />}
+      {!zdj && h2 && <div class="red__glowa"><h2 set:html={h2} /></div>}
+      <div class="tresc red__tresc">
+        {zdj && h2 && <h2 set:html={h2} />}
+        {lid.map((p) => <p class="lid lid--h2" set:html={p} />)}
+        <Bloki bloki={s.bloki} k={k} />
       </div>
-    )}
-
-    {s.typ === 'rozdzial' && cudze && (
-      <blockquote class="glos glos--jasne">
-        <p class="glos__zdanie" set:html={inline(cudze.cytat)} />
-        {cudze.kto && <p class="glos__przypis" set:html={inline(cudze.kto)} />}
-      </blockquote>
-    )}
-
-    {s.typ === 'rozdzial' && okno && (
-      <aside class={`glos glos--${okno.wariant}`}>
-        <p class="glos__etykieta">{okno.etykieta}</p>
-        {okno.dialog && okno.dialog.length > 0 && (
-          <div class="dialog">
-            {okno.dialog.map((r: any) => (
-              <p class="replika"><span class="kto">{r.kto}</span><span set:html={inline(r.kwestia)} /></p>
-            ))}
-          </div>
-        )}
-        {okno.zdanie && <p class="glos__zdanie" set:html={inline(okno.zdanie)} />}
-        {okno.przypis && <p class="glos__przypis" set:html={inline(okno.przypis)} />}
-      </aside>
-    )}
-
-    {s.typ === 'koniec' && (
-      <div class="pas koniec">
-        <div class="koniec__linki">
-          <Linki linki={s.linki} strony={strony} />
-        </div>
-        <Wezwania w={s.wezwania} ust={ust} />
-      </div>
-    )}
+    </div>
   </div>
 </section>

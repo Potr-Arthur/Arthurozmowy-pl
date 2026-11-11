@@ -1,0 +1,171 @@
+# arthurozmowy.pl · Jak działa Arthur
+# Sveltia CMS: Strony → Jak działa Arthur. Stan treści: 11.11.2026 (makieta V2).
+# Dawniej „Jak to działa” (/jak-to-dziala): stary adres przekierowuje tutaj.
+# Układ podstrony: wejście (zdjęcie 1:1 obok H1) i rozdziały z blokami w kolejności wyświetlania.
+
+strona:
+  nazwa: Jak działa Arthur
+  szablon: podstrona
+
+seo:
+  adres: /jak-dziala-arthur
+  tytul: Jak działa Arthur – metoda rozmów telefonicznych z mamą
+  opis: |-
+    Arthur dzwoni do mamy w dni i o godzinach, które sama ustala. Rozmawia według pięciu zasad eksperckiej metody: nie poprawia, nie testuje, szanuje.
+  obraz_og:
+    plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
+    alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
+  schemat: [WebPage, Service, BreadcrumbList]
+  indeksuj: true
+  autor: Piotr Jaworski
+  zaktualizowano: 2026-11-11
+
+geo:
+  streszczenie: |-
+    Arthur dzwoni na zwykły telefon mamy w dni i o godzinach, które mama sama ustala. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę. Jeśli mama zechce, Arthur spisze z nią historię jej życia.
+
+wejscie:
+  h1: |-
+    Żadnego „no jak się dziś czujemy, kochana”. Arthur rozmawia z mamą z szacunkiem, według pięciu zasad eksperckiej metody.
+  zdjecie:
+    widoczne: true
+    plik: /images/strony/arthurozmowy-jak-dziala-arthur-obejmuja-sie-1x1.webp
+    alt: Mama i córka, przytulone policzkami, stoją przy oknie i z uśmiechem patrzą w tę samą stronę
+  lid: |-
+    Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi.
+  bloki:
+    - typ: tekst
+      tekst: |-
+        Arthur rozmawia o sprawach ważnych dla rozmówczyni według określonej metody, dzięki której umie prowadzić z mamą ciekawe, angażujące konwersacje – doceniając ją jako pełnowymiarową, wartościową osobę z własnymi zainteresowaniami, przekonaniami i doświadczeniem.
+    - typ: glos
+      tekst: |-
+        Metodę uzupełniają szczegółowe zasady, których Arthur zawsze przestrzega. Zapoznaj się z nimi, a potem wypróbujcie je w trakcie miesiąca rozmów próbnych.
+    - typ: tekst
+      tekst: |-
+        Jak Arthur prowadzi dialog, możesz sprawdzić teraz, umawiając się na rozmowę.
+    # W tekście z 11.11 stał tu przycisk zakupowy. Zdanie wyżej mówi o własnej rozmowie z Arthurem,
+    # więc stoi przycisk „Porozmawiaj z Arthurem” (do potwierdzenia przez Piotra).
+    - typ: wezwanie
+      rodzaj: glowne
+      objasnienie: false
+
+sekcje:
+  - kotwica: miesiac-rozmow
+    etykieta: Miesiąc rozmów
+    ton: t2
+    h2: |-
+      Arthur dzwoni do mamy, ale to mama ustala kiedy.
+    lid: |-
+      Arthur dzwoni na zwykły telefon mamy, więc mama niczego nie instaluje i w nic nie klika, tylko odbiera.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Liczba rozmów w miesiącu zależy od wykupionego pakietu: w pakiecie optymalnym za 299 zł mama ma w miesiącu 6 rozmów pełnych i 8 rozmów podtrzymujących. Rozmowa pełna to czas na jej sprawy: na to, co mama czyta i ogląda, co przeżywa, co ją zajmuje i co o tym myśli. Rozmowa podtrzymująca pozwala na chwilę wrócić do bieżących tematów z poprzedniej rozmowy, na przykład do spotkania, na które mama się ostatnio wybierała. Rozmowa pełna jest zaplanowana na 15–18 minut, a rozmowa podtrzymująca na 3–4 minuty.
+      - typ: glos
+        tekst: |-
+          Arthur przedstawia się imieniem i nazwą usługi. Dzwoni zawsze z tego samego numeru telefonu. Jeśli mama akurat nie odbierze, Arthur zadzwoni jeszcze raz później.
+
+  - kotwica: zasady-rozmowy
+    etykieta: Zasady rozmowy
+    ton: t1
+    h2: |-
+      Pięć zasad. Każdą ocenisz, gdy sama porozmawiasz z Arthurem.
+    bloki:
+      # Każda zasada: nagłówek H3 (szablon dopisuje numer), lid H3 i tekst akapitu.
+      - typ: zasady
+        zasady:
+          - naglowek: Rozmowę prowadzi mama.
+            lid: |-
+              To ona wybiera tematy, rozwija je albo kończy, kiedy chce, i może powiedzieć „nie, dziś dziękuję za rozmowę”.
+            tekst: |-
+              To są rozmowy jej i dla niej, jej sprawy, jej potrzeby, więc decyzje o tematach rozmów zawsze należą do Twojej mamy.
+          - naglowek: Arthur nie poprawia mamy i jej nie testuje.
+            lid: |-
+              Nie dopytuje o datę ani o dzień tygodnia. Interesuje go, czym żyje mama, co myśli i co czuje.
+            tekst: |-
+              Poprawianie i pytania sprawdzające to sposób mówienia do kogoś, kogo uważa się za mniej sprawnego. Badacze komunikacji opisują, że taki sposób rozmowy z czasem zniechęca do mówienia i obniża poczucie własnej wartości.
+          - naglowek: Arthur zwraca się do mamy jak do pełnoprawnej, dorosłej osoby.
+            lid: |-
+              Mówi wyraźnie i spokojnie, z szacunkiem, bez zdrobnień, bez „no jak się dziś czujemy” i bez śpiewnego tonu.
+            tekst: |-
+              Badania nad takim sposobem mówienia pokazują, że używa się go wtedy, gdy w rozmówczyni widzi się kogoś mniej sprawnego, mniej kompetentnego, mniej ważnego, kogoś wymagającego opieki. To sprawia, że rozmówczyni gorzej ocenia samą siebie i swoje możliwości.
+          - naglowek: Powtórzona historia jest dla Arthura ważna.
+            lid: |-
+              Powracanie do wspomnień to naturalny i cenny proces, w którym człowiek przegląda i porządkuje swoje życie.
+            tekst: |-
+              Arthur nigdy nie powie: „już pani to mówiła”, tylko zapyta o to, czego jeszcze nie słyszał, na przykład co było wtedy dla mamy najważniejsze, co wydarzyło się potem.
+          - naglowek: Chwila ciszy w rozmowie nie jest problemem.
+            lid: |-
+              Szukanie słowa to zwykła i ważna część rozmowy, a za szybko podsunięte słowo odbiera mamie jej wypowiedź.
+            tekst: |-
+              Arthur czeka, aż mama skończy myśl, i nie wchodzi jej w słowo. Kiedy mama szuka słowa, Arthur nie podsuwa go od razu, tylko naprowadza na nie, chyba że mama sama poprosi o podpowiedź.
+
+  - kotwica: ciaglosc-rozmow
+    etykieta: Ciągłość rozmów
+    ton: t2
+    h2: |-
+      Arthur jest gotów kontynuować tematy warte kontynuowania tak długo, jak się mamie podoba.
+    zdjecie:
+      widoczne: true
+      plik: /images/strony/arthurozmowy-jak-dziala-arthur-mama-notuje-4x3.webp
+      alt: Mama o siwych włosach, w okularach i zielonym swetrze, zapisuje coś w otwartym kalendarzu
+    lid: |-
+      Arthur wraca do spraw, o których mama opowiadała i które są dla niej ważne.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Wraca też do zagadnień, którymi mama zajmowała się w życiu, także zawodowym, i często pyta ją o zdanie w sprawach, na których zna się najlepiej. Dzięki temu te ważne, wartościowe rozmowy nie gubią wątków, a mama może poczuć się pewnie.
+      - typ: cytat
+        widoczny: true
+        etykieta: Przykład rozmowy
+        repliki:
+          - kto: Mama
+            kwestia: Opowiadałam już, jak poznałam męża w sylwestra?
+          - kto: Arthur
+            kwestia: W tej wersji, w której to on poprosił panią do tańca, ale coś mi mówi, że jest też inna wersja.
+
+  - kotwica: raport-dla-ciebie
+    etykieta: Raport dla Ciebie
+    ton: t1
+    h2: |-
+      Dowiesz się, czym żyje mama, ale jej słów Arthur nie udostępni.
+    lid: |-
+      W raporcie zobaczysz, kiedy rozmowy się odbyły. Zobaczysz też tematy rozmów w ogólnym zarysie, sprawy i zagadnienia, do których mama chętnie wraca.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem.
+      # Karta z przykładem raportu: ukryta, dopóki nie powstanie wzór raportu.
+      - typ: cytat
+        widoczny: false
+        etykieta: Przykład raportu
+        wstep: "[przykład raportu: do przygotowania]"
+      - typ: link
+        tekst: Czego nie obiecujemy
+        adres: /czego-nie-obiecujemy
+        aktywny: true
+
+  - kotwica: historia-zycia
+    etykieta: Historia życia
+    ton: t2
+    h2: |-
+      Jeśli mama zechce, Arthur spisze z nią historię jej życia – dla niej samej i dla bliskich.
+    lid: |-
+      Mama opowiada w niej o tym, co przeżyła: o domu, w którym dorastała, o swojej pracy, o ludziach i miejscach, które pamięta. Historia powstaje z jej opowieści i należy do niej.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Dla mamy to okazja, żeby opowiedzieć swoje życie po swojemu i zobaczyć je spisane w całości. To ona decyduje, czy historia zostanie tylko dla niej, czy pokaże ją rodzinie.
+
+          Po kilku rozmowach Arthur zaproponuje mamie spisanie jej historii. Jeśli mama nie wyrazi zainteresowania, Arthur nie ponowi tej propozycji, chyba że mama sama wróci do tego tematu później. Historia spisywana jest tak, jak mama ją pamięta. Niczego do niej nie dopisujemy, a w finalnym tekście zostaje tylko to, co mama chce w nim zostawić. Wprowadzane są jedynie podstawowe poprawki redakcyjne, tak by nie ingerować w tok narracji mamy. Jeśli mama zechce, taki zapis może stać się cenną pamiątką rodzinną.
+
+  # Rozdział bez etykiety: nie wchodzi do spisu „Na tej stronie”.
+  - kotwica: najczestsze-pytania
+    ton: t1
+    h2: Najczęstsze pytania
+    bloki:
+      - typ: faq
+        pytania: [czego-mama-potrzebuje, miesiac-probny, jak-zrezygnowac]
+      - typ: wezwanie
+        rodzaj: glowne
+        objasnienie: true

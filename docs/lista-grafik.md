@@ -1,27 +1,27 @@
 # Zdjęcia witryny arthurozmowy.pl
 
-*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. Każde zdjęcie to dwa pliki o tej samej treści: `-desk.webp` i `-tel.webp` w `public/images/strony/`. Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Zero retuszu skóry.*
+*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. Pliki są w `public/images/strony/` i nazywają się `arthurozmowy-{strona}-{treść}-{format}.webp`: wejście strony głównej 21x9 z osobnym kadrem 4x3 na telefon, wejście podstrony 1x1, zdjęcie w rozdziale 4x3. Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Zero retuszu skóry.*
 
 | Strona | Nr | Miejsce | Plik | Alt | Format | Stan |
 |---|---|---|---|---|---|---|
-| Strona główna | 1 | wejście | arthurozmowy-glowna-mama-opowiada | Rozmowa z mamą w garderobie: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu | 21:9 · 2100 × 900 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Strona główna | 2 | Jak to działa | arthurozmowy-glowna-jak-wygladaja | Rozmowa telefoniczna z mamą: mama o siwych włosach mówi spokojnie i patrzy w otwartą książkę na stole | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Strona główna | 3 | Czemu służą arthurozmowy? | arthurozmowy-mama-portret-usmiech | Mama o siwych włosach, w złotych kolczykach i białej bluzce, uśmiecha się, patrząc prosto w obiektyw | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Strona główna | 4 | Raport dla Ciebie | arthurozmowy-glowna-corka-czyta-telefon | Córka w okularach w skupieniu czyta coś na ekranie telefonu | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak to działa | 1 | wejście | arthurozmowy-jak-to-dziala-obejmuja-sie | Mama i córka, przytulone policzkami, stoją przy oknie i z uśmiechem patrzą w tę samą stronę | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak to działa | 2 | Ciągłość rozmów | arthurozmowy-jak-to-dziala-kalendarz | Mama o siwych włosach, w okularach, zapisuje coś w otwartym kalendarzu | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Czego nie obiecujemy | 1 | wejście | arthurozmowy-czego-nie-obiecujemy-zakupy | W otwartych drzwiach mieszkania córka podaje mamie płócienną torbę z zakupami | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Czego nie obiecujemy | 2 | Twoja rola | arthurozmowy-czego-nie-obiecujemy-twoja-rola | Córka poprawia mamie włosy, a mama w fuksjowym żakiecie uśmiecha się z aprobatą | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Pytania | 1 | wejście | arthurozmowy-pytania-portret-corki | Córka o spiętych włosach, w granatowej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Pytania | 2 | Trudne pytania | arthurozmowy-pytania-dwa-profile | Córka i mama, widoczne z profilu, patrzą sobie w oczy | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak skorzystać | 1 | wejście | arthurozmowy-jak-skorzystac-mama-w-fotelu | Mama o siwych włosach rozmawia przez telefon w fotelu, a w tle córka pracuje przy laptopie | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak skorzystać | 2 | Bezpieczeństwo | arthurozmowy-jak-skorzystac-mama-czujna | Mama o siwych włosach, z założonymi rękami, patrzy prosto w obiektyw z czujnym, lekkim uśmiechem | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak rozmawiać z mamą | 1 | wejście | arthurozmowy-jak-zachecic-mame-korzysci | Rozmowa z mamą przy stole: córka o ciemnych włosach opowiada, a mama słucha jej z uwagą | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Jak rozmawiać z mamą | 2 | Zaciekaw mamę | arthurozmowy-jak-rozmawiac-z-mama-telefon | Córka pokazuje mamie coś na ekranie telefonu, a mama patrzy z uśmiechem | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| O nas | 1 | wejście | arthurozmowy-o-nas-portret | Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| O nas | 2 | Nasza metoda | arthurozmowy-o-nas-metoda | [Imię i nazwisko ekspertki] i Piotr Jaworski, autorzy metody rozmowy | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe, na stronie ukryte |
-| Kontakt | 1 | wejście | arthurozmowy-kontakt-rozmowa-z-arthurem | Córka w okularach i kolorowej bluzce z uwagą patrzy w ekran laptopa | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
-| Kontakt | 2 | Porozmawiaj z Arthurem | arthurozmowy-kontakt-telefon-przy-oknie | Córka stoi przy oknie z telefonem przy uchu i z uśmiechem rozmawia | 3:4 · 900 × 1200 (desk) / 4:3 · 1200 × 900 (tel) | gotowe |
+| Jej sprawy | 1 | wejście (H1) | arthurozmowy-jej-sprawy-mama-opowiada-21x9.webp i arthurozmowy-jej-sprawy-mama-opowiada-4x3.webp | Rozmowa z mamą w garderobie: mama o siwych włosach ze śmiechem opowiada coś rozmówczyni widocznej od tyłu | 21:9 (komputer) i kadr 4:3 · 1200 × 900 (telefon) | gotowe |
+| Jej sprawy | 2 | Jak działa Arthur | arthurozmowy-jej-sprawy-mama-rozmawia-4x3.webp | Rozmowa telefoniczna z mamą: mama o siwych włosach trzyma telefon przy uchu i spokojnie coś opowiada | 4:3 · 1200 × 900 | gotowe |
+| Jej sprawy | 3 | Czemu służą arthurozmowy? | arthurozmowy-jej-sprawy-portret-mamy-4x3.webp | Mama o siwych włosach, w złotych kolczykach i białej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem | 4:3 · 1200 × 900 | gotowe |
+| Jej sprawy | 4 | Raport dla Ciebie | arthurozmowy-jej-sprawy-corka-odbiera-raport-4x3.webp | Córka w okularach, z dłonią przy brodzie, w skupieniu czyta coś na ekranie telefonu | 4:3 · 1200 × 900 | gotowe |
+| O nas | 1 | wejście (H1) | arthurozmowy-o-nas-portret-matki-1x1.webp | Mama o siwych włosach, w jasnej bluzce, z uwagą patrzy w bok, poza kadr | 1:1 · 1200 × 1200 | gotowe |
+| O nas | 2 | Nasza metoda | arthurozmowy-o-nas-eksperci-4x3.webp | [Imię i nazwisko ekspertki] i Piotr Jaworski, autorzy metody rozmowy | 4:3 · 1200 × 900 | gotowe, na stronie ukryte |
+| Jak działa Arthur | 1 | wejście (H1) | arthurozmowy-jak-dziala-arthur-obejmuja-sie-1x1.webp | Mama i córka, przytulone policzkami, stoją przy oknie i z uśmiechem patrzą w tę samą stronę | 1:1 · 1200 × 1200 | gotowe |
+| Jak działa Arthur | 2 | Ciągłość rozmów | arthurozmowy-jak-dziala-arthur-mama-notuje-4x3.webp | Mama o siwych włosach, w okularach i zielonym swetrze, zapisuje coś w otwartym kalendarzu | 4:3 · 1200 × 900 | gotowe |
+| Jak korzystać | 1 | wejście (H1) | arthurozmowy-jak-korzystac-mama-corka-przy-laptopie-1x1.webp | Córka w okularach ustawia coś na laptopie, a mama o siwych włosach z uśmiechem patrzy na ekran | 1:1 · 1200 × 1200 | gotowe |
+| Jak korzystać | 2 | Bezpieczeństwo | arthurozmowy-jak-korzystac-portret-mamy-na-tle-okna-4x3.webp | Mama o siwych włosach, w turkusowym swetrze, siedzi przy oknie i patrzy w obiektyw z czujnym, lekkim uśmiechem | 4:3 · 1200 × 900 | gotowe |
+| Jak rozmawiać z mamą | 1 | wejście (H1) | arthurozmowy-jak-rozmawiac-z-mama-dialog-przy-stole-1x1.webp | Rozmowa z mamą przy stole: córka w okularach opowiada, gestykulując, a mama słucha jej z uwagą | 1:1 · 1200 × 1200 | gotowe |
+| Jak rozmawiać z mamą | 2 | Zaciekaw mamę | arthurozmowy-jak-rozmawiac-z-mama-corka-pokazuje-matce-4x3.webp | Córka pokazuje mamie coś na ekranie telefonu, a mama patrzy na ekran z szerokim uśmiechem | 4:3 · 1200 × 900 | gotowe |
+| Czego nie obiecujemy | 1 | wejście (H1) | arthurozmowy-czego-nie-obiecujemy-kawa-1x1.webp | W przedpokoju córka w płaszczu podaje mamie kawę na wynos, a mama trzyma papierową torebkę z croissantem | 1:1 · 1200 × 1200 | gotowe |
+| Czego nie obiecujemy | 2 | Twoja rola | arthurozmowy-czego-nie-obiecujemy-uklada-wlosy-4x3.webp | Córka poprawia mamie włosy, a mama w fuksjowym żakiecie uśmiecha się z aprobatą | 4:3 · 1200 × 900 | gotowe |
+| Pytania | 1 | wejście (H1) | arthurozmowy-pytania-portret-corki-1x1.webp | Córka o spiętych włosach, w granatowej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem | 1:1 · 1200 × 1200 | gotowe |
+| Pytania | 2 | Trudne pytania | arthurozmowy-pytania-corka-z-matka-4x3.webp | Córka i mama stoją naprzeciw siebie, widoczne z profilu, i patrzą sobie w oczy | 4:3 · 1200 × 900 | gotowe |
+| Kontakt | 1 | wejście (H1) | arthurozmowy-kontakt-corka-pisze-na-laptopie-1x1.webp | Córka w okularach i kolorowej bluzce z uwagą patrzy w ekran laptopa | 1:1 · 1200 × 1200 | gotowe |
+| Kontakt | 2 | Porozmawiaj z Arthurem | arthurozmowy-kontakt-corka-rozmawia-przez-telefon-4x3.webp | Córka stoi przy oknie z telefonem przy uchu i z uśmiechem rozmawia | 4:3 · 1200 × 900 | gotowe |
 
 Razem zdjęć: 18.
 
@@ -29,10 +29,10 @@ Razem zdjęć: 18.
 
 | Plik | Gdzie | Alt | Format | Stan |
 |---|---|---|---|---|
-| arthurozmowy-og-glowna.jpg | Strona główna | Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu | JPG · 1200 × 630 · Rozmowa przy stole: mama z ożywieniem opowiada rozmówczyni widocznej od tyłu | gotowe |
-| arthurozmowy-og-mama-portret-usmiech.jpg | Jak to działa, Czego nie obiecujemy, Pytania, Jak skorzystać, Jak rozmawiać z mamą, Kontakt | Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw | JPG · 1200 × 630 · Portret mamy z lekkim uśmiechem, w błękitnej jedwabnej bluzce (jeden obraz dla 6 podstron) | gotowe |
-| arthurozmowy-og-o-nas.jpg | O nas | Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr | JPG · 1200 × 630 · Mama z profilu z uwagą patrzy w bok, poza kadr | gotowe |
-| arthur-logo.svg | nagłówek każdej strony | Arthur | SVG | gotowe |
+| arthurozmowy-og-glowna.jpg | Jej sprawy | Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu | JPG · 1200 × 630 | gotowe |
+| arthurozmowy-og-o-nas.jpg | O nas | Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr | JPG · 1200 × 630 | gotowe |
+| arthurozmowy-og-mama-portret-usmiech.jpg | Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Pytania, Kontakt | Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw | JPG · 1200 × 630 | gotowe |
+| arthur-logo.svg | belka górna każdej strony | Arthur | SVG | gotowe |
 | arthur-logo.png | miejsca, w których SVG nie działa (np. e-mail) | — | PNG · 1025 × 380 | gotowe |
 | favicon.ico | karta przeglądarki | — | ICO · 16, 32 i 48 px | gotowe |
 | apple-touch-icon.png | ikona na ekranie telefonu Apple | — | PNG · 180 × 180 | gotowe |

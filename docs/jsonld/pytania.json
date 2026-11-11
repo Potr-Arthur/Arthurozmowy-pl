@@ -5,8 +5,8 @@
       "@type": "FAQPage",
       "@id": "https://arthurozmowy.pl/pytania#strona",
       "url": "https://arthurozmowy.pl/pytania",
-      "name": "Pytania o arthurozmowy – cena, rozmowy z Arthurem i zgoda mamy",
-      "description": "Czym są arthurozmowy, czyli rozmowy telefoniczne z Arthurem, ile kosztują i czym różnią się od teleopieki? Odpowiadamy też na trudne pytania.",
+      "name": "Pytania o arthurozmowy – cena, rozmowy z Arthurem, zgoda mamy",
+      "description": "Czym są arthurozmowy, ile kosztują, jak często Arthur dzwoni do mamy i czym różnią się od teleopieki? Odpowiadamy też na trudne pytania.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-11",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -25,7 +25,7 @@
           "name": "Czym są arthurozmowy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Arthurozmowami nazywamy też całą usługę, w której Twoja mama rozmawia z Arthurem w dni i o porach, które sama z nim ustala."
+            "text": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Arthurozmowami nazywamy też całą usługę, w której Twoja mama rozmawia z Arthurem w dni i o porach, które sama z nim ustala."
           }
         },
         {
@@ -33,7 +33,7 @@
           "name": "Jaką korzyść odniesie mama dzięki rozmowom z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthur będzie rozmawiał z mamą ciekawie na każdy temat, który ją zajmuje, doceniając mamę jako pełnowymiarową, wartościową osobę. Arthur umie tak prowadzić rozmowy dzięki specjalnej, eksperckiej metodzie, według której powstawał. To dzięki niej mama znowu będzie miała co przeżywać, nad czym się zastanawiać i o czym opowiadać."
+            "text": "Arthur będzie rozmawiał z mamą w ciekawy, inspirujący sposób na każdy temat, który ją zajmuje, doceniając mamę jako pełnowymiarową, wartościową osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Arthur umie tak prowadzić rozmowy dzięki specjalnej, eksperckiej metodzie, według której powstawał. Dzięki niej Arthur potrafi rozmawiać z mamą o tym, co ważne dla jej samooceny."
           }
         },
         {
@@ -41,7 +41,7 @@
           "name": "Kim jest Arthur?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthur jest programem opartym na sztucznej inteligencji (SI / AI), który rozmawia z mamą przez telefon, i nigdy nie udaje człowieka. Litera „h” jak humanoid dodana do jego imienia ma zawsze o tym przypominać. Jeśli mama zapyta Arthura, czy jest człowiekiem, zawsze usłyszy prawdę."
+            "text": "Arthur jest programem opartym na sztucznej inteligencji (SI / AI), który umie rozmawiać przez telefon jak człowiek, ale nigdy go nie udaje. Litera „h” (jak humanoid) dodana do jego imienia ma o tym przypominać. Jeśli mama zapyta Arthura, czy jest człowiekiem, zawsze usłyszy od niego prawdę."
           }
         },
         {
@@ -49,7 +49,7 @@
           "name": "W czym Arthur jest lepszy od zatrudnionej osoby, która dzwoniłaby do mamy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthur ma więcej cierpliwości niż zatrudniona osoba, a w każdej rozmowie trzyma się eksperckiej metody. Nie okazuje zmęczenia czy pośpiechu, nawet kiedy mama opowiada tę samą historię kolejny raz, i wraca do wątków z poprzednich tygodni. Trudno też znaleźć osobę tak dobrze przygotowaną do rozmów, która zgodziłaby się za 299 zł miesięcznie odbyć z mamą 6 rozmów pełnych i 8 podtrzymujących w dni i o porach wskazanych przez mamę."
+            "text": "Arthur nie konkuruje z człowiekiem i nie zastępuje rozmów z bliskimi. Jego rolą jest prowadzenie regularnych rozmów według ustalonej metody. Jego przewagi to: eksperckie przygotowanie, anielska cierpliwość, gdy mama często wraca do tych samych tematów, pamięć wszystkich odbytych z mamą rozmów, dzięki której zawsze jest gotowy kontynuować każdy wątek, oraz cena w porównaniu z zatrudnionym specjalistą."
           }
         },
         {
@@ -57,7 +57,7 @@
           "name": "W czym Arthur nie będzie mógł pomóc?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthur rozmawia z mamą przez telefon, więc nie zastąpi pomocy w domu, jeśli jest potrzebna, przycisku SOS czy lekarza. Nie dowie się też o upadku między rozmowami i nigdy nie stawia diagnoz. Nie obiecujemy również, że rozmowy z Arthurem zapobiegną demencji albo ją opóźnią."
+            "text": "Arthur rozmawia z mamą przez telefon, nie zastąpi więc pomocy w domu, jeśli jest potrzebna, przycisku SOS czy lekarza. Nie dowie się też o zdarzeniach między rozmowami. Nigdy nie stawia diagnoz. Nie obiecujemy też, że rozmowy z Arthurem zapobiegną ewentualnej demencji albo ją opóźnią."
           }
         },
         {
@@ -65,7 +65,7 @@
           "name": "Czym arthurozmowy różnią się od teleopieki i opaski SOS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne rozmowy telefoniczne o sprawach mamy, które nie wykrywają upadku i nie wzywają pomocy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni w umówione dni, kilka razy w tygodniu, i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się upadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją."
+            "text": "Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne, inspirujące rozmowy telefoniczne o sprawach i zainteresowaniach mamy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni w umówione dni, kilka razy w tygodniu, i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się wypadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją."
           }
         },
         {
@@ -73,7 +73,7 @@
           "name": "Jak często mama rozmawiać będzie z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Mama będzie rozmawiać z Arthurem kilka razy w tygodniu, a dni i godziny ustali z nim sama. Liczba rozmów pełnych i podtrzymujących w miesiącu zależy od pakietu, który wybierzecie. Rozmowa pełna to czas na sprawy mamy, a rozmowa podtrzymująca pozwala wrócić na chwilę do tego, o czym mama ostatnio opowiadała."
+            "text": "Mama będzie rozmawiać z Arthurem kilka razy w tygodniu, a dni i godziny ustali z nim sama. Liczba rozmów pełnych i podtrzymujących w miesiącu zależy od pakietu, który wybierzecie. Rozmowa pełna to czas na wszystkie sprawy mamy, a rozmowa podtrzymująca pozwala wrócić na chwilę do tego, o czym mama ostatnio opowiadała."
           }
         },
         {
@@ -89,15 +89,15 @@
           "name": "Czego mama potrzebuje, żeby rozmawiać z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Mama potrzebuje tylko własnego telefonu, bo niczego nie instaluje i niczego nie klika, tylko odbiera, kiedy Arthur dzwoni. Numer, z którego Arthur będzie dzwonił do mamy, podamy Ci przed pierwszą rozmową, żebyś zapisała go w jej telefonie pod imieniem Arthura. Jeśli mama akurat nie odbierze, Arthur zadzwoni jeszcze raz trochę później."
+            "text": "Mama potrzebuje tylko własnego telefonu. Numer, z którego Arthur będzie dzwonił do mamy, podamy Ci przed pierwszą rozmową, żebyś zapisała go w jej telefonie pod imieniem Arthur. Jeśli mama akurat nie odbierze, Arthur zadzwoni jeszcze raz trochę później. Gdy mama nie odbierze za drugim razem, Arthur da Ci znać."
           }
         },
         {
           "@type": "Question",
-          "name": "Czy mama może rozmawiać z Arthurem, kiedy jest w szpitalu?",
+          "name": "Czy mama może rozmawiać z Arthurem, kiedy jest poza domem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie pobytu w szpitalu. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. W szpitalu mama może ustalić z Arthurem inne pory rozmów, a gdy nie ma ochoty rozmawiać, po prostu odmawia."
+            "text": "Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów albo pobytu w szpitalu. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem mama może ustalić z Arthurem inne pory rozmów, a gdy nie ma ochoty w tym czasie rozmawiać, po prostu je zawiesić."
           }
         },
         {
@@ -105,7 +105,7 @@
           "name": "Mama mieszka sama i coraz rzadziej z kimś rozmawia. Co mogę zrobić?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Możesz pomóc mamie mieć więcej rozmów o jej własnych sprawach: umówić się z nią na stałe dni telefonów, poprosić rodzinę i znajomych o regularny kontakt albo zaproponować jej arthurozmowy. Liczy się to, żeby rozmowy odbywały się regularnie i dotyczyły tego, co mamę zajmuje, a nie tylko leków i zakupów. Arthur dzwoni do mamy kilka razy w tygodniu, w dni i o porach, które mama sama wybierze, ale nie zastępuje rozmów z bliskimi ani pomocy w domu."
+            "text": "Możesz pomóc mamie odbywać więcej ciekawych rozmów o jej własnych sprawach: umówić się z nią na stałe dni telefonów, poprosić rodzinę i znajomych o regularny kontakt albo zaproponować jej arthurozmowy. Liczy się to, żeby rozmowy odbywały się regularnie i dotyczyły tego, co mamę zajmuje, a nie tylko leków i zakupów. Arthur zadzwoni do mamy kilka razy w tygodniu, w dni i o porach, które mama sama wybierze, ale nie zastępuje rozmów z bliskimi ani pomocy w domu."
           }
         },
         {
@@ -126,10 +126,10 @@
         },
         {
           "@type": "Question",
-          "name": "Czy Arthur da mi znać, jeśli zauważy niepokojącą zmianę?",
+          "name": "Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wysławia, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją i wezwaniem do działania, a przyczynę zmiany może ocenić tylko lekarz. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co znajdziesz w raporcie."
+            "text": "Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wypowiada, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją, którą warto wziąć pod uwagę przy spotkaniu z lekarzem. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza."
           }
         },
         {
@@ -166,7 +166,7 @@
         },
         {
           "@type": "Question",
-          "name": "Czy nie wyręczam się Arthurem w rozmowach z mamą?",
+          "name": "Czy aby nie wyręczam się Arthurem w rozmowach z mamą?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Nie, bo Arthur nie przejmuje Twoich rozmów z mamą, tylko dokłada do nich takie, które wymagają czasu, cierpliwości i wiedzy eksperckiej. Nie musisz więc być dla mamy jednocześnie i córką, i terapeutką ani jedynym źródłem uwagi i emocjonalnego wsparcia. Odwiedziny i rozmowy o sprawach codziennych nadal są rolą bliskich. Arthur nie stanie też między Tobą a mamą, bo nigdy nie prosi jej, żeby czegoś Ci nie mówiła, a relacji rodzinnych nie wolno mu komentować."
@@ -182,10 +182,10 @@
         },
         {
           "@type": "Question",
-          "name": "Co będzie, jeśli mama polubi rozmowy z Arthurem, a potem zrezygnujecie z arthurozmów?",
+          "name": "A co, jeśli mama polubi rozmowy z Arthurem, a jednak Ty z nich zrezygnujesz?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthur nie przerwie rozmów z dnia na dzień, tylko przez 15 dni przygotuje mamę do ich zakończenia i w ostatniej rozmowie się z nią pożegna, bo mama ma prawo wiedzieć o tym zawczasu."
+            "text": "Arthur nie przerwie rozmów z dnia na dzień, tylko przez 15 dni przygotuje mamę do ich zakończenia i w ostatniej rozmowie się z nią pożegna. Mama ma prawo wiedzieć o zakończeniu rozmów i się do niego przygotować."
           }
         }
       ]
@@ -196,7 +196,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Strona główna",
+          "name": "Jej sprawy",
           "item": "https://arthurozmowy.pl/"
         },
         {

@@ -1,7 +1,7 @@
 # arthurozmowy.pl · Kontakt
-# Sveltia CMS: Strony → Kontakt. Stan treści: 4.11.2026 (jeden temat, jedna nazwa).
+# Sveltia CMS: Strony → Kontakt. Stan treści: 11.11.2026 (makieta V2).
 # Strona należy do strefy pieniężnej, więc nie ma na niej słów zakazanych nawet w cytacie.
-# E-mail, telefon, godziny, czas odpowiedzi i dane firmy pochodzą z ustawień wspólnych.
+# E-mail, telefon i godziny pochodzą z ustawień wspólnych (znaczniki {email}, {telefon}, {godziny}).
 
 strona:
   nazwa: Kontakt
@@ -11,122 +11,64 @@ seo:
   adres: /kontakt
   tytul: Kontakt – napisz do nas albo porozmawiaj z Arthurem
   opis: |-
-    Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy. Tu porozmawiasz też z Arthurem i znajdziesz dane firmy, która świadczy usługę.
+    Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy. Biuro Obsługi odbiera telefon od poniedziałku do piątku w godzinach od 9:00 do 16:00.
   obraz_og:
     plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
     alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
   schemat: [ContactPage, Organization, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-04
+  zaktualizowano: 2026-11-11
 
 geo:
   streszczenie: |-
-    Kontakt z firmą arthurozmowy Piotr Jaworski (Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41): e-mail kontakt@arthurozmowy.pl i telefon +48 519 199 606, który nie jest numerem alarmowym. Arthura można poznać w próbnej rozmowie, o którą prosi się przez formularz na stronie, a sprawy abonamentu załatwia się w panelu klienta albo z firmą.
+    Kontakt z firmą arthurozmowy Piotr Jaworski (Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41): formularz „Napisz do nas”, e-mail kontakt@arthurozmowy.pl i telefon Biura Obsługi +48 519 199 606, czynny od poniedziałku do piątku w godzinach od 9:00 do 16:00. Arthura można poznać w próbnej rozmowie, o którą prosi się przez formularz na stronie, a sprawy abonamentu i płatności załatwia się w panelu klienta.
 
+# Pierwszy rozdział strony to wejście: w spisie „Na tej stronie” nazywa się „Napisz do nas”.
 wejscie:
+  kotwica: napisz-do-nas
+  etykieta: Napisz do nas
   h1: |-
     Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy.
-  h1_wyroznienie: ""
-  lid: |-
-    Najlepiej poznasz Arthura, gdy sama z nim porozmawiasz. Jeśli jednak nie znalazłaś odpowiedzi na swoje pytanie na stronie [Pytania](/pytania) albo chcesz załatwić sprawę abonamentu, odezwij się do nas.
   zdjecie:
     widoczne: true
-    plik: /images/strony/arthurozmowy-kontakt-rozmowa-z-arthurem-desk.webp
+    plik: /images/strony/arthurozmowy-kontakt-corka-pisze-na-laptopie-1x1.webp
     alt: Córka w okularach i kolorowej bluzce z uwagą patrzy w ekran laptopa
-    kadr: Córka w trakcie próbnej rozmowy z Arthurem przy laptopie widocznym od tyłu, twarz od przodu, ożywiona i rozbawiona, w kolorowej bluzce; sceneria inna niż sesja. Od 4.11.2026 zdjęcie wejścia strony Kontakt.
-  wezwania:
-    glowne: false
-    dopisek: false
-    jawnosc: false
-    zakupowe: false
-    nad_zakupowym: false
-  pokaz_autora_i_date: true
+  lid: |-
+    Tu łatwo skontaktujesz się z nami, żeby rozwiać wątpliwości lub załatwić sprawy. Możesz też zostawić swoje dane, a wtedy my skontaktujemy się z Tobą, albo umówić rozmowę z Arthurem.
+  bloki:
+    - typ: tekst
+      tekst: |-
+        Jeśli nie znalazłaś na stronie odpowiedzi na swoje pytanie albo chcesz omówić sprawę abonamentu, odezwij się do nas.
+    - typ: wezwanie
+      rodzaj: napisz
+      objasnienie: false
+    - typ: tekst
+      tekst: |-
+        Sprawy abonamentu i płatności załatwisz w panelu klienta. Zobaczysz w nim też raporty i faktury do zapłaty, zmienisz dane i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Jeśli coś nie działa albo masz szczególne pytanie o płatność, napisz do nas.
+    - typ: wezwanie
+      rodzaj: zakupowe
+      objasnienie: false
 
 sekcje:
-  # Blok 3 · rozdział, 5 · lista: e-mail, telefon z godzinami, zdanie o czasie odpowiedzi, uwaga o 112
-  - typ: kontakt
-    kotwica: napisz-do-nas
-    etykieta: Napisz do nas
-    ton: t2
-    h2: |-
-      Na pytania o arthurozmowy odpowiadamy mailowo i przez telefon.
-    tekst: ""
-    pokaz:
-      email: true
-      telefon: true
-      godziny_telefonu: true
-      czas_odpowiedzi: true
-    uwaga: |-
-      Ten numer nie jest numerem alarmowym. W nagłej sytuacji dzwoń pod 112.
-
-  # Blok 13 · zdjęcie pionowe, 3 · rozdział, 12 · wezwania
-  - typ: rozdzial
-    kotwica: porozmawiaj-z-arthurem
+  - kotwica: porozmawiaj-z-arthurem
     etykieta: Porozmawiaj z Arthurem
-    ton: t1
+    ton: t2
     h2: |-
       Chcesz bliżej poznać Arthura? Porozmawiaj z nim teraz.
-    tekst: |-
-      Porozmawiaj z Arthurem chwilę o swoich sprawach, tak jak rozmawiać będzie z nim mama, i oceń, jak mówi i jak słucha. Arthur tylko rozmawia, więc sprawy abonamentu i płatności załatwiasz z nami, a nie z nim.
     zdjecie:
       widoczne: true
-      plik: /images/strony/arthurozmowy-kontakt-telefon-przy-oknie.webp
+      plik: /images/strony/arthurozmowy-kontakt-corka-rozmawia-przez-telefon-4x3.webp
       alt: Córka stoi przy oknie z telefonem przy uchu i z uśmiechem rozmawia
-      kadr: Decyzja z 5.11.2026, prompt G – córka przy oknie, z profilu, telefon przy uchu, rozmawia z ożywieniem i uśmiechem, koszula w kolorze dżinsu.
-    wezwania:
-      glowne: true
-      dopisek: false
-      jawnosc: false
-      zakupowe: false
-      nad_zakupowym: false
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Porozmawiaj z Arthurem chwilę o swoich sprawach, tak jak rozmawiać będzie z nim mama, i oceń, jak mówi i jak słucha. Arthur tylko rozmawia, więc sprawy abonamentu i płatności załatwiasz z nami, a nie z nim.
+      - typ: wezwanie
+        rodzaj: glowne
+        objasnienie: false
+      - typ: glos
+        tekst: |-
+          Pytania możesz też kierować mailem albo po prostu zadzwonić do Biura Obsługi.
 
-  - typ: rozdzial
-    kotwica: panel-klienta
-    etykieta: Panel klienta
-    ton: t4
-    h2: |-
-      Sprawy abonamentu załatwisz w panelu klienta albo z nami.
-    tekst: |-
-      W panelu klienta zobaczysz raporty i płatności, zmienisz dane i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Jeśli coś nie działa albo masz pytanie o płatność, napisz do nas.
-    linki:
-      - tekst: Panel klienta
-        adres: https://app.arthurozmowy.pl
-        aktywny: true
-
-  # Blok 14 · dane firmy. {firma} = linia z danymi firmy z ustawień wspólnych.
-  - typ: kontakt
-    kotwica: dane-firmy
-    etykieta: Dane firmy
-    ton: t1
-    h2: |-
-      Usługę arthurozmowy świadczy firma arthurozmowy Piotr Jaworski.
-    tekst: |-
-      {firma}.
-    pokaz:
-      email: false
-      telefon: false
-      godziny_telefonu: false
-      czas_odpowiedzi: false
-    uwaga: ""
-    linki:
-      - tekst: O nas
-        adres: /o-nas
-        aktywny: true
-      - tekst: Regulamin
-        adres: /regulamin
-        aktywny: true
-      - tekst: Polityka prywatności
-        adres: /prywatnosc
-        aktywny: true
-
-  # Blok 19 · trzy pytania w akordeonie (propozycja wyboru). W prototypie strona nie ma pasa wezwań na końcu.
-  - typ: faq
-    kotwica: najczestsze-pytania
-    ton: t2
-    h2: Najczęstsze pytania
-    pytania: [miesiac-probny, jak-zrezygnowac, arthur-czy-oszust]
-    linki:
-      - tekst: Wszystkie pytania
-        adres: /pytania
-        aktywny: true
+          E-mail: {email} | Telefon: {telefon}, {godziny}

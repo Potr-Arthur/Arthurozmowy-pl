@@ -1,0 +1,26 @@
+---
+// Moduł „Karta cytatu”: etykieta nad kartą, wstęp nad replikami; szablon dopisuje dwukropek po imieniu i cudzysłowy.
+// Karta z widoczny: false się nie renderuje.
+import { inline } from '../../lib/tekst';
+import type { Kontekst } from '../../lib/kontekst';
+interface Props {
+  b: { widoczny?: boolean; etykieta?: string; wstep?: string; repliki: { kto?: string; kwestia: string }[] };
+  k: Kontekst;
+}
+const { b, k } = Astro.props;
+const f = k.ust.firma;
+---
+{b.widoczny !== false && (
+  <figure class="cytat">
+    {b.etykieta && <figcaption class="cytat__etykieta" set:html={inline(b.etykieta, f)} />}
+    <div class="cytat__karta">
+      {b.wstep && <p class="cytat__wstep" set:html={inline(b.wstep, f)} />}
+      {b.repliki.map((r) => (
+        <p class="replika">
+          {r.kto && <span class="replika__kto" set:html={`${inline(r.kto, f)}:`} />}
+          <q set:html={inline(r.kwestia, f)} />
+        </p>
+      ))}
+    </div>
+  </figure>
+)}

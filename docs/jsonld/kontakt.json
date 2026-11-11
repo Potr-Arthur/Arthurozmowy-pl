@@ -6,7 +6,7 @@
       "@id": "https://arthurozmowy.pl/kontakt#strona",
       "url": "https://arthurozmowy.pl/kontakt",
       "name": "Kontakt – napisz do nas albo porozmawiaj z Arthurem",
-      "description": "Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy. Tu porozmawiasz też z Arthurem i znajdziesz dane firmy, która świadczy usługę.",
+      "description": "Napisz do nas albo zadzwoń, jeśli masz pytanie o arthurozmowy. Biuro Obsługi odbiera telefon od poniedziałku do piątku w godzinach od 9:00 do 16:00.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-11",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -53,7 +53,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Strona główna",
+          "name": "Jej sprawy",
           "item": "https://arthurozmowy.pl/"
         },
         {
