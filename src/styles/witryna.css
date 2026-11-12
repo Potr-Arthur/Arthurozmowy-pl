@@ -142,13 +142,15 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
 .pytanie{color:var(--onyks);border-radius:0 0 var(--r-karta) 0;overflow:hidden}
 .pytanie>summary{background:var(--sky);list-style:none;cursor:pointer;position:relative;padding:18px 60px 18px clamp(18px,3vw,26px)}
 .pytanie>summary::-webkit-details-marker{display:none}
-.pytanie>summary h3{font:italic 500 clamp(1.1rem,1.6vw,1.25rem)/1.4 var(--font-tekst);color:var(--onyks)}
+.pytanie>summary h3,.pytanie__glowa h3{font:italic 500 clamp(1.1rem,1.6vw,1.25rem)/1.4 var(--font-tekst);color:var(--onyks)}
+/* strona Pytania: karta zawsze rozwinięta, bez „+” */
+.pytanie__glowa{background:var(--sky);padding:18px clamp(18px,3vw,26px)}
 .pytanie>summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font:400 1.8rem/1 var(--font-tekst);color:var(--onyks)}
 .pytanie[open]>summary::after{content:"\2212"}
 .pytanie__odpowiedz{background:var(--piasek);display:grid;gap:.9rem;justify-items:start;padding:clamp(18px,2.5vw,24px) max(clamp(18px,3vw,26px),calc(var(--r-karta) * .6)) clamp(22px,3vw,30px) clamp(18px,3vw,26px)}
 .pytanie__odpowiedz>p{justify-self:stretch}
 /* zamknięta karta pokazuje samo pytanie także tam, gdzie przeglądarka nie chowa treści <details> */
-.pytanie:not([open])>.pytanie__odpowiedz{display:none}
+:is(details).pytanie:not([open])>.pytanie__odpowiedz{display:none}
 /* w rozdziale na piasku odpowiedź stoi na papierze, żeby nie zlała się z tłem (jak Voice aside) */
 .ton-2 .pytanie__odpowiedz{background:var(--paper)}
 
@@ -174,7 +176,11 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
 @media (min-width:1000px){
   .hero1__siatka{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:clamp(24px,3vw,36px)}
   .hero1__glowa{grid-column:1/11}
-  .hero1__tresc{grid-column:1/8}
+  /* pod H1 dwie kolumny (12.11.2026): lid, tekst i przycisk po lewej (7/12), Voice aside po prawej (5/12);
+     gdy Voice aside jest wyższy, nadmiar wysokości bierze ostatni wiersz, więc po lewej nie ma dziur */
+  .hero1__tresc{grid-column:1/13;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto auto 1fr;column-gap:24px;row-gap:1.25rem;align-items:start}
+  .hero1__tresc>*{grid-column:1/8}
+  .hero1__tresc>.glos{grid-column:8/13;grid-row:1/4;margin:0 0 0 12px}
 }
 
 /* ===== wejście podstrony: kwadrat 1:1 obok tekstu; na telefonie zdjęcie stoi pierwsze ===== */
@@ -189,6 +195,9 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
   .hero2__siatka>.hero2__tresc{grid-column:7/13;padding-left:12px}
 }
 .hero2__siatka--bez-zdjecia{display:block;max-width:var(--kolumna);margin-inline:auto}
+/* Voice aside wejścia podstrony: pod zdjęciem i tekstem, w zwykłej kolumnie tekstu (12.11.2026) */
+.hero2__pod{max-width:var(--kolumna);margin-top:clamp(28px,4vw,48px)}
+@media (min-width:760px) and (max-width:999px){.hero2__pod{margin-inline:auto}}
 
 /* ===== rozdział: układ redakcyjny ===== */
 .red{display:grid;gap:1.25rem}

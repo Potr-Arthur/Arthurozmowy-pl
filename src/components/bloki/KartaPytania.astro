@@ -1,15 +1,32 @@
 ---
-// Jedna karta pytania (wspólna dla bloków „pytania” i „faq”): <details> z pytaniem w <summary>.
+// Jedna karta pytania (wspólna dla bloków „pytania” i „faq”).
+//   akordeon (FAQ na podstronach): <details>, pytanie w <summary>, odpowiedź po kliknięciu „+”;
+//   stala (strona Pytania, decyzja z 12.11.2026): karta zawsze rozwinięta, bez „+”, od razu widać odpowiedź.
 import Link from './Link.astro';
 import { inline, akapity } from '../../lib/tekst';
 import type { Kontekst } from '../../lib/kontekst';
-interface Props { q: { id: string; pytanie: string; odpowiedz: string; link?: { tekst: string; adres: string } }; k: Kontekst; kotwica?: boolean }
-const { q, k, kotwica = false } = Astro.props;
+interface Props {
+  q: { id: string; pytanie: string; odpowiedz: string; link?: { tekst: string; adres: string } };
+  k: Kontekst;
+  stala?: boolean;
+}
+const { q, k, stala = false } = Astro.props;
+const f = k.ust.firma;
 ---
-<details class="pytanie" id={kotwica ? q.id : undefined}>
-  <summary><h3 set:html={inline(q.pytanie, k.ust.firma)} /></summary>
-  <div class="pytanie__odpowiedz">
-    {akapity(q.odpowiedz, k.ust.firma).map((p) => <p set:html={p} />)}
-    {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
-  </div>
-</details>
+{stala ? (
+  <article class="pytanie pytanie--stala" id={q.id}>
+    <div class="pytanie__glowa"><h3 set:html={inline(q.pytanie, f)} /></div>
+    <div class="pytanie__odpowiedz">
+      {akapity(q.odpowiedz, f).map((p) => <p set:html={p} />)}
+      {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
+    </div>
+  </article>
+) : (
+  <details class="pytanie">
+    <summary><h3 set:html={inline(q.pytanie, f)} /></summary>
+    <div class="pytanie__odpowiedz">
+      {akapity(q.odpowiedz, f).map((p) => <p set:html={p} />)}
+      {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
+    </div>
+  </details>
+)}

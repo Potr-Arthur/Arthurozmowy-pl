@@ -1,7 +1,9 @@
 ---
 // Wejście strony: Nazwa strony (wielkimi literami nad H1), Nagłówek H1, zdjęcie, Lid H1 i bloki.
 //   glowna    – HERO 21:9 od krawędzi do krawędzi (na telefonie kadr 4:3), pod nim tekst na tle wejścia
-//   podstrona – kwadrat 1:1 obok tekstu; zdjęcie zaczyna się na wysokości nazwy strony, na telefonie stoi pierwsze
+//   podstrona – kwadrat 1:1 obok tekstu; zdjęcie zaczyna się na wysokości nazwy strony, na telefonie stoi pierwsze;
+//               Voice aside stoi pod zdjęciem i tekstem, w jednej kolumnie (decyzja z 12.11.2026)
+//   (na stronie głównej pod H1 dwie kolumny: lid i tekst po lewej, Voice aside po prawej – układa to witryna.css)
 //   blad      – bez zdjęcia, przycisk powrotu
 import Zdjecie from './Zdjecie.astro';
 import Bloki from './Bloki.astro';
@@ -16,6 +18,9 @@ const f = k.ust.firma;
 const lid = akapity(w.lid, f);
 const id = w.kotwica || 'wejscie';
 const zdjecie = w.zdjecie && w.zdjecie.widoczne !== false && w.zdjecie.plik ? w.zdjecie : null;
+const bloki = w.bloki ?? [];
+const blokiObok = bloki.filter((b: any) => b.typ !== 'glos');
+const blokiPod = bloki.filter((b: any) => b.typ === 'glos');
 ---
 {szablon === 'glowna' && (
   <section class="sekcja sekcja--pierwsza hero1" id={id}>
@@ -43,9 +48,14 @@ const zdjecie = w.zdjecie && w.zdjecie.widoczne !== false && w.zdjecie.plik ? w.
           <p class="nazwa-strony">{dane.strona.nazwa}</p>
           <h1 set:html={inline(w.h1, f)} />
           {lid.map((p) => <p class="lid" set:html={p} />)}
-          <Bloki bloki={w.bloki} k={k} />
+          <Bloki bloki={blokiObok} k={k} />
         </div>
       </div>
+      {blokiPod.length > 0 && (
+        <div class="tresc hero2__pod">
+          <Bloki bloki={blokiPod} k={k} />
+        </div>
+      )}
     </div>
   </section>
 )}

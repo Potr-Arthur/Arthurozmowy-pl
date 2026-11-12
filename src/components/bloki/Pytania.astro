@@ -1,6 +1,6 @@
 ---
-// Moduł „Karta pytania” na stronie Pytania: akordeon, pytanie jako H3 kursywą na sky, odpowiedź po rozwinięciu.
-// Pod odpowiedzią link z pola „link” pytania w bazie. Kotwica karty to identyfikator pytania (/pytania#id otwiera kartę).
+// Moduł „Karta pytania” na stronie Pytania: karty zawsze rozwinięte (decyzja z 12.11.2026), pytanie jako H3 kursywą na sky,
+// odpowiedź na piasku, pod nią link z pola „link” pytania w bazie. Kotwica karty to identyfikator pytania (/pytania#id).
 import KartaPytania from './KartaPytania.astro';
 import type { Kontekst } from '../../lib/kontekst';
 interface Props { b: { pytania: string[] }; k: Kontekst }
@@ -8,5 +8,5 @@ const { b, k } = Astro.props;
 const lista = b.pytania.map((id) => k.baza.get(id)).filter(Boolean);
 ---
 <div class="karty-pytan">
-  {lista.map((q: any) => <KartaPytania q={q} k={k} kotwica />)}
+  {lista.map((q: any) => <KartaPytania q={q} k={k} stala />)}
 </div>
