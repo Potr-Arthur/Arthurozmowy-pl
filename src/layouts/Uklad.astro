@@ -15,11 +15,10 @@ interface Props {
   og?: { plik: string; alt: string };
   indeksuj?: boolean;
   jsonld?: unknown;
-  rozdzialy?: { kotwica: string; etykieta: string }[];
   ust: any;
   stopkaPrev?: string;
 }
-const { tytul, opis, adres, og, indeksuj = true, jsonld, rozdzialy = [], ust, stopkaPrev = '1' } = Astro.props;
+const { tytul, opis, adres, og, indeksuj = true, jsonld, ust, stopkaPrev = '1' } = Astro.props;
 
 // Adres tymczasowy: żadna strona nie trafia do wyszukiwarek, dopóki na Netlify nie ma PUBLIKACJA=tak.
 const publikacja = process.env.PUBLIKACJA === 'tak';
@@ -61,7 +60,7 @@ const k: Kontekst = { ust, baza: new Map(), adres };
   </head>
   <body>
     <a class="skip" href="#tresc">Przejdź do treści</a>
-    <Belka ust={ust} adres={adres} rozdzialy={rozdzialy} />
+    <Belka ust={ust} adres={adres} />
 
     <main id="tresc">
       <slot />
@@ -101,6 +100,21 @@ const k: Kontekst = { ust, baza: new Map(), adres };
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && menu && menu.open) menu.open = false;
       });
+
+      // menu: strzałka obok strony pokazuje jej rozdziały (na komputerze w prawej kolumnie, na telefonie pod stroną;
+      // na telefonie drugie kliknięcie zwija). Po zamknięciu menu wraca strona oglądana.
+      const strzalki = Array.from(document.querySelectorAll<HTMLButtonElement>('.menu__strzalka'));
+      const ogladana = document.querySelector<HTMLElement>('.menu__strona.aktywna')?.dataset.strona ?? null;
+      const pokazRozdzialy = (nr: string | null) => {
+        document.querySelectorAll<HTMLElement>('.menu__strona, .menu__kolumna').forEach((el) => el.classList.toggle('aktywna', el.dataset.strona === nr));
+        strzalki.forEach((b) => b.setAttribute('aria-expanded', String(b.dataset.strona === nr)));
+      };
+      strzalki.forEach((b) => b.addEventListener('click', () => {
+        const telefon = window.matchMedia('(max-width: 759px)').matches;
+        const otwarta = b.getAttribute('aria-expanded') === 'true';
+        pokazRozdzialy(otwarta && telefon ? null : b.dataset.strona ?? null);
+      }));
+      menu?.addEventListener('toggle', () => { if (!menu.open) pokazRozdzialy(ogladana); });
 
       // adres z kotwicą pytania (/pytania#id) otwiera kartę pytania
       const otworzPytanie = () => {

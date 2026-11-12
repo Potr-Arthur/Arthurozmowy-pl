@@ -94,7 +94,8 @@ def bloki_md(bloki, pref):
                 o += [bl["wstep"], ""]
             o += [f"> {x}  " for x in repliki_txt(bl)] + [""]
         elif typ == "cennik":
-            o += [f"- {wielka(pk['nazwa'])} – {pk['cena']} zł {ust['pakiety']['okres']}: {pk['opis']}" for pk in ust["pakiety"]["lista"]]
+            o += [f"- {wielka(pk['nazwa'])} – {pk['cena']} zł {ust['pakiety']['okres']}: {pk['opis']} ({pk['rytm']})" for pk in ust["pakiety"]["lista"]]
+            o += ["", ust["pakiety"]["dlugosc"]]
             o += ["", "*Pakiety z Ustawień → Pakiety i ceny*", ""]
         elif typ == "link":
             stan = "" if bl.get("aktywny", True) else " *(nieaktywny)*"
@@ -315,7 +316,8 @@ def bloki_txt(bloki):
             o += [""] + ([bl["etykieta"] + ":"] if bl.get("etykieta") else []) + ([bl["wstep"]] if bl.get("wstep") else [])
             o += [f"- {x}" for x in repliki_txt(bl)]
         elif typ == "cennik":
-            o += [""] + [f"- {wielka(p['nazwa'])} – {p['cena']} zł {ust['pakiety']['okres']}: {p['opis']}" for p in ust["pakiety"]["lista"]]
+            o += [""] + [f"- {wielka(p['nazwa'])} – {p['cena']} zł {ust['pakiety']['okres']}: {p['opis']} ({p['rytm']})" for p in ust["pakiety"]["lista"]]
+            o += ["", ust["pakiety"]["dlugosc"]]
         elif typ == "pytania":
             for pid in bl["pytania"]:
                 o += ["", "#### " + baza[pid]["pytanie"], "", czysty(baza[pid]["odpowiedz"])]

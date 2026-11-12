@@ -1,14 +1,19 @@
 ---
-// Moduł „Link wewnętrzny”: biały tekst na rdzy, rogi 30. Tekst to zawsze nazwa strony albo rozdziału.
-// Nieaktywny, gdy aktywny: false albo strony jeszcze nie ma. Link do oglądanej strony jest oznaczony i nieklikalny
-// (tylko gdy prowadzi do całej strony, bez kotwicy).
+// Moduł „Link wewnętrzny” (decyzja z 12.11.2026): zwykły link tekstowy w osobnej linii, z cienką ramką w rdzy, bez tła.
+// Przed nazwą stoi słowo z nawigacja.wiecej („Więcej:”). Tekst linku to zawsze nazwa strony albo rozdziału.
+// bezWiecej: link bez „Więcej:” („Wszystkie pytania” pod FAQ, powrót na stronę główną).
+// Nieaktywny, gdy aktywny: false albo strony jeszcze nie ma. Link do oglądanej strony (bez kotwicy) nie jest klikalny.
 import { inline, dziala } from '../../lib/tekst';
 import type { Kontekst } from '../../lib/kontekst';
-interface Props { b: { tekst: string; adres?: string; aktywny?: boolean }; k: Kontekst }
-const { b, k } = Astro.props;
+interface Props { b: { tekst: string; adres?: string; aktywny?: boolean }; k: Kontekst; bezWiecej?: boolean }
+const { b, k, bezWiecej = false } = Astro.props;
 const biezaca = !!b.adres && !b.adres.includes('#') && b.adres === k.adres;
 const czynny = b.aktywny !== false && dziala(b.adres) && !biezaca;
+const wiecej = bezWiecej ? '' : k.ust.nawigacja.wiecej;
 ---
-{czynny && <a class="link-wew" href={b.adres} set:html={inline(b.tekst)} />}
-{biezaca && <span class="link-wew link-wew--biezaca" aria-current="page" set:html={inline(b.tekst)} />}
-{!czynny && !biezaca && <span class="link-wew link-wew--nieaktywny" aria-disabled="true" set:html={inline(b.tekst)} />}
+<p class="link-wew">
+  {wiecej && <span class="link-wew__wiecej">{wiecej} </span>}
+  {czynny && <a href={b.adres} set:html={inline(b.tekst)} />}
+  {biezaca && <span class="link-wew__biezaca" aria-current="page" set:html={inline(b.tekst)} />}
+  {!czynny && !biezaca && <span class="link-wew__nieaktywny" aria-disabled="true" set:html={inline(b.tekst)} />}
+</p>

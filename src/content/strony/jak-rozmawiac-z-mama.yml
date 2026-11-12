@@ -151,7 +151,7 @@ sekcje:
               Gdyby ktoś przedstawiający się jako Arthur prosił Cię o cokolwiek poza rozmową, rozłącz się i zadzwoń do mnie.
       - typ: link
         tekst: Bezpieczeństwo
-        adres: /jak-korzystac#bezpieczenstwo
+        adres: /bezpieczenstwo
         aktywny: true
 
   - kotwica: wysluchaj-watpliwosci

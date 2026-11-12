@@ -66,7 +66,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
+          Na cenę składają się trzy rzeczy: liczba rozmów w miesiącu, ich rytm w tygodniu i długość jednej rozmowy. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty, tak samo w każdym pakiecie. Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
       # Karty ceny: trzy pakiety z Ustawień → Pakiety i ceny.
       - typ: cennik
       - typ: glos
@@ -78,6 +78,10 @@ sekcje:
     ton: t2
     h2: |-
       Zrezygnujesz jednym kliknięciem, a Arthur pożegna się z mamą w ciągu 15 dni.
+    zdjecie:
+      widoczne: true
+      plik: /images/strony/arthurozmowy-jak-korzystac-mama-po-rozmowie-4x3.webp
+      alt: Mama o siwych włosach siedzi w fotelu z telefonem w dłoni i z lekkim uśmiechem patrzy przed siebie
     lid: |-
       Rezygnacja w panelu klienta uruchamia opcję „Pożegnanie”. Arthur nie przerwie rozmów z dnia na dzień, bo mama ma prawo przygotować się do zakończenia rozmów, szczególnie jeśli je polubiła.
     bloki:
@@ -86,35 +90,11 @@ sekcje:
           Przez 15 kolejnych dni Arthur zmieni w rozmowach narrację i treść, a w ostatniej rozmowie pożegna się z Twoją mamą.
 
           Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
+
+          Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy. Jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał. Po 3 miesiącach usuwamy tę pamięć, a na prośbę Twoją albo mamy usuniemy ją wcześniej.
       - typ: wezwanie
         rodzaj: glowne
         objasnienie: false
-
-  - kotwica: bezpieczenstwo
-    etykieta: Bezpieczeństwo
-    ton: t1
-    h2: |-
-      Arthur prowadzi rozmowy telefoniczne. Nigdy nie poprosi mamy o pieniądze ani żadne dane wrażliwe.
-    zdjecie:
-      widoczne: true
-      plik: /images/strony/arthurozmowy-jak-korzystac-portret-mamy-na-tle-okna-4x3.webp
-      alt: Mama o siwych włosach, w turkusowym swetrze, siedzi przy oknie i patrzy w obiektyw z czujnym, lekkim uśmiechem
-    lid: |-
-      Arthur nigdy nie prosi mamy o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś nie mówiła rodzinie. Nigdy też nie przekazuje informacji o członkach rodziny ani wiadomości od innych osób.
-    bloki:
-      - typ: tekst
-        tekst: |-
-          Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Sam numer na ekranie nie daje 100% pewności, bo oszuści potrafią go podrobić. Dlatego przy każdej wątpliwości mama powinna rozłączyć się i zadzwonić do Ciebie.
-      - typ: glos
-        tekst: |-
-          Arthur zapytany przez mamę, czy nie jest aby oszustem, doceni jej czujność, poprosi, by zadzwoniła do Ciebie, po czym się rozłączy.
-      - typ: tekst
-        tekst: |-
-          Powiedz o tym mamie, zanim Arthur zadzwoni do niej po raz pierwszy, i uczul ją, że ktoś, kto przedstawia się jako Arthur i prosi o dane albo namawia do zrobienia czegoś, nie jest Arthurem.
-      - typ: link
-        tekst: Uprzedź o oszustach
-        adres: /jak-rozmawiac-z-mama#uprzedz-o-oszustach
-        aktywny: true
 
   # Rozdział bez etykiety: nie wchodzi do spisu „Na tej stronie”.
   - kotwica: najczestsze-pytania

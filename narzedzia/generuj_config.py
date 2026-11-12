@@ -251,6 +251,7 @@ STRONY = [
     ("jak-korzystac", "Jak korzystać", "podstrona"),
     ("jak-rozmawiac-z-mama", "Jak rozmawiać z mamą", "podstrona"),
     ("czego-nie-obiecujemy", "Czego nie obiecujemy", "podstrona"),
+    ("bezpieczenstwo", "Bezpieczeństwo", "podstrona"),
     ("pytania", "Pytania", "podstrona"),
     ("kontakt", "Kontakt", "podstrona"),
     ("404", "Strona błędu (404)", "blad"),
@@ -294,10 +295,10 @@ POLA_USTAWIEN = [
         obj("logo", "Logo", fields=[img("plik", "Plik SVG", "marka"), s("alt", "Alt")]),
     ]),
     obj("naglowek", "Belka górna i menu", hint=(
-        "Od lewej: logo, przycisk Menu, linki, przycisk zamówienia i Panel klienta. Menu ma grupy „Na tej stronie” "
-        "i „Pozostałe strony”."), fields=[
+        "Od lewej: logo, przycisk Menu, linki, przycisk zamówienia i Panel klienta. Menu to jedna lista stron; "
+        "rozdziały stoją pod stroną oglądaną albo wskazaną."), fields=[
         s("menu", "Napis na przycisku menu"),
-        s("grupa_rozdzialy", "Nazwa grupy rozdziałów (spis treści)"),
+        s("grupa_rozdzialy", "Napis nad rozdziałami strony", hint="Szablon dopisuje nazwę strony, np. „Na stronie Jak działa Arthur”."),
         s("grupa_strony", "Nazwa grupy stron"),
         lista_linkow("linki", "Linki w belce (np. Cena, Kontakt)"),
         s("zakup", "Napis na przycisku zamówienia w belce"),
@@ -305,10 +306,11 @@ POLA_USTAWIEN = [
         b("przycisk_staly", "Przycisk „Porozmawiaj z Arthurem” przyklejony do dołu ekranu na telefonie", True),
     ]),
     obj("nawigacja", "Lista stron (menu i stopka)", hint=(
-        "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, przyciskach „Link wewnętrzny” "
+        "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, linkach wewnętrznych "
         "i spisie treści strony głównej."), fields=[
         lista_linkow("strony", "Strony"),
         s("wszystkie_pytania", "Napis przycisku pod akordeonem pytań"),
+        s("wiecej", "Słowo przed linkiem wewnętrznym", hint="Np. „Więcej:”. Po nim stoi nazwa strony albo rozdziału."),
     ]),
     obj("wezwania", "Przyciski CTA", fields=[
         obj("glowne", "Porozmawiaj z Arthurem (otwiera okienko rozmowy)", fields=[
@@ -322,11 +324,13 @@ POLA_USTAWIEN = [
         "Włączamy po ocenie skutków dla ochrony danych (Z6) i z polityką prywatności."), fields=okno_pola(True)),
     obj("pakiety", "Pakiety i ceny", fields=[
         s("waluta", "Waluta"), s("okres", "Dopisek przy cenie"),
+        s("dlugosc", "Długość rozmów (zdanie na każdej karcie ceny)", hint="Długość jednej rozmowy, nigdy suma minut w miesiącu."),
         lst("lista", "Pakiety", summary="{{fields.cena}} zł · {{fields.opis}}", fields=[
             {"label": "Cena (zł brutto)", "name": "cena", "widget": "number", "value_type": "int", "required": True},
             {"label": "Rozmowy pełne", "name": "rozmowy_pelne", "widget": "number", "value_type": "int"},
             {"label": "Rozmowy podtrzymujące", "name": "rozmowy_podtrzymujace", "widget": "number", "value_type": "int"},
             s("opis", "Opis na karcie ceny", hint="Z odmianą, np. „6 rozmów pełnych i 8 rozmów podtrzymujących”."),
+            s("rytm", "Rytm tygodnia na karcie ceny", hint="Np. „co tydzień 1–2 rozmowy pełne i 2 podtrzymujące”."),
             s("nazwa", "Nazwa pakietu", hint="Małą literą, np. „pakiet optymalny”."),
             b("polecany", "Pakiet proponowany na początek"),
         ]),

@@ -1,6 +1,6 @@
 ---
 // Cała strona z pliku treści: wejście i rozdziały w kolejności z CMS.
-// Tutaj liczymy spis „Na tej stronie”, przejścia tonalne między rozdziałami i stronę zdjęcia w rozdziale.
+// Tutaj liczymy przejścia tonalne między rozdziałami i stronę zdjęcia w rozdziale.
 import Uklad from '../layouts/Uklad.astro';
 import Wejscie from './Wejscie.astro';
 import Sekcja from './Sekcja.astro';
@@ -23,11 +23,6 @@ const jsonld = jsonldPliki[`../../docs/jsonld/${wpis.id}.json`];
 const blad = dane.strona.szablon === 'blad';
 const sekcje = dane.sekcje ?? [];
 
-// „Na tej stronie”: wejście i rozdziały, które mają etykietę (nazwy wyłącznie z treści)
-const rozdzialy: { kotwica: string; etykieta: string }[] = [];
-if (dane.wejscie.etykieta && dane.wejscie.kotwica) rozdzialy.push({ kotwica: dane.wejscie.kotwica, etykieta: dane.wejscie.etykieta });
-for (const s of sekcje) if (s.etykieta && s.kotwica) rozdzialy.push({ kotwica: s.kotwica, etykieta: s.etykieta });
-
 // przejścia tonalne: każdy rozdział zna ton poprzedniego (wejście kończy się tonem 5, strona błędu tonem 1);
 // zdjęcia w rozdziałach na przemian: pierwsze z prawej, drugie z lewej…
 let prev = blad ? '1' : '5';
@@ -47,7 +42,6 @@ const lista = sekcje.map((s: any) => {
   og={dane.seo.obraz_og}
   indeksuj={dane.seo.indeksuj}
   jsonld={jsonld}
-  rozdzialy={rozdzialy}
   ust={ust}
   stopkaPrev={prev}
 >

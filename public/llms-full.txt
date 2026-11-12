@@ -85,7 +85,11 @@ W panelu klienta możesz sprawdzać raporty i płatności, zmieniać pakiet oraz
 
 Rezygnacja jednym kliknięciem uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie stopniowo zmieniał treść i charakter rozmów, a podczas ostatniej pożegna się z mamą. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
 
-Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny.
+### Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
+
+Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
+
+Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
 
 Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Jeśli mama będzie miała jakiekolwiek wątpliwości, może się rozłączyć i zadzwonić do Ciebie.
 
@@ -93,9 +97,11 @@ Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. J
 
 Pakiety różnią się wyłącznie liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu. Jakość rozmów i metoda pracy Arthura są takie same w każdym pakiecie.
 
-- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących
-- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących
-- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących
+- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
+- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących (co tydzień 1–2 rozmowy pełne i 2 podtrzymujące)
+- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących (co tydzień 2 rozmowy pełne i 3 podtrzymujące)
+
+Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
 
 Na początek proponujemy pakiet optymalny za 299 zł. W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody.
 
@@ -160,14 +166,6 @@ W raporcie zobaczysz, kiedy rozmowy się odbyły. Zobaczysz też tematy rozmów 
 
 W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem.
 
-### Jeśli mama zechce, Arthur spisze z nią historię jej życia – dla niej samej i dla bliskich.
-
-Mama opowiada w niej o tym, co przeżyła: o domu, w którym dorastała, o swojej pracy, o ludziach i miejscach, które pamięta. Historia powstaje z jej opowieści i należy do niej.
-
-Dla mamy to okazja, żeby opowiedzieć swoje życie po swojemu i zobaczyć je spisane w całości. To ona decyduje, czy historia zostanie tylko dla niej, czy pokaże ją rodzinie.
-
-Po kilku rozmowach Arthur zaproponuje mamie spisanie jej historii. Jeśli mama nie wyrazi zainteresowania, Arthur nie ponowi tej propozycji, chyba że mama sama wróci do tego tematu później. Historia spisywana jest tak, jak mama ją pamięta. Niczego do niej nie dopisujemy, a w finalnym tekście zostaje tylko to, co mama chce w nim zostawić. Wprowadzane są jedynie podstawowe poprawki redakcyjne, tak by nie ingerować w tok narracji mamy. Jeśli mama zechce, taki zapis może stać się cenną pamiątką rodzinną.
-
 ## Jak korzystać z arthurozmów – abonament, cena i rezygnacja
 https://arthurozmowy.pl/jak-korzystac
 
@@ -189,11 +187,13 @@ W panelu klienta zobaczysz raporty i płatności, zmienisz dane czy rodzaj pakie
 
 W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody, a Ty dostajesz taki sam raport.
 
-Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
+Na cenę składają się trzy rzeczy: liczba rozmów w miesiącu, ich rytm w tygodniu i długość jednej rozmowy. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty, tak samo w każdym pakiecie. Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
 
-- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących
-- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących
-- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących
+- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
+- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących (co tydzień 1–2 rozmowy pełne i 2 podtrzymujące)
+- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących (co tydzień 2 rozmowy pełne i 3 podtrzymujące)
+
+Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
 
 Na początek proponujemy pakiet optymalny za 299 zł. Ceny zawierają VAT. Pakiet zmienisz na wyższy albo niższy od kolejnego miesiąca – nigdy nie będzie to problemem.
 
@@ -205,15 +205,7 @@ Przez 15 kolejnych dni Arthur zmieni w rozmowach narrację i treść, a w ostatn
 
 Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
 
-### Arthur prowadzi rozmowy telefoniczne. Nigdy nie poprosi mamy o pieniądze ani żadne dane wrażliwe.
-
-Arthur nigdy nie prosi mamy o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś nie mówiła rodzinie. Nigdy też nie przekazuje informacji o członkach rodziny ani wiadomości od innych osób.
-
-Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Sam numer na ekranie nie daje 100% pewności, bo oszuści potrafią go podrobić. Dlatego przy każdej wątpliwości mama powinna rozłączyć się i zadzwonić do Ciebie.
-
-Arthur zapytany przez mamę, czy nie jest aby oszustem, doceni jej czujność, poprosi, by zadzwoniła do Ciebie, po czym się rozłączy.
-
-Powiedz o tym mamie, zanim Arthur zadzwoni do niej po raz pierwszy, i uczul ją, że ktoś, kto przedstawia się jako Arthur i prosi o dane albo namawia do zrobienia czegoś, nie jest Arthurem.
+Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy. Jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał. Po 3 miesiącach usuwamy tę pamięć, a na prośbę Twoją albo mamy usuniemy ją wcześniej.
 
 ## Jak rozmawiać z mamą o Arthurze – siedem kroków
 https://arthurozmowy.pl/jak-rozmawiac-z-mama
@@ -337,6 +329,56 @@ W każdej rozmowie Arthur trzyma się eksperckiej metody: prowadzi z mamą warto
 
 Dostaniesz też raporty o tym, kiedy i o czym rozmawiali, a jeśli bieg rozmów zaniepokoi Arthura, da Ci o tym znać.
 
+## Bezpieczeństwo rozmów z Arthurem – arthurozmowy
+https://arthurozmowy.pl/bezpieczenstwo
+
+Arthur rozmawia z mamą i o nic jej nie prosi. Kto prosi, nie jest Arthurem.
+
+Do mamy mieszkającej samotnie będzie regularnie dzwonił program. Masz prawo wiedzieć, jak chronimy ją przed oszustami, co dzieje się z tym, co mama mówi, i co mama wie o Arthurze.
+
+Na tej stronie piszemy o trzech sprawach: o oszustach, którzy mogą podszyć się pod Arthura, o danych mamy i o tym, że Arthur nigdy nie udaje człowieka. Piszemy też wprost, czego dziś nie potrafimy zagwarantować.
+
+### Arthur nigdy nie prosi mamy o pieniądze, o dane ani o żadną przysługę.
+
+Obcy głos, który regularnie dzwoni do samotnej osoby, wygląda jak początek oszustwa „na wnuczka”. Dlatego Arthur ma zasady, od których nie ma wyjątków.
+
+Arthur nigdy:
+- nie prosi o pieniądze i nie rozmawia o finansach, także o cenie arthurozmów;
+- nie prosi o dane: numer karty, konta, PESEL, hasło ani datę urodzenia;
+- nie prosi, żeby mama kogoś wpuściła, coś podpisała albo gdzieś poszła;
+- nie prosi, żeby mama czegoś nie mówiła rodzinie;
+- nie przekazuje wiadomości od innych osób ani wieści o bliskich.
+
+Jeśli ktoś przedstawia się jako Arthur i o cokolwiek prosi, to nie jest Arthur. Mama może się rozłączyć i zadzwonić do Ciebie.
+
+Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową. Sam numer na ekranie nie jest jednak dowodem, bo oszuści potrafią go podrobić. Nie obiecujemy więc, że nikt nigdy nie podszyje się pod Arthura. Obiecujemy, że prawdziwy Arthur nigdy o nic nie poprosi, a to jest zasada, którą mama może zapamiętać.
+
+Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, damy Ci o tym znać.
+
+Jeśli taki telefon się zdarzy, najważniejsze jest, żeby mama powiedziała o nim Tobie. Ty najlepiej ocenisz, co się stało i czy trzeba to zgłosić na policję.
+
+### To, co mama mówi Arthurowi, zostaje między nimi.
+
+Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. Jej słów nikomu nie udostępnia, także Tobie.
+
+W raporcie zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, i może przeczytać każdy raport.
+
+Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje.
+
+Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
+
+Po rezygnacji Arthur zachowuje pamięć spraw mamy przez 3 miesiące, na wypadek Waszego powrotu. Potem ją usuwamy. Na prośbę Twoją albo mamy usuniemy ją wcześniej.
+
+Dane mamy nie służą do reklamy i nikomu ich nie sprzedajemy.
+
+### Mama od pierwszej rozmowy wie, że Arthur jest programem.
+
+Arthur nie udaje człowieka. Zapytany wprost, zawsze odpowiada, że jest programem opartym na sztucznej inteligencji.
+
+Bez zgody mamy rozmowy się nie zaczynają. Mama dowiaduje się, kim jest Arthur, najlepiej od Ciebie, a w pierwszej rozmowie Arthur mówi jej to sam i wyjaśnia, co będzie w raporcie dla Ciebie.
+
+Nie ma sekretów między mamą a rodziną. Arthur nigdy nie prosi, żeby mama coś przed Tobą ukryła, a mama może w każdej chwili przerwać rozmowę albo powiedzieć „dziś nie”.
+
 ## Pytania o arthurozmowy – cena, rozmowy z Arthurem, zgoda mamy
 https://arthurozmowy.pl/pytania
 
@@ -418,7 +460,7 @@ Tak, pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Pł
 
 #### Jak zrezygnować z arthurozmów?
 
-Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą.
+Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał.
 
 ### Trudne pytania
 

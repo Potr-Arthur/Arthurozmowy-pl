@@ -141,7 +141,7 @@ Tak, pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Pł
 
 ### Jak zrezygnować z arthurozmów?  `baza:jak-zrezygnowac`
 
-Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą.
+Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał.
 
 **Link wewnętrzny:** Rezygnacja → /jak-korzystac#rezygnacja
 
@@ -169,7 +169,7 @@ Nie, bo Arthur nie przejmuje Twoich rozmów z mamą, tylko dokłada do nich taki
 
 Sam numer na ekranie telefonu tego nie gwarantuje, bo oszuści potrafią go podrobić, ale Arthur tylko rozmawia i nigdy niczego od mamy nie chce. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie.
 
-**Link wewnętrzny:** Bezpieczeństwo → /jak-korzystac#bezpieczenstwo
+**Link wewnętrzny:** Bezpieczeństwo → /bezpieczenstwo
 
 ### A co, jeśli mama polubi rozmowy z Arthurem, a jednak Ty z nich zrezygnujesz?  `baza:gdy-mama-polubi-rozmowy`
 

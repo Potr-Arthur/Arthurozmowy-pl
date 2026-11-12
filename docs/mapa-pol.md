@@ -13,9 +13,10 @@
 | 4 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 5 | Czego nie obiecujemy | #czego-nie-obiecujemy | — | tak | Tekst akapitu, Link wewnętrzny |
 | 6 | Dlaczego Arthur przez „h” | #dlaczego-arthur-przez-h | — | tak | Tekst akapitu |
-| 7 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
-| 8 | Cena | #cena | — | tak | Karty ceny, Tekst akapitu, Przycisk CTA (Umów mamie próbne arthurozmowy) |
-| 9 | Jak rozmawiać z mamą | #jak-rozmawiac-z-mama | — | tak | Tekst akapitu, Link wewnętrzny, Przycisk CTA (Umów mamie próbne arthurozmowy) |
+| 7 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Link wewnętrzny |
+| 8 | Bezpieczeństwo | #bezpieczenstwo | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
+| 9 | Cena | #cena | — | tak | Karty ceny, Tekst akapitu, Przycisk CTA (Umów mamie próbne arthurozmowy) |
+| 10 | Jak rozmawiać z mamą | #jak-rozmawiac-z-mama | — | tak | Tekst akapitu, Link wewnętrzny, Przycisk CTA (Umów mamie próbne arthurozmowy) |
 
 ## O nas · `/o-nas` · `src/content/strony/o-nas.yml`
 
@@ -35,8 +36,7 @@
 | 2 | Zasady rozmowy | #zasady-rozmowy | — | — | Zasady (H3) |
 | 3 | Ciągłość rozmów | #ciaglosc-rozmow | tak | tak | Tekst akapitu, Karta cytatu |
 | 4 | Raport dla Ciebie | #raport-dla-ciebie | — | tak | Tekst akapitu, Karta cytatu, Link wewnętrzny |
-| 5 | Historia życia | #historia-zycia | — | tak | Tekst akapitu |
-| 6 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Przycisk CTA (Porozmawiaj z Arthurem) |
+| 5 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Przycisk CTA (Porozmawiaj z Arthurem) |
 
 ## Jak korzystać · `/jak-korzystac` · `src/content/strony/jak-korzystac.yml`
 
@@ -45,9 +45,8 @@
 | 0 | Wejście | — | tak | tak | — |
 | 1 | Abonament | #abonament | — | tak | Tekst akapitu, Link wewnętrzny |
 | 2 | Cena | #cena | — | tak | Tekst akapitu, Karty ceny, Voice aside |
-| 3 | Rezygnacja | #rezygnacja | — | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
-| 4 | Bezpieczeństwo | #bezpieczenstwo | tak | tak | Tekst akapitu, Voice aside, Tekst akapitu, Link wewnętrzny |
-| 5 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon) |
+| 3 | Rezygnacja | #rezygnacja | tak | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
+| 4 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon) |
 
 ## Jak rozmawiać z mamą · `/jak-rozmawiac-z-mama` · `src/content/strony/jak-rozmawiac-z-mama.yml`
 
@@ -75,6 +74,16 @@
 | 5 | Twoja rola | #twoja-rola | tak | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 6 | Co obiecujemy | #co-obiecujemy | — | tak | Tekst akapitu, Voice aside |
 | 7 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Link wewnętrzny |
+
+## Bezpieczeństwo · `/bezpieczenstwo` · `src/content/strony/bezpieczenstwo.yml`
+
+| Nr | Rozdział (spis treści) | Kotwica | Zdjęcie | Lid | Bloki w kolejności |
+|---|---|---|---|---|---|
+| 0 | Wejście | — | tak | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
+| 1 | Oszuści | #oszusci | tak | tak | Lista, Voice aside, Tekst akapitu, Link wewnętrzny |
+| 2 | Dane mamy | #dane-mamy | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
+| 3 | Jawność | #jawnosc | — | tak | Tekst akapitu, Link wewnętrzny |
+| 4 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Przycisk CTA (Napisz do nas) |
 
 ## Pytania · `/pytania` · `src/content/strony/pytania.yml`
 
@@ -128,13 +137,13 @@
 | `czego-mama-potrzebuje` | Czego mama potrzebuje, żeby rozmawiać z Arthurem? | Rozmowy z Arthurem | Jak działa Arthur, Jak korzystać |
 | `rozmowy-poza-domem` | Czy mama może rozmawiać z Arthurem, kiedy jest poza domem? | Rozmowy z Arthurem | — |
 | `mama-mieszka-sama` | Mama mieszka sama i coraz rzadziej z kimś rozmawia. Co mogę zrobić? | Mama i Ty | — |
-| `zgoda-mamy` | Czy mama musi się zgodzić na rozmowy z Arthurem? | Mama i Ty | Jak korzystać |
-| `czy-dowiem-sie-o-czym-rozmawiaja` | Czy dowiem się, o czym mama rozmawia z Arthurem? | Mama i Ty | Jak korzystać |
+| `zgoda-mamy` | Czy mama musi się zgodzić na rozmowy z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
+| `czy-dowiem-sie-o-czym-rozmawiaja` | Czy dowiem się, o czym mama rozmawia z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
 | `niepokojaca-zmiana` | Czy Arthur da mi znać, jeśli zauważy coś niepokojącego? | Mama i Ty | Czego nie obiecujemy |
 | `ile-kosztuja` | Ile kosztują arthurozmowy? | Cena i rezygnacja | — |
 | `miesiac-probny` | Czy będziemy mogły najpierw wypróbować arthurozmowy? | Cena i rezygnacja | Jak działa Arthur |
 | `jak-zrezygnowac` | Jak zrezygnować z arthurozmów? | Cena i rezygnacja | Jak działa Arthur |
 | `rozmowa-z-programem` | Czy to w porządku, że mama będzie rozmawiać z programem, a nie z człowiekiem? | Trudne pytania | Jak rozmawiać z mamą, Czego nie obiecujemy |
 | `czy-nie-wyreczam-sie` | Czy aby nie wyręczam się Arthurem w rozmowach z mamą? | Trudne pytania | Jak rozmawiać z mamą, Czego nie obiecujemy |
-| `arthur-czy-oszust` | Skąd mama będzie wiedziała, że dzwoni Arthur, a nie oszust? | Trudne pytania | — |
+| `arthur-czy-oszust` | Skąd mama będzie wiedziała, że dzwoni Arthur, a nie oszust? | Trudne pytania | Bezpieczeństwo |
 | `gdy-mama-polubi-rozmowy` | A co, jeśli mama polubi rozmowy z Arthurem, a jednak Ty z nich zrezygnujesz? | Trudne pytania | — |

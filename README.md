@@ -15,13 +15,13 @@ Treści w tym repozytorium są w stanie z 11.11.2026 (makieta V2). Wszystkie tek
 
 ```
 src/content/
-  strony/                 9 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
+  strony/                 10 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
     strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
   pytania/baza.yml        21 pytań i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
   ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka
 src/content.config.ts     schemat kolekcji Astro 5
-public/images/strony/     18 zdjęć stron (19 plików: wejście strony głównej ma dwa kadry)
+public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
 public/images/marka/      logo (SVG i PNG) i ikony 192 i 512 px do manifestu
 public/admin/config.yml   konfiguracja Sveltia, generowana skryptem
@@ -56,8 +56,8 @@ Strona to **wejście** i **rozdziały**. Wejście i każdy rozdział mają nagł
 | `lista` | lista w tekście | `naglowek`, `numerowana`, `punkty` |
 | `zasady` | H3, Lid H3, Tekst akapitu | `zasady[]`: `naglowek`, `lid`, `tekst` (numer dopisuje szablon) |
 | `cytat` | Karta cytatu | `widoczny`, `etykieta`, `wstep`, `repliki[]`: `kto` (Mama, Arthur, Ty albo puste), `kwestia` |
-| `cennik` | Karty ceny | bez pól, pakiety z Ustawień |
-| `link` | Link wewnętrzny | `tekst`, `adres`, `aktywny` |
+| `cennik` | Karty ceny | bez pól; pakiety z Ustawień: cena, `rytm`, `opis` i wspólne zdanie `pakiety.dlugosc` |
+| `link` | Link wewnętrzny (tekst, nie przycisk; przed nazwą `nawigacja.wiecej`) | `tekst`, `adres`, `aktywny` |
 | `wezwanie` | Przycisk CTA | `rodzaj`: `glowne`, `zakupowe` albo `napisz`; `objasnienie` (zdanie pod przyciskiem) |
 | `pytania` | Karta pytania | `pytania[]` z bazy; tylko strona Pytania |
 | `faq` | FAQ (akordeon) | dokładnie 3 `pytania[]` z bazy; pod akordeonem przycisk „Wszystkie pytania” → /pytania |
@@ -66,9 +66,9 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 
 ## Nawigacja i nazwy
 
-- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w przyciskach „Link wewnętrzny” i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
-- **Strony (8):** Jej sprawy (strona główna, adres `/`), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
-- **Belka górna:** logo, przycisk „Menu”, linki „Cena” (`/#cena`) i „Kontakt”, przycisk „Zamów online” (zamówienie) i „Panel klienta”. Menu ma grupy „Na tej stronie” i „Pozostałe strony”.
+- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w linkach wewnętrznych i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
+- **Strony (9):** Jej sprawy (strona główna, adres `/`), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Bezpieczeństwo, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
+- **Belka górna:** logo, przycisk „Menu”, linki „Cena” (`/#cena`) i „Kontakt”, przycisk „Zamów online” (zamówienie) i „Panel klienta”. Menu to jedna lista: strony jako główny poziom, a rozdziały pod stroną oglądaną albo wskazaną.
 - **Stopka:** trzy przyciski CTA, lista stron, zdanie o statystykach, dane firmy z adresem e-mail i trzy linki prawne.
 - **Trzy przyciski CTA** stoją raz, w Ustawieniach: „Porozmawiaj z Arthurem” (okienko z formularzem rozmowy), „Umów mamie próbne arthurozmowy” (zamówienie) i „Napisz do nas” (okienko z formularzem kontaktu). Oba okienka włączamy po ocenie skutków dla ochrony danych (Z6).
 
@@ -95,11 +95,11 @@ Redaktor może zmienić kolejność rozdziałów i bloków, dodać blok dowolneg
 
 Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i jej odpowiednik w Notion.
 
-- **Zasada:** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 18 zdjęć.
+- **Zasada:** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 20 zdjęć.
 - **Nazwy plików:** `arthurozmowy-{strona}-{treść}-{format}.webp` w `public/images/strony/`. Wejście strony głównej: `-21x9` i osobny kadr `-4x3` na telefon. Wejście podstrony: `-1x1` (1200 × 1200). Zdjęcie w rozdziale: `-4x3` (1200 × 900). Nowa treść zdjęcia dostaje nową nazwę.
 - **Alt:** to, co naprawdę widać, słowami strony („mama”, „córka”, „rozmowa”). Jedno zdanie, 50–125 znaków. Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka.
 - **Zero retuszu skóry** na zdjęciach osób starszych.
-- **Jedyne ukryte zdjęcie** to `arthurozmowy-o-nas-eksperci-4x3.webp` (`widoczne: false`). To zdjęcie robocze z modelami w roli ekspertów i nie może się pokazać nawet na adresie tymczasowym.
+- **Zdjęcie `arthurozmowy-o-nas-eksperci-4x3.webp`** to zdjęcie robocze z modelami w roli ekspertów. Stoi tylko na stronie roboczej, z oznaczeniem „[zdjęcie przykładowe]” w tekście alternatywnym, obok przykładowych danych ekspertki. Nawias kwadratowy blokuje wyjście strony O nas na arthurozmowy.pl.
 - Skrypt sprawdzający zgłasza błąd przy złej liczbie zdjęć, braku pliku, złym formacie w nazwie albo złych proporcjach pliku.
 
 ## Karta cytatu
@@ -124,7 +124,7 @@ python3 narzedzia/buduj_pochodne.py
 
 `generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
 
-Stan na 11.11.2026: zero błędów, 7 zaślepek, 9 uwag (trzy strony prawne w przygotowaniu, ukryte zdjęcie i ukryta karta cytatu, jeden tytuł o znak za długi, rozdziały o tej samej nazwie na dwóch stronach przy tym samym temacie).
+Stan na 12.11.2026: zero błędów, 8 zaślepek, 10 uwag (trzy strony prawne w przygotowaniu, ukryte zdjęcie i ukryta karta cytatu, jeden tytuł o znak za długi, rozdziały o tej samej nazwie na dwóch stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 

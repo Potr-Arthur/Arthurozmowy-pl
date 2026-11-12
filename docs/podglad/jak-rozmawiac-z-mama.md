@@ -157,7 +157,7 @@ Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chcia�
 
 **Link wewnętrzny** `sekcje[5].bloki[2]`
 
-Bezpieczeństwo → /jak-korzystac#bezpieczenstwo
+Bezpieczeństwo → /bezpieczenstwo
 
 ## 7. Wysłuchaj wątpliwości · #wysluchaj-watpliwosci · ton t2
 

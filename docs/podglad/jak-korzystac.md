@@ -61,13 +61,15 @@ W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody,
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
+Na cenę składają się trzy rzeczy: liczba rozmów w miesiącu, ich rytm w tygodniu i długość jednej rozmowy. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty, tak samo w każdym pakiecie. Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
 
 **Karty ceny** `sekcje[1].bloki[1]`
 
-- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących
-- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących
-- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących
+- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
+- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących (co tydzień 1–2 rozmowy pełne i 2 podtrzymujące)
+- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących (co tydzień 2 rozmowy pełne i 3 podtrzymujące)
+
+Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
 
 *Pakiety z Ustawień → Pakiety i ceny*
 
@@ -81,6 +83,10 @@ Na początek proponujemy pakiet optymalny za 299 zł. Ceny zawierają VAT. Pakie
 
 Zrezygnujesz jednym kliknięciem, a Arthur pożegna się z mamą w ciągu 15 dni.
 
+**Plik graficzny:** `/images/strony/arthurozmowy-jak-korzystac-mama-po-rozmowie-4x3.webp`  `sekcje[2].zdjecie`
+
+**Alt:** Mama o siwych włosach siedzi w fotelu z telefonem w dłoni i z lekkim uśmiechem patrzy przed siebie  `sekcje[2].zdjecie.alt`
+
 **Lid H2** `sekcje[2].lid`
 
 Rezygnacja w panelu klienta uruchamia opcję „Pożegnanie”. Arthur nie przerwie rozmów z dnia na dzień, bo mama ma prawo przygotować się do zakończenia rozmów, szczególnie jeśli je polubiła.
@@ -91,47 +97,19 @@ Przez 15 kolejnych dni Arthur zmieni w rozmowach narrację i treść, a w ostatn
 
 Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
 
+Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy. Jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał. Po 3 miesiącach usuwamy tę pamięć, a na prośbę Twoją albo mamy usuniemy ją wcześniej.
+
 **Przycisk CTA** `sekcje[2].bloki[1]`
 
 Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
 
-## 4. Bezpieczeństwo · #bezpieczenstwo · ton t1
+## 4. (poza spisem treści) · #najczestsze-pytania · ton t2
 
 **Nagłówek H2** `sekcje[3].h2`
 
-Arthur prowadzi rozmowy telefoniczne. Nigdy nie poprosi mamy o pieniądze ani żadne dane wrażliwe.
-
-**Plik graficzny:** `/images/strony/arthurozmowy-jak-korzystac-portret-mamy-na-tle-okna-4x3.webp`  `sekcje[3].zdjecie`
-
-**Alt:** Mama o siwych włosach, w turkusowym swetrze, siedzi przy oknie i patrzy w obiektyw z czujnym, lekkim uśmiechem  `sekcje[3].zdjecie.alt`
-
-**Lid H2** `sekcje[3].lid`
-
-Arthur nigdy nie prosi mamy o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś nie mówiła rodzinie. Nigdy też nie przekazuje informacji o członkach rodziny ani wiadomości od innych osób.
-
-**Tekst akapitu** `sekcje[3].bloki[0]`
-
-Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy. Sam numer na ekranie nie daje 100% pewności, bo oszuści potrafią go podrobić. Dlatego przy każdej wątpliwości mama powinna rozłączyć się i zadzwonić do Ciebie.
-
-**Voice aside** `sekcje[3].bloki[1]`
-
-Arthur zapytany przez mamę, czy nie jest aby oszustem, doceni jej czujność, poprosi, by zadzwoniła do Ciebie, po czym się rozłączy.
-
-**Tekst akapitu** `sekcje[3].bloki[2]`
-
-Powiedz o tym mamie, zanim Arthur zadzwoni do niej po raz pierwszy, i uczul ją, że ktoś, kto przedstawia się jako Arthur i prosi o dane albo namawia do zrobienia czegoś, nie jest Arthurem.
-
-**Link wewnętrzny** `sekcje[3].bloki[3]`
-
-Uprzedź o oszustach → /jak-rozmawiac-z-mama#uprzedz-o-oszustach
-
-## 5. (poza spisem treści) · #najczestsze-pytania · ton t2
-
-**Nagłówek H2** `sekcje[4].h2`
-
 Najczęstsze pytania
 
-**Najczęstsze pytania (akordeon)** `sekcje[4].bloki[0]`
+**Najczęstsze pytania (akordeon)** `sekcje[3].bloki[0]`
 
 - Czy mama musi się zgodzić na rozmowy z Arthurem?  `baza:zgoda-mamy`
 - Czego mama potrzebuje, żeby rozmawiać z Arthurem?  `baza:czego-mama-potrzebuje`
