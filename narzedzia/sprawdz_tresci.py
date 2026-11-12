@@ -141,7 +141,10 @@ for n, d in strony.items():
             if sek["kotwica"] in kotwice[n]:
                 blad(f"{n}: powtórzona kotwica #{sek['kotwica']}")
             kotwice[n][sek["kotwica"]] = sek.get("etykieta")
-DO_ZBUDOWANIA = {"/regulamin-strony", "/regulamin-uslugi", "/prywatnosc", "/umow"}
+# Strony bez pliku treści, które buduje szablon (na adresie tymczasowym „w przygotowaniu”): link do nich jest poprawny.
+STRONY_SZABLONU = {"/regulamin-strony", "/regulamin-uslugi", "/prywatnosc"}
+# Strony, których jeszcze nie ma (zamówienie w panelu klienta): link zostaje nieaktywny.
+DO_ZBUDOWANIA = {"/umow"}
 WSZYSTKIE_PYTANIA = ust["nawigacja"]["wszystkie_pytania"]
 
 def sprawdz_link(zrodlo, adres, tekst=None, aktywny=True):
@@ -150,6 +153,8 @@ def sprawdz_link(zrodlo, adres, tekst=None, aktywny=True):
         return
     sciezka, _, kot = adres.partition("#")
     sciezka = sciezka or "/"
+    if sciezka in STRONY_SZABLONU:
+        return
     if sciezka in DO_ZBUDOWANIA:
         uwaga(f"{zrodlo}: link do {sciezka}, strony jeszcze nie ma")
         return
