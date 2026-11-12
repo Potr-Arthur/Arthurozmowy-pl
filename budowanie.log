@@ -1,0 +1,74 @@
+
+BŁĘDY (0)
+
+UWAGI (7)
+  - jak-dziala-arthur · rozdział 4 (Raport dla Ciebie) · blok 2 (cytat): karta cytatu ukryta („Przykład raportu”)
+  - jak-dziala-arthur · rozdział 5 (najczestsze-pytania): ten sam ton co rozdział wyżej (t1)
+  - jak-korzystac · rozdział 4 (najczestsze-pytania): ten sam ton co rozdział wyżej (t2)
+  - pytania: tytuł ma 61 znaków (zalecane do 60)
+  - Rozdział „Raport dla Ciebie” jest na stronach: jak-dziala-arthur, strona-glowna (dozwolone tylko dla tego samego tematu)
+  - Rozdział „Cena” jest na stronach: jak-korzystac, strona-glowna (dozwolone tylko dla tego samego tematu)
+  - Rozdział „Porozmawiaj z Arthurem” jest na stronach: jak-rozmawiac-z-mama, kontakt, strona-glowna (dozwolone tylko dla tego samego tematu)
+
+ZAŚLEPKI (strona z zaślepką nie wychodzi) (8)
+  - o-nas · sekcje[0].zdjecie.alt: [zdjęcie przykładowe]
+  - o-nas · sekcje[0].bloki[0].tekst: [Dane przykładowe – ekspertka dołączy do projektu przed startem.]
+  - ustawienia · okno_rozmowy.potwierdzenie: [do napisania]
+  - ustawienia · okno_rozmowy.blad: [do napisania]
+  - ustawienia · okno_rozmowy.zgoda: [do napisania po ocenie skutków dla ochrony danych (Z6)]
+  - ustawienia · okno_kontaktu.potwierdzenie: [do napisania]
+  - ustawienia · okno_kontaktu.blad: [do napisania]
+  - ustawienia · okno_kontaktu.zgoda: [do napisania po ocenie skutków dla ochrony danych (Z6)]
+
+Strony: 10, pytania w bazie: 21.
+Podglądy: 10 · JSON-LD: 9 · llms-full.txt pomija strony z zaślepkami: o-nas
+npm warn deprecated tsconfck@3.1.6: unmaintained
+
+added 280 packages in 5s
+
+> arthurozmowy-pl@0.1.0 build
+> astro build
+
+[2m14:52:26[22m [34m[content][39m Syncing content
+[2m14:52:27[22m [34m[content][39m Synced content
+[2m14:52:27[22m [34m[types][39m Generated [2m506ms[22m
+[2m14:52:27[22m [34m[build][39m output: [34m"static"[39m
+[2m14:52:27[22m [34m[build][39m mode: [34m"static"[39m
+[2m14:52:27[22m [34m[build][39m directory: [34m/home/runner/work/Arthurozmowy-pl/Arthurozmowy-pl/dist/[39m
+[2m14:52:27[22m [34m[build][39m Collecting build info...
+[2m14:52:27[22m [34m[build][39m [32m✓ Completed in 519ms.[39m
+[2m14:52:27[22m [34m[build][39m Building static entrypoints...
+[2m14:52:28[22m [34m[vite][39m [32m✓ built in 1.13s[39m
+[2m14:52:28[22m [34m[build][39m [32m✓ Completed in 1.16s.[39m
+
+[42m[30m building client (vite) [39m[49m
+[2m14:52:28[22m [34m[vite][39m transforming...
+[2m14:52:28[22m [34m[vite][39m [32m✓[39m 1 modules transformed.
+[2m14:52:28[22m [34m[vite][39m rendering chunks...
+[2m14:52:28[22m [34m[vite][39m [32m✓ built in 14ms[39m
+
+[42m[30m generating static routes [39m[49m
+[2m14:52:28[22m [32m▶[39m src/pages/404.astro
+[2m14:52:28[22m   [34m└─[39m [2m/404.html[22m [2m(+21ms)[22m 
+[2m14:52:28[22m [32m▶[39m src/pages/[...strona].astro
+[2m14:52:28[22m   [34m├─[39m [2m/bezpieczenstwo.html[22m [2m(+14ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/czego-nie-obiecujemy.html[22m [2m(+7ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/jak-korzystac.html[22m [2m(+6ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/jak-dziala-arthur.html[22m [2m(+6ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/jak-rozmawiac-z-mama.html[22m [2m(+7ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/kontakt.html[22m [2m(+5ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/o-nas.html[22m [2m(+4ms)[22m 
+[2m14:52:28[22m   [34m├─[39m [2m/pytania.html[22m [2m(+6ms)[22m 
+[2m14:52:28[22m   [34m└─[39m [2m/index.html[22m [2m(+7ms)[22m 
+[2m14:52:28[22m [32m▶[39m src/pages/prywatnosc.astro
+[2m14:52:28[22m   [34m└─[39m [2m/prywatnosc.html[22m [2m(+6ms)[22m 
+[2m14:52:28[22m [32m▶[39m src/pages/regulamin-strony.astro
+[2m14:52:28[22m   [34m└─[39m [2m/regulamin-strony.html[22m [2m(+4ms)[22m 
+[2m14:52:28[22m [32m▶[39m src/pages/regulamin-uslugi.astro
+[2m14:52:28[22m   [34m└─[39m [2m/regulamin-uslugi.html[22m [2m(+3ms)[22m 
+[2m14:52:28[22m [35mλ[39m src/pages/robots.txt.ts
+[2m14:52:28[22m   [34m└─[39m [2m/robots.txt[22m [2m(+1ms)[22m 
+[2m14:52:28[22m [32m✓ Completed in 119ms.
+[39m
+[2m14:52:28[22m [34m[build][39m 13 page(s) built in [1m1.83s[22m
+[2m14:52:28[22m [34m[build][39m [1mComplete![22m
