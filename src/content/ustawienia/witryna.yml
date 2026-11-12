@@ -17,8 +17,8 @@ marka:
 
 # Belka górna każdej strony, od lewej: logo, przycisk „Menu”, linki z listy „linki”, przycisk „Zamów online”
 # (to samo miejsce docelowe co wezwania.zakupowe) i „Panel klienta”.
-# „Menu” otwiera panel z dwiema grupami: „Na tej stronie” (rozdziały oglądanej strony)
-# i „Pozostałe strony” (osiem stron z nawigacja.strony, każda jako przycisk „Link wewnętrzny”; strona oglądana jest oznaczona i nieklikalna).
+# „Menu” otwiera jedną listę: po lewej dziewięć stron z nawigacja.strony (strona oglądana wyróżniona),
+# po prawej rozdziały strony oglądanej albo tej, przy której kliknięto strzałkę. Na telefonie rozdziały rozwijają się pod stroną.
 naglowek:
   menu: Menu
   # Menu to jedna lista: strony po lewej jako główny poziom, a rozdziały tylko pod stroną oglądaną albo wskazaną.
@@ -36,7 +36,7 @@ naglowek:
   przycisk_staly: true
 
 # Jedna lista stron dla menu i stopki. Zasada: jeden temat, jedna nazwa, jedno miejsce.
-# Nazwa strony brzmi tak samo w menu, w stopce, w przyciskach „Link wewnętrzny” i w spisie treści strony głównej.
+# Nazwa strony brzmi tak samo w menu, w stopce, w linkach wewnętrznych i w rozdziałach strony głównej.
 nawigacja:
   strony:
     - tekst: Jej sprawy
@@ -57,7 +57,7 @@ nawigacja:
       adres: /pytania
     - tekst: Kontakt
       adres: /kontakt
-  # Napis na przycisku pod akordeonem „Najczęstsze pytania” (jedyny link do strony o innej nazwie niż strona).
+  # Link pod akordeonem „Najczęstsze pytania”, bez słowa „Więcej:” (jedyny link do strony o innej nazwie niż strona).
   wszystkie_pytania: Wszystkie pytania
   # Słowo przed linkiem wewnętrznym w treści, np. „Więcej: Jak działa Arthur”. Link jest tekstem, a nie przyciskiem.
   wiecej: "Więcej:"

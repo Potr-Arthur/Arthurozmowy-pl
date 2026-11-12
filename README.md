@@ -2,7 +2,7 @@
 
 ## Budowa witryny (WITRYNA)
 
-- **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. **Uwaga (11.11.2026):** treści są już w modelu blokowym makiety V2, a szablony (`Strona.astro`, `Sekcja.astro`, `Wejscie.astro`, `Wezwania.astro`, `Uklad.astro`) trzeba do niego przepisać według `claude/Przekazanie_WITRYNA.md`. Do tego czasu `npm run build` się nie powiedzie.
+- **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. Szablony są w modelu blokowym makiety V2: jeden typ bloku to jeden komponent w `src/components/bloki/`.
 - **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`), Astro.
 - **Adres tymczasowy:** każda strona ma `noindex`, nagłówek `X-Robots-Tag` i `robots.txt` blokujący roboty. Przy starcie na arthurozmowy.pl: zmienna `PUBLIKACJA=tak` na Netlify (włącza docelowy `narzedzia/robots-docelowy.txt` i indeksowanie) i usunięcie bloku `X-Robots-Tag` z `netlify.toml`.
 - **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to strony „w przygotowaniu”.
@@ -46,7 +46,7 @@ Strona to **wejście** i **rozdziały**. Wejście i każdy rozdział mają nagł
 | `wejscie.h1`, `sekcje[].h2` | Nagłówek H1, Nagłówek H2 | jeden H1 na stronę; H2 to pełne zdanie |
 | `wejscie.zdjecie`, `sekcje[].zdjecie` | Plik graficzny HERO, H1, H2 | `plik`, `plik_telefon` (tylko wejście strony głównej), `alt`, `widoczne` |
 | `wejscie.lid`, `sekcje[].lid` | Lid H1, Lid H2 | jeden akapit kursywą |
-| `sekcje[].kotwica`, `etykieta` | spis „Na tej stronie” | puste `etykieta` = rozdział poza spisem |
+| `sekcje[].kotwica`, `etykieta` | rozdział w menu („Na stronie …”) | puste `etykieta` = rozdziału nie ma w menu |
 | `sekcje[].ton` | tło rozdziału | t1–t5, jak dotąd |
 
 | Typ bloku (`typ`) | Moduł makiety | Pola |
@@ -59,8 +59,8 @@ Strona to **wejście** i **rozdziały**. Wejście i każdy rozdział mają nagł
 | `cennik` | Karty ceny | bez pól; pakiety z Ustawień: cena, `rytm`, `opis` i wspólne zdanie `pakiety.dlugosc` |
 | `link` | Link wewnętrzny (tekst, nie przycisk; przed nazwą `nawigacja.wiecej`) | `tekst`, `adres`, `aktywny` |
 | `wezwanie` | Przycisk CTA | `rodzaj`: `glowne`, `zakupowe` albo `napisz`; `objasnienie` (zdanie pod przyciskiem) |
-| `pytania` | Karta pytania | `pytania[]` z bazy; tylko strona Pytania |
-| `faq` | FAQ (akordeon) | dokładnie 3 `pytania[]` z bazy; pod akordeonem przycisk „Wszystkie pytania” → /pytania |
+| `pytania` | Karta pytania | `pytania[]` z bazy; tylko strona Pytania, karty stale rozwinięte |
+| `faq` | FAQ (akordeon) | dokładnie 3 `pytania[]` z bazy; pod akordeonem link „Wszystkie pytania” (bez „Więcej:”) → /pytania |
 
 W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` (dane z Ustawień → Dane firmy), pogrubienie `**…**` i linki `[tekst](/adres)`.
 
@@ -124,7 +124,7 @@ python3 narzedzia/buduj_pochodne.py
 
 `generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
 
-Stan na 12.11.2026: zero błędów, 8 zaślepek, 10 uwag (trzy strony prawne w przygotowaniu, ukryte zdjęcie i ukryta karta cytatu, jeden tytuł o znak za długi, rozdziały o tej samej nazwie na dwóch stronach przy tym samym temacie).
+Stan na 12.11.2026: zero błędów, 8 zaślepek, 7 uwag (ukryta karta z przykładem raportu, dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 

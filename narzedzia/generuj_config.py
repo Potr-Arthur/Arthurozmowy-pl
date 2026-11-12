@@ -88,8 +88,8 @@ def kotwica():
              pattern=["^[a-z0-9-]*$", "Tylko a–z, cyfry i łącznik"])
 
 def etykieta():
-    return s("etykieta", "Nazwa w spisie treści („Na tej stronie”)",
-             hint="Krótko, 1–4 słowa. Puste pole = rozdział nie trafia do spisu treści.")
+    return s("etykieta", "Nazwa rozdziału w menu („Na stronie …”)",
+             hint="Krótko, 1–4 słowa. Puste pole = rozdziału nie ma w menu.")
 
 def zdjecie(label, hint):
     return obj("zdjecie", label, hint=hint + " Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp. Bez retuszu skóry.", fields=[
@@ -148,8 +148,8 @@ B_CYTAT = obj("cytat", "Karta cytatu (żółta karta)", summary="Karta cytatu: {
 B_CENNIK = obj("cennik", "Karty ceny (pakiety z Ustawień)", summary="Karty ceny", fields=[
     {"label": "Pakiety", "name": "info", "widget": "hidden", "required": False},
 ])
-B_LINK = obj("link", "Link wewnętrzny (przycisk w kolorze rdzy)", summary="Link: {{fields.tekst}} → {{fields.adres}}", fields=[
-    s("tekst", "Tekst przycisku", required=True,
+B_LINK = obj("link", "Link wewnętrzny („Więcej:” i nazwa w ramce rdzy)", summary="Link: {{fields.tekst}} → {{fields.adres}}", fields=[
+    s("tekst", "Tekst linku", required=True,
       hint="Nazwa strony albo rozdziału, do którego prowadzi (jeden temat, jedna nazwa)."),
     s("adres", "Adres", hint="Ścieżka wewnętrzna, np. /jak-dziala-arthur albo /jak-korzystac#rezygnacja."),
     b("aktywny", "Link aktywny", True, hint="Wyłącz, dopóki strona docelowa nie istnieje."),
@@ -162,11 +162,11 @@ B_WEZWANIE = obj("wezwanie", "Przycisk CTA (błękitny)", summary="Przycisk CTA:
     ], default="glowne", required=True, hint="Teksty przycisków zmieniasz w Ustawieniach."),
     b("objasnienie", "Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)", False),
 ])
-B_PYTANIA = obj("pytania", "Karty pytań (strona Pytania)", summary="Pytania z bazy", fields=[
+B_PYTANIA = obj("pytania", "Karty pytań, stale rozwinięte (strona Pytania)", summary="Pytania z bazy", fields=[
     faq_rel(label="Pytania z bazy, w kolejności"),
 ])
 B_FAQ = obj("faq", "Najczęstsze pytania (akordeon z 3 pytaniami)", summary="Najczęstsze pytania", hint=(
-    "Pod akordeonem szablon dodaje przycisk „Wszystkie pytania” → /pytania."), fields=[
+    "Pod akordeonem szablon dodaje link „Wszystkie pytania” → /pytania."), fields=[
     faq_rel(3, 3, label="Trzy pytania z bazy"),
 ])
 
@@ -224,7 +224,7 @@ def pola_strony(szablon):
     pola = [
         obj("strona", "Strona", fields=[
             s("nazwa", "Nazwa strony", required=True,
-              hint="Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w przyciskach „Link wewnętrzny”."),
+              hint="Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych."),
             {"label": "Szablon", "name": "szablon", "widget": "hidden", "default": szablon},
         ]),
         seo, geo,
@@ -309,7 +309,7 @@ POLA_USTAWIEN = [
         "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, linkach wewnętrznych "
         "i spisie treści strony głównej."), fields=[
         lista_linkow("strony", "Strony"),
-        s("wszystkie_pytania", "Napis przycisku pod akordeonem pytań"),
+        s("wszystkie_pytania", "Napis linku pod akordeonem pytań"),
         s("wiecej", "Słowo przed linkiem wewnętrznym", hint="Np. „Więcej:”. Po nim stoi nazwa strony albo rozdziału."),
     ]),
     obj("wezwania", "Przyciski CTA", fields=[
