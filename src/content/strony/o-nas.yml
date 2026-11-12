@@ -50,16 +50,18 @@ sekcje:
     ton: t2
     h2: |-
       Arthur jest algorytmem, ale metodę opracowali doświadczeni ludzie.
-    # Zdjęcie robocze z modelami w roli ekspertów. Ukryte do czasu prawdziwego zdjęcia z ekspertką (Z1). Nie wolno go opublikować.
+    # Zdjęcie robocze z modelami w roli ekspertów. Widoczne tylko na stronie roboczej (decyzja Piotra z 12.11.2026),
+    # z oznaczeniem w nawiasie kwadratowym. Nawias blokuje publikację na arthurozmowy.pl do czasu prawdziwego zdjęcia (Z1).
     zdjecie:
-      widoczne: false
+      widoczne: true
       plik: /images/strony/arthurozmowy-o-nas-eksperci-4x3.webp
-      alt: "[Imię i nazwisko ekspertki] i Piotr Jaworski, autorzy metody rozmowy"
+      alt: "Kobieta i mężczyzna w okularach, autorzy metody rozmowy [zdjęcie przykładowe]"
     bloki:
-      # Dane ekspertki z tekstu z 11.11 są robocze (ekspertka nie dołączyła jeszcze do projektu), więc stoi tu zaślepka (Z1).
+      # Dane ekspertki są przykładowe (ekspertka nie dołączyła jeszcze do projektu). Stoją na stronie roboczej, żeby nie było luki
+      # (decyzja Piotra z 12.11.2026), z widocznym oznaczeniem. Nawias kwadratowy blokuje publikację na arthurozmowy.pl (Z1).
       - typ: glos
         tekst: |-
-          [Ekspertka: imię i nazwisko, specjalizacja, staż pracy i macierzysta jednostka naukowa – do uzupełnienia, gdy ekspertka dołączy do projektu.]
+          [Dane przykładowe – ekspertka dołączy do projektu przed startem.] Dr Maria Callas jest specjalistką od psychogeriatrii, psychologii klinicznej i komunikacji osób starszych. Pracuje w zawodzie od blisko 21 lat. Jej macierzystą jednostką naukową jest CAMH Toronto.
 
           Piotr Jaworski, z wykształcenia pedagog specjalny, od ponad 30 lat zajmuje się tworzeniem produktów i usług.
 

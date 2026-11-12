@@ -142,7 +142,7 @@ const ustawienia = defineCollection({
       panel_klienta: z.string(),
       przycisk_staly: z.boolean().default(true),
     }),
-    nawigacja: z.object({ strony: z.array(linkNazwany), wszystkie_pytania: z.string() }),
+    nawigacja: z.object({ strony: z.array(linkNazwany), wszystkie_pytania: z.string(), wiecej: z.string() }),
     wezwania: z.object({
       glowne: z.object({ przycisk: z.string(), dopisek: z.string().optional() }),
       zakupowe: z.object({ przycisk: z.string(), adres: z.string() }),
@@ -153,12 +153,14 @@ const ustawienia = defineCollection({
     pakiety: z.object({
       waluta: z.string(),
       okres: z.string(),
+      dlugosc: z.string(),
       lista: z.array(
         z.object({
           cena: z.number(),
           rozmowy_pelne: z.number(),
           rozmowy_podtrzymujace: z.number(),
           opis: z.string(),
+          rytm: z.string(),
           nazwa: z.string().optional(),
           polecany: z.boolean().optional(),
         }),

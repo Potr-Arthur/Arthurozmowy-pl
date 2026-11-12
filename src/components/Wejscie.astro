@@ -56,7 +56,7 @@ const zdjecie = w.zdjecie && w.zdjecie.widoczne !== false && w.zdjecie.plik ? w.
         <p class="nazwa-strony">{dane.strona.nazwa}</p>
         <h1 set:html={inline(w.h1, f)} />
         {lid.map((p) => <p class="lid" set:html={p} />)}
-        {w.przycisk_powrotu && <Link b={w.przycisk_powrotu} k={k} />}
+        {w.przycisk_powrotu && <Link b={w.przycisk_powrotu} k={k} bezWiecej />}
         <Bloki bloki={w.bloki} k={k} />
       </div>
     </div>

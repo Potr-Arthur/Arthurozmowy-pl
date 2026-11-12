@@ -112,7 +112,7 @@ pytania:
   - id: jak-zrezygnowac
     pytanie: Jak zrezygnować z arthurozmów?
     odpowiedz: |-
-      Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą.
+      Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał.
     link:
       tekst: Rezygnacja
       adres: /jak-korzystac#rezygnacja
@@ -133,7 +133,7 @@ pytania:
       Sam numer na ekranie telefonu tego nie gwarantuje, bo oszuści potrafią go podrobić, ale Arthur tylko rozmawia i nigdy niczego od mamy nie chce. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie.
     link:
       tekst: Bezpieczeństwo
-      adres: /jak-korzystac#bezpieczenstwo
+      adres: /bezpieczenstwo
 
   - id: gdy-mama-polubi-rozmowy
     pytanie: A co, jeśli mama polubi rozmowy z Arthurem, a jednak Ty z nich zrezygnujesz?

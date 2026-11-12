@@ -21,8 +21,10 @@ marka:
 # i „Pozostałe strony” (osiem stron z nawigacja.strony, każda jako przycisk „Link wewnętrzny”; strona oglądana jest oznaczona i nieklikalna).
 naglowek:
   menu: Menu
-  grupa_rozdzialy: Na tej stronie
-  grupa_strony: Pozostałe strony
+  # Menu to jedna lista: strony po lewej jako główny poziom, a rozdziały tylko pod stroną oglądaną albo wskazaną.
+  # Nad rozdziałami stoi „Na stronie” i nazwa tej strony, np. „Na stronie Jak działa Arthur”.
+  grupa_rozdzialy: Na stronie
+  grupa_strony: Strony
   linki:
     - tekst: Cena
       adres: /#cena
@@ -49,12 +51,16 @@ nawigacja:
       adres: /jak-rozmawiac-z-mama
     - tekst: Czego nie obiecujemy
       adres: /czego-nie-obiecujemy
+    - tekst: Bezpieczeństwo
+      adres: /bezpieczenstwo
     - tekst: Pytania
       adres: /pytania
     - tekst: Kontakt
       adres: /kontakt
   # Napis na przycisku pod akordeonem „Najczęstsze pytania” (jedyny link do strony o innej nazwie niż strona).
   wszystkie_pytania: Wszystkie pytania
+  # Słowo przed linkiem wewnętrznym w treści, np. „Więcej: Jak działa Arthur”. Link jest tekstem, a nie przyciskiem.
+  wiecej: "Więcej:"
 
 # Trzy przyciski CTA witryny. Blok „wezwanie” na stronie wybiera jeden z nich po nazwie.
 wezwania:
@@ -108,23 +114,28 @@ okno_kontaktu:
 pakiety:
   waluta: PLN
   okres: miesięcznie, z VAT
+  # Zdanie o długości rozmowy stoi na każdej karcie ceny. Pokazujemy długość jednej rozmowy, nigdy sumę minut.
+  dlugosc: Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
   lista:
     - cena: 279
       rozmowy_pelne: 4
       rozmowy_podtrzymujace: 8
       opis: 4 rozmowy pełne i 8 rozmów podtrzymujących
+      rytm: co tydzień 1 rozmowa pełna i 2 podtrzymujące
       nazwa: pakiet ekonomiczny
       polecany: false
     - cena: 299
       rozmowy_pelne: 6
       rozmowy_podtrzymujace: 8
       opis: 6 rozmów pełnych i 8 rozmów podtrzymujących
+      rytm: co tydzień 1–2 rozmowy pełne i 2 podtrzymujące
       nazwa: pakiet optymalny
       polecany: true
     - cena: 349
       rozmowy_pelne: 8
       rozmowy_podtrzymujace: 12
       opis: 8 rozmów pełnych i 12 rozmów podtrzymujących
+      rytm: co tydzień 2 rozmowy pełne i 3 podtrzymujące
       nazwa: pakiet rozszerzony
       polecany: false
 

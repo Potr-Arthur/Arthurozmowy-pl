@@ -1,5 +1,5 @@
 ---
-// Moduł „FAQ”: trzy karty pytań z bazy i pod nimi przycisk „Wszystkie pytania” (→ /pytania, tekst z Ustawień).
+// Moduł „FAQ”: trzy karty pytań z bazy i pod nimi link „Wszystkie pytania” bez „Więcej:” (→ /pytania, tekst z Ustawień; decyzja z 12.11.2026).
 import KartaPytania from './KartaPytania.astro';
 import Link from './Link.astro';
 import type { Kontekst } from '../../lib/kontekst';
@@ -10,4 +10,4 @@ const lista = b.pytania.map((id) => k.baza.get(id)).filter(Boolean);
 <div class="karty-pytan">
   {lista.map((q: any) => <KartaPytania q={q} k={k} />)}
 </div>
-<Link b={{ tekst: k.ust.nawigacja.wszystkie_pytania, adres: '/pytania' }} k={k} />
+<Link b={{ tekst: k.ust.nawigacja.wszystkie_pytania, adres: '/pytania' }} k={k} bezWiecej />

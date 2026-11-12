@@ -207,14 +207,29 @@ sekcje:
           W panelu klienta możesz sprawdzać raporty i płatności, zmieniać pakiet oraz zrezygnować z usługi jednym kliknięciem. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
           Rezygnacja jednym kliknięciem uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie stopniowo zmieniał treść i charakter rozmów, a podczas ostatniej pożegna się z mamą. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
+      - typ: link
+        tekst: Jak korzystać
+        adres: /jak-korzystac
+        aktywny: true
 
-          Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny.
+  # Rozdział dodany 12.11.2026: skrót strony Bezpieczeństwo. Tekst przeniesiony z rozdziału „Jak korzystać”.
+  - kotwica: bezpieczenstwo
+    etykieta: Bezpieczeństwo
+    ton: t1
+    h2: |-
+      Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
+    lid: |-
+      Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
       - typ: glos
         tekst: |-
           Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Jeśli mama będzie miała jakiekolwiek wątpliwości, może się rozłączyć i zadzwonić do Ciebie.
       - typ: link
-        tekst: Jak korzystać
-        adres: /jak-korzystac
+        tekst: Bezpieczeństwo
+        adres: /bezpieczenstwo
         aktywny: true
 
   - kotwica: cena

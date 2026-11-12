@@ -207,35 +207,53 @@ W panelu klienta możesz sprawdzać raporty i płatności, zmieniać pakiet oraz
 
 Rezygnacja jednym kliknięciem uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie stopniowo zmieniał treść i charakter rozmów, a podczas ostatniej pożegna się z mamą. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
 
-Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL. Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny.
-
-**Voice aside** `sekcje[6].bloki[1]`
-
-Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Jeśli mama będzie miała jakiekolwiek wątpliwości, może się rozłączyć i zadzwonić do Ciebie.
-
-**Link wewnętrzny** `sekcje[6].bloki[2]`
+**Link wewnętrzny** `sekcje[6].bloki[1]`
 
 Jak korzystać → /jak-korzystac
 
-## 8. Cena · #cena · ton t5
+## 8. Bezpieczeństwo · #bezpieczenstwo · ton t1
 
 **Nagłówek H2** `sekcje[7].h2`
 
-Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
+Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
 
 **Lid H2** `sekcje[7].lid`
 
+Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
+
+**Tekst akapitu** `sekcje[7].bloki[0]`
+
+Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
+
+**Voice aside** `sekcje[7].bloki[1]`
+
+Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Jeśli mama będzie miała jakiekolwiek wątpliwości, może się rozłączyć i zadzwonić do Ciebie.
+
+**Link wewnętrzny** `sekcje[7].bloki[2]`
+
+Bezpieczeństwo → /bezpieczenstwo
+
+## 9. Cena · #cena · ton t5
+
+**Nagłówek H2** `sekcje[8].h2`
+
+Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
+
+**Lid H2** `sekcje[8].lid`
+
 Pakiety różnią się wyłącznie liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu. Jakość rozmów i metoda pracy Arthura są takie same w każdym pakiecie.
 
-**Karty ceny** `sekcje[7].bloki[0]`
+**Karty ceny** `sekcje[8].bloki[0]`
 
-- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących
-- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących
-- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących
+- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
+- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących (co tydzień 1–2 rozmowy pełne i 2 podtrzymujące)
+- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących (co tydzień 2 rozmowy pełne i 3 podtrzymujące)
+
+Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
 
 *Pakiety z Ustawień → Pakiety i ceny*
 
-**Tekst akapitu** `sekcje[7].bloki[1]`
+**Tekst akapitu** `sekcje[8].bloki[1]`
 
 Na początek proponujemy pakiet optymalny za 299 zł. W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody.
 
@@ -243,30 +261,30 @@ Za pierwszy, próbny miesiąc nie płacisz. Opłaty zaczynają się dopiero od d
 
 Możesz zmienić pakiet na kolejny miesiąc – zarówno na wyższy, jak i na niższy.
 
-**Przycisk CTA** `sekcje[7].bloki[2]`
+**Przycisk CTA** `sekcje[8].bloki[2]`
 
 Umów mamie próbne arthurozmowy → zamówienie w panelu klienta
 
-## 9. Jak rozmawiać z mamą · #jak-rozmawiac-z-mama · ton t2
+## 10. Jak rozmawiać z mamą · #jak-rozmawiac-z-mama · ton t2
 
-**Nagłówek H2** `sekcje[8].h2`
+**Nagłówek H2** `sekcje[9].h2`
 
 Nie rób mamie niespodzianki. Arthur to nie upominek, tylko poważna propozycja.
 
-**Lid H2** `sekcje[8].lid`
+**Lid H2** `sekcje[9].lid`
 
 Rozmowy z Arthurem są dla mamy, dlatego nie mogą odbywać się bez jej zgody. To ona powinna decydować, czy chce z nim rozmawiać, w jakie dni i o jakich godzinach oraz jak długo mają trwać połączenia.
 
-**Tekst akapitu** `sekcje[8].bloki[0]`
+**Tekst akapitu** `sekcje[9].bloki[0]`
 
 Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który kilka razy w tygodniu zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej bezpłatny miesiąc próbny. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
 
 Powiedz jej również, jakie informacje o rozmowach będziesz otrzymywać. Dostaniesz od nas raport, ale nie znajdziesz w nim tego, co mama dokładnie mówiła. Arthur może przekazać Ci ogólne informacje o rozmowach i zauważonych zmianach, ale nie będzie relacjonował ich przebiegu.
 
-**Link wewnętrzny** `sekcje[8].bloki[1]`
+**Link wewnętrzny** `sekcje[9].bloki[1]`
 
 Jak rozmawiać z mamą → /jak-rozmawiac-z-mama
 
-**Przycisk CTA** `sekcje[8].bloki[2]`
+**Przycisk CTA** `sekcje[9].bloki[2]`
 
 Umów mamie próbne arthurozmowy → zamówienie w panelu klienta

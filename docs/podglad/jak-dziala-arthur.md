@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Service, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy w dni i o godzinach, które mama sama ustala. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę. Jeśli mama zechce, Arthur spisze z nią historię jej życia.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy w dni i o godzinach, które mama sama ustala. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę.  `geo.streszczenie`
 
 ## Wejście
 
@@ -151,29 +151,13 @@ W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur n
 
 Czego nie obiecujemy → /czego-nie-obiecujemy
 
-## 5. Historia życia · #historia-zycia · ton t2
+## 5. (poza spisem treści) · #najczestsze-pytania · ton t1
 
 **Nagłówek H2** `sekcje[4].h2`
 
-Jeśli mama zechce, Arthur spisze z nią historię jej życia – dla niej samej i dla bliskich.
-
-**Lid H2** `sekcje[4].lid`
-
-Mama opowiada w niej o tym, co przeżyła: o domu, w którym dorastała, o swojej pracy, o ludziach i miejscach, które pamięta. Historia powstaje z jej opowieści i należy do niej.
-
-**Tekst akapitu** `sekcje[4].bloki[0]`
-
-Dla mamy to okazja, żeby opowiedzieć swoje życie po swojemu i zobaczyć je spisane w całości. To ona decyduje, czy historia zostanie tylko dla niej, czy pokaże ją rodzinie.
-
-Po kilku rozmowach Arthur zaproponuje mamie spisanie jej historii. Jeśli mama nie wyrazi zainteresowania, Arthur nie ponowi tej propozycji, chyba że mama sama wróci do tego tematu później. Historia spisywana jest tak, jak mama ją pamięta. Niczego do niej nie dopisujemy, a w finalnym tekście zostaje tylko to, co mama chce w nim zostawić. Wprowadzane są jedynie podstawowe poprawki redakcyjne, tak by nie ingerować w tok narracji mamy. Jeśli mama zechce, taki zapis może stać się cenną pamiątką rodzinną.
-
-## 6. (poza spisem treści) · #najczestsze-pytania · ton t1
-
-**Nagłówek H2** `sekcje[5].h2`
-
 Najczęstsze pytania
 
-**Najczęstsze pytania (akordeon)** `sekcje[5].bloki[0]`
+**Najczęstsze pytania (akordeon)** `sekcje[4].bloki[0]`
 
 - Czego mama potrzebuje, żeby rozmawiać z Arthurem?  `baza:czego-mama-potrzebuje`
 - Czy będziemy mogły najpierw wypróbować arthurozmowy?  `baza:miesiac-probny`
@@ -181,7 +165,7 @@ Najczęstsze pytania
 
 **Link wewnętrzny:** Wszystkie pytania → /pytania
 
-**Przycisk CTA** `sekcje[5].bloki[1]`
+**Przycisk CTA** `sekcje[4].bloki[1]`
 
 Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
 

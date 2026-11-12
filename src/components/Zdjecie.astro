@@ -24,6 +24,9 @@ const img = {
   decoding: odRazu ? ('sync' as const) : ('async' as const),
   fetchpriority: odRazu ? ('high' as const) : undefined,
 };
+// Oznaczenie w nawiasie kwadratowym w tekście alternatywnym (np. „[zdjęcie przykładowe]” na O nas) pokazujemy
+// także na zdjęciu, żeby było widoczne (decyzja z 12.11.2026). Strona z nawiasem nie wychodzi na arthurozmowy.pl.
+const oznaczenie = (zdjecie?.alt ?? '').match(/\[[^\]]+\]/)?.[0];
 ---
 {pokaz && rodzaj === 'hero' && (
   <figure class="hero1__foto">
@@ -37,6 +40,7 @@ const img = {
   <div class={`foto-ramka foto-ramka--${rodzaj}`}>
     <figure class={`foto foto--${rodzaj}`}>
       <img {...img} />
+      {oznaczenie && <figcaption class="foto__oznaczenie uzup" aria-hidden="true">{oznaczenie}</figcaption>}
     </figure>
   </div>
 )}

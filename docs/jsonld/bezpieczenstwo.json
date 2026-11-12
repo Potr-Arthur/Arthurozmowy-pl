@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://arthurozmowy.pl/bezpieczenstwo#strona",
+      "url": "https://arthurozmowy.pl/bezpieczenstwo",
+      "name": "Bezpieczeństwo rozmów z Arthurem – arthurozmowy",
+      "description": "Arthur nigdy nie prosi mamy o pieniądze ani o dane. Sprawdź, jak chronimy mamę przed oszustami i co dzieje się z tym, co mówi w rozmowach.",
+      "inLanguage": "pl-PL",
+      "isPartOf": {
+        "@id": "https://arthurozmowy.pl/#witryna"
+      },
+      "about": {
+        "@id": "https://arthurozmowy.pl/#usluga"
+      },
+      "dateModified": "2026-11-12",
+      "author": {
+        "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
+      },
+      "primaryImageOfPage": "https://arthurozmowy.pl/images/og/arthurozmowy-og-mama-portret-usmiech.jpg"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Jej sprawy",
+          "item": "https://arthurozmowy.pl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bezpieczeństwo",
+          "item": "https://arthurozmowy.pl/bezpieczenstwo"
+        }
+      ]
+    }
+  ]
+}
