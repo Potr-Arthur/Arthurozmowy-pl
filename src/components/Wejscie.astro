@@ -1,8 +1,11 @@
 ---
 // Wejście strony: Nazwa strony (wielkimi literami nad H1), Nagłówek H1, zdjęcie, Lid H1 i bloki.
 //   glowna    – HERO 21:9 od krawędzi do krawędzi (na telefonie kadr 4:3), pod nim tekst na tle wejścia
-//   podstrona – kwadrat 1:1 obok tekstu; zdjęcie zaczyna się na wysokości nazwy strony, na telefonie stoi pierwsze;
-//               Voice aside stoi pod zdjęciem i tekstem, w jednej kolumnie (decyzja z 12.11.2026)
+//   podstrona – kwadrat 1:1 obok tekstu; zdjęcie zaczyna się na wysokości nazwy strony, na telefonie stoi pierwsze.
+//               Voice aside wejścia (decyzje z 12.11.2026) stoi na całej szerokości pod zdjęciem i tekstem (O nas),
+//               a gdy pod zdjęciem jest pusto, bo tekst obok jest dłuższy, wchodzi pod zdjęcie i wypełnia tę pustkę
+//               (Jak działa Arthur). Wybiera skrypt pod sekcją: mierzy oba ułożenia i zostawia to, w którym kolumny
+//               kończą się równiej. Bez skryptu i na telefonie: na całej szerokości, pod tekstem.
 //   (na stronie głównej pod H1 dwie kolumny: lid i tekst po lewej, Voice aside po prawej – układa to witryna.css)
 //   blad      – bez zdjęcia, przycisk powrotu
 import Zdjecie from './Zdjecie.astro';
@@ -50,14 +53,43 @@ const blokiPod = bloki.filter((b: any) => b.typ === 'glos');
           {lid.map((p) => <p class="lid" set:html={p} />)}
           <Bloki bloki={blokiObok} k={k} />
         </div>
+        {blokiPod.length > 0 && (
+          <div class="tresc hero2__pod">
+            <Bloki bloki={blokiPod} k={k} />
+          </div>
+        )}
       </div>
-      {blokiPod.length > 0 && (
-        <div class="tresc hero2__pod">
-          <Bloki bloki={blokiPod} k={k} />
-        </div>
-      )}
     </div>
   </section>
+)}
+{szablon === 'podstrona' && zdjecie && blokiPod.length > 0 && (
+  <script is:inline>
+    (function () {
+      var sekcja = document.querySelector('.hero2');
+      if (!sekcja) return;
+      var siatka = sekcja.querySelector('.hero2__siatka');
+      var foto = sekcja.querySelector('.hero2__siatka > .foto-ramka');
+      var tresc = sekcja.querySelector('.hero2__tresc');
+      var pod = sekcja.querySelector('.hero2__pod');
+      if (!siatka || !foto || !tresc || !pod) return;
+      var K = 'hero2--glos-pod-zdjeciem';
+      function uloz() {
+        sekcja.classList.remove(K);
+        if (!window.matchMedia('(min-width: 760px)').matches) return;
+        // na całej szerokości: pustka obok to różnica wysokości tekstu i zdjęcia
+        var naCalej = Math.abs(tresc.offsetHeight - foto.offsetHeight);
+        // pod zdjęciem: różnica między tekstem a zdjęciem z Voice aside pod nim
+        sekcja.classList.add(K);
+        var odstep = parseFloat(getComputedStyle(siatka).rowGap) || 0;
+        var podZdjeciem = Math.abs(foto.offsetHeight + odstep + pod.offsetHeight - tresc.offsetHeight);
+        if (podZdjeciem >= naCalej) sekcja.classList.remove(K);
+      }
+      uloz();
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(uloz);
+      var t;
+      window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(uloz, 150); });
+    })();
+  </script>
 )}
 {szablon === 'blad' && (
   <section class="sekcja sekcja--pierwsza sekcja--blad ton-1" id={id}>

@@ -195,9 +195,20 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
   .hero2__siatka>.hero2__tresc{grid-column:7/13;padding-left:12px}
 }
 .hero2__siatka--bez-zdjecia{display:block;max-width:var(--kolumna);margin-inline:auto}
-/* Voice aside wejścia podstrony: pod zdjęciem i tekstem, w zwykłej kolumnie tekstu (12.11.2026) */
-.hero2__pod{max-width:var(--kolumna);margin-top:clamp(28px,4vw,48px)}
-@media (min-width:760px) and (max-width:999px){.hero2__pod{margin-inline:auto}}
+/* Voice aside wejścia podstrony (12.11.2026): na całej szerokości pod zdjęciem i tekstem, a gdy pod zdjęciem jest
+   pusto – w kolumnie zdjęcia, pod nim (klasa hero2--glos-pod-zdjeciem, ustawia ją skrypt w Wejscie.astro) */
+@media (min-width:760px){
+  .hero2__siatka:not(.hero2__siatka--bez-zdjecia){grid-template-rows:auto 1fr}
+  .hero2__siatka>.foto-ramka{grid-row:1}
+  .hero2__siatka>.hero2__tresc{grid-row:1}
+  .hero2__siatka>.hero2__pod{grid-column:1/-1;grid-row:2}
+  .hero2--glos-pod-zdjeciem .hero2__siatka>.hero2__tresc{grid-row:1/3}
+  .hero2--glos-pod-zdjeciem .hero2__siatka>.hero2__pod{grid-column:1/2}
+}
+@media (min-width:1000px){
+  .hero2--glos-pod-zdjeciem .hero2__siatka>.hero2__pod{grid-column:1/7}
+}
+.hero2__siatka--bez-zdjecia>.hero2__pod{margin-top:clamp(28px,4vw,48px)}
 
 /* ===== rozdział: układ redakcyjny ===== */
 .red{display:grid;gap:1.25rem}
