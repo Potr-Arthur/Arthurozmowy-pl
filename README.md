@@ -9,7 +9,7 @@
 - **Redakcja `/admin`** (Sveltia CMS): logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium, uprawnienie Contents: read and write).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
-Treści w tym repozytorium są w stanie z 11.11.2026 (makieta V2). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
+Treści w tym repozytorium są w stanie z 16.11.2026 (makieta V2, stały termin rozmów i pakiety liczone tygodniami). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
 
 ## Co jest w repozytorium (część treści)
 
@@ -18,7 +18,7 @@ src/content/
   strony/                 10 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
     strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
-  pytania/baza.yml        21 pytań i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
+  pytania/baza.yml        23 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
   ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka
 src/content.config.ts     schemat kolekcji Astro 5
 public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
@@ -124,7 +124,7 @@ python3 narzedzia/buduj_pochodne.py
 
 `generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
 
-Stan na 12.11.2026: zero błędów, 8 zaślepek, 7 uwag (ukryta karta z przykładem raportu, dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
+Stan na 16.11.2026: zero błędów, 8 zaślepek, 7 uwag (ukryta karta z przykładem raportu, dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 

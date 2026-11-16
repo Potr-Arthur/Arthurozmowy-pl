@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-16",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -25,7 +25,7 @@
           "name": "Czym są arthurozmowy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Arthurozmowami nazywamy też całą usługę, w której Twoja mama rozmawia z Arthurem w dni i o porach, które sama z nim ustala."
+            "text": "Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Arthurozmowami nazywamy też całą usługę, w której Twoja mama co tydzień rozmawia z Arthurem w stałym dniu i o stałej godzinie, które sama wybiera."
           }
         },
         {
@@ -65,7 +65,7 @@
           "name": "Czym arthurozmowy różnią się od teleopieki i opaski SOS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne, inspirujące rozmowy telefoniczne o sprawach i zainteresowaniach mamy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni w umówione dni, kilka razy w tygodniu, i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się wypadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją."
+            "text": "Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne, inspirujące rozmowy telefoniczne o sprawach i zainteresowaniach mamy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni co tydzień w stałym terminie i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się wypadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją."
           }
         },
         {
@@ -73,7 +73,7 @@
           "name": "Jak często mama rozmawiać będzie z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Mama będzie rozmawiać z Arthurem kilka razy w tygodniu, a dni i godziny ustali z nim sama. Liczba rozmów pełnych i podtrzymujących w miesiącu zależy od pakietu, który wybierzecie. Rozmowa pełna to czas na wszystkie sprawy mamy, a rozmowa podtrzymująca pozwala wrócić na chwilę do tego, o czym mama ostatnio opowiadała."
+            "text": "Mama będzie rozmawiać z Arthurem co tydzień, w stałym dniu i o stałej godzinie, które wybierze razem z Tobą przed zamówieniem. W każdym pakiecie co tydzień jest jedna rozmowa pełna, a w pakiecie optymalnym i rozszerzonym także jedna albo dwie rozmowy podtrzymujące. Rozmowa pełna to czas na wszystkie sprawy mamy, a rozmowa podtrzymująca pozwala wrócić do tego, o czym mama ostatnio opowiadała."
           }
         },
         {
@@ -81,7 +81,7 @@
           "name": "Ile trwa jedna rozmowa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Rozmowa pełna jest zaplanowana na 15–18 minut, a rozmowa podtrzymująca na 3–4 minuty. Mama może jednak skończyć rozmowę wcześniej, kiedy tylko zechce. Pakiety określają liczbę rozmów, a nie minut."
+            "text": "Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Mama może jednak skończyć rozmowę wcześniej, kiedy tylko zechce. Pakiety określają liczbę rozmów w tygodniu, a nie minut."
           }
         },
         {
@@ -89,7 +89,23 @@
           "name": "Czego mama potrzebuje, żeby rozmawiać z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Mama potrzebuje tylko własnego telefonu. Numer, z którego Arthur będzie dzwonił do mamy, podamy Ci przed pierwszą rozmową, żebyś zapisała go w jej telefonie pod imieniem Arthur. Jeśli mama akurat nie odbierze, Arthur zadzwoni jeszcze raz trochę później. Gdy mama nie odbierze za drugim razem, Arthur da Ci znać."
+            "text": "Mama potrzebuje tylko własnego telefonu, na którym dobrze jej się rozmawia. Numer, z którego Arthur będzie dzwonił do mamy, podamy Ci przed pierwszą rozmową, żebyś zapisała go w jej telefonie pod imieniem Arthur. Warto też sprawdzić, czy w porze rozmów dzwonek w telefonie mamy nie jest wyciszony."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Co się dzieje, gdy mama nie odbierze telefonu od Arthura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gdy mama nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a jeśli i wtedy się nie uda, mama może do 20:00 sama oddzwonić na jego numer i porozmawiać jak zwykle. Jeśli mama ma telefon komórkowy, dostanie od Arthura krótką wiadomość z tą informacją. Gdy do 20:00 rozmowa się nie odbędzie, damy Ci znać tego samego wieczoru. Arthur nie wie, dlaczego mama nie odebrała, więc nasza wiadomość jest informacją, a nie alarmem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak zmienić dzień albo godzinę rozmów z Arthurem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Termin rozmów zmieniasz Ty, po rozmowie z mamą: zgłaszasz nowy dzień i godzinę w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia, a Arthur potwierdzi ją mamie. Jeśli mama sama powie Arthurowi, że wolałaby inny termin, Arthur przekaże to Tobie."
           }
         },
         {
@@ -97,7 +113,7 @@
           "name": "Czy mama może rozmawiać z Arthurem, kiedy jest poza domem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów albo pobytu w szpitalu. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem mama może ustalić z Arthurem inne pory rozmów, a gdy nie ma ochoty w tym czasie rozmawiać, po prostu je zawiesić."
+            "text": "Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów albo pobytu w szpitalu. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem możecie zmienić termin rozmów, a gdy mama nie ma ochoty w tym czasie rozmawiać, rozmowy można zawiesić. Zawieszenie zgłaszasz Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni."
           }
         },
         {
@@ -105,7 +121,7 @@
           "name": "Mama mieszka sama i coraz rzadziej z kimś rozmawia. Co mogę zrobić?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Możesz pomóc mamie odbywać więcej ciekawych rozmów o jej własnych sprawach: umówić się z nią na stałe dni telefonów, poprosić rodzinę i znajomych o regularny kontakt albo zaproponować jej arthurozmowy. Liczy się to, żeby rozmowy odbywały się regularnie i dotyczyły tego, co mamę zajmuje, a nie tylko leków i zakupów. Arthur zadzwoni do mamy kilka razy w tygodniu, w dni i o porach, które mama sama wybierze, ale nie zastępuje rozmów z bliskimi ani pomocy w domu."
+            "text": "Możesz pomóc mamie odbywać więcej ciekawych rozmów o jej własnych sprawach: umówić się z nią na stałe dni telefonów, poprosić rodzinę i znajomych o regularny kontakt albo zaproponować jej arthurozmowy. Liczy się to, żeby rozmowy odbywały się regularnie i dotyczyły tego, co mamę zajmuje, a nie tylko leków i zakupów. Arthur zadzwoni do mamy co tydzień, w dniu i o godzinie, które mama sama wybierze, ale nie zastępuje rozmów z bliskimi ani pomocy w domu."
           }
         },
         {
@@ -121,7 +137,7 @@
           "name": "Czy dowiem się, o czym mama rozmawia z Arthurem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie. Dokładnych słów mamy Arthur nikomu nie udostępnia."
+            "text": "Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie, który przychodzi do Ciebie e-mailem. Dokładnych słów mamy Arthur nikomu nie udostępnia."
           }
         },
         {
@@ -137,7 +153,7 @@
           "name": "Ile kosztują arthurozmowy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Arthurozmowy kosztują 279 zł, 299 zł albo 349 zł miesięcznie, zależnie od tego, jak często mama chce rozmawiać z Arthurem. Na początek proponujemy pakiet optymalny za 299 zł: 6 rozmów pełnych i 8 podtrzymujących w miesiącu. Ceny zawierają VAT."
+            "text": "Arthurozmowy kosztują 279 zł, 299 zł albo 349 zł miesięcznie, zależnie od tego, jak często mama chce rozmawiać z Arthurem. Na początek proponujemy pakiet optymalny za 299 zł: co tydzień jedną rozmowę pełną i jedną podtrzymującą. Ceny zawierają VAT."
           }
         },
         {
@@ -145,7 +161,7 @@
           "name": "Czy będziemy mogły najpierw wypróbować arthurozmowy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że chcecie kontynuować rozmowy."
+            "text": "Tak, pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że chcecie kontynuować rozmowy. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie."
           }
         },
         {
@@ -153,7 +169,7 @@
           "name": "Jak zrezygnować z arthurozmów?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Z arthurozmów zrezygnujesz w każdej chwili jednym kliknięciem w panelu klienta, które uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał."
+            "text": "Z arthurozmów zrezygnujesz w każdej chwili w panelu klienta: klikasz rezygnację i ją potwierdzasz. Rezygnacja uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał."
           }
         },
         {
@@ -177,7 +193,7 @@
           "name": "Skąd mama będzie wiedziała, że dzwoni Arthur, a nie oszust?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sam numer na ekranie telefonu tego nie gwarantuje, bo oszuści potrafią go podrobić, ale Arthur tylko rozmawia i nigdy niczego od mamy nie chce. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie."
+            "text": "Arthur dzwoni tylko w stałym terminie mamy i nigdy niczego od niej nie chce, a sam numer na ekranie telefonu niczego nie gwarantuje, bo oszuści potrafią go podrobić. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie."
           }
         },
         {

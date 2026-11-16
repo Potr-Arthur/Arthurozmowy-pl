@@ -7804,24 +7804,24 @@ collections:
           widget: number
           value_type: int
           required: true
-        - label: Rozmowy pełne
+        - label: Rozmowy pełne w tygodniu
           name: rozmowy_pelne
           widget: number
           value_type: int
-        - label: Rozmowy podtrzymujące
+        - label: Rozmowy podtrzymujące w tygodniu
           name: rozmowy_podtrzymujace
           widget: number
           value_type: int
-        - label: Opis na karcie ceny
+        - label: Liczby w miesiącu na karcie ceny
           name: opis
           widget: string
           required: false
-          hint: Z odmianą, np. „6 rozmów pełnych i 8 rozmów podtrzymujących”.
-        - label: Rytm tygodnia na karcie ceny
+          hint: Z odmianą, np. „4–5 rozmów pełnych i 4–5 rozmów podtrzymujących w miesiącu”.
+        - label: Rytm tygodnia na karcie ceny (najważniejszy po cenie)
           name: rytm
           widget: string
           required: false
-          hint: Np. „co tydzień 1–2 rozmowy pełne i 2 podtrzymujące”.
+          hint: Np. „co tydzień 1 rozmowa pełna i 1 podtrzymująca”. Liczby muszą się zgadzać z polami wyżej.
         - label: Nazwa pakietu
           name: nazwa
           widget: string

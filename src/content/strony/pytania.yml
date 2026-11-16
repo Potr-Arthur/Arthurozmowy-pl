@@ -19,7 +19,7 @@ seo:
   schemat: [FAQPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-11
+  zaktualizowano: 2026-11-16
 
 geo:
   streszczenie: |-
@@ -61,6 +61,8 @@ sekcje:
           - jak-czesto-rozmowy
           - ile-trwa-rozmowa
           - czego-mama-potrzebuje
+          - co-jesli-mama-nie-odbierze
+          - jak-zmienic-termin
           - rozmowy-poza-domem
 
   - kotwica: mama-i-ty

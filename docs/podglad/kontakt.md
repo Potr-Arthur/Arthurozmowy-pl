@@ -1,6 +1,6 @@
 # Kontakt · /kontakt
 
-*Plik: `src/content/strony/kontakt.yml` · szablon: podstrona · aktualizacja: 2026-11-11 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/kontakt.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -37,7 +37,7 @@ Napisz do nas → okienko „Napisz do nas”
 
 **Tekst akapitu** `wejscie.bloki[2]`
 
-Sprawy abonamentu i płatności załatwisz w panelu klienta. Zobaczysz w nim też raporty i faktury do zapłaty, zmienisz dane i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Jeśli coś nie działa albo masz szczególne pytanie o płatność, napisz do nas.
+Sprawy abonamentu i płatności załatwisz w panelu klienta. Zobaczysz w nim faktury, zmienisz kartę i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Raporty z rozmów przychodzą e-mailem. Termin rozmów i numer telefonu mamy zmienisz albo rozmowy zawiesisz przez Biuro Obsługi. Jeśli coś nie działa albo masz szczególne pytanie o płatność, napisz do nas.
 
 **Przycisk CTA** `wejscie.bloki[3]`
 

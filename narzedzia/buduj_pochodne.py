@@ -215,7 +215,7 @@ org = {"@type": "Organization", "@id": ORG_ID, "name": F["nazwa"], "url": DOM + 
        "founder": {"@id": OS_ID}}
 witryna = {"@type": "WebSite", "@id": WEB_ID, "url": DOM + "/", "name": ust["marka"]["nazwa"],
            "inLanguage": ust["marka"]["jezyk"], "publisher": {"@id": ORG_ID}}
-oferty = [{"@type": "Offer", "name": f"{wielka(p['nazwa'])}: {p['cena']} zł miesięcznie, {p['opis']}",
+oferty = [{"@type": "Offer", "name": f"{wielka(p['nazwa'])}: {p['cena']} zł miesięcznie, {p['rytm']} ({p['opis']})",
            "price": str(p["cena"]), "priceCurrency": ust["pakiety"]["waluta"],
            "priceSpecification": {"@type": "UnitPriceSpecification", "price": p["cena"],
                                   "priceCurrency": ust["pakiety"]["waluta"], "unitCode": "MON",
@@ -288,7 +288,8 @@ l = [f"# {ust['marka']['nazwa']}", "", f"> {ust['marka']['definicja']}", "",
      f"- Usługę świadczy firma {FIRMA}.",
      "- Usługę zamawia i opłaca dorosłe dziecko, a z Arthurem rozmawia jego mama, tylko za swoją zgodą.",
      "- Arthur jest programem opartym na sztucznej inteligencji i nigdy nie udaje człowieka; „h” w imieniu to „h” jak humanoid.",
-     "- Pakiety: " + "; ".join(f"{p['nazwa']} {p['cena']} zł miesięcznie z VAT: {p['opis']}" for p in ust["pakiety"]["lista"]) + ".",
+     "- Pakiety: " + "; ".join(f"{p['nazwa']} {p['cena']} zł miesięcznie z VAT: {p['rytm']}, czyli {p['opis']}" for p in ust["pakiety"]["lista"]) + ".",
+     "- Arthur dzwoni w stałym dniu i o stałej godzinie, które wybiera mama. " + ust["pakiety"]["dlugosc"],
      "- Pierwszy, próbny miesiąc jest bezpłatny. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie”.",
      "- Granice: Arthur nie zastępuje pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, "
      "nie diagnozuje i nie obiecuje ochrony przed demencją.", "",

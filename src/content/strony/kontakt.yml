@@ -18,7 +18,7 @@ seo:
   schemat: [ContactPage, Organization, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-11
+  zaktualizowano: 2026-11-16
 
 geo:
   streszczenie: |-
@@ -45,7 +45,7 @@ wejscie:
       objasnienie: false
     - typ: tekst
       tekst: |-
-        Sprawy abonamentu i płatności załatwisz w panelu klienta. Zobaczysz w nim też raporty i faktury do zapłaty, zmienisz dane i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Jeśli coś nie działa albo masz szczególne pytanie o płatność, napisz do nas.
+        Sprawy abonamentu i płatności załatwisz w panelu klienta. Zobaczysz w nim faktury, zmienisz kartę i pakiet na kolejny miesiąc, a także zrezygnujesz jednym kliknięciem, które uruchamia opcję „Pożegnanie”. Raporty z rozmów przychodzą e-mailem. Termin rozmów i numer telefonu mamy zmienisz albo rozmowy zawiesisz przez Biuro Obsługi. Jeśli coś nie działa albo masz szczególne pytanie o płatność, napisz do nas.
     - typ: wezwanie
       rodzaj: zakupowe
       objasnienie: false

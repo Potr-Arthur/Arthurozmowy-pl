@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-16",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -51,21 +51,21 @@
           "@type": "HowToStep",
           "position": 4,
           "name": "Bez tajemnic: powiedz mamie, co będzie w raporcie.",
-          "text": "Od nas dostaniesz raport, z którego dowiesz się, kiedy mama rozmawiała z Arthurem, o czym była mowa w ogólnym zarysie i do których tematów wraca. W raporcie nie znajdziesz tego, co mama konkretnie mówiła. Jej słów Arthur nikomu nie udostępnia. Powiedz jej też, że jeśli bieg rozmów zmieni się w sposób, który zaniepokoi Arthura, da Ci znać. Arthur także uprzedzi mamę o obu tych zasadach w trakcie pierwszej rozmowy.",
+          "text": "Od nas dostaniesz raport, z którego dowiesz się, kiedy mama rozmawiała z Arthurem, o czym była mowa w ogólnym zarysie i do których tematów wraca. W raporcie nie znajdziesz tego, co mama konkretnie mówiła. Jej słów Arthur nikomu nie udostępnia. Powiedz jej też, że jeśli bieg rozmów zmieni się w sposób, który zaniepokoi Arthura, da Ci znać. Arthur także uprzedzi mamę o obu tych zasadach w trakcie pierwszej rozmowy, a potem zawsze powie jej, co trafiło do raportu.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#powiedz-o-raporcie"
         },
         {
           "@type": "HowToStep",
           "position": 5,
           "name": "Powiedz mamie, że to ona decyduje, kiedy, jak długo i o czym rozmawia z Arthurem.",
-          "text": "Dni i godziny rozmów mama ustala z Arthurem sama, a tematy zawsze wybiera ona. W każdej chwili może powiedzieć „nie, dziś dziękuję za rozmowę” albo zakończyć rozmowę. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.",
+          "text": "Dzień i godzinę rozmów mama wybiera sama, razem z Tobą, zanim zamówisz arthurozmowy, a tematy zawsze wybiera ona. W każdej chwili może powiedzieć „nie, dziś dziękuję za rozmowę” albo zakończyć rozmowę. Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#zostaw-decyzje-mamie"
         },
         {
           "@type": "HowToStep",
           "position": 6,
           "name": "Arthur nigdy nie poprosi o pieniądze ani o dane. Kto prosi, nie jest Arthurem.",
-          "text": "Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy pod jego imieniem. Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.",
+          "text": "Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefonie mamy pod jego imieniem. Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Powiedz jej też, że Arthur dzwoni tylko w jej stałym terminie, a gdy nie odbierze, jeszcze raz po 30 minutach. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.",
           "url": "https://arthurozmowy.pl/jak-rozmawiac-z-mama#uprzedz-o-oszustach"
         },
         {

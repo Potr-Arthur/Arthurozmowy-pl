@@ -6,7 +6,7 @@
       "@id": "https://arthurozmowy.pl/#strona",
       "url": "https://arthurozmowy.pl/",
       "name": "Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach",
-      "description": "Arthur dzwoni do Twojej mamy kilka razy w tygodniu i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest próbny i bezpłatny.",
+      "description": "Arthur dzwoni do Twojej mamy co tydzień, w stałym terminie, i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest bezpłatny.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-16",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },
@@ -71,7 +71,7 @@
       "offers": [
         {
           "@type": "Offer",
-          "name": "Pakiet ekonomiczny: 279 zł miesięcznie, 4 rozmowy pełne i 8 rozmów podtrzymujących",
+          "name": "Pakiet ekonomiczny: 279 zł miesięcznie, co tydzień 1 rozmowa pełna (4–5 rozmów pełnych w miesiącu)",
           "price": "279",
           "priceCurrency": "PLN",
           "priceSpecification": {
@@ -88,7 +88,7 @@
         },
         {
           "@type": "Offer",
-          "name": "Pakiet optymalny: 299 zł miesięcznie, 6 rozmów pełnych i 8 rozmów podtrzymujących",
+          "name": "Pakiet optymalny: 299 zł miesięcznie, co tydzień 1 rozmowa pełna i 1 podtrzymująca (4–5 rozmów pełnych i 4–5 rozmów podtrzymujących w miesiącu)",
           "price": "299",
           "priceCurrency": "PLN",
           "priceSpecification": {
@@ -105,7 +105,7 @@
         },
         {
           "@type": "Offer",
-          "name": "Pakiet rozszerzony: 349 zł miesięcznie, 8 rozmów pełnych i 12 rozmów podtrzymujących",
+          "name": "Pakiet rozszerzony: 349 zł miesięcznie, co tydzień 1 rozmowa pełna i 2 podtrzymujące (4–5 rozmów pełnych i 8–10 rozmów podtrzymujących w miesiącu)",
           "price": "349",
           "priceCurrency": "PLN",
           "priceSpecification": {

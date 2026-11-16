@@ -1,14 +1,13 @@
 ---
 // Moduł „Karty ceny”: trzy pakiety z Ustawień (jedno źródło cen), pakiet polecany wyróżniony.
-// Na karcie od góry: nazwa, cena (z okresem), rytm tygodnia (największy po cenie), opis (liczby w miesiącu)
-// i wspólne zdanie pakiety.dlugosc (długość jednej rozmowy, nigdy suma minut).
+// Na karcie od góry: nazwa, cena (z okresem), rytm tygodnia (główna informacja, największy po cenie),
+// opis jedną linią (liczby rozmów w miesiącu) i wspólne zdanie pakiety.dlugosc (długość jednej rozmowy, nigdy suma minut).
+// Od 16.11.2026 jednostką jest tydzień: rozmowy_pelne i rozmowy_podtrzymujace to liczby rozmów w tygodniu.
 import type { Kontekst } from '../../lib/kontekst';
 import { inline } from '../../lib/tekst';
 interface Props { b: { typ: 'cennik' }; k: Kontekst }
 const { k } = Astro.props;
 const pakiety = k.ust.pakiety;
-// opis pakietu „4 rozmowy pełne i 8 rozmów podtrzymujących” → dwie pozycje karty
-const pozycje = (opis: string) => opis.split(/ i (?=\d)/);
 ---
 <div class="pakiety">
   {pakiety.lista.map((p: any) => (
@@ -17,7 +16,7 @@ const pozycje = (opis: string) => opis.split(/ i (?=\d)/);
       <p class="pakiet__cena">{p.cena} zł</p>
       <p class="pakiet__okres">{pakiety.okres}</p>
       {p.rytm && <p class="pakiet__rytm" set:html={inline(p.rytm)} />}
-      <ul class="pakiet__opis">{pozycje(p.opis).map((x: string) => <li>{x}</li>)}</ul>
+      <p class="pakiet__opis" set:html={inline(p.opis)} />
       {pakiety.dlugosc && <p class="pakiet__dlugosc" set:html={inline(pakiety.dlugosc)} />}
     </div>
   ))}

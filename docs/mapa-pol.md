@@ -32,7 +32,7 @@
 | Nr | Rozdział (spis treści) | Kotwica | Zdjęcie | Lid | Bloki w kolejności |
 |---|---|---|---|---|---|
 | 0 | Wejście | — | tak | tak | Tekst akapitu, Voice aside, Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
-| 1 | Miesiąc rozmów | #miesiac-rozmow | — | tak | Tekst akapitu, Voice aside |
+| 1 | Stały termin | #staly-termin | — | tak | Tekst akapitu, Voice aside |
 | 2 | Zasady rozmowy | #zasady-rozmowy | — | — | Zasady (H3) |
 | 3 | Ciągłość rozmów | #ciaglosc-rozmow | tak | tak | Tekst akapitu, Karta cytatu |
 | 4 | Raport dla Ciebie | #raport-dla-ciebie | — | tak | Tekst akapitu, Karta cytatu, Link wewnętrzny |
@@ -44,7 +44,7 @@
 |---|---|---|---|---|---|
 | 0 | Wejście | — | tak | tak | — |
 | 1 | Abonament | #abonament | — | tak | Tekst akapitu, Link wewnętrzny |
-| 2 | Cena | #cena | — | tak | Tekst akapitu, Karty ceny, Voice aside |
+| 2 | Cena | #cena | — | tak | Tekst akapitu, Karty ceny, Tekst akapitu, Voice aside |
 | 3 | Rezygnacja | #rezygnacja | tak | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 4 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon) |
 
@@ -134,7 +134,9 @@
 | `arthurozmowy-a-teleopieka` | Czym arthurozmowy różnią się od teleopieki i opaski SOS? | Arthurozmowy | — |
 | `jak-czesto-rozmowy` | Jak często mama rozmawiać będzie z Arthurem? | Rozmowy z Arthurem | — |
 | `ile-trwa-rozmowa` | Ile trwa jedna rozmowa? | Rozmowy z Arthurem | Jak rozmawiać z mamą |
-| `czego-mama-potrzebuje` | Czego mama potrzebuje, żeby rozmawiać z Arthurem? | Rozmowy z Arthurem | Jak działa Arthur, Jak korzystać |
+| `czego-mama-potrzebuje` | Czego mama potrzebuje, żeby rozmawiać z Arthurem? | Rozmowy z Arthurem | Jak działa Arthur |
+| `co-jesli-mama-nie-odbierze` | Co się dzieje, gdy mama nie odbierze telefonu od Arthura? | Rozmowy z Arthurem | — |
+| `jak-zmienic-termin` | Jak zmienić dzień albo godzinę rozmów z Arthurem? | Rozmowy z Arthurem | Jak korzystać |
 | `rozmowy-poza-domem` | Czy mama może rozmawiać z Arthurem, kiedy jest poza domem? | Rozmowy z Arthurem | — |
 | `mama-mieszka-sama` | Mama mieszka sama i coraz rzadziej z kimś rozmawia. Co mogę zrobić? | Mama i Ty | — |
 | `zgoda-mamy` | Czy mama musi się zgodzić na rozmowy z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
