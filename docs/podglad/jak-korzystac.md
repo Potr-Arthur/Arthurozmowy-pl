@@ -1,6 +1,6 @@
 # Jak korzystać · /jak-korzystac
 
-*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-11 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Offer, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.  `geo.streszczenie`
+- **Streszczenie dla AI:** Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Przy zamówieniu dziecko podaje stały dzień i godzinę rozmów wybrane przez mamę, a termin można bezpłatnie zmienić od następnego tygodnia. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.  `geo.streszczenie`
 
 ## Wejście
 
@@ -35,15 +35,17 @@ Umowę abonamentową zawierasz z nami online, a rezygnujesz, kiedy chcesz.
 
 **Lid H2** `sekcje[0].lid`
 
-Zamówienie składasz dopiero wtedy, gdy mama zgodzi się na rozmowy z Arthurem, bo bez jej zgody nie będą możliwe. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin.
+Zamówienie składasz dopiero wtedy, gdy mama zgodzi się na rozmowy z Arthurem, bo bez jej zgody nie będą możliwe. Wybierasz pakiet, podajesz numer telefonu mamy oraz dzień i godzinę rozmów, które wybrała, potwierdzasz jej zgodę i akceptujesz regulamin. Danych karty przy zamówieniu nie podajesz.
 
 **Tekst akapitu** `sekcje[0].bloki[0]`
 
-Umowa nie wiąże Cię na żaden określony czas, więc z usługi łatwo możesz zrezygnować.
+Umowa nie wiąże Cię na żaden określony czas, więc z usługi łatwo możesz zrezygnować. Pierwsza rozmowa odbędzie się w ciągu kilku dni od zamówienia, w terminie wybranym przez mamę.
 
 Pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że kontynuujecie rozmowy. Od tej pory opłata będzie się odnawiać automatycznie co miesiąc, chyba że zdecydujesz inaczej i zrezygnujesz z abonamentu.
 
-W panelu klienta zobaczysz raporty i płatności, zmienisz dane czy rodzaj pakietu, a także zrezygnujesz jednym kliknięciem. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
+Raporty z rozmów przychodzą do Ciebie e-mailem. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz jednym kliknięciem. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
+
+Gdy termin rozmów przestanie mamie pasować, zgłoś nowy w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia. Jeśli mama wyjeżdża albo jest w szpitalu i nie chce w tym czasie rozmawiać, rozmowy można zawiesić. Zgłaszasz to Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
 
 **Link wewnętrzny** `sekcje[0].bloki[1]`
 
@@ -53,7 +55,7 @@ Jak rozmawiać z mamą → /jak-rozmawiac-z-mama
 
 **Nagłówek H2** `sekcje[1].h2`
 
-Pakiety nie różnią się jakością, a wyłącznie liczbą rozmów w miesiącu.
+Pakiety nie różnią się jakością, a wyłącznie liczbą rozmów w tygodniu.
 
 **Lid H2** `sekcje[1].lid`
 
@@ -61,19 +63,23 @@ W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody,
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-Na cenę składają się trzy rzeczy: liczba rozmów w miesiącu, ich rytm w tygodniu i długość jednej rozmowy. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty, tak samo w każdym pakiecie. Pakiety różnią się liczbą rozmów pełnych i podtrzymujących, które mama ma do dyspozycji w miesiącu:
+Na cenę składają się dwie rzeczy: liczba rozmów w tygodniu i długość jednej rozmowy. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut, tak samo w każdym pakiecie. W każdym pakiecie mama ma co tydzień rozmowę pełną w stałym terminie, a pakiety różnią się liczbą rozmów podtrzymujących:
 
 **Karty ceny** `sekcje[1].bloki[1]`
 
-- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4 rozmowy pełne i 8 rozmów podtrzymujących (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
-- Pakiet optymalny – 299 zł miesięcznie, z VAT: 6 rozmów pełnych i 8 rozmów podtrzymujących (co tydzień 1–2 rozmowy pełne i 2 podtrzymujące)
-- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 8 rozmów pełnych i 12 rozmów podtrzymujących (co tydzień 2 rozmowy pełne i 3 podtrzymujące)
+- Pakiet ekonomiczny – 279 zł miesięcznie, z VAT: 4–5 rozmów pełnych w miesiącu (co tydzień 1 rozmowa pełna)
+- Pakiet optymalny – 299 zł miesięcznie, z VAT: 4–5 rozmów pełnych i 4–5 rozmów podtrzymujących w miesiącu (co tydzień 1 rozmowa pełna i 1 podtrzymująca)
+- Pakiet rozszerzony – 349 zł miesięcznie, z VAT: 4–5 rozmów pełnych i 8–10 rozmów podtrzymujących w miesiącu (co tydzień 1 rozmowa pełna i 2 podtrzymujące)
 
-Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty.
+Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut.
 
 *Pakiety z Ustawień → Pakiety i ceny*
 
-**Voice aside** `sekcje[1].bloki[2]`
+**Tekst akapitu** `sekcje[1].bloki[2]`
+
+Liczymy tygodnie, a nie miesiące: w miesiącu, w którym jest pięć tygodni, mama ma pięć terminów rozmów, a opłata się nie zmienia.
+
+**Voice aside** `sekcje[1].bloki[3]`
 
 Na początek proponujemy pakiet optymalny za 299 zł. Ceny zawierają VAT. Pakiet zmienisz na wyższy albo niższy od kolejnego miesiąca – nigdy nie będzie to problemem.
 
@@ -89,7 +95,7 @@ Zrezygnujesz jednym kliknięciem, a Arthur pożegna się z mamą w ciągu 15 dni
 
 **Lid H2** `sekcje[2].lid`
 
-Rezygnacja w panelu klienta uruchamia opcję „Pożegnanie”. Arthur nie przerwie rozmów z dnia na dzień, bo mama ma prawo przygotować się do zakończenia rozmów, szczególnie jeśli je polubiła.
+Rezygnację klikasz w panelu klienta i potwierdzasz, bez dzwonienia i pisania do nas. Uruchamia ona opcję „Pożegnanie”. Arthur nie przerwie rozmów z dnia na dzień, bo mama ma prawo przygotować się do zakończenia rozmów, szczególnie jeśli je polubiła.
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
 
@@ -112,7 +118,7 @@ Najczęstsze pytania
 **Najczęstsze pytania (akordeon)** `sekcje[3].bloki[0]`
 
 - Czy mama musi się zgodzić na rozmowy z Arthurem?  `baza:zgoda-mamy`
-- Czego mama potrzebuje, żeby rozmawiać z Arthurem?  `baza:czego-mama-potrzebuje`
+- Jak zmienić dzień albo godzinę rozmów z Arthurem?  `baza:jak-zmienic-termin`
 - Czy dowiem się, o czym mama rozmawia z Arthurem?  `baza:czy-dowiem-sie-o-czym-rozmawiaja`
 
 **Link wewnętrzny:** Wszystkie pytania → /pytania

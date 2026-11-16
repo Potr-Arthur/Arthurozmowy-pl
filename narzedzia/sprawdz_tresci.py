@@ -319,9 +319,11 @@ definicja = ust["marka"]["definicja"].strip()
 odp = next(q for q in baza if q["id"] == "czym-sa-arthurozmowy")["odpowiedz"]
 if not odp.startswith(definicja):
     blad("Definicja w Ustawieniach różni się od odpowiedzi „Czym są arthurozmowy?”")
+# Jednostką jest tydzień (16.11.2026): liczby rozmów w tygodniu muszą stać w polu „rytm” (zero się pomija).
 for p in ust["pakiety"]["lista"]:
-    if str(p["rozmowy_pelne"]) not in p["opis"] or str(p["rozmowy_podtrzymujace"]) not in p["opis"]:
-        blad(f"Pakiet {p['cena']} zł: liczby w opisie nie zgadzają się z polami")
+    for pole in ("rozmowy_pelne", "rozmowy_podtrzymujace"):
+        if p[pole] and str(p[pole]) not in p["rytm"]:
+            blad(f"Pakiet {p['cena']} zł: liczba w polu {pole} ({p[pole]}) nie zgadza się z rytmem „{p['rytm']}”")
 
 # ------------------------------------------------ 7. jeden temat, jedna nazwa
 

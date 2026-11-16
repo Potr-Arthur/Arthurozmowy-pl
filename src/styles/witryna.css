@@ -133,7 +133,7 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
 .pakiet__cena{font:700 clamp(2.25rem,5vw,2.75rem)/1 var(--font-naglowek);color:var(--mech)}
 .pakiet__okres{color:var(--mech);font-size:.95rem}
 .pakiet__rytm{font:600 clamp(1.15rem,1.6vw,1.3rem)/1.35 var(--font-tekst);color:var(--onyks);margin-top:6px}
-.pakiet__opis{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:4px;font-size:1rem}
+.pakiet__opis{font-size:1rem;line-height:1.5}
 .pakiet__dlugosc{font-size:.95rem;line-height:1.5;color:var(--mech);margin-top:6px}
 
 /* ===== moduł: Karta pytania (akordeon; pytanie na sky, odpowiedź na piasku; Plex Sans Italic onyks;

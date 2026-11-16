@@ -1,15 +1,15 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-11 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
 - **Tytuł strony (55 zn.):** Jak działa Arthur – metoda rozmów telefonicznych z mamą  `seo.tytul`
-- **Opis w wynikach (146 zn.):** Arthur dzwoni do mamy w dni i o godzinach, które sama ustala. Rozmawia według pięciu zasad eksperckiej metody: nie poprawia, nie testuje, szanuje.  `seo.opis`
+- **Opis w wynikach (142 zn.):** Arthur dzwoni do mamy co tydzień, w dniu i o godzinie, które sama wybrała, i rozmawia według pięciu zasad: nie poprawia, nie testuje, szanuje.  `seo.opis`
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Service, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy w dni i o godzinach, które mama sama ustala. Rozmowa pełna trwa 15–18 minut, a rozmowa podtrzymująca 3–4 minuty. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy co tydzień, w stałym dniu i o stałej godzinie, które mama wybiera. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje e-mailem raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę.  `geo.streszczenie`
 
 ## Wejście
 
@@ -43,11 +43,11 @@ Jak Arthur prowadzi dialog, możesz sprawdzić teraz, umawiając się na rozmow�
 
 Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
 
-## 1. Miesiąc rozmów · #miesiac-rozmow · ton t2
+## 1. Stały termin · #staly-termin · ton t2
 
 **Nagłówek H2** `sekcje[0].h2`
 
-Arthur dzwoni do mamy, ale to mama ustala kiedy.
+Mama wybiera dzień i godzinę, a Arthur dzwoni zawsze wtedy.
 
 **Lid H2** `sekcje[0].lid`
 
@@ -55,11 +55,17 @@ Arthur dzwoni na zwykły telefon mamy, więc mama niczego nie instaluje i w nic 
 
 **Tekst akapitu** `sekcje[0].bloki[0]`
 
-Liczba rozmów w miesiącu zależy od wykupionego pakietu: w pakiecie optymalnym za 299 zł mama ma w miesiącu 6 rozmów pełnych i 8 rozmów podtrzymujących. Rozmowa pełna to czas na jej sprawy: na to, co mama czyta i ogląda, co przeżywa, co ją zajmuje i co o tym myśli. Rozmowa podtrzymująca pozwala na chwilę wrócić do bieżących tematów z poprzedniej rozmowy, na przykład do spotkania, na które mama się ostatnio wybierała. Rozmowa pełna jest zaplanowana na 15–18 minut, a rozmowa podtrzymująca na 3–4 minuty.
+Dzień i godzinę rozmów mama wybiera razem z Tobą, zanim zamówisz arthurozmowy, i od tej pory Arthur dzwoni zawsze wtedy. Stały termin porządkuje tydzień: mama wie, kiedy będzie rozmowa, i może wcześniej pomyśleć, o czym chce opowiedzieć.
+
+Co tydzień mama ma rozmowę pełną, a w pakiecie optymalnym i rozszerzonym także jedną albo dwie rozmowy podtrzymujące, każdą w swoim stałym terminie. Rozmowa pełna trwa około 30 minut i jest czasem na jej sprawy: na to, co mama czyta i ogląda, co przeżywa, co ją zajmuje i co o tym myśli. Rozmowa podtrzymująca trwa około 10 minut i pozwala wrócić do tego, czym mama żyła w poprzedniej rozmowie, na przykład do spotkania, na które się wybierała. Każdą rozmowę mama może skończyć, kiedy zechce.
+
+W pierwszym tygodniu Arthur zadzwoni do mamy jeszcze raz, poza stałym terminem, żeby lepiej się poznali. Zapowie ten telefon w pierwszej rozmowie.
+
+Gdy termin przestanie mamie pasować, zmienicie go razem: mama mówi o tym Tobie, a Ty zgłaszasz nowy termin nam. Zmiana jest bezpłatna i obowiązuje od następnego tygodnia, a Arthur potwierdzi ją mamie.
 
 **Voice aside** `sekcje[0].bloki[1]`
 
-Arthur przedstawia się imieniem i nazwą usługi. Dzwoni zawsze z tego samego numeru telefonu. Jeśli mama akurat nie odbierze, Arthur zadzwoni jeszcze raz później.
+Arthur przedstawia się imieniem i nazwą usługi i dzwoni zawsze z tego samego numeru. Jeśli mama nie odbierze, zadzwoni jeszcze raz po 30 minutach. Mama może też do 20:00 sama oddzwonić na jego numer i porozmawiać jak zwykle.
 
 ## 2. Zasady rozmowy · #zasady-rozmowy · ton t1
 
@@ -132,11 +138,11 @@ Dowiesz się, czym żyje mama, ale jej słów Arthur nie udostępni.
 
 **Lid H2** `sekcje[3].lid`
 
-W raporcie zobaczysz, kiedy rozmowy się odbyły. Zobaczysz też tematy rozmów w ogólnym zarysie, sprawy i zagadnienia, do których mama chętnie wraca.
+Raport przychodzi do Ciebie e-mailem. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem.
+W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
 
 **Karta cytatu** `sekcje[3].bloki[1]`
 

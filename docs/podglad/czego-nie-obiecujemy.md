@@ -1,6 +1,6 @@
 # Czego nie obiecujemy · /czego-nie-obiecujemy
 
-*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-11 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje regularne rozmowy według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.  `geo.streszczenie`
 
 ## Wejście
 
@@ -25,7 +25,7 @@ Arthur rozmawia z mamą przez telefon, ale nie zastępuje pomocy w codziennych s
 
 **Lid H1** `wejscie.lid`
 
-Arthur rozmawia z mamą przez telefon, kilka razy w tygodniu, więc nie zastępuje opieki, a wszystko, co wymaga obecności człowieka, sprawdzenia albo stałego czuwania, zostaje poza tą usługą. Opisujemy to na osobnej stronie, żebyście obie znały granice arthurozmów, zanim się na nie zdecydujecie.
+Arthur rozmawia z mamą przez telefon, w stałych terminach w tygodniu, więc nie zastępuje opieki, a wszystko, co wymaga obecności człowieka, sprawdzenia albo stałego czuwania, zostaje poza tą usługą. Opisujemy to na osobnej stronie, żebyście obie znały granice arthurozmów, zanim się na nie zdecydujecie.
 
 ## 1. Pomoc w domu · #pomoc-w-domu · ton t2
 
@@ -113,7 +113,7 @@ Obiecujemy regularne, dobre i inspirujące rozmowy według eksperckiej metody.
 
 **Lid H2** `sekcje[5].lid`
 
-Mama ma do dyspozycji tyle rozmów pełnych i podtrzymujących, ile przewiduje wybrany pakiet, a dni i godziny ustala z Arthurem sama.
+Arthur dzwoni do mamy o umówionej porze, w dniu i o godzinie, które wybrała, a co tydzień mama ma tyle rozmów, ile przewiduje wybrany pakiet.
 
 **Tekst akapitu** `sekcje[5].bloki[0]`
 
