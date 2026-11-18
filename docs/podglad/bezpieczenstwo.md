@@ -1,6 +1,6 @@
 # Bezpieczeństwo · /bezpieczenstwo
 
-*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -61,7 +61,7 @@ Arthur nigdy:
 - nie prosi, żeby mama czegoś nie mówiła rodzinie;
 - nie przekazuje wiadomości od innych osób ani wieści o bliskich;
 - nie dzwoni w innych terminach niż umówione z mamą;
-- nie wysyła linków i nie podaje innych numerów, pod które trzeba zadzwonić.
+- {'nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112': 'gdy mama powie mu o nagłej sytuacji, Arthur poprosi ją, żeby tam zadzwoniła.'}
 
 **Voice aside** `sekcje[0].bloki[1]`
 
@@ -69,7 +69,7 @@ Jeśli ktoś przedstawia się jako Arthur i o cokolwiek prosi albo dzwoni w inny
 
 **Tekst akapitu** `sekcje[0].bloki[2]`
 
-Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, i zawsze w stałym terminie mamy. Gdy mama nie odbierze, zadzwoni jeszcze raz po 30 minutach, a mama może do 20:00 sama oddzwonić na jego numer. SMS-y Arthur wysyła tylko z tego numeru i nigdy nie ma w nich linków. Sam numer na ekranie nie jest jednak dowodem, bo oszuści potrafią go podrobić. Nie obiecujemy więc, że nikt nigdy nie podszyje się pod Arthura. Obiecujemy, że prawdziwy Arthur dzwoni tylko w umówionym terminie i nigdy o nic nie poprosi. To dwie zasady, które mama łatwo zapamięta.
+Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, i zawsze w stałym terminie mamy. Gdy mama nie odbierze, zadzwoni jeszcze raz po 30 minutach, a mama może do końca dnia sama oddzwonić na jego numer. SMS-y Arthur wysyła tylko z tego numeru i nigdy nie ma w nich linków. Sam numer na ekranie nie jest jednak dowodem, bo oszuści potrafią go podrobić. Nie obiecujemy więc, że nikt nigdy nie podszyje się pod Arthura. Obiecujemy, że prawdziwy Arthur dzwoni tylko w umówionym terminie i nigdy o nic nie poprosi. To dwie zasady, które mama łatwo zapamięta.
 
 Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, damy Ci o tym znać.
 
@@ -91,9 +91,9 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-W raporcie, który przychodzi do Ciebie e-mailem, zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, a gdy raport trafi do Ciebie, Arthur na początku najbliższej rozmowy powie jej, co w nim jest.
+W raporcie, który co tydzień przychodzi do Ciebie e-mailem, zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, a gdy raport trafi do Ciebie, Arthur na początku najbliższej rozmowy powie jej, co w nim jest.
 
-Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje.
+Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje, chyba że mama osobno się na to zgodzi. Wtedy ekspertka, która opracowała metodę, czyta wybrane rozmowy, żeby poprawiać zasady Arthura.
 
 Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
 
@@ -122,10 +122,6 @@ Arthur nie udaje człowieka. Zapytany wprost, zawsze odpowiada, że jest program
 Bez zgody mamy rozmowy się nie zaczynają. Mama dowiaduje się, kim jest Arthur, najlepiej od Ciebie, a w pierwszej rozmowie Arthur mówi jej to sam i wyjaśnia, co będzie w raporcie dla Ciebie.
 
 Nie ma sekretów między mamą a rodziną. Arthur nigdy nie prosi, żeby mama coś przed Tobą ukryła, a mama może w każdej chwili przerwać rozmowę albo powiedzieć „dziś nie”.
-
-**Link wewnętrzny** `sekcje[2].bloki[1]`
-
-Dlaczego Arthur przez „h” → /#dlaczego-arthur-przez-h
 
 ## 4. (poza spisem treści) · #najczestsze-pytania · ton t1
 

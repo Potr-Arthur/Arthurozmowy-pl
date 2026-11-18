@@ -11,18 +11,18 @@ seo:
   adres: /jak-korzystac
   tytul: Jak korzystać z arthurozmów – abonament, cena i rezygnacja
   opis: |-
-    Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz jednym kliknięciem.
+    Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz w panelu klienta.
   obraz_og:
     plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
     alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
   schemat: [WebPage, Offer, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-16
+  zaktualizowano: 2026-11-18
 
 geo:
   streszczenie: |-
-    Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Przy zamówieniu dziecko podaje stały dzień i godzinę rozmów wybrane przez mamę, a termin można bezpłatnie zmienić od następnego tygodnia. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.
+    Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Przy zamówieniu dziecko podaje stały dzień i godzinę rozmów wybrane przez mamę, a termin można bezpłatnie zmienić od następnego tygodnia. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja w panelu klienta (kliknięcie i potwierdzenie) uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.
 
 wejscie:
   h1: |-
@@ -50,7 +50,7 @@ sekcje:
 
           Pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że kontynuujecie rozmowy. Od tej pory opłata będzie się odnawiać automatycznie co miesiąc, chyba że zdecydujesz inaczej i zrezygnujesz z abonamentu.
 
-          Raporty z rozmów przychodzą do Ciebie e-mailem. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz jednym kliknięciem. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
+          Raport z rozmów przychodzi do Ciebie co tydzień e-mailem. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz: klikasz i potwierdzasz. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
 
           Gdy termin rozmów przestanie mamie pasować, zgłoś nowy w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia. Jeśli mama wyjeżdża albo jest w szpitalu i nie chce w tym czasie rozmawiać, rozmowy można zawiesić. Zgłaszasz to Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
       - typ: link
@@ -82,7 +82,7 @@ sekcje:
     etykieta: Rezygnacja
     ton: t2
     h2: |-
-      Zrezygnujesz jednym kliknięciem, a Arthur pożegna się z mamą w ciągu 15 dni.
+      Zrezygnujesz w panelu klienta, a Arthur pożegna się z mamą w ciągu 15 dni.
     zdjecie:
       widoczne: true
       plik: /images/strony/arthurozmowy-jak-korzystac-mama-po-rozmowie-4x3.webp
@@ -92,7 +92,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Przez 15 kolejnych dni Arthur zmieni w rozmowach narrację i treść, a w ostatniej rozmowie pożegna się z Twoją mamą.
+          Przez 15 kolejnych dni Arthur dzwoni do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a w ostatniej pożegna się z nią.
 
           Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
 

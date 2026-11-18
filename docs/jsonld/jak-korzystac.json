@@ -6,7 +6,7 @@
       "@id": "https://arthurozmowy.pl/jak-korzystac#strona",
       "url": "https://arthurozmowy.pl/jak-korzystac",
       "name": "Jak korzystać z arthurozmów – abonament, cena i rezygnacja",
-      "description": "Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz jednym kliknięciem.",
+      "description": "Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz w panelu klienta.",
       "inLanguage": "pl-PL",
       "isPartOf": {
         "@id": "https://arthurozmowy.pl/#witryna"
@@ -14,7 +14,7 @@
       "about": {
         "@id": "https://arthurozmowy.pl/#usluga"
       },
-      "dateModified": "2026-11-16",
+      "dateModified": "2026-11-18",
       "author": {
         "@id": "https://arthurozmowy.pl/o-nas#piotr-jaworski"
       },

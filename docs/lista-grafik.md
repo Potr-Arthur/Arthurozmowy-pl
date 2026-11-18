@@ -1,6 +1,6 @@
 # Zdjęcia witryny arthurozmowy.pl
 
-*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. Pliki są w `public/images/strony/` i nazywają się `arthurozmowy-{strona}-{treść}-{format}.webp`: wejście strony głównej 21x9 z osobnym kadrem 4x3 na telefon, wejście podstrony 1x1, zdjęcie w rozdziale 4x3. Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Zero retuszu skóry.*
+*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. Pliki są w `public/images/strony/` i nazywają się `arthurozmowy-{strona}-{treść}-{format}.webp`: wejście strony głównej 21x9 z osobnym kadrem 4x3 na telefon, wejście podstrony 1x1, zdjęcie w rozdziale 4x3. Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Obróbka promptem „Xiaomi – Huawei Style” z Księgi (rozdz. 17).*
 
 | Strona | Nr | Miejsce | Plik | Alt | Format | Stan |
 |---|---|---|---|---|---|---|

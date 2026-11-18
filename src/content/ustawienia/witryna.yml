@@ -90,9 +90,10 @@ okno_rozmowy:
   pole_data: Data
   pole_godzina: Godzina
   przycisk: Zadzwoń do mnie
-  potwierdzenie: "[do napisania]"
-  blad: "[do napisania]"
-  zgoda: "[do napisania po ocenie skutków dla ochrony danych (Z6)]"
+  potwierdzenie: Dziękujemy. Arthur zadzwoni do Ciebie za chwilę albo o porze, którą wybrałaś. Przedstawi się imieniem i nazwą usługi.
+  blad: Nie udało się wysłać numeru. Sprawdź, czy jest wpisany w całości, i spróbuj jeszcze raz.
+  # Treść zgody wynika z decyzji z 17.11.2026 (Księga, rozdz. 18 i 22). Przed włączeniem okienka sprawdza ją ocena skutków (Z6).
+  zgoda: Zgadzam się, żeby arthurozmowy zadzwoniły do mnie na podany numer i wysłały mi po rozmowie jedną wiadomość. Wiem, że rozmowa nie jest nagrywana, a numer zostanie usunięty po 30 dniach. Szczegóły są w Polityce prywatności.
 
 # Okienko otwierane przyciskiem „Napisz do nas” (nowe w makiecie V2). Teksty pól to propozycja do akceptacji.
 # Włączamy je razem z okienkiem rozmowy, po ocenie skutków dla ochrony danych (Z6).
@@ -104,9 +105,9 @@ okno_kontaktu:
   pole_telefon: Numer telefonu (jeśli wolisz, żebyśmy zadzwonili)
   pole_wiadomosc: Twoja wiadomość
   przycisk: Wyślij wiadomość
-  potwierdzenie: "[do napisania]"
-  blad: "[do napisania]"
-  zgoda: "[do napisania po ocenie skutków dla ochrony danych (Z6)]"
+  potwierdzenie: Dziękujemy za wiadomość. Odpowiemy w dni robocze, od poniedziałku do piątku.
+  blad: Nie udało się wysłać wiadomości. Spróbuj jeszcze raz za chwilę.
+  zgoda: Zgadzam się, żeby arthurozmowy użyły moich danych tylko do odpowiedzi na tę wiadomość. Szczegóły są w Polityce prywatności.
 
 # Jedno źródło cen dla kart ceny na stronie głównej i na stronie Jak korzystać oraz dla danych strukturalnych (Offer).
 # Jednostką jest tydzień (decyzja z 16.11.2026): pola liczbowe to liczba rozmów w tygodniu i muszą się zgadzać z polem „rytm”.

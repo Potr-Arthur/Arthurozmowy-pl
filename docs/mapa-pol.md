@@ -9,10 +9,10 @@
 | 0 | Jej sprawy | #jej-sprawy | tak | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 1 | Jak działa Arthur | #jak-dziala-arthur | tak | tak | Tekst akapitu, Lista, Karta cytatu, Link wewnętrzny |
 | 2 | Czemu służą arthurozmowy? | #czemu-sluza-arthurozmowy | tak | tak | Tekst akapitu, Voice aside |
-| 3 | Raport dla Ciebie | #raport-dla-ciebie | tak | tak | Tekst akapitu, Link wewnętrzny |
-| 4 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
-| 5 | Czego nie obiecujemy | #czego-nie-obiecujemy | — | tak | Tekst akapitu, Link wewnętrzny |
-| 6 | Dlaczego Arthur przez „h” | #dlaczego-arthur-przez-h | — | tak | Tekst akapitu |
+| 3 | Dostępność | #dostepnosc | — | tak | Tekst akapitu |
+| 4 | Raport dla Ciebie | #raport-dla-ciebie | tak | tak | Tekst akapitu, Link wewnętrzny |
+| 5 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
+| 6 | Czego nie obiecujemy | #czego-nie-obiecujemy | — | tak | Tekst akapitu, Link wewnętrzny |
 | 7 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Link wewnętrzny |
 | 8 | Bezpieczeństwo | #bezpieczenstwo | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
 | 9 | Cena | #cena | — | tak | Karty ceny, Tekst akapitu, Przycisk CTA (Umów mamie próbne arthurozmowy) |
@@ -82,7 +82,7 @@
 | 0 | Wejście | — | tak | tak | Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 1 | Oszuści | #oszusci | tak | tak | Lista, Voice aside, Tekst akapitu, Link wewnętrzny |
 | 2 | Dane mamy | #dane-mamy | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
-| 3 | Jawność | #jawnosc | — | tak | Tekst akapitu, Link wewnętrzny |
+| 3 | Jawność | #jawnosc | — | tak | Tekst akapitu |
 | 4 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Przycisk CTA (Napisz do nas) |
 
 ## Pytania · `/pytania` · `src/content/strony/pytania.yml`
@@ -139,6 +139,7 @@
 | `jak-zmienic-termin` | Jak zmienić dzień albo godzinę rozmów z Arthurem? | Rozmowy z Arthurem | Jak korzystać |
 | `rozmowy-poza-domem` | Czy mama może rozmawiać z Arthurem, kiedy jest poza domem? | Rozmowy z Arthurem | — |
 | `mama-mieszka-sama` | Mama mieszka sama i coraz rzadziej z kimś rozmawia. Co mogę zrobić? | Mama i Ty | — |
+| `mama-zapomina` | Czy arthurozmowy są dla mamy, która zaczyna zapominać? | Mama i Ty | — |
 | `zgoda-mamy` | Czy mama musi się zgodzić na rozmowy z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
 | `czy-dowiem-sie-o-czym-rozmawiaja` | Czy dowiem się, o czym mama rozmawia z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
 | `niepokojaca-zmiana` | Czy Arthur da mi znać, jeśli zauważy coś niepokojącego? | Mama i Ty | Czego nie obiecujemy |

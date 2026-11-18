@@ -92,7 +92,7 @@ def etykieta():
              hint="Krótko, 1–4 słowa. Puste pole = rozdziału nie ma w menu.")
 
 def zdjecie(label, hint):
-    return obj("zdjecie", label, hint=hint + " Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp. Bez retuszu skóry.", fields=[
+    return obj("zdjecie", label, hint=hint + " Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp. Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).", fields=[
         b("widoczne", "Pokaż zdjęcie", True),
         img("plik", "Plik zdjęcia", "strony"),
         img("plik_telefon", "Kadr 4:3 na telefon (tylko wejście strony głównej)", "strony"),

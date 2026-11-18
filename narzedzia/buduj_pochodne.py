@@ -287,10 +287,10 @@ l = [f"# {ust['marka']['nazwa']}", "", f"> {ust['marka']['definicja']}", "",
      "Najważniejsze fakty:", "",
      f"- Usługę świadczy firma {FIRMA}.",
      "- Usługę zamawia i opłaca dorosłe dziecko, a z Arthurem rozmawia jego mama, tylko za swoją zgodą.",
-     "- Arthur jest programem opartym na sztucznej inteligencji i nigdy nie udaje człowieka; „h” w imieniu to „h” jak humanoid.",
+     "- Arthur jest programem opartym na sztucznej inteligencji i nigdy nie udaje człowieka.",
      "- Pakiety: " + "; ".join(f"{p['nazwa']} {p['cena']} zł miesięcznie z VAT: {p['rytm']}, czyli {p['opis']}" for p in ust["pakiety"]["lista"]) + ".",
      "- Arthur dzwoni w stałym dniu i o stałej godzinie, które wybiera mama. " + ust["pakiety"]["dlugosc"],
-     "- Pierwszy, próbny miesiąc jest bezpłatny. Rezygnacja jednym kliknięciem uruchamia 15-dniowe „Pożegnanie”.",
+     "- Pierwszy, próbny miesiąc jest bezpłatny. Rezygnacja w panelu klienta (kliknięcie i potwierdzenie) uruchamia 15-dniowe „Pożegnanie”.",
      "- Granice: Arthur nie zastępuje pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, "
      "nie diagnozuje i nie obiecuje ochrony przed demencją.", "",
      "## Strony", ""]
@@ -374,7 +374,7 @@ lg = ["# Zdjęcia witryny arthurozmowy.pl", "",
       "każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Nowa treść zdjęcia dostaje nową nazwę pliku. "
       "Pliki są w `public/images/strony/` i nazywają się `arthurozmowy-{strona}-{treść}-{format}.webp`: wejście strony głównej 21x9 "
       "z osobnym kadrem 4x3 na telefon, wejście podstrony 1x1, zdjęcie w rozdziale 4x3. "
-      "Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Zero retuszu skóry.*", "",
+      "Alt: co naprawdę widać, słowami strony, nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Obróbka promptem „Xiaomi – Huawei Style” z Księgi (rozdz. 17).*", "",
       "| Strona | Nr | Miejsce | Plik | Alt | Format | Stan |", "|---|---|---|---|---|---|---|"]
 for nazwa, nr, miejsce, pliki, alt, fmt, stan in wiersze:
     lg.append(f"| {nazwa} | {nr} | {miejsce} | {pliki} | {alt or '—'} | {fmt} | {stan} |")
