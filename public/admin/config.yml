@@ -190,7 +190,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście strony głównej: plik 21:9 i osobny kadr 4:3 na telefon. Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -529,7 +529,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -964,7 +964,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -1303,7 +1303,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -1738,7 +1738,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -2077,7 +2077,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -2512,7 +2512,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -2851,7 +2851,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -3286,7 +3286,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -3625,7 +3625,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -4060,7 +4060,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -4399,7 +4399,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -4834,7 +4834,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -5173,7 +5173,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -5608,7 +5608,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -5947,7 +5947,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -6382,7 +6382,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -6721,7 +6721,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Zdjęcie w rozdziale: poziome 4:3 (1200 × 900). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H2 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown
@@ -7156,7 +7156,7 @@ collections:
           hint: Co naprawdę widać, słowami strony (mama, córka, opowiada, rozmowa). Jedno zdanie, 50–125 znaków.
             Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka. Bez dopowiadania emocji i skutków.
         hint: 'Wejście podstrony: kwadrat 1:1 (1200 × 1200). Nazwa pliku: arthurozmowy-{strona}-{treść}-{format}.webp.
-          Bez retuszu skóry.'
+          Obróbka promptem „Xiaomi – Huawei Style” (Księga, rozdz. 17).'
       - label: Lid H1 (kursywa pod nagłówkiem)
         name: lid
         widget: markdown

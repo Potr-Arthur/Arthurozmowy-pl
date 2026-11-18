@@ -19,7 +19,7 @@ seo:
   schemat: [Organization, WebSite, Service, Offer]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-16
+  zaktualizowano: 2026-11-18
 
 geo:
   # Streszczenie dla modeli AI i llms.txt: same fakty z tej strony, trzecia osoba, bez reklamy.
@@ -30,14 +30,14 @@ wejscie:
   kotwica: jej-sprawy
   etykieta: Jej sprawy
   h1: |-
-    Mama wciąż ma swoje sprawy, a Arthur potrafi o nich rozmawiać.
+    Mama znowu ma coś ciekawego do przeżywania, nad czym się zastanawiać i o czym opowiadać.
   zdjecie:
     widoczne: true
     plik: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-21x9.webp          # 21:9, komputer
     plik_telefon: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-4x3.webp   # 4:3, telefon
     alt: "Rozmowa z mamą w garderobie: mama o siwych włosach ze śmiechem opowiada coś rozmówczyni widocznej od tyłu"
   lid: |-
-    Mama ma swoje zainteresowania, poglądy, plany i sprawy, którymi żyje. Dzięki arthurozmowom będzie miała z kim o nich rozmawiać. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.
+    Dzięki eksperckiej metodzie Arthur umie rozmawiać z Twoją mamą zajmująco, doceniając ją i wzmacniając jej poczucie wartości. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.
   bloki:
     - typ: tekst
       tekst: |-
@@ -123,6 +123,19 @@ sekcje:
         tekst: |-
           Daje mamie coś innego: czas i uwagę rozmówcy, z którym może porozmawiać o sobie i swoich sprawach – tak, jak lubi, i tak długo, jak chce.
 
+  # Rozdział dodany 18.11.2026: dostępność (Księga, rozdz. 3). Bez kwot i bez porównań cenowych.
+  - kotwica: dostepnosc
+    etykieta: Dostępność
+    ton: t2
+    h2: |-
+      Takich rozmów nie da się zamówić u człowieka.
+    lid: |-
+      Wyobraź sobie specjalistę, który co tydzień dzwoni do mamy o porze, którą ona wybierze, także w sobotę o 21:30 albo w niedzielę o 7:30. Pamięta wszystko, o czym rozmawiali, a przy dziesiątej rozmowie w miesiącu jest tak samo cierpliwy i życzliwy jak przy pierwszej. Takiej usługi po prostu nie ma.
+    bloki:
+      - typ: tekst
+        tekst: |-
+          Dlatego dla Arthura alternatywą nie jest człowiek, tylko brak takich rozmów. Arthur nie zastępuje Twoich rozmów z mamą ani spotkań z bliskimi. Daje jej to, czego ludzie nie są w stanie zapewnić regularnie: rozmówcę, który w umówionym przez nią terminie ma dla niej czas, nigdy się nie spieszy i nie traci zainteresowania.
+
   - kotwica: raport-dla-ciebie
     etykieta: Raport dla Ciebie
     ton: t4
@@ -181,22 +194,9 @@ sekcje:
         adres: /czego-nie-obiecujemy
         aktywny: true
 
-  # Jawność: „h” jak humanoid stoi w tekście, nie w przypisie (zasada nienegocjowalna).
-  - kotwica: dlaczego-arthur-przez-h
-    etykieta: Dlaczego Arthur przez „h”
-    ton: t1
-    h2: |-
-      Skąd „h” w imieniu Arthur?
-    lid: |-
-      Po polsku to imię pisze się bez „h”, więc dodatkowa litera od razu zwraca uwagę. Nie jest przypadkowa. To „h” jak humanoid, bo Arthur nie jest człowiekiem, ale jest czymś więcej niż zwykły program: umie rozmawiać zupełnie jak człowiek. Jest systemem i metodą opartą na sztucznej inteligencji (SI, ang. AI), a ta jedna literka ma o tym przypominać.
-    bloki:
-      - typ: tekst
-        tekst: |-
-          Jeśli mama zapyta Arthura, czy jest człowiekiem, zawsze usłyszy prawdę. Najlepiej jednak, żeby dowiedziała się tego najpierw od Ciebie – zanim Arthur zadzwoni do niej po raz pierwszy. Od początku będzie wtedy wiedziała, z kim rozmawia.
-
   - kotwica: jak-korzystac
     etykieta: Jak korzystać
-    ton: t2
+    ton: t1
     h2: |-
       Formalności online są po Twojej stronie. Rozmowy w całości należą do mamy.
     lid: |-
@@ -204,9 +204,9 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Raporty z rozmów dostajesz e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi jednym kliknięciem. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
+          Raport z rozmów dostajesz co tydzień e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
-          Rezygnacja jednym kliknięciem uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie stopniowo zmieniał treść i charakter rozmów, a podczas ostatniej pożegna się z mamą. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
+          Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
       - typ: link
         tekst: Jak korzystać
         adres: /jak-korzystac
@@ -215,7 +215,7 @@ sekcje:
   # Rozdział dodany 12.11.2026: skrót strony Bezpieczeństwo. Tekst przeniesiony z rozdziału „Jak korzystać”.
   - kotwica: bezpieczenstwo
     etykieta: Bezpieczeństwo
-    ton: t1
+    ton: t2
     h2: |-
       Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
     lid: |-

@@ -1,6 +1,6 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-17 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -55,7 +55,7 @@ Arthur dzwoni na zwykły telefon mamy, więc mama niczego nie instaluje i w nic 
 
 **Tekst akapitu** `sekcje[0].bloki[0]`
 
-Dzień i godzinę rozmów mama wybiera razem z Tobą, zanim zamówisz arthurozmowy, i od tej pory Arthur dzwoni zawsze wtedy. Stały termin porządkuje tydzień: mama wie, kiedy będzie rozmowa, i może wcześniej pomyśleć, o czym chce opowiedzieć.
+Dzień i godzinę rozmów mama wybiera razem z Tobą, zanim zamówisz arthurozmowy, i od tej pory Arthur dzwoni zawsze wtedy. Może to być dowolna pora każdego dnia, także późny wieczór, niedzielny poranek albo święto. Stały termin porządkuje tydzień: mama wie, kiedy będzie rozmowa, i może wcześniej pomyśleć, o czym chce opowiedzieć.
 
 Co tydzień mama ma rozmowę pełną, a w pakiecie optymalnym i rozszerzonym także jedną albo dwie rozmowy podtrzymujące, każdą w swoim stałym terminie. Rozmowa pełna trwa około 30 minut i jest czasem na jej sprawy: na to, co mama czyta i ogląda, co przeżywa, co ją zajmuje i co o tym myśli. Rozmowa podtrzymująca trwa około 10 minut i pozwala wrócić do tego, czym mama żyła w poprzedniej rozmowie, na przykład do spotkania, na które się wybierała. Każdą rozmowę mama może skończyć, kiedy zechce.
 
@@ -65,7 +65,7 @@ Gdy termin przestanie mamie pasować, zmienicie go razem: mama mówi o tym Tobie
 
 **Voice aside** `sekcje[0].bloki[1]`
 
-Arthur przedstawia się imieniem i nazwą usługi i dzwoni zawsze z tego samego numeru. Jeśli mama nie odbierze, zadzwoni jeszcze raz po 30 minutach. Mama może też do 20:00 sama oddzwonić na jego numer i porozmawiać jak zwykle.
+Arthur przedstawia się imieniem i nazwą usługi i dzwoni zawsze z tego samego numeru. Jeśli mama nie odbierze, zadzwoni jeszcze raz po 30 minutach. Mama może też do końca dnia sama oddzwonić na jego numer i porozmawiać jak zwykle.
 
 ## 2. Zasady rozmowy · #zasady-rozmowy · ton t1
 
@@ -138,7 +138,7 @@ Dowiesz się, czym żyje mama, ale jej słów Arthur nie udostępni.
 
 **Lid H2** `sekcje[3].lid`
 
-Raport przychodzi do Ciebie e-mailem. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
+Raport przychodzi do Ciebie co tydzień e-mailem, po rozmowie pełnej. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
@@ -146,12 +146,14 @@ W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur n
 
 **Karta cytatu** `sekcje[3].bloki[1]`
 
-*(karta ukryta)*
-
 *Przykład raportu*
 
-[przykład raportu: do przygotowania]
+Rozmowy mamy z Arthurem, 9–15 listopada
 
+> Kiedy rozmawiali: „środa, 12 listopada, 16:30 – rozmowa pełna; sobota, 15 listopada, 10:00 – rozmowa podtrzymująca”  
+> O czym rozmawiali: „jesienne prace na działce i plany na wiosnę; książka, którą mama właśnie czyta; świąteczne pieczenie”  
+> Do czego mama wraca: „działka – trzeci tydzień z rzędu”  
+> „W najbliższej rozmowie Arthur powie mamie, że ten raport do Ciebie trafił, i powie jej, co w nim jest.”  
 
 **Link wewnętrzny** `sekcje[3].bloki[2]`
 

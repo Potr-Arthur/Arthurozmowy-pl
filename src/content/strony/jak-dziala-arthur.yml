@@ -18,7 +18,7 @@ seo:
   schemat: [WebPage, Service, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-16
+  zaktualizowano: 2026-11-17
 
 geo:
   streszczenie: |-
@@ -60,7 +60,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Dzień i godzinę rozmów mama wybiera razem z Tobą, zanim zamówisz arthurozmowy, i od tej pory Arthur dzwoni zawsze wtedy. Stały termin porządkuje tydzień: mama wie, kiedy będzie rozmowa, i może wcześniej pomyśleć, o czym chce opowiedzieć.
+          Dzień i godzinę rozmów mama wybiera razem z Tobą, zanim zamówisz arthurozmowy, i od tej pory Arthur dzwoni zawsze wtedy. Może to być dowolna pora każdego dnia, także późny wieczór, niedzielny poranek albo święto. Stały termin porządkuje tydzień: mama wie, kiedy będzie rozmowa, i może wcześniej pomyśleć, o czym chce opowiedzieć.
 
           Co tydzień mama ma rozmowę pełną, a w pakiecie optymalnym i rozszerzonym także jedną albo dwie rozmowy podtrzymujące, każdą w swoim stałym terminie. Rozmowa pełna trwa około 30 minut i jest czasem na jej sprawy: na to, co mama czyta i ogląda, co przeżywa, co ją zajmuje i co o tym myśli. Rozmowa podtrzymująca trwa około 10 minut i pozwala wrócić do tego, czym mama żyła w poprzedniej rozmowie, na przykład do spotkania, na które się wybierała. Każdą rozmowę mama może skończyć, kiedy zechce.
 
@@ -69,7 +69,7 @@ sekcje:
           Gdy termin przestanie mamie pasować, zmienicie go razem: mama mówi o tym Tobie, a Ty zgłaszasz nowy termin nam. Zmiana jest bezpłatna i obowiązuje od następnego tygodnia, a Arthur potwierdzi ją mamie.
       - typ: glos
         tekst: |-
-          Arthur przedstawia się imieniem i nazwą usługi i dzwoni zawsze z tego samego numeru. Jeśli mama nie odbierze, zadzwoni jeszcze raz po 30 minutach. Mama może też do 20:00 sama oddzwonić na jego numer i porozmawiać jak zwykle.
+          Arthur przedstawia się imieniem i nazwą usługi i dzwoni zawsze z tego samego numeru. Jeśli mama nie odbierze, zadzwoni jeszcze raz po 30 minutach. Mama może też do końca dnia sama oddzwonić na jego numer i porozmawiać jak zwykle.
 
   - kotwica: zasady-rozmowy
     etykieta: Zasady rozmowy
@@ -136,16 +136,29 @@ sekcje:
     h2: |-
       Dowiesz się, czym żyje mama, ale jej słów Arthur nie udostępni.
     lid: |-
-      Raport przychodzi do Ciebie e-mailem. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
+      Raport przychodzi do Ciebie co tydzień e-mailem, po rozmowie pełnej. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
     bloki:
       - typ: tekst
         tekst: |-
           W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
-      # Karta z przykładem raportu: ukryta, dopóki nie powstanie wzór raportu.
+      # Karta z przykładem raportu (wzór z Księgi, rozdz. 13, 17.11.2026). Pola „kto” to nagłówki części raportu.
       - typ: cytat
-        widoczny: false
+        widoczny: true
         etykieta: Przykład raportu
-        wstep: "[przykład raportu: do przygotowania]"
+        wstep: |-
+          Rozmowy mamy z Arthurem, 9–15 listopada
+        repliki:
+          - kto: Kiedy rozmawiali
+            kwestia: |-
+              środa, 12 listopada, 16:30 – rozmowa pełna; sobota, 15 listopada, 10:00 – rozmowa podtrzymująca
+          - kto: O czym rozmawiali
+            kwestia: |-
+              jesienne prace na działce i plany na wiosnę; książka, którą mama właśnie czyta; świąteczne pieczenie
+          - kto: Do czego mama wraca
+            kwestia: |-
+              działka – trzeci tydzień z rzędu
+          - kwestia: |-
+              W najbliższej rozmowie Arthur powie mamie, że ten raport do Ciebie trafił, i powie jej, co w nim jest.
       - typ: link
         tekst: Czego nie obiecujemy
         adres: /czego-nie-obiecujemy

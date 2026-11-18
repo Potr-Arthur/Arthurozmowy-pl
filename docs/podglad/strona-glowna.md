@@ -1,6 +1,6 @@
 # Jej sprawy · /
 
-*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -21,11 +21,11 @@
 
 **Nagłówek H1** `wejscie.h1`
 
-Mama wciąż ma swoje sprawy, a Arthur potrafi o nich rozmawiać.
+Mama znowu ma coś ciekawego do przeżywania, nad czym się zastanawiać i o czym opowiadać.
 
 **Lid H1** `wejscie.lid`
 
-Mama ma swoje zainteresowania, poglądy, plany i sprawy, którymi żyje. Dzięki arthurozmowom będzie miała z kim o nich rozmawiać. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.
+Dzięki eksperckiej metodzie Arthur umie rozmawiać z Twoją mamą zajmująco, doceniając ją i wzmacniając jej poczucie wartości. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.
 
 **Tekst akapitu** `wejscie.bloki[0]`
 
@@ -111,87 +111,87 @@ Odwiedziny, troska o zdrowie, rozmowy o lekach i zakupach nadal należą do blis
 
 Daje mamie coś innego: czas i uwagę rozmówcy, z którym może porozmawiać o sobie i swoich sprawach – tak, jak lubi, i tak długo, jak chce.
 
-## 3. Raport dla Ciebie · #raport-dla-ciebie · ton t4
+## 3. Dostępność · #dostepnosc · ton t2
 
 **Nagłówek H2** `sekcje[2].h2`
 
-Arthur zna codzienny tok jej rozmów. Kiedy coś się w nim zmieni, da Ci znać.
-
-**Plik graficzny:** `/images/strony/arthurozmowy-jej-sprawy-corka-odbiera-raport-4x3.webp`  `sekcje[2].zdjecie`
-
-**Alt:** Córka w okularach, z dłonią przy brodzie, w skupieniu czyta coś na ekranie telefonu  `sekcje[2].zdjecie.alt`
+Takich rozmów nie da się zamówić u człowieka.
 
 **Lid H2** `sekcje[2].lid`
 
-Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
+Wyobraź sobie specjalistę, który co tydzień dzwoni do mamy o porze, którą ona wybierze, także w sobotę o 21:30 albo w niedzielę o 7:30. Pamięta wszystko, o czym rozmawiali, a przy dziesiątej rozmowie w miesiącu jest tak samo cierpliwy i życzliwy jak przy pierwszej. Takiej usługi po prostu nie ma.
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
+
+Dlatego dla Arthura alternatywą nie jest człowiek, tylko brak takich rozmów. Arthur nie zastępuje Twoich rozmów z mamą ani spotkań z bliskimi. Daje jej to, czego ludzie nie są w stanie zapewnić regularnie: rozmówcę, który w umówionym przez nią terminie ma dla niej czas, nigdy się nie spieszy i nie traci zainteresowania.
+
+## 4. Raport dla Ciebie · #raport-dla-ciebie · ton t4
+
+**Nagłówek H2** `sekcje[3].h2`
+
+Arthur zna codzienny tok jej rozmów. Kiedy coś się w nim zmieni, da Ci znać.
+
+**Plik graficzny:** `/images/strony/arthurozmowy-jej-sprawy-corka-odbiera-raport-4x3.webp`  `sekcje[3].zdjecie`
+
+**Alt:** Córka w okularach, z dłonią przy brodzie, w skupieniu czyta coś na ekranie telefonu  `sekcje[3].zdjecie.alt`
+
+**Lid H2** `sekcje[3].lid`
+
+Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
+
+**Tekst akapitu** `sekcje[3].bloki[0]`
 
 Arthur nie diagnozuje przyczyn takiej zmiany. Dzięki raportowi będziesz jednak wiedziała, na co zwrócić uwagę i o czym ewentualnie porozmawiać z lekarzem.
 
 Z raportu dowiesz się również, kiedy mama rozmawiała z Arthurem i czego dotyczyły rozmowy – ale tylko w ogólnym zarysie. Nie znajdziesz w nim tego, co mama dokładnie powiedziała. Uprzedzamy ją, że Arthur może przekazywać Ci informacje o zauważonych zmianach. Pamiętaj jednak, że może obserwować wyłącznie to, co dzieje się podczas rozmowy, a nie między połączeniami.
 
-**Link wewnętrzny** `sekcje[2].bloki[1]`
+**Link wewnętrzny** `sekcje[3].bloki[1]`
 
 Raport dla Ciebie → /jak-dziala-arthur#raport-dla-ciebie
 
-## 4. Porozmawiaj z Arthurem · #porozmawiaj-z-arthurem · ton t1
-
-**Nagłówek H2** `sekcje[3].h2`
-
-Porozmawiaj z Arthurem teraz, a mamie zaoferuj miesiąc próbny.
-
-**Lid H2** `sekcje[3].lid`
-
-Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o swoich sprawach – tak, jak później będzie rozmawiała z nim mama. Zostaw numer telefonu, a Arthur zadzwoni do Ciebie od razu albo o wybranej przez Ciebie porze. Przekonasz się, jak mówi, jak słucha i jak prowadzi rozmowę. Poznasz też metodę, według której powstał.
-
-**Tekst akapitu** `sekcje[3].bloki[0]`
-
-Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwszy miesiąc będzie próbny i bezpłatny. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.
-
-**Voice aside** `sekcje[3].bloki[1]`
-
-O tym, czy rozmowy z Arthurem są dla mamy wartościowe i czy chce je kontynuować, zdecydujecie wspólnie – na podstawie tego, co sama o nich opowie.
-
-**Przycisk CTA** `sekcje[3].bloki[2]`
-
-Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
-
-## 5. Czego nie obiecujemy · #czego-nie-obiecujemy · ton t2
+## 5. Porozmawiaj z Arthurem · #porozmawiaj-z-arthurem · ton t1
 
 **Nagłówek H2** `sekcje[4].h2`
 
-Czego Arthur nie zrobi? Uczciwie: Arthur nie jest od wszystkiego.
+Porozmawiaj z Arthurem teraz, a mamie zaoferuj miesiąc próbny.
 
 **Lid H2** `sekcje[4].lid`
 
-Arthur rozmawia z mamą przez telefon. Nie zastąpi więc pomocy w domu, jeśli jest potrzebna, przycisku SOS ani lekarza. Nie dowie się o upadku czy zasłabnięciu, jeśli wydarzą się między rozmowami.
+Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o swoich sprawach – tak, jak później będzie rozmawiała z nim mama. Zostaw numer telefonu, a Arthur zadzwoni do Ciebie od razu albo o wybranej przez Ciebie porze. Przekonasz się, jak mówi, jak słucha i jak prowadzi rozmowę. Poznasz też metodę, według której powstał.
 
 **Tekst akapitu** `sekcje[4].bloki[0]`
+
+Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwszy miesiąc będzie próbny i bezpłatny. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.
+
+**Voice aside** `sekcje[4].bloki[1]`
+
+O tym, czy rozmowy z Arthurem są dla mamy wartościowe i czy chce je kontynuować, zdecydujecie wspólnie – na podstawie tego, co sama o nich opowie.
+
+**Przycisk CTA** `sekcje[4].bloki[2]`
+
+Porozmawiaj z Arthurem → okienko „Porozmawiaj z Arthurem”
+
+## 6. Czego nie obiecujemy · #czego-nie-obiecujemy · ton t2
+
+**Nagłówek H2** `sekcje[5].h2`
+
+Czego Arthur nie zrobi? Uczciwie: Arthur nie jest od wszystkiego.
+
+**Lid H2** `sekcje[5].lid`
+
+Arthur rozmawia z mamą przez telefon. Nie zastąpi więc pomocy w domu, jeśli jest potrzebna, przycisku SOS ani lekarza. Nie dowie się o upadku czy zasłabnięciu, jeśli wydarzą się między rozmowami.
+
+**Tekst akapitu** `sekcje[5].bloki[0]`
 
 Arthur nie stawia diagnoz i nie podpowiada metod leczenia. Nie obiecujemy również, że arthurozmowy zapobiegną demencji albo opóźnią jej rozwój – nie mamy na to dowodów.
 
 Celem rozmów jest inspirowanie, angażowanie i wywoływanie pozytywnych emocji. Chcemy, żebyście obie wiedziały, czego możecie się po nich spodziewać.
 
-**Link wewnętrzny** `sekcje[4].bloki[1]`
+**Link wewnętrzny** `sekcje[5].bloki[1]`
 
 Czego nie obiecujemy → /czego-nie-obiecujemy
 
-## 6. Dlaczego Arthur przez „h” · #dlaczego-arthur-przez-h · ton t1
-
-**Nagłówek H2** `sekcje[5].h2`
-
-Skąd „h” w imieniu Arthur?
-
-**Lid H2** `sekcje[5].lid`
-
-Po polsku to imię pisze się bez „h”, więc dodatkowa litera od razu zwraca uwagę. Nie jest przypadkowa. To „h” jak humanoid, bo Arthur nie jest człowiekiem, ale jest czymś więcej niż zwykły program: umie rozmawiać zupełnie jak człowiek. Jest systemem i metodą opartą na sztucznej inteligencji (SI, ang. AI), a ta jedna literka ma o tym przypominać.
-
-**Tekst akapitu** `sekcje[5].bloki[0]`
-
-Jeśli mama zapyta Arthura, czy jest człowiekiem, zawsze usłyszy prawdę. Najlepiej jednak, żeby dowiedziała się tego najpierw od Ciebie – zanim Arthur zadzwoni do niej po raz pierwszy. Od początku będzie wtedy wiedziała, z kim rozmawia.
-
-## 7. Jak korzystać · #jak-korzystac · ton t2
+## 7. Jak korzystać · #jak-korzystac · ton t1
 
 **Nagłówek H2** `sekcje[6].h2`
 
@@ -203,15 +203,15 @@ Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, 
 
 **Tekst akapitu** `sekcje[6].bloki[0]`
 
-Raporty z rozmów dostajesz e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi jednym kliknięciem. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
+Raport z rozmów dostajesz co tydzień e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
-Rezygnacja jednym kliknięciem uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie stopniowo zmieniał treść i charakter rozmów, a podczas ostatniej pożegna się z mamą. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
+Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
 
 **Link wewnętrzny** `sekcje[6].bloki[1]`
 
 Jak korzystać → /jak-korzystac
 
-## 8. Bezpieczeństwo · #bezpieczenstwo · ton t1
+## 8. Bezpieczeństwo · #bezpieczenstwo · ton t2
 
 **Nagłówek H2** `sekcje[7].h2`
 

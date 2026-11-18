@@ -19,7 +19,7 @@ seo:
   schemat: [FAQPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-16
+  zaktualizowano: 2026-11-17
 
 geo:
   streszczenie: |-
@@ -73,6 +73,7 @@ sekcje:
       - typ: pytania
         pytania:
           - mama-mieszka-sama
+          - mama-zapomina
           - zgoda-mamy
           - czy-dowiem-sie-o-czym-rozmawiaja
           - niepokojaca-zmiana

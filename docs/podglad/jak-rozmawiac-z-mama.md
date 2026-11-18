@@ -1,6 +1,6 @@
 # Jak rozmawiać z mamą · /jak-rozmawiac-z-mama
 
-*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -69,7 +69,7 @@ Najlepiej jednak, żeby usłyszała ją najpierw od Ciebie, zanim Arthur zadzwon
 
 *Przykład*
 
-> „Mamo, to program, który rozmawia przez telefon. Ma na imię Arthur, przez »h«, jak humanoid, żeby nikt nie pomylił go z człowiekiem.”  
+> „Mamo, to program, który rozmawia przez telefon. Ma na imię Arthur i nigdy nie udaje człowieka.”  
 
 ## 3. Zaciekaw mamę · #zaciekaw-mame · ton t2
 
@@ -127,7 +127,7 @@ Dzień i godzinę rozmów mama wybiera sama, razem z Tobą, zanim zamówisz arth
 
 **Tekst akapitu** `sekcje[4].bloki[0]`
 
-Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
+Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Jeśli akurat nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a mama może też do końca dnia sama do niego oddzwonić. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
 
 **Karta cytatu** `sekcje[4].bloki[1]`
 

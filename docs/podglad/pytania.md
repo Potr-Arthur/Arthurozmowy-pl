@@ -1,6 +1,6 @@
 # Pytania · /pytania
 
-*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-16 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-17 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -47,13 +47,13 @@ Arthur będzie rozmawiał z mamą w ciekawy, inspirujący sposób na każdy tema
 
 ### Kim jest Arthur?  `baza:kim-jest-arthur`
 
-Arthur jest programem opartym na sztucznej inteligencji (SI / AI), który umie rozmawiać przez telefon jak człowiek, ale nigdy go nie udaje. Litera „h” (jak humanoid) dodana do jego imienia ma o tym przypominać. Jeśli mama zapyta Arthura, czy jest człowiekiem, zawsze usłyszy od niego prawdę.
+Arthur jest programem opartym na sztucznej inteligencji (SI / AI), który umie rozmawiać przez telefon jak człowiek, ale nigdy go nie udaje. Mówi to mamie sam w pierwszej rozmowie, a jeśli mama zapyta go, czy jest człowiekiem, zawsze usłyszy prawdę.
 
-**Link wewnętrzny:** Dlaczego Arthur przez „h” → /#dlaczego-arthur-przez-h
+**Link wewnętrzny:** Jawność → /bezpieczenstwo#jawnosc
 
 ### W czym Arthur jest lepszy od zatrudnionej osoby, która dzwoniłaby do mamy?  `baza:arthur-a-zatrudniona-osoba`
 
-Arthur nie konkuruje z człowiekiem i nie zastępuje rozmów z bliskimi. Jego rolą jest prowadzenie regularnych rozmów według ustalonej metody. Jego przewagi to: eksperckie przygotowanie, anielska cierpliwość, gdy mama często wraca do tych samych tematów, pamięć wszystkich odbytych z mamą rozmów, dzięki której zawsze jest gotowy kontynuować każdy wątek, oraz cena w porównaniu z zatrudnionym specjalistą.
+Arthur nie konkuruje z człowiekiem i nie zastępuje rozmów z bliskimi. Takiej osoby po prostu nie da się zatrudnić: kogoś, kto co tydzień dzwoni do mamy o porze, którą sama wybierze, także późnym wieczorem, w niedzielę rano czy w święta, pamięta wszystkie wcześniejsze rozmowy i zawsze jest gotów wrócić do każdego wątku. Do tego Arthur rozmawia według ustalonej, eksperckiej metody i ma anielską cierpliwość, gdy mama wraca do tych samych tematów.
 
 ### W czym Arthur nie będzie mógł pomóc?  `baza:w-czym-arthur-nie-pomoze`
 
@@ -91,7 +91,7 @@ Mama potrzebuje tylko własnego telefonu, na którym dobrze jej się rozmawia. N
 
 ### Co się dzieje, gdy mama nie odbierze telefonu od Arthura?  `baza:co-jesli-mama-nie-odbierze`
 
-Gdy mama nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a jeśli i wtedy się nie uda, mama może do 20:00 sama oddzwonić na jego numer i porozmawiać jak zwykle. Jeśli mama ma telefon komórkowy, dostanie od Arthura krótką wiadomość z tą informacją. Gdy do 20:00 rozmowa się nie odbędzie, damy Ci znać tego samego wieczoru. Arthur nie wie, dlaczego mama nie odebrała, więc nasza wiadomość jest informacją, a nie alarmem.
+Gdy mama nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a jeśli i wtedy się nie uda, mama może do końca dnia sama oddzwonić na jego numer i porozmawiać jak zwykle. Jeśli mama ma telefon komórkowy, dostanie od Arthura krótką wiadomość z tą informacją. Gdy do końca dnia rozmowa się nie odbędzie, damy Ci znać następnego dnia rano. Arthur nie wie, dlaczego mama nie odebrała, więc nasza wiadomość jest informacją, a nie alarmem.
 
 ### Jak zmienić dzień albo godzinę rozmów z Arthurem?  `baza:jak-zmienic-termin`
 
@@ -101,7 +101,7 @@ Termin rozmów zmieniasz Ty, po rozmowie z mamą: zgłaszasz nowy dzień i godzi
 
 ### Czy mama może rozmawiać z Arthurem, kiedy jest poza domem?  `baza:rozmowy-poza-domem`
 
-Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów albo pobytu w szpitalu. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem możecie zmienić termin rozmów, a gdy mama nie ma ochoty w tym czasie rozmawiać, rozmowy można zawiesić. Zawieszenie zgłaszasz Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
+Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów, w szpitalu albo w domu opieki. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem możecie zmienić termin rozmów, a gdy mama nie ma ochoty w tym czasie rozmawiać, rozmowy można zawiesić. Zawieszenie zgłaszasz Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
 
 ## 3. Mama i Ty · #mama-i-ty · ton t2
 
@@ -115,6 +115,12 @@ Mama i Ty
 
 Możesz pomóc mamie odbywać więcej ciekawych rozmów o jej własnych sprawach: umówić się z nią na stałe dni telefonów, poprosić rodzinę i znajomych o regularny kontakt albo zaproponować jej arthurozmowy. Liczy się to, żeby rozmowy odbywały się regularnie i dotyczyły tego, co mamę zajmuje, a nie tylko leków i zakupów. Arthur zadzwoni do mamy co tydzień, w dniu i o godzinie, które mama sama wybierze, ale nie zastępuje rozmów z bliskimi ani pomocy w domu.
 
+### Czy arthurozmowy są dla mamy, która zaczyna zapominać?  `baza:mama-zapomina`
+
+Tak, jeśli kłopoty z pamięcią są łagodne, a mama dobrze rozmawia przez telefon. Arthur nie sprawdza jej pamięci i jej nie poprawia, a do tych samych spraw chętnie wraca, za każdym razem z innej strony. Gdy otępienie utrudnia już rozmowę, arthurozmowy nie są właściwą pomocą i powiemy Ci to wprost. Rozmowy z Arthurem nie chronią też przed demencją.
+
+**Link wewnętrzny:** Pamięć → /czego-nie-obiecujemy#pamiec
+
 ### Czy mama musi się zgodzić na rozmowy z Arthurem?  `baza:zgoda-mamy`
 
 Tak, bez zgody mamy rozmowy z Arthurem nie będą możliwe. O arthurozmowach decydujecie razem, a potem to mama wybiera, kiedy, jak długo i o czym z nim rozmawia. Najlepiej, żeby mama usłyszała o nim najpierw od Ciebie, zanim Arthur zadzwoni do niej po raz pierwszy.
@@ -123,7 +129,7 @@ Tak, bez zgody mamy rozmowy z Arthurem nie będą możliwe. O arthurozmowach dec
 
 ### Czy dowiem się, o czym mama rozmawia z Arthurem?  `baza:czy-dowiem-sie-o-czym-rozmawiaja`
 
-Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie, który przychodzi do Ciebie e-mailem. Dokładnych słów mamy Arthur nikomu nie udostępnia.
+Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie, który co tydzień przychodzi do Ciebie e-mailem. Dokładnych słów mamy Arthur nikomu nie udostępnia.
 
 **Link wewnętrzny:** Raport dla Ciebie → /jak-dziala-arthur#raport-dla-ciebie
 

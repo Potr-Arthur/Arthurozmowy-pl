@@ -9,7 +9,7 @@
 - **Redakcja `/admin`** (Sveltia CMS): logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium, uprawnienie Contents: read and write).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
-Treści w tym repozytorium są w stanie z 16.11.2026 (makieta V2, stały termin rozmów i pakiety liczone tygodniami). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
+Treści w tym repozytorium są w stanie z 17.11.2026 (makieta V2, stały termin rozmów o dowolnej porze, pakiety liczone tygodniami, raport co tydzień ze wzorem). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
 
 ## Co jest w repozytorium (część treści)
 
@@ -18,7 +18,7 @@ src/content/
   strony/                 10 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
     strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
-  pytania/baza.yml        23 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
+  pytania/baza.yml        24 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
   ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka
 src/content.config.ts     schemat kolekcji Astro 5
 public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
@@ -98,13 +98,13 @@ Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i je
 - **Zasada:** strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), każda podstrona 2 (wejście i 1 w rozdziale), strona 404 żadnego. Razem 20 zdjęć.
 - **Nazwy plików:** `arthurozmowy-{strona}-{treść}-{format}.webp` w `public/images/strony/`. Wejście strony głównej: `-21x9` i osobny kadr `-4x3` na telefon. Wejście podstrony: `-1x1` (1200 × 1200). Zdjęcie w rozdziale: `-4x3` (1200 × 900). Nowa treść zdjęcia dostaje nową nazwę.
 - **Alt:** to, co naprawdę widać, słowami strony („mama”, „córka”, „rozmowa”). Jedno zdanie, 50–125 znaków. Nigdy „Arthur”, „arthurozmowy” ani „AI” przy zdjęciu człowieka.
-- **Zero retuszu skóry** na zdjęciach osób starszych.
+- **Obróbka zdjęć:** każde zdjęcie przechodzi przez jeden prompt „Xiaomi – Huawei Style” z Księgi (rozdz. 17): retusz jak w kampanii premium, bez odmładzania.
 - **Zdjęcie `arthurozmowy-o-nas-eksperci-4x3.webp`** to zdjęcie robocze z modelami w roli ekspertów. Stoi tylko na stronie roboczej, z oznaczeniem „[zdjęcie przykładowe]” w tekście alternatywnym, obok przykładowych danych ekspertki. Nawias kwadratowy blokuje wyjście strony O nas na arthurozmowy.pl.
 - Skrypt sprawdzający zgłasza błąd przy złej liczbie zdjęć, braku pliku, złym formacie w nazwie albo złych proporcjach pliku.
 
 ## Karta cytatu
 
-Przykładowy dialog mamy z Arthurem ma zawsze etykietę „Przykład rozmowy”, bo jest wymyślony (skrypt tego pilnuje). W karcie nigdy nie stoi fragment prawdziwej rozmowy z mamą. Karta z przykładem raportu na stronie Jak działa Arthur jest ukryta, dopóki nie powstanie wzór raportu.
+Przykładowy dialog mamy z Arthurem ma zawsze etykietę „Przykład rozmowy”, bo jest wymyślony (skrypt tego pilnuje). W karcie nigdy nie stoi fragment prawdziwej rozmowy z mamą. Karta z przykładem raportu na stronie Jak działa Arthur pokazuje wzór z Księgi (rozdz. 13): pola „kto” są tu nagłówkami części raportu („Kiedy rozmawiali”, „O czym rozmawiali”, „Do czego mama wraca”), a ostatnia linia nie ma nagłówka.
 
 ## Narzędzia
 
@@ -124,21 +124,19 @@ python3 narzedzia/buduj_pochodne.py
 
 `generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
 
-Stan na 16.11.2026: zero błędów, 8 zaślepek, 7 uwag (ukryta karta z przykładem raportu, dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
+Stan na 17.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas), 6 uwag (dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 
 | Gdzie | Czego brakuje | Kto decyduje |
 |---|---|---|
 | O nas · Nasza metoda | ekspertka: imię i nazwisko, specjalizacja, staż, jednostka naukowa, wspólne zdjęcie (Z1) | Ty |
-| Ustawienia · okienko rozmowy | potwierdzenie, komunikat błędu, zgoda i informacja RODO (po ocenie skutków, Z6) | Ty, prawnik |
-| Ustawienia · okienko kontaktu | potwierdzenie, komunikat błędu, zgoda i informacja RODO (po ocenie skutków, Z6) | Ty, prawnik |
 
 ## Decyzje otwarte
 
 - Zamówienie („Umów mamie próbne arthurozmowy”, „Zamów online”) prowadzi do panelu klienta, którego jeszcze nie ma; przyciski są nieaktywne.
 - Strony `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to na adresie tymczasowym strony „w przygotowaniu”.
-- Przykład raportu na stronie Jak działa Arthur (karta ukryta).
-- Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), docelowy kanał rozmów po pilotażu (Z14), numer, z którego Arthur dzwoni do mamy.
+- Okienka „Porozmawiaj z Arthurem” i „Napisz do nas” mają teksty, ale włączamy je dopiero po ocenie skutków dla ochrony danych (Z6), razem z polityką prywatności.
+- Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), numer, z którego Arthur dzwoni do mamy. Kanałem rozmów jest telefon (decyzja z 17.11.2026).
 - Plausible czy Umami (zdanie w stopce mówi tylko o statystykach bez plików cookies).
 - Pisownia nazwy firmy „arthurozmowy Piotr Jaworski” do potwierdzenia z CEIDG.
