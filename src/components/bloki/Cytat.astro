@@ -1,16 +1,31 @@
 ---
-// Moduł „Karta cytatu”: etykieta nad kartą, wstęp nad replikami; szablon dopisuje dwukropek po imieniu i cudzysłowy.
-// Karta z widoczny: false się nie renderuje.
+// Moduł „Karta cytatu”: etykieta nad kartą, wstęp nad replikami. Karta z widoczny: false się nie renderuje.
+//   rozmowa (domyślnie): szablon dopisuje dwukropek po imieniu i cudzysłowy;
+//   raport (etykieta „Przykład raportu”, decyzja z 18.11.2026): bez cudzysłowów i dwukropków. Wstęp to temat
+//   raportu, pole „kto” to nagłówek części raportu nad jej treścią, a linia bez „kto” stoi pod kreską na końcu karty.
 import { inline } from '../../lib/tekst';
 import type { Kontekst } from '../../lib/kontekst';
+interface Replika { kto?: string; kwestia: string }
 interface Props {
-  b: { widoczny?: boolean; etykieta?: string; wstep?: string; repliki: { kto?: string; kwestia: string }[] };
+  b: { widoczny?: boolean; etykieta?: string; wstep?: string; repliki: Replika[] };
   k: Kontekst;
 }
 const { b, k } = Astro.props;
 const f = k.ust.firma;
+const ETYKIETA_RAPORTU = 'przykład raportu';
+const raport = (b.etykieta ?? '').trim().toLowerCase() === ETYKIETA_RAPORTU;
+// raport: kolejne części z nagłówkiem tworzą jedną listę <dl>, linie bez nagłówka stoją osobno, w kolejności z treści
+type Grupa = { czesci: Replika[] } | { uwaga: string };
+const grupy: Grupa[] = [];
+if (raport) {
+  for (const r of b.repliki) {
+    const ostatnia = grupy[grupy.length - 1];
+    if (r.kto && ostatnia && 'czesci' in ostatnia) ostatnia.czesci.push(r);
+    else grupy.push(r.kto ? { czesci: [r] } : { uwaga: r.kwestia });
+  }
+}
 ---
-{b.widoczny !== false && (
+{b.widoczny !== false && !raport && (
   <figure class="cytat">
     {b.etykieta && <figcaption class="cytat__etykieta" set:html={inline(b.etykieta, f)} />}
     <div class="cytat__karta">
@@ -21,6 +36,28 @@ const f = k.ust.firma;
           <q set:html={inline(r.kwestia, f)} />
         </p>
       ))}
+    </div>
+  </figure>
+)}
+{b.widoczny !== false && raport && (
+  <figure class="cytat cytat--raport">
+    <figcaption class="cytat__etykieta" set:html={inline(b.etykieta!, f)} />
+    <div class="cytat__karta">
+      {b.wstep && <p class="raport__temat" set:html={inline(b.wstep, f)} />}
+      {grupy.map((g) =>
+        'czesci' in g ? (
+          <dl class="raport__czesci">
+            {g.czesci.map((r) => (
+              <div class="raport__czesc">
+                <dt class="raport__naglowek" set:html={inline(r.kto!, f)} />
+                <dd set:html={inline(r.kwestia, f)} />
+              </div>
+            ))}
+          </dl>
+        ) : (
+          <p class="raport__uwaga" set:html={inline(g.uwaga, f)} />
+        ),
+      )}
     </div>
   </figure>
 )}
