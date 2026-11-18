@@ -198,6 +198,9 @@ def sprawdz_bloki(miejsce, bloki):
         elif typ == "lista":
             if not bl.get("punkty"):
                 blad(f"{gdzie}: lista bez punktów")
+            for k, pk in enumerate(bl.get("punkty") or []):
+                if not isinstance(pk, str):
+                    blad(f"{gdzie}: punkt {k + 1} nie jest tekstem (dwukropek ze spacją w punkcie bez cudzysłowu)")
         elif typ == "zasady":
             for z in bl.get("zasady") or []:
                 if not z.get("naglowek"):
