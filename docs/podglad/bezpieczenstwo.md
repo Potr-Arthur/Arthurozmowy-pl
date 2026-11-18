@@ -61,7 +61,7 @@ Arthur nigdy:
 - nie prosi, żeby mama czegoś nie mówiła rodzinie;
 - nie przekazuje wiadomości od innych osób ani wieści o bliskich;
 - nie dzwoni w innych terminach niż umówione z mamą;
-- {'nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112': 'gdy mama powie mu o nagłej sytuacji, Arthur poprosi ją, żeby tam zadzwoniła.'}
+- nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112: gdy mama powie mu o nagłej sytuacji, Arthur poprosi ją, żeby tam zadzwoniła.
 
 **Voice aside** `sekcje[0].bloki[1]`
 
