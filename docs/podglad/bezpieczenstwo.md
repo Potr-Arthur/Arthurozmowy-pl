@@ -1,6 +1,6 @@
 # Bezpieczeństwo · /bezpieczenstwo
 
-*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-19 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -93,7 +93,7 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 
 W raporcie, który co tydzień przychodzi do Ciebie e-mailem, zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, a gdy raport trafi do Ciebie, Arthur na początku najbliższej rozmowy powie jej, co w nim jest.
 
-Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje, chyba że mama osobno się na to zgodzi. Wtedy ekspertka, która opracowała metodę, czyta wybrane rozmowy, żeby poprawiać zasady Arthura.
+Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje, także ekspertka, która opracowała metodę.
 
 Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
 
@@ -119,7 +119,7 @@ Arthur nie udaje człowieka. Zapytany wprost, zawsze odpowiada, że jest program
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
 
-Bez zgody mamy rozmowy się nie zaczynają. Mama dowiaduje się, kim jest Arthur, najlepiej od Ciebie, a w pierwszej rozmowie Arthur mówi jej to sam i wyjaśnia, co będzie w raporcie dla Ciebie.
+Bez zgody mamy rozmowy się nie zaczynają. Mama dowiaduje się, kim jest Arthur, najlepiej od Ciebie, a w pierwszej rozmowie Arthur mówi jej to sam, wyjaśnia, co będzie w raporcie dla Ciebie, i pyta, czy zgadza się na rozmowy.
 
 Nie ma sekretów między mamą a rodziną. Arthur nigdy nie prosi, żeby mama coś przed Tobą ukryła, a mama może w każdej chwili przerwać rozmowę albo powiedzieć „dziś nie”.
 
