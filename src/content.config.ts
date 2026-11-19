@@ -78,6 +78,16 @@ const sekcja = z.object({
   bloki,
 });
 
+const wejscie = z.object({
+  kotwica: z.string().optional().nullable(),
+  etykieta: z.string().optional().nullable(),
+  h1: z.string(),
+  zdjecie,
+  lid: z.string().optional().nullable(),
+  przycisk_powrotu: z.object({ tekst: z.string(), adres: z.string() }).optional(),
+  bloki,
+});
+
 const strony = defineCollection({
   loader: glob({ pattern: '*.yml', base: './src/content/strony' }),
   schema: z.object({
@@ -93,15 +103,31 @@ const strony = defineCollection({
       zaktualizowano: z.coerce.date(),
     }),
     geo: z.object({ streszczenie: z.string() }),
-    wejscie: z.object({
-      kotwica: z.string().optional(),
-      etykieta: z.string().optional().nullable(),
-      h1: z.string(),
-      zdjecie,
-      lid: z.string().optional(),
-      przycisk_powrotu: z.object({ tekst: z.string(), adres: z.string() }).optional(),
-      bloki,
+    wejscie,
+    sekcje: z.array(sekcja).default([]),
+  }),
+});
+
+// Strony kampanii (od 19.11.2026): strony pod konkretne reklamy, poza menu, mapą strony i llms.txt.
+// Te same moduły co strony z menu; układ rozdziałów i bloków ustala redaktor. Adres to pole „adres” bez ukośnika.
+const kampanie = defineCollection({
+  loader: glob({ pattern: '*.yml', base: './src/content/kampanie' }),
+  schema: z.object({
+    nazwa_robocza: z.string(),
+    adres: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+    strona: z.object({
+      nazwa: z.string().optional().nullable(),
+      szablon: z.enum(['glowna', 'podstrona']).default('podstrona'),
     }),
+    seo: z.object({
+      tytul: z.string().max(70),
+      opis: z.string().max(160).optional().nullable(),
+      obraz_og: z.object({ plik: z.string().optional().nullable(), alt: z.string().optional().nullable() }).optional(),
+      indeksuj: z.boolean().default(false),
+      autor: z.string().optional().nullable(),
+      zaktualizowano: z.coerce.date().optional().nullable(),
+    }),
+    wejscie,
     sekcje: z.array(sekcja).default([]),
   }),
 });
@@ -185,7 +211,17 @@ const ustawienia = defineCollection({
       prawa: z.string(),
       linki_prawne: z.array(linkNazwany),
     }),
+    // Pomiar i reklama (19.11.2026): puste pola = nic się nie ładuje.
+    pomiar: z
+      .object({
+        gtm: z.string().optional().nullable(),
+        baner_usluga: z.string().optional().nullable(),
+        baner_id: z.string().optional().nullable(),
+        licznik_skrypt: z.string().optional().nullable(),
+        licznik_id: z.string().optional().nullable(),
+      })
+      .optional(),
   }),
 });
 
-export const collections = { strony, pytania: pytaniaBaza, ustawienia };
+export const collections = { strony, kampanie, pytania: pytaniaBaza, ustawienia };

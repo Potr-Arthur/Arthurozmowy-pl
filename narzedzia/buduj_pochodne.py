@@ -9,6 +9,8 @@ Powstają:
   docs/lista-grafik.md       pliki graficzne: miejsce, nazwa, alt, format, stan
   public/llms.txt            streszczenie witryny dla modeli AI (llmstxt.org)
   public/llms-full.txt       pełne teksty widocznych stron bez zaślepek
+  public/sitemap-index.xml   mapa strony (wskazuje ją robots.txt) i public/sitemap-0.xml z adresami stron
+Strony kampanii (src/content/kampanie) nie trafiają do żadnego z tych plików.
 """
 from pathlib import Path
 import json, re
@@ -396,6 +398,21 @@ for plik_, gdzie_, fmt_ in (("/images/marka/arthur-logo.png", "miejsca, w który
                             ("/images/marka/arthur-ikona-512.png", "ikona aplikacji (manifest)", "PNG · 512 × 512")):
     lg.append(f"| {plik_.rsplit('/', 1)[-1]} | {gdzie_} | — | {fmt_} | {'gotowe' if jest(plik_) else 'do przygotowania'} |")
 (ROOT / "docs" / "lista-grafik.md").write_text("\n".join(lg) + "\n", encoding="utf-8")
+
+# ------------------------------------------------ mapa strony (sitemap)
+
+# Strony z menu, które mają „Pokazuj w wyszukiwarkach”, w kolejności menu; bez strony błędu i stron kampanii.
+w_mapie = [d for d in strony.values() if d["seo"]["indeksuj"] and d["strona"]["szablon"] != "blad"]
+mapa = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for d in w_mapie:
+    adres = DOM + ("/" if d["seo"]["adres"] == "/" else d["seo"]["adres"])
+    mapa.append(f"  <url><loc>{adres}</loc><lastmod>{d['seo']['zaktualizowano']}</lastmod></url>")
+mapa.append("</urlset>")
+(ROOT / "public" / "sitemap-0.xml").write_text("\n".join(mapa) + "\n", encoding="utf-8")
+najnowsza = max(str(d["seo"]["zaktualizowano"]) for d in w_mapie)
+(ROOT / "public" / "sitemap-index.xml").write_text(
+    '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    f"  <sitemap><loc>{DOM}/sitemap-0.xml</loc><lastmod>{najnowsza}</lastmod></sitemap>\n</sitemapindex>\n", encoding="utf-8")
 
 print("Podglądy:", len(strony), "· JSON-LD:", len(list(out_j.glob('*.json'))),
       "· llms-full.txt pomija strony z zaślepkami:", ", ".join(pominiete) or "—")

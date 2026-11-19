@@ -7,6 +7,7 @@ import Stopka from '../components/Stopka.astro';
 import Okna from '../components/Okna.astro';
 import Wezwanie from '../components/bloki/Wezwanie.astro';
 import type { Kontekst } from '../lib/kontekst';
+import { existsSync, readFileSync } from 'node:fs';
 
 interface Props {
   tytul: string;
@@ -28,6 +29,15 @@ const kanoniczny = new URL(adres === '/' ? '/' : adres, ust.marka.domena).href;
 const urlStrony = new URL(adres, site).href;
 const ogObraz = og && og.plik ? new URL(og.plik, site).href : undefined;
 const k: Kontekst = { ust, baza: new Map(), adres };
+
+// Podgląd wersji roboczej (Netlify deploy preview): plakietka z wynikiem sprawdzenia treści i link do /sprawdzenie.
+// Plik .sprawdzenie.json zapisuje narzedzia/sprawdz_tresci.py --podglad; na witrynie produkcyjnej go nie ma.
+let podglad: { bledy: number; uwagi: number; zaslepki: number } | null = null;
+if (process.env.CONTEXT !== 'production' && existsSync('.sprawdzenie.json')) {
+  try { podglad = JSON.parse(readFileSync('.sprawdzenie.json', 'utf-8')); } catch { podglad = null; }
+}
+const odmiana = (n: number, [jeden, kilka, wiele]: string[]) =>
+  `${n} ${n === 1 ? jeden : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? kilka : wiele}`;
 ---
 <!doctype html>
 <html lang="pl">
@@ -75,6 +85,11 @@ const k: Kontekst = { ust, baza: new Map(), adres };
     )}
 
     <Okna ust={ust} />
+    {podglad && (
+      <a class={podglad.bledy ? 'podglad-plakietka podglad-plakietka--bledy' : 'podglad-plakietka'} href="/sprawdzenie">
+        Podgląd · {odmiana(podglad.bledy, ['błąd', 'błędy', 'błędów'])} · {odmiana(podglad.uwagi, ['uwaga', 'uwagi', 'uwag'])} · {odmiana(podglad.zaslepki, ['zaślepka', 'zaślepki', 'zaślepek'])}
+      </a>
+    )}
 
     <script>
       const menu = document.getElementById('menu') as HTMLDetailsElement | null;

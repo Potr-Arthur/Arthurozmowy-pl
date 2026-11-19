@@ -172,3 +172,13 @@ stopka:
       adres: /regulamin-uslugi
     - tekst: Polityka prywatności i RODO
       adres: /prywatnosc
+
+# Pomiar i reklama (decyzja z 19.11.2026: GTM, GA4, baner zgód z Consent Mode v2, licznik bez cookies;
+# reklamy Google Ads i Meta). Pola zaczną działać po podłączeniu pomiaru przed startem; puste = nic się nie ładuje.
+# Piksele i GA4 ustawia się w GTM, a teksty banera w panelu usługi banera.
+pomiar:
+  gtm: ""
+  baner_usluga: ""
+  baner_id: ""
+  licznik_skrypt: ""
+  licznik_id: ""
