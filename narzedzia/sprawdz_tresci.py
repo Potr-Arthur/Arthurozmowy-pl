@@ -169,6 +169,9 @@ for sc, tx in teksty(ust):
 # ------------------------------------------------ 4. SEO, nagłówki, kotwice, linki, bloki
 
 adresy = {d["seo"]["adres"]: n for n, d in strony.items()}
+# Nazwa strony stoi tylko w pliku strony (strona.nazwa); lista stron w Ustawieniach daje kolejność menu i stopki.
+for l in ust["nawigacja"]["strony"]:
+    l["tekst"] = strony[adresy[l["adres"]]]["strona"]["nazwa"] if l["adres"] in adresy else (l.get("tekst") or l["adres"])
 nazwy_stron = {l["tekst"]: l["adres"] for l in ust["nawigacja"]["strony"]}
 nazwa_po_adresie = {v: k for k, v in nazwy_stron.items()}
 kotwice = {n: {} for n in strony}   # kotwica → nazwa rozdziału w spisie treści (albo None)
@@ -331,7 +334,7 @@ for q in baza:
         ln = q.get("link") or {}
         sprawdz_link(f"baza · {q['id']}", ln.get("adres"), ln.get("tekst"))
 for l in ust["nawigacja"]["strony"]:
-    sprawdz_link("nawigacja", l["adres"], l["tekst"])
+    sprawdz_link("nawigacja", l["adres"])
 for l in ust["naglowek"]["linki"]:
     sprawdz_link("belka górna", l["adres"], l["tekst"])
 for l in ust["stopka"]["linki_prawne"]:
@@ -407,10 +410,6 @@ for p in ust["pakiety"]["lista"]:
 
 # ------------------------------------------------ 7. jeden temat, jedna nazwa
 
-for l in ust["nawigacja"]["strony"]:
-    cel = adresy.get(l["adres"])
-    if cel and strony[cel]["strona"]["nazwa"] != l["tekst"]:
-        blad(f"nawigacja: „{l['tekst']}” różni się od nazwy strony „{strony[cel]['strona']['nazwa']}”")
 etykiety = {}
 for n, d in strony.items():
     rozdzialy = ([d["wejscie"]] if d["wejscie"].get("etykieta") else []) + [s for s in d.get("sekcje") or [] if s.get("etykieta")]

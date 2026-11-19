@@ -1,5 +1,5 @@
 strona:
-  nazwa: Jej sprawy
+  nazwa: Arthurozmowy – rozmowy z Arthurem
   szablon: glowna
 wejscie:
   h1: Mama znów będzie miała coś ciekawego do przeżywania, zastanawiania się i opowiadania.
@@ -17,7 +17,6 @@ wejscie:
     - typ: wezwanie
       rodzaj: glowne
       objasnienie: true
-  etykieta: Jej sprawy
   kotwica: jej-sprawy
 sekcje:
   - h2: Mama mówi, czym żyje i co myśli. Arthur pyta, dlaczego.

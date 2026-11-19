@@ -38,8 +38,10 @@ def uzupelnij(d):
 
 wczytane = {p.stem: uzupelnij(yaml.safe_load(p.read_text(encoding="utf-8"))) for p in (C / "strony").glob("*.yml")}
 po_adresie = {d["seo"]["adres"]: n for n, d in wczytane.items()}
-# Kolejność stron jak w menu (nawigacja.strony), na końcu strona błędu.
+# Kolejność stron jak w menu (nawigacja.strony), na końcu strona błędu. Nazwa strony stoi tylko w pliku strony.
 KOLEJNOSC = [po_adresie[l["adres"]] for l in ust["nawigacja"]["strony"] if l["adres"] in po_adresie]
+for l in ust["nawigacja"]["strony"]:
+    l["tekst"] = wczytane[po_adresie[l["adres"]]]["strona"]["nazwa"] if l["adres"] in po_adresie else l.get("tekst") or l["adres"]
 KOLEJNOSC += [n for n in sorted(wczytane) if n not in KOLEJNOSC]
 strony = {n: wczytane[n] for n in KOLEJNOSC}
 GLOWNA = po_adresie["/"]
@@ -196,7 +198,7 @@ m += ["## Ustawienia wspólne · `src/content/ustawienia/witryna.yml`", "",
       "| Grupa | Co zawiera | Gdzie się pokazuje |", "|---|---|---|",
       "| `marka` | nazwa, domena, definicja, logo | belka górna, JSON-LD, llms.txt, odpowiedź „Czym są arthurozmowy?” |",
       "| `naglowek` | napisy menu, linki w belce, przycisk zamówienia, Panel klienta | belka górna każdej strony |",
-      "| `nawigacja` | jedna lista stron z nazwami i adresami, napis „Wszystkie pytania” | menu, stopka, akordeony pytań |",
+      "| `nawigacja` | kolejność stron (adresy; nazwy z plików stron), napisy „Wszystkie pytania” i „Więcej:” | menu, stopka, akordeony pytań, linki wewnętrzne |",
       "| `wezwania` | trzy przyciski CTA: rozmowa, zamówienie, kontakt | bloki „Przycisk CTA” i stopka |",
       "| `okno_rozmowy`, `okno_kontaktu` | teksty dwóch okienek z formularzami | okienka otwierane przyciskami CTA |",
       "| `pakiety` | ceny, liczby rozmów, opisy | karty ceny, JSON-LD Offer, llms.txt |",

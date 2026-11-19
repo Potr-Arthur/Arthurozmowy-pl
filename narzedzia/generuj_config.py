@@ -101,6 +101,9 @@ def wczytaj(p):
 UST = wczytaj(C / "ustawienia" / "witryna.yml")
 STRONY_TRESC = {p.stem: wczytaj(p) for p in sorted((C / "strony").glob("*.yml"))}
 PO_ADRESIE = {d["seo"]["adres"]: d for d in STRONY_TRESC.values()}
+# Nazwa strony stoi tylko w pliku strony (strona.nazwa); lista stron w Ustawieniach daje kolejność menu i stopki.
+for _l in UST["nawigacja"]["strony"]:
+    _l["tekst"] = PO_ADRESIE[_l["adres"]]["strona"]["nazwa"] if _l["adres"] in PO_ADRESIE else _l.get("tekst") or _l["adres"]
 
 def skrot(tx, n=48):
     tx = " ".join((tx or "").split())
@@ -320,8 +323,8 @@ def pola_strony(szablon):
     pola = [
         obj("strona", "Nazwa strony", collapsed=False, fields=[
             s("nazwa", "Nazwa strony", required=True,
-              hint="Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. "
-                   "Zmieniasz ją też w Elementach wspólnych › Lista stron."),
+              hint="Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście stron "
+                   "w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do poprawienia."),
             {"label": "Szablon", "name": "szablon", "widget": "hidden", "default": szablon},
         ]),
         obj("wejscie", "Wejście (H1, zdjęcie, lid, bloki)", collapsed=False, fields=wejscie_pola(szablon)),
@@ -345,6 +348,9 @@ STRONY = [
     ("kontakt", "Kontakt", "podstrona", "/kontakt"),
     ("404", "Strona błędu (404)", "blad", "/404"),
 ]
+# W lewej kolumnie panelu strony stoją pod nazwami z ich plików (zmiana nazwy na stronie zmienia też tę listę).
+STRONY_W_PANELU = [(n, (STRONY_TRESC[n]["strona"]["nazwa"] if n in STRONY_TRESC else l)
+                    + (" (strona główna)" if sz == "glowna" else ""), sz, adres) for n, l, sz, adres in STRONY]
 
 # ---------------------------------------------------------------- strony kampanii
 
@@ -460,9 +466,10 @@ POLA_WSPOLNE = [
         b("przycisk_staly", "Przycisk „Porozmawiaj z Arthurem” przyklejony do dołu ekranu na telefonie", True),
     ]),
     obj("nawigacja", "Lista stron (menu i stopka)", hint=(
-        "Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, linkach wewnętrznych "
-        "i rozdziałach strony głównej. Zmieniasz ją też w polu „Nazwa strony” na tej stronie."), fields=[
-        lista_linkow("strony", "Strony, w kolejności menu", adres_readonly=True, allow_add=False, allow_remove=False),
+        "Kolejność stron w menu i stopce. Nazwę strony zmieniasz na samej stronie, w polu „Nazwa strony”: "
+        "menu, stopka i linki biorą ją stamtąd."), fields=[
+        lst("strony", "Kolejność stron w menu i stopce", summary="{{fields.adres}}", label_singular="Strona",
+            allow_add=False, allow_remove=False, fields=[s("adres", "Adres strony", readonly=True)]),
         s("wszystkie_pytania", "Napis linku pod akordeonem pytań"),
         s("wiecej", "Słowo przed linkiem wewnętrznym", hint="Np. „Więcej:”. Po nim stoi nazwa strony albo rozdziału."),
     ]),
@@ -558,7 +565,7 @@ config = {
         {"name": "strony", "label": "Strony", "label_singular": "Strona", "icon": "article",
          "description": OPIS_STRON,
          "files": [{"name": n, "label": l, "file": f"src/content/strony/{n}.yml", "format": "yml",
-                    "preview_path": adres, "fields": pola_strony(sz)} for n, l, sz, adres in STRONY]},
+                    "preview_path": adres, "fields": pola_strony(sz)} for n, l, sz, adres in STRONY_W_PANELU]},
         {"name": "kampanie", "label": "Strony kampanii", "label_singular": "Strona kampanii", "icon": "campaign",
          "description": OPIS_KAMPANII,
          "folder": "src/content/kampanie", "extension": "yml", "format": "yml",

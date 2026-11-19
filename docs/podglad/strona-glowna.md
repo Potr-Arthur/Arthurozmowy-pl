@@ -1,4 +1,4 @@
-# Jej sprawy · /
+# Arthurozmowy – rozmowy z Arthurem · /
 
 *Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
 
@@ -11,9 +11,9 @@
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
 - **Streszczenie dla AI:** Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Dzwoni do mamy klientki co tydzień, w stałym dniu i o stałej godzinie wybranych przez mamę, i rozmawia z nią o jej zainteresowaniach, poglądach i planach, a nie o zdrowiu, lekach czy zakupach. Usługę zamawia i opłaca dorosłe dziecko. Trzy pakiety obejmują od jednej do trzech rozmów w tygodniu i kosztują 279, 299 albo 349 zł miesięcznie z VAT, a pierwszy, próbny miesiąc jest bezpłatny. Arthur nigdy nie udaje człowieka.  `geo.streszczenie`
 
-## Wejście · #jej-sprawy · w spisie treści: „Jej sprawy”
+## Wejście
 
-**Nazwa strony:** JEJ SPRAWY  `strona.nazwa`
+**Nazwa strony:** ARTHUROZMOWY – ROZMOWY Z ARTHUREM  `strona.nazwa`
 
 **Plik graficzny:** `/images/strony/arthurozmowy-jej-sprawy-mama-opowiada-21x9.webp` · telefon: `/images/strony/arthurozmowy-jej-sprawy-mama-opowiada-4x3.webp`  `wejscie.zdjecie`
 

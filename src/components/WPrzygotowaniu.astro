@@ -3,11 +3,11 @@
 // Nazwa strony i H1 to tekst linku z Ustawień (stopka.linki_prawne), powrót prowadzi na stronę główną pod jej nazwą.
 import Uklad from '../layouts/Uklad.astro';
 import Link from './bloki/Link.astro';
-import { getEntry } from 'astro:content';
+import { ustawienia } from '../lib/ustawienia';
 import type { Kontekst } from '../lib/kontekst';
 interface Props { adres: string }
 const { adres } = Astro.props;
-const ust = (await getEntry('ustawienia', 'witryna'))!.data;
+const ust = await ustawienia();
 const nazwa = ust.stopka.linki_prawne.find((l: any) => l.adres === adres)?.tekst ?? adres;
 const glowna = ust.nawigacja.strony.find((s: any) => s.adres === '/');
 const k: Kontekst = { ust, baza: new Map(), adres };
