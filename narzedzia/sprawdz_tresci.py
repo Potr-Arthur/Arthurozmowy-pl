@@ -521,6 +521,7 @@ def raport_podgladu():
     strona = f"""<!doctype html>
 <html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow"><title>Sprawdzenie treści · podgląd</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <style>
 :root{{--papier:#F2EFE6;--onyks:#0B0C10;--mech:#48594F;--rdza:#B3562E;--piasek:#DBD2C3;--jajko:#FFDE59}}
 body{{margin:0;background:var(--papier);color:var(--onyks);font:17px/1.55 "IBM Plex Sans",system-ui,sans-serif}}
@@ -530,7 +531,7 @@ h2{{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;margin:2rem 0 .6
 .stan{{font-weight:600;padding:12px 16px;border-radius:0 0 24px 0;background:var(--piasek)}}
 .stan.zle{{background:var(--rdza);color:#fff}}
 ul{{margin:0;padding-left:1.2rem;display:grid;gap:.45rem}}
-.bledy li{{color:var(--rdza)}} .pusto{{list-style:none;margin-left:-1.2rem;color:var(--mech)}}
+.bledy li:not(.pusto){{color:var(--rdza)}} .pusto{{list-style:none;margin-left:-1.2rem;color:var(--mech)}}
 a{{color:inherit;border:1px solid var(--rdza);border-radius:30px;padding:0 .45em;text-decoration:none}}
 .meta{{color:var(--mech);font-size:.9rem}}
 </style></head><body><main>

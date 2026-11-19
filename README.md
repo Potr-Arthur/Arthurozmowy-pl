@@ -3,10 +3,10 @@
 ## Budowa witryny (WITRYNA)
 
 - **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. Szablony są w modelu blokowym makiety V2: jeden typ bloku to jeden komponent w `src/components/bloki/`.
-- **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`), Astro.
+- **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`, mapa strony), Astro. Podgląd wersji roboczej z panelu buduje się także przy błędzie, a wynik sprawdzenia pokazuje na stronie `/sprawdzenie` i w plakietce na każdej stronie podglądu.
 - **Adres tymczasowy:** każda strona ma `noindex`, nagłówek `X-Robots-Tag` i `robots.txt` blokujący roboty. Przy starcie na arthurozmowy.pl: zmienna `PUBLIKACJA=tak` na Netlify (włącza docelowy `narzedzia/robots-docelowy.txt` i indeksowanie) i usunięcie bloku `X-Robots-Tag` z `netlify.toml`.
 - **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to strony „w przygotowaniu”.
-- **Redakcja `/admin`** (Sveltia CMS): logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium, uprawnienie Contents: read and write).
+- **Redakcja `/admin`** (Sveltia CMS 0.259.0): układ paneli opisuje dokument projektu `claude/CMS_panele_redakcji_v1.md`. Zapis tworzy wersję roboczą (pull request z podglądem Netlify), a „Opublikuj” wysyła ją na witrynę. Logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium; Contents i Pull requests: read and write, Commit statuses: read).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
 Treści w tym repozytorium są w stanie z 17.11.2026 (makieta V2, stały termin rozmów o dowolnej porze, pakiety liczone tygodniami, raport co tydzień ze wzorem). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
@@ -18,8 +18,9 @@ src/content/
   strony/                 10 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
     strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
+  kampanie/               strony kampanii pod reklamy, poza menu, mapą strony i llms.txt (dodaje je redaktor)
   pytania/baza.yml        24 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
-  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka
+  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka, pomiar
 src/content.config.ts     schemat kolekcji Astro 5
 public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
@@ -27,6 +28,7 @@ public/images/marka/      logo (SVG i PNG) i ikony 192 i 512 px do manifestu
 public/admin/config.yml   konfiguracja Sveltia, generowana skryptem
 public/llms.txt           streszczenie witryny dla modeli AI (generowane)
 public/llms-full.txt      pełne teksty widocznych stron bez zaślepek (generowane)
+public/sitemap-index.xml  mapa strony i sitemap-0.xml z adresami stron z menu (generowane)
 narzedzia/                trzy skrypty: konfiguracja CMS, sprawdzenie treści, pliki pochodne
 docs/podglad/             tekst każdej strony w kolejności wyświetlania, z nazwą modułu i pola CMS
 docs/mapa-pol.md          mapa: strona → rozdział → bloki → pola w CMS
@@ -74,13 +76,14 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 
 ## Jak redaktor pracuje w CMS
 
-| Grupa w CMS | Plik | Co redaktor zmienia |
+| Panel w CMS | Plik | Co redaktor zmienia |
 |---|---|---|
-| Strony | `src/content/strony/*.yml` | SEO, streszczenie dla AI, wejście strony i rozdziały z blokami |
+| Strony | `src/content/strony/*.yml` | wejście strony i treść rozdziałów, SEO, streszczenie dla AI; układ rozdziałów i bloków jest zablokowany |
+| Strony kampanii | `src/content/kampanie/*.yml` | strony pod reklamy: dodaje je, układa z tych samych bloków i usuwa |
 | Pytania i odpowiedzi | `src/content/pytania/baza.yml` | treść pytań, odpowiedzi i linków pod nimi |
-| Ustawienia | `src/content/ustawienia/witryna.yml` | belka, lista stron, przyciski CTA, okienka, pakiety i ceny, dane firmy, stopka |
+| Elementy wspólne | `src/content/ustawienia/witryna.yml` | pakiety i ceny, przyciski CTA, okienka, belka, lista stron, dane firmy, stopka, pomiar, marka |
 
-Redaktor może zmienić kolejność rozdziałów i bloków, dodać blok dowolnego typu, ukryć zdjęcie albo kartę cytatu i wybrać pytania do akordeonu. Zmiana ceny w Ustawieniach zmienia karty ceny na obu stronach, dane strukturalne i `llms.txt`.
+Na stronach z menu redaktor zmienia treść rozdziałów i bloków, ukrywa zdjęcie albo kartę cytatu i wybiera pytania do akordeonu; układ zmienia paczka z WITRYNY. Adresy linków wybiera z listy stron i rozdziałów, którą `generuj_config.py` buduje z plików treści. Zmiana ceny w Elementach wspólnych zmienia karty ceny na obu stronach, dane strukturalne i `llms.txt`. Zapis w panelu usuwa z pliku komentarze YAML i układa pola w kolejności panelu.
 
 ## SEO i GEO
 
@@ -122,7 +125,7 @@ python3 narzedzia/sprawdz_tresci.py
 python3 narzedzia/buduj_pochodne.py
 ```
 
-`generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik i oba pliki dla AI.
+`generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. Z opcją `--podglad` zapisuje też stronę `public/sprawdzenie.html` i plakietkę dla podglądu wersji roboczej i nie zatrzymuje budowania. Sprawdza również strony kampanii (adres, słowa zakazane, bloki, zdjęcia). `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik, oba pliki dla AI i mapę strony.
 
 Stan na 17.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas), 6 uwag (dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
 
