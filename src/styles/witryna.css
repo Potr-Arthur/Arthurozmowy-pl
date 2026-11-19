@@ -365,7 +365,8 @@ body:has(.menu[open]) .stale{display:none}
 .zgody__przycisk:hover{background:color-mix(in srgb,var(--sky) 88%,var(--onyks))}
 .zgody__ustawienia{font:500 1rem/1.25 var(--font-tekst);padding:11px 18px;border:1px solid var(--rdza);border-radius:var(--r-30);background:none;color:var(--onyks);cursor:pointer}
 .zgody__ustawienia:hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)}
-@media (max-width:759px){.zgody__przycisk{flex:1 1 140px}}
+@media (max-width:759px){.zgody__przycisk{flex:1 1 100%;padding-block:11px}}
+.zgody__przycisk,.zgody__ustawienia,.zgody a{white-space:nowrap}
 .zgody fieldset{border:0;margin:0;padding:0;display:grid}
 .zgody__kategoria{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start;padding:12px 0;border-top:1px solid var(--linia);cursor:pointer}
 .zgody__kategoria:last-child{border-bottom:1px solid var(--linia)}
