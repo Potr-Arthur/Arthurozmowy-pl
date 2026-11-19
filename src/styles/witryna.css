@@ -242,7 +242,7 @@ main a:not(.cta):hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)
 .belka{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--t1);border-bottom:1px solid var(--linia)}
 .belka__wnetrze{display:flex;align-items:center;gap:12px 22px;min-height:var(--belka);padding-block:10px}
 .logo{display:block;flex:none}
-.logo img{display:block;height:34px;width:auto}
+.logo img{display:block;height:44px;width:auto}
 .belka__linki{display:flex;gap:4px 22px}
 .belka__linki a,.menu__linki a{color:var(--fg);text-decoration:none;font-weight:500;padding-block:4px;border-bottom:2px solid transparent}
 .belka__linki a:hover,.menu__linki a:hover{border-bottom-color:var(--rdza)}

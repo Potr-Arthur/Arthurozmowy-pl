@@ -34,8 +34,8 @@ Razem zdjęć: 20.
 | arthurozmowy-og-glowna.jpg | Arthurozmowy – rozmowy z Arthurem | Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu | JPG · 1200 × 630 | gotowe |
 | arthurozmowy-og-o-nas.jpg | O nas | Mama o siwych włosach siedzi wyprostowana i z uwagą patrzy w bok, poza kadr | JPG · 1200 × 630 | gotowe |
 | arthurozmowy-og-mama-portret-usmiech.jpg | Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Bezpieczeństwo, Pytania, Kontakt | Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw | JPG · 1200 × 630 | gotowe |
-| arthur-logo.svg | belka górna każdej strony | Arthur | SVG | gotowe |
-| arthur-logo.png | miejsca, w których SVG nie działa (np. e-mail) | — | PNG · 1025 × 380 | gotowe |
+| arthur-logo.svg | belka górna każdej strony | arthurozmowy | SVG | gotowe |
+| arthur-logo.png | miejsca, w których SVG nie działa (np. e-mail) | — | PNG · 1025 × 566 | gotowe |
 | favicon.ico | karta przeglądarki | — | ICO · 16, 32 i 48 px | gotowe |
 | apple-touch-icon.png | ikona na ekranie telefonu Apple | — | PNG · 180 × 180 | gotowe |
 | arthur-ikona-192.png | ikona aplikacji (manifest) | — | PNG · 192 × 192 | gotowe |

@@ -11976,6 +11976,10 @@ singletons:
         name: alt
         widget: string
         required: false
+        hint: Nazwa, którą widać w logo, np. „arthurozmowy”.
+      hint: 'Logo stoi w belce każdej strony (44 px wysokości), więc musi być lekkie: SVG z samymi kształtami liter,
+        przycięty do liter, bez marginesów. Eksport z Canvy z gradientem wstawia do SVG obrazy PNG (kilka MB); taki
+        plik WITRYNA przerabia na wektor. Sprawdzenie treści ostrzega przy pliku powyżej 200 KB.'
     - label: Nazwa usługi
       name: nazwa
       widget: string
