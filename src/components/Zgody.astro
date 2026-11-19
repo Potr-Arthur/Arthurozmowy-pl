@@ -1,0 +1,142 @@
+---
+// Okienko zgód na pliki cookie (własne, decyzja z 19.11.2026). Teksty z Ustawień (zgody), kategorie i Consent Mode v2
+// w src/lib/zgody.ts. Pokazuje się przy pierwszej wizycie (i po roku albo po zmianie WERSJA) oraz po przycisku
+// „Ustawienia plików cookie” w stopce. „Zgadzam się” i „Nie zgadzam się” wyglądają tak samo.
+// W kodzie strony stoi na początku <body>, żeby czytnik ekranu i klawiatura trafiły na nie przed treścią;
+// na ekranie jest przyklejone do dołu.
+import { inline } from '../lib/tekst';
+interface Props { ust: any }
+const { ust } = Astro.props;
+const z = ust.zgody ?? {};
+const f = ust.firma;
+---
+<div id="zgody" class="zgody" role="dialog" aria-modal="false" aria-labelledby="zgody-tytul" hidden>
+  <div class="zgody__karta">
+    <button type="button" class="okno__zamknij zgody__zamknij" data-zgody="zamknij" aria-label="Zamknij" hidden>×</button>
+    <div class="zgody__start">
+      <p class="zgody__tytul" id="zgody-tytul" tabindex="-1">{z.tytul}</p>
+      <p set:html={inline(z.tekst, f)} />
+      <div class="zgody__przyciski">
+        <button type="button" class="zgody__przycisk" data-zgody="wszystkie">{z.przycisk_zgoda}</button>
+        <button type="button" class="zgody__przycisk" data-zgody="odmowa">{z.przycisk_odmowa}</button>
+        <button type="button" class="zgody__ustawienia" data-zgody="ustawienia">{z.przycisk_ustawienia}</button>
+      </div>
+    </div>
+    <form class="zgody__wybor" hidden>
+      <p class="zgody__tytul" id="zgody-tytul-wybor" tabindex="-1">{z.tytul_ustawien}</p>
+      <fieldset>
+        <label class="zgody__kategoria">
+          <input type="checkbox" checked disabled />
+          <span><strong>{z.niezbedne}</strong> <span class="zgody__zawsze">· {z.zawsze}</span></span>
+          <span class="zgody__opis">{z.niezbedne_opis}</span>
+        </label>
+        <label class="zgody__kategoria">
+          <input type="checkbox" name="statystyki" />
+          <strong>{z.statystyki}</strong>
+          <span class="zgody__opis">{z.statystyki_opis}</span>
+        </label>
+        <label class="zgody__kategoria">
+          <input type="checkbox" name="reklamy" />
+          <strong>{z.reklamy}</strong>
+          <span class="zgody__opis">{z.reklamy_opis}</span>
+        </label>
+      </fieldset>
+      <div class="zgody__przyciski">
+        <button type="submit" class="zgody__przycisk">{z.przycisk_zapisz}</button>
+        <button type="button" class="zgody__przycisk" data-zgody="wszystkie">{z.przycisk_zgoda}</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  import { KLUCZ, WERSJA, WAZNOSC_DNI, sygnaly, type Wybor } from '../lib/zgody';
+
+  const okno = document.getElementById('zgody');
+  if (okno) {
+    const start = okno.querySelector<HTMLElement>('.zgody__start')!;
+    const wybor = okno.querySelector<HTMLFormElement>('.zgody__wybor')!;
+    const zamknij = okno.querySelector<HTMLElement>('.zgody__zamknij')!;
+    let powrot: HTMLElement | null = null;
+
+    // Zapisany wybór: localStorage, bo decyzja nie musi trafiać na serwer. Pusty albo nieczytelny = pytamy.
+    const odczytaj = (): Wybor | null => {
+      try {
+        const z = JSON.parse(localStorage.getItem(KLUCZ) || 'null');
+        if (z && z.wersja === WERSJA && Date.now() - z.czas < WAZNOSC_DNI * 864e5) return z;
+      } catch { /* przeglądarka bez dostępu do pamięci: okienko pokaże się znowu */ }
+      return null;
+    };
+
+    const pokaz = (ustawienia: boolean, fokus: boolean) => {
+      const z = odczytaj();
+      start.hidden = ustawienia;
+      wybor.hidden = !ustawienia;
+      zamknij.hidden = !z;
+      if (ustawienia) {
+        (wybor.elements.namedItem('statystyki') as HTMLInputElement).checked = !!z?.statystyki;
+        (wybor.elements.namedItem('reklamy') as HTMLInputElement).checked = !!z?.reklamy;
+      }
+      okno.setAttribute('aria-labelledby', ustawienia ? 'zgody-tytul-wybor' : 'zgody-tytul');
+      okno.hidden = false;
+      if (fokus) okno.querySelector<HTMLElement>(ustawienia ? '#zgody-tytul-wybor' : '#zgody-tytul')?.focus();
+    };
+
+    const schowaj = () => {
+      okno.hidden = true;
+      powrot?.focus();
+      powrot = null;
+    };
+
+    // Po cofnięciu zgody usuwamy pliki cookie, które zdążyły zapisać GA4 i reklamy.
+    const usunPliki = (przedrostki: string[]) => {
+      const czesci = location.hostname.split('.');
+      const domeny = [''];
+      for (let i = 0; i < czesci.length - 1; i++) domeny.push('.' + czesci.slice(i).join('.'));
+      document.cookie.split(';').map((c) => c.split('=')[0].trim())
+        .filter((n) => przedrostki.some((p) => n.startsWith(p)))
+        .forEach((n) => domeny.forEach((d) => {
+          document.cookie = `${n}=; Max-Age=0; path=/${d ? `; domain=${d}` : ''}`;
+        }));
+    };
+
+    const zapisz = (w: Wybor) => {
+      try {
+        localStorage.setItem(KLUCZ, JSON.stringify({ wersja: WERSJA, czas: Date.now(), ...w }));
+      } catch { /* bez pamięci przeglądarki wybór obowiązuje do końca wizyty */ }
+      const g = (window as any).gtag;
+      if (typeof g === 'function') g('consent', 'update', sygnaly(w));
+      (window as any).dataLayer?.push({ event: 'zgody_zapisane', zgody_statystyki: w.statystyki, zgody_reklamy: w.reklamy });
+      if (!w.statystyki) usunPliki(['_ga']);
+      if (!w.reklamy) usunPliki(['_gcl', '_fbp', '_fbc']);
+      schowaj();
+    };
+
+    okno.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest<HTMLElement>('[data-zgody]');
+      if (!b) return;
+      const co = b.dataset.zgody;
+      if (co === 'wszystkie') zapisz({ statystyki: true, reklamy: true });
+      else if (co === 'odmowa') zapisz({ statystyki: false, reklamy: false });
+      else if (co === 'ustawienia') pokaz(true, true);
+      else if (co === 'zamknij') schowaj();
+    });
+    wybor.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const dane = new FormData(wybor);
+      zapisz({ statystyki: dane.has('statystyki'), reklamy: dane.has('reklamy') });
+    });
+    okno.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && odczytaj()) schowaj();
+    });
+    // Przycisk „Ustawienia plików cookie” w stopce otwiera od razu wybór kategorii.
+    document.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest<HTMLElement>('[data-zgody-otworz]');
+      if (!b) return;
+      powrot = b;
+      pokaz(true, true);
+    });
+
+    if (!odczytaj()) pokaz(false, false);
+  }
+</script>

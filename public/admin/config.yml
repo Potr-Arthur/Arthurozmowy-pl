@@ -418,6 +418,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -872,6 +874,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -1469,6 +1473,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -1923,6 +1929,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -2520,6 +2528,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -2974,6 +2984,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -3571,6 +3583,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -4025,6 +4039,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -4622,6 +4638,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -5076,6 +5094,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -5673,6 +5693,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -6127,6 +6149,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -6724,6 +6748,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -7178,6 +7204,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -7775,6 +7803,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -8229,6 +8259,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -8826,6 +8858,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -9280,6 +9314,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -9714,6 +9750,8 @@ collections:
             value: /regulamin-uslugi
           - label: Polityka prywatności i RODO
             value: /prywatnosc
+          - label: Pliki cookie
+            value: /pliki-cookie
           multiple: false
           required: false
           hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -10018,6 +10056,8 @@ collections:
               value: /regulamin-uslugi
             - label: Polityka prywatności i RODO
               value: /prywatnosc
+            - label: Pliki cookie
+              value: /pliki-cookie
             multiple: false
             required: false
             hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -10632,6 +10672,8 @@ collections:
             value: /regulamin-uslugi
           - label: Polityka prywatności i RODO
             value: /prywatnosc
+          - label: Pliki cookie
+            value: /pliki-cookie
           multiple: false
           required: false
           hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -11050,6 +11092,8 @@ collections:
             value: /regulamin-uslugi
           - label: Polityka prywatności i RODO
             value: /prywatnosc
+          - label: Pliki cookie
+            value: /pliki-cookie
           multiple: false
           required: false
           hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -11381,6 +11425,8 @@ singletons:
           value: /regulamin-uslugi
         - label: Polityka prywatności i RODO
           value: /prywatnosc
+        - label: Pliki cookie
+          value: /pliki-cookie
         multiple: false
         required: false
         hint: Strona albo rozdział. Nowy rozdział pojawi się na liście po przebudowie konfiguracji panelu.
@@ -11769,7 +11815,7 @@ singletons:
         value: napisz
       multiple: true
       required: false
-    - label: Zdanie o statystykach
+    - label: Zdanie o plikach cookie
       name: prywatnosc
       widget: string
       required: false
@@ -11795,6 +11841,80 @@ singletons:
       summary: '{{fields.tekst}}'
       allow_add: false
       allow_remove: false
+    - label: Napis przycisku „Ustawienia plików cookie”
+      name: ustawienia_cookie
+      widget: string
+      required: false
+      hint: Przycisk stoi za linkami prawnymi i otwiera okienko zgód, żeby można było zmienić decyzję.
+  - label: Okienko zgód (pliki cookie)
+    name: zgody
+    widget: object
+    collapsed: true
+    required: false
+    fields:
+    - label: Tytuł okienka
+      name: tytul
+      widget: string
+      required: false
+    - label: Tekst okienka
+      name: tekst
+      widget: text
+      required: false
+      hint: 'Kto zapisuje pliki cookie i po co, że bez zgody witryna działa tak samo i gdzie zmienić decyzję. Link:
+        [Pliki cookie](/pliki-cookie). Słowa zakazane: senior, aktywny senior, podopieczny, osoba w wieku senioralnym,
+        złota jesień, jesień życia, srebrna gospodarka, aktywizacja, monitoring, kontrola, nadzór, opiekun, kompleksowy,
+        dedykowany, innowacyjny, nowoczesny, rewolucyjny.'
+    - label: Przycisk zgody na wszystkie
+      name: przycisk_zgoda
+      widget: string
+      required: false
+    - label: Przycisk odmowy
+      name: przycisk_odmowa
+      widget: string
+      required: false
+    - label: Przycisk wyboru kategorii
+      name: przycisk_ustawienia
+      widget: string
+      required: false
+    - label: Tytuł wyboru kategorii
+      name: tytul_ustawien
+      widget: string
+      required: false
+    - label: 'Kategoria 1: nazwa'
+      name: niezbedne
+      widget: string
+      required: false
+    - label: 'Kategoria 1: opis'
+      name: niezbedne_opis
+      widget: text
+      required: false
+    - label: Dopisek przy kategorii 1
+      name: zawsze
+      widget: string
+      required: false
+    - label: 'Kategoria 2: nazwa'
+      name: statystyki
+      widget: string
+      required: false
+    - label: 'Kategoria 2: opis (Google Analytics)'
+      name: statystyki_opis
+      widget: text
+      required: false
+    - label: 'Kategoria 3: nazwa'
+      name: reklamy
+      widget: string
+      required: false
+    - label: 'Kategoria 3: opis (Google Ads, Meta)'
+      name: reklamy_opis
+      widget: text
+      required: false
+    - label: Przycisk zapisu wyboru
+      name: przycisk_zapisz
+      widget: string
+      required: false
+    hint: Pokazuje się przy pierwszej wizycie i po przycisku „Ustawienia plików cookie” w stopce. „Zgadzam się”
+      i „Nie zgadzam się” wyglądają tak samo, tak wymaga prawo. Trzy kategorie są stałe; nowy cel albo nowe narzędzie
+      dodaje WITRYNA razem z opisem na stronie Pliki cookie.
   - label: Pomiar i reklama
     name: pomiar
     widget: object
@@ -11809,20 +11929,6 @@ singletons:
       pattern:
       - ^(GTM-[A-Z0-9]+)?$
       - Np. GTM-ABC1234
-    - label: Usługa banera zgód
-      name: baner_usluga
-      widget: select
-      options:
-      - label: Cookiebot
-        value: cookiebot
-      - label: CookieYes
-        value: cookieyes
-      multiple: false
-      required: false
-    - label: Identyfikator banera zgód
-      name: baner_id
-      widget: string
-      required: false
     - label: Adres skryptu licznika bez cookies
       name: licznik_skrypt
       widget: string
@@ -11833,8 +11939,9 @@ singletons:
       widget: string
       required: false
       hint: Tylko Umami; przy Plausible zostaje puste.
-    hint: Pola zaczną działać po podłączeniu pomiaru przed startem; do tego czasu zostają puste. Piksele Google
-      Ads i Meta oraz GA4 ustawia się w GTM, a teksty banera w panelu usługi banera.
+    hint: Pola zaczną działać po podłączeniu pomiaru przed startem; do tego czasu zostają puste. Działają tylko
+      na witrynie, nie w podglądzie. GA4 oraz piksele Google Ads i Meta ustawia się w GTM i uruchamiają się dopiero
+      po zgodzie w okienku zgód. Licznik bez cookies działa bez zgody.
   - label: Marka
     name: marka
     widget: object

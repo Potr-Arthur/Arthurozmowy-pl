@@ -158,13 +158,13 @@ autor:
   imie_nazwisko: Piotr Jaworski
   adres_strony: /o-nas
 
-# Stopka od góry: trzy przyciski CTA, lista stron z nawigacja.strony, zdanie o statystykach,
-# linia z danymi firmy i adresem e-mail, linki prawne.
+# Stopka od góry: trzy przyciski CTA, lista stron z nawigacja.strony, zdanie o plikach cookie,
+# linia z danymi firmy i adresem e-mail, linki prawne i przycisk „Ustawienia plików cookie” (otwiera okienko zgód).
 stopka:
   wezwania: [glowne, zakupowe, napisz]
-  prywatnosc: Statystyki strony zbieramy bez plików cookies.
+  prywatnosc: Pliki cookie do statystyk i reklam zapisujemy tylko za Twoją zgodą.
   prawa: © 2026 arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41
-  # Na adresie tymczasowym wszystkie trzy to strony „w przygotowaniu”.
+  # Na adresie tymczasowym wszystkie cztery to strony „w przygotowaniu”.
   linki_prawne:
     - tekst: Regulamin strony
       adres: /regulamin-strony
@@ -172,13 +172,34 @@ stopka:
       adres: /regulamin-uslugi
     - tekst: Polityka prywatności i RODO
       adres: /prywatnosc
+    - tekst: Pliki cookie
+      adres: /pliki-cookie
+  ustawienia_cookie: Ustawienia plików cookie
 
-# Pomiar i reklama (decyzja z 19.11.2026: GTM, GA4, baner zgód z Consent Mode v2, licznik bez cookies;
-# reklamy Google Ads i Meta). Pola zaczną działać po podłączeniu pomiaru przed startem; puste = nic się nie ładuje.
-# Piksele i GA4 ustawia się w GTM, a teksty banera w panelu usługi banera.
+# Okienko zgód na pliki cookie (własne, decyzja z 19.11.2026): pokazuje się przy pierwszej wizycie i po przycisku
+# w stopce. „Zgadzam się” i „Nie zgadzam się” wyglądają tak samo. Trzy kategorie są stałe w kodzie (Consent Mode v2):
+# statystyki = analytics_storage, reklamy = ad_storage, ad_user_data, ad_personalization.
+zgody:
+  tytul: Pliki cookie
+  tekst: |-
+    Za Twoją zgodą zapiszemy pliki cookie Google i Meta. Pokażą nam, które strony są czytane i czy przyprowadziła Cię tu nasza reklama, żeby reklamy arthurozmów trafiały do osób, którym mogą się przydać. Bez zgody witryna działa tak samo, a decyzję zmienisz w każdej chwili w stopce. Szczegóły: [Pliki cookie](/pliki-cookie).
+  przycisk_zgoda: Zgadzam się
+  przycisk_odmowa: Nie zgadzam się
+  przycisk_ustawienia: Ustawienia
+  tytul_ustawien: Ustawienia plików cookie
+  niezbedne: Niezbędne
+  niezbedne_opis: Zapisują w przeglądarce Twoją decyzję w sprawie plików cookie, żeby okienko nie wracało na każdej stronie.
+  zawsze: zawsze włączone
+  statystyki: Statystyki
+  statystyki_opis: Google Analytics pokazuje nam, które strony są czytane i skąd przychodzą odwiedzający. Dzięki temu wiemy, co na witrynie poprawić.
+  reklamy: Reklamy
+  reklamy_opis: Google Ads i Meta (Facebook, Instagram) sprawdzają, czy nasza reklama przyprowadziła Cię na witrynę, i mogą pokazywać Ci nasze reklamy na innych stronach.
+  przycisk_zapisz: Zapisz wybór
+
+# Pomiar i reklama (decyzja z 19.11.2026: GTM, GA4, okienko zgód z Consent Mode v2, licznik bez cookies;
+# reklamy Google Ads i Meta). Puste pole = nic się nie ładuje. GA4 i piksele Google Ads i Meta ustawia się w GTM;
+# uruchamiają się dopiero po zgodzie w okienku zgód. Licznik bez cookies działa bez zgody. Tylko na produkcji.
 pomiar:
   gtm: ""
-  baner_usluga: ""
-  baner_id: ""
   licznik_skrypt: ""
   licznik_id: ""

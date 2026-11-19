@@ -475,17 +475,38 @@ POLA_WSPOLNE = [
     ]),
     obj("stopka", "Stopka", fields=[
         sel("wezwania", "Przyciski CTA na górze stopki", WEZWANIA, multiple=True),
-        s("prywatnosc", "Zdanie o statystykach"), s("prawa", "Linia praw autorskich i danych firmy"),
+        s("prywatnosc", "Zdanie o plikach cookie"), s("prawa", "Linia praw autorskich i danych firmy"),
         lista_linkow("linki_prawne", "Linki prawne", summary="{{fields.tekst}}", adres_readonly=True,
                      allow_add=False, allow_remove=False),
+        s("ustawienia_cookie", "Napis przycisku „Ustawienia plików cookie”",
+          hint="Przycisk stoi za linkami prawnymi i otwiera okienko zgód, żeby można było zmienić decyzję."),
+    ]),
+    obj("zgody", "Okienko zgód (pliki cookie)", hint=(
+        "Pokazuje się przy pierwszej wizycie i po przycisku „Ustawienia plików cookie” w stopce. "
+        "„Zgadzam się” i „Nie zgadzam się” wyglądają tak samo, tak wymaga prawo. Trzy kategorie są stałe; "
+        "nowy cel albo nowe narzędzie dodaje WITRYNA razem z opisem na stronie Pliki cookie."), fields=[
+        s("tytul", "Tytuł okienka"),
+        t("tekst", "Tekst okienka", hint=(
+            "Kto zapisuje pliki cookie i po co, że bez zgody witryna działa tak samo i gdzie zmienić decyzję. "
+            "Link: [Pliki cookie](/pliki-cookie). " + ZAKAZANE)),
+        s("przycisk_zgoda", "Przycisk zgody na wszystkie"),
+        s("przycisk_odmowa", "Przycisk odmowy"),
+        s("przycisk_ustawienia", "Przycisk wyboru kategorii"),
+        s("tytul_ustawien", "Tytuł wyboru kategorii"),
+        s("niezbedne", "Kategoria 1: nazwa"),
+        t("niezbedne_opis", "Kategoria 1: opis"),
+        s("zawsze", "Dopisek przy kategorii 1"),
+        s("statystyki", "Kategoria 2: nazwa"),
+        t("statystyki_opis", "Kategoria 2: opis (Google Analytics)"),
+        s("reklamy", "Kategoria 3: nazwa"),
+        t("reklamy_opis", "Kategoria 3: opis (Google Ads, Meta)"),
+        s("przycisk_zapisz", "Przycisk zapisu wyboru"),
     ]),
     obj("pomiar", "Pomiar i reklama", hint=(
-        "Pola zaczną działać po podłączeniu pomiaru przed startem; do tego czasu zostają puste. "
-        "Piksele Google Ads i Meta oraz GA4 ustawia się w GTM, a teksty banera w panelu usługi banera."), fields=[
+        "Pola zaczną działać po podłączeniu pomiaru przed startem; do tego czasu zostają puste. Działają tylko na witrynie, "
+        "nie w podglądzie. GA4 oraz piksele Google Ads i Meta ustawia się w GTM i uruchamiają się dopiero po zgodzie "
+        "w okienku zgód. Licznik bez cookies działa bez zgody."), fields=[
         s("gtm", "Kontener GTM", hint="Np. GTM-ABC1234.", pattern=["^(GTM-[A-Z0-9]+)?$", "Np. GTM-ABC1234"]),
-        sel("baner_usluga", "Usługa banera zgód", [
-            {"label": "Cookiebot", "value": "cookiebot"}, {"label": "CookieYes", "value": "cookieyes"}]),
-        s("baner_id", "Identyfikator banera zgód"),
         s("licznik_skrypt", "Adres skryptu licznika bez cookies", hint="Adres z panelu Plausible albo Umami."),
         s("licznik_id", "Identyfikator witryny w liczniku", hint="Tylko Umami; przy Plausible zostaje puste."),
     ]),
