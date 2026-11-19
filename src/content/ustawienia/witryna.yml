@@ -11,9 +11,10 @@ marka:
   # Definicja, słowo w słowo ta sama w odpowiedzi „Czym są arthurozmowy?”, w danych strukturalnych i w llms.txt (GEO).
   definicja: |-
     Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki.
+  # Logo dwuwierszowe „Arthur / ozmowy” z gradientem (19.11.2026). Wektor bez obrazów w środku, przycięty do liter.
   logo:
     plik: /images/marka/arthur-logo.svg
-    alt: Arthur
+    alt: arthurozmowy
 
 # Belka górna każdej strony, od lewej: logo, przycisk „Menu”, linki z listy „linki”, przycisk „Zamów online”
 # (to samo miejsce docelowe co wezwania.zakupowe) i „Panel klienta”.

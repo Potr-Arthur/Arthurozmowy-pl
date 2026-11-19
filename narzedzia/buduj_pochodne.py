@@ -412,7 +412,16 @@ for plik, gdz in og_miejsca.items():
     lg.append(f"| {plik.rsplit('/', 1)[-1]} | {', '.join(gdz['strony'])} | {gdz['alt']} | JPG · 1200 × 630 | {'gotowe' if jest(plik) else 'do przygotowania'} |")
 logo = ust["marka"]["logo"]
 lg.append(f"| {logo['plik'].rsplit('/', 1)[-1]} | belka górna każdej strony | {logo['alt']} | SVG | {'gotowe' if jest(logo['plik']) else 'do przygotowania'} |")
-for plik_, gdzie_, fmt_ in (("/images/marka/arthur-logo.png", "miejsca, w których SVG nie działa (np. e-mail)", "PNG · 1025 × 380"),
+def wymiary_png(sciezka):
+    """Szerokość i wysokość pliku PNG z nagłówka (bez dodatkowych bibliotek)."""
+    try:
+        h = (PUB / sciezka.lstrip("/")).read_bytes()[:24]
+        return int.from_bytes(h[16:20], "big"), int.from_bytes(h[20:24], "big")
+    except OSError:
+        return None
+wym_png = wymiary_png("/images/marka/arthur-logo.png")
+for plik_, gdzie_, fmt_ in (("/images/marka/arthur-logo.png", "miejsca, w których SVG nie działa (np. e-mail)",
+                             f"PNG · {wym_png[0]} × {wym_png[1]}" if wym_png else "PNG"),
                             ("/favicon.ico", "karta przeglądarki", "ICO · 16, 32 i 48 px"),
                             ("/apple-touch-icon.png", "ikona na ekranie telefonu Apple", "PNG · 180 × 180"),
                             ("/images/marka/arthur-ikona-192.png", "ikona aplikacji (manifest)", "PNG · 192 × 192"),

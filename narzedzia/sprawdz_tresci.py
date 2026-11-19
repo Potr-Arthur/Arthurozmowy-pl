@@ -369,6 +369,17 @@ for n, d in kampanie.items():
 if set(adresy) - {"/404"} != set(nazwy_stron.values()):
     blad(f"Lista stron w nawigacji i pliki stron się różnią: {sorted((set(adresy) - {'/404'}) ^ set(nazwy_stron.values()))}")
 
+# Logo stoi w belce każdej strony: ma być lekkim wektorem (eksport z Canvy z gradientem wstawia obrazy PNG, kilka MB).
+plik_logo = ROOT / "public" / ust["marka"]["logo"]["plik"].lstrip("/")
+if not plik_logo.is_file():
+    blad(f"marka: brak pliku logo {ust['marka']['logo']['plik']}")
+else:
+    kb = plik_logo.stat().st_size // 1024
+    if kb > 200:
+        uwaga(f"marka: plik logo ma {kb} KB i ładuje się na każdej stronie (zalecane do 50 KB, wektor bez obrazów PNG w środku)")
+    if plik_logo.suffix == ".svg" and "<image" in plik_logo.read_text(encoding="utf-8", errors="ignore"):
+        uwaga("marka: logo SVG zawiera obrazy rastrowe (eksport z Canvy); lepszy jest czysty wektor")
+
 # ------------------------------------------------ 4a. teksty alternatywne zdjęć
 
 ALT_ZAKAZ = re.compile(r"\b(Arthur\w*|arthurozm\w*|AI|SI|sztuczn\w+ inteligenc\w+)\b", re.IGNORECASE)

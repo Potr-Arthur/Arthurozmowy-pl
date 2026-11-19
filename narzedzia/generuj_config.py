@@ -520,7 +520,11 @@ POLA_WSPOLNE = [
     obj("marka", "Marka", fields=[
         t("definicja", "Definicja arthurozmów",
           hint="Słowo w słowo to samo w odpowiedzi „Czym są arthurozmowy?”, w danych dla Google i w llms.txt."),
-        obj("logo", "Logo", fields=[img("plik", "Plik SVG", "marka"), s("alt", "Alt")]),
+        obj("logo", "Logo", hint=(
+            "Logo stoi w belce każdej strony (44 px wysokości), więc musi być lekkie: SVG z samymi kształtami liter, "
+            "przycięty do liter, bez marginesów. Eksport z Canvy z gradientem wstawia do SVG obrazy PNG (kilka MB); "
+            "taki plik WITRYNA przerabia na wektor. Sprawdzenie treści ostrzega przy pliku powyżej 200 KB."), fields=[
+            img("plik", "Plik SVG", "marka"), s("alt", "Alt", hint="Nazwa, którą widać w logo, np. „arthurozmowy”.")]),
         s("nazwa", "Nazwa usługi", readonly=True),
         s("domena", "Domena", readonly=True), s("jezyk", "Język", readonly=True),
     ]),
