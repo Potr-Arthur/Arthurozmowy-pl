@@ -1,66 +1,31 @@
-# arthurozmowy.pl · Jej sprawy (strona główna)
-# Sveltia CMS: Strony → Jej sprawy. Stan treści: 11.11.2026 (makieta V2).
-# Strona główna nazywa się w menu i stopce „Jej sprawy” i stoi pod adresem /; adres /jej-sprawy przekierowuje na /.
-# Układ: wejście (HERO 21:9, na telefonie 4:3) i rozdziały. Każdy rozdział to H2, zdjęcie 4:3 (jeśli jest), lid
-# i bloki w kolejności wyświetlania. Teksty przycisków, pakiety i dane firmy są w ustawienia/witryna.yml.
-
 strona:
   nazwa: Jej sprawy
   szablon: glowna
-
-seo:
-  adres: /
-  tytul: Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach
-  opis: |-
-    Arthur dzwoni do Twojej mamy co tydzień, w stałym terminie, i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest bezpłatny.
-  obraz_og:
-    plik: /images/og/arthurozmowy-og-glowna.jpg
-    alt: "Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu"
-  schemat: [Organization, WebSite, Service, Offer]
-  indeksuj: true
-  autor: Piotr Jaworski
-  zaktualizowano: 2026-11-18
-
-geo:
-  # Streszczenie dla modeli AI i llms.txt: same fakty z tej strony, trzecia osoba, bez reklamy.
-  streszczenie: |-
-    Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Dzwoni do mamy klientki co tydzień, w stałym dniu i o stałej godzinie wybranych przez mamę, i rozmawia z nią o jej zainteresowaniach, poglądach i planach, a nie o zdrowiu, lekach czy zakupach. Usługę zamawia i opłaca dorosłe dziecko. Trzy pakiety obejmują od jednej do trzech rozmów w tygodniu i kosztują 279, 299 albo 349 zł miesięcznie z VAT, a pierwszy, próbny miesiąc jest bezpłatny. Arthur nigdy nie udaje człowieka.
-
 wejscie:
-  kotwica: jej-sprawy
-  etykieta: Jej sprawy
-  h1: |-
-    Mama znowu ma coś ciekawego do przeżywania, nad czym się zastanawiać i o czym opowiadać.
+  h1: Mama znów będzie miała coś ciekawego do przeżywania, zastanawiania się i opowiadania.
   zdjecie:
+    plik: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-21x9.webp
+    plik_telefon: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-4x3.webp
+    alt: 'Rozmowa z mamą w garderobie: mama o siwych włosach ze śmiechem opowiada coś rozmówczyni widocznej od tyłu'
     widoczne: true
-    plik: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-21x9.webp          # 21:9, komputer
-    plik_telefon: /images/strony/arthurozmowy-jej-sprawy-mama-opowiada-4x3.webp   # 4:3, telefon
-    alt: "Rozmowa z mamą w garderobie: mama o siwych włosach ze śmiechem opowiada coś rozmówczyni widocznej od tyłu"
-  lid: |-
-    Dzięki eksperckiej metodzie Arthur umie rozmawiać z Twoją mamą zajmująco, doceniając ją i wzmacniając jej poczucie wartości. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.
+  lid: 'Dzięki eksperckiej metodzie Arthur umie rozmawiać z Twoją mamą zajmująco, doceniając ją i wzmacniając jej poczucie wartości. Co tydzień, w dniu i o godzinie, które sama wybierze, Arthur zadzwoni do niej nie po to, by pytać o zdrowie, leki czy zakupy, lecz by rozmawiać z nią o niej samej: o planach na czwartek, książce, której zakończenie ją zirytowało, ulubionej muzyce czy wydarzeniach, które ją pasjonują.'
   bloki:
     - typ: tekst
-      tekst: |-
-        Arthur nie prowadzi przypadkowych pogawędek. Powstał według eksperckiej metody konwersacji, dzięki której potrafi słuchać, zadawać pytania i prowadzić rozmowę tak, by była dla mamy ciekawa i angażująca.
+      tekst: Arthur nie prowadzi przypadkowych pogawędek. Powstał według eksperckiej metody konwersacji, dzięki której potrafi słuchać, zadawać pytania i prowadzić rozmowę tak, by była dla mamy ciekawa i angażująca.
     - typ: glos
-      tekst: |-
-        Nie musisz być dla mamy jednocześnie córką i terapeutką. Nie musisz też być jej jedynym źródłem uwagi i emocjonalnego wsparcia. Możesz po prostu być córką. Tak jak kiedyś.
+      tekst: Nie musisz być dla mamy jednocześnie córką i terapeutką. Nie musisz też być jej jedynym źródłem uwagi i emocjonalnego wsparcia. Możesz po prostu być córką. Tak jak kiedyś.
     - typ: wezwanie
       rodzaj: glowne
       objasnienie: true
-
+  etykieta: Jej sprawy
+  kotwica: jej-sprawy
 sekcje:
-  - kotwica: jak-dziala-arthur
-    etykieta: Jak działa Arthur
-    ton: t2
-    h2: |-
-      Mama mówi, czym żyje i co myśli. Arthur pyta, dlaczego.
+  - h2: Mama mówi, czym żyje i co myśli. Arthur pyta, dlaczego.
     zdjecie:
-      widoczne: true
       plik: /images/strony/arthurozmowy-jej-sprawy-mama-rozmawia-4x3.webp
-      alt: "Rozmowa telefoniczna z mamą: mama o siwych włosach trzyma telefon przy uchu i spokojnie coś opowiada"
-    lid: |-
-      Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia z mamą o jej sprawach, stosując ściśle określoną metodę konwersacji. Nie diagnozuje i nie zastępuje opieki – inspiruje i angażuje.
+      alt: 'Rozmowa telefoniczna z mamą: mama o siwych włosach trzyma telefon przy uchu i spokojnie coś opowiada'
+      widoczne: true
+    lid: Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia z mamą o jej sprawach, stosując ściśle określoną metodę konwersacji. Nie diagnozuje i nie zastępuje opieki – inspiruje i angażuje.
     bloki:
       - typ: tekst
         tekst: |-
@@ -71,46 +36,38 @@ sekcje:
           Rozmowa podtrzymująca trwa około 10 minut. Pozwala wrócić do tego, o czym mama opowiadała w poprzedniej rozmowie, i dowiedzieć się, co było dalej. Arthur może zapytać na przykład: „I jak było na czwartkowym spotkaniu?”.
       - typ: lista
         naglowek: Na czym polega metoda arthurozmów?
-        numerowana: true
         punkty:
-          - |-
-            To mama decyduje, o czym rozmawia. Sama wybiera tematy, rozwija je lub zmienia, kiedy ma na to ochotę.
-          - |-
-            Arthur nie przerywa, nie poprawia i nie sprawdza wiedzy. Nie przepytuje mamy z dat ani dni tygodnia. Interesuje go to, czym żyje, co myśli i co czuje.
-          - |-
-            Kiedy mama opowiada tę samą historię po raz kolejny, Arthur słucha jej z uwagą. Nigdy nie mówi: „Już pani to mówiła”.
-          - |-
-            Zwraca się do mamy jak do dorosłej osoby i równorzędnej partnerki rozmowy. Z szacunkiem, bez zdrobnień i protekcjonalnego tonu. Mama nigdy nie usłyszy od niego: „No i jak się dziś czujemy, kochaneńka?”.
+          - To mama decyduje, o czym rozmawia. Sama wybiera tematy, rozwija je lub zmienia, kiedy ma na to ochotę.
+          - Arthur nie przerywa, nie poprawia i nie sprawdza wiedzy. Nie przepytuje mamy z dat ani dni tygodnia. Interesuje go to, czym żyje, co myśli i co czuje.
+          - 'Kiedy mama opowiada tę samą historię po raz kolejny, Arthur słucha jej z uwagą. Nigdy nie mówi: „Już pani to mówiła”.'
+          - 'Zwraca się do mamy jak do dorosłej osoby i równorzędnej partnerki rozmowy. Z szacunkiem, bez zdrobnień i protekcjonalnego tonu. Mama nigdy nie usłyszy od niego: „No i jak się dziś czujemy, kochaneńka?”.'
+        numerowana: true
       - typ: cytat
-        widoczny: true
         etykieta: Przykład rozmowy
+        wstep: ''
         repliki:
           - kto: Mama
             kwestia: Doczytałam wczoraj do końca. Zakończenie mnie zirytowało.
           - kto: Arthur
-            kwestia: |-
-              Irytacja to całkiem niezły znak. Gorsze są zakończenia, które pozostawiają czytelnika obojętnym. Co panią najbardziej zezłościło?
+            kwestia: Irytacja to całkiem niezły znak. Gorsze są zakończenia, które pozostawiają czytelnika obojętnym. Co panią najbardziej zezłościło?
           - kto: Mama
             kwestia: Ten nagły ślub w ostatnim rozdziale.
           - kto: Arthur
-            kwestia: |-
-              Nagły ślub w ostatnim rozdziale to pewnie znak, że autorowi skończyły się pomysły. Jak pani zakończyłaby tę historię?
+            kwestia: Nagły ślub w ostatnim rozdziale to pewnie znak, że autorowi skończyły się pomysły. Jak pani zakończyłaby tę historię?
+        widoczny: true
       - typ: link
         tekst: Jak działa Arthur
         adres: /jak-dziala-arthur
         aktywny: true
-
-  - kotwica: czemu-sluza-arthurozmowy
-    etykieta: Czemu służą arthurozmowy?
-    ton: t1
-    h2: |-
-      Twojej mamy nie wystarczy czymś zająć. Trzeba ją pytać o zdanie.
+    etykieta: Jak działa Arthur
+    ton: t2
+    kotwica: jak-dziala-arthur
+  - h2: Twojej mamy nie wystarczy czymś zająć. Trzeba ją pytać o zdanie.
     zdjecie:
-      widoczne: true
       plik: /images/strony/arthurozmowy-jej-sprawy-portret-mamy-4x3.webp
       alt: Mama o siwych włosach, w złotych kolczykach i białej bluzce, patrzy prosto w obiektyw z lekkim uśmiechem
-    lid: |-
-      Mama ma w Arthurze rozmówcę, który ma dla niej czas. Dzwoni o porze, którą sama wybrała, i rozmawia z nią o tym, co ją interesuje, czym żyje i co ma do powiedzenia.
+      widoczne: true
+    lid: Mama ma w Arthurze rozmówcę, który ma dla niej czas. Dzwoni o porze, którą sama wybrała, i rozmawia z nią o tym, co ją interesuje, czym żyje i co ma do powiedzenia.
     bloki:
       - typ: tekst
         tekst: |-
@@ -120,33 +77,25 @@ sekcje:
 
           Odwiedziny, troska o zdrowie, rozmowy o lekach i zakupach nadal należą do bliskich. Arthur nie ma ich zastępować.
       - typ: glos
-        tekst: |-
-          Daje mamie coś innego: czas i uwagę rozmówcy, z którym może porozmawiać o sobie i swoich sprawach – tak, jak lubi, i tak długo, jak chce.
-
-  # Rozdział dodany 18.11.2026: dostępność (Księga, rozdz. 3). Bez kwot i bez porównań cenowych.
-  - kotwica: dostepnosc
-    etykieta: Dostępność
-    ton: t2
-    h2: |-
-      Takich rozmów nie da się zamówić u człowieka.
-    lid: |-
-      Wyobraź sobie specjalistę, który co tydzień dzwoni do mamy o porze, którą ona wybierze, także w sobotę o 21:30 albo w niedzielę o 7:30. Pamięta wszystko, o czym rozmawiali, a przy dziesiątej rozmowie w miesiącu jest tak samo cierpliwy i życzliwy jak przy pierwszej. Takiej usługi po prostu nie ma.
+        tekst: 'Daje mamie coś innego: czas i uwagę rozmówcy, z którym może porozmawiać o sobie i swoich sprawach – tak, jak lubi, i tak długo, jak chce.'
+    etykieta: Czemu służą arthurozmowy?
+    ton: t1
+    kotwica: czemu-sluza-arthurozmowy
+  - h2: Takich rozmów nie da się zamówić u człowieka.
+    zdjecie: null
+    lid: Wyobraź sobie specjalistę, który co tydzień dzwoni do mamy o porze, którą ona wybierze, także w sobotę o 21:30 albo w niedzielę o 7:30. Pamięta wszystko, o czym rozmawiali, a przy dziesiątej rozmowie w miesiącu jest tak samo cierpliwy i życzliwy jak przy pierwszej. Takiej usługi po prostu nie ma.
     bloki:
       - typ: tekst
-        tekst: |-
-          Dlatego dla Arthura alternatywą nie jest człowiek, tylko brak takich rozmów. Arthur nie zastępuje Twoich rozmów z mamą ani spotkań z bliskimi. Daje jej to, czego ludzie nie są w stanie zapewnić regularnie: rozmówcę, który w umówionym przez nią terminie ma dla niej czas, nigdy się nie spieszy i nie traci zainteresowania.
-
-  - kotwica: raport-dla-ciebie
-    etykieta: Raport dla Ciebie
-    ton: t4
-    h2: |-
-      Arthur zna codzienny tok jej rozmów. Kiedy coś się w nim zmieni, da Ci znać.
+        tekst: 'Dlatego dla Arthura alternatywą nie jest człowiek, tylko brak takich rozmów. Arthur nie zastępuje Twoich rozmów z mamą ani spotkań z bliskimi. Daje jej to, czego ludzie nie są w stanie zapewnić regularnie: rozmówcę, który w umówionym przez nią terminie ma dla niej czas, nigdy się nie spieszy i nie traci zainteresowania.'
+    etykieta: Dostępność
+    ton: t2
+    kotwica: dostepnosc
+  - h2: Arthur zna codzienny tok jej rozmów. Kiedy coś się w nim zmieni, da Ci znać.
     zdjecie:
-      widoczne: true
       plik: /images/strony/arthurozmowy-jej-sprawy-corka-odbiera-raport-4x3.webp
       alt: Córka w okularach, z dłonią przy brodzie, w skupieniu czyta coś na ekranie telefonu
-    lid: |-
-      Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
+      widoczne: true
+    lid: Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
     bloki:
       - typ: tekst
         tekst: |-
@@ -157,32 +106,26 @@ sekcje:
         tekst: Raport dla Ciebie
         adres: /jak-dziala-arthur#raport-dla-ciebie
         aktywny: true
-
-  - kotwica: porozmawiaj-z-arthurem
-    etykieta: Porozmawiaj z Arthurem
-    ton: t1
-    h2: |-
-      Porozmawiaj z Arthurem teraz, a mamie zaoferuj miesiąc próbny.
-    lid: |-
-      Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o swoich sprawach – tak, jak później będzie rozmawiała z nim mama. Zostaw numer telefonu, a Arthur zadzwoni do Ciebie od razu albo o wybranej przez Ciebie porze. Przekonasz się, jak mówi, jak słucha i jak prowadzi rozmowę. Poznasz też metodę, według której powstał.
+    etykieta: Raport dla Ciebie
+    ton: t4
+    kotwica: raport-dla-ciebie
+  - h2: Porozmawiaj z Arthurem teraz, a mamie zaoferuj miesiąc próbny.
+    zdjecie: null
+    lid: Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o swoich sprawach – tak, jak później będzie rozmawiała z nim mama. Zostaw numer telefonu, a Arthur zadzwoni do Ciebie od razu albo o wybranej przez Ciebie porze. Przekonasz się, jak mówi, jak słucha i jak prowadzi rozmowę. Poznasz też metodę, według której powstał.
     bloki:
       - typ: tekst
-        tekst: |-
-          Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwszy miesiąc będzie próbny i bezpłatny. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.
+        tekst: 'Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwszy miesiąc będzie próbny i bezpłatny. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.'
       - typ: glos
-        tekst: |-
-          O tym, czy rozmowy z Arthurem są dla mamy wartościowe i czy chce je kontynuować, zdecydujecie wspólnie – na podstawie tego, co sama o nich opowie.
+        tekst: O tym, czy rozmowy z Arthurem są dla mamy wartościowe i czy chce je kontynuować, zdecydujecie wspólnie – na podstawie tego, co sama o nich opowie.
       - typ: wezwanie
         rodzaj: glowne
         objasnienie: false
-
-  - kotwica: czego-nie-obiecujemy
-    etykieta: Czego nie obiecujemy
-    ton: t2
-    h2: |-
-      Czego Arthur nie zrobi? Uczciwie: Arthur nie jest od wszystkiego.
-    lid: |-
-      Arthur rozmawia z mamą przez telefon. Nie zastąpi więc pomocy w domu, jeśli jest potrzebna, przycisku SOS ani lekarza. Nie dowie się o upadku czy zasłabnięciu, jeśli wydarzą się między rozmowami.
+    etykieta: Porozmawiaj z Arthurem
+    ton: t1
+    kotwica: porozmawiaj-z-arthurem
+  - h2: 'Czego Arthur nie zrobi? Uczciwie: Arthur nie jest od wszystkiego.'
+    zdjecie: null
+    lid: Arthur rozmawia z mamą przez telefon. Nie zastąpi więc pomocy w domu, jeśli jest potrzebna, przycisku SOS ani lekarza. Nie dowie się o upadku czy zasłabnięciu, jeśli wydarzą się między rozmowami.
     bloki:
       - typ: tekst
         tekst: |-
@@ -193,14 +136,12 @@ sekcje:
         tekst: Czego nie obiecujemy
         adres: /czego-nie-obiecujemy
         aktywny: true
-
-  - kotwica: jak-korzystac
-    etykieta: Jak korzystać
-    ton: t1
-    h2: |-
-      Formalności online są po Twojej stronie. Rozmowy w całości należą do mamy.
-    lid: |-
-      Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, na czas nieokreślony. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin. Opłata odnawia się co miesiąc, chyba że zdecydujesz inaczej.
+    etykieta: Czego nie obiecujemy
+    ton: t2
+    kotwica: czego-nie-obiecujemy
+  - h2: Formalności online są po Twojej stronie. Rozmowy w całości należą do mamy.
+    zdjecie: null
+    lid: Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, na czas nieokreślony. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin. Opłata odnawia się co miesiąc, chyba że zdecydujesz inaczej.
     bloki:
       - typ: tekst
         tekst: |-
@@ -211,36 +152,28 @@ sekcje:
         tekst: Jak korzystać
         adres: /jak-korzystac
         aktywny: true
-
-  # Rozdział dodany 12.11.2026: skrót strony Bezpieczeństwo. Tekst przeniesiony z rozdziału „Jak korzystać”.
-  - kotwica: bezpieczenstwo
-    etykieta: Bezpieczeństwo
-    ton: t2
-    h2: |-
-      Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
-    lid: |-
-      Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
+    etykieta: Jak korzystać
+    ton: t1
+    kotwica: jak-korzystac
+  - h2: Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
+    zdjecie: null
+    lid: Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
     bloki:
       - typ: tekst
-        tekst: |-
-          Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
+        tekst: Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
       - typ: glos
-        tekst: |-
-          Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Dlatego Arthur dzwoni tylko w umówionym terminie. Jeśli ktoś podający się za Arthura zadzwoni kiedy indziej albo o coś poprosi, mama może się rozłączyć i zadzwonić do Ciebie.
+        tekst: Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Dlatego Arthur dzwoni tylko w umówionym terminie. Jeśli ktoś podający się za Arthura zadzwoni kiedy indziej albo o coś poprosi, mama może się rozłączyć i zadzwonić do Ciebie.
       - typ: link
         tekst: Bezpieczeństwo
         adres: /bezpieczenstwo
         aktywny: true
-
-  - kotwica: cena
-    etykieta: Cena
-    ton: t5
-    h2: |-
-      Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
-    lid: |-
-      Pakiety różnią się wyłącznie liczbą rozmów w tygodniu. Jakość rozmów i metoda pracy Arthura są takie same w każdym pakiecie.
+    etykieta: Bezpieczeństwo
+    ton: t2
+    kotwica: bezpieczenstwo
+  - h2: Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
+    zdjecie: null
+    lid: Pakiety różnią się wyłącznie liczbą rozmów w tygodniu. Jakość rozmów i metoda pracy Arthura są takie same w każdym pakiecie.
     bloki:
-      # Karty ceny: trzy pakiety z Ustawień → Pakiety i ceny.
       - typ: cennik
       - typ: tekst
         tekst: |-
@@ -254,21 +187,18 @@ sekcje:
       - typ: wezwanie
         rodzaj: zakupowe
         objasnienie: false
-
-  - kotwica: jak-rozmawiac-z-mama
-    etykieta: Jak rozmawiać z mamą
-    ton: t2
-    h2: |-
-      Nie rób mamie niespodzianki. Arthur to nie upominek, tylko poważna propozycja.
-    lid: |-
-      Rozmowy z Arthurem są dla mamy, dlatego nie mogą odbywać się bez jej zgody. To ona powinna decydować, czy chce z nim rozmawiać, w jaki dzień tygodnia i o jakiej godzinie oraz jak długo mają trwać połączenia.
+    etykieta: Cena
+    ton: t5
+    kotwica: cena
+  - h2: Nie rób mamie niespodzianki. Arthur to nie upominek, tylko poważna propozycja.
+    zdjecie: null
+    lid: Rozmowy z Arthurem są dla mamy, dlatego nie mogą odbywać się bez jej zgody. To ona powinna decydować, czy chce z nim rozmawiać, w jaki dzień tygodnia i o jakiej godzinie oraz jak długo mają trwać połączenia.
     bloki:
       - typ: tekst
         tekst: |-
           Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej bezpłatny miesiąc próbny. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
 
           Powiedz jej również, jakie informacje o rozmowach będziesz otrzymywać. Dostaniesz od nas raport, ale nie znajdziesz w nim tego, co mama dokładnie mówiła. Arthur może przekazać Ci ogólne informacje o rozmowach i zauważonych zmianach, ale nie będzie relacjonował ich przebiegu.
-      # W tekście z 11.11 link stał między akapitami; tu stoi po tekście, przed przyciskiem.
       - typ: link
         tekst: Jak rozmawiać z mamą
         adres: /jak-rozmawiac-z-mama
@@ -276,3 +206,23 @@ sekcje:
       - typ: wezwanie
         rodzaj: zakupowe
         objasnienie: false
+    etykieta: Jak rozmawiać z mamą
+    ton: t2
+    kotwica: jak-rozmawiac-z-mama
+seo:
+  tytul: Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach
+  opis: Arthur dzwoni do Twojej mamy co tydzień, w stałym terminie, i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest bezpłatny.
+  obraz_og:
+    plik: /images/og/arthurozmowy-og-glowna.jpg
+    alt: 'Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu'
+  zaktualizowano: 2026-11-18
+  autor: Piotr Jaworski
+  adres: /
+  schemat:
+    - Organization
+    - WebSite
+    - Service
+    - Offer
+  indeksuj: true
+geo:
+  streszczenie: Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Dzwoni do mamy klientki co tydzień, w stałym dniu i o stałej godzinie wybranych przez mamę, i rozmawia z nią o jej zainteresowaniach, poglądach i planach, a nie o zdrowiu, lekach czy zakupach. Usługę zamawia i opłaca dorosłe dziecko. Trzy pakiety obejmują od jednej do trzech rozmów w tygodniu i kosztują 279, 299 albo 349 zł miesięcznie z VAT, a pierwszy, próbny miesiąc jest bezpłatny. Arthur nigdy nie udaje człowieka.
