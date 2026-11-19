@@ -6,7 +6,7 @@ import Link from './Link.astro';
 import { inline, akapity } from '../../lib/tekst';
 import type { Kontekst } from '../../lib/kontekst';
 interface Props {
-  q: { id: string; pytanie: string; odpowiedz: string; link?: { tekst: string; adres: string } };
+  q: { id: string; pytanie: string; odpowiedz: string; link?: { tekst?: string | null; adres?: string | null } | null };
   k: Kontekst;
   stala?: boolean;
 }
@@ -18,7 +18,7 @@ const f = k.ust.firma;
     <div class="pytanie__glowa"><h3 set:html={inline(q.pytanie, f)} /></div>
     <div class="pytanie__odpowiedz">
       {akapity(q.odpowiedz, f).map((p) => <p set:html={p} />)}
-      {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
+      {q.link?.tekst && q.link?.adres && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
     </div>
   </article>
 ) : (
@@ -26,7 +26,7 @@ const f = k.ust.firma;
     <summary><h3 set:html={inline(q.pytanie, f)} /></summary>
     <div class="pytanie__odpowiedz">
       {akapity(q.odpowiedz, f).map((p) => <p set:html={p} />)}
-      {q.link && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
+      {q.link?.tekst && q.link?.adres && <Link b={{ tekst: q.link.tekst, adres: q.link.adres }} k={k} />}
     </div>
   </details>
 )}

@@ -21,7 +21,7 @@
 
 **Nagłówek H1** `wejscie.h1`
 
-Mama znowu ma coś ciekawego do przeżywania, nad czym się zastanawiać i o czym opowiadać.
+Mama znów będzie miała coś ciekawego do przeżywania, zastanawiania się i opowiadania.
 
 **Lid H1** `wejscie.lid`
 

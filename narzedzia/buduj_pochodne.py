@@ -20,7 +20,23 @@ ROOT = Path(__file__).resolve().parent.parent
 C = ROOT / "src" / "content"
 ust = yaml.safe_load((C / "ustawienia/witryna.yml").read_text(encoding="utf-8"))
 baza = {q["id"]: q for q in yaml.safe_load((C / "pytania/baza.yml").read_text(encoding="utf-8"))["pytania"]}
-wczytane = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in (C / "strony").glob("*.yml")}
+def uzupelnij(d):
+    """Sveltia zapisuje puste pole jako null (np. zdjęcie rozdziału bez zdjęcia) albo pusty tekst.
+    Tu sprowadzamy pola strony, z których korzystają narzędzia, do pustych wartości."""
+    seo = d.get("seo") or {}
+    seo["opis"] = seo.get("opis") or ""
+    og = seo.get("obraz_og") or {}
+    seo["obraz_og"] = {"plik": og.get("plik") or "", "alt": og.get("alt") or ""}
+    seo["schemat"] = seo.get("schemat") or []
+    d["seo"] = seo
+    d["geo"] = {"streszczenie": (d.get("geo") or {}).get("streszczenie") or ""}
+    d["sekcje"] = d.get("sekcje") or []
+    d["wejscie"]["bloki"] = d["wejscie"].get("bloki") or []
+    for s in d["sekcje"]:
+        s["bloki"] = s.get("bloki") or []
+    return d
+
+wczytane = {p.stem: uzupelnij(yaml.safe_load(p.read_text(encoding="utf-8"))) for p in (C / "strony").glob("*.yml")}
 po_adresie = {d["seo"]["adres"]: n for n, d in wczytane.items()}
 # Kolejność stron jak w menu (nawigacja.strony), na końcu strona błędu.
 KOLEJNOSC = [po_adresie[l["adres"]] for l in ust["nawigacja"]["strony"] if l["adres"] in po_adresie]
@@ -86,7 +102,7 @@ def bloki_md(bloki, pref):
             o += [f"{k + 1}. {x}" if bl.get("numerowana") else f"- {x}" for k, x in enumerate(bl["punkty"])] + [""]
         elif typ == "zasady":
             for k, z in enumerate(bl["zasady"]):
-                o += [f"### {k + 1}. {z['naglowek']}", "", f"*{z.get('lid', '')}*", "", z.get("tekst", ""), ""]
+                o += [f"### {k + 1}. {z['naglowek']}", "", f"*{z.get('lid') or ''}*", "", z.get("tekst") or "", ""]
         elif typ == "cytat":
             if not bl.get("widoczny", True):
                 o += ["*(karta ukryta)*", ""]
@@ -110,8 +126,9 @@ def bloki_md(bloki, pref):
             for pid in bl["pytania"]:
                 q = baza[pid]
                 o += [f"### {q['pytanie']}  `baza:{pid}`", "", rozwin(q["odpowiedz"]), ""]
-                if q.get("link"):
-                    o += [f"**Link wewnętrzny:** {q['link']['tekst']} → {q['link']['adres']}", ""]
+                ln = q.get("link") or {}
+                if ln.get("tekst") and ln.get("adres"):
+                    o += [f"**Link wewnętrzny:** {ln['tekst']} → {ln['adres']}", ""]
         elif typ == "faq":
             o += [f"- {baza[pid]['pytanie']}  `baza:{pid}`" for pid in bl["pytania"]]
             o += ["", f"**Link wewnętrzny:** {ust['nawigacja']['wszystkie_pytania']} → /pytania", ""]
@@ -314,7 +331,7 @@ def bloki_txt(bloki):
             o += [f"{k + 1}. {x}" if bl.get("numerowana") else f"- {x}" for k, x in enumerate(bl["punkty"])]
         elif typ == "zasady":
             for k, z in enumerate(bl["zasady"]):
-                o += ["", f"{k + 1}. {z['naglowek']} {z.get('lid', '')} {z.get('tekst', '')}".strip()]
+                o += ["", f"{k + 1}. {z['naglowek']} {z.get('lid') or ''} {z.get('tekst') or ''}".strip()]
         elif typ == "cytat" and bl.get("widoczny", True):
             o += [""] + ([bl["etykieta"] + ":"] if bl.get("etykieta") else []) + ([bl["wstep"]] if bl.get("wstep") else [])
             o += [f"- {x}" for x in repliki_txt(bl)]
@@ -369,7 +386,7 @@ for n, d in strony.items():
         pliki = z["plik"].rsplit("/", 1)[-1] + (" i " + z["plik_telefon"].rsplit("/", 1)[-1] if z.get("plik_telefon") else "")
         gotowe = jest(z["plik"]) and (not z.get("plik_telefon") or jest(z["plik_telefon"]))
         stan = ("gotowe" + ("" if z.get("widoczne") else ", na stronie ukryte")) if gotowe else "brak pliku"
-        wiersze.append((d["strona"]["nazwa"], nr, miejsce, pliki, z.get("alt", ""), FMT[fmt], stan))
+        wiersze.append((d["strona"]["nazwa"], nr, miejsce, pliki, z.get("alt") or "", FMT[fmt], stan))
 
 lg = ["# Zdjęcia witryny arthurozmowy.pl", "",
       "*Plik generowany przez narzedzia/buduj_pochodne.py z plików stron. Zasada: strona główna ma 4 zdjęcia (wejście i 3 w rozdziałach), "

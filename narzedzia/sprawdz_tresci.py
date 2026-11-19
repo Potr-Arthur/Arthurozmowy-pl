@@ -19,7 +19,23 @@ C = ROOT / "src" / "content"
 cfg = yaml.safe_load((ROOT / "public/admin/config.yml").read_text(encoding="utf-8"))
 ust = yaml.safe_load((C / "ustawienia/witryna.yml").read_text(encoding="utf-8"))
 baza = yaml.safe_load((C / "pytania/baza.yml").read_text(encoding="utf-8"))["pytania"]
-strony = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in sorted((C / "strony").glob("*.yml"))}
+def uzupelnij(d):
+    """Sveltia zapisuje puste pole jako null (np. zdjęcie rozdziału bez zdjęcia) albo pusty tekst.
+    Tu sprowadzamy pola strony, z których korzystają narzędzia, do pustych wartości."""
+    seo = d.get("seo") or {}
+    seo["opis"] = seo.get("opis") or ""
+    og = seo.get("obraz_og") or {}
+    seo["obraz_og"] = {"plik": og.get("plik") or "", "alt": og.get("alt") or ""}
+    seo["schemat"] = seo.get("schemat") or []
+    d["seo"] = seo
+    d["geo"] = {"streszczenie": (d.get("geo") or {}).get("streszczenie") or ""}
+    d["sekcje"] = d.get("sekcje") or []
+    d["wejscie"]["bloki"] = d["wejscie"].get("bloki") or []
+    for s in d["sekcje"]:
+        s["bloki"] = s.get("bloki") or []
+    return d
+
+strony = {p.stem: uzupelnij(yaml.safe_load(p.read_text(encoding="utf-8"))) for p in sorted((C / "strony").glob("*.yml"))}
 # Strony kampanii (od 19.11.2026): poza menu, mapą strony i llms.txt; adres w polu „adres” bez ukośnika.
 kampanie = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) or {} for p in sorted((C / "kampanie").glob("*.yml"))}
 PODGLAD = "--podglad" in sys.argv[1:]
@@ -312,7 +328,8 @@ for n, d in kampanie.items():
 
 for q in baza:
     if q.get("link"):
-        sprawdz_link(f"baza · {q['id']}", q["link"].get("adres"), q["link"].get("tekst"))
+        ln = q.get("link") or {}
+        sprawdz_link(f"baza · {q['id']}", ln.get("adres"), ln.get("tekst"))
 for l in ust["nawigacja"]["strony"]:
     sprawdz_link("nawigacja", l["adres"], l["tekst"])
 for l in ust["naglowek"]["linki"]:
