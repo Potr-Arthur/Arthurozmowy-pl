@@ -35,28 +35,19 @@ naglowek:
   # Na telefonie przycisk „Porozmawiaj z Arthurem” jest paskiem przyklejonym do dołu ekranu (potwierdzone 11.11.2026).
   przycisk_staly: true
 
-# Jedna lista stron dla menu i stopki. Zasada: jeden temat, jedna nazwa, jedno miejsce.
-# Nazwa strony brzmi tak samo w menu, w stopce, w linkach wewnętrznych i w rozdziałach strony głównej.
+# Kolejność stron w menu i stopce. Zasada: jeden temat, jedna nazwa, jedno miejsce.
+# Nazwę strony zmienia się tylko na stronie (pole „Nazwa strony”); menu, stopka i spis stron biorą ją stamtąd.
 nawigacja:
   strony:
-    - tekst: Jej sprawy
-      adres: /
-    - tekst: O nas
-      adres: /o-nas
-    - tekst: Jak działa Arthur
-      adres: /jak-dziala-arthur
-    - tekst: Jak korzystać
-      adres: /jak-korzystac
-    - tekst: Jak rozmawiać z mamą
-      adres: /jak-rozmawiac-z-mama
-    - tekst: Czego nie obiecujemy
-      adres: /czego-nie-obiecujemy
-    - tekst: Bezpieczeństwo
-      adres: /bezpieczenstwo
-    - tekst: Pytania
-      adres: /pytania
-    - tekst: Kontakt
-      adres: /kontakt
+    - adres: /
+    - adres: /o-nas
+    - adres: /jak-dziala-arthur
+    - adres: /jak-korzystac
+    - adres: /jak-rozmawiac-z-mama
+    - adres: /czego-nie-obiecujemy
+    - adres: /bezpieczenstwo
+    - adres: /pytania
+    - adres: /kontakt
   # Link pod akordeonem „Najczęstsze pytania”, bez słowa „Więcej:” (jedyny link do strony o innej nazwie niż strona).
   wszystkie_pytania: Wszystkie pytania
   # Słowo przed linkiem wewnętrznym w treści, np. „Więcej: Jak działa Arthur”. Link jest tekstem, a nie przyciskiem.

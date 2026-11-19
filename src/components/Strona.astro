@@ -5,6 +5,7 @@ import Uklad from '../layouts/Uklad.astro';
 import Wejscie from './Wejscie.astro';
 import Sekcja from './Sekcja.astro';
 import { getEntry } from 'astro:content';
+import { ustawienia } from '../lib/ustawienia';
 import { tonNr } from '../lib/tekst';
 import type { Kontekst } from '../lib/kontekst';
 
@@ -20,7 +21,7 @@ const dane = kampania
       seo: { ...wpis.data.seo, adres: `/${wpis.data.adres}`, opis: wpis.data.seo.opis ?? '' },
     }
   : wpis.data;
-const ust = (await getEntry('ustawienia', 'witryna'))!.data;
+const ust = await ustawienia();
 const bazaWpis = await getEntry('pytania', 'baza');
 const baza = new Map<string, any>((bazaWpis?.data.pytania ?? []).map((q: any) => [q.id, q]));
 const k: Kontekst = { ust, baza, adres: dane.seo.adres };

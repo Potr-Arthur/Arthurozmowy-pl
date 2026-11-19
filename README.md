@@ -17,11 +17,11 @@ Treści w tym repozytorium są w stanie z 17.11.2026 (makieta V2, stały termin 
 ```
 src/content/
   strony/                 10 plików, po jednym na stronę (treść, SEO, GEO, zdjęcia, bloki)
-    strona-glowna.yml (Jej sprawy)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
+    strona-glowna.yml (Arthurozmowy – rozmowy z Arthurem)  o-nas.yml  jak-dziala-arthur.yml  jak-korzystac.yml
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
   kampanie/               strony kampanii pod reklamy, poza menu, mapą strony i llms.txt (dodaje je redaktor)
   pytania/baza.yml        24 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
-  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka, okienko zgód, pomiar
+  ustawienia/witryna.yml  belka górna, kolejność stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka, okienko zgód, pomiar
 src/content.config.ts     schemat kolekcji Astro 5
 public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
@@ -69,8 +69,8 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 
 ## Nawigacja i nazwy
 
-- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w linkach wewnętrznych i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
-- **Strony (9):** Jej sprawy (strona główna, adres `/`), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Bezpieczeństwo, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
+- **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony stoi tylko w pliku strony (`strona.nazwa`, w panelu „Nazwa strony”); menu, stopka i lista stron w panelu biorą ją stamtąd, a `nawigacja.strony` w Ustawieniach daje tylko kolejność. Linki wewnętrzne i rozdziały strony głównej nazywają stronę tak samo. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
+- **Strony (9):** Arthurozmowy – rozmowy z Arthurem (strona główna, adres `/`; do 19.11.2026 „Jej sprawy”), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Bezpieczeństwo, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
 - **Belka górna:** logo, przycisk „Menu”, linki „Cena” (`/#cena`) i „Kontakt”, przycisk „Zamów online” (zamówienie) i „Panel klienta”. Menu to jedna lista: strony jako główny poziom, a rozdziały pod stroną oglądaną albo wskazaną.
 - **Stopka:** trzy przyciski CTA, lista stron, zdanie o plikach cookie, dane firmy z adresem e-mail, cztery linki prawne i przycisk „Ustawienia plików cookie”.
 - **Trzy przyciski CTA** stoją raz, w Ustawieniach: „Porozmawiaj z Arthurem” (okienko z formularzem rozmowy), „Umów mamie próbne arthurozmowy” (zamówienie) i „Napisz do nas” (okienko z formularzem kontaktu). Oba okienka włączamy po ocenie skutków dla ochrony danych (Z6).
@@ -82,7 +82,7 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 | Strony | `src/content/strony/*.yml` | wejście strony i treść rozdziałów, SEO, streszczenie dla AI; układ rozdziałów i bloków jest zablokowany |
 | Strony kampanii | `src/content/kampanie/*.yml` | strony pod reklamy: dodaje je, układa z tych samych bloków i usuwa |
 | Pytania i odpowiedzi | `src/content/pytania/baza.yml` | treść pytań, odpowiedzi i linków pod nimi |
-| Elementy wspólne | `src/content/ustawienia/witryna.yml` | pakiety i ceny, przyciski CTA, okienka, belka, lista stron, dane firmy, stopka, okienko zgód, pomiar, marka |
+| Elementy wspólne | `src/content/ustawienia/witryna.yml` | pakiety i ceny, przyciski CTA, okienka, belka, kolejność stron, dane firmy, stopka, okienko zgód, pomiar, marka |
 
 Na stronach z menu redaktor zmienia treść rozdziałów i bloków, ukrywa zdjęcie albo kartę cytatu i wybiera pytania do akordeonu; układ zmienia paczka z WITRYNY. Adresy linków wybiera z listy stron i rozdziałów, którą `generuj_config.py` buduje z plików treści. Zmiana ceny w Elementach wspólnych zmienia karty ceny na obu stronach, dane strukturalne i `llms.txt`. Zapis w panelu usuwa z pliku komentarze YAML i układa pola w kolejności panelu.
 

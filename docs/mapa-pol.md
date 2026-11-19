@@ -2,11 +2,11 @@
 
 *Plik generowany przez narzedzia/buduj_pochodne.py. Jeden blok to jeden moduł makiety V2. Ścieżka pola odpowiada kluczom w pliku strony i polom w Sveltia CMS.*
 
-## Jej sprawy · `/` · `src/content/strony/strona-glowna.yml`
+## Arthurozmowy – rozmowy z Arthurem · `/` · `src/content/strony/strona-glowna.yml`
 
 | Nr | Rozdział (spis treści) | Kotwica | Zdjęcie | Lid | Bloki w kolejności |
 |---|---|---|---|---|---|
-| 0 | Jej sprawy | #jej-sprawy | tak | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
+| 0 | Wejście | #jej-sprawy | tak | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 1 | Jak działa Arthur | #jak-dziala-arthur | tak | tak | Tekst akapitu, Lista, Karta cytatu, Link wewnętrzny |
 | 2 | Czemu służą arthurozmowy? | #czemu-sluza-arthurozmowy | tak | tak | Tekst akapitu, Voice aside |
 | 3 | Dostępność | #dostepnosc | — | tak | Tekst akapitu |
@@ -115,7 +115,7 @@
 |---|---|---|
 | `marka` | nazwa, domena, definicja, logo | belka górna, JSON-LD, llms.txt, odpowiedź „Czym są arthurozmowy?” |
 | `naglowek` | napisy menu, linki w belce, przycisk zamówienia, Panel klienta | belka górna każdej strony |
-| `nawigacja` | jedna lista stron z nazwami i adresami, napis „Wszystkie pytania” | menu, stopka, akordeony pytań |
+| `nawigacja` | kolejność stron (adresy; nazwy z plików stron), napisy „Wszystkie pytania” i „Więcej:” | menu, stopka, akordeony pytań, linki wewnętrzne |
 | `wezwania` | trzy przyciski CTA: rozmowa, zamówienie, kontakt | bloki „Przycisk CTA” i stopka |
 | `okno_rozmowy`, `okno_kontaktu` | teksty dwóch okienek z formularzami | okienka otwierane przyciskami CTA |
 | `pakiety` | ceny, liczby rozmów, opisy | karty ceny, JSON-LD Offer, llms.txt |

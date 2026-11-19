@@ -33,7 +33,7 @@ collections:
     i bloków jest zablokowany. Zapis tworzy wersję roboczą z podglądem, a „Opublikuj” wysyła ją na witrynę.
   files:
   - name: strona-glowna
-    label: Jej sprawy (strona główna)
+    label: Arthurozmowy – rozmowy z Arthurem (strona główna)
     file: src/content/strony/strona-glowna.yml
     format: yml
     preview_path: /
@@ -48,8 +48,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -294,29 +295,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -750,29 +751,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -1110,8 +1111,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -1349,29 +1351,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -1805,29 +1807,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -2165,8 +2167,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -2404,29 +2407,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -2860,29 +2863,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -3220,8 +3223,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -3459,29 +3463,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -3915,29 +3919,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -4275,8 +4279,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -4514,29 +4519,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -4970,29 +4975,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -5330,8 +5335,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -5569,29 +5575,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -6025,29 +6031,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -6385,8 +6391,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -6624,29 +6631,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -7080,29 +7087,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -7440,8 +7447,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -7679,29 +7687,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -8135,29 +8143,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -8495,8 +8503,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -8734,29 +8743,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -9190,29 +9199,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -9550,8 +9559,9 @@ collections:
         name: nazwa
         widget: string
         required: true
-        hint: Ta sama nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i w linkach wewnętrznych. Zmieniasz
-          ją też w Elementach wspólnych › Lista stron.
+        hint: 'Zmieniasz ją tylko tutaj: ta nazwa stoi nad H1 (wielkimi literami), w menu, w stopce i na liście
+          stron w panelu. Linki wewnętrzne do tej strony mają brzmieć tak samo; sprawdzenie treści wskaże te do
+          poprawienia.'
       - label: Szablon
         name: szablon
         widget: hidden
@@ -9626,29 +9636,29 @@ collections:
           name: adres
           widget: select
           options:
-          - label: Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem
             value: /
-          - label: Jej sprawy › Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
             value: /#jej-sprawy
-          - label: Jej sprawy › Jak działa Arthur
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
             value: /#jak-dziala-arthur
-          - label: Jej sprawy › Czemu służą arthurozmowy?
+          - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
             value: /#czemu-sluza-arthurozmowy
-          - label: Jej sprawy › Dostępność
+          - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Jej sprawy › Raport dla Ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
             value: /#raport-dla-ciebie
-          - label: Jej sprawy › Porozmawiaj z Arthurem
+          - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
-          - label: Jej sprawy › Czego nie obiecujemy
+          - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Jej sprawy › Jak korzystać
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
             value: /#jak-korzystac
-          - label: Jej sprawy › Bezpieczeństwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
-          - label: Jej sprawy › Cena
+          - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
-          - label: Jej sprawy › Jak rozmawiać z mamą
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
             value: /#jak-rozmawiac-z-mama
           - label: O nas
             value: /o-nas
@@ -9932,29 +9942,29 @@ collections:
             name: adres
             widget: select
             options:
-            - label: Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem
               value: /
-            - label: Jej sprawy › Jej sprawy
+            - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
               value: /#jej-sprawy
-            - label: Jej sprawy › Jak działa Arthur
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
               value: /#jak-dziala-arthur
-            - label: Jej sprawy › Czemu służą arthurozmowy?
+            - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
               value: /#czemu-sluza-arthurozmowy
-            - label: Jej sprawy › Dostępność
+            - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Jej sprawy › Raport dla Ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
               value: /#raport-dla-ciebie
-            - label: Jej sprawy › Porozmawiaj z Arthurem
+            - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
-            - label: Jej sprawy › Czego nie obiecujemy
+            - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Jej sprawy › Jak korzystać
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
               value: /#jak-korzystac
-            - label: Jej sprawy › Bezpieczeństwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
-            - label: Jej sprawy › Cena
+            - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
-            - label: Jej sprawy › Jak rozmawiać z mamą
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
               value: /#jak-rozmawiac-z-mama
             - label: O nas
               value: /o-nas
@@ -10548,29 +10558,29 @@ collections:
           name: adres
           widget: select
           options:
-          - label: Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem
             value: /
-          - label: Jej sprawy › Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
             value: /#jej-sprawy
-          - label: Jej sprawy › Jak działa Arthur
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
             value: /#jak-dziala-arthur
-          - label: Jej sprawy › Czemu służą arthurozmowy?
+          - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
             value: /#czemu-sluza-arthurozmowy
-          - label: Jej sprawy › Dostępność
+          - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Jej sprawy › Raport dla Ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
             value: /#raport-dla-ciebie
-          - label: Jej sprawy › Porozmawiaj z Arthurem
+          - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
-          - label: Jej sprawy › Czego nie obiecujemy
+          - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Jej sprawy › Jak korzystać
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
             value: /#jak-korzystac
-          - label: Jej sprawy › Bezpieczeństwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
-          - label: Jej sprawy › Cena
+          - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
-          - label: Jej sprawy › Jak rozmawiać z mamą
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
             value: /#jak-rozmawiac-z-mama
           - label: O nas
             value: /o-nas
@@ -10968,29 +10978,29 @@ collections:
           name: adres
           widget: select
           options:
-          - label: Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem
             value: /
-          - label: Jej sprawy › Jej sprawy
+          - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
             value: /#jej-sprawy
-          - label: Jej sprawy › Jak działa Arthur
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
             value: /#jak-dziala-arthur
-          - label: Jej sprawy › Czemu służą arthurozmowy?
+          - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
             value: /#czemu-sluza-arthurozmowy
-          - label: Jej sprawy › Dostępność
+          - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Jej sprawy › Raport dla Ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
             value: /#raport-dla-ciebie
-          - label: Jej sprawy › Porozmawiaj z Arthurem
+          - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
-          - label: Jej sprawy › Czego nie obiecujemy
+          - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Jej sprawy › Jak korzystać
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
             value: /#jak-korzystac
-          - label: Jej sprawy › Bezpieczeństwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
-          - label: Jej sprawy › Cena
+          - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
-          - label: Jej sprawy › Jak rozmawiać z mamą
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
             value: /#jak-rozmawiac-z-mama
           - label: O nas
             value: /o-nas
@@ -11301,29 +11311,29 @@ singletons:
         name: adres
         widget: select
         options:
-        - label: Jej sprawy
+        - label: Arthurozmowy – rozmowy z Arthurem
           value: /
-        - label: Jej sprawy › Jej sprawy
+        - label: Arthurozmowy – rozmowy z Arthurem › Mama znów będzie miała coś ciekawego do przeżyw…
           value: /#jej-sprawy
-        - label: Jej sprawy › Jak działa Arthur
+        - label: Arthurozmowy – rozmowy z Arthurem › Jak działa Arthur
           value: /#jak-dziala-arthur
-        - label: Jej sprawy › Czemu służą arthurozmowy?
+        - label: Arthurozmowy – rozmowy z Arthurem › Czemu służą arthurozmowy?
           value: /#czemu-sluza-arthurozmowy
-        - label: Jej sprawy › Dostępność
+        - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
           value: /#dostepnosc
-        - label: Jej sprawy › Raport dla Ciebie
+        - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
           value: /#raport-dla-ciebie
-        - label: Jej sprawy › Porozmawiaj z Arthurem
+        - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
           value: /#porozmawiaj-z-arthurem
-        - label: Jej sprawy › Czego nie obiecujemy
+        - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
           value: /#czego-nie-obiecujemy
-        - label: Jej sprawy › Jak korzystać
+        - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
           value: /#jak-korzystac
-        - label: Jej sprawy › Bezpieczeństwo
+        - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
           value: /#bezpieczenstwo
-        - label: Jej sprawy › Cena
+        - label: Arthurozmowy – rozmowy z Arthurem › Cena
           value: /#cena
-        - label: Jej sprawy › Jak rozmawiać z mamą
+        - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
           value: /#jak-rozmawiac-z-mama
         - label: O nas
           value: /o-nas
@@ -11721,22 +11731,19 @@ singletons:
     collapsed: true
     required: false
     fields:
-    - label: Strony, w kolejności menu
+    - label: Kolejność stron w menu i stopce
       name: strony
       widget: list
       required: false
       collapsed: true
       fields:
-      - label: Tekst
-        name: tekst
-        widget: string
-        required: false
-      - label: Adres
+      - label: Adres strony
         name: adres
         widget: string
         required: false
         readonly: true
-      summary: '{{fields.tekst}} → {{fields.adres}}'
+      summary: '{{fields.adres}}'
+      label_singular: Strona
       allow_add: false
       allow_remove: false
     - label: Napis linku pod akordeonem pytań
@@ -11748,8 +11755,8 @@ singletons:
       widget: string
       required: false
       hint: Np. „Więcej:”. Po nim stoi nazwa strony albo rozdziału.
-    hint: 'Jeden temat, jedna nazwa: nazwa strony taka sama w menu, stopce, linkach wewnętrznych i rozdziałach strony
-      głównej. Zmieniasz ją też w polu „Nazwa strony” na tej stronie.'
+    hint: 'Kolejność stron w menu i stopce. Nazwę strony zmieniasz na samej stronie, w polu „Nazwa strony”: menu,
+      stopka i linki biorą ją stamtąd.'
   - label: Dane firmy
     name: firma
     widget: object

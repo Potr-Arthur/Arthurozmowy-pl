@@ -171,7 +171,12 @@ const ustawienia = defineCollection({
       panel_klienta: z.string(),
       przycisk_staly: tak(true),
     }),
-    nawigacja: z.object({ strony: z.array(linkNazwany), wszystkie_pytania: z.string(), wiecej: z.string() }),
+    // Lista stron daje kolejność menu i stopki; nazwę każdej strony szablon bierze z jej pliku (strona.nazwa).
+    nawigacja: z.object({
+      strony: z.array(z.object({ tekst: z.string().nullish(), adres: z.string() })),
+      wszystkie_pytania: z.string(),
+      wiecej: z.string(),
+    }),
     wezwania: z.object({
       glowne: z.object({ przycisk: z.string(), dopisek: z.string().nullish() }),
       zakupowe: z.object({ przycisk: z.string(), adres: z.string() }),
