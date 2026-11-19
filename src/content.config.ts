@@ -213,13 +213,14 @@ const ustawienia = defineCollection({
       prywatnosc: z.string(),
       prawa: z.string(),
       linki_prawne: z.array(linkNazwany),
+      ustawienia_cookie: z.string().nullish(),
     }),
+    // Okienko zgód na pliki cookie (19.11.2026): teksty; kategorie i Consent Mode v2 są w kodzie (src/lib/zgody.ts).
+    zgody: z.record(z.string().nullish()).nullish(),
     // Pomiar i reklama (19.11.2026): puste pola = nic się nie ładuje.
     pomiar: z
       .object({
         gtm: z.string().nullish(),
-        baner_usluga: z.string().nullish(),
-        baner_id: z.string().nullish(),
         licznik_skrypt: z.string().nullish(),
         licznik_id: z.string().nullish(),
       })

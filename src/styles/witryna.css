@@ -322,6 +322,9 @@ body:has(.menu[open]) .stale{display:none}
 .stopka__dane{display:grid;gap:6px;font-size:.95rem;color:var(--fg2)}
 .stopka__dane a{color:var(--fg2)}
 .stopka__prawne{font-size:.95rem}
+/* przycisk „Ustawienia plików cookie” wygląda jak link prawny obok */
+.stopka__przycisk{font:inherit;color:var(--fg);background:none;cursor:pointer;border:1px solid var(--rdza);border-radius:var(--r-30);padding:.04em .55em;line-height:inherit}
+.stopka__przycisk:hover{background:color-mix(in srgb,var(--rdza) 30%,transparent)}
 
 /* ===== okienka „Porozmawiaj z Arthurem” i „Napisz do nas” (formularze nieaktywne do Z6) ===== */
 .okno{border:0;padding:0;background:transparent;max-width:min(520px,calc(100vw - 32px));width:100%;color:var(--fg)}
@@ -343,6 +346,36 @@ body:has(.menu[open]) .stale{display:none}
 .okno .cta--nieaktywny{opacity:.55}
 .okno__zgoda{font-size:.95rem;color:var(--fg2)}
 .okno .cta{justify-self:start}
+
+/* ===== okienko zgód na pliki cookie (przyklejone do dołu; „Zgadzam się” i „Nie zgadzam się” wyglądają tak samo) ===== */
+.zgody{position:fixed;z-index:50;left:0;right:0;bottom:0;pointer-events:none;
+  padding:0 max(12px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.zgody[hidden],.zgody [hidden]{display:none!important}
+.zgody__karta{pointer-events:auto;position:relative;width:min(100%,620px);max-height:calc(100dvh - 24px - env(safe-area-inset-bottom,0px));overflow:auto;
+  background:var(--paper);color:var(--fg);border-top:6px solid var(--sky);border-radius:0 0 var(--r-karta) 0;box-shadow:0 10px 36px rgba(11,12,16,.3);
+  padding:clamp(20px,3.5vw,30px);padding-right:max(clamp(20px,3.5vw,30px),calc(var(--r-karta) * .55))}
+.zgody__start,.zgody__wybor{display:grid;gap:14px}
+.zgody__tytul{font:700 clamp(1.35rem,2.4vw,1.6rem)/1.2 var(--font-naglowek);color:var(--head);padding-right:44px}
+.zgody__tytul:focus{outline:none}
+.zgody p{font-size:1rem;line-height:1.55}
+.zgody a{color:inherit;text-decoration:none;border:1px solid var(--rdza);border-radius:var(--r-30);padding:.04em .55em}
+.zgody a:hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)}
+.zgody__przyciski{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center}
+.zgody__przycisk{font:600 1rem/1.25 var(--font-tekst);padding:12px 22px;border:0;border-radius:var(--r-30);background:var(--sky);color:var(--onyks);cursor:pointer}
+.zgody__przycisk:hover{background:color-mix(in srgb,var(--sky) 88%,var(--onyks))}
+.zgody__ustawienia{font:500 1rem/1.25 var(--font-tekst);padding:11px 18px;border:1px solid var(--rdza);border-radius:var(--r-30);background:none;color:var(--onyks);cursor:pointer}
+.zgody__ustawienia:hover{background:color-mix(in srgb,var(--rdza) 12%,transparent)}
+@media (max-width:759px){.zgody__przycisk{flex:1 1 100%;padding-block:11px}}
+.zgody__przycisk,.zgody__ustawienia,.zgody a{white-space:nowrap}
+.zgody fieldset{border:0;margin:0;padding:0;display:grid}
+.zgody__kategoria{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start;padding:12px 0;border-top:1px solid var(--linia);cursor:pointer}
+.zgody__kategoria:last-child{border-bottom:1px solid var(--linia)}
+.zgody__kategoria input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--rdza);cursor:pointer}
+.zgody__kategoria input:disabled{cursor:default}
+.zgody__kategoria strong{font-weight:600}
+.zgody__opis{grid-column:2;font-size:.95rem;line-height:1.5;color:var(--fg2)}
+.zgody__zawsze{color:var(--fg2);font-size:.95rem}
+.zgody__zamknij{z-index:1}
 
 /* ===== podgląd wersji roboczej: plakietka z wynikiem sprawdzenia treści (tylko deploy preview) ===== */
 .podglad-plakietka{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40;

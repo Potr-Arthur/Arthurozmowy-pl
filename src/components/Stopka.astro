@@ -1,6 +1,7 @@
 ---
-// Stopka, od góry: trzy przyciski CTA (stopka.wezwania) · lista stron (nawigacja.strony) · zdanie o statystykach ·
-// linia z danymi firmy i adresem e-mail · trzy linki prawne. Wszystkie teksty z Ustawień.
+// Stopka, od góry: trzy przyciski CTA (stopka.wezwania) · lista stron (nawigacja.strony) · zdanie o plikach cookie ·
+// linia z danymi firmy i adresem e-mail · linki prawne i przycisk „Ustawienia plików cookie” (otwiera okienko zgód).
+// Wszystkie teksty z Ustawień.
 import Wezwanie from './bloki/Wezwanie.astro';
 import type { Kontekst } from '../lib/kontekst';
 import { inline } from '../lib/tekst';
@@ -30,6 +31,7 @@ const s = ust.stopka;
         {s.linki_prawne.map((l: any) => (
           <li>{l.adres === adres ? <span aria-current="page">{l.tekst}</span> : <a href={l.adres}>{l.tekst}</a>}</li>
         ))}
+        {s.ustawienia_cookie && <li><button type="button" class="stopka__przycisk" data-zgody-otworz>{s.ustawienia_cookie}</button></li>}
       </ul>
     </div>
   </div>

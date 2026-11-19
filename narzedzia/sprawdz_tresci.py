@@ -181,7 +181,7 @@ for n, d in strony.items():
                 blad(f"{n}: powtórzona kotwica #{sek['kotwica']}")
             kotwice[n][sek["kotwica"]] = sek.get("etykieta")
 # Strony bez pliku treści, które buduje szablon (na adresie tymczasowym „w przygotowaniu”): link do nich jest poprawny.
-STRONY_SZABLONU = {"/regulamin-strony", "/regulamin-uslugi", "/prywatnosc"}
+STRONY_SZABLONU = {"/regulamin-strony", "/regulamin-uslugi", "/prywatnosc", "/pliki-cookie"}
 # Strony, których jeszcze nie ma (zamówienie w panelu klienta): link zostaje nieaktywny.
 DO_ZBUDOWANIA = {"/umow"}
 WSZYSTKIE_PYTANIA = ust["nawigacja"]["wszystkie_pytania"]
@@ -339,6 +339,15 @@ for l in ust["stopka"]["linki_prawne"]:
 for r in ust["stopka"]["wezwania"]:
     if r not in ust["wezwania"]:
         blad(f"stopka: nieznany przycisk {r!r}")
+# Okienko zgód na pliki cookie: każde pole ma tekst, link w tekście prowadzi do istniejącej strony.
+POLA_ZGOD = [p["name"] for p in next(g for g in pola_cfg("_singletons", "wspolne") if g["name"] == "zgody")["fields"]]
+zgody = ust.get("zgody") or {}
+for pole in POLA_ZGOD:
+    if not (zgody.get(pole) or "").strip():
+        blad(f"okienko zgód: puste pole {pole}")
+sprawdz_tekst("okienko zgód", zgody.get("tekst"))
+if not (ust["stopka"].get("ustawienia_cookie") or "").strip():
+    blad("stopka: brak napisu przycisku „Ustawienia plików cookie” (bez niego nie da się cofnąć zgody)")
 # Adres strony kampanii: własny, niepowtarzalny, nie zajmuje adresu strony z menu ani strony budowanej przez szablon.
 ZAJETE = set(adresy) | STRONY_SZABLONU | DO_ZBUDOWANIA | {"/sprawdzenie", "/admin", "/robots.txt", "/llms.txt",
                                                           "/llms-full.txt", "/sitemap-index.xml", "/sitemap-0.xml"}

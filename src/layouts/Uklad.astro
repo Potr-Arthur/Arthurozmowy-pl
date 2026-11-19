@@ -1,10 +1,13 @@
 ---
-// Układ każdej strony: <head> (SEO, obraz do udostępniania, ikony, JSON-LD), belka górna z menu,
-// treść, stopka, dwa okienka (nieaktywne do Z6) i pasek „Porozmawiaj z Arthurem” na dole ekranu telefonu.
+// Układ każdej strony: <head> (Consent Mode v2 i pomiar, SEO, obraz do udostępniania, ikony, JSON-LD), okienko zgód
+// na pliki cookie, belka górna z menu, treść, stopka, dwa okienka (nieaktywne do Z6) i pasek „Porozmawiaj z Arthurem”
+// na dole ekranu telefonu.
 import '../styles/witryna.css';
 import Belka from '../components/Belka.astro';
 import Stopka from '../components/Stopka.astro';
 import Okna from '../components/Okna.astro';
+import Zgody from '../components/Zgody.astro';
+import { skryptGlowy } from '../lib/zgody';
 import Wezwanie from '../components/bloki/Wezwanie.astro';
 import type { Kontekst } from '../lib/kontekst';
 import { existsSync, readFileSync } from 'node:fs';
@@ -30,6 +33,11 @@ const urlStrony = new URL(adres, site).href;
 const ogObraz = og && og.plik ? new URL(og.plik, site).href : undefined;
 const k: Kontekst = { ust, baza: new Map(), adres };
 
+// Pomiar (Elementy wspólne › Pomiar i reklama) tylko na produkcji, żeby podglądy nie psuły statystyk.
+// GTM rusza po skrypcie Consent Mode v2, więc GA4 i piksele czekają na zgodę z okienka. Licznik bez cookies nie czeka.
+const produkcja = process.env.CONTEXT === 'production';
+const pomiar = produkcja ? ust.pomiar ?? {} : {};
+
 // Podgląd wersji roboczej (Netlify deploy preview): plakietka z wynikiem sprawdzenia treści i link do /sprawdzenie.
 // Plik .sprawdzenie.json zapisuje narzedzia/sprawdz_tresci.py --podglad; na witrynie produkcyjnej go nie ma.
 let podglad: { bledy: number; uwagi: number; zaslepki: number } | null = null;
@@ -44,6 +52,8 @@ const odmiana = (n: number, [jeden, kilka, wiele]: string[]) =>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script is:inline set:html={skryptGlowy(pomiar.gtm)} />
+    {pomiar.licznik_skrypt && <script is:inline defer src={pomiar.licznik_skrypt} data-website-id={pomiar.licznik_id || undefined} />}
     <title>{tytul}</title>
     {opis && <meta name="description" content={opis} />}
     <meta name="robots" content={robots} />
@@ -70,6 +80,7 @@ const odmiana = (n: number, [jeden, kilka, wiele]: string[]) =>
   </head>
   <body>
     <a class="skip" href="#tresc">Przejdź do treści</a>
+    <Zgody ust={ust} />
     <Belka ust={ust} adres={adres} />
 
     <main id="tresc">

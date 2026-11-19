@@ -201,7 +201,9 @@ m += ["## Ustawienia wspólne · `src/content/ustawienia/witryna.yml`", "",
       "| `okno_rozmowy`, `okno_kontaktu` | teksty dwóch okienek z formularzami | okienka otwierane przyciskami CTA |",
       "| `pakiety` | ceny, liczby rozmów, opisy | karty ceny, JSON-LD Offer, llms.txt |",
       "| `firma` | dane firmy i kontaktowe | znaczniki {firma}, {email}, {telefon}, {godziny}, stopka, JSON-LD |",
-      "| `stopka` | przyciski CTA, zdanie o statystykach, dane firmy, linki prawne | stopka każdej strony |", "",
+      "| `stopka` | przyciski CTA, zdanie o plikach cookie, dane firmy, linki prawne, napis „Ustawienia plików cookie” | stopka każdej strony |",
+      "| `zgody` | teksty okienka zgód na pliki cookie | okienko przy pierwszej wizycie i po przycisku w stopce |",
+      "| `pomiar` | kontener GTM, licznik bez cookies | `<head>` każdej strony, tylko na produkcji |", "",
       "## Baza pytań · `src/content/pytania/baza.yml`", "",
       "| Identyfikator | Pytanie | Rozdział na stronie Pytania | Akordeony na podstronach |", "|---|---|---|---|"]
 uzycie, rozdzial = {}, {}

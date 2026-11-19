@@ -5,7 +5,8 @@
 - **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. Szablony są w modelu blokowym makiety V2: jeden typ bloku to jeden komponent w `src/components/bloki/`.
 - **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`, mapa strony), Astro. Podgląd wersji roboczej z panelu buduje się także przy błędzie, a wynik sprawdzenia pokazuje na stronie `/sprawdzenie` i w plakietce na każdej stronie podglądu.
 - **Adres tymczasowy:** każda strona ma `noindex`, nagłówek `X-Robots-Tag` i `robots.txt` blokujący roboty. Przy starcie na arthurozmowy.pl: zmienna `PUBLIKACJA=tak` na Netlify (włącza docelowy `narzedzia/robots-docelowy.txt` i indeksowanie) i usunięcie bloku `X-Robots-Tag` z `netlify.toml`.
-- **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to strony „w przygotowaniu”.
+- **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi`, `/prywatnosc` i `/pliki-cookie` to strony „w przygotowaniu”.
+- **Okienko zgód na pliki cookie** (`src/components/Zgody.astro`, własne, decyzja z 19.11.2026): pokazuje się przy pierwszej wizycie i po przycisku „Ustawienia plików cookie” w stopce. Trzy kategorie: niezbędne, statystyki (GA4), reklamy (Google Ads i Meta). Skrypt w `<head>` ustawia Consent Mode v2 na „brak zgody”, zanim ruszy GTM, a wybór z okienka zapisuje w przeglądarce na rok (`src/lib/zgody.ts`). Teksty są w panelu, w Elementach wspólnych. GTM i licznik bez cookies ładują się tylko na produkcji, gdy ich pola w Pomiarze nie są puste.
 - **Redakcja `/admin`** (Sveltia CMS 0.259.0): układ paneli opisuje dokument projektu `claude/CMS_panele_redakcji_v1.md`. Zapis tworzy wersję roboczą (pull request z podglądem Netlify), a „Opublikuj” wysyła ją na witrynę. Logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium; Contents i Pull requests: read and write, Commit statuses: read).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
@@ -20,7 +21,7 @@ src/content/
     jak-rozmawiac-z-mama.yml  czego-nie-obiecujemy.yml  pytania.yml  kontakt.yml  404.yml
   kampanie/               strony kampanii pod reklamy, poza menu, mapą strony i llms.txt (dodaje je redaktor)
   pytania/baza.yml        24 pytania i odpowiedzi, jedno źródło dla strony Pytania i akordeonów
-  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka, pomiar
+  ustawienia/witryna.yml  belka górna, lista stron, przyciski CTA, dwa okienka, pakiety, dane firmy, stopka, okienko zgód, pomiar
 src/content.config.ts     schemat kolekcji Astro 5
 public/images/strony/     20 zdjęć stron (21 plików: wejście strony głównej ma dwa kadry)
 public/images/og/         3 obrazy do udostępniania (JPG 1200 × 630)
@@ -71,7 +72,7 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 - **Jeden temat, jedna nazwa, jedno miejsce.** Nazwa strony brzmi tak samo w menu, w stopce, w linkach wewnętrznych i w spisie treści strony głównej. Rozdział nazwany jak strona stoi tylko na stronie głównej i prowadzi do tej strony. Skrypt sprawdzający pilnuje tej zasady.
 - **Strony (9):** Jej sprawy (strona główna, adres `/`), O nas, Jak działa Arthur, Jak korzystać, Jak rozmawiać z mamą, Czego nie obiecujemy, Bezpieczeństwo, Pytania, Kontakt. Stare adresy `/jak-to-dziala`, `/jak-skorzystac`, `/regulamin` i adres `/jej-sprawy` mają przekierowania 301 w `netlify.toml`.
 - **Belka górna:** logo, przycisk „Menu”, linki „Cena” (`/#cena`) i „Kontakt”, przycisk „Zamów online” (zamówienie) i „Panel klienta”. Menu to jedna lista: strony jako główny poziom, a rozdziały pod stroną oglądaną albo wskazaną.
-- **Stopka:** trzy przyciski CTA, lista stron, zdanie o statystykach, dane firmy z adresem e-mail i trzy linki prawne.
+- **Stopka:** trzy przyciski CTA, lista stron, zdanie o plikach cookie, dane firmy z adresem e-mail, cztery linki prawne i przycisk „Ustawienia plików cookie”.
 - **Trzy przyciski CTA** stoją raz, w Ustawieniach: „Porozmawiaj z Arthurem” (okienko z formularzem rozmowy), „Umów mamie próbne arthurozmowy” (zamówienie) i „Napisz do nas” (okienko z formularzem kontaktu). Oba okienka włączamy po ocenie skutków dla ochrony danych (Z6).
 
 ## Jak redaktor pracuje w CMS
@@ -81,7 +82,7 @@ W tekstach działają znaczniki `{firma}`, `{email}`, `{telefon}` i `{godziny}` 
 | Strony | `src/content/strony/*.yml` | wejście strony i treść rozdziałów, SEO, streszczenie dla AI; układ rozdziałów i bloków jest zablokowany |
 | Strony kampanii | `src/content/kampanie/*.yml` | strony pod reklamy: dodaje je, układa z tych samych bloków i usuwa |
 | Pytania i odpowiedzi | `src/content/pytania/baza.yml` | treść pytań, odpowiedzi i linków pod nimi |
-| Elementy wspólne | `src/content/ustawienia/witryna.yml` | pakiety i ceny, przyciski CTA, okienka, belka, lista stron, dane firmy, stopka, pomiar, marka |
+| Elementy wspólne | `src/content/ustawienia/witryna.yml` | pakiety i ceny, przyciski CTA, okienka, belka, lista stron, dane firmy, stopka, okienko zgód, pomiar, marka |
 
 Na stronach z menu redaktor zmienia treść rozdziałów i bloków, ukrywa zdjęcie albo kartę cytatu i wybiera pytania do akordeonu; układ zmienia paczka z WITRYNY. Adresy linków wybiera z listy stron i rozdziałów, którą `generuj_config.py` buduje z plików treści. Zmiana ceny w Elementach wspólnych zmienia karty ceny na obu stronach, dane strukturalne i `llms.txt`. Zapis w panelu usuwa z pliku komentarze YAML i układa pola w kolejności panelu.
 
@@ -138,8 +139,8 @@ Stan na 17.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas
 ## Decyzje otwarte
 
 - Zamówienie („Umów mamie próbne arthurozmowy”, „Zamów online”) prowadzi do panelu klienta, którego jeszcze nie ma; przyciski są nieaktywne.
-- Strony `/regulamin-strony`, `/regulamin-uslugi` i `/prywatnosc` to na adresie tymczasowym strony „w przygotowaniu”.
+- Strony `/regulamin-strony`, `/regulamin-uslugi`, `/prywatnosc` i `/pliki-cookie` to na adresie tymczasowym strony „w przygotowaniu”. Strona Pliki cookie opisze narzędzia z okienka zgód (GA4, Google Ads, Meta) i czas przechowywania plików cookie.
 - Okienka „Porozmawiaj z Arthurem” i „Napisz do nas” mają teksty, ale włączamy je dopiero po ocenie skutków dla ochrony danych (Z6), razem z polityką prywatności.
 - Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), numer, z którego Arthur dzwoni do mamy. Kanałem rozmów jest telefon (decyzja z 17.11.2026).
-- Plausible czy Umami (zdanie w stopce mówi tylko o statystykach bez plików cookies).
+- Plausible czy Umami jako licznik bez cookies. Okienko zgód nie ma rejestru zgód (dowodu zgody); do oceny w Z6.
 - Pisownia nazwy firmy „arthurozmowy Piotr Jaworski” do potwierdzenia z CEIDG.
