@@ -1,13 +1,18 @@
 ---
+// Strony z menu (kolekcja „strony”, adres z seo.adres) i strony kampanii (kolekcja „kampanie”, adres z pola „adres”).
 import { getCollection } from 'astro:content';
 import Strona from '../components/Strona.astro';
 
 export async function getStaticPaths() {
   const strony = await getCollection('strony', (w) => w.data.strona.szablon !== 'blad');
-  return strony.map((wpis) => ({
-    params: { strona: wpis.data.seo.adres === '/' ? undefined : wpis.data.seo.adres.slice(1) },
-    props: { wpis },
-  }));
+  const kampanie = await getCollection('kampanie');
+  return [
+    ...strony.map((wpis) => ({
+      params: { strona: wpis.data.seo.adres === '/' ? undefined : wpis.data.seo.adres.slice(1) },
+      props: { wpis },
+    })),
+    ...kampanie.map((wpis) => ({ params: { strona: wpis.data.adres }, props: { wpis } })),
+  ];
 }
 const { wpis } = Astro.props;
 ---

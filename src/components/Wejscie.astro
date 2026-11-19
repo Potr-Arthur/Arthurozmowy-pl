@@ -8,6 +8,7 @@
 //               kończą się równiej. Bez skryptu i na telefonie: na całej szerokości, pod tekstem.
 //   (na stronie głównej pod H1 dwie kolumny: lid i tekst po lewej, Voice aside po prawej – układa to witryna.css)
 //   blad      – bez zdjęcia, przycisk powrotu
+// Nazwa strony stoi nad H1 zawsze na stronach z menu; na stronie kampanii tylko wtedy, gdy redaktor ją wpisał.
 import Zdjecie from './Zdjecie.astro';
 import Bloki from './Bloki.astro';
 import Link from './bloki/Link.astro';
@@ -31,7 +32,7 @@ const blokiPod = bloki.filter((b: any) => b.typ === 'glos');
     <div class="hero1__dol ton-hero">
       <div class="wrap hero1__siatka">
         <div class="hero1__glowa">
-          <p class="nazwa-strony">{dane.strona.nazwa}</p>
+          {dane.strona.nazwa && <p class="nazwa-strony">{dane.strona.nazwa}</p>}
           <h1 set:html={inline(w.h1, f)} />
         </div>
         <div class="tresc hero1__tresc">
@@ -48,7 +49,7 @@ const blokiPod = bloki.filter((b: any) => b.typ === 'glos');
       <div class={zdjecie ? 'hero2__siatka' : 'hero2__siatka hero2__siatka--bez-zdjecia'}>
         <Zdjecie zdjecie={w.zdjecie} rodzaj="kwadrat" odRazu />
         <div class="tresc hero2__tresc">
-          <p class="nazwa-strony">{dane.strona.nazwa}</p>
+          {dane.strona.nazwa && <p class="nazwa-strony">{dane.strona.nazwa}</p>}
           <h1 set:html={inline(w.h1, f)} />
           {lid.map((p) => <p class="lid" set:html={p} />)}
           <Bloki bloki={blokiObok} k={k} />
@@ -95,7 +96,7 @@ const blokiPod = bloki.filter((b: any) => b.typ === 'glos');
   <section class="sekcja sekcja--pierwsza sekcja--blad ton-1" id={id}>
     <div class="wrap">
       <div class="tresc kolumna">
-        <p class="nazwa-strony">{dane.strona.nazwa}</p>
+        {dane.strona.nazwa && <p class="nazwa-strony">{dane.strona.nazwa}</p>}
         <h1 set:html={inline(w.h1, f)} />
         {lid.map((p) => <p class="lid" set:html={p} />)}
         {w.przycisk_powrotu && <Link b={w.przycisk_powrotu} k={k} bezWiecej />}

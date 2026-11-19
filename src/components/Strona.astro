@@ -10,7 +10,16 @@ import type { Kontekst } from '../lib/kontekst';
 
 interface Props { wpis: any }
 const { wpis } = Astro.props;
-const dane = wpis.data;
+// Strona kampanii ma adres bez ukośnika w polu „adres” i nie ma danych strukturalnych ani pola geo;
+// tutaj sprowadzamy ją do kształtu strony z menu, żeby szablony były wspólne.
+const kampania = wpis.collection === 'kampanie';
+const dane = kampania
+  ? {
+      ...wpis.data,
+      strona: { nazwa: wpis.data.strona?.nazwa ?? '', szablon: wpis.data.strona?.szablon ?? 'podstrona' },
+      seo: { ...wpis.data.seo, adres: `/${wpis.data.adres}`, opis: wpis.data.seo.opis ?? '' },
+    }
+  : wpis.data;
 const ust = (await getEntry('ustawienia', 'witryna'))!.data;
 const bazaWpis = await getEntry('pytania', 'baza');
 const baza = new Map<string, any>((bazaWpis?.data.pytania ?? []).map((q: any) => [q.id, q]));
@@ -18,7 +27,7 @@ const k: Kontekst = { ust, baza, adres: dane.seo.adres };
 
 // Dane strukturalne z docs/jsonld/<strona>.json (generuje narzedzia/buduj_pochodne.py przy każdym budowaniu)
 const jsonldPliki = import.meta.glob('../../docs/jsonld/*.json', { eager: true, import: 'default' });
-const jsonld = jsonldPliki[`../../docs/jsonld/${wpis.id}.json`];
+const jsonld = kampania ? undefined : jsonldPliki[`../../docs/jsonld/${wpis.id}.json`];
 
 const blad = dane.strona.szablon === 'blad';
 const sekcje = dane.sekcje ?? [];
@@ -39,7 +48,7 @@ const lista = sekcje.map((s: any) => {
   tytul={dane.seo.tytul}
   opis={dane.seo.opis}
   adres={dane.seo.adres}
-  og={dane.seo.obraz_og}
+  og={dane.seo.obraz_og?.plik ? dane.seo.obraz_og : undefined}
   indeksuj={dane.seo.indeksuj}
   jsonld={jsonld}
   ust={ust}

@@ -1,0 +1,41 @@
+nazwa_robocza: Próba szablonu (do usunięcia)
+adres: proba-kampanii
+strona:
+  nazwa: Jej sprawy
+  szablon: podstrona
+wejscie:
+  h1: Mama ma swoje sprawy, a Arthur umie o nich rozmawiać.
+  zdjecie:
+    plik: /images/strony/arthurozmowy-kontakt-corka-pisze-na-laptopie-1x1.webp
+    alt: Córka w okularach i kolorowej bluzce z uwagą patrzy w ekran laptopa
+    widoczne: true
+  lid: Strona próbna szablonu kampanii. Sprawdza układ, bloki i adres.
+  bloki:
+    - typ: tekst
+      tekst: Arthur dzwoni co tydzień w stałym terminie i rozmawia z mamą o jej sprawach.
+    - typ: wezwanie
+      rodzaj: glowne
+      objasnienie: true
+sekcje:
+  - h2: Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
+    lid: Pakiety różnią się wyłącznie liczbą rozmów w tygodniu.
+    bloki:
+      - typ: cennik
+      - typ: link
+        tekst: Cena
+        adres: /jak-korzystac#cena
+        aktywny: true
+    etykieta: Cena
+    ton: t5
+    kotwica: cena
+  - h2: Najczęstsze pytania
+    bloki:
+      - typ: faq
+        pytania: [czym-sa-arthurozmowy, ile-kosztuja, jak-zrezygnowac]
+    ton: t1
+    kotwica: pytania
+seo:
+  tytul: Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach
+  opis: Strona próbna szablonu kampanii.
+  indeksuj: false
+  autor: Piotr Jaworski

@@ -1,4 +1,5 @@
-# Budowanie kontrolne: to samo co na Netlify (sprawdzenie treści, pliki pochodne, Astro).
+# Budowanie kontrolne: to samo co na Netlify (sprawdzenie treści, pliki pochodne, Astro), z plakietką i stroną
+# /sprawdzenie jak w podglądzie wersji roboczej; błąd w treści zatrzymuje budowanie jak na produkcji.
 # Wynik (log, zbudowana strona, package-lock.json) trafia na gałąź podglad-wynik, żeby dało się go obejrzeć
 # bez instalowania niczego lokalnie. Netlify tej gałęzi nie publikuje.
 name: Budowanie kontrolne
@@ -29,7 +30,7 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p _wynik
-          { python3 narzedzia/sprawdz_tresci.py && python3 narzedzia/buduj_pochodne.py && npm install --no-audit --no-fund && npm run build; } 2>&1 | tee _wynik/budowanie.log
+          { python3 narzedzia/sprawdz_tresci.py --podglad > /dev/null && python3 narzedzia/sprawdz_tresci.py && python3 narzedzia/buduj_pochodne.py && npm install --no-audit --no-fund && npm run build; } 2>&1 | tee _wynik/budowanie.log
       - name: Wynik na gałąź podglad-wynik
         if: always()
         run: |

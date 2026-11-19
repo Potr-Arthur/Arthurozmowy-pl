@@ -4,6 +4,15 @@
   command = "python3 narzedzia/sprawdz_tresci.py && python3 narzedzia/buduj_pochodne.py && npm run build"
   publish = "dist"
 
+# Podgląd wersji roboczej z panelu (pull request): sprawdzenie treści nie zatrzymuje budowania, tylko zapisuje wynik
+# na stronie /sprawdzenie i w plakietce na każdej stronie podglądu. Wersja z błędem i tak nie trafi na witrynę,
+# bo budowanie produkcyjne (wyżej) zatrzymuje się na błędzie.
+[context.deploy-preview]
+  command = "python3 narzedzia/sprawdz_tresci.py --podglad && python3 narzedzia/buduj_pochodne.py && npm run build"
+
+[context.branch-deploy]
+  command = "python3 narzedzia/sprawdz_tresci.py --podglad && python3 narzedzia/buduj_pochodne.py && npm run build"
+
 [build.environment]
   NODE_VERSION = "22"
 
