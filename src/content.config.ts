@@ -15,76 +15,79 @@ import { glob } from 'astro/loaders';
 
 const ton = z.enum(['t1', 't2', 't3', 't4', 't5']);
 
+// Sveltia zapisuje puste pole jako null (obiekt, np. zdjęcie rozdziału bez zdjęcia) albo pusty tekst,
+// więc pola nieobowiązkowe przyjmują brak, null i pusty tekst, a pola z wartością domyślną także null.
+const tak = (domyslnie: boolean) => z.boolean().nullish().transform((v) => v ?? domyslnie);
+const lista = <T extends z.ZodTypeAny>(s: T) => z.array(s).nullish().transform((v) => v ?? []);
+
 const zdjecie = z
   .object({
-    widoczne: z.boolean().default(true),
+    widoczne: tak(true),
     // jeden plik na zdjęcie: wejście podstrony 1:1 (1200 × 1200), rozdział 4:3 (1200 × 900);
     // wyjątek: wejście strony głównej ma plik 21:9 (komputer) i plik_telefon 4:3
-    plik: z.string().optional(),
-    plik_telefon: z.string().optional(),
-    alt: z.string().optional(),
+    plik: z.string().nullish(),
+    plik_telefon: z.string().nullish(),
+    alt: z.string().nullish(),
   })
-  .optional();
+  .nullish();
 
 const blokTekst = z.object({ typ: z.literal('tekst'), tekst: z.string() });
 const blokGlos = z.object({ typ: z.literal('glos'), tekst: z.string() });
 const blokLista = z.object({
   typ: z.literal('lista'),
-  naglowek: z.string().optional(),
-  numerowana: z.boolean().default(false),
+  naglowek: z.string().nullish(),
+  numerowana: tak(false),
   punkty: z.array(z.string()),
 });
 const blokZasady = z.object({
   typ: z.literal('zasady'),
-  zasady: z.array(z.object({ naglowek: z.string(), lid: z.string().optional(), tekst: z.string().optional() })),
+  zasady: z.array(z.object({ naglowek: z.string(), lid: z.string().nullish(), tekst: z.string().nullish() })),
 });
 const blokCytat = z.object({
   typ: z.literal('cytat'),
-  widoczny: z.boolean().default(true),
-  etykieta: z.string().optional(),
-  wstep: z.string().optional(),
-  repliki: z.array(z.object({ kto: z.string().optional(), kwestia: z.string() })).default([]),
+  widoczny: tak(true),
+  etykieta: z.string().nullish(),
+  wstep: z.string().nullish(),
+  repliki: lista(z.object({ kto: z.string().nullish(), kwestia: z.string() })),
 });
 const blokCennik = z.object({ typ: z.literal('cennik') });
 const blokLink = z.object({
   typ: z.literal('link'),
   tekst: z.string(),
-  adres: z.string().optional(),
-  aktywny: z.boolean().default(true),
+  adres: z.string().nullish(),
+  aktywny: tak(true),
 });
 const blokWezwanie = z.object({
   typ: z.literal('wezwanie'),
   rodzaj: z.enum(['glowne', 'zakupowe', 'napisz']),
-  objasnienie: z.boolean().default(false),
+  objasnienie: tak(false),
 });
 const blokPytania = z.object({ typ: z.literal('pytania'), pytania: z.array(z.string()) });
 const blokFaq = z.object({ typ: z.literal('faq'), pytania: z.array(z.string()).length(3) });
 
-const bloki = z
-  .array(
-    z.discriminatedUnion('typ', [
-      blokTekst, blokGlos, blokLista, blokZasady, blokCytat, blokCennik, blokLink, blokWezwanie, blokPytania, blokFaq,
-    ]),
-  )
-  .default([]);
+const bloki = lista(
+  z.discriminatedUnion('typ', [
+    blokTekst, blokGlos, blokLista, blokZasady, blokCytat, blokCennik, blokLink, blokWezwanie, blokPytania, blokFaq,
+  ]),
+);
 
 const sekcja = z.object({
-  kotwica: z.string().regex(/^[a-z0-9-]*$/).optional(),
-  etykieta: z.string().optional().nullable(),
+  kotwica: z.string().regex(/^[a-z0-9-]*$/).nullish(),
+  etykieta: z.string().nullish(),
   ton,
-  h2: z.string().optional(),
+  h2: z.string().nullish(),
   zdjecie,
-  lid: z.string().optional(),
+  lid: z.string().nullish(),
   bloki,
 });
 
 const wejscie = z.object({
-  kotwica: z.string().optional().nullable(),
-  etykieta: z.string().optional().nullable(),
+  kotwica: z.string().nullish(),
+  etykieta: z.string().nullish(),
   h1: z.string(),
   zdjecie,
-  lid: z.string().optional().nullable(),
-  przycisk_powrotu: z.object({ tekst: z.string(), adres: z.string() }).optional(),
+  lid: z.string().nullish(),
+  przycisk_powrotu: z.object({ tekst: z.string(), adres: z.string() }).nullish(),
   bloki,
 });
 
@@ -95,16 +98,16 @@ const strony = defineCollection({
     seo: z.object({
       adres: z.string().startsWith('/'),
       tytul: z.string().max(70),
-      opis: z.string().max(160),
-      obraz_og: z.object({ plik: z.string(), alt: z.string() }),
-      schemat: z.array(z.string()),
+      opis: z.string().max(160).nullish(),
+      obraz_og: z.object({ plik: z.string().nullish(), alt: z.string().nullish() }).nullish(),
+      schemat: lista(z.string()),
       indeksuj: z.boolean(),
       autor: z.string(),
       zaktualizowano: z.coerce.date(),
     }),
-    geo: z.object({ streszczenie: z.string() }),
+    geo: z.object({ streszczenie: z.string().nullish() }).nullish(),
     wejscie,
-    sekcje: z.array(sekcja).default([]),
+    sekcje: lista(sekcja),
   }),
 });
 
@@ -116,19 +119,19 @@ const kampanie = defineCollection({
     nazwa_robocza: z.string(),
     adres: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
     strona: z.object({
-      nazwa: z.string().optional().nullable(),
+      nazwa: z.string().nullish(),
       szablon: z.enum(['glowna', 'podstrona']).default('podstrona'),
     }),
     seo: z.object({
       tytul: z.string().max(70),
-      opis: z.string().max(160).optional().nullable(),
-      obraz_og: z.object({ plik: z.string().optional().nullable(), alt: z.string().optional().nullable() }).optional(),
-      indeksuj: z.boolean().default(false),
-      autor: z.string().optional().nullable(),
-      zaktualizowano: z.coerce.date().optional().nullable(),
+      opis: z.string().max(160).nullish(),
+      obraz_og: z.object({ plik: z.string().nullish(), alt: z.string().nullish() }).nullish(),
+      indeksuj: tak(false),
+      autor: z.string().nullish(),
+      zaktualizowano: z.coerce.date().nullish(),
     }),
     wejscie,
-    sekcje: z.array(sekcja).default([]),
+    sekcje: lista(sekcja),
   }),
 });
 
@@ -140,14 +143,14 @@ const pytaniaBaza = defineCollection({
         id: z.string().regex(/^[a-z0-9-]+$/),
         pytanie: z.string(),
         odpowiedz: z.string(),
-        link: z.object({ tekst: z.string(), adres: z.string() }).optional(),
+        link: z.object({ tekst: z.string().nullish(), adres: z.string().nullish() }).nullish(),
       }),
     ),
   }),
 });
 
 const linkNazwany = z.object({ tekst: z.string(), adres: z.string() });
-const okno = z.record(z.string());
+const okno = z.record(z.string().nullish());
 
 const ustawienia = defineCollection({
   loader: glob({ pattern: '*.yml', base: './src/content/ustawienia' }),
@@ -163,14 +166,14 @@ const ustawienia = defineCollection({
       menu: z.string(),
       grupa_rozdzialy: z.string(),
       grupa_strony: z.string(),
-      linki: z.array(linkNazwany).default([]),
+      linki: lista(linkNazwany),
       zakup: z.string(),
       panel_klienta: z.string(),
-      przycisk_staly: z.boolean().default(true),
+      przycisk_staly: tak(true),
     }),
     nawigacja: z.object({ strony: z.array(linkNazwany), wszystkie_pytania: z.string(), wiecej: z.string() }),
     wezwania: z.object({
-      glowne: z.object({ przycisk: z.string(), dopisek: z.string().optional() }),
+      glowne: z.object({ przycisk: z.string(), dopisek: z.string().nullish() }),
       zakupowe: z.object({ przycisk: z.string(), adres: z.string() }),
       napisz: z.object({ przycisk: z.string() }),
     }),
@@ -187,8 +190,8 @@ const ustawienia = defineCollection({
           rozmowy_podtrzymujace: z.number(),
           opis: z.string(),
           rytm: z.string(),
-          nazwa: z.string().optional(),
-          polecany: z.boolean().optional(),
+          nazwa: z.string().nullish(),
+          polecany: z.boolean().nullish(),
         }),
       ),
     }),
@@ -206,7 +209,7 @@ const ustawienia = defineCollection({
     }),
     autor: z.object({ imie_nazwisko: z.string(), adres_strony: z.string() }),
     stopka: z.object({
-      wezwania: z.array(z.enum(['glowne', 'zakupowe', 'napisz'])).default([]),
+      wezwania: lista(z.enum(['glowne', 'zakupowe', 'napisz'])),
       prywatnosc: z.string(),
       prawa: z.string(),
       linki_prawne: z.array(linkNazwany),
@@ -214,13 +217,13 @@ const ustawienia = defineCollection({
     // Pomiar i reklama (19.11.2026): puste pola = nic się nie ładuje.
     pomiar: z
       .object({
-        gtm: z.string().optional().nullable(),
-        baner_usluga: z.string().optional().nullable(),
-        baner_id: z.string().optional().nullable(),
-        licznik_skrypt: z.string().optional().nullable(),
-        licznik_id: z.string().optional().nullable(),
+        gtm: z.string().nullish(),
+        baner_usluga: z.string().nullish(),
+        baner_id: z.string().nullish(),
+        licznik_skrypt: z.string().nullish(),
+        licznik_id: z.string().nullish(),
       })
-      .optional(),
+      .nullish(),
   }),
 });
 
