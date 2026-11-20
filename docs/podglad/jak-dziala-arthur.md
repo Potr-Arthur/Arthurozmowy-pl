@@ -1,6 +1,6 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-17 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -33,7 +33,7 @@ Arthur rozmawia o sprawach ważnych dla rozmówczyni według określonej metody,
 
 **Voice aside** `wejscie.bloki[1]`
 
-Metodę uzupełniają szczegółowe zasady, których Arthur zawsze przestrzega. Zapoznaj się z nimi, a potem wypróbujcie je w trakcie miesiąca rozmów próbnych.
+Metodę uzupełniają szczegółowe zasady, których Arthur zawsze przestrzega. Zapoznaj się z nimi, a potem wypróbujcie je w trakcie 14 dni rozmów próbnych.
 
 **Tekst akapitu** `wejscie.bloki[2]`
 

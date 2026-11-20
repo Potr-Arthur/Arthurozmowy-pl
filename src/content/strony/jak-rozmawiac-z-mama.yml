@@ -18,11 +18,11 @@ seo:
   schemat: [HowTo, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-18
+  zaktualizowano: 2026-11-20
 
 geo:
   streszczenie: |-
-    Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować bezpłatny miesiąc próbny, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.
+    Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować 14 bezpłatnych dni próbnych, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.
 
 wejscie:
   h1: |-
@@ -124,13 +124,13 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Jeśli akurat nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a mama może też do końca dnia sama do niego oddzwonić. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
+          Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Jeśli akurat nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a mama może też do końca dnia sama do niego oddzwonić. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, dwutygodniową próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc oceńcie je dopiero pod koniec tych dwóch tygodni. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
       - typ: cytat
         widoczny: true
         etykieta: Przykład
         repliki:
           - kwestia: |-
-              Spróbujmy przez miesiąc, to nic nie kosztuje. Wybierz dzień i godzinę, a Arthur będzie dzwonił zawsze wtedy. O czym rozmawiacie, decydujesz Ty, a jeśli Ci się nie spodoba, po prostu zrezygnujemy.
+              Spróbujmy przez dwa tygodnie, to nic nie kosztuje. Wybierz dzień i godzinę, a Arthur będzie dzwonił zawsze wtedy. O czym rozmawiacie, decydujesz Ty, a jeśli Ci się nie spodoba, po prostu zrezygnujemy.
 
   - kotwica: uprzedz-o-oszustach
     etykieta: Uprzedź o oszustach
@@ -188,7 +188,7 @@ sekcje:
             kwestia: Ile to kosztuje?
           - kto: Ty
             kwestia: |-
-              Pierwszy miesiąc jest za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.
+              Pierwsze dwa tygodnie są za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.
       - typ: tekst
         tekst: |-
           Jeśli mama powie „nie”, uszanuj to, bo bez jej zgody rozmowy z Arthurem nie będą możliwe.

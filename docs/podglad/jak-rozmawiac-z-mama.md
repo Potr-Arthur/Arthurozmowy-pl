@@ -1,6 +1,6 @@
 # Jak rozmawiać z mamą · /jak-rozmawiac-z-mama
 
-*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** HowTo, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować bezpłatny miesiąc próbny, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.  `geo.streszczenie`
+- **Streszczenie dla AI:** Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować 14 bezpłatnych dni próbnych, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.  `geo.streszczenie`
 
 ## Wejście
 
@@ -127,13 +127,13 @@ Dzień i godzinę rozmów mama wybiera sama, razem z Tobą, zanim zamówisz arth
 
 **Tekst akapitu** `sekcje[4].bloki[0]`
 
-Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Jeśli akurat nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a mama może też do końca dnia sama do niego oddzwonić. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, miesięczną próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
+Zapytaj ją, jaki dzień tygodnia i jaka godzina będą dla niej najwygodniejsze, i powiedz, że Arthur będzie dzwonił zawsze wtedy. Jeśli akurat nie odbierze, Arthur zadzwoni jeszcze raz po 30 minutach, a mama może też do końca dnia sama do niego oddzwonić. Gdyby termin przestał jej pasować, wystarczy, że powie o tym Tobie. Zaproponuj jej bezpłatną, dwutygodniową próbę, która do niczego nie zobowiązuje, a po niej razem ocenicie, czy rozmowy przynoszą mamie korzyść i czy chcecie je kontynuować. Pierwsze rozmowy to poznawanie się, więc oceńcie je dopiero pod koniec tych dwóch tygodni. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie porusza z mamą tematu pieniędzy.
 
 **Karta cytatu** `sekcje[4].bloki[1]`
 
 *Przykład*
 
-> „Spróbujmy przez miesiąc, to nic nie kosztuje. Wybierz dzień i godzinę, a Arthur będzie dzwonił zawsze wtedy. O czym rozmawiacie, decydujesz Ty, a jeśli Ci się nie spodoba, po prostu zrezygnujemy.”  
+> „Spróbujmy przez dwa tygodnie, to nic nie kosztuje. Wybierz dzień i godzinę, a Arthur będzie dzwonił zawsze wtedy. O czym rozmawiacie, decydujesz Ty, a jeśli Ci się nie spodoba, po prostu zrezygnujemy.”  
 
 ## 6. Uprzedź o oszustach · #uprzedz-o-oszustach · ton t1
 
@@ -178,7 +178,7 @@ Oto kilka pytań, które mama może zadać, i odpowiedzi, które możesz jej da�
 > Mama: „A to nie jest jakieś oszustwo?”  
 > Ty: „Dobrze, że pytasz. Arthur nigdy o nic nie prosi, a wszystko, co dotyczy płatności, załatwiam ja. Zawsze możesz też zapytać mnie.”  
 > Mama: „Ile to kosztuje?”  
-> Ty: „Pierwszy miesiąc jest za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.”  
+> Ty: „Pierwsze dwa tygodnie są za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.”  
 
 **Tekst akapitu** `sekcje[6].bloki[1]`
 
