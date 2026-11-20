@@ -84,8 +84,10 @@ okno_rozmowy:
   przycisk: Zadzwoń do mnie
   potwierdzenie: Dziękujemy. Arthur zadzwoni do Ciebie za chwilę albo o porze, którą wybrałaś. Przedstawi się imieniem i nazwą usługi.
   blad: Nie udało się wysłać numeru. Sprawdź, czy jest wpisany w całości, i spróbuj jeszcze raz.
-  # Treść zgody wynika z decyzji z 17.11.2026 (Księga, rozdz. 18 i 22). Przed włączeniem okienka sprawdza ją ocena skutków (Z6).
-  zgoda: Zgadzam się, żeby arthurozmowy zadzwoniły do mnie na podany numer i wysłały mi po rozmowie jedną wiadomość. Wiem, że rozmowa nie jest nagrywana, a numer zostanie usunięty po 30 dniach. Szczegóły są w Polityce prywatności.
+  # Dwie osobne zgody (decyzja z 20.11.2026, Regulamin usługi § 6): na telefon od Arthura i, osobno, nieobowiązkowo,
+  # na jeden SMS po rozmowie z zaproszeniem do zamówienia. Przed włączeniem okienka sprawdza je ocena skutków (Z6).
+  zgoda: Zgadzam się, żeby arthurozmowy zadzwoniły do mnie na podany numer. Wiem, że rozmowa nie jest nagrywana, a numer zostanie usunięty po 30 dniach. Szczegóły są w Polityce prywatności.
+  zgoda_sms: Zgadzam się, żeby arthurozmowy wysłały mi po rozmowie jeden SMS z zaproszeniem do zamówienia. (nieobowiązkowe)
 
 # Okienko otwierane przyciskiem „Napisz do nas” (nowe w makiecie V2). Teksty pól to propozycja do akceptacji.
 # Włączamy je razem z okienkiem rozmowy, po ocenie skutków dla ochrony danych (Z6).

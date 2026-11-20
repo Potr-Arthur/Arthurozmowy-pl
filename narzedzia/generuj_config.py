@@ -411,8 +411,12 @@ def okno_pola(kontakt=False):
         pola = [s("tytul", "Tytuł"), t("wstep", "Wstęp"), s("pole_numer", "Pole: numer"),
                 s("pytanie_kiedy", "Pytanie o porę"), s("opcja_teraz", "Opcja: teraz"), s("opcja_termin", "Opcja: termin"),
                 s("pole_data", "Pole: data"), s("pole_godzina", "Pole: godzina"), s("przycisk", "Przycisk")]
-    return pola + [t("potwierdzenie", "Potwierdzenie"), t("blad", "Komunikat błędu"),
-                   t("zgoda", "Zgoda i informacja RODO", hint="Zmieniamy tylko razem z polityką prywatności.")]
+    pola += [t("potwierdzenie", "Potwierdzenie"), t("blad", "Komunikat błędu"),
+             t("zgoda", "Zgoda i informacja RODO", hint="Zmieniamy tylko razem z polityką prywatności.")]
+    if not kontakt:
+        pola.append(t("zgoda_sms", "Osobna zgoda na SMS po rozmowie (pole wyboru, nieobowiązkowe)",
+                      hint="Marketing bezpośredni: osobne, niezaznaczone pole (Regulamin usługi, § 6). Zmieniamy tylko razem z polityką prywatności."))
+    return pola
 
 def lista_linkow(name, label, summary="{{fields.tekst}} → {{fields.adres}}", hint=None, adres_readonly=False, **kw):
     adres = s("adres", "Adres", readonly=True) if adres_readonly else s("adres", "Adres")

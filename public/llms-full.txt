@@ -322,7 +322,7 @@ Nie umówi też mamy na wizytę u lekarza i nie zajmie się jej budżetem, rachu
 
 Arthur zauważa tylko to, co dzieje się w trakcie rozmowy. Nie wzywa też pogotowia, więc w nagłej sytuacji musi to zrobić człowiek.
 
-Jeśli mama powie Arthurowi w rozmowie o nagłej sytuacji, Arthur poprosi ją, żeby zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. W najbliższym raporcie znajdziesz o tym jedno zdanie. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
 
 ### Arthur nie jest lekarzem, więc nie udziela porad medycznych.
 
@@ -370,13 +370,13 @@ Arthur nigdy:
 - nie prosi, żeby mama czegoś nie mówiła rodzinie;
 - nie przekazuje wiadomości od innych osób ani wieści o bliskich;
 - nie dzwoni w innych terminach niż umówione z mamą;
-- nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112: gdy mama powie mu o nagłej sytuacji, Arthur poprosi ją, żeby tam zadzwoniła.
+- nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112: gdy mama powie mu o nagłym zdarzeniu, Arthur poprosi ją, żeby zawiadomiła bliskich albo zadzwoniła pod 112.
 
 Jeśli ktoś przedstawia się jako Arthur i o cokolwiek prosi albo dzwoni w innym terminie niż umówiony, to nie jest Arthur. Mama może się rozłączyć i zadzwonić do Ciebie.
 
 Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, i zawsze w stałym terminie mamy. Gdy mama nie odbierze, zadzwoni jeszcze raz po 30 minutach, a mama może do końca dnia sama oddzwonić na jego numer. SMS-y Arthur wysyła tylko z tego numeru i nigdy nie ma w nich linków. Sam numer na ekranie nie jest jednak dowodem, bo oszuści potrafią go podrobić. Nie obiecujemy więc, że nikt nigdy nie podszyje się pod Arthura. Obiecujemy, że prawdziwy Arthur dzwoni tylko w umówionym terminie i nigdy o nic nie poprosi. To dwie zasady, które mama łatwo zapamięta.
 
-Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, damy Ci o tym znać.
+Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, znajdziesz o tym zdanie w najbliższym raporcie.
 
 Jeśli taki telefon się zdarzy, najważniejsze jest, żeby mama powiedziała o nim Tobie. Ty najlepiej ocenisz, co się stało i czy trzeba to zgłosić na policję.
 
@@ -386,7 +386,7 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 
 W raporcie, który co tydzień przychodzi do Ciebie e-mailem, zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, a gdy raport trafi do Ciebie, Arthur na początku najbliższej rozmowy powie jej, co w nim jest.
 
-Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje, także ekspertka, która opracowała metodę.
+Rozmów nie nagrywamy. Po każdej rozmowie Arthur aktualizuje krótki zapis spraw mamy, bez jej słów i bez informacji o zdrowiu, a zapis samej rozmowy usuwamy najpóźniej po 24 godzinach. Żaden człowiek rozmów nie słucha ani nie czyta, także ekspertka, która opracowała metodę.
 
 Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
 

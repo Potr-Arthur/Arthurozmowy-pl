@@ -18,7 +18,7 @@ seo:
   schemat: [WebPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-18
+  zaktualizowano: 2026-11-20
 
 geo:
   streszczenie: |-
@@ -58,7 +58,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Jeśli mama powie Arthurowi w rozmowie o nagłej sytuacji, Arthur poprosi ją, żeby zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+          Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. W najbliższym raporcie znajdziesz o tym jedno zdanie. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
 
   - kotwica: zdrowie
     etykieta: Zdrowie
