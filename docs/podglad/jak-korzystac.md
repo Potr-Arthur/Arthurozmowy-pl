@@ -1,15 +1,15 @@
 # Jak korzystać · /jak-korzystac
 
-*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
 - **Tytuł strony (58 zn.):** Jak korzystać z arthurozmów – abonament, cena i rezygnacja  `seo.tytul`
-- **Opis w wynikach (151 zn.):** Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwszy miesiąc jest bezpłatny, potem płacisz 279, 299 albo 349 zł i rezygnujesz w panelu klienta.  `seo.opis`
+- **Opis w wynikach (148 zn.):** Arthurozmowy zamawiasz online, gdy mama się zgodzi. Pierwsze 14 dni są bezpłatne, potem płacisz 279, 299 albo 349 zł i rezygnujesz w panelu klienta.  `seo.opis`
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Offer, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Umowę abonamentową na arthurozmowy zawiera online dorosłe dziecko, nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Przy zamówieniu dziecko podaje stały dzień i godzinę rozmów wybrane przez mamę, a termin można bezpłatnie zmienić od następnego tygodnia. Pierwszy miesiąc jest próbny i bezpłatny, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja w panelu klienta (kliknięcie i potwierdzenie) uruchamia 15-dniowe „Pożegnanie” z rozliczeniem proporcjonalnym. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.  `geo.streszczenie`
+- **Streszczenie dla AI:** Umowę abonamentową na arthurozmowy zawiera online osoba dorosła, zwykle córka albo syn, a nie mama, na czas nieokreślony i dopiero po zgodzie mamy. Przy zamówieniu podaje stały dzień i godzinę rozmów wybrane przez mamę, a termin można bezpłatnie zmienić od następnego tygodnia. Pierwsze 14 dni są próbne i bezpłatne, potem opłata (279, 299 albo 349 zł miesięcznie z VAT) odnawia się co miesiąc, a pakiet można zmienić od kolejnego miesiąca. Rezygnacja w panelu klienta (kliknięcie i potwierdzenie) uruchamia 15-dniowe „Pożegnanie”, rozliczane z dniami już opłaconymi. Arthur nigdy nie prosi mamy o pieniądze, dane ani o zachowanie czegoś w tajemnicy przed rodziną.  `geo.streszczenie`
 
 ## Wejście
 
@@ -41,11 +41,11 @@ Zamówienie składasz dopiero wtedy, gdy mama zgodzi się na rozmowy z Arthurem,
 
 Umowa nie wiąże Cię na żaden określony czas, więc z usługi łatwo możesz zrezygnować. Pierwsza rozmowa odbędzie się w ciągu kilku dni od zamówienia, w terminie wybranym przez mamę.
 
-Pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że kontynuujecie rozmowy. Od tej pory opłata będzie się odnawiać automatycznie co miesiąc, chyba że zdecydujesz inaczej i zrezygnujesz z abonamentu.
+Pierwsze 14 dni są za darmo i do niczego nie zobowiązują. Trzy dni przed ich końcem zapytamy Cię, czy kontynuujecie, i wyślemy link do płatności. Płacisz dopiero wtedy, gdy to potwierdzisz, a potem opłata odnawia się automatycznie co miesiąc, chyba że zrezygnujesz z abonamentu. Bez płatności rozmowy po prostu się kończą.
 
 Raport z rozmów przychodzi do Ciebie co tydzień e-mailem. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz: klikasz i potwierdzasz. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
 
-Gdy termin rozmów przestanie mamie pasować, zgłoś nowy w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia. Jeśli mama wyjeżdża albo jest w szpitalu i nie chce w tym czasie rozmawiać, rozmowy można zawiesić. Zgłaszasz to Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
+Gdy termin rozmów przestanie mamie pasować, zgłoś nowy w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia. Jeśli mama wyjeżdża albo jest w szpitalu i nie chce w tym czasie rozmawiać, rozmowy można zawiesić. Zgłaszasz to Ty albo mama w Biurze Obsługi. Za każdy dzień zawieszenia obniżamy następną opłatę, ale najwyżej za 7 dni.
 
 **Link wewnętrzny** `sekcje[0].bloki[1]`
 
@@ -101,7 +101,9 @@ Rezygnację klikasz w panelu klienta i potwierdzasz, bez dzwonienia i pisania do
 
 Przez 15 kolejnych dni Arthur dzwoni do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a w ostatniej pożegna się z nią.
 
-Rozliczenie opcji „Pożegnanie” jest proporcjonalne do pozostałego czasu abonamentu. Nie dotyczy ona miesiąca próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
+Za „Pożegnanie” płacisz tyle, ile za 15 dni Twojego pakietu. Dni, które już opłaciłaś, przechodzą na „Pożegnanie”: jeśli zostało ich więcej, nadwyżkę zwracamy, a jeśli mniej, brakujące dni dopłacasz w ostatniej fakturze. „Pożegnanie” nie dotyczy okresu próbnego: jeśli zrezygnujesz w jego trakcie, rozmowy po prostu się zakończą.
+
+Gdy płatność za kolejny miesiąc się nie uda, wyślemy Ci link do płatności, a Arthur będzie dzwonił do mamy jak zwykle. Jeśli płatność nie dotrze w ciągu 3 dni, zacznie się „Pożegnanie”.
 
 Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy. Jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał. Po 3 miesiącach usuwamy tę pamięć, a na prośbę Twoją albo mamy usuniemy ją wcześniej.
 

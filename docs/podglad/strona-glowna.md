@@ -1,15 +1,15 @@
 # Arthurozmowy – rozmowy z Arthurem · /
 
-*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-18 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
 - **Tytuł strony (57 zn.):** Arthurozmowy – rozmowy telefoniczne z mamą o jej sprawach  `seo.tytul`
-- **Opis w wynikach (151 zn.):** Arthur dzwoni do Twojej mamy co tydzień, w stałym terminie, i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwszy miesiąc jest bezpłatny.  `seo.opis`
+- **Opis w wynikach (148 zn.):** Arthur dzwoni do Twojej mamy co tydzień, w stałym terminie, i rozmawia z nią o jej sprawach według eksperckiej metody. Pierwsze 14 dni są bezpłatne.  `seo.opis`
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-glowna.jpg` · alt: Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** Organization, WebSite, Service, Offer  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Dzwoni do mamy klientki co tydzień, w stałym dniu i o stałej godzinie wybranych przez mamę, i rozmawia z nią o jej zainteresowaniach, poglądach i planach, a nie o zdrowiu, lekach czy zakupach. Usługę zamawia i opłaca dorosłe dziecko. Trzy pakiety obejmują od jednej do trzech rozmów w tygodniu i kosztują 279, 299 albo 349 zł miesięcznie z VAT, a pierwszy, próbny miesiąc jest bezpłatny. Arthur nigdy nie udaje człowieka.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthurozmowy to regularne rozmowy telefoniczne z Arthurem – programem opartym na sztucznej inteligencji, stworzonym pod okiem ekspertki od komunikacji z osobami starszymi. Arthur rozmawia o sprawach swojej rozmówczyni według ściśle określonej metody, nie diagnozuje i nie zastępuje opieki. Dzwoni do mamy klientki co tydzień, w stałym dniu i o stałej godzinie wybranych przez mamę, i rozmawia z nią o jej zainteresowaniach, poglądach i planach, a nie o zdrowiu, lekach czy zakupach. Usługę zamawia i opłaca osoba dorosła, zwykle córka albo syn. Trzy pakiety obejmują od jednej do trzech rozmów w tygodniu i kosztują 279, 299 albo 349 zł miesięcznie z VAT, a pierwsze 14 dni są bezpłatne. Arthur nigdy nie udaje człowieka.  `geo.streszczenie`
 
 ## Wejście
 
@@ -153,7 +153,7 @@ Raport dla Ciebie → /jak-dziala-arthur#raport-dla-ciebie
 
 **Nagłówek H2** `sekcje[4].h2`
 
-Porozmawiaj z Arthurem teraz, a mamie zaoferuj miesiąc próbny.
+Porozmawiaj z Arthurem teraz, a mamie zaoferuj 14 dni próbnych.
 
 **Lid H2** `sekcje[4].lid`
 
@@ -161,7 +161,7 @@ Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o s
 
 **Tekst akapitu** `sekcje[4].bloki[0]`
 
-Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwszy miesiąc będzie próbny i bezpłatny. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.
+Jeśli zdecydujesz się zaproponować arthurozmowy mamie, pierwsze 14 dni będą próbne i bezpłatne. Jeśli po tym czasie nie zechcecie kontynuować rozmów z Arthurem, nie musisz nic robić: bez Twojego potwierdzenia rozmowy się skończą i nic nie zapłacisz.
 
 **Voice aside** `sekcje[4].bloki[1]`
 
@@ -205,7 +205,7 @@ Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, 
 
 Raport z rozmów dostajesz co tydzień e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
-Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Rozliczenie opcji „Pożegnanie” jest proporcjonalne do czasu pozostałego do końca abonamentu. W miesiącu próbnym rozmowy po prostu się kończą.
+Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Za „Pożegnanie” płacisz tyle, ile za 15 dni Twojego pakietu, i rozliczamy je z dniami, które już opłaciłaś. W okresie próbnym rozmowy po prostu się kończą.
 
 **Link wewnętrzny** `sekcje[6].bloki[1]`
 
@@ -237,7 +237,7 @@ Bezpieczeństwo → /bezpieczenstwo
 
 **Nagłówek H2** `sekcje[8].h2`
 
-Trzy pakiety, jedna metoda, a próbny miesiąc za darmo.
+Trzy pakiety, jedna metoda, a pierwsze 14 dni za darmo.
 
 **Lid H2** `sekcje[8].lid`
 
@@ -257,7 +257,7 @@ Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut.
 
 Na początek proponujemy pakiet optymalny za 299 zł: co tydzień rozmowę pełną i rozmowę podtrzymującą. W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody.
 
-Za pierwszy, próbny miesiąc nie płacisz. Opłaty zaczynają się dopiero od drugiego miesiąca, jeśli potwierdzisz, że chcecie kontynuować rozmowy. Później abonament jest rozliczany co miesiąc, tak długo, jak obie będziecie chciały z niego korzystać.
+Za pierwsze 14 dni nie płacisz. Opłaty zaczynają się dopiero po tym czasie, jeśli potwierdzisz, że chcecie kontynuować rozmowy. Później abonament jest rozliczany co miesiąc, tak długo, jak obie będziecie chciały z niego korzystać.
 
 Możesz zmienić pakiet na kolejny miesiąc – zarówno na wyższy, jak i na niższy.
 
@@ -279,7 +279,7 @@ Rozmowy z Arthurem są dla mamy, dlatego nie mogą odbywać się bez jej zgody. 
 
 **Tekst akapitu** `sekcje[9].bloki[0]`
 
-Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej bezpłatny miesiąc próbny. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
+Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej 14 bezpłatnych dni próbnych. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
 
 Powiedz jej również, jakie informacje o rozmowach będziesz otrzymywać. Dostaniesz od nas raport, ale nie znajdziesz w nim tego, co mama dokładnie mówiła. Arthur może przekazać Ci ogólne informacje o rozmowach i zauważonych zmianach, ale nie będzie relacjonował ich przebiegu.
 

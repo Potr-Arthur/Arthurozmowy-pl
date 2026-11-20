@@ -1,6 +1,6 @@
 # Pytania · /pytania
 
-*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-17 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** FAQPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Odpowiedzi na pytania o arthurozmowy: czym są, kim jest Arthur, jak często i jak długo mama z nim rozmawia, czego potrzebuje, co córka wie z raportu, ile kosztują pakiety, jak działa bezpłatny miesiąc próbny i rezygnacja z opcją „Pożegnanie”, czym arthurozmowy różnią się od teleopieki i opaski SOS oraz co może zrobić córka, gdy mama mieszka sama i coraz rzadziej z kimś rozmawia. Każda odpowiedź zaczyna się od zdania, które samo odpowiada na pytanie.  `geo.streszczenie`
+- **Streszczenie dla AI:** Odpowiedzi na pytania o arthurozmowy: czym są, kim jest Arthur, jak często i jak długo mama z nim rozmawia, czego potrzebuje, co córka wie z raportu, ile kosztują pakiety, jak działa bezpłatny, 14-dniowy okres próbny i rezygnacja z opcją „Pożegnanie”, czym arthurozmowy różnią się od teleopieki i opaski SOS oraz co może zrobić córka, gdy mama mieszka sama i coraz rzadziej z kimś rozmawia. Każda odpowiedź zaczyna się od zdania, które samo odpowiada na pytanie.  `geo.streszczenie`
 
 ## Wejście
 
@@ -101,7 +101,7 @@ Termin rozmów zmieniasz Ty, po rozmowie z mamą: zgłaszasz nowy dzień i godzi
 
 ### Czy mama może rozmawiać z Arthurem, kiedy jest poza domem?  `baza:rozmowy-poza-domem`
 
-Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów, w szpitalu albo w domu opieki. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem możecie zmienić termin rozmów, a gdy mama nie ma ochoty w tym czasie rozmawiać, rozmowy można zawiesić. Zawieszenie zgłaszasz Ty albo mama w Biurze Obsługi. Za dni zawieszenia obniżamy opłatę za miesiąc, ale najwyżej za 7 dni.
+Tak, jeśli mama chce, może rozmawiać z Arthurem także w czasie wyjazdów, w szpitalu albo w domu opieki. Arthur dzwoni na jej telefon, więc rozmowy nie zależą od tego, gdzie mama akurat jest. Przy dłuższym pobycie poza domem możecie zmienić termin rozmów, a gdy mama nie ma ochoty w tym czasie rozmawiać, rozmowy można zawiesić. Zawieszenie zgłaszasz Ty albo mama w Biurze Obsługi. Za każdy dzień zawieszenia obniżamy następną opłatę, ale najwyżej za 7 dni.
 
 ## 3. Mama i Ty · #mama-i-ty · ton t2
 
@@ -153,11 +153,11 @@ Arthurozmowy kosztują 279 zł, 299 zł albo 349 zł miesięcznie, zależnie od 
 
 ### Czy będziemy mogły najpierw wypróbować arthurozmowy?  `baza:miesiac-probny`
 
-Tak, pierwszy, próbny miesiąc jest za darmo i do niczego nie zobowiązuje. Płacisz dopiero od drugiego miesiąca, gdy potwierdzisz, że chcecie kontynuować rozmowy. Pierwsze rozmowy to poznawanie się, więc dajcie im kilka tygodni, zanim je ocenicie.
+Tak, pierwsze 14 dni są za darmo i do niczego nie zobowiązują. Płacisz dopiero po tym czasie, gdy potwierdzisz, że chcecie kontynuować rozmowy. Pierwsze rozmowy to poznawanie się, więc oceńcie je razem pod koniec tych dwóch tygodni, a nie po pierwszym telefonie.
 
 ### Jak zrezygnować z arthurozmów?  `baza:jak-zrezygnowac`
 
-Z arthurozmów zrezygnujesz w każdej chwili w panelu klienta: klikasz rezygnację i ją potwierdzasz. Rezygnacja uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Rozliczenie jest proporcjonalne do pozostałego czasu abonamentu, a w miesiącu próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał.
+Z arthurozmów zrezygnujesz w każdej chwili w panelu klienta: klikasz rezygnację i ją potwierdzasz. Rezygnacja uruchamia opcję „Pożegnanie”: przez 15 dni Arthur przygotuje mamę do końca rozmów i się z nią pożegna. Za „Pożegnanie” płacisz tyle, ile za 15 dni Twojego pakietu, i rozliczamy je z dniami, które już opłaciłaś, a w okresie próbnym rozmowy po prostu się kończą. Przez 3 miesiące od ostatniej rozmowy Arthur zachowuje pamięć spraw mamy, więc jeśli w tym czasie wrócicie, podejmie rozmowy tam, gdzie je przerwał.
 
 **Link wewnętrzny:** Rezygnacja → /jak-korzystac#rezygnacja
 
