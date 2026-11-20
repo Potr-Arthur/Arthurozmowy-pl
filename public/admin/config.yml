@@ -11625,6 +11625,12 @@ singletons:
       widget: text
       required: false
       hint: Zmieniamy tylko razem z polityką prywatności.
+    - label: Osobna zgoda na SMS po rozmowie (pole wyboru, nieobowiązkowe)
+      name: zgoda_sms
+      widget: text
+      required: false
+      hint: 'Marketing bezpośredni: osobne, niezaznaczone pole (Regulamin usługi, § 6). Zmieniamy tylko razem z
+        polityką prywatności.'
     hint: Okienko jest nieaktywne do oceny skutków dla ochrony danych (Z6) i polityki prywatności.
   - label: Okienko „Napisz do nas”
     name: okno_kontaktu

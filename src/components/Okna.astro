@@ -27,6 +27,9 @@ const f = ust.firma;
       </fieldset>
     </fieldset>
     <p class="okno__zgoda" set:html={inline(r.zgoda, f)} />
+    {r.zgoda_sms && (
+      <label class="wybor okno__zgoda"><input type="checkbox" name="zgoda_sms" disabled /> <span set:html={inline(r.zgoda_sms, f)} /></label>
+    )}
     <button type="button" class="cta cta--nieaktywny" aria-disabled="true">{r.przycisk}</button>
   </form>
 </dialog>

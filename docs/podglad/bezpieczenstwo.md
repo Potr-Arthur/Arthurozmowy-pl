@@ -1,6 +1,6 @@
 # Bezpieczeństwo · /bezpieczenstwo
 
-*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-19 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthur, program prowadzący rozmowy telefoniczne z mamą, nigdy nie prosi jej o pieniądze, o dane ani o żadną przysługę, nie prosi, żeby czegoś nie mówiła rodzinie, i nie przekazuje wiadomości od innych osób. Dzwoni tylko w stałym terminie mamy, a gdy mama nie odbierze, jeszcze raz po 30 minutach; SMS-y wysyła tylko ze swojego numeru i nigdy nie ma w nich linków. Numer na ekranie telefonu nie jest dowodem, bo oszuści potrafią go podrobić, więc zasada brzmi: kto dzwoni w innym terminie albo o coś prosi, nie jest Arthurem. Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur, na serwerach w Unii Europejskiej, i żaden człowiek ich nie czyta. Po rezygnacji pamięć spraw mamy jest przechowywana przez 3 miesiące, a potem usuwana. Mama od pierwszej rozmowy wie, że Arthur jest programem opartym na sztucznej inteligencji.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthur, program prowadzący rozmowy telefoniczne z mamą, nigdy nie prosi jej o pieniądze, o dane ani o żadną przysługę, nie prosi, żeby czegoś nie mówiła rodzinie, i nie przekazuje wiadomości od innych osób. Dzwoni tylko w stałym terminie mamy, a gdy mama nie odbierze, jeszcze raz po 30 minutach; SMS-y wysyła tylko ze swojego numeru i nigdy nie ma w nich linków. Numer na ekranie telefonu nie jest dowodem, bo oszuści potrafią go podrobić, więc zasada brzmi: kto dzwoni w innym terminie albo o coś prosi, nie jest Arthurem. Rozmów nie nagrywamy, dane mamy są przetwarzane wyłącznie w Unii Europejskiej, a żaden człowiek rozmów nie słucha ani nie czyta. Po rezygnacji pamięć spraw mamy jest przechowywana przez 3 miesiące, a potem usuwana. Mama od pierwszej rozmowy wie, że Arthur jest programem opartym na sztucznej inteligencji.  `geo.streszczenie`
 
 ## Wejście
 
@@ -61,7 +61,7 @@ Arthur nigdy:
 - nie prosi, żeby mama czegoś nie mówiła rodzinie;
 - nie przekazuje wiadomości od innych osób ani wieści o bliskich;
 - nie dzwoni w innych terminach niż umówione z mamą;
-- nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112: gdy mama powie mu o nagłej sytuacji, Arthur poprosi ją, żeby tam zadzwoniła.
+- nie wysyła linków i nie podaje numerów, pod które trzeba zadzwonić. Jedyny wyjątek to 112: gdy mama powie mu o nagłym zdarzeniu, Arthur poprosi ją, żeby zawiadomiła bliskich albo zadzwoniła pod 112.
 
 **Voice aside** `sekcje[0].bloki[1]`
 
@@ -71,7 +71,7 @@ Jeśli ktoś przedstawia się jako Arthur i o cokolwiek prosi albo dzwoni w inny
 
 Arthur dzwoni zawsze z tego samego numeru, który podamy Ci przed pierwszą rozmową, i zawsze w stałym terminie mamy. Gdy mama nie odbierze, zadzwoni jeszcze raz po 30 minutach, a mama może do końca dnia sama oddzwonić na jego numer. SMS-y Arthur wysyła tylko z tego numeru i nigdy nie ma w nich linków. Sam numer na ekranie nie jest jednak dowodem, bo oszuści potrafią go podrobić. Nie obiecujemy więc, że nikt nigdy nie podszyje się pod Arthura. Obiecujemy, że prawdziwy Arthur dzwoni tylko w umówionym terminie i nigdy o nic nie poprosi. To dwie zasady, które mama łatwo zapamięta.
 
-Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, damy Ci o tym znać.
+Gdy mama zapyta Arthura, czy nie jest oszustem, Arthur doceni jej czujność, poprosi, żeby zadzwoniła do Ciebie, i się rozłączy. Gdy mama opowie mu o podejrzanym telefonie od kogoś, kto podawał się za Arthura, znajdziesz o tym zdanie w najbliższym raporcie.
 
 Jeśli taki telefon się zdarzy, najważniejsze jest, żeby mama powiedziała o nim Tobie. Ty najlepiej ocenisz, co się stało i czy trzeba to zgłosić na policję.
 
@@ -93,7 +93,7 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 
 W raporcie, który co tydzień przychodzi do Ciebie e-mailem, zobaczysz rytm rozmów, ogólne tematy i wątki, do których mama wraca. Nie znajdziesz w nim tego, co mama dokładnie mówiła. Mama zna tę zasadę, zanim zacznie rozmawiać, a gdy raport trafi do Ciebie, Arthur na początku najbliższej rozmowy powie jej, co w nim jest.
 
-Rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur. Żaden człowiek ich nie czyta ani nie odsłuchuje, także ekspertka, która opracowała metodę.
+Rozmów nie nagrywamy. Po każdej rozmowie Arthur aktualizuje krótki zapis spraw mamy, bez jej słów i bez informacji o zdrowiu, a zapis samej rozmowy usuwamy najpóźniej po 24 godzinach. Żaden człowiek rozmów nie słucha ani nie czyta, także ekspertka, która opracowała metodę.
 
 Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
 
