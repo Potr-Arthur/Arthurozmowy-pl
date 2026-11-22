@@ -1,6 +1,6 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Service, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy co tydzień, w stałym dniu i o stałej godzinie, które mama wybiera. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje e-mailem raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy co tydzień, w stałym dniu i o stałej godzinie, które mama wybiera. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje e-mailem raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy Arthur wykryje zmianę tempa mówienia albo toku formułowania myśli mamy, dostaje osobną wiadomość, która opisuje tę zmianę i nie ocenia zdrowia.  `geo.streszczenie`
 
 ## Wejście
 
@@ -142,7 +142,7 @@ Raport przychodzi do Ciebie co tydzień e-mailem, po rozmowie pełnej. Zobaczysz
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
+W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli Arthur wykryje zmianę tempa, w jakim mama mówi, albo toku, w jakim formułuje myśli, da Ci znać osobną wiadomością i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie jest lekarzem i nie ocenia zdrowia: zapisuje tylko fakt, że taką zmianę wykrył. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
 
 **Karta cytatu** `sekcje[3].bloki[1]`
 

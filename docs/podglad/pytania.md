@@ -1,6 +1,6 @@
 # Pytania · /pytania
 
-*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -135,7 +135,7 @@ Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym z
 
 ### Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?  `baza:niepokojaca-zmiana`
 
-Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wypowiada, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją, którą warto wziąć pod uwagę przy spotkaniu z lekarzem. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
+Tak, jeśli Arthur zauważy, że zmieniło się tempo, w jakim mama mówi, albo tok, w jakim formułuje myśli, da Ci znać osobną wiadomością i opisze tę zmianę. To jedyna rzecz, o której Arthur informuje Cię sam. Arthur nie jest lekarzem i nie ocenia zdrowia: zapisuje tylko fakt, że taką zmianę wykrył, i słyszy wyłącznie to, co dzieje się w trakcie rozmowy. W pierwszej rozmowie Arthur mówi mamie, że może dać Ci znać o takiej zmianie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
 
 ## 4. Cena i rezygnacja · #cena-i-rezygnacja · ton t1
 

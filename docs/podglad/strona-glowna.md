@@ -1,6 +1,6 @@
 # Arthurozmowy – rozmowy z Arthurem · /
 
-*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -141,7 +141,7 @@ Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich 
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-Arthur nie diagnozuje przyczyn takiej zmiany. Dzięki raportowi będziesz jednak wiedziała, na co zwrócić uwagę i o czym ewentualnie porozmawiać z lekarzem.
+Arthur nie jest lekarzem i nie ocenia zdrowia. Zapisuje tylko fakt, że zmieniło się tempo, w jakim mama mówi, albo tok, w jakim formułuje myśli. Co zrobić z tą informacją, zdecydujesz Ty.
 
 Z raportu dowiesz się również, kiedy mama rozmawiała z Arthurem i czego dotyczyły rozmowy – ale tylko w ogólnym zarysie. Nie znajdziesz w nim tego, co mama dokładnie powiedziała. Uprzedzamy ją, że Arthur może przekazywać Ci informacje o zauważonych zmianach. Pamiętaj jednak, że może obserwować wyłącznie to, co dzieje się podczas rozmowy, a nie między połączeniami.
 

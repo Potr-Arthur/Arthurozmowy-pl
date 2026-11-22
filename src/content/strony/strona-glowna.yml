@@ -98,7 +98,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Arthur nie diagnozuje przyczyn takiej zmiany. Dzięki raportowi będziesz jednak wiedziała, na co zwrócić uwagę i o czym ewentualnie porozmawiać z lekarzem.
+          Arthur nie jest lekarzem i nie ocenia zdrowia. Zapisuje tylko fakt, że zmieniło się tempo, w jakim mama mówi, albo tok, w jakim formułuje myśli. Co zrobić z tą informacją, zdecydujesz Ty.
 
           Z raportu dowiesz się również, kiedy mama rozmawiała z Arthurem i czego dotyczyły rozmowy – ale tylko w ogólnym zarysie. Nie znajdziesz w nim tego, co mama dokładnie powiedziała. Uprzedzamy ją, że Arthur może przekazywać Ci informacje o zauważonych zmianach. Pamiętaj jednak, że może obserwować wyłącznie to, co dzieje się podczas rozmowy, a nie między połączeniami.
       - typ: link
@@ -214,7 +214,7 @@ seo:
   obraz_og:
     plik: /images/og/arthurozmowy-og-glowna.jpg
     alt: 'Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu'
-  zaktualizowano: 2026-11-20
+  zaktualizowano: 2026-11-22
   autor: Piotr Jaworski
   adres: /
   schemat:

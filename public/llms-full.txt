@@ -57,7 +57,7 @@ Dlatego dla Arthura alternatywą nie jest człowiek, tylko brak takich rozmów. 
 
 Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
 
-Arthur nie diagnozuje przyczyn takiej zmiany. Dzięki raportowi będziesz jednak wiedziała, na co zwrócić uwagę i o czym ewentualnie porozmawiać z lekarzem.
+Arthur nie jest lekarzem i nie ocenia zdrowia. Zapisuje tylko fakt, że zmieniło się tempo, w jakim mama mówi, albo tok, w jakim formułuje myśli. Co zrobić z tą informacją, zdecydujesz Ty.
 
 Z raportu dowiesz się również, kiedy mama rozmawiała z Arthurem i czego dotyczyły rozmowy – ale tylko w ogólnym zarysie. Nie znajdziesz w nim tego, co mama dokładnie powiedziała. Uprzedzamy ją, że Arthur może przekazywać Ci informacje o zauważonych zmianach. Pamiętaj jednak, że może obserwować wyłącznie to, co dzieje się podczas rozmowy, a nie między połączeniami.
 
@@ -172,7 +172,7 @@ Przykład rozmowy:
 
 Raport przychodzi do Ciebie co tydzień e-mailem, po rozmowie pełnej. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
 
-W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
+W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli Arthur wykryje zmianę tempa, w jakim mama mówi, albo toku, w jakim formułuje myśli, da Ci znać osobną wiadomością i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie jest lekarzem i nie ocenia zdrowia: zapisuje tylko fakt, że taką zmianę wykrył. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
 
 Przykład raportu:
 Rozmowy mamy z Arthurem, 9–15 listopada
@@ -328,7 +328,7 @@ Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie o
 
 Arthur nie wypytuje mamy o zdrowie i nie testuje jej sprawności. Jeśli jednak mama powie mu o planowanej wizycie u lekarza, Arthur może pomóc jej ułożyć listę pytań.
 
-Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
+Arthur nie ocenia zdrowia. Gdy da Ci znać o zmianie tempa mówienia albo toku formułowania myśli mamy, przekaże tylko fakt, że tę zmianę wykrył w rozmowie, i opisze ją bez cytatów. Nie wie, z czego zmiana wynika, i tego nie ocenia.
 
 ### Żadnych obietnic o poprawie pamięci. Tylko wartościowe, inspirujące rozmowy.
 
@@ -481,7 +481,7 @@ Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym z
 
 #### Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?
 
-Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wypowiada, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją, którą warto wziąć pod uwagę przy spotkaniu z lekarzem. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
+Tak, jeśli Arthur zauważy, że zmieniło się tempo, w jakim mama mówi, albo tok, w jakim formułuje myśli, da Ci znać osobną wiadomością i opisze tę zmianę. To jedyna rzecz, o której Arthur informuje Cię sam. Arthur nie jest lekarzem i nie ocenia zdrowia: zapisuje tylko fakt, że taką zmianę wykrył, i słyszy wyłącznie to, co dzieje się w trakcie rozmowy. W pierwszej rozmowie Arthur mówi mamie, że może dać Ci znać o takiej zmianie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
 
 ### Cena i rezygnacja
 

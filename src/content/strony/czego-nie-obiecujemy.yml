@@ -18,11 +18,11 @@ seo:
   schemat: [WebPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-20
+  zaktualizowano: 2026-11-22
 
 geo:
   streszczenie: |-
-    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.
+    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i osobną wiadomość, gdy Arthur wykryje zmianę tempa mówienia albo toku formułowania myśli mamy. Arthur nie ocenia zdrowia.
 
 wejscie:
   h1: |-
@@ -70,7 +70,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
+          Arthur nie ocenia zdrowia. Gdy da Ci znać o zmianie tempa mówienia albo toku formułowania myśli mamy, przekaże tylko fakt, że tę zmianę wykrył w rozmowie, i opisze ją bez cytatów. Nie wie, z czego zmiana wynika, i tego nie ocenia.
 
   - kotwica: pamiec
     etykieta: Pamięć

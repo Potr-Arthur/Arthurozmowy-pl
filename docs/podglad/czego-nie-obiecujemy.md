@@ -1,6 +1,6 @@
 # Czego nie obiecujemy · /czego-nie-obiecujemy
 
-*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i osobną wiadomość, gdy Arthur wykryje zmianę tempa mówienia albo toku formułowania myśli mamy. Arthur nie ocenia zdrowia.  `geo.streszczenie`
 
 ## Wejście
 
@@ -67,7 +67,7 @@ Arthur nie wypytuje mamy o zdrowie i nie testuje jej sprawności. Jeśli jednak 
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
 
-Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
+Arthur nie ocenia zdrowia. Gdy da Ci znać o zmianie tempa mówienia albo toku formułowania myśli mamy, przekaże tylko fakt, że tę zmianę wykrył w rozmowie, i opisze ją bez cytatów. Nie wie, z czego zmiana wynika, i tego nie ocenia.
 
 ## 4. Pamięć · #pamiec · ton t1
 
