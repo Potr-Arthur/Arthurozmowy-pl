@@ -1,4 +1,16 @@
 ---
-import WPrzygotowaniu from '../components/WPrzygotowaniu.astro';
+// Polityka prywatności i RODO: pełny tekst z src/prawne/prywatnosc.md (kopia dokumentu projektu). Na adresie tymczasowym poza indeksem.
+import Uklad from '../layouts/Uklad.astro';
+import { ustawienia } from '../lib/ustawienia';
+import { Content } from '../prawne/prywatnosc.md';
+const ust = await ustawienia();
 ---
-<WPrzygotowaniu adres="/prywatnosc" />
+<Uklad tytul={`Polityka prywatności i RODO – ${ust.marka.nazwa}`} adres="/prywatnosc" indeksuj={false} ust={ust} stopkaPrev="1">
+  <section class="sekcja sekcja--pierwsza ton-1 dokument">
+    <div class="wrap">
+      <div class="tresc kolumna dokument__tresc">
+        <Content />
+      </div>
+    </div>
+  </section>
+</Uklad>

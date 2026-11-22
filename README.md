@@ -5,12 +5,12 @@
 - **Astro 5**: strony buduje `src/components/Strona.astro` z plików w `src/content/`, wygląd jest w `src/styles/witryna.css`. Szablony są w modelu blokowym makiety V2: jeden typ bloku to jeden komponent w `src/components/bloki/`.
 - **Netlify** buduje poleceniem z `netlify.toml`: sprawdzenie treści (błąd zatrzymuje publikację), pliki pochodne (JSON-LD, `llms.txt`, mapa strony), Astro. Podgląd wersji roboczej z panelu buduje się także przy błędzie, a wynik sprawdzenia pokazuje na stronie `/sprawdzenie` i w plakietce na każdej stronie podglądu.
 - **Adres tymczasowy:** każda strona ma `noindex`, nagłówek `X-Robots-Tag` i `robots.txt` blokujący roboty. Przy starcie na arthurozmowy.pl: zmienna `PUBLIKACJA=tak` na Netlify (włącza docelowy `narzedzia/robots-docelowy.txt` i indeksowanie) i usunięcie bloku `X-Robots-Tag` z `netlify.toml`.
-- **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-strony`, `/regulamin-uslugi`, `/prywatnosc` i `/pliki-cookie` to strony „w przygotowaniu”.
+- **Formularze** (okienka „Porozmawiaj z Arthurem” i „Napisz do nas”) są nieaktywne do oceny skutków dla ochrony danych (Z6). `/regulamin-uslugi` i `/prywatnosc` pokazują pełne teksty z `src/prawne/` (kopie dokumentów projektu `claude/Regulamin_uslugi_v1.md` i `claude/Polityka_prywatnosci_v1.md`, zmieniane razem z nimi). `/regulamin-strony` i `/pliki-cookie` są stronami „w przygotowaniu”.
 - **Okienko zgód na pliki cookie** (`src/components/Zgody.astro`, własne, decyzja z 19.11.2026): pokazuje się przy pierwszej wizycie i po przycisku „Ustawienia plików cookie” w stopce. Trzy kategorie: niezbędne, statystyki (GA4), reklamy (Google Ads i Meta). Skrypt w `<head>` ustawia Consent Mode v2 na „brak zgody”, zanim ruszy GTM, a wybór z okienka zapisuje w przeglądarce na rok (`src/lib/zgody.ts`). Teksty są w panelu, w Elementach wspólnych. GTM i licznik bez cookies ładują się tylko na produkcji, gdy ich pola w Pomiarze nie są puste.
 - **Redakcja `/admin`** (Sveltia CMS 0.259.0): układ paneli opisuje dokument projektu `claude/CMS_panele_redakcji_v1.md`. Zapis tworzy wersję roboczą (pull request z podglądem Netlify), a „Opublikuj” wysyła ją na witrynę. Logowanie osobistym tokenem GitHub (fine-grained, tylko to repozytorium; Contents i Pull requests: read and write, Commit statuses: read).
 - **Budowanie kontrolne** na GitHubie (`.github/workflows/podglad.yml`) odkłada log i zbudowaną stronę na gałąź `podglad-wynik`.
 
-Treści w tym repozytorium są w stanie z 17.11.2026 (makieta V2, stały termin rozmów o dowolnej porze, pakiety liczone tygodniami, raport co tydzień ze wzorem). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
+Treści w tym repozytorium są w stanie z 22.11.2026 (makieta V2, stały termin rozmów o dowolnej porze, pakiety liczone tygodniami, poufność rozmów bez raportów i dwa alerty dla córki). Wszystkie teksty witryny są rozpisane na pliki stron i na pola, które redaktor zmienia w Sveltia CMS. Strony, ich rozdziały i nazwy pokazuje dokument projektu `claude/Mapa_witryny_v1.md`, a moduły makiety i zadania dla szablonów `claude/Przekazanie_WITRYNA.md`.
 
 ## Co jest w repozytorium (część treści)
 
@@ -108,7 +108,7 @@ Jedyna lista zdjęć to `docs/lista-grafik.md` (generowana z plików stron) i je
 
 ## Karta cytatu
 
-Przykładowy dialog mamy z Arthurem ma zawsze etykietę „Przykład rozmowy”, bo jest wymyślony (skrypt tego pilnuje). W karcie nigdy nie stoi fragment prawdziwej rozmowy z mamą. Karta z przykładem raportu na stronie Jak działa Arthur pokazuje wzór z Księgi (rozdz. 13): pola „kto” są tu nagłówkami części raportu („Kiedy rozmawiali”, „O czym rozmawiali”, „Do czego mama wraca”), a ostatnia linia nie ma nagłówka.
+Przykładowy dialog mamy z Arthurem ma zawsze etykietę „Przykład rozmowy”, bo jest wymyślony (skrypt tego pilnuje). W karcie nigdy nie stoi fragment prawdziwej rozmowy z mamą.
 
 ## Narzędzia
 
@@ -128,7 +128,7 @@ python3 narzedzia/buduj_pochodne.py
 
 `generuj_config.py` tworzy `public/admin/config.yml`; model treści zmieniasz w skrypcie i w `src/content.config.ts`, nie w pliku wynikowym. `sprawdz_tresci.py` sprawdza, czy każde pole treści ma pole w CMS, długości tytułów i opisów, nagłówki, kotwice i linki, bloki, akordeony, słowa zakazane (z wyjątkiem „seniora” w cudzysłowie na O nas), pisownię „Arthur” i „arthurozmowy”, znaczniki, zgodność definicji i cen, zasadę „jeden temat, jedna nazwa”, zdjęcia, a na końcu wypisuje zaślepki. Z opcją `--podglad` zapisuje też stronę `public/sprawdzenie.html` i plakietkę dla podglądu wersji roboczej i nie zatrzymuje budowania. Sprawdza również strony kampanii (adres, słowa zakazane, bloki, zdjęcia). `buduj_pochodne.py` tworzy podglądy stron, mapę pól, JSON-LD, listę grafik, oba pliki dla AI i mapę strony.
 
-Stan na 17.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas), 6 uwag (dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, trzy rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
+Stan na 22.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas), 5 uwag (dwa rozdziały „Najczęstsze pytania” w tym samym tonie co rozdział wyżej, jeden tytuł o znak za długi, dwa rozdziały o tej samej nazwie na kilku stronach przy tym samym temacie).
 
 ## Zaślepki, które blokują publikację
 
@@ -136,11 +136,11 @@ Stan na 17.11.2026: zero błędów, 2 zaślepki (dane ekspertki na stronie O nas
 |---|---|---|
 | O nas · Nasza metoda | ekspertka: imię i nazwisko, specjalizacja, staż, jednostka naukowa, wspólne zdjęcie (Z1) | Ty |
 
-## Decyzje otwarte
+## Stan prac przed startem
 
-- Zamówienie („Umów mamie próbne arthurozmowy”, „Zamów online”) prowadzi do panelu klienta, którego jeszcze nie ma; przyciski są nieaktywne.
-- Strony `/regulamin-strony`, `/regulamin-uslugi`, `/prywatnosc` i `/pliki-cookie` to na adresie tymczasowym strony „w przygotowaniu”. Strona Pliki cookie opisze narzędzia z okienka zgód (GA4, Google Ads, Meta) i czas przechowywania plików cookie.
-- Okienka „Porozmawiaj z Arthurem” i „Napisz do nas” mają teksty, ale włączamy je dopiero po ocenie skutków dla ochrony danych (Z6), razem z polityką prywatności.
-- Sposób płatności i bramka (FIRMA), opinia prawnika o rozliczeniu „Pożegnania” (Z9), zbieranie zgody mamy (Z5), numer, z którego Arthur dzwoni do mamy. Kanałem rozmów jest telefon (decyzja z 17.11.2026).
-- Plausible czy Umami jako licznik bez cookies. Okienko zgód nie ma rejestru zgód (dowodu zgody); do oceny w Z6.
-- Pisownia nazwy firmy „arthurozmowy Piotr Jaworski” do potwierdzenia z CEIDG.
+- Zamówienie („Umów mamie próbne arthurozmowy”, „Zamów online”) prowadzi do ekranów `/umow` i `/abonament` z odbiornikiem danych w UE (`claude/Panel_klienta_Model_A_zakres.md`). Do ich zbudowania przyciski są nieaktywne.
+- `/regulamin-strony` i `/pliki-cookie` są w przygotowaniu. Strona Pliki cookie opisze narzędzia z okienka zgód (GA4, Google Ads, Meta) i czas przechowywania plików cookie według Polityki prywatności, pkt 6.
+- Okienka „Porozmawiaj z Arthurem” i „Napisz do nas” włączamy po ocenie skutków dla ochrony danych (DPIA), bramce przed pierwszą rozmową z mamą.
+- Rozstrzygnięte w Regulaminie usługi z 22.11.2026: płatność kartą przez Stripe, „Pożegnanie” rozliczane stawką dzienną (§ 30), zgoda mamy w pierwszej rozmowie (§ 9), numer Arthura od polskiego operatora VoIP, poufność rozmów (§ 14) i dwa alerty (§ 15). Kanałem rozmów jest telefon (decyzja z 17.11.2026).
+- Licznik bez cookies: Plausible (serwery w UE). Okienko zgód zapisuje decyzję tylko w przeglądarce, bez serwerowego rejestru zgód, co opisuje DPIA.
+- Nazwa firmy w dokumentach: „arthurozmowy Piotr Jaworski”. Piotr sprawdza jej zapis w CEIDG przed pierwszą sprzedażą.

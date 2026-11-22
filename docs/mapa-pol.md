@@ -10,7 +10,7 @@
 | 1 | Jak działa Arthur | #jak-dziala-arthur | tak | tak | Tekst akapitu, Lista, Karta cytatu, Link wewnętrzny |
 | 2 | Czemu służą arthurozmowy? | #czemu-sluza-arthurozmowy | tak | tak | Tekst akapitu, Voice aside |
 | 3 | Dostępność | #dostepnosc | — | tak | Tekst akapitu |
-| 4 | Raport dla Ciebie | #raport-dla-ciebie | tak | tak | Tekst akapitu, Link wewnętrzny |
+| 4 | Spokój | #spokoj | tak | tak | Tekst akapitu, Link wewnętrzny |
 | 5 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 6 | Czego nie obiecujemy | #czego-nie-obiecujemy | — | tak | Tekst akapitu, Link wewnętrzny |
 | 7 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Link wewnętrzny |
@@ -35,7 +35,7 @@
 | 1 | Stały termin | #staly-termin | — | tak | Tekst akapitu, Voice aside |
 | 2 | Zasady rozmowy | #zasady-rozmowy | — | — | Zasady (H3) |
 | 3 | Ciągłość rozmów | #ciaglosc-rozmow | tak | tak | Tekst akapitu, Karta cytatu |
-| 4 | Raport dla Ciebie | #raport-dla-ciebie | — | tak | Tekst akapitu, Karta cytatu, Link wewnętrzny |
+| 4 | Poufność | #poufnosc | — | tak | Tekst akapitu, Link wewnętrzny |
 | 5 | (poza spisem) | #najczestsze-pytania | — | — | Najczęstsze pytania (akordeon), Przycisk CTA (Porozmawiaj z Arthurem) |
 
 ## Jak korzystać · `/jak-korzystac` · `src/content/strony/jak-korzystac.yml`
@@ -56,7 +56,7 @@
 | 1 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Karta cytatu, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 2 | Powiedz, że to program | #powiedz-ze-to-program | — | tak | Tekst akapitu, Karta cytatu |
 | 3 | Zaciekaw mamę | #zaciekaw-mame | tak | tak | Tekst akapitu, Karta cytatu |
-| 4 | Powiedz o raporcie | #powiedz-o-raporcie | — | tak | Tekst akapitu, Karta cytatu |
+| 4 | Powiedz o poufności | #powiedz-o-poufnosci | — | tak | Tekst akapitu, Karta cytatu |
 | 5 | Zostaw decyzję mamie | #zostaw-decyzje-mamie | — | tak | Tekst akapitu, Karta cytatu |
 | 6 | Uprzedź o oszustach | #uprzedz-o-oszustach | — | tak | Tekst akapitu, Karta cytatu, Link wewnętrzny |
 | 7 | Wysłuchaj wątpliwości | #wysluchaj-watpliwosci | — | — | Karta cytatu, Tekst akapitu, Przycisk CTA (Porozmawiaj z Arthurem) |
@@ -144,7 +144,7 @@
 | `mama-zapomina` | Czy arthurozmowy są dla mamy, która zaczyna zapominać? | Mama i Ty | — |
 | `zgoda-mamy` | Czy mama musi się zgodzić na rozmowy z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
 | `czy-dowiem-sie-o-czym-rozmawiaja` | Czy dowiem się, o czym mama rozmawia z Arthurem? | Mama i Ty | Jak korzystać, Bezpieczeństwo |
-| `niepokojaca-zmiana` | Czy Arthur da mi znać, jeśli zauważy coś niepokojącego? | Mama i Ty | Czego nie obiecujemy |
+| `niepokojaca-zmiana` | Kiedy Arthur da mi znać o czymś, co powiedziała mama? | Mama i Ty | Czego nie obiecujemy |
 | `ile-kosztuja` | Ile kosztują arthurozmowy? | Cena i rezygnacja | — |
 | `miesiac-probny` | Czy będziemy mogły najpierw wypróbować arthurozmowy? | Cena i rezygnacja | Jak działa Arthur |
 | `jak-zrezygnowac` | Jak zrezygnować z arthurozmów? | Cena i rezygnacja | Jak działa Arthur |

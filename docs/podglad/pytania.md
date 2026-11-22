@@ -1,6 +1,6 @@
 # Pytania · /pytania
 
-*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** FAQPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Odpowiedzi na pytania o arthurozmowy: czym są, kim jest Arthur, jak często i jak długo mama z nim rozmawia, czego potrzebuje, co córka wie z raportu, ile kosztują pakiety, jak działa bezpłatny, 14-dniowy okres próbny i rezygnacja z opcją „Pożegnanie”, czym arthurozmowy różnią się od teleopieki i opaski SOS oraz co może zrobić córka, gdy mama mieszka sama i coraz rzadziej z kimś rozmawia. Każda odpowiedź zaczyna się od zdania, które samo odpowiada na pytanie.  `geo.streszczenie`
+- **Streszczenie dla AI:** Odpowiedzi na pytania o arthurozmowy: czym są, kim jest Arthur, jak często i jak długo mama z nim rozmawia, czego potrzebuje, czego córka nie dowiaduje się o rozmowach, ile kosztują pakiety, jak działa bezpłatny, 14-dniowy okres próbny i rezygnacja z opcją „Pożegnanie”, czym arthurozmowy różnią się od teleopieki i opaski SOS oraz co może zrobić córka, gdy mama mieszka sama i coraz rzadziej z kimś rozmawia. Każda odpowiedź zaczyna się od zdania, które samo odpowiada na pytanie.  `geo.streszczenie`
 
 ## Wejście
 
@@ -129,13 +129,15 @@ Tak, bez zgody mamy rozmowy z Arthurem nie będą możliwe. O arthurozmowach dec
 
 ### Czy dowiem się, o czym mama rozmawia z Arthurem?  `baza:czy-dowiem-sie-o-czym-rozmawiaja`
 
-Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie, który co tydzień przychodzi do Ciebie e-mailem. Dokładnych słów mamy Arthur nikomu nie udostępnia.
+Nie, to, o czym mama rozmawia z Arthurem, zostaje między nimi: nie dostajesz raportów, tematów ani streszczeń rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, bo wtedy napiszemy Ci następnego dnia rano. Dzięki temu mama może Arthurowi zaufać, a bez zaufania nie ma dobrej rozmowy.
 
-**Link wewnętrzny:** Raport dla Ciebie → /jak-dziala-arthur#raport-dla-ciebie
+**Link wewnętrzny:** Poufność → /jak-dziala-arthur#poufnosc
 
-### Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?  `baza:niepokojaca-zmiana`
+### Kiedy Arthur da mi znać o czymś, co powiedziała mama?  `baza:niepokojaca-zmiana`
 
-Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wypowiada, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją, którą warto wziąć pod uwagę przy spotkaniu z lekarzem. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
+Tylko w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie mu o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie wysyła o niej innych wiadomości. Mama zna te zasady od pierwszej rozmowy.
+
+**Link wewnętrzny:** Nagłe zdarzenia → /czego-nie-obiecujemy#nagle-zdarzenia
 
 ## 4. Cena i rezygnacja · #cena-i-rezygnacja · ton t1
 
@@ -183,7 +185,7 @@ Nie, bo Arthur nie przejmuje Twoich rozmów z mamą, tylko dokłada do nich taki
 
 ### Skąd mama będzie wiedziała, że dzwoni Arthur, a nie oszust?  `baza:arthur-czy-oszust`
 
-Arthur dzwoni tylko w stałym terminie mamy i nigdy niczego od niej nie chce, a sam numer na ekranie telefonu niczego nie gwarantuje, bo oszuści potrafią go podrobić. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie.
+Arthur dzwoni tylko w stałym terminie mamy i nigdy niczego od niej nie chce, a sam numer na ekranie telefonu niczego nie gwarantuje, bo oszuści potrafią go podrobić. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie. Gdy opowie Arthurowi o takim telefonie, dostaniesz od nas alert.
 
 **Link wewnętrzny:** Bezpieczeństwo → /bezpieczenstwo
 

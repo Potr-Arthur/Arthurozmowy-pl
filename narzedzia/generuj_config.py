@@ -201,9 +201,8 @@ B_ZASADY = obj("zasady", "Zasady (nagłówek H3, lid H3, tekst)", summary="Zasad
 ])
 B_CYTAT = obj("cytat", "Karta cytatu", summary="Karta cytatu: {{fields.etykieta}}", hint=(
     "Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. "
-    "Nigdy fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: "
-    "wstęp jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu."), fields=[
-    s("etykieta", "Etykieta nad kartą", hint="Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta."),
+    "Nigdy fragment prawdziwej rozmowy z mamą."), fields=[
+    s("etykieta", "Etykieta nad kartą", hint="Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta."),
     t("wstep", "Zdanie wstępu w karcie"),
     lst("repliki", "Kwestie", summary="{{fields.kto}}: {{fields.kwestia}}", label_singular="Kwestia", fields=[
         s("kto", "Kto mówi", hint="Mama, Arthur albo Ty. Puste pole = sam cytat."),

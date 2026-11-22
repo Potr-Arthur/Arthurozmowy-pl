@@ -1,6 +1,6 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, Service, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy co tydzień, w stałym dniu i o stałej godzinie, które mama wybiera. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. Córka dostaje e-mailem raport z ogólnymi tematami rozmów, bez dokładnych słów mamy, a gdy bieg rozmów zaniepokoi Arthura, dostaje sygnał, ale nie diagnozę.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthur dzwoni na zwykły telefon mamy co tydzień, w stałym dniu i o stałej godzinie, które mama wybiera. Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut. Arthur rozmawia według eksperckiej metody i pięciu zasad: rozmowę prowadzi mama, Arthur jej nie poprawia i nie testuje, zwraca się do niej jak do dorosłej osoby, powtórzoną historię traktuje jako ważną i nie przerywa ciszy. To, o czym mama rozmawia z Arthurem, zostaje między nimi: córka nie dostaje raportów ani tematów rozmów, a Arthur nie ocenia, jak mama mówi ani jak się czuje. Córka dostaje informację, gdy rozmowa się nie odbyła, i alert w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podawał się za Arthura.  `geo.streszczenie`
 
 ## Wejście
 
@@ -130,32 +130,23 @@ Wraca też do zagadnień, którymi mama zajmowała się w życiu, także zawodow
 > Mama: „Opowiadałam już, jak poznałam męża w sylwestra?”  
 > Arthur: „W tej wersji, w której to on poprosił panią do tańca, ale coś mi mówi, że jest też inna wersja.”  
 
-## 4. Raport dla Ciebie · #raport-dla-ciebie · ton t1
+## 4. Poufność · #poufnosc · ton t1
 
 **Nagłówek H2** `sekcje[3].h2`
 
-Dowiesz się, czym żyje mama, ale jej słów Arthur nie udostępni.
+Rozmowy należą do mamy: nie dostajesz z nich raportów ani streszczeń.
 
 **Lid H2** `sekcje[3].lid`
 
-Raport przychodzi do Ciebie co tydzień e-mailem, po rozmowie pełnej. Zobaczysz w nim, kiedy rozmowy się odbyły, jakie były ich tematy w ogólnym zarysie i do jakich spraw mama chętnie wraca.
+Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. Nikomu ich nie przekazuje, także Tobie: ani jej słów, ani tematów rozmów.
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-W raporcie nie znajdziesz tego, co mama dokładnie mówiła. Jej słów Arthur nikomu nie udostępnia. Jeśli bieg rozmów zmieni się w sposób, który niepokoi Arthura, da Ci znać i opisze, co się zmieniło, na przykład że mama mówi wolniej albo częściej gubi wątek. Arthur nie postawi diagnozy, bo ta należy do lekarza, ale zwróci Twoją uwagę na to, co zauważył w rozmowach. Mama pozna zasadę raportów w pierwszej rozmowie z Arthurem, a potem zawsze usłyszy od niego, co trafiło do raportu.
+Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie wysyła o niej żadnych wiadomości. Gdy rozmowa się nie odbędzie, napiszemy Ci o tym następnego dnia rano. Gdy takiej wiadomości nie ma, rozmowy się odbywają.
 
-**Karta cytatu** `sekcje[3].bloki[1]`
+Arthur da Ci znać tylko w dwóch sytuacjach: gdy mama powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Mama zna te zasady od pierwszej rozmowy.
 
-*Przykład raportu*
-
-Rozmowy mamy z Arthurem, 9–15 listopada
-
-> Kiedy rozmawiali: „środa, 12 listopada, 16:30 – rozmowa pełna; sobota, 15 listopada, 10:00 – rozmowa podtrzymująca”  
-> O czym rozmawiali: „jesienne prace na działce i plany na wiosnę; książka, którą mama właśnie czyta; świąteczne pieczenie”  
-> Do czego mama wraca: „działka – trzeci tydzień z rzędu”  
-> „W najbliższej rozmowie Arthur powie mamie, że ten raport do Ciebie trafił, i powie jej, co w nim jest.”  
-
-**Link wewnętrzny** `sekcje[3].bloki[2]`
+**Link wewnętrzny** `sekcje[3].bloki[1]`
 
 Czego nie obiecujemy → /czego-nie-obiecujemy
 

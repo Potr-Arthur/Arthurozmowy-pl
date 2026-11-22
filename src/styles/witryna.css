@@ -384,3 +384,14 @@ body:has(.menu[open]) .stale{display:none}
 .podglad-plakietka--bledy{background:var(--rdza)}
 .podglad-plakietka:focus-visible{outline:2px solid var(--onyks);outline-offset:2px}
 @media (max-width:759px){.podglad-plakietka{bottom:calc(84px + env(safe-area-inset-bottom,0px))}}
+
+/* dokumenty prawne (Regulamin usługi, Polityka prywatności): pełny tekst z Markdown */
+.dokument__tresc{display:grid;gap:1rem}
+.dokument__tresc h1{margin-bottom:.5rem}
+.dokument__tresc h2{margin-top:2rem}
+.dokument__tresc h3{margin-top:1.25rem}
+.dokument__tresc ol,.dokument__tresc ul{margin:0;padding-left:1.4rem;display:grid;gap:.4rem}
+.dokument__tresc hr{border:0;border-top:1px solid color-mix(in srgb,var(--onyks) 18%,transparent);width:100%}
+.dokument__tresc table{display:block;overflow-x:auto;border-collapse:collapse;font-size:.95rem;max-width:100%}
+.dokument__tresc th,.dokument__tresc td{border:1px solid color-mix(in srgb,var(--onyks) 20%,transparent);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.dokument__tresc th{font-weight:600}

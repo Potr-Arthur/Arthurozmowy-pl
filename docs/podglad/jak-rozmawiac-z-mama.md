@@ -1,6 +1,6 @@
 # Jak rozmawiać z mamą · /jak-rozmawiac-z-mama
 
-*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** HowTo, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, co córka znajdzie w raporcie, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować 14 bezpłatnych dni próbnych, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.  `geo.streszczenie`
+- **Streszczenie dla AI:** Siedem kroków rozmowy z mamą o arthurozmowach: najpierw samej porozmawiać z Arthurem, powiedzieć mamie wprost, że Arthur jest programem, zaciekawić ją rozmowami o jej sprawach, powiedzieć, że rozmowy zostają między mamą a Arthurem, zostawić mamie decyzję, także o stałym dniu i godzinie rozmów, i zaproponować 14 bezpłatnych dni próbnych, uprzedzić, że Arthur nigdy o nic nie prosi, oraz wysłuchać jej wątpliwości. Bez zgody mamy rozmowy z Arthurem nie są możliwe.  `geo.streszczenie`
 
 ## Wejście
 
@@ -95,25 +95,25 @@ Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako 
 
 > „Mamo, on ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Myślę, że akurat to by Ci się spodobało.”  
 
-## 4. Powiedz o raporcie · #powiedz-o-raporcie · ton t1
+## 4. Powiedz o poufności · #powiedz-o-poufnosci · ton t1
 
 **Nagłówek H2** `sekcje[3].h2`
 
-Bez tajemnic: powiedz mamie, co będzie w raporcie.
+Powiedz mamie, że jej rozmowy z Arthurem zostają między nimi.
 
 **Lid H2** `sekcje[3].lid`
 
-Od nas dostaniesz raport, z którego dowiesz się, kiedy mama rozmawiała z Arthurem, o czym była mowa w ogólnym zarysie i do których tematów wraca.
+Nie dostaniesz raportów ani tematów rozmów, a Arthur nie ocenia, jak mama mówi ani jak się czuje. Dowiesz się tylko, że rozmowa się nie odbyła.
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-W raporcie nie znajdziesz tego, co mama konkretnie mówiła. Jej słów Arthur nikomu nie udostępnia. Powiedz jej też, że jeśli bieg rozmów zmieni się w sposób, który zaniepokoi Arthura, da Ci znać. Arthur także uprzedzi mamę o obu tych zasadach w trakcie pierwszej rozmowy, a potem zawsze powie jej, co trafiło do raportu.
+Powiedz jej też uczciwie, że Arthur da Ci znać w dwóch sytuacjach: gdy powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podaje się za Arthura. Arthur uprzedzi mamę o tych zasadach także w pierwszej rozmowie.
 
 **Karta cytatu** `sekcje[3].bloki[1]`
 
 *Przykład*
 
-> „Będę dostawać informacje, kiedy rozmawialiście i mniej więcej o czym, ale nigdy tego, co dokładnie mówisz. Gdyby Arthura coś zaniepokoiło w sposobie, w jaki mówisz, da mi znać. Arthur zawsze powie Ci, co mi przekazał.”  
+> „Nie będę wiedzieć, o czym rozmawiacie. Arthur da mi znać tylko wtedy, gdybyś powiedziała mu o czymś nagłym albo o kimś, kto się pod niego podszywa.”  
 
 ## 5. Zostaw decyzję mamie · #zostaw-decyzje-mamie · ton t2
 
@@ -147,7 +147,7 @@ Numer Arthura podamy Ci przed pierwszą rozmową, żebyś zapisała go w telefon
 
 **Tekst akapitu** `sekcje[5].bloki[0]`
 
-Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Powiedz jej też, że Arthur dzwoni tylko w jej stałym terminie, a gdy nie odbierze, jeszcze raz po 30 minutach. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą.
+Powiedz jej, że Arthur tylko rozmawia, więc niczego od niej nie będzie chciał: nie prosi o pieniądze ani o dane, nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła, i nigdy nie prosi, żeby czegoś Ci nie mówiła. Powiedz jej też, że Arthur dzwoni tylko w jej stałym terminie, a gdy nie odbierze, jeszcze raz po 30 minutach. Uczul mamę na to i powiedz, że jeśli pojawią się wątpliwości, zawsze może się rozłączyć i skontaktować z Tobą. Gdy opowie o takim telefonie Arthurowi, Arthur da Ci znać.
 
 **Karta cytatu** `sekcje[5].bloki[1]`
 
