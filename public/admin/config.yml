@@ -237,7 +237,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -265,9 +265,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -305,8 +304,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -337,8 +336,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -359,8 +358,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -693,7 +692,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -721,9 +720,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -761,8 +759,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -793,8 +791,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -815,8 +813,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -1293,7 +1291,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -1321,9 +1319,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -1361,8 +1358,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -1393,8 +1390,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -1415,8 +1412,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -1749,7 +1746,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -1777,9 +1774,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -1817,8 +1813,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -1849,8 +1845,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -1871,8 +1867,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -2349,7 +2345,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -2377,9 +2373,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -2417,8 +2412,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -2449,8 +2444,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -2471,8 +2466,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -2805,7 +2800,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -2833,9 +2828,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -2873,8 +2867,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -2905,8 +2899,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -2927,8 +2921,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -3405,7 +3399,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -3433,9 +3427,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -3473,8 +3466,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -3505,8 +3498,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -3527,8 +3520,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -3861,7 +3854,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -3889,9 +3882,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -3929,8 +3921,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -3961,8 +3953,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -3983,8 +3975,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -4461,7 +4453,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -4489,9 +4481,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -4529,8 +4520,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -4561,8 +4552,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -4583,8 +4574,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -4917,7 +4908,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -4945,9 +4936,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -4985,8 +4975,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -5017,8 +5007,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -5039,8 +5029,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -5517,7 +5507,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -5545,9 +5535,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -5585,8 +5574,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -5617,8 +5606,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -5639,8 +5628,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -5973,7 +5962,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -6001,9 +5990,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -6041,8 +6029,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -6073,8 +6061,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -6095,8 +6083,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -6573,7 +6561,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -6601,9 +6589,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -6641,8 +6628,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -6673,8 +6660,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -6695,8 +6682,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -7029,7 +7016,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -7057,9 +7044,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -7097,8 +7083,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -7129,8 +7115,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -7151,8 +7137,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -7629,7 +7615,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -7657,9 +7643,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -7697,8 +7682,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -7729,8 +7714,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -7751,8 +7736,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -8085,7 +8070,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -8113,9 +8098,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -8153,8 +8137,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -8185,8 +8169,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -8207,8 +8191,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -8685,7 +8669,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -8713,9 +8697,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -8753,8 +8736,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -8785,8 +8768,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -8807,8 +8790,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -9141,7 +9124,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -9169,9 +9152,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -9209,8 +9191,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -9241,8 +9223,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -9263,8 +9245,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -9646,8 +9628,8 @@ collections:
             value: /#czemu-sluza-arthurozmowy
           - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-            value: /#raport-dla-ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+            value: /#spokoj
           - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -9678,8 +9660,8 @@ collections:
             value: /jak-dziala-arthur#zasady-rozmowy
           - label: Jak działa Arthur › Ciągłość rozmów
             value: /jak-dziala-arthur#ciaglosc-rozmow
-          - label: Jak działa Arthur › Raport dla Ciebie
-            value: /jak-dziala-arthur#raport-dla-ciebie
+          - label: Jak działa Arthur › Poufność
+            value: /jak-dziala-arthur#poufnosc
           - label: Jak działa Arthur › Najczęstsze pytania
             value: /jak-dziala-arthur#najczestsze-pytania
           - label: Jak korzystać
@@ -9700,8 +9682,8 @@ collections:
             value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
           - label: Jak rozmawiać z mamą › Zaciekaw mamę
             value: /jak-rozmawiac-z-mama#zaciekaw-mame
-          - label: Jak rozmawiać z mamą › Powiedz o raporcie
-            value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+          - label: Jak rozmawiać z mamą › Powiedz o poufności
+            value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
           - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
             value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
           - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -9884,7 +9866,7 @@ collections:
             name: etykieta
             widget: string
             required: false
-            hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+            hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
           - label: Zdanie wstępu w karcie
             name: wstep
             widget: text
@@ -9912,9 +9894,8 @@ collections:
             widget: boolean
             default: true
             required: false
-          hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-            fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-            jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+          hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+            fragment prawdziwej rozmowy z mamą.
           summary: 'Karta cytatu: {{fields.etykieta}}'
         - label: Karty ceny
           name: cennik
@@ -9952,8 +9933,8 @@ collections:
               value: /#czemu-sluza-arthurozmowy
             - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
               value: /#dostepnosc
-            - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-              value: /#raport-dla-ciebie
+            - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+              value: /#spokoj
             - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -9984,8 +9965,8 @@ collections:
               value: /jak-dziala-arthur#zasady-rozmowy
             - label: Jak działa Arthur › Ciągłość rozmów
               value: /jak-dziala-arthur#ciaglosc-rozmow
-            - label: Jak działa Arthur › Raport dla Ciebie
-              value: /jak-dziala-arthur#raport-dla-ciebie
+            - label: Jak działa Arthur › Poufność
+              value: /jak-dziala-arthur#poufnosc
             - label: Jak działa Arthur › Najczęstsze pytania
               value: /jak-dziala-arthur#najczestsze-pytania
             - label: Jak korzystać
@@ -10006,8 +9987,8 @@ collections:
               value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
             - label: Jak rozmawiać z mamą › Zaciekaw mamę
               value: /jak-rozmawiac-z-mama#zaciekaw-mame
-            - label: Jak rozmawiać z mamą › Powiedz o raporcie
-              value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+            - label: Jak rozmawiać z mamą › Powiedz o poufności
+              value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
             - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
               value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
             - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -10500,7 +10481,7 @@ collections:
           name: etykieta
           widget: string
           required: false
-          hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+          hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
         - label: Zdanie wstępu w karcie
           name: wstep
           widget: text
@@ -10528,9 +10509,8 @@ collections:
           widget: boolean
           default: true
           required: false
-        hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-          fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-          jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+        hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+          fragment prawdziwej rozmowy z mamą.
         summary: 'Karta cytatu: {{fields.etykieta}}'
       - label: Karty ceny
         name: cennik
@@ -10568,8 +10548,8 @@ collections:
             value: /#czemu-sluza-arthurozmowy
           - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-            value: /#raport-dla-ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+            value: /#spokoj
           - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -10600,8 +10580,8 @@ collections:
             value: /jak-dziala-arthur#zasady-rozmowy
           - label: Jak działa Arthur › Ciągłość rozmów
             value: /jak-dziala-arthur#ciaglosc-rozmow
-          - label: Jak działa Arthur › Raport dla Ciebie
-            value: /jak-dziala-arthur#raport-dla-ciebie
+          - label: Jak działa Arthur › Poufność
+            value: /jak-dziala-arthur#poufnosc
           - label: Jak działa Arthur › Najczęstsze pytania
             value: /jak-dziala-arthur#najczestsze-pytania
           - label: Jak korzystać
@@ -10622,8 +10602,8 @@ collections:
             value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
           - label: Jak rozmawiać z mamą › Zaciekaw mamę
             value: /jak-rozmawiac-z-mama#zaciekaw-mame
-          - label: Jak rozmawiać z mamą › Powiedz o raporcie
-            value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+          - label: Jak rozmawiać z mamą › Powiedz o poufności
+            value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
           - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
             value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
           - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -10920,7 +10900,7 @@ collections:
           name: etykieta
           widget: string
           required: false
-          hint: Np. „Przykład rozmowy”, „Przykład”, „Przykład raportu”. Może zostać pusta.
+          hint: Np. „Przykład rozmowy” albo „Przykład”. Może zostać pusta.
         - label: Zdanie wstępu w karcie
           name: wstep
           widget: text
@@ -10948,9 +10928,8 @@ collections:
           widget: boolean
           default: true
           required: false
-        hint: 'Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
-          fragment prawdziwej rozmowy z mamą. Etykieta „Przykład raportu” zmienia wygląd karty na raport: wstęp
-          jest wtedy tematem raportu, a „Kto mówi” nagłówkiem części raportu.'
+        hint: Przykładowy dialog mamy z Arthurem zawsze ma etykietę „Przykład rozmowy”, bo jest wymyślony. Nigdy
+          fragment prawdziwej rozmowy z mamą.
         summary: 'Karta cytatu: {{fields.etykieta}}'
       - label: Karty ceny
         name: cennik
@@ -10988,8 +10967,8 @@ collections:
             value: /#czemu-sluza-arthurozmowy
           - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
             value: /#dostepnosc
-          - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-            value: /#raport-dla-ciebie
+          - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+            value: /#spokoj
           - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -11020,8 +10999,8 @@ collections:
             value: /jak-dziala-arthur#zasady-rozmowy
           - label: Jak działa Arthur › Ciągłość rozmów
             value: /jak-dziala-arthur#ciaglosc-rozmow
-          - label: Jak działa Arthur › Raport dla Ciebie
-            value: /jak-dziala-arthur#raport-dla-ciebie
+          - label: Jak działa Arthur › Poufność
+            value: /jak-dziala-arthur#poufnosc
           - label: Jak działa Arthur › Najczęstsze pytania
             value: /jak-dziala-arthur#najczestsze-pytania
           - label: Jak korzystać
@@ -11042,8 +11021,8 @@ collections:
             value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
           - label: Jak rozmawiać z mamą › Zaciekaw mamę
             value: /jak-rozmawiac-z-mama#zaciekaw-mame
-          - label: Jak rozmawiać z mamą › Powiedz o raporcie
-            value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+          - label: Jak rozmawiać z mamą › Powiedz o poufności
+            value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
           - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
             value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
           - label: Jak rozmawiać z mamą › Uprzedź o oszustach
@@ -11321,8 +11300,8 @@ singletons:
           value: /#czemu-sluza-arthurozmowy
         - label: Arthurozmowy – rozmowy z Arthurem › Dostępność
           value: /#dostepnosc
-        - label: Arthurozmowy – rozmowy z Arthurem › Raport dla Ciebie
-          value: /#raport-dla-ciebie
+        - label: Arthurozmowy – rozmowy z Arthurem › Spokój
+          value: /#spokoj
         - label: Arthurozmowy – rozmowy z Arthurem › Porozmawiaj z Arthurem
           value: /#porozmawiaj-z-arthurem
         - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
@@ -11353,8 +11332,8 @@ singletons:
           value: /jak-dziala-arthur#zasady-rozmowy
         - label: Jak działa Arthur › Ciągłość rozmów
           value: /jak-dziala-arthur#ciaglosc-rozmow
-        - label: Jak działa Arthur › Raport dla Ciebie
-          value: /jak-dziala-arthur#raport-dla-ciebie
+        - label: Jak działa Arthur › Poufność
+          value: /jak-dziala-arthur#poufnosc
         - label: Jak działa Arthur › Najczęstsze pytania
           value: /jak-dziala-arthur#najczestsze-pytania
         - label: Jak korzystać
@@ -11375,8 +11354,8 @@ singletons:
           value: /jak-rozmawiac-z-mama#powiedz-ze-to-program
         - label: Jak rozmawiać z mamą › Zaciekaw mamę
           value: /jak-rozmawiac-z-mama#zaciekaw-mame
-        - label: Jak rozmawiać z mamą › Powiedz o raporcie
-          value: /jak-rozmawiac-z-mama#powiedz-o-raporcie
+        - label: Jak rozmawiać z mamą › Powiedz o poufności
+          value: /jak-rozmawiac-z-mama#powiedz-o-poufnosci
         - label: Jak rozmawiać z mamą › Zostaw decyzję mamie
           value: /jak-rozmawiac-z-mama#zostaw-decyzje-mamie
         - label: Jak rozmawiać z mamą › Uprzedź o oszustach

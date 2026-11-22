@@ -89,25 +89,25 @@ sekcje:
     etykieta: Dostępność
     ton: t2
     kotwica: dostepnosc
-  - h2: Arthur zna codzienny tok jej rozmów. Kiedy coś się w nim zmieni, da Ci znać.
+  - h2: Mama ma co tydzień rozmowę o tym, co ją zajmuje, a Ty wiesz, że dałaś jej coś dobrego.
     zdjecie:
       plik: /images/strony/arthurozmowy-jej-sprawy-corka-odbiera-raport-4x3.webp
       alt: Córka w okularach, z dłonią przy brodzie, w skupieniu czyta coś na ekranie telefonu
       widoczne: true
-    lid: Arthur rozmawia z mamą regularnie, więc z czasem poznaje zwykły przebieg ich rozmów. Na co dzień nie wypytuje jej o zdrowie ani nie sprawdza jej sprawności. Jeśli jednak zauważy zmianę w sposobie rozmowy, która go zaniepokoi, da Ci znać i opisze, co się zmieniło.
+    lid: Spokój nie bierze się z raportów ani z obserwowania mamy. Bierze się ze świadomości, że dałaś jej coś wartościowego i inspirującego, regularną rozmowę o jej sprawach z kimś, kto ma dla niej czas. To dobra, troskliwa i przemyślana decyzja.
     bloki:
       - typ: tekst
         tekst: |-
-          Arthur nie diagnozuje przyczyn takiej zmiany. Dzięki raportowi będziesz jednak wiedziała, na co zwrócić uwagę i o czym ewentualnie porozmawiać z lekarzem.
+          To, o czym mama rozmawia z Arthurem, zostaje między nimi. Nie dostajesz raportów, tematów ani streszczeń rozmów, a Arthur nie ocenia, jak mama mówi ani jak się czuje. Dzięki temu mama może mu zaufać, a bez zaufania nie ma dobrej rozmowy.
 
-          Z raportu dowiesz się również, kiedy mama rozmawiała z Arthurem i czego dotyczyły rozmowy – ale tylko w ogólnym zarysie. Nie znajdziesz w nim tego, co mama dokładnie powiedziała. Uprzedzamy ją, że Arthur może przekazywać Ci informacje o zauważonych zmianach. Pamiętaj jednak, że może obserwować wyłącznie to, co dzieje się podczas rozmowy, a nie między połączeniami.
+          Jeśli rozmowa się nie odbędzie, napiszemy Ci o tym następnego dnia rano. Gdy takiej wiadomości nie ma, rozmowy się odbywają. Najwięcej dowiesz się o nich od samej mamy.
       - typ: link
-        tekst: Raport dla Ciebie
-        adres: /jak-dziala-arthur#raport-dla-ciebie
+        tekst: Poufność
+        adres: /jak-dziala-arthur#poufnosc
         aktywny: true
-    etykieta: Raport dla Ciebie
+    etykieta: Spokój
     ton: t4
-    kotwica: raport-dla-ciebie
+    kotwica: spokoj
   - h2: Porozmawiaj z Arthurem teraz, a mamie zaoferuj 14 dni próbnych.
     zdjecie: null
     lid: Zanim zaproponujesz arthurozmowy mamie, możesz sama porozmawiać z Arthurem o swoich sprawach – tak, jak później będzie rozmawiała z nim mama. Zostaw numer telefonu, a Arthur zadzwoni do Ciebie od razu albo o wybranej przez Ciebie porze. Przekonasz się, jak mówi, jak słucha i jak prowadzi rozmowę. Poznasz też metodę, według której powstał.
@@ -144,7 +144,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Raport z rozmów dostajesz co tydzień e-mailem. W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
+          W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
           Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Za „Pożegnanie” płacisz tyle, ile za 15 dni Twojego pakietu, i rozliczamy je z dniami, które już opłaciłaś. W okresie próbnym rozmowy po prostu się kończą.
       - typ: link
@@ -197,7 +197,7 @@ sekcje:
         tekst: |-
           Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej 14 bezpłatnych dni próbnych. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
 
-          Powiedz jej również, jakie informacje o rozmowach będziesz otrzymywać. Dostaniesz od nas raport, ale nie znajdziesz w nim tego, co mama dokładnie mówiła. Arthur może przekazać Ci ogólne informacje o rozmowach i zauważonych zmianach, ale nie będzie relacjonował ich przebiegu.
+          Powiedz jej też, że to, o czym będzie rozmawiać z Arthurem, zostanie między nimi. Nie dostaniesz raportów ani tematów rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, a Arthur da Ci znać wyłącznie wtedy, gdy mama powie mu o nagłym zdarzeniu albo o telefonie od kogoś, kto podaje się za Arthura.
       - typ: link
         tekst: Jak rozmawiać z mamą
         adres: /jak-rozmawiac-z-mama
@@ -214,7 +214,7 @@ seo:
   obraz_og:
     plik: /images/og/arthurozmowy-og-glowna.jpg
     alt: 'Rozmowa z mamą przy stole: mama o siwych włosach z ożywieniem opowiada coś rozmówczyni widocznej od tyłu'
-  zaktualizowano: 2026-11-20
+  zaktualizowano: 2026-11-22
   autor: Piotr Jaworski
   adres: /
   schemat:

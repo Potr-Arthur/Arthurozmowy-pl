@@ -107,15 +107,18 @@ pytania:
   - id: czy-dowiem-sie-o-czym-rozmawiaja
     pytanie: Czy dowiem się, o czym mama rozmawia z Arthurem?
     odpowiedz: |-
-      Dowiesz się, kiedy i o czym mama rozmawiała z Arthurem, ale tylko w ogólnym zarysie, bez tego, co dokładnie mówiła. Te informacje znajdziesz w raporcie, który co tydzień przychodzi do Ciebie e-mailem. Dokładnych słów mamy Arthur nikomu nie udostępnia.
+      Nie, to, o czym mama rozmawia z Arthurem, zostaje między nimi: nie dostajesz raportów, tematów ani streszczeń rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, bo wtedy napiszemy Ci następnego dnia rano. Dzięki temu mama może Arthurowi zaufać, a bez zaufania nie ma dobrej rozmowy.
     link:
-      tekst: Raport dla Ciebie
-      adres: /jak-dziala-arthur#raport-dla-ciebie
+      tekst: Poufność
+      adres: /jak-dziala-arthur#poufnosc
 
   - id: niepokojaca-zmiana
-    pytanie: Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?
+    pytanie: Kiedy Arthur da mi znać o czymś, co powiedziała mama?
     odpowiedz: |-
-      Tak, jeśli Arthur zauważy niepokojącą zmianę w toku rozumowania mamy lub w sposobie, w jaki się wypowiada, da Ci znać i opisze, co zauważył. Arthur wie jednak tylko o tym, co dzieje się w trakcie rozmowy, i nie stawia diagnoz. Jego sygnał jest więc dla Ciebie informacją, którą warto wziąć pod uwagę przy spotkaniu z lekarzem. W pierwszej rozmowie Arthur uprzedza mamę, że może dać Ci znać o jej stanie, i mówi jej, co umieszcza w raportach dla Ciebie, a czego w nich nie umieszcza.
+      Tylko w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie mu o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie wysyła o niej innych wiadomości. Mama zna te zasady od pierwszej rozmowy.
+    link:
+      tekst: Nagłe zdarzenia
+      adres: /czego-nie-obiecujemy#nagle-zdarzenia
 
   - id: ile-kosztuja
     pytanie: Ile kosztują arthurozmowy?
@@ -151,7 +154,7 @@ pytania:
   - id: arthur-czy-oszust
     pytanie: Skąd mama będzie wiedziała, że dzwoni Arthur, a nie oszust?
     odpowiedz: |-
-      Arthur dzwoni tylko w stałym terminie mamy i nigdy niczego od niej nie chce, a sam numer na ekranie telefonu niczego nie gwarantuje, bo oszuści potrafią go podrobić. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie.
+      Arthur dzwoni tylko w stałym terminie mamy i nigdy niczego od niej nie chce, a sam numer na ekranie telefonu niczego nie gwarantuje, bo oszuści potrafią go podrobić. Przy każdej wątpliwości mama może się rozłączyć i zadzwonić do Ciebie. Gdy opowie Arthurowi o takim telefonie, dostaniesz od nas alert.
     link:
       tekst: Bezpieczeństwo
       adres: /bezpieczenstwo

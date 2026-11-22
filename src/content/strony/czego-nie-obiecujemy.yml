@@ -18,11 +18,11 @@ seo:
   schemat: [WebPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-20
+  zaktualizowano: 2026-11-22
 
 geo:
   streszczenie: |-
-    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.
+    Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, i poufność rozmów: rodzina nie dostaje raportów ani tematów rozmów, a alert tylko wtedy, gdy mama powie Arthurowi o nagłym zdarzeniu albo o telefonie od kogoś, kto podawał się za Arthura.
 
 wejscie:
   h1: |-
@@ -58,7 +58,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. W najbliższym raporcie znajdziesz o tym jedno zdanie. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+          Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
 
   - kotwica: zdrowie
     etykieta: Zdrowie
@@ -70,7 +70,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
+          Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie przekazuje Ci żadnych informacji o jej zdrowiu. To, o czym mama mu opowiada, także o zdrowiu, zostaje między nimi.
 
   - kotwica: pamiec
     etykieta: Pamięć
@@ -116,7 +116,7 @@ sekcje:
           W każdej rozmowie Arthur trzyma się eksperckiej metody: prowadzi z mamą wartościowe, angażujące rozmowy i docenia ją jako pełnowymiarową, wartościową osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Zasady tej metody poznasz na stronie [Jak działa Arthur](/jak-dziala-arthur).
       - typ: glos
         tekst: |-
-          Dostaniesz też raporty o tym, kiedy i o czym rozmawiali, a jeśli bieg rozmów zaniepokoi Arthura, da Ci o tym znać.
+          Obiecujemy też, że to, o czym mama rozmawia z Arthurem, zostanie między nimi.
 
   # Rozdział bez etykiety: nie wchodzi do spisu „Na tej stronie”.
   - kotwica: najczestsze-pytania

@@ -1,6 +1,6 @@
 # Jak korzystać · /jak-korzystac
 
-*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -43,7 +43,7 @@ Umowa nie wiąże Cię na żaden określony czas, więc z usługi łatwo możesz
 
 Pierwsze 14 dni są za darmo i do niczego nie zobowiązują. Trzy dni przed ich końcem zapytamy Cię, czy kontynuujecie, i wyślemy link do płatności. Płacisz dopiero wtedy, gdy to potwierdzisz, a potem opłata odnawia się automatycznie co miesiąc, chyba że zrezygnujesz z abonamentu. Bez płatności rozmowy po prostu się kończą.
 
-Raport z rozmów przychodzi do Ciebie co tydzień e-mailem. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz: klikasz i potwierdzasz. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
+Gdy rozmowa się nie odbędzie, napiszemy Ci o tym następnego dnia rano. W panelu klienta zobaczysz faktury, zmienisz kartę albo pakiet na kolejny miesiąc i zrezygnujesz: klikasz i potwierdzasz. Sprawy abonamentu i płatności załatwiamy wyłącznie z Tobą, więc Arthur nigdy nie rozmawia z mamą o pieniądzach.
 
 Gdy termin rozmów przestanie mamie pasować, zgłoś nowy w Biurze Obsługi albo odpowiadając na naszą wiadomość. Zmiana jest bezpłatna, bez limitu i obowiązuje od następnego tygodnia. Jeśli mama wyjeżdża albo jest w szpitalu i nie chce w tym czasie rozmawiać, rozmowy można zawiesić. Zgłaszasz to Ty albo mama w Biurze Obsługi. Za każdy dzień zawieszenia obniżamy następną opłatę, ale najwyżej za 7 dni.
 
@@ -59,7 +59,7 @@ Pakiety nie różnią się jakością, a wyłącznie liczbą rozmów w tygodniu.
 
 **Lid H2** `sekcje[1].lid`
 
-W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody, a Ty dostajesz taki sam raport.
+W każdym pakiecie Arthur rozmawia z mamą według tej samej eksperckiej metody i na tych samych zasadach.
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 

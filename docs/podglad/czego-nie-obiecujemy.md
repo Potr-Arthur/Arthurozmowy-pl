@@ -1,6 +1,6 @@
 # Czego nie obiecujemy · /czego-nie-obiecujemy
 
-*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-20 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -9,7 +9,7 @@
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** WebPage, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
-- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, raporty dla rodziny i sygnał, gdy bieg rozmów zaniepokoi Arthura.  `geo.streszczenie`
+- **Streszczenie dla AI:** Arthurozmowy to rozmowy przez telefon, a nie opieka ani teleopieka, więc Arthur nie zastąpi pomocy w domu, przycisku SOS ani lekarza, nie wie, co dzieje się u mamy między rozmowami, nie wzywa pogotowia, nie stawia diagnoz i nie udziela porad medycznych. Nie ma dowodów, że rozmowy z Arthurem chronią przed demencją, i usługa tego nie obiecuje. Obiecuje rozmowy w stałym terminie wybranym przez mamę, prowadzone według eksperckiej metody, i poufność rozmów: rodzina nie dostaje raportów ani tematów rozmów, a alert tylko wtedy, gdy mama powie Arthurowi o nagłym zdarzeniu albo o telefonie od kogoś, kto podawał się za Arthura.  `geo.streszczenie`
 
 ## Wejście
 
@@ -53,7 +53,7 @@ Arthur zauważa tylko to, co dzieje się w trakcie rozmowy. Nie wzywa też pogot
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. W najbliższym raporcie znajdziesz o tym jedno zdanie. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
 
 ## 3. Zdrowie · #zdrowie · ton t2
 
@@ -67,7 +67,7 @@ Arthur nie wypytuje mamy o zdrowie i nie testuje jej sprawności. Jeśli jednak 
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
 
-Gdy Arthur da Ci znać o niepokojącej zmianie w mówieniu lub formułowaniu myśli, ewentualną przyczynę tej zmiany będzie mógł ocenić tylko lekarz. Sygnał od Arthura będzie więc tylko informacją dla Ciebie, którą być może warto wziąć pod uwagę przy planowaniu opieki zdrowotnej.
+Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie przekazuje Ci żadnych informacji o jej zdrowiu. To, o czym mama mu opowiada, także o zdrowiu, zostaje między nimi.
 
 ## 4. Pamięć · #pamiec · ton t1
 
@@ -121,7 +121,7 @@ W każdej rozmowie Arthur trzyma się eksperckiej metody: prowadzi z mamą warto
 
 **Voice aside** `sekcje[5].bloki[1]`
 
-Dostaniesz też raporty o tym, kiedy i o czym rozmawiali, a jeśli bieg rozmów zaniepokoi Arthura, da Ci o tym znać.
+Obiecujemy też, że to, o czym mama rozmawia z Arthurem, zostanie między nimi.
 
 ## 7. (poza spisem treści) · #najczestsze-pytania · ton t2
 
@@ -131,7 +131,7 @@ Najczęstsze pytania
 
 **Najczęstsze pytania (akordeon)** `sekcje[6].bloki[0]`
 
-- Czy Arthur da mi znać, jeśli zauważy coś niepokojącego?  `baza:niepokojaca-zmiana`
+- Kiedy Arthur da mi znać o czymś, co powiedziała mama?  `baza:niepokojaca-zmiana`
 - Czy to w porządku, że mama będzie rozmawiać z programem, a nie z człowiekiem?  `baza:rozmowa-z-programem`
 - Czy aby nie wyręczam się Arthurem w rozmowach z mamą?  `baza:czy-nie-wyreczam-sie`
 
