@@ -66,6 +66,8 @@ wezwania:
     # i „Zamów dla mamy próbną arthurozmowę”). Prowadzi do zamówienia w panelu klienta.
     przycisk: Umów mamie próbne arthurozmowy
     adres: /umow               # zamówienie jeszcze nie istnieje: przycisk nieaktywny
+    # Druga linia zatwierdzonego wezwania (Księga, rozdz. 18). Pokazujemy ją tylko w sekcji ceny (objasnienie: true).
+    dopisek: Zobacz, ile będzie miała Ci do opowiedzenia.
   napisz:
     # Otwiera okienko „Napisz do nas” (okno_kontaktu).
     przycisk: Napisz do nas

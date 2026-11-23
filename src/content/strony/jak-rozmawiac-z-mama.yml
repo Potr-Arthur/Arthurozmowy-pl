@@ -11,14 +11,14 @@ seo:
   adres: /jak-rozmawiac-z-mama
   tytul: Jak rozmawiać z mamą o Arthurze – siedem kroków
   opis: |-
-    Jak powiedzieć mamie o arthurozmowach: kim jest Arthur, czym ją zaciekawi, co znajdziesz w raporcie i dlaczego to ona decyduje. Siedem kroków i przykłady.
+    Jak powiedzieć mamie o arthurozmowach: kim jest Arthur, czym ją zaciekawi, co zostaje między nimi i dlaczego to ona decyduje. Siedem kroków i przykłady.
   obraz_og:
     plik: /images/og/arthurozmowy-og-mama-portret-usmiech.jpg
     alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw
   schemat: [HowTo, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-22
+  zaktualizowano: 2026-11-23
 
 geo:
   streszczenie: |-
@@ -88,13 +88,13 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako dorosłą osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc.
+          Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako dorosłą osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc. Najprościej poproś ją o opinię: niech oceni coś nowego, zamiast przyjmować pomoc.
       - typ: cytat
         widoczny: true
         etykieta: Przykład
         repliki:
           - kwestia: |-
-              Mamo, on ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Myślę, że akurat to by Ci się spodobało.
+              Mamo, potrzebuję Twojej opinii o czymś nowym. To program, który ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Ciekawa jestem, co o nim powiesz.
 
   - kotwica: powiedz-o-poufnosci
     etykieta: Powiedz o poufności
@@ -106,7 +106,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Powiedz jej też uczciwie, że Arthur da Ci znać w dwóch sytuacjach: gdy powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podaje się za Arthura. Arthur uprzedzi mamę o tych zasadach także w pierwszej rozmowie.
+          Powiedz jej też uczciwie, że Arthur da Ci znać w dwóch sytuacjach: gdy powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podaje się za Arthura. Arthur uprzedzi mamę o tych zasadach także w pierwszej rozmowie. Na koniec każdego sezonu, co 12 tygodni, Arthur zapyta mamę, czy chce rozmawiać dalej, a jej odpowiedź dostaniesz tylko wtedy, gdy się na to zgodzi.
       - typ: cytat
         widoczny: true
         etykieta: Przykład
@@ -188,7 +188,7 @@ sekcje:
             kwestia: Ile to kosztuje?
           - kto: Ty
             kwestia: |-
-              Pierwsze dwa tygodnie są za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.
+              Pierwsze dwa tygodnie są za darmo, a potem płacę ja, bo chcę, i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.
       - typ: tekst
         tekst: |-
           Jeśli mama powie „nie”, uszanuj to, bo bez jej zgody rozmowy z Arthurem nie będą możliwe.

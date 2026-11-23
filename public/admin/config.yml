@@ -310,10 +310,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -450,7 +450,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -765,10 +765,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -905,7 +905,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -1364,10 +1364,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -1504,7 +1504,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -1819,10 +1819,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -1959,7 +1959,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -2418,10 +2418,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -2558,7 +2558,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -2873,10 +2873,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -3013,7 +3013,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -3472,10 +3472,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -3612,7 +3612,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -3927,10 +3927,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -4067,7 +4067,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -4526,10 +4526,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -4666,7 +4666,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -4981,10 +4981,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -5121,7 +5121,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -5580,10 +5580,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -5720,7 +5720,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -6035,10 +6035,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -6175,7 +6175,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -6634,10 +6634,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -6774,7 +6774,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -7089,10 +7089,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -7229,7 +7229,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -7688,10 +7688,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -7828,7 +7828,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -8143,10 +8143,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -8283,7 +8283,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -8742,10 +8742,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -8882,7 +8882,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -9197,10 +9197,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -9337,7 +9337,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -9634,10 +9634,10 @@ collections:
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
           - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -9939,10 +9939,10 @@ collections:
               value: /#porozmawiaj-z-arthurem
             - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
               value: /#czego-nie-obiecujemy
-            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
               value: /#bezpieczenstwo
+            - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+              value: /#jak-korzystac
             - label: Arthurozmowy – rozmowy z Arthurem › Cena
               value: /#cena
             - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -10079,7 +10079,7 @@ collections:
             required: true
             default: glowne
             hint: Teksty przycisków są w Elementach wspólnych.
-          - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+          - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
             name: objasnienie
             widget: boolean
             default: false
@@ -10554,10 +10554,10 @@ collections:
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
           - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -10694,7 +10694,7 @@ collections:
           required: true
           default: glowne
           hint: Teksty przycisków są w Elementach wspólnych.
-        - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+        - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
           name: objasnienie
           widget: boolean
           default: false
@@ -10973,10 +10973,10 @@ collections:
             value: /#porozmawiaj-z-arthurem
           - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
             value: /#czego-nie-obiecujemy
-          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
             value: /#bezpieczenstwo
+          - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+            value: /#jak-korzystac
           - label: Arthurozmowy – rozmowy z Arthurem › Cena
             value: /#cena
           - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -11113,7 +11113,7 @@ collections:
           required: true
           default: glowne
           hint: Teksty przycisków są w Elementach wspólnych.
-        - label: Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)
+        - label: Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)
           name: objasnienie
           widget: boolean
           default: false
@@ -11306,10 +11306,10 @@ singletons:
           value: /#porozmawiaj-z-arthurem
         - label: Arthurozmowy – rozmowy z Arthurem › Czego nie obiecujemy
           value: /#czego-nie-obiecujemy
-        - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
-          value: /#jak-korzystac
         - label: Arthurozmowy – rozmowy z Arthurem › Bezpieczeństwo
           value: /#bezpieczenstwo
+        - label: Arthurozmowy – rozmowy z Arthurem › Jak korzystać
+          value: /#jak-korzystac
         - label: Arthurozmowy – rozmowy z Arthurem › Cena
           value: /#cena
         - label: Arthurozmowy – rozmowy z Arthurem › Jak rozmawiać z mamą
@@ -11538,6 +11538,11 @@ singletons:
         widget: string
         required: false
         hint: Dopóki zamówienia nie ma, przycisk jest nieaktywny.
+      - label: Objaśnienie pod przyciskiem
+        name: dopisek
+        widget: text
+        required: false
+        hint: Druga linia wezwania z Księgi (rozdz. 18). Pokazuje się tylko w sekcji oferty i ceny, nigdy sama.
     - label: Napisz do nas (otwiera okienko kontaktu)
       name: napisz
       widget: object

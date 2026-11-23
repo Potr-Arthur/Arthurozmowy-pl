@@ -179,7 +179,7 @@ const ustawienia = defineCollection({
     }),
     wezwania: z.object({
       glowne: z.object({ przycisk: z.string(), dopisek: z.string().nullish() }),
-      zakupowe: z.object({ przycisk: z.string(), adres: z.string() }),
+      zakupowe: z.object({ przycisk: z.string(), adres: z.string(), dopisek: z.string().nullish() }),
       napisz: z.object({ przycisk: z.string() }),
     }),
     okno_rozmowy: okno,

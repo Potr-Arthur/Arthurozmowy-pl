@@ -59,6 +59,7 @@ Podanie danych z pierwszych trzech wierszy jest warunkiem zawarcia Umowy, a nume
 | Tekstowy zapis Rozmowy | powstaje w Rozmowie | aktualizacja Pamięci i rozpoznanie sytuacji, w której Klient dostaje Alert | zgoda Mamy (art. 6 ust. 1 lit. a) | usuwamy po aktualizacji Pamięci, najpóźniej 24 godziny po Rozmowie |
 | Pamięć: krótki zapis spraw Mamy, bez jej słów i bez szczegółów o zdrowiu | z Rozmów | ciągłość Rozmów | zgoda Mamy (art. 6 ust. 1 lit. a) | przez czas Umowy i 3 miesiące po ostatniej Rozmowie |
 | Zapis wysłanego Alertu: data, godzina i rodzaj sytuacji, bez słów Mamy | z Rozmowy | Alert dla Klienta | zgoda Mamy (art. 6 ust. 1 lit. a), a przy nagłej sytuacji także ochrona żywotnych interesów Mamy (art. 6 ust. 1 lit. d) | jak Pamięć |
+| Odpowiedź Mamy na pytanie o następny Sezon i jej zgoda na przekazanie tej odpowiedzi | z Rozmowy | e-mail do Klienta po końcu Sezonu (§ 14 ust. 2 pkt 3 Regulaminu) | zgoda Mamy (art. 6 ust. 1 lit. a), pytana za każdym razem | jak Pamięć |
 
 Gdy Mama odmówi Rozmów albo z nich zrezygnuje, Arthur pyta, czy zachować jej sprawy przez 3 miesiące, gdyby zmieniła zdanie. Gdy Mama się na to nie zgodzi albo odmówiła już w Pierwszej rozmowie, w ciągu 7 dni usuwamy wszystkie jej dane oprócz zapisu odmowy. Gdy Mama umrze albo trwale nie może rozmawiać, Pamięć usuwamy od razu po wiadomości od Klienta. Na żądanie Mamy albo Klienta usuwamy Pamięć wcześniej.
 
@@ -89,7 +90,7 @@ Dane Mamy dostajemy od Klienta, dlatego informujemy ją w trzech krokach:
 1. Rozmów nie słucha i nie czyta żaden człowiek.
 2. Alert powstaje automatycznie, ze stałej treści, i nikt go wcześniej nie czyta.
 3. Pamięć otwiera upoważniona osoba Usługodawcy tylko wtedy, gdy Mama zażąda dostępu do swoich danych albo gdy Mama lub Klient zażądają jej usunięcia.
-4. Klient dostaje tylko informacje o Rozmowach nieodbytych i Alerty, na zasadach Regulaminu. Treści Rozmów nie dostaje nigdy.
+4. Klient dostaje tylko informacje o Rozmowach nieodbytych, Alerty oraz, za zgodą Mamy pytaną za każdym razem, jej odpowiedź, że chce rozmawiać w następnym Sezonie, na zasadach Regulaminu. Treści Rozmów nie dostaje nigdy.
 
 ---
 
@@ -192,7 +193,7 @@ O zmianie polityki zawiadamiamy Klientów e-mailem, a nową wersję publikujemy 
 
 **Co Arthur zapamiętuje.** Pani sprawy, żeby do nich wracać, ale nie Pani dokładne słowa. Rozmów nikt nie nagrywa i żaden człowiek ich nie słucha ani nie czyta.
 
-**Co wie osoba, która zamówiła rozmowy.** To, o czym Pani rozmawia z Arthurem, zostaje między Panią a Arthurem: ta osoba nie dostaje raportów ani tematów rozmów. Dostanie wiadomość, gdy rozmowa się nie odbędzie, i krótki alert tylko w dwóch sytuacjach: gdy powie Pani Arthurowi o nagłym zdarzeniu i gdy opowie Pani o telefonie od kogoś, kto podawał się za Arthura.
+**Co wie osoba, która zamówiła rozmowy.** To, o czym Pani rozmawia z Arthurem, zostaje między Panią a Arthurem: ta osoba nie dostaje raportów ani tematów rozmów. Dostanie wiadomość, gdy rozmowa się nie odbędzie, i krótki alert tylko w dwóch sytuacjach: gdy powie Pani Arthurowi o nagłym zdarzeniu i gdy opowie Pani o telefonie od kogoś, kto podawał się za Arthura. Co 12 tygodni, na koniec sezonu, Arthur zapyta Panią, czy chce Pani rozmawiać dalej. Pani odpowiedź przekażemy tej osobie tylko wtedy, gdy się Pani na to zgodzi.
 
 **Jak długo.** Przez cały czas rozmów i 3 miesiące po ostatniej, a potem wszystko usuwamy. Na Pani prośbę usuniemy wcześniej.
 

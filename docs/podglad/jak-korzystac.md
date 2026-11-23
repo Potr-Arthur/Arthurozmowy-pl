@@ -1,6 +1,6 @@
 # Jak korzystać · /jak-korzystac
 
-*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-korzystac.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -78,6 +78,8 @@ Rozmowa pełna trwa około 30 minut, a rozmowa podtrzymująca około 10 minut.
 **Tekst akapitu** `sekcje[1].bloki[2]`
 
 Liczymy tygodnie, a nie miesiące: w miesiącu, w którym jest pięć tygodni, mama ma pięć terminów rozmów, a opłata się nie zmienia.
+
+Rozmowy idą sezonami po 12 tygodni, każdy z tematem przewodnim. Pierwszy sezon to około 3 miesiące, a potem o następnym decyduje mama. Sezon nie jest okresem umowy: zrezygnować możesz w każdej chwili.
 
 **Voice aside** `sekcje[1].bloki[3]`
 

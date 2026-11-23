@@ -1,6 +1,6 @@
 # Bezpieczeństwo · /bezpieczenstwo
 
-*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/bezpieczenstwo.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -91,11 +91,11 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-Nie dostajesz raportów, tematów ani streszczeń rozmów, a Arthur nie ocenia, jak mama mówi ani jak się czuje. Dowiesz się tylko, że rozmowa się nie odbyła, a alert dostaniesz wyłącznie w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podawał się za Arthura. Mama zna te zasady, zanim zacznie rozmawiać.
+Nie dostajesz raportów, tematów ani streszczeń rozmów, a Arthur nie ocenia, jak mama mówi ani jak się czuje. Dowiesz się tylko, że rozmowa się nie odbyła, a alert dostaniesz wyłącznie w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podawał się za Arthura. Mama zna te zasady, zanim zacznie rozmawiać. Na koniec każdego sezonu, co 12 tygodni, Arthur pyta mamę, czy chce rozmawiać dalej, i czy może przekazać Ci jej odpowiedź. Bez jej zgody tej odpowiedzi nie dostaniesz.
 
 Rozmów nie nagrywamy. Po każdej rozmowie Arthur aktualizuje krótki zapis spraw mamy, bez jej słów i bez informacji o zdrowiu, a zapis samej rozmowy usuwamy najpóźniej po 24 godzinach. Żaden człowiek rozmów nie słucha ani nie czyta, także ekspertka, która opracowała metodę.
 
-Dane przechowujemy na serwerach w Unii Europejskiej, oddzielonych od serwera tej strony.
+Dane przechowujemy na serwerach w Europejskim Obszarze Gospodarczym, oddzielonych od serwera tej strony.
 
 Po rezygnacji Arthur zachowuje pamięć spraw mamy przez 3 miesiące, na wypadek Waszego powrotu. Potem ją usuwamy. Na prośbę Twoją albo mamy usuniemy ją wcześniej.
 

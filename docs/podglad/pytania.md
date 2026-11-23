@@ -1,6 +1,6 @@
 # Pytania · /pytania
 
-*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/pytania.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -63,7 +63,7 @@ Arthur rozmawia z mamą przez telefon, nie zastąpi więc pomocy w domu, jeśli 
 
 ### Czym arthurozmowy różnią się od teleopieki i opaski SOS?  `baza:arthurozmowy-a-teleopieka`
 
-Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne, inspirujące rozmowy telefoniczne o sprawach i zainteresowaniach mamy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni co tydzień w stałym terminie i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się wypadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją.
+Teleopieka i opaska SOS służą do wezwania pomocy w nagłej sytuacji, a arthurozmowy to regularne, inspirujące rozmowy telefoniczne o sprawach i zainteresowaniach mamy. Przy teleopiece mama naciska przycisk, a na wezwanie odpowiada całodobowe centrum. Arthur dzwoni co tydzień w stałym terminie i rozmawia z mamą o tym, co ją zajmuje. Jeśli najbardziej obawiasz się wypadku, mama potrzebuje opaski albo teleopieki, bo tej potrzeby arthurozmowy nie zaspokoją. Wiele gmin daje opaskę bezpłatnie osobom od 60 lat w programie rządowym, a operatorzy sieci komórkowych oferują ją w abonamencie.
 
 **Link wewnętrzny:** Nagłe zdarzenia → /czego-nie-obiecujemy#nagle-zdarzenia
 
@@ -129,13 +129,13 @@ Tak, bez zgody mamy rozmowy z Arthurem nie będą możliwe. O arthurozmowach dec
 
 ### Czy dowiem się, o czym mama rozmawia z Arthurem?  `baza:czy-dowiem-sie-o-czym-rozmawiaja`
 
-Nie, to, o czym mama rozmawia z Arthurem, zostaje między nimi: nie dostajesz raportów, tematów ani streszczeń rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, bo wtedy napiszemy Ci następnego dnia rano. Dzięki temu mama może Arthurowi zaufać, a bez zaufania nie ma dobrej rozmowy.
+Nie, to, o czym mama rozmawia z Arthurem, zostaje między nimi: nie dostajesz raportów, tematów ani streszczeń rozmów. Gdy rozmowa się nie odbędzie, napiszemy Ci następnego dnia rano. Na koniec każdego sezonu, co 12 tygodni, Arthur pyta mamę, czy chce rozmawiać dalej, a jej odpowiedź przekazujemy Ci tylko za jej zgodą. Dzięki temu mama może Arthurowi zaufać, a bez zaufania nie ma dobrej rozmowy.
 
 **Link wewnętrzny:** Poufność → /jak-dziala-arthur#poufnosc
 
 ### Kiedy Arthur da mi znać o czymś, co powiedziała mama?  `baza:niepokojaca-zmiana`
 
-Tylko w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie mu o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie wysyła o niej innych wiadomości. Mama zna te zasady od pierwszej rozmowy.
+Tylko w dwóch sytuacjach: gdy mama powie Arthurowi o nagłym zdarzeniu i gdy opowie mu o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Arthur nie ocenia, jak mama mówi ani jak się czuje. Poza tym dostaniesz tylko informację, gdy rozmowa się nie odbędzie, i na koniec każdego sezonu odpowiedź mamy, czy chce rozmawiać dalej, ale tylko za jej zgodą. Mama zna te zasady od pierwszej rozmowy.
 
 **Link wewnętrzny:** Nagłe zdarzenia → /czego-nie-obiecujemy#nagle-zdarzenia
 

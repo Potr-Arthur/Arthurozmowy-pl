@@ -3,7 +3,8 @@
 //   glowne   – otwiera okienko „Porozmawiaj z Arthurem” (formularz nieaktywny do Z6),
 //   napisz   – otwiera okienko „Napisz do nas” (formularz nieaktywny do Z6),
 //   zakupowe – prowadzi do zamówienia (jeszcze go nie ma, więc przycisk jest nieaktywny).
-// objasnienie: true pokazuje pod przyciskiem zdanie wezwania.glowne.dopisek. Bez numeru Arthura i bez linku tel:.
+// objasnienie: true pokazuje pod przyciskiem dopisek z Ustawień (wezwania.glowne.dopisek albo wezwania.zakupowe.dopisek).
+// Bez numeru Arthura i bez linku tel:.
 import { inline, dziala } from '../../lib/tekst';
 import type { Kontekst } from '../../lib/kontekst';
 interface Props { b: { rodzaj: 'glowne' | 'zakupowe' | 'napisz'; objasnienie?: boolean }; k: Kontekst; klasa?: string }
@@ -11,7 +12,10 @@ const { b, k, klasa = '' } = Astro.props;
 const w = k.ust.wezwania;
 const zakup = w.zakupowe;
 const zakupCzynny = dziala(zakup.adres);
-const dopisek = b.objasnienie && b.rodzaj === 'glowne' ? w.glowne.dopisek : null;
+const dopisek = !b.objasnienie ? null
+  : b.rodzaj === 'glowne' ? w.glowne.dopisek
+  : b.rodzaj === 'zakupowe' ? w.zakupowe.dopisek
+  : null;
 ---
 <div class={`wezwanie ${klasa}`.trim()}>
   {b.rodzaj === 'glowne' && <button type="button" class="cta" data-okno="okno-rozmowy">{w.glowne.przycisk}</button>}
