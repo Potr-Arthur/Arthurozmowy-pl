@@ -1,8 +1,8 @@
-<!-- Kopia dokumentu projektu claude/Regulamin_uslugi_v1.md (stan z 22.11.2026). Zmienia się go razem z dokumentem projektu. -->
+<!-- Kopia dokumentu projektu claude/Regulamin_uslugi_v1.md (stan z 23.11.2026). Zmienia się go razem z dokumentem projektu. -->
 
 # Regulamin usługi arthurozmowy
 
-*Wersja 1 z 22.11.2026. Regulamin jest częścią Umowy abonenckiej, razem z Cennikiem (załącznik nr 1). Przetwarzanie danych osobowych opisuje Polityka prywatności.*
+*Wersja 1 z 23.11.2026. Regulamin jest częścią Umowy abonenckiej, razem z Cennikiem (załącznik nr 1). Przetwarzanie danych osobowych opisuje Polityka prywatności.*
 
 ---
 
@@ -55,6 +55,7 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 25. **Biuro Obsługi** – kanały kontaktu z Usługodawcą wskazane w § 1 ust. 3.
 26. **Dzień roboczy** – dzień od poniedziałku do piątku z wyjątkiem dni ustawowo wolnych od pracy w Polsce.
 27. **Trwały nośnik** – e-mail z treścią albo załącznikiem PDF, który Klient może przechowywać i odtwarzać w niezmienionej postaci.
+28. **Sezon** – kolejne 12 tygodni Rozmów, liczone od dnia Zgody Mamy. Pierwszy Sezon obejmuje Okres próbny. Sezon nie jest okresem Umowy i nie zobowiązuje do zapłaty za żaden okres (§ 11 ust. 9).
 
 ---
 
@@ -129,7 +130,7 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 ### § 9. Zgoda Mamy
 
 1. Klient składa zamówienie dopiero wtedy, gdy Mama zgodziła się na Rozmowy. W formularzu zamówienia potwierdza: „Potwierdzam, że mama zgodziła się na rozmowy z Arthurem. Wie, że Arthur jest programem opartym na sztucznej inteligencji, że będzie do niej dzwonił co tydzień w terminie, który wybrała, że to, o czym rozmawiają, zostaje między nimi i że Arthur da mi znać tylko wtedy, gdy mama powie mu o nagłej sytuacji albo o telefonie od kogoś, kto podawał się za Arthura.”
-2. Oświadczenie Klienta nie zastępuje Zgody Mamy. W Pierwszej rozmowie Arthur mówi Mamie, że jest programem opartym na sztucznej inteligencji, przedstawia zasady Rozmów, mówi, w jakich dwóch sytuacjach Klient dostaje Alert, i pyta, czy Mama się na nie zgadza. Usługodawca zapisuje datę, godzinę, pytanie i odpowiedź Mamy, bez zapisu reszty Rozmowy. Rozmowa o sprawach Mamy zaczyna się dopiero po jej zgodzie.
+2. Oświadczenie Klienta nie zastępuje Zgody Mamy. W Pierwszej rozmowie Arthur mówi Mamie to, co opisuje Polityka prywatności (pkt 4.2 ust. 3): że jest programem opartym na sztucznej inteligencji, że zapamiętuje jej sprawy, że to, o czym rozmawiają, zostaje między nimi, kiedy Klient dostaje wiadomość albo Alert i że Mama może w każdej chwili przerwać Rozmowę albo zrezygnować. Potem pyta, czy Mama zgadza się na Rozmowy. Termin, Numer Arthura i pozostałe zasady Rozmów Arthur przedstawia po zgodzie, w tej samej Rozmowie. Usługodawca zapisuje datę, godzinę, pytanie i odpowiedź Mamy, bez zapisu reszty Rozmowy. Rozmowa o sprawach Mamy zaczyna się dopiero po jej zgodzie.
 3. Gdy Mama odpowie „nie dziś” albo nie odbierze telefonu, Arthur pyta o zgodę w następnym Terminie. Gdy Mama nie wyrazi Zgody Mamy w ciągu 21 dni od zawarcia Umowy próbnej, Umowa próbna wygasa, a Klient dostaje o tym e-mail.
 4. Gdy Mama odmówi, Umowa próbna wygasa w dniu odmowy, a Klient dostaje o tym e-mail.
 5. Klient, który zamawia Usługę dla siebie, zaznacza w formularzu „Zamawiam dla siebie” zamiast oświadczenia z ust. 1. W Pierwszej rozmowie Arthur pyta go o zgodę tak samo jak każdą Mamę. Usługodawca nie wysyła wtedy Alertów.
@@ -159,6 +160,7 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 6. Mama może zakończyć Rozmowę wcześniej albo powiedzieć „nie, dziś dziękuję za rozmowę”. Rozmowę, którą Mama zakończyła albo której odmówiła, uważa się za odbytą.
 7. Gdy Mama zadzwoni na Numer Arthura poza Terminem i poza czasem z § 16 ust. 1, Arthur mówi jej, kiedy jest najbliższa Rozmowa, i uprzejmie kończy połączenie.
 8. Jeśli Klient zaznaczy to w zamówieniu albo zgłosi Biuru Obsługi, Arthur wysyła Mamie w dniu Rozmowy SMS z przypomnieniem.
+9. Rozmowy toczą się Sezonami. Na początku Sezonu Arthur proponuje Mamie temat przewodni, który Mama przyjmuje, zmienia albo odrzuca. W ostatniej Rozmowie pełnej Sezonu Arthur pyta Mamę, czy chce rozmawiać w następnym Sezonie. Gdy Mama odpowie, że tak, Arthur pyta, czy może przekazać tę odpowiedź Klientowi. Gdy Mama odpowie, że nie chce dalej Rozmów, stosuje się § 32.
 
 ### § 12. Metoda rozmowy i zasady Arthura
 
@@ -195,7 +197,8 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 2. Klient nie dostaje raportów z Rozmów. O Rozmowach dostaje wyłącznie:
    1. e-mail następnego dnia rano, gdy Rozmowa się nie odbyła (§ 16);
    2. e-mail, gdy Mama poprosi Arthura o inny Termin (§ 25 ust. 4), zawiesi Rozmowy (§ 27) albo powie, że nie chce więcej Rozmów (§ 32);
-   3. Alert w jednej z dwóch sytuacji z § 15.
+   3. e-mail następnego dnia po ostatniej Rozmowie pełnej Sezonu: z odpowiedzią Mamy, że chce rozmawiać w następnym Sezonie, gdy w tej Rozmowie zgodziła się ją przekazać, a bez takiej zgody tylko z informacją, że Sezon się skończył (§ 11 ust. 9);
+   4. Alert w jednej z dwóch sytuacji z § 15.
 3. Arthur nie ocenia, jak Mama mówi, jak się czuje ani jak zmienia się jej zdrowie. Usługa nie zbiera informacji o zdrowiu Mamy i nie służy do wykrywania, przewidywania ani diagnozowania choroby.
 4. Mama zna te zasady od Pierwszej rozmowy.
 
@@ -373,7 +376,7 @@ Umowa próbna kończy się z końcem Okresu próbnego, wcześniej na wniosek Kli
 
 ### § 32. Mama nie chce Rozmów
 
-1. Gdy Mama powie Arthurowi, że nie chce więcej Rozmów, Arthur pyta, czy ma już nie dzwonić. Gdy Mama to potwierdzi, Rozmowy kończą się od razu, bez Pożegnania, a Klient dostaje o tym e-mail.
+1. Gdy Mama powie Arthurowi, że nie chce więcej Rozmów, także w odpowiedzi na pytanie o następny Sezon (§ 11 ust. 9), Arthur pyta, czy ma już nie dzwonić. Gdy Mama to potwierdzi, Rozmowy kończą się od razu, bez Pożegnania, a Klient dostaje o tym e-mail.
 2. Umowa próbna wygasa w tym dniu. Umowa abonencka wygasa z końcem opłaconego Okresu rozliczeniowego, bez zwrotu i bez kolejnych opłat.
 3. Arthur pyta Mamę, czy zachować Pamięć przez 3 miesiące, gdyby zmieniła zdanie. Gdy Mama się zgodzi, Pamięć zostaje na zasadach § 35. Gdy się nie zgodzi, Usługodawca usuwa Pamięć w ciągu 7 dni. Gdy Mama odmówiła już w Pierwszej rozmowie, Usługodawca Pamięci nie tworzy.
 

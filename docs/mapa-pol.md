@@ -13,8 +13,8 @@
 | 4 | Spokój | #spokoj | tak | tak | Tekst akapitu, Link wewnętrzny |
 | 5 | Porozmawiaj z Arthurem | #porozmawiaj-z-arthurem | — | tak | Tekst akapitu, Voice aside, Przycisk CTA (Porozmawiaj z Arthurem) |
 | 6 | Czego nie obiecujemy | #czego-nie-obiecujemy | — | tak | Tekst akapitu, Link wewnętrzny |
-| 7 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Link wewnętrzny |
-| 8 | Bezpieczeństwo | #bezpieczenstwo | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
+| 7 | Bezpieczeństwo | #bezpieczenstwo | — | tak | Tekst akapitu, Voice aside, Link wewnętrzny |
+| 8 | Jak korzystać | #jak-korzystac | — | tak | Tekst akapitu, Link wewnętrzny |
 | 9 | Cena | #cena | — | tak | Karty ceny, Tekst akapitu, Przycisk CTA (Umów mamie próbne arthurozmowy) |
 | 10 | Jak rozmawiać z mamą | #jak-rozmawiac-z-mama | — | tak | Tekst akapitu, Link wewnętrzny, Przycisk CTA (Umów mamie próbne arthurozmowy) |
 

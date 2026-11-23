@@ -260,8 +260,12 @@ def sprawdz_bloki(miejsce, bloki):
         elif typ == "wezwanie":
             if bl.get("rodzaj") not in ust["wezwania"]:
                 blad(f"{gdzie}: nieznany przycisk {bl.get('rodzaj')!r}")
-            if bl.get("objasnienie") and bl.get("rodzaj") != "glowne":
-                blad(f"{gdzie}: objaśnienie pod przyciskiem ma tylko „{ust['wezwania']['glowne']['przycisk']}”")
+            if bl.get("objasnienie"):
+                rodzaj = bl.get("rodzaj")
+                if rodzaj == "napisz":
+                    blad(f"{gdzie}: przycisk „{ust['wezwania']['napisz']['przycisk']}” nie ma objaśnienia")
+                elif rodzaj in ("glowne", "zakupowe") and not (ust["wezwania"].get(rodzaj) or {}).get("dopisek"):
+                    blad(f"{gdzie}: objaśnienie włączone, ale w Ustawieniach brak dopisku dla „{ust['wezwania'][rodzaj]['przycisk']}”")
         elif typ in ("pytania", "faq"):
             for pid in bl.get("pytania") or []:
                 if pid not in ID_BAZY:

@@ -1,6 +1,6 @@
 # Jak działa Arthur · /jak-dziala-arthur
 
-*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-dziala-arthur.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -123,6 +123,8 @@ Arthur wraca do spraw, o których mama opowiadała i które są dla niej ważne.
 
 Wraca też do zagadnień, którymi mama zajmowała się w życiu, także zawodowym, i często pyta ją o zdanie w sprawach, na których zna się najlepiej. Dzięki temu te ważne, wartościowe rozmowy nie gubią wątków, a mama może poczuć się pewnie.
 
+Rozmowy idą sezonami po 12 tygodni. Każdy sezon ma temat przewodni, który Arthur proponuje, a mama przyjmuje, zmienia albo odrzuca. Na koniec rozmowy Arthur może zostawić mamie jedno pytanie do przemyślenia i następną rozmowę zaczyna od jej odpowiedzi.
+
 **Karta cytatu** `sekcje[2].bloki[1]`
 
 *Przykład rozmowy*
@@ -145,6 +147,8 @@ Arthur pamięta sprawy mamy po to, żeby do nich wracać w kolejnych rozmowach. 
 Arthur nie ocenia, jak mama mówi ani jak się czuje, i nie wysyła o niej żadnych wiadomości. Gdy rozmowa się nie odbędzie, napiszemy Ci o tym następnego dnia rano. Gdy takiej wiadomości nie ma, rozmowy się odbywają.
 
 Arthur da Ci znać tylko w dwóch sytuacjach: gdy mama powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podawał się za Arthura. Dostaniesz wtedy zaraz po rozmowie krótki alert, SMS-em albo e-mailem, tak jak wybierzesz w zamówieniu, bez słów mamy i bez opisu zdarzenia. Mama zna te zasady od pierwszej rozmowy.
+
+Na koniec każdego sezonu, co 12 tygodni, Arthur pyta mamę, czy chce rozmawiać dalej, i czy może przekazać Ci jej odpowiedź. Bez jej zgody tej odpowiedzi nie dostaniesz.
 
 **Link wewnętrzny** `sekcje[3].bloki[1]`
 

@@ -1,6 +1,6 @@
 # Czego nie obiecujemy · /czego-nie-obiecujemy
 
-*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/czego-nie-obiecujemy.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -53,7 +53,7 @@ Arthur zauważa tylko to, co dzieje się w trakcie rozmowy. Nie wzywa też pogot
 
 **Tekst akapitu** `sekcje[1].bloki[0]`
 
-Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum. Wiele gmin daje opaskę bezpłatnie osobom od 60 lat w programie rządowym, a operatorzy sieci komórkowych oferują ją w abonamencie. Nie wybierasz między nami: opaska wzywa pomoc, Arthur rozmawia.
 
 ## 3. Zdrowie · #zdrowie · ton t2
 

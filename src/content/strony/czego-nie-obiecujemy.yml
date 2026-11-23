@@ -18,7 +18,7 @@ seo:
   schemat: [WebPage, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-22
+  zaktualizowano: 2026-11-23
 
 geo:
   streszczenie: |-
@@ -58,7 +58,7 @@ sekcje:
     bloki:
       - typ: tekst
         tekst: |-
-          Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum.
+          Jeśli mama powie Arthurowi w rozmowie o nagłym zdarzeniu, Arthur nie będzie oceniał, co się dzieje. Poprosi ją jeden raz, żeby jak najszybciej zawiadomiła bliskich albo zadzwoniła pod 112, i zakończy rozmowę, żeby linia była wolna. Zaraz potem dostaniesz od nas krótki alert, SMS-em albo e-mailem. Pomocy nie wzywamy i poza Tobą nikogo nie zawiadamiamy. Jeśli najbardziej obawiasz się upadku, mama potrzebuje urządzenia, którym sama w każdej chwili wezwie pomoc, na przykład opaski albo przycisku SOS, albo teleopieki, w której na takie wezwanie odpowiada całodobowe centrum. Wiele gmin daje opaskę bezpłatnie osobom od 60 lat w programie rządowym, a operatorzy sieci komórkowych oferują ją w abonamencie. Nie wybierasz między nami: opaska wzywa pomoc, Arthur rozmawia.
 
   - kotwica: zdrowie
     etykieta: Zdrowie

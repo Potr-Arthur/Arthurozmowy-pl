@@ -1,6 +1,6 @@
 # Arthurozmowy – rozmowy z Arthurem · /
 
-*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/strona-glowna.yml` · szablon: glowna · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
@@ -145,6 +145,8 @@ To, o czym mama rozmawia z Arthurem, zostaje między nimi. Nie dostajesz raport�
 
 Jeśli rozmowa się nie odbędzie, napiszemy Ci o tym następnego dnia rano. Gdy takiej wiadomości nie ma, rozmowy się odbywają. Najwięcej dowiesz się o nich od samej mamy.
 
+Rozmowy idą sezonami po 12 tygodni. Na koniec każdego sezonu Arthur zapyta mamę, czy chce rozmawiać dalej, a jej odpowiedź przekażemy Ci tylko wtedy, gdy się na to zgodzi.
+
 **Link wewnętrzny** `sekcje[3].bloki[1]`
 
 Poufność → /jak-dziala-arthur#poufnosc
@@ -185,53 +187,55 @@ Arthur rozmawia z mamą przez telefon. Nie zastąpi więc pomocy w domu, jeśli 
 
 Arthur nie stawia diagnoz i nie podpowiada metod leczenia. Nie obiecujemy również, że arthurozmowy zapobiegną demencji albo opóźnią jej rozwój – nie mamy na to dowodów.
 
+Jeśli najbardziej obawiasz się upadku, mama potrzebuje opaski SOS. Wiele gmin daje ją bezpłatnie osobom od 60 lat w programie rządowym, a operatorzy sieci komórkowych oferują ją w abonamencie. Nie wybierasz między nami: opaska wzywa pomoc, Arthur rozmawia.
+
 Celem rozmów jest inspirowanie, angażowanie i wywoływanie pozytywnych emocji. Chcemy, żebyście obie wiedziały, czego możecie się po nich spodziewać.
 
 **Link wewnętrzny** `sekcje[5].bloki[1]`
 
 Czego nie obiecujemy → /czego-nie-obiecujemy
 
-## 7. Jak korzystać · #jak-korzystac · ton t1
+## 7. Bezpieczeństwo · #bezpieczenstwo · ton t1
 
 **Nagłówek H2** `sekcje[6].h2`
 
-Formalności online są po Twojej stronie. Rozmowy w całości należą do mamy.
+Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
 
 **Lid H2** `sekcje[6].lid`
 
-Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, na czas nieokreślony. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin. Opłata odnawia się co miesiąc, chyba że zdecydujesz inaczej.
+Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
 
 **Tekst akapitu** `sekcje[6].bloki[0]`
+
+Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia. Rozmów nie nagrywamy, zapis tekstowy rozmowy usuwamy najpóźniej po 24 godzinach, a dane przechowujemy w Europejskim Obszarze Gospodarczym.
+
+**Voice aside** `sekcje[6].bloki[1]`
+
+Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Dlatego Arthur dzwoni tylko w umówionym terminie. Jeśli ktoś podający się za Arthura zadzwoni kiedy indziej albo o coś poprosi, mama może się rozłączyć i zadzwonić do Ciebie.
+
+**Link wewnętrzny** `sekcje[6].bloki[2]`
+
+Bezpieczeństwo → /bezpieczenstwo
+
+## 8. Jak korzystać · #jak-korzystac · ton t2
+
+**Nagłówek H2** `sekcje[7].h2`
+
+Formalności online są po Twojej stronie. Rozmowy w całości należą do mamy.
+
+**Lid H2** `sekcje[7].lid`
+
+Umowę abonamentową zawierasz z nami Ty, a nie mama. Robisz to przez internet, na czas nieokreślony. Wybierasz pakiet, podajesz numer telefonu mamy i akceptujesz regulamin. Opłata odnawia się co miesiąc, chyba że zdecydujesz inaczej.
+
+**Tekst akapitu** `sekcje[7].bloki[0]`
 
 W panelu klienta sprawdzasz płatności, zmieniasz pakiet i rezygnujesz z usługi: klikasz i potwierdzasz. Z mamą Arthur nigdy nie rozmawia o pieniądzach ani formalnościach.
 
 Rezygnacja uruchamia opcję „Pożegnanie”. Mama ma prawo wiedzieć z wyprzedzeniem, że rozmowy się skończą. Dlatego Arthur nie przerwie ich z dnia na dzień. Przez 15 kolejnych dni będzie dzwonił do mamy w jej stałym terminie. W pierwszej z tych rozmów powie jej spokojnie, kiedy rozmowy się skończą, a podczas ostatniej się z nią pożegna. Za „Pożegnanie” płacisz tyle, ile za 15 dni Twojego pakietu, i rozliczamy je z dniami, które już opłaciłaś. W okresie próbnym rozmowy po prostu się kończą.
 
-**Link wewnętrzny** `sekcje[6].bloki[1]`
+**Link wewnętrzny** `sekcje[7].bloki[1]`
 
 Jak korzystać → /jak-korzystac
-
-## 8. Bezpieczeństwo · #bezpieczenstwo · ton t2
-
-**Nagłówek H2** `sekcje[7].h2`
-
-Arthur o nic mamy nie prosi, a to, co mama mu mówi, zostaje między nimi.
-
-**Lid H2** `sekcje[7].lid`
-
-Arthur tylko rozmawia, więc niczego od mamy nie chce. Nigdy nie prosi o pieniądze ani o dane, takie jak numer karty czy PESEL.
-
-**Tekst akapitu** `sekcje[7].bloki[0]`
-
-Nie prosi, żeby kogoś wpuściła, coś podpisała albo gdzieś poszła. Nie prosi też, żeby cokolwiek ukrywała przed rodziną. Nie przekazuje jej również informacji o członkach rodziny. Jej słów nikomu nie udostępnia, a rozmowy są zachowywane wyłącznie w postaci, z której korzysta Arthur.
-
-**Voice aside** `sekcje[7].bloki[1]`
-
-Pamiętaj jednak, że numer wyświetlany na ekranie telefonu można podrobić. Dlatego Arthur dzwoni tylko w umówionym terminie. Jeśli ktoś podający się za Arthura zadzwoni kiedy indziej albo o coś poprosi, mama może się rozłączyć i zadzwonić do Ciebie.
-
-**Link wewnętrzny** `sekcje[7].bloki[2]`
-
-Bezpieczeństwo → /bezpieczenstwo
 
 ## 9. Cena · #cena · ton t5
 
@@ -259,6 +263,8 @@ Na początek proponujemy pakiet optymalny za 299 zł: co tydzień rozmowę pełn
 
 Za pierwsze 14 dni nie płacisz. Opłaty zaczynają się dopiero po tym czasie, jeśli potwierdzisz, że chcecie kontynuować rozmowy. Później abonament jest rozliczany co miesiąc, tak długo, jak obie będziecie chciały z niego korzystać.
 
+Rozmowy idą sezonami po 12 tygodni, każdy z tematem przewodnim. Pierwszy sezon to około 3 miesiące, a potem o następnym decyduje mama. Sezon nie jest okresem umowy: zrezygnować możesz w każdej chwili.
+
 Możesz zmienić pakiet na kolejny miesiąc – zarówno na wyższy, jak i na niższy.
 
 Liczymy tygodnie, a nie miesiące: w miesiącu, w którym jest pięć tygodni, mama ma pięć terminów rozmów, a opłata się nie zmienia.
@@ -267,11 +273,13 @@ Liczymy tygodnie, a nie miesiące: w miesiącu, w którym jest pięć tygodni, m
 
 Umów mamie próbne arthurozmowy → zamówienie w panelu klienta
 
+*Objaśnienie pod przyciskiem:* Zostaw numer telefonu. Arthur oddzwoni do Ciebie za chwilę lub o wybranej przez Ciebie porze.
+
 ## 10. Jak rozmawiać z mamą · #jak-rozmawiac-z-mama · ton t2
 
 **Nagłówek H2** `sekcje[9].h2`
 
-Nie rób mamie niespodzianki. Arthur to nie upominek, tylko poważna propozycja.
+Nie przekonuj mamy. Zapytaj ją o zdanie i zostaw jej decyzję.
 
 **Lid H2** `sekcje[9].lid`
 
@@ -279,9 +287,9 @@ Rozmowy z Arthurem są dla mamy, dlatego nie mogą odbywać się bez jej zgody. 
 
 **Tekst akapitu** `sekcje[9].bloki[0]`
 
-Najlepiej powiedzieć mamie wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej 14 bezpłatnych dni próbnych. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
+Nie musisz jej niczego sprzedawać. Najprościej poproś ją o opinię: „Mamo, potrzebuję Twojej opinii o czymś nowym”. Powiedz jej wprost, kim jest Arthur: programem opartym na sztucznej inteligencji, który co tydzień, w dniu i o godzinie wybranych przez nią, zadzwoni, żeby porozmawiać z nią o jej sprawach. Możesz zaproponować jej 14 bezpłatnych dni próbnych. Po tym czasie wspólnie ocenicie, czy rozmowy są dla niej wartościowe i czy chcecie je kontynuować.
 
-Powiedz jej też, że to, o czym będzie rozmawiać z Arthurem, zostanie między nimi. Nie dostaniesz raportów ani tematów rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, a Arthur da Ci znać wyłącznie wtedy, gdy mama powie mu o nagłym zdarzeniu albo o telefonie od kogoś, kto podaje się za Arthura.
+Powiedz jej też, że to, o czym będzie rozmawiać z Arthurem, zostanie między nimi. Nie dostaniesz raportów ani tematów rozmów. Dowiesz się tylko, że rozmowa się nie odbyła, a Arthur da Ci znać wyłącznie wtedy, gdy mama powie mu o nagłym zdarzeniu albo o telefonie od kogoś, kto podaje się za Arthura. Na koniec każdego sezonu Arthur zapyta mamę, czy chce rozmawiać dalej, a jej odpowiedź dostaniesz tylko za jej zgodą.
 
 **Link wewnętrzny** `sekcje[9].bloki[1]`
 

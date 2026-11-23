@@ -1,11 +1,11 @@
 # Jak rozmawiać z mamą · /jak-rozmawiac-z-mama
 
-*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-22 · autor: Piotr Jaworski*
+*Plik: `src/content/strony/jak-rozmawiac-z-mama.yml` · szablon: podstrona · aktualizacja: 2026-11-23 · autor: Piotr Jaworski*
 
 ## Metryczka warstwy wyszukiwarki
 
 - **Tytuł strony (47 zn.):** Jak rozmawiać z mamą o Arthurze – siedem kroków  `seo.tytul`
-- **Opis w wynikach (154 zn.):** Jak powiedzieć mamie o arthurozmowach: kim jest Arthur, czym ją zaciekawi, co znajdziesz w raporcie i dlaczego to ona decyduje. Siedem kroków i przykłady.  `seo.opis`
+- **Opis w wynikach (152 zn.):** Jak powiedzieć mamie o arthurozmowach: kim jest Arthur, czym ją zaciekawi, co zostaje między nimi i dlaczego to ona decyduje. Siedem kroków i przykłady.  `seo.opis`
 - **Obraz do udostępniania:** `/images/og/arthurozmowy-og-mama-portret-usmiech.jpg` · alt: Mama o siwych włosach, w błękitnej jedwabnej bluzce, lekko się uśmiecha, patrząc prosto w obiektyw  `seo.obraz_og`
 - **Dane dla wyszukiwarek:** HowTo, BreadcrumbList  `seo.schemat`
 - **W wyszukiwarkach:** tak  `seo.indeksuj`
@@ -87,13 +87,13 @@ Arthur będzie dzwonił po to, żeby rozmawiać z mamą o niej samej: o książc
 
 **Tekst akapitu** `sekcje[2].bloki[0]`
 
-Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako dorosłą osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc.
+Liczy się z jej zdaniem, wraca do tego, o czym opowiadała, i docenia ją jako dorosłą osobę z własnymi zainteresowaniami, poglądami i doświadczeniem. Umie prowadzić takie wartościowe, angażujące rozmowy dzięki eksperckiej metodzie konwersacji, według której powstawał. Opowiedz więc mamie o Arthurze tak, jak poleca się coś ciekawego, pasjonującego, a nie coś, co ma jej pomóc. Najprościej poproś ją o opinię: niech oceni coś nowego, zamiast przyjmować pomoc.
 
 **Karta cytatu** `sekcje[2].bloki[1]`
 
 *Przykład*
 
-> „Mamo, on ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Myślę, że akurat to by Ci się spodobało.”  
+> „Mamo, potrzebuję Twojej opinii o czymś nowym. To program, który ma cierpliwość, której ja nie mam, i pyta o zdanie, zamiast dawać rady. Ciekawa jestem, co o nim powiesz.”  
 
 ## 4. Powiedz o poufności · #powiedz-o-poufnosci · ton t1
 
@@ -107,7 +107,7 @@ Nie dostaniesz raportów ani tematów rozmów, a Arthur nie ocenia, jak mama mó
 
 **Tekst akapitu** `sekcje[3].bloki[0]`
 
-Powiedz jej też uczciwie, że Arthur da Ci znać w dwóch sytuacjach: gdy powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podaje się za Arthura. Arthur uprzedzi mamę o tych zasadach także w pierwszej rozmowie.
+Powiedz jej też uczciwie, że Arthur da Ci znać w dwóch sytuacjach: gdy powie mu o nagłym zdarzeniu i gdy opowie o telefonie od kogoś, kto podaje się za Arthura. Arthur uprzedzi mamę o tych zasadach także w pierwszej rozmowie. Na koniec każdego sezonu, co 12 tygodni, Arthur zapyta mamę, czy chce rozmawiać dalej, a jej odpowiedź dostaniesz tylko wtedy, gdy się na to zgodzi.
 
 **Karta cytatu** `sekcje[3].bloki[1]`
 
@@ -178,7 +178,7 @@ Oto kilka pytań, które mama może zadać, i odpowiedzi, które możesz jej da�
 > Mama: „A to nie jest jakieś oszustwo?”  
 > Ty: „Dobrze, że pytasz. Arthur nigdy o nic nie prosi, a wszystko, co dotyczy płatności, załatwiam ja. Zawsze możesz też zapytać mnie.”  
 > Mama: „Ile to kosztuje?”  
-> Ty: „Pierwsze dwa tygodnie są za darmo, a potem płacę ja i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.”  
+> Ty: „Pierwsze dwa tygodnie są za darmo, a potem płacę ja, bo chcę, i to ja wszystko załatwiam. Ty tylko rozmawiasz, jeśli zechcesz.”  
 
 **Tekst akapitu** `sekcje[6].bloki[1]`
 

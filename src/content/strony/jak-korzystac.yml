@@ -18,7 +18,7 @@ seo:
   schemat: [WebPage, Offer, BreadcrumbList]
   indeksuj: true
   autor: Piotr Jaworski
-  zaktualizowano: 2026-11-22
+  zaktualizowano: 2026-11-23
 
 geo:
   streszczenie: |-
@@ -74,6 +74,8 @@ sekcje:
       - typ: tekst
         tekst: |-
           Liczymy tygodnie, a nie miesiące: w miesiącu, w którym jest pięć tygodni, mama ma pięć terminów rozmów, a opłata się nie zmienia.
+
+          Rozmowy idą sezonami po 12 tygodni, każdy z tematem przewodnim. Pierwszy sezon to około 3 miesiące, a potem o następnym decyduje mama. Sezon nie jest okresem umowy: zrezygnować możesz w każdej chwili.
       - typ: glos
         tekst: |-
           Na początek proponujemy pakiet optymalny za 299 zł. Ceny zawierają VAT. Pakiet zmienisz na wyższy albo niższy od kolejnego miesiąca – nigdy nie będzie to problemem.

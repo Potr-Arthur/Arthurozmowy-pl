@@ -225,7 +225,7 @@ B_WEZWANIE = obj("wezwanie", "Przycisk CTA", summary="Przycisk CTA: {{fields.rod
         {"label": "Umów mamie próbne arthurozmowy (zamówienie)", "value": "zakupowe"},
         {"label": "Napisz do nas (okienko z formularzem kontaktu)", "value": "napisz"},
     ], default="glowne", required=True, hint="Teksty przycisków są w Elementach wspólnych."),
-    b("objasnienie", "Pokaż objaśnienie pod przyciskiem (tylko „Porozmawiaj z Arthurem”)", False),
+    b("objasnienie", "Pokaż objaśnienie pod przyciskiem („Porozmawiaj z Arthurem” albo zamówienie)", False),
 ])
 B_PYTANIA = obj("pytania", "Karty pytań (strona Pytania)", summary="Karty pytań", fields=[
     faq_rel(label="Pytania z listy, w kolejności"),
@@ -450,7 +450,8 @@ POLA_WSPOLNE = [
             s("przycisk", "Napis na przycisku"), t("dopisek", "Objaśnienie pod przyciskiem")]),
         obj("zakupowe", "Zamówienie", fields=[
             s("przycisk", "Napis na przycisku"),
-            s("adres", "Adres zamówienia", hint="Dopóki zamówienia nie ma, przycisk jest nieaktywny.")]),
+            s("adres", "Adres zamówienia", hint="Dopóki zamówienia nie ma, przycisk jest nieaktywny."),
+            t("dopisek", "Objaśnienie pod przyciskiem", hint="Druga linia wezwania z Księgi (rozdz. 18). Pokazuje się tylko w sekcji oferty i ceny, nigdy sama.")]),
         obj("napisz", "Napisz do nas (otwiera okienko kontaktu)", fields=[s("przycisk", "Napis na przycisku")]),
     ]),
     obj("okno_rozmowy", "Okienko „Porozmawiaj z Arthurem”", hint=(
