@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import { readdirSync, readFileSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -36,4 +36,28 @@ export default defineConfig({
   build: { format: 'file' },
   devToolbar: { enabled: false },
   integrations: [tylkoWidoczneZdjecia],
+  // Czcionki pobiera Astro przy budowaniu i serwuje z naszego serwera (/_astro/fonts), więc przeglądarka
+  // odwiedzającego nie łączy się z Google Fonts i nie przekazuje Google adresu IP (strona Pliki cookie, Polityka, pkt 6).
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: 'IBM Plex Sans',
+        cssVariable: '--font-plex',
+        weights: [400, 500, 600, 700],
+        styles: ['normal', 'italic'],
+        subsets: ['latin', 'latin-ext'],
+        fallbacks: ['system-ui', 'sans-serif'],
+      },
+      {
+        provider: fontProviders.google(),
+        name: 'Bona Nova',
+        cssVariable: '--font-bona',
+        weights: [700],
+        styles: ['normal'],
+        subsets: ['latin', 'latin-ext'],
+        fallbacks: ['Georgia', 'serif'],
+      },
+    ],
+  },
 });

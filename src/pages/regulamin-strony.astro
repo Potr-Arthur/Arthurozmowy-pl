@@ -1,4 +1,16 @@
 ---
-import WPrzygotowaniu from '../components/WPrzygotowaniu.astro';
+// Regulamin strony: pełny tekst z src/prawne/regulamin-strony.md (kopia dokumentu projektu). Na adresie tymczasowym poza indeksem.
+import Uklad from '../layouts/Uklad.astro';
+import { ustawienia } from '../lib/ustawienia';
+import { Content } from '../prawne/regulamin-strony.md';
+const ust = await ustawienia();
 ---
-<WPrzygotowaniu adres="/regulamin-strony" />
+<Uklad tytul={`Regulamin strony – ${ust.marka.nazwa}`} adres="/regulamin-strony" indeksuj={false} ust={ust} stopkaPrev="1">
+  <section class="sekcja sekcja--pierwsza ton-1 dokument">
+    <div class="wrap">
+      <div class="tresc kolumna dokument__tresc">
+        <Content />
+      </div>
+    </div>
+  </section>
+</Uklad>

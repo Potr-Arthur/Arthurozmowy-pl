@@ -1,4 +1,16 @@
 ---
-import WPrzygotowaniu from '../components/WPrzygotowaniu.astro';
+// Pliki cookie: pełny tekst z src/prawne/pliki-cookie.md (kopia dokumentu projektu). Na adresie tymczasowym poza indeksem.
+import Uklad from '../layouts/Uklad.astro';
+import { ustawienia } from '../lib/ustawienia';
+import { Content } from '../prawne/pliki-cookie.md';
+const ust = await ustawienia();
 ---
-<WPrzygotowaniu adres="/pliki-cookie" />
+<Uklad tytul={`Pliki cookie – ${ust.marka.nazwa}`} adres="/pliki-cookie" indeksuj={false} ust={ust} stopkaPrev="1">
+  <section class="sekcja sekcja--pierwsza ton-1 dokument">
+    <div class="wrap">
+      <div class="tresc kolumna dokument__tresc">
+        <Content />
+      </div>
+    </div>
+  </section>
+</Uklad>

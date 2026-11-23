@@ -1,8 +1,8 @@
-<!-- Kopia dokumentu projektu claude/Polityka_prywatnosci_v1.md (stan z 22.11.2026). Zmienia się go razem z dokumentem projektu. -->
+<!-- Kopia dokumentu projektu claude/Polityka_prywatnosci_v1.md (stan z 23.11.2026). Zmienia się go razem z dokumentem projektu. -->
 
 # Polityka prywatności arthurozmowy
 
-*Wersja 1 z 22.11.2026. Polityka opisuje, jak przetwarzamy dane osobowe Klientów, Mam, osób, które rozmawiają z Arthurem przed zamówieniem lub piszą do nas, oraz osób odwiedzających stronę arthurozmowy.pl. Wyrazy pisane wielką literą mają znaczenie z § 2 Regulaminu usługi.*
+*Wersja 1 z 23.11.2026. Polityka opisuje, jak przetwarzamy dane osobowe Klientów, Mam, osób, które rozmawiają z Arthurem przed zamówieniem lub piszą do nas, oraz osób odwiedzających stronę arthurozmowy.pl. Wyrazy pisane wielką literą mają znaczenie z § 2 Regulaminu usługi.*
 
 ---
 
@@ -112,9 +112,10 @@ Rozmowy przed zamówieniem nie nagrywamy i nie zapisujemy.
    - **niezbędne:** zapis Twojej decyzji w sprawie plików cookie, przez 12 miesięcy; podstawa: art. 399 ust. 3 Prawa komunikacji elektronicznej;
    - **statystyki:** Google Analytics, tylko za zgodą, pliki do 2 lat; pokazują, które strony są czytane i skąd przychodzą odwiedzający;
    - **reklamy:** Google Ads i Meta (Facebook, Instagram), tylko za zgodą, pliki do 90 dni; pokazują, czy reklama przyprowadziła Cię na stronę, i pozwalają pokazywać nasze reklamy na innych stronach.
-3. Podstawą plików statystycznych i reklamowych jest zgoda (art. 6 ust. 1 lit. a RODO i art. 399 Prawa komunikacji elektronicznej). Zgodę zmienisz albo wycofasz w każdej chwili przyciskiem „Ustawienia plików cookie” w stopce strony.
-4. Liczba odwiedzin jest liczona też licznikiem, który nie używa plików cookie i nie zbiera danych osobowych.
-5. Serwer strony zapisuje adresy IP w dziennikach technicznych, żeby chronić stronę przed atakami (prawnie uzasadniony interes, art. 6 ust. 1 lit. f), przez okres ustalony przez dostawcę hostingu.
+3. Podstawą plików statystycznych i reklamowych jest zgoda (art. 6 ust. 1 lit. a RODO i art. 399 Prawa komunikacji elektronicznej). Zgodę zmienisz albo wycofasz w każdej chwili przyciskiem „Ustawienia plików cookie” w stopce strony. Pełną listę plików i narzędzi podaje strona Pliki cookie (arthurozmowy.pl/pliki-cookie).
+4. Tagami statystyk i reklam zarządza Google Tag Manager. Wczytuje się z serwera Google także bez zgody, a Google otrzymuje przy tym adres IP. Sam nie zapisuje plików cookie (prawnie uzasadniony interes w obsłudze narzędzi strony, art. 6 ust. 1 lit. f).
+5. Liczba odwiedzin jest liczona też licznikiem, który nie używa plików cookie i nie zbiera danych osobowych.
+6. Serwer strony zapisuje adresy IP w dziennikach technicznych, żeby chronić stronę przed atakami (prawnie uzasadniony interes, art. 6 ust. 1 lit. f), przez okres ustalony przez dostawcę hostingu.
 
 ---
 
@@ -130,6 +131,7 @@ Dane przekazujemy tylko podmiotom, które przetwarzają je na nasze zlecenie, na
 | Operator płatności Stripe Payments Europe, Limited (Irlandia) | dane Klienta, dane płatności | Europejski Obszar Gospodarczy, z możliwym przekazaniem do USA |
 | Biuro rachunkowe | dane z faktur | Polska |
 | Dostawca hostingu strony | adresy IP odwiedzających | z możliwym przekazaniem do USA |
+| Google (Google Tag Manager) | adres IP przy wczytaniu strony | z możliwym przekazaniem do USA |
 | Google i Meta | dane z plików cookie, tylko za zgodą | z możliwym przekazaniem do USA |
 
 Dane mogą też otrzymać organy publiczne, gdy wymaga tego prawo.

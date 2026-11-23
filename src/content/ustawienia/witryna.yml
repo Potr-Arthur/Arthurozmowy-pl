@@ -158,7 +158,7 @@ stopka:
   wezwania: [glowne, zakupowe, napisz]
   prywatnosc: Pliki cookie do statystyk i reklam zapisujemy tylko za Twoją zgodą.
   prawa: © 2026 arthurozmowy Piotr Jaworski, Kaliska 155G, 07-130 Łochów, NIP 113 135 29 41
-  # Na adresie tymczasowym wszystkie cztery to strony „w przygotowaniu”.
+  # Cztery strony prawne z pełnymi tekstami z src/prawne/ (od 23.11.2026).
   linki_prawne:
     - tekst: Regulamin strony
       adres: /regulamin-strony
