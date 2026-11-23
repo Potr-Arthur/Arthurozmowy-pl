@@ -183,7 +183,7 @@ for n, d in strony.items():
             if sek["kotwica"] in kotwice[n]:
                 blad(f"{n}: powtórzona kotwica #{sek['kotwica']}")
             kotwice[n][sek["kotwica"]] = sek.get("etykieta")
-# Strony bez pliku treści, które buduje szablon (na adresie tymczasowym „w przygotowaniu”): link do nich jest poprawny.
+# Strony bez pliku treści, które buduje szablon z tekstów w src/prawne/: link do nich jest poprawny.
 STRONY_SZABLONU = {"/regulamin-strony", "/regulamin-uslugi", "/prywatnosc", "/pliki-cookie"}
 # Strony, których jeszcze nie ma (zamówienie w panelu klienta): link zostaje nieaktywny.
 DO_ZBUDOWANIA = {"/umow"}

@@ -3,6 +3,7 @@
 // na pliki cookie, belka górna z menu, treść, stopka, dwa okienka (nieaktywne do Z6) i pasek „Porozmawiaj z Arthurem”
 // na dole ekranu telefonu.
 import '../styles/witryna.css';
+import { Font } from 'astro:assets';
 import Belka from '../components/Belka.astro';
 import Stopka from '../components/Stopka.astro';
 import Okna from '../components/Okna.astro';
@@ -73,9 +74,8 @@ const odmiana = (n: number, [jeden, kilka, wiele]: string[]) =>
     {ogObraz && <meta property="og:image:height" content="630" />}
     {ogObraz && og!.alt && <meta property="og:image:alt" content={og!.alt} />}
     <meta name="twitter:card" content={ogObraz ? 'summary_large_image' : 'summary'} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" />
+    <Font cssVariable="--font-bona" preload />
+    <Font cssVariable="--font-plex" />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </head>
   <body>

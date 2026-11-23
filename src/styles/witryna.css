@@ -16,8 +16,8 @@
   --r-30:30px;                          /* Przycisk CTA, Link wewnętrzny */
   --r-karta:clamp(32px,4.5vw,56px);     /* Karta cytatu, Voice aside, Karta pytania: prawy dolny */
   --r-hero:clamp(56px,9vw,140px);       /* HERO 21:9: prawy dolny */
-  --font-naglowek:"Bona Nova",Georgia,"Times New Roman",serif;
-  --font-tekst:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-naglowek:var(--font-bona,Georgia),"Times New Roman",serif;   /* Bona Nova z /_astro/fonts (astro.config.mjs) */
+  --font-tekst:var(--font-plex,system-ui),-apple-system,"Segoe UI",sans-serif;   /* IBM Plex Sans z /_astro/fonts */
 }
 
 /* ===== podstawy ===== */
