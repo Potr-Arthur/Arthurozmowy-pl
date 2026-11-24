@@ -1,8 +1,8 @@
-<!-- Kopia dokumentu projektu claude/Polityka_prywatnosci_v1.md (stan z 23.11.2026). Zmienia się go razem z dokumentem projektu. -->
+<!-- Kopia dokumentu projektu claude/Polityka_prywatnosci_v1.md (stan z 24.11.2026). Zmienia się go razem z dokumentem projektu. -->
 
 # Polityka prywatności arthurozmowy
 
-*Wersja 1 z 23.11.2026. Polityka opisuje, jak przetwarzamy dane osobowe Klientów, Mam, osób, które rozmawiają z Arthurem przed zamówieniem lub piszą do nas, oraz osób odwiedzających stronę arthurozmowy.pl. Wyrazy pisane wielką literą mają znaczenie z § 2 Regulaminu usługi.*
+*Wersja 1 z 24.11.2026. Polityka opisuje, jak przetwarzamy dane osobowe Klientów, Mam, osób, które rozmawiają z Arthurem przed zamówieniem lub piszą do nas, oraz osób odwiedzających stronę arthurozmowy.pl. Wyrazy pisane wielką literą mają znaczenie z § 2 Regulaminu usługi.*
 
 ---
 
@@ -24,7 +24,7 @@ W każdej sprawie danych osobowych można się z nami kontaktować przez Biuro O
 3. Żaden człowiek nie słucha ani nie czyta Rozmów, także ekspertka, która stworzyła metodę rozmowy.
 4. Treści Rozmów nie przekazujemy nikomu, także Klientowi: ani słów Mamy, ani tematów, ani streszczeń.
 5. Danych Mamy nie używamy do reklamy i nikomu ich nie sprzedajemy. Danych Klienta też nie sprzedajemy.
-6. Formularze na stronie przesyłają dane na nasze serwery w Europejskim Obszarze Gospodarczym.
+6. Formularze na stronie i kreator umowy w Panelu klienta przesyłają dane na nasze serwery w Europejskim Obszarze Gospodarczym.
 7. Nie zbieramy informacji o zdrowiu Mamy i nie oceniamy jej zdrowia.
 
 ---
@@ -34,7 +34,7 @@ W każdej sprawie danych osobowych można się z nami kontaktować przez Biuro O
 | Dane | Cel | Podstawa prawna | Jak długo |
 |---|---|---|---|
 | Imię, nazwisko, adres e-mail, forma zwracania się | zawarcie i wykonanie Umowy, informacje o Rozmowach nieodbytych, Alerty, sprawy organizacyjne | wykonanie Umowy (art. 6 ust. 1 lit. b RODO) | przez czas Umowy, a potem do przedawnienia roszczeń z Umowy |
-| Oświadczenie o zgodzie Mamy, akceptacja Regulaminu, żądanie ciągłości Rozmów w czasie na odstąpienie | dowód zawarcia Umowy i jej warunków | obowiązek prawny i nasz prawnie uzasadniony interes w obronie przed roszczeniami (art. 6 ust. 1 lit. c i f) | do przedawnienia roszczeń z Umowy |
+| Oświadczenie o zgodzie Mamy, akceptacja Umowy, Regulaminu i Cennika z datą i godziną, adres e-mail potwierdzony kodem, skrót pliku PDF z zaakceptowaną Umową, żądanie ciągłości Rozmów w czasie na odstąpienie | dowód zawarcia Umowy i jej warunków | obowiązek prawny i nasz prawnie uzasadniony interes w obronie przed roszczeniami (art. 6 ust. 1 lit. c i f) | do przedawnienia roszczeń z Umowy |
 | Dane do faktury, historia płatności i rozliczeń | płatności, faktury, obowiązki podatkowe i rachunkowe | wykonanie Umowy i obowiązek prawny (art. 6 ust. 1 lit. b i c) | 5 lat od końca roku podatkowego, w którym powstał obowiązek podatkowy |
 | Numer telefonu komórkowego, gdy Klient wybrał SMS jako Kanał alertów | Alerty (§ 15 Regulaminu) | wykonanie Umowy (art. 6 ust. 1 lit. b) | przez czas Umowy |
 | Dane karty płatniczej | płatność | wykonanie Umowy (art. 6 ust. 1 lit. b) | przetwarza je operator płatności; nie znamy pełnego numeru karty |
