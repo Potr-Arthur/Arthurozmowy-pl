@@ -1,8 +1,8 @@
-<!-- Kopia dokumentu projektu claude/Regulamin_uslugi_v1.md (stan z 23.11.2026). Zmienia się go razem z dokumentem projektu. -->
+<!-- Kopia dokumentu projektu claude/Regulamin_uslugi_v1.md (stan z 24.11.2026). Zmienia się go razem z dokumentem projektu. -->
 
 # Regulamin usługi arthurozmowy
 
-*Wersja 1 z 23.11.2026. Regulamin jest częścią Umowy abonenckiej, razem z Cennikiem (załącznik nr 1). Przetwarzanie danych osobowych opisuje Polityka prywatności.*
+*Wersja 1 z 24.11.2026. Regulamin jest częścią Umowy abonenckiej, razem z Cennikiem (załącznik nr 1). Przetwarzanie danych osobowych opisuje Polityka prywatności.*
 
 ---
 
@@ -51,7 +51,7 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 21. **Zawieszenie** – przerwa w Rozmowach na wniosek Klienta albo Mamy (rozdział 7).
 22. **Pamięć** – zapisane przez Usługodawcę informacje o sprawach Mamy, do których Arthur wraca w kolejnych Rozmowach. Pamięć nie zawiera dokładnych słów Mamy.
 23. **Numer Arthura** – polski numer telefonu, z którego Arthur dzwoni do Mamy i na który Mama może oddzwonić.
-24. **Panel klienta** – serwis internetowy pod adresem app.arthurozmowy.pl, w którym Klient płaci za Abonament, pobiera faktury, zmienia Pakiet i rezygnuje z Abonamentu.
+24. **Panel klienta** – serwis internetowy pod adresem app.arthurozmowy.pl, w którym Klient zawiera Umowę, płaci za Abonament, pobiera faktury, zmienia Pakiet i rezygnuje z Abonamentu.
 25. **Biuro Obsługi** – kanały kontaktu z Usługodawcą wskazane w § 1 ust. 3.
 26. **Dzień roboczy** – dzień od poniedziałku do piątku z wyjątkiem dni ustawowo wolnych od pracy w Polsce.
 27. **Trwały nośnik** – e-mail z treścią albo załącznikiem PDF, który Klient może przechowywać i odtwarzać w niezmienionej postaci.
@@ -101,44 +101,46 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 
 ### § 7. Umowa próbna
 
-1. Klient zawiera Umowę próbną w formularzu zamówienia na stronie arthurozmowy.pl/umow, po tym jak Mama zgodzi się na Rozmowy (§ 9). W formularzu Klient:
-   1. wybiera Pakiet;
-   2. podaje swoje imię, nazwisko i adres e-mail, wybiera formę, w jakiej Usługodawca ma się do niego zwracać, oraz Kanał alertów, a przy SMS podaje numer telefonu komórkowego;
-   3. podaje imię Mamy, jej numer telefonu i Termin każdej Rozmowy w tygodniu, a jeśli chce, także tematy, o których Mama lubi rozmawiać, i przypomnienie SMS w dniu Rozmowy;
-   4. składa oświadczenie o zgodzie Mamy z § 9 ust. 1 albo zaznacza „Zamawiam dla siebie”;
-   5. akceptuje Regulamin;
-   6. jeśli chce, zgadza się na kontakt z ofertą (§ 10);
-   7. wysyła formularz przyciskiem „Umów mamie próbne arthurozmowy”.
+1. Klient zawiera Umowę próbną w Panelu klienta, po tym jak Mama zgodzi się na Rozmowy (§ 9). Panel prowadzi Klienta przez kolejne kroki, z których każdy wyjaśnia jedną część Umowy. W tych krokach Klient:
+   1. wskazuje, czy zamawia Usługę dla Mamy, czy dla siebie, i podaje imię Mamy;
+   2. wybiera Pakiet;
+   3. podaje numer telefonu Mamy i Termin każdej Rozmowy w tygodniu, a jeśli chce, także przypomnienie SMS w dniu Rozmowy i tematy, o których Mama lubi rozmawiać;
+   4. wybiera Kanał alertów, a przy SMS podaje numer telefonu komórkowego;
+   5. składa oświadczenie o zgodzie Mamy z § 9 ust. 1 albo oświadczenie z § 9 ust. 5;
+   6. podaje swoje imię, nazwisko i adres e-mail, wybiera formę, w jakiej Usługodawca ma się do niego zwracać, a jeśli chce, podaje adres e-mail polecającego (Cennik);
+   7. sprawdza podsumowanie i pełny tekst Umowy próbnej w pliku PDF, który Panel klienta tworzy z podanych danych;
+   8. akceptuje treść Umowy próbnej, Regulamin i Cennik, a jeśli chce, zgadza się na kontakt z ofertą (§ 10);
+   9. potwierdza zamówienie kodem, który Usługodawca wysyła na podany adres e-mail, i przyciskiem „Umów mamie próbne arthurozmowy”.
 2. Umowa próbna jest bezpłatna. Klient nie podaje danych karty i nie zobowiązuje się do żadnej zapłaty.
-3. Umowa próbna zostaje zawarta z chwilą wysłania Klientowi e-maila z jej potwierdzeniem, najpóźniej następnego Dnia roboczego po wysłaniu formularza. E-mail zawiera dane z formularza, Numer Arthura oraz Regulamin i Cennik w pliku PDF.
+3. Umowa próbna zostaje zawarta z chwilą wysłania Klientowi e-maila z jej potwierdzeniem, najpóźniej następnego Dnia roboczego po złożeniu zamówienia. E-mail zawiera Umowę próbną w pliku PDF z numerem, datą zawarcia i zapisem akceptacji, Numer Arthura oraz Regulamin i Cennik w pliku PDF. Gdy Usługodawca nie może przyjąć zamówienia, w szczególności z powodu ust. 6, w tym samym terminie wysyła Klientowi e-mail z wyjaśnieniem, a Umowa nie zostaje zawarta.
 4. Pierwsza rozmowa odbywa się w pierwszym Terminie, który przypada co najmniej 2 dni po wysłaniu e-maila z potwierdzeniem.
 5. Umowa próbna wygasa z końcem Okresu próbnego. Klient może ją zakończyć wcześniej, w każdej chwili i bez kosztów, przez Biuro Obsługi. Rozmowy kończą się wtedy od razu.
 6. Okres próbny przysługuje raz dla danej Mamy.
 
 ### § 8. Umowa abonencka
 
-1. Jedenastego dnia Okresu próbnego Usługodawca wysyła Klientowi e-mail z pytaniem, czy kontynuować Rozmowy, i z linkiem do strony zamówienia Abonamentu. Link jest ważny 72 godziny, czyli do końca Okresu próbnego.
-2. Na stronie zamówienia Abonamentu Klient widzi Pakiet i jego cenę, Terminy, dzień rozpoczęcia Abonamentu, zasadę automatycznego odnawiania opłaty i sposób rezygnacji. Może tam zmienić Pakiet.
+1. Jedenastego dnia Okresu próbnego Usługodawca wysyła Klientowi e-mail z pytaniem, czy kontynuować Rozmowy, i z linkiem do zamówienia Abonamentu w Panelu klienta. Link jest ważny 72 godziny, czyli do końca Okresu próbnego.
+2. W Panelu klienta Klient przechodzi kolejne kroki zamówienia Abonamentu. Widzi w nich Pakiet i jego cenę, Terminy, dzień rozpoczęcia Abonamentu, zasadę automatycznego odnawiania opłaty, sposób rezygnacji i Pożegnanie oraz prawo odstąpienia. Może tam zmienić Pakiet. Na końcu sprawdza podsumowanie i pełny tekst Umowy abonenckiej w pliku PDF i akceptuje go razem z Regulaminem i Cennikiem.
 3. Klient zaznacza żądanie, bez którego zamówienia nie da się złożyć: „Żądam, żeby rozmowy z Arthurem trwały bez przerwy także w ciągu 14 dni, w których mogę odstąpić od umowy abonenckiej. Wiem, że jeśli odstąpię, zapłacę za dni abonamentu do dnia odstąpienia według stawki dziennej.”
 4. Klient składa zamówienie przyciskiem „Zamawiam i płacę”, a następnie płaci za pierwszy Okres rozliczeniowy u operatora płatności wskazanego w Cenniku. Zamówienie wiąże się z obowiązkiem zapłaty.
 5. Do chwili płatności zamówienie ma stan „zamówione, nieopłacone” i Usługodawca go nie przyjmuje. Gdy płatność nie nastąpi w czasie ważności linku, zamówienie wygasa, Okres próbny kończy się jak zwykle i Rozmowy się kończą. Klient nic nie płaci.
-6. Umowa abonencka zostaje zawarta z chwilą, gdy Usługodawca po otrzymaniu płatności potwierdzi przyjęcie zamówienia e-mailem. E-mail zawiera w plikach PDF Umowę abonencką, Regulamin, Cennik i wzór formularza odstąpienia, a w treści żądanie z ust. 3.
+6. Umowa abonencka zostaje zawarta z chwilą, gdy Usługodawca po otrzymaniu płatności potwierdzi przyjęcie zamówienia e-mailem. E-mail zawiera w plikach PDF Umowę abonencką z numerem, datą zawarcia i zapisem akceptacji, Regulamin, Cennik, wzór formularza odstąpienia i Politykę prywatności, a w treści żądanie z ust. 3.
 7. Abonament zaczyna się następnego dnia po końcu Okresu próbnego, także gdy Klient zapłacił wcześniej. Rozmowy toczą się bez przerwy: Terminy, Pakiet, Kanał alertów i Pamięć przechodzą z Umowy próbnej.
 8. Umowa abonencka jest zawarta na czas nieokreślony. Opłata odnawia się automatycznie pierwszego dnia każdego Okresu rozliczeniowego, dopóki Klient nie zrezygnuje (rozdział 9).
-9. Klient, który chce wrócić do Rozmów w ciągu 3 miesięcy od ostatniej Rozmowy, zgłasza to Biuru Obsługi i dostaje link do strony zamówienia Abonamentu. Zawiera wtedy Umowę abonencką bez Okresu próbnego, na zasadach ust. 2–8, a Arthur wraca do Rozmów z Pamięcią sprzed przerwy. W pierwszej Rozmowie po przerwie Arthur ponownie pyta Mamę o Zgodę Mamy.
+9. Klient, który chce wrócić do Rozmów w ciągu 3 miesięcy od ostatniej Rozmowy, zgłasza to Biuru Obsługi i dostaje link do zamówienia Abonamentu w Panelu klienta. Zawiera wtedy Umowę abonencką bez Okresu próbnego, na zasadach ust. 2–8, a Arthur wraca do Rozmów z Pamięcią sprzed przerwy. W pierwszej Rozmowie po przerwie Arthur ponownie pyta Mamę o Zgodę Mamy.
 
 ### § 9. Zgoda Mamy
 
-1. Klient składa zamówienie dopiero wtedy, gdy Mama zgodziła się na Rozmowy. W formularzu zamówienia potwierdza: „Potwierdzam, że mama zgodziła się na rozmowy z Arthurem. Wie, że Arthur jest programem opartym na sztucznej inteligencji, że będzie do niej dzwonił co tydzień w terminie, który wybrała, że to, o czym rozmawiają, zostaje między nimi i że Arthur da mi znać tylko wtedy, gdy mama powie mu o nagłej sytuacji albo o telefonie od kogoś, kto podawał się za Arthura.”
+1. Klient składa zamówienie dopiero wtedy, gdy Mama zgodziła się na Rozmowy. W zamówieniu potwierdza: „Potwierdzam, że mama zgodziła się na rozmowy z Arthurem. Wie, że Arthur jest programem opartym na sztucznej inteligencji, że będzie do niej dzwonił co tydzień w terminie, który wybrała, że to, o czym rozmawiają, zostaje między nimi i że Arthur da mi znać tylko wtedy, gdy mama powie mu o nagłej sytuacji albo o telefonie od kogoś, kto podawał się za Arthura.”
 2. Oświadczenie Klienta nie zastępuje Zgody Mamy. W Pierwszej rozmowie Arthur mówi Mamie to, co opisuje Polityka prywatności (pkt 4.2 ust. 3): że jest programem opartym na sztucznej inteligencji, że zapamiętuje jej sprawy, że to, o czym rozmawiają, zostaje między nimi, kiedy Klient dostaje wiadomość albo Alert i że Mama może w każdej chwili przerwać Rozmowę albo zrezygnować. Potem pyta, czy Mama zgadza się na Rozmowy. Termin, Numer Arthura i pozostałe zasady Rozmów Arthur przedstawia po zgodzie, w tej samej Rozmowie. Usługodawca zapisuje datę, godzinę, pytanie i odpowiedź Mamy, bez zapisu reszty Rozmowy. Rozmowa o sprawach Mamy zaczyna się dopiero po jej zgodzie.
 3. Gdy Mama odpowie „nie dziś” albo nie odbierze telefonu, Arthur pyta o zgodę w następnym Terminie. Gdy Mama nie wyrazi Zgody Mamy w ciągu 21 dni od zawarcia Umowy próbnej, Umowa próbna wygasa, a Klient dostaje o tym e-mail.
 4. Gdy Mama odmówi, Umowa próbna wygasa w dniu odmowy, a Klient dostaje o tym e-mail.
-5. Klient, który zamawia Usługę dla siebie, zaznacza w formularzu „Zamawiam dla siebie” zamiast oświadczenia z ust. 1. W Pierwszej rozmowie Arthur pyta go o zgodę tak samo jak każdą Mamę. Usługodawca nie wysyła wtedy Alertów.
+5. Klient, który zamawia Usługę dla siebie, zamiast oświadczenia z ust. 1 składa oświadczenie: „Zamawiam rozmowy dla siebie. Wiem, że Arthur jest programem opartym na sztucznej inteligencji i że to, o czym rozmawiamy, zostaje między nami.” W Pierwszej rozmowie Arthur pyta go o zgodę tak samo jak każdą Mamę. Usługodawca nie wysyła wtedy Alertów.
 6. Mama w każdej chwili może zakończyć Rozmowę, odmówić jej albo zrezygnować z Rozmów w ogóle (rozdział 10).
 
 ### § 10. Zgoda na kontakt z ofertą
 
-1. W formularzu zamówienia Klient może zaznaczyć pole, które nie jest zaznaczone z góry: zgodę na e-maile z ofertą arthurozmów po tym, jak zamówienie Abonamentu wygaśnie bez płatności albo Umowa się zakończy.
+1. W zamówieniu Umowy próbnej Klient może zaznaczyć pole, które nie jest zaznaczone z góry: zgodę na e-maile z ofertą arthurozmów po tym, jak zamówienie Abonamentu wygaśnie bez płatności albo Umowa się zakończy.
 2. Brak tej zgody nie wpływa na zawarcie ani wykonanie Umowy. Klient może ją wycofać w każdej chwili: linkiem w każdej takiej wiadomości albo przez Biuro Obsługi.
 3. Wiadomości potrzebne do wykonania Umowy, takie jak potwierdzenia, informacje o Rozmowach nieodbytych, Alerty, przypomnienia o płatności i faktury, nie są ofertą i nie wymagają tej zgody.
 4. Danych Mamy Usługodawca nie używa do żadnej oferty.
@@ -468,7 +470,7 @@ Stawka dzienna przy Okresie rozliczeniowym liczącym 30 dni wynosi po zaokrągle
 
 ### Opusty
 
-1. **Za polecenie.** Klient, który poleci Usługę nowemu Klientowi, i nowy Klient dostają po obniżce o 7 Stawek dziennych swojego Pakietu. Nowy Klient podaje w formularzu zamówienia adres e-mail polecającego. Obniżki naliczają się po pierwszej płatności nowego Klienta za Abonament i obejmują następną opłatę każdego z nich. Polecający musi mieć wtedy trwający Abonament. Nowym Klientem jest osoba zamawiająca Usługę dla Mamy, która nie miała jeszcze Okresu próbnego. Obniżki za kolejne polecenia sumują się. W jednym Okresie rozliczeniowym obniżka nie przekracza ceny Pakietu, a nadwyżka przechodzi na następne Okresy.
+1. **Za polecenie.** Klient, który poleci Usługę nowemu Klientowi, i nowy Klient dostają po obniżce o 7 Stawek dziennych swojego Pakietu. Nowy Klient podaje adres e-mail polecającego w zamówieniu Umowy próbnej. Obniżki naliczają się po pierwszej płatności nowego Klienta za Abonament i obejmują następną opłatę każdego z nich. Polecający musi mieć wtedy trwający Abonament. Nowym Klientem jest osoba zamawiająca Usługę dla Mamy, która nie miała jeszcze Okresu próbnego. Obniżki za kolejne polecenia sumują się. W jednym Okresie rozliczeniowym obniżka nie przekracza ceny Pakietu, a nadwyżka przechodzi na następne Okresy.
 2. **Druga osoba w rodzinie.** Klient, który ma trwający Abonament i zawiera Umowę abonencką dla drugiej Mamy, na przykład ojca, płaci za tańszy z dwóch Abonamentów 20% mniej, dopóki trwają oba. Przy równych cenach opust obejmuje Abonament zawarty później. Ceny po opuście: 223,20 zł, 239,20 zł albo 279,20 zł.
 3. Opusty z pkt 1 i 2 można łączyć. Innych opustów nie ma.
 
