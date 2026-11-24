@@ -51,7 +51,7 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 21. **Zawieszenie** – przerwa w Rozmowach na wniosek Klienta albo Mamy (rozdział 7).
 22. **Pamięć** – zapisane przez Usługodawcę informacje o sprawach Mamy, do których Arthur wraca w kolejnych Rozmowach. Pamięć nie zawiera dokładnych słów Mamy.
 23. **Numer Arthura** – polski numer telefonu, z którego Arthur dzwoni do Mamy i na który Mama może oddzwonić.
-24. **Panel klienta** – serwis internetowy pod adresem app.arthurozmowy.pl, w którym Klient zawiera Umowę, płaci za Abonament, pobiera faktury, zmienia Pakiet i rezygnuje z Abonamentu.
+24. **Panel klienta** – serwis internetowy pod adresem app.arthurozmowy.pl, w którym Klient zawiera Umowę, płaci za Abonament, pobiera faktury, zmienia Pakiet, Termin i dane, zgłasza Zawieszenie i rezygnuje z Abonamentu.
 25. **Biuro Obsługi** – kanały kontaktu z Usługodawcą wskazane w § 1 ust. 3.
 26. **Dzień roboczy** – dzień od poniedziałku do piątku z wyjątkiem dni ustawowo wolnych od pracy w Polsce.
 27. **Trwały nośnik** – e-mail z treścią albo załącznikiem PDF, który Klient może przechowywać i odtwarzać w niezmienionej postaci.
@@ -300,26 +300,26 @@ Wyrazy pisane w Regulaminie wielką literą oznaczają:
 ### § 24. Zmiana Pakietu
 
 1. Klient zmienia Pakiet na wyższy albo niższy w Panelu klienta albo przez Biuro Obsługi. Zmiana obowiązuje od następnego Okresu rozliczeniowego. W Okresie próbnym Klient zmienia Pakiet przez Biuro Obsługi, a zmiana obowiązuje od następnego tygodnia.
-2. Przy zmianie na Pakiet z większą liczbą Rozmów Klient podaje Biuru Obsługi Termin dodatkowej Rozmowy, wybrany przez Mamę.
+2. Przy zmianie na Pakiet z większą liczbą Rozmów Klient podaje w Panelu klienta albo Biuru Obsługi Termin dodatkowej Rozmowy, wybrany przez Mamę.
 3. Przy zmianie na Pakiet z mniejszą liczbą Rozmów zostaje Termin Rozmowy pełnej, a Klient wskazuje, który Termin Rozmowy podtrzymującej zostaje, gdy zostaje jedna z dwóch.
 4. W czasie Pożegnania Pakietu nie można zmienić.
 
 ### § 25. Zmiana Terminu
 
-1. Termin zmienia Klient, po rozmowie z Mamą, przez Biuro Obsługi albo odpowiadając na e-mail od Usługodawcy.
+1. Termin zmienia Klient, po rozmowie z Mamą, w Panelu klienta, przez Biuro Obsługi albo odpowiadając na e-mail od Usługodawcy.
 2. Zmiana Terminu jest bezpłatna i nie ma limitu. Obowiązuje od następnego tygodnia.
 3. Arthur potwierdza Mamie nowy Termin SMS-em, jeśli Mama ma telefon komórkowy, i w najbliższej Rozmowie.
 4. Gdy Mama powie Arthurowi, że wolałaby inny Termin, Arthur odpowiada, że przekaże to Klientowi, a Klient dostaje o tym e-mail. Do czasu zmiany Arthur dzwoni w dotychczasowym Terminie.
 
 ### § 26. Zmiana danych
 
-1. Imię Mamy, numer telefonu Mamy, adres e-mail Klienta, Kanał alertów i numer telefonu do Alertów Klient zmienia przez Biuro Obsługi. Usługodawca potwierdza zmianę e-mailem.
+1. Numer telefonu Mamy, Kanał alertów i numer telefonu do Alertów Klient zmienia w Panelu klienta albo przez Biuro Obsługi. Imię Mamy i adres e-mail Klienta zmienia przez Biuro Obsługi. Usługodawca potwierdza każdą zmianę e-mailem.
 2. Dane do faktury i kartę płatniczą Klient zmienia w Panelu klienta.
 3. Numer Arthura się nie zmienia. Gdy Usługodawca musi go zmienić, zawiadamia Klienta e-mailem co najmniej 14 dni wcześniej, a Arthur mówi o tym Mamie w dwóch kolejnych Rozmowach przed zmianą.
 
 ### § 27. Zawieszenie
 
-1. Klient albo Mama mogą zawiesić Rozmowy na czas wyjazdu, pobytu w szpitalu albo z innego powodu. Zawieszenie zgłasza się Biuru Obsługi najpóźniej w dniu poprzedzającym pierwszy zawieszony Termin.
+1. Klient albo Mama mogą zawiesić Rozmowy na czas wyjazdu, pobytu w szpitalu albo z innego powodu. Klient zgłasza Zawieszenie w Panelu klienta albo Biuru Obsługi, a Mama Biuru Obsługi, najpóźniej w dniu poprzedzającym pierwszy zawieszony Termin.
 2. W czasie Zawieszenia Arthur nie dzwoni. Po Zawieszeniu wraca do Rozmów w najbliższym Terminie.
 3. Za każdy dzień Zawieszenia następna opłata za Abonament maleje o Stawkę dzienną, łącznie najwyżej o 7 Stawek dziennych w jednym Okresie rozliczeniowym, także gdy Zawieszenie trwa dłużej.
 4. Zawieszenie w Okresie próbnym przesuwa jego koniec o liczbę dni Zawieszenia, najwyżej o 7 dni.
