@@ -1,0 +1,3 @@
+# arthurozmowy · adres tymczasowy: witryna przed startem, żadnych robotów.
+User-agent: *
+Disallow: /
